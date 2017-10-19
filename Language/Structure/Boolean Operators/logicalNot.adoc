@@ -1,0 +1,73 @@
+---
+title: "!"
+title_expanded: logical not
+categories: [ "Structure" ]
+subCategories: [ "Boolean Operators" ]
+---
+
+:source-highlighter: pygments
+:pygments-style: arduino
+
+
+
+= ! Logical NOT
+
+
+// OVERVIEW SECTION STARTS
+[#overview]
+--
+
+[float]
+=== Description
+*Logical NOT* results in a `true` if the operand is `false` and vice versa.
+[%hardbreaks]
+
+--
+// OVERVIEW SECTION ENDS
+
+
+
+// HOW TO USE SECTION STARTS
+[#howtouse]
+--
+
+[float]
+=== Example Code
+This operator can be used inside the condition of an link:../../control-structures/if[if] statement.
+
+[source,arduino]
+----
+if (!x) { // if x is not true
+  // statements
+}
+----
+
+It can be used to invert the boolean value.
+[source,arduino]
+----
+x = !y;   // the inverted value of y is stored in x
+----
+
+
+[%hardbreaks]
+
+[float]
+=== Notes and Warnings
+The bitwise not ~ (tilde) looks much different than the boolean not ! (exclamation point or "bang" as the programmers say) but you still have to be sure which one you want where.
+
+--
+// HOW TO USE SECTION ENDS
+
+
+// SEE ALSO SECTION
+[#see_also]
+--
+
+[float]
+=== See also
+
+[role="language"]
+* #LANGUAGE# link:../../bitwise-operators/bitwisenot[~ Bitwise NOT]
+
+--
+// SEE ALSO SECTION ENDS

@@ -1,0 +1,56 @@
+---
+title: noTone()
+title_expanded: ""
+categories: [ "Functions" ]
+subCategories: [ "Advanced I/O" ]
+aliases: [ /language/functions/advanced-io/noTone/ ]
+---
+
+:source-highlighter: pygments
+:pygments-style: arduino
+
+
+
+= noTone()
+
+
+// OVERVIEW SECTION STARTS
+[#overview]
+--
+
+[float]
+=== Description
+Stops the generation of a square wave triggered by `tone()`. Has no effect if no tone is being generated.
+[%hardbreaks]
+
+
+[float]
+=== Syntax
+`noTone(pin)`
+
+
+[float]
+=== Parameters
+`pin`: the pin on which to stop generating the tone
+
+[float]
+=== Returns
+Nothing
+
+--
+// OVERVIEW SECTION ENDS
+
+
+
+
+// HOW TO USE SECTION STARTS
+[#howtouse]
+--
+
+[float]
+=== Notes and Warnings
+If you want to play different pitches on multiple pins, you need to call noTone() on one pin before calling `tone()` on the next pin.
+[%hardbreaks]
+
+--
+// HOW TO USE SECTION ENDS

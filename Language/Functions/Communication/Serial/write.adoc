@@ -1,0 +1,75 @@
+---
+title: Serial.write()
+---
+:source-highlighter: pygments
+:pygments-style: arduino
+
+
+
+= write()
+
+
+// OVERVIEW SECTION STARTS
+[#overview]
+--
+
+[float]
+=== Description
+Writes binary data to the serial port. This data is sent as a byte or series of bytes; to send the characters representing the digits of a number use the link:../print[print()] function instead.
+[%hardbreaks]
+
+
+[float]
+=== Syntax
+`Serial.write(val)` +
+`Serial.write(str)` +
+`Serial.write(buf, len)`
+
+_Arduino Mega also supports:_
+
+`Serial1`, `Serial2`, `Serial3` (in place of `Serial`)
+
+
+[float]
+=== Parameters
+`val`: a value to send as a single byte
+
+`str`: a string to send as a series of bytes
+
+`buf`: an array to send as a series of bytes
+
+[float]
+=== Returns
+`byte`
+
+`write()` will return the number of bytes written, though reading that number is optional
+
+--
+// OVERVIEW SECTION ENDS
+
+
+
+
+// HOW TO USE SECTION STARTS
+[#howtouse]
+--
+[float]
+=== Example Code
+// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+
+
+[source,arduino]
+----
+void setup(){
+  Serial.begin(9600);
+}
+
+void loop(){
+  Serial.write(45); // send a byte with the value 45
+
+   int bytesSent = Serial.write(“hello”); //send the string “hello” and return the length of the string.
+}
+----
+
+--
+// HOW TO USE SECTION ENDS

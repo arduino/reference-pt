@@ -1,0 +1,89 @@
+---
+title: millis()
+categories: [ "Functions" ]
+subCategories: [ "Time" ]
+---
+
+:source-highlighter: pygments
+:pygments-style: arduino
+
+
+
+= millis()
+
+
+// OVERVIEW SECTION STARTS
+[#overview]
+--
+
+[float]
+=== Description
+Returns the number of milliseconds since the Arduino board began running the current program. This number will overflow (go back to zero), after approximately 50 days.
+[%hardbreaks]
+
+
+[float]
+=== Syntax
+`time = millis()`
+
+
+[float]
+=== Parameters
+Nothing
+
+[float]
+=== Returns
+Number of milliseconds since the program started (unsigned long)
+
+--
+// OVERVIEW SECTION ENDS
+
+
+
+
+// HOW TO USE SECTION STARTS
+[#howtouse]
+--
+
+[float]
+=== Example Code
+// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+The code reads the milllisecond since the Arduino board began.
+
+[source,arduino]
+----
+unsigned long time;
+
+void setup(){
+  Serial.begin(9600);
+}
+void loop(){
+  Serial.print("Time: ");
+  time = millis();
+
+  Serial.println(time);    //prints time since program started
+  delay(1000);             // wait a second so as not to send massive amounts of data
+}
+----
+[%hardbreaks]
+
+[float]
+=== Notes and Warnings
+Note that the parameter for millis is an unsigned long, errors may be generated if a programmer tries to do math with other datatypes such as ints.
+
+--
+// HOW TO USE SECTION ENDS
+
+
+// SEE ALSO SECTION
+[#see_also]
+--
+
+[float]
+=== See also
+
+[role="example"]
+* #EXAMPLE# http://arduino.cc/en/Tutorial/BlinkWithoutDelay[Blink Without Delay]
+
+--
+// SEE ALSO SECTION ENDS

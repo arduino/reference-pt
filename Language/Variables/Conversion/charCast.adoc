@@ -1,0 +1,54 @@
+---
+title: char()
+categories: [ "Variables" ]
+subCategories: [ "Conversion" ]
+---
+
+:source-highlighter: pygments
+:pygments-style: arduino
+
+
+
+= char()
+
+
+// OVERVIEW SECTION STARTS
+[#overview]
+--
+
+[float]
+=== Description
+Converts a value to the link:../../data-types/char[char] data type.
+[%hardbreaks]
+
+
+[float]
+=== Syntax
+`char(x)`
+
+
+[float]
+=== Parameters
+`x`: a value of any type
+
+[float]
+=== Returns
+`char`
+
+--
+// OVERVIEW SECTION ENDS
+
+
+
+// SEE ALSO SECTION STARTS
+[#see_also]
+--
+
+[float]
+=== See also
+
+[role="language"]
+* #LANGUAGE# link:../../data-types/char[char]
+
+--
+// SEE ALSO SECTION ENDS

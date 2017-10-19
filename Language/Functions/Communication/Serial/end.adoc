@@ -1,0 +1,42 @@
+---
+title: Serial.end()
+---
+:source-highlighter: pygments
+:pygments-style: arduino
+
+
+
+= end()
+
+
+// OVERVIEW SECTION STARTS
+[#overview]
+--
+
+[float]
+=== Description
+Disables serial communication, allowing the RX and TX pins to be used for general input and output. To re-enable serial communication, call link:../begin[Serial.begin()].
+[%hardbreaks]
+
+
+[float]
+=== Syntax
+`Serial.end()`
+
+_Arduino Mega only:_
+
+`Serial1.end()` +
+`Serial2.end()` +
+`Serial3.end()` +
+
+
+[float]
+=== Parameters
+Nothing
+
+[float]
+=== Returns
+Nothing
+
+--
+// OVERVIEW SECTION ENDS

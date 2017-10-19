@@ -1,0 +1,84 @@
+---
+title: serial
+categories: [ "Functions" ]
+subCategories: [ "Communication" ]
+---
+
+:source-highlighter: pygments
+:pygments-style: arduino
+
+
+= Serial()
+
+
+// OVERVIEW SECTION STARTS
+[#overview]
+--
+
+[float]
+=== Description
+Used for communication between the Arduino board and a computer or other devices. All Arduino boards have at least one serial port (also known as a UART or USART): Serial. It communicates on digital pins 0 (RX) and 1 (TX) as well as with the computer via USB. Thus, if you use these functions, you cannot also use pins 0 and 1 for digital input or output. +
+You can use the Arduino environment's built-in serial monitor to communicate with an Arduino board. Click the serial monitor button in the toolbar and select the same baud rate used in the call to `begin()`.
+[%hardbreaks]
+The *Arduino Mega* has three additional serial ports: `Serial1` on pins 19 (RX) and 18 (TX), `Serial2` on pins 17 (RX) and 16 (TX), `Serial3` on pins 15 (RX) and 14 (TX). To use these pins to communicate with your personal computer, you will need an additional USB-to-serial adaptor, as they are not connected to the Mega's USB-to-serial adaptor. To use them to communicate with an external TTL serial device, connect the TX pin to your device's RX pin, the RX to your device's TX pin, and the ground of your Mega to your device's ground. (Don't connect these pins directly to an RS232 serial port; they operate at +/- 12V and can damage your Arduino board.)
+[%hardbreaks]
+The *Arduino DUE* has three additional 3.3V TTL serial ports: `Serial1` on pins 19 (RX) and 18 (TX); `Serial2` on pins 17 (RX) and 16 (TX), `Serial3` on pins 15 (RX) and 14 (TX). Pins 0 and 1 are also connected to the corresponding pins of the ATmega16U2 USB-to-TTL Serial chip, which is connected to the USB debug port. Additionally, there is a native USB-serial port on the SAM3X chip, SerialUSB'.
+[%hardbreaks]
+The *Arduino Leonardo* board uses `Serial1` to communicate via TTL (5V) serial on pins 0 (RX) and 1 (TX). `Serial` is reserved for USB CDC communication. For more information, refer to the Leonardo getting started page and hardware page.
+
+--
+// OVERVIEW SECTION ENDS
+
+
+// FUNCTIONS SECTION STARTS
+[#functions]
+--
+
+'''
+
+[float]
+=== Functions
+link:../serial/ifSerial[If] (Serial) +
+link:../serial/available[available()] +
+link:../serial/begin[begin()] +
+link:../serial/end[end()] +
+link:../serial/find[find()] +
+link:../serial/findUntil[findUntil()] +
+link:../serial/flush[flush()] +
+link:../serial/parseFloat[parseFloat()] +
+link:../serial/parseInt[parseInt()] +
+link:../serial/peek[peek()] +
+link:../serial/print[print()] +
+link:../serial/println[println()] +
+link:../serial/read[read()] +
+link:../serial/readBytes[readBytes()] +
+link:../serial/readBytesUntil[readBytesUntil()] +
+link:../serial/setTimeout[setTimeout()] +
+link:../serial/write[write()] +
+link:../serial/serialEvent[serialEvent()]
+
+'''
+
+--
+// FUNCTIONS SECTION ENDS
+
+
+// SEEALSO SECTION STARTS
+[#see_also]
+--
+
+[float]
+=== See also
+
+[role="example"]
+* #EXAMPLE# https://www.arduino.cc/en/Tutorial/ReadAsciiString[ReadAsciiString^]
+* #EXAMPLE# https://www.arduino.cc/en/Tutorial/ASCIITable[ASCII TAble^]
+* #EXAMPLE# https://www.arduino.cc/en/Tutorial/Dimmer[Dimmer^]
+* #EXAMPLE# https://www.arduino.cc/en/Tutorial/Graph[Graph^]
+* #EXAMPLE# https://www.arduino.cc/en/Tutorial/PhysicalPixel[Physical Pixel^]
+* #EXAMPLE# https://www.arduino.cc/en/Tutorial/SerialCallResponse[Serial Call Response^]
+* #EXAMPLE# https://www.arduino.cc/en/Tutorial/SerialCallResponseASCII[Serial Call Response ASCII^]
+
+
+--
+// SEEALSO SECTION ENDS

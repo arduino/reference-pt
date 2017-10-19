@@ -1,0 +1,105 @@
+---
+title: analogWrite()
+categories: [ "Functions" ]
+subCategories: [ "Analog I/O" ]
+---
+
+:source-highlighter: pygments
+:pygments-style: arduino
+
+
+
+= analogWrite()
+
+
+// OVERVIEW SECTION STARTS
+[#overview]
+--
+
+[float]
+=== Description
+Writes an analog value (http://arduino.cc/en/Tutorial/PWM[PWM wave]) to a pin. Can be used to light a LED at varying brightnesses or drive a motor at various speeds. After a call to `analogWrite()`, the pin will generate a steady square wave of the specified duty cycle until the next call to `analogWrite()` (or a call to `digitalRead()` or `digitalWrite()` on the same pin). The frequency of the PWM signal on most pins is approximately 490 Hz. On the Uno and similar boards, pins 5 and 6 have a frequency of approximately 980 Hz.
+[%hardbreaks]
+On most Arduino boards (those with the ATmega168 or ATmega328), this function works on pins 3, 5, 6, 9, 10, and 11. On the Arduino Mega, it works on pins 2 - 13 and 44 - 46. Older Arduino boards with an ATmega8 only support `analogWrite()` on pins 9, 10, and 11.
+The Arduino DUE supports `analogWrite()` on pins 2 through 13, plus pins DAC0 and DAC1. Unlike the PWM pins, DAC0 and DAC1 are Digital to Analog converters, and act as true analog outputs.
+You do not need to call `pinMode()` to set the pin as an output before calling `analogWrite()`.
+The `analogWrite` function has nothing to do with the analog pins or the `analogRead` function.
+[%hardbreaks]
+
+
+[float]
+=== Syntax
+`analogWrite(pin, value)`
+
+
+[float]
+=== Parameters
+`pin`: the pin to write to. Allowed data types: int. +
+`value`: the duty cycle: between 0 (always off) and 255 (always on). Allowed data types: int
+
+
+[float]
+=== Returns
+Nothing
+
+--
+// OVERVIEW SECTION ENDS
+
+
+
+
+// HOW TO USE SECTION STARTS
+[#howtouse]
+--
+
+[float]
+=== Example Code
+Sets the output to the LED proportional to the value read from the potentiometer.
+
+
+[source,arduino]
+----
+int ledPin = 9;      // LED connected to digital pin 9
+int analogPin = 3;   // potentiometer connected to analog pin 3
+int val = 0;         // variable to store the read value
+
+void setup()
+{
+  pinMode(ledPin, OUTPUT);   // sets the pin as output
+}
+
+void loop()
+{
+  val = analogRead(analogPin);   // read the input pin
+  analogWrite(ledPin, val / 4);  // analogRead values go from 0 to 1023, analogWrite values from 0 to 255
+}
+----
+[%hardbreaks]
+
+
+[float]
+=== Notes and Warnings
+The PWM outputs generated on pins 5 and 6 will have higher-than-expected duty cycles. This is because of interactions with the `millis()` and `delay()` functions, which share the same internal timer used to generate those PWM outputs. This will be noticed mostly on low duty-cycle settings (e.g. 0 - 10) and may result in a value of 0 not fully turning off the output on pins 5 and 6.
+
+--
+// HOW TO USE SECTION ENDS
+
+
+// SEE ALSO SECTION
+[#see_also]
+--
+
+[float]
+=== See also
+
+[role="language"]
+* #LANGUAGE# link:../../arduino-due-only/analogwriteresolution[analogWriteResolution()]
+
+[role="definition"]
+* #DEFINITION# http://arduino.cc/en/Tutorial/PWM[PWM^]
+
+[role="example"]
+* #EXAMPLE# http://arduino.cc/en/Tutorial/Blink[Blink^]
+
+--
+// SEE ALSO SECTION ENDS

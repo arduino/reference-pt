@@ -1,0 +1,67 @@
+---
+title: continue
+categories: [ "Structure" ]
+subCategories: [ "Control Structure" ]
+---
+
+:source-highlighter: pygments
+:pygments-style: arduino
+
+
+
+= continue
+
+
+// OVERVIEW SECTION STARTS
+[#overview]
+--
+
+[float]
+=== Description
+[%hardbreaks]
+The `continue` statement skips the rest of the current iteration of a loop (link:../for[for], link:../while[while], or link:../doWhile[do...while]). It continues by checking the conditional expression of the loop, and proceeding with any subsequent iterations.
+[%hardbreaks]
+
+--
+// OVERVIEW SECTION ENDS
+
+
+
+
+// HOW TO USE SECTION STARTS
+[#howtouse]
+--
+
+[float]
+=== Example Code
+The following code writes the value of 0 to 255 to the `PWMpin`, but skips the values in the range of 41 to 119.
+[source,arduino]
+----
+for (x = 0; x <= 255; x ++)
+{
+    if (x > 40 && x < 120){      // create jump in values
+        continue;
+    }
+
+    analogWrite(PWMpin, x);
+    delay(50);
+}
+----
+
+
+--
+// HOW TO USE SECTION ENDS
+
+
+
+// SEE ALSO SECTION BEGINS
+[#see_also]
+--
+
+[float]
+=== See also
+
+[role="language"]
+
+--
+// SEE ALSO SECTION ENDS

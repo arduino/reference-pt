@@ -1,0 +1,103 @@
+---
+title: Mouse.release()
+---
+:source-highlighter: pygments
+:pygments-style: arduino
+
+
+
+= Mouse.release()
+
+
+// OVERVIEW SECTION STARTS
+[#overview]
+--
+
+[float]
+=== Description
+Sends a message that a previously pressed button (invoked through link:../mousePress[Mouse.press()]) is released. Mouse.release() defaults to the left button.
+[%hardbreaks]
+
+
+[float]
+=== Syntax
+`Mouse.release();` +
+`Mouse.release(button);`
+
+[float]
+=== Parameters
+`button`: which mouse button to press - char
+
+* `MOUSE_LEFT` (default)
+
+* `MOUSE_RIGHT`
+
+* `MOUSE_MIDDLE`
+
+[float]
+=== Returns
+Nothing
+
+--
+// OVERVIEW SECTION ENDS
+
+
+
+
+// HOW TO USE SECTION STARTS
+[#howtouse]
+--
+
+[float]
+=== Example Code
+// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+
+
+[source,arduino]
+----
+void setup(){
+  //The switch that will initiate the Mouse press
+  pinMode(2,INPUT);
+  //The switch that will terminate the Mouse press
+  pinMode(3,INPUT);
+  //initiate the Mouse library
+  Mouse.begin();
+}
+
+void loop(){
+  //if the switch attached to pin 2 is closed, press and hold the right mouse button
+  if(digitalRead(2) == HIGH){
+    Mouse.press();
+  }
+  //if the switch attached to pin 3 is closed, release the right mouse button
+  if(digitalRead(3) == HIGH){
+    Mouse.release();
+  }
+}
+----
+[%hardbreaks]
+
+[float]
+=== Notes and Warnings
+When you use the `Mouse.release()` command, the Arduino takes over your mouse! Make sure you have control before you use the command. A pushbutton to toggle the mouse control state is effective.
+
+--
+// HOW TO USE SECTION ENDS
+
+
+// SEE ALSO SECTION
+[#see_also]
+--
+
+[float]
+=== See also
+
+[role="language"]
+* #LANGUAGE# link:../mouseclick[Mouse.click()]
+* #LANGUAGE# link:../mouseend[Mouse.end()]
+* #LANGUAGE# link:../mousemove[Mouse.move()]
+* #LANGUAGE# link:../mousepress[Mouse.press()]
+* #LANGUAGE# link:../mouseispressed[Mouse.isPressed()]
+
+--
+// SEE ALSO SECTION ENDS

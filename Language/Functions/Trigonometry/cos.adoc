@@ -1,0 +1,54 @@
+---
+title: cos()
+categories: [ "Functions" ]
+subCategories: [ "Trigonometry" ]
+---
+
+:source-highlighter: pygments
+:pygments-style: arduino
+
+
+
+= cos(rad)
+
+
+// OVERVIEW SECTION STARTS
+[#overview]
+--
+
+[float]
+=== Description
+Calculates the cosine of an angle (in radians). The result will be between -1 and 1.
+[%hardbreaks]
+
+
+[float]
+=== Syntax
+`cos(rad)`
+
+
+[float]
+=== Parameters
+`rad`: The angle in Radians (float).
+
+[float]
+=== Returns
+The cos of the angle (`double`).
+
+--
+// OVERVIEW SECTION ENDS
+
+
+// SEE ALSO SECTION
+[#see_also]
+--
+
+[float]
+=== See also
+
+[role="language"]
+* #LANGUAGE# link:../../../variables/data-types/float[float]
+* #LANGUAGE# link:../../../variables/data-types/double[double]
+
+--
+// SEE ALSO SECTION ENDS

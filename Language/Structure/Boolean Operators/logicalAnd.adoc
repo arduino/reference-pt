@@ -1,0 +1,65 @@
+---
+title: "&&"
+title_expanded: logical and
+categories: [ "Structure" ]
+subCategories: [ "Boolean Operators" ]
+---
+
+:source-highlighter: pygments
+:pygments-style: arduino
+
+
+
+= && Logical AND
+
+
+// OVERVIEW SECTION STARTS
+[#overview]
+--
+
+[float]
+=== Description
+*Logical AND* results in `true` *only* if both operands are `true`.
+[%hardbreaks]
+
+--
+// OVERVIEW SECTION ENDS
+
+
+
+// HOW TO USE SECTION STARTS
+[#howtouse]
+--
+
+[float]
+=== Example Code
+This operator can be used inside the condition of an link:../../control-structures/if[if] statement.
+
+[source,arduino]
+----
+if (digitalRead(2) == HIGH  && digitalRead(3) == HIGH) { // if BOTH the switches read HIGH
+    // statements
+}
+----
+[%hardbreaks]
+
+[float]
+=== Notes and Warnings
+Make sure you don't mistake the boolean AND operator, && (double ampersand) for the bitwise AND operator & (single ampersand). They are entirely different beasts.
+
+--
+// HOW TO USE SECTION ENDS
+
+
+// SEE ALSO SECTION
+[#see_also]
+--
+
+[float]
+=== See also
+
+[role="language"]
+* #LANGUAGE# link:../../bitwise-operators/bitwiseand[& (Bitwise AND)]
+
+--
+// SEE ALSO SECTION ENDS

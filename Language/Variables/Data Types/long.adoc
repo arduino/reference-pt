@@ -1,0 +1,68 @@
+---
+title: long
+categories: [ "Variables" ]
+subCategories: [ "Data Types" ]
+---
+
+:source-highlighter: pygments
+:pygments-style: arduino
+
+
+
+= long
+
+
+// OVERVIEW SECTION STARTS
+[#overview]
+--
+
+[float]
+=== Description
+Long variables are extended size variables for number storage, and store 32 bits (4 bytes), from -2,147,483,648 to 2,147,483,647.
+
+If doing math with integers, at least one of the numbers must be followed by an L, forcing it to be a long. See the link:../../constants/integerConstants[Integer Constants] page for details.
+[%hardbreaks]
+
+[float]
+=== Syntax
+
+`long var = val;`
+
+`var` - the long variable name
+`val` - the value assigned to the variable
+[%hardbreaks]
+--
+// OVERVIEW SECTION ENDS
+
+
+
+
+// HOW TO USE SECTION STARTS
+[#howtouse]
+--
+
+[float]
+=== Example Code
+// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+
+
+[source,arduino]
+----
+  long speedOfLight = 186000L;   // see the Integer Constants page for explanation of the 'L'
+----
+
+--
+// HOW TO USE SECTION ENDS
+
+// SEE ALSO SECTION STARTS
+[#see_also]
+--
+
+[float]
+=== See also
+
+[role="language"]
+* #LANGUAGE# link:../../constants/integerconstants[Integer Constants]
+
+--
+// SEE ALSO SECTION ENDS

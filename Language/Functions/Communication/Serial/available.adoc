@@ -1,0 +1,121 @@
+---
+title: Serial.available()
+---
+:source-highlighter: pygments
+:pygments-style: arduino
+
+
+
+= available()
+
+
+// OVERVIEW SECTION STARTS
+[#overview]
+--
+
+[float]
+=== Description
+Get the number of bytes (characters) available for reading from the serial port. This is data that's already arrived and stored in the serial receive buffer (which holds 64 bytes). `available()` inherits from the Stream utility class.
+[%hardbreaks]
+
+
+[float]
+=== Syntax
+`Serial.available()`
+
+_Arduino Mega only:_
+
+`Serial1.available()` +
+`Serial2.available()` +
+`Serial3.available()`
+
+
+[float]
+=== Parameters
+Nothing
+
+[float]
+=== Returns
+The number of bytes available to read .
+--
+// OVERVIEW SECTION ENDS
+
+
+
+
+// HOW TO USE SECTION STARTS
+[#howtouse]
+--
+
+[source,arduino]
+----
+int incomingByte = 0;	// for incoming serial data
+
+void setup() {
+	Serial.begin(9600);	// opens serial port, sets data rate to 9600 bps
+}
+
+void loop() {
+
+	// send data only when you receive data:
+	if (Serial.available() > 0) {
+		// read the incoming byte:
+		incomingByte = Serial.read();
+
+		// say what you got:
+		Serial.print("I received: ");
+		Serial.println(incomingByte, DEC);
+	}
+}
+----
+[%hardbreaks]
+
+*Arduino Mega example:*
+[source,arduino]
+----
+void setup() {
+  Serial.begin(9600);
+  Serial1.begin(9600);
+
+}
+
+void loop() {
+  // read from port 0, send to port 1:
+  if (Serial.available()) {
+    int inByte = Serial.read();
+    Serial1.print(inByte, BYTE);
+
+  }
+  // read from port 1, send to port 0:
+  if (Serial1.available()) {
+    int inByte = Serial1.read();
+    Serial.print(inByte, BYTE);
+  }
+}
+----
+
+--
+// HOW TO USE SECTION ENDS
+
+
+// SEE ALSO SECTION
+[#see_also]
+--
+
+[float]
+=== See also
+
+[role="language"]
+* #LANGUAGE# link:../begin[begin()] +
+* #LANGUAGE# link:../end[end()] +
+* #LANGUAGE# link:../read[read()] +
+* #LANGUAGE# link:../peek[peek()] +
+* #LANGUAGE# link:../flush[flush()] +
+* #LANGUAGE# link:../print[print()] +
+* #LANGUAGE# link:../println[println()] +
+* #LANGUAGE# link:../write[write()] +
+* #LANGUAGE# link:../serialEvent[SerialEvent()] +
+* #LANGUAGE# link:../../stream/streamavailable[Stream.available()]
+
+--
+// SEE ALSO SECTION ENDS

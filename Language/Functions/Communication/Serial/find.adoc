@@ -1,0 +1,52 @@
+---
+title: Serial.find()
+---
+:source-highlighter: pygments
+:pygments-style: arduino
+
+
+
+= Serial.find()
+
+
+// OVERVIEW SECTION STARTS
+[#overview]
+--
+
+[float]
+=== Description
+Serial.find() reads data from the serial buffer until the target string of given length is found. The function returns true if target string is found, false if it times out.
+
+Serial.find() inherits from the link:../../stream[stream] utility class.
+[%hardbreaks]
+
+
+[float]
+=== Syntax
+`Serial.find(target)`
+
+[float]
+=== Parameters
+`target` : the string to search for (char)
+
+[float]
+=== Returns
+`boolean`
+
+--
+// OVERVIEW SECTION ENDS
+
+
+// SEE ALSO SECTION
+[#see_also]
+--
+
+[float]
+=== See also
+
+[role="language"]
+* #LANGUAGE# link:../../stream[stream] +
+* #LANGUAGE# link:../../stream/streamfind[stream.find()]
+
+--
+// SEE ALSO SECTION ENDS

@@ -1,0 +1,52 @@
+---
+title: Serial.setTimeout()
+---
+:source-highlighter: pygments
+:pygments-style: arduino
+
+
+
+= Serial.setTimeout()
+
+
+// OVERVIEW SECTION STARTS
+[#overview]
+--
+
+[float]
+=== Description
+`Serial.setTimeout()` sets the maximum milliseconds to wait for serial data when using link:../readBytesUntil[serial.readBytesUntil()] or link:../readBytes[serial.readBytes()]. It defaults to 1000 milliseconds.
+
+`Serial.setTimeout()` inherits from the link:../../stream[Stream] utility class.
+[%hardbreaks]
+
+
+[float]
+=== Syntax
+`Serial.setTimeout(time)`
+
+[float]
+=== Parameters
+`time` : timeout duration in milliseconds (`long`).
+
+[float]
+=== Returns
+Nothing
+
+--
+// OVERVIEW SECTION ENDS
+
+
+// SEE ALSO SECTION
+[#see_also]
+--
+
+[float]
+=== See also
+
+[role="language"]
+* #LANGUAGE# link:../../stream[stream]
+* #LANGUAGE# link:../../stream/streamSetTimeout[stream.setTimeout()]
+
+--
+// SEE ALSO SECTION ENDS

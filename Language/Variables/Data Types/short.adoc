@@ -1,0 +1,67 @@
+---
+title: short
+categories: [ "Variables" ]
+subCategories: [ "Data Types" ]
+---
+
+:source-highlighter: pygments
+:pygments-style: arduino
+
+
+
+= short
+
+
+// OVERVIEW SECTION STARTS
+[#overview]
+--
+
+[float]
+=== Description
+A short is a 16-bit data-type.
+
+On all Arduinos (ATMega and ARM based) a short stores a 16-bit (2-byte) value. This yields a range of -32,768 to 32,767 (minimum value of -2^15 and a maximum value of (2^15) - 1).
+[%hardbreaks]
+
+[float]
+=== Syntax
+`short var = val;`
+
+`var` - your short variable name
+`val` - the value you assign to that variable
+--
+// OVERVIEW SECTION ENDS
+
+
+
+
+// HOW TO USE SECTION STARTS
+[#howtouse]
+--
+
+[float]
+=== Example Code
+// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+
+
+[source,arduino]
+----
+ short ledPin = 13
+----
+
+--
+// HOW TO USE SECTION ENDS
+
+
+// SEE ALSO SECTION STARTS
+[#see_also]
+--
+
+[float]
+=== See also
+
+[role="language"]
+* #LANGUAGE# link:../../constants/integerconstants[Integer Constants]
+
+--
+// SEE ALSO SECTION ENDS

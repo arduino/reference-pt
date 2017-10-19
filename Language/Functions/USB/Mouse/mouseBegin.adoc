@@ -1,0 +1,88 @@
+---
+title: Mouse.begin()
+---
+
+:source-highlighter: pygments
+:pygments-style: arduino
+
+
+
+= Mouse.begin()
+
+
+// OVERVIEW SECTION STARTS
+[#overview]
+--
+
+[float]
+=== Description
+Begins emulating the mouse connected to a computer. `begin()` must be called before controlling the computer. To end control, use link:../mouseEnd[Mouse.end()].
+[%hardbreaks]
+
+
+[float]
+=== Syntax
+`Mouse.begin()`
+
+
+[float]
+=== Parameters
+Nothing
+
+[float]
+=== Returns
+Nothing
+
+--
+// OVERVIEW SECTION ENDS
+
+
+
+
+// HOW TO USE SECTION STARTS
+[#howtouse]
+--
+
+[float]
+=== Example Code
+// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+
+
+[source,arduino]
+----
+void setup(){
+ pinMode(2, INPUT);
+}
+
+void loop(){
+
+  //initiate the Mouse library when button is pressed
+  if(digitalRead(2) == HIGH){
+     Mouse.begin();
+   }
+
+}
+----
+
+--
+// HOW TO USE SECTION ENDS
+
+
+// SEE ALSO SECTION
+[#see_also]
+--
+
+[float]
+=== See also
+
+[role="language"]
+* #LANGUAGE# link:../mouseclick[Mouse.click()]
+* #LANGUAGE# link:../mouseend[Mouse.end()]
+* #LANGUAGE# link:../mousemove[Mouse.move()]
+* #LANGUAGE# link:../mousepress[Mouse.press()]
+* #LANGUAGE# link:../mouserelease[Mouse.release()]
+* #LANGUAGE# link:../mouseispressed[Mouse.isPressed()]
+
+--
+// SEE ALSO SECTION ENDS
+

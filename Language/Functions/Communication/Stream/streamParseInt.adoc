@@ -1,0 +1,49 @@
+---
+title: Stream.parseInt()
+---
+:source-highlighter: pygments
+:pygments-style: arduino
+
+
+
+= parseInt()
+
+
+// OVERVIEW SECTION STARTS
+[#overview]
+--
+
+[float]
+=== Description
+`parseInt()` returns the first valid (long) integer number from the current position. Initial characters that are not integers (or the minus sign) are skipped.
+
+In particular:
+
+* Initial characters that are not digits or a minus sign, are skipped; +
+* Parsing stops when no characters have been read for a configurable time-out value, or a non-digit is read; +
+* If no valid digits were read when the time-out (see link:../streamSetTimeout[Stream.setTimeout()]) occurs, 0 is returned;
+
+This function is part of the Stream class, and is called by any class that inherits from it (Wire, Serial, etc). See the link:../../stream[Stream class] main page for more information.
+[%hardbreaks]
+
+
+[float]
+=== Syntax
+`stream.parseInt(list)`
+
+`stream.parseInt(''list', char skipchar')`
+
+[float]
+=== Parameters
+`stream` : an instance of a class that inherits from Stream.
+
+`list` : the stream to check for ints (`char`)
+
+`skipChar`: used to skip the indicated char in the search. Used for example to skip thousands divider.
+
+[float]
+=== Returns
+`long`
+
+--
+// OVERVIEW SECTION ENDS

@@ -1,0 +1,39 @@
+---
+title: sqrt()
+categories: [ "Functions" ]
+subCategories: [ "Math" ]
+---
+
+:source-highlighter: pygments
+:pygments-style: arduino
+
+
+
+= sqrt(x)
+
+
+// OVERVIEW SECTION STARTS
+Calculates the square root of a number.
+[#overview]
+--
+
+[float]
+=== Description
+[%hardbreaks]
+
+
+[float]
+=== Syntax
+`sqrt(x)`
+
+
+[float]
+=== Parameters
+`x`: the number, any data type
+
+[float]
+=== Returns
+The number's square root. (double)
+
+--
+// OVERVIEW SECTION ENDS

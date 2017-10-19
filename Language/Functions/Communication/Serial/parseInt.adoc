@@ -1,0 +1,74 @@
+---
+title: Serial.parseInt()
+---
+:source-highlighter: pygments
+:pygments-style: arduino
+
+
+
+= parseInt()
+
+
+// OVERVIEW SECTION STARTS
+[#overview]
+--
+
+[float]
+=== Description
+Looks for the next valid integer in the incoming serial `stream.parseInt()` inherits from the link:../../stream[Stream] utility class.
+
+
+In particular:
+
+* Initial characters that are not digits or a minus sign, are skipped; +
+* Parsing stops when no characters have been read for a configurable time-out value, or a non-digit is read; +
+* If no valid digits were read when the time-out (see Serial.setTimeout()) occurs, 0 is returned;
+[%hardbreaks]
+
+
+[float]
+=== Syntax
+`Serial.parseInt()`
+`Serial.parseInt(char skipChar)`
+
+_Arduino Mega only:_
+
+`Serial1.parseInt()` +
+`Serial2.parseInt()` +
+`Serial3.parseInt()`
+
+
+[float]
+=== Parameters
+`skipChar`: used to skip the indicated char in the search. Used for example to skip thousands divider.
+
+[float]
+=== Returns
+`long` : the next valid integer
+
+--
+// OVERVIEW SECTION ENDS
+
+
+// SEE ALSO SECTION
+[#see_also]
+--
+
+[float]
+=== See also
+
+[role="language"]
+* #LANGUAGE# link:../begin[begin()] +
+* #LANGUAGE# link:../end[end()] +
+* #LANGUAGE# link:../available[available()] +
+* #LANGUAGE# link:../read[read()] +
+* #LANGUAGE# link:../peek[peek()] +
+* #LANGUAGE# link:../flush[flush()] +
+* #LANGUAGE# link:../print[print()] +
+* #LANGUAGE# link:../println[println()] +
+* #LANGUAGE# link:../write[write()] +
+* #LANGUAGE# link:../serialEvent[SerialEvent()] +
+* #LANGUAGE# link:../../stream/streamParseFloat[Stream.parseFloat()]
+
+--
+// SEE ALSO SECTION ENDS

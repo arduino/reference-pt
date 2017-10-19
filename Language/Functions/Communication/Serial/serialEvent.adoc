@@ -1,0 +1,83 @@
+---
+title: Serial.serialEvent()
+---
+:source-highlighter: pygments
+:pygments-style: arduino
+
+
+
+= serialEvent()
+
+
+// OVERVIEW SECTION STARTS
+[#overview]
+--
+
+[float]
+=== Description
+Called when data is available. Use `Serial.read()` to capture this data.
+
+NB : Currently, `serialEvent()` is not compatible with the Esplora, Leonardo, or Micro
+[%hardbreaks]
+
+
+[float]
+=== Syntax
+
+[source,arduino]
+----
+void serialEvent(){
+//statements
+}
+----
+Arduino Mega only:
+[source,arduino]
+----
+void serialEvent1(){
+//statements
+}
+
+void serialEvent2(){
+//statements
+}
+
+void serialEvent3(){
+//statements
+}
+----
+
+[float]
+=== Parameters
+`statements`: any valid statements
+
+[float]
+=== Returns
+Nothing
+
+--
+// OVERVIEW SECTION ENDS
+
+
+// SEE ALSO SECTION
+[#see_also]
+--
+
+[float]
+=== See also
+
+[role="example"]
+* #EXAMPLE# http://arduino.cc/en/Tutorial/SerialEvent[SerialEvent Tutorial]
+
+[role="language"]
+* #LANGUAGE# link:../begin[begin()]
+* #LANGUAGE# link:../end[end()]
+* #LANGUAGE# link:../available[available()]
+* #LANGUAGE# link:../read[read()]
+* #LANGUAGE# link:../peek[peek()]
+* #LANGUAGE# link:../flush[flush()]
+* #LANGUAGE# link:../print[print()]
+* #LANGUAGE# link:../println[println()]
+* #LANGUAGE# link:../write[write()]
+
+--
+// SEE ALSO SECTION ENDS

@@ -1,0 +1,70 @@
+---
+title: float()
+categories: [ "Variables" ]
+subCategories: [ "Conversion" ]
+---
+
+:source-highlighter: pygments
+:pygments-style: arduino
+
+
+
+= float()
+
+
+// OVERVIEW SECTION STARTS
+[#overview]
+--
+
+[float]
+=== Description
+Converts a value to the link:../../data-types/float[float] data type.
+[%hardbreaks]
+
+
+[float]
+=== Syntax
+`float(x)`
+
+
+[float]
+=== Parameters
+`x`: a value of any type
+
+[float]
+=== Returns
+`float`
+
+--
+// OVERVIEW SECTION ENDS
+
+
+
+
+// HOW TO USE SECTION STARTS
+[#howtouse]
+--
+
+[float]
+=== Notes and Warnings
+See the reference for link:../../data-types/float[float] for details about the precision and limitations of floating point numbers on Arduino.
+[%hardbreaks]
+
+--
+// HOW TO USE SECTION ENDS
+
+
+
+// SEE ALSO SECTION BEGINS
+[#see_also]
+--
+
+[float]
+=== See also
+
+
+[role="language"]
+* #LANGUAGE# link:../../data-types/float[float]
+
+--
+// SEE ALSO SECTION ENDS

@@ -1,0 +1,68 @@
+---
+title: stringObject
+categories: [ "Variables" ]
+subCategories: [ "Data Types" ]
+---
+
+:source-highlighter: pygments
+:pygments-style: arduino
+
+
+
+= String
+
+
+// OVERVIEW SECTION STARTS
+[#overview]
+--
+
+[float]
+=== Description
+The String class, part of the core as of version 0019, allows you to use and manipulate strings of text in more complex ways than character arrays do. You can concatenate Strings, append to them, search for and replace substrings, and more. It takes more memory than a simple character array, but it is also more useful.
+
+For reference, character arrays are referred to as strings with a small s, and instances of the String class are referred to as Strings with a capital S. Note that constant strings, specified in "double quotes" are treated as char arrays, not instances of the String class.
+[%hardbreaks]
+
+--
+// OVERVIEW SECTION ENDS
+
+
+
+
+// HOW TO USE SECTION STARTS
+[#howtouse]
+--
+
+[float]
+=== Example Code
+
+[role="example"]
+* #EXAMPLE# (http://arduino.cc/en/Tutorial/StringConstructors[StringConstructors^])
+* #EXAMPLE# (http://arduino.cc/en/Tutorial/StringAdditionOperator[StringAdditionOperator^])
+* #EXAMPLE# (http://arduino.cc/en/Tutorial/StringIndexOf[StringIndexOf^])
+* #EXAMPLE# (http://arduino.cc/en/Tutorial/StringAppendOperator[StringAppendOperator^])
+* #EXAMPLE# (http://arduino.cc/en/Tutorial/StringLengthTrim[StringLengthTrim^])
+* #EXAMPLE# (http://arduino.cc/en/Tutorial/StringCaseChanges[StringCaseChanges^])
+* #EXAMPLE# (http://arduino.cc/en/Tutorial/StringReplace[StringReplace^])
+* #EXAMPLE# (http://arduino.cc/en/Tutorial/StringRemove[StringRemove^])
+* #EXAMPLE# (http://arduino.cc/en/Tutorial/StringCharacters[StringCharacters^])
+* #EXAMPLE# (http://arduino.cc/en/Tutorial/StringComparisonOperators[StringStartsWithEndsWith^])
+* #EXAMPLE# (http://arduino.cc/en/Tutorial/StringComparisonOperators[StringComparisonOperators^])
+* #EXAMPLE# (http://arduino.cc/en/Tutorial/StringSubstring[StringSubstring^])
+
+
+--
+// HOW TO USE SECTION ENDS
+
+
+// SEE ALSO SECTION STARTS
+[#see_also]
+--
+
+[float]
+=== See also
+
+[role="language"]
+
+--
+// SEE ALSO SECTION ENDS

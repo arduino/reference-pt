@@ -1,0 +1,56 @@
+---
+title: long()
+categories: [ "Variables" ]
+subCategories: [ "Conversion" ]
+---
+
+:source-highlighter: pygments
+:pygments-style: arduino
+
+
+
+= long()
+
+
+// OVERVIEW SECTION STARTS
+[#overview]
+--
+
+[float]
+=== Description
+Converts a value to the link:../../data-types/long[long] data type.
+[%hardbreaks]
+
+
+[float]
+=== Syntax
+`long(x)`
+
+
+[float]
+=== Parameters
+`x`: a value of any type
+
+[float]
+=== Returns
+`long`
+
+--
+// OVERVIEW SECTION ENDS
+
+
+
+
+// SEE ALSO SECTION STARTS
+[#see_also]
+--
+
+[float]
+=== See also
+
+[role="language"]
+* #LANGUAGE# link:../../data-types/long[long]
+
+
+--
+// SEE ALSO SECTION ENDS

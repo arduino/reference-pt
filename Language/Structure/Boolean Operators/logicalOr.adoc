@@ -1,0 +1,67 @@
+---
+title: "||"
+title_expanded: logical or
+categories: [ "Structure" ]
+subCategories: [ "Boolean Operators" ]
+---
+
+:source-highlighter: pygments
+:pygments-style: arduino
+
+
+
+= || Logical OR
+
+
+// OVERVIEW SECTION STARTS
+[#overview]
+--
+
+[float]
+=== Description
+*Logical OR* results in a `true` if either of the two operands is `true`.
+[%hardbreaks]
+
+--
+// OVERVIEW SECTION ENDS
+
+
+
+// HOW TO USE SECTION STARTS
+[#howtouse]
+--
+
+[float]
+=== Example Code
+This operator can be used inside the condition of an link:../../control-structures/if[if] statement.
+
+[source,arduino]
+----
+if (x > 0 || y > 0) { // if either x or y is greater than zero
+  // statements
+}
+----
+
+[%hardbreaks]
+
+[float]
+=== Notes and Warnings
+Do not confuse the boolean || (double pipe) operator with the bitwise OR operator | (single pipe).
+[%hardbreaks]
+
+--
+// HOW TO USE SECTION ENDS
+
+
+// SEE ALSO SECTION
+[#see_also]
+--
+
+[float]
+=== See also
+
+[role="language"]
+* #LANGUAGE# link:../../bitwise-operators/bitwiseor[| Bitwise OR]
+
+--
+// SEE ALSO SECTION ENDS

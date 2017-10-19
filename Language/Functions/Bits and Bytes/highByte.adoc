@@ -1,0 +1,53 @@
+---
+title: highByte()
+categories: [ "Functions" ]
+subCategories: [ "Bits and Bytes" ]
+---
+
+:source-highlighter: pygments
+:pygments-style: arduino
+
+
+
+= highByte()
+
+
+// OVERVIEW SECTION STARTS
+[#overview]
+--
+
+[float]
+=== Description
+Extracts the high-order (leftmost) byte of a word (or the second lowest byte of a larger data type).
+[%hardbreaks]
+
+
+[float]
+=== Syntax
+`highByte(x)`
+
+
+[float]
+=== Parameters
+`x`: a value of any type
+
+[float]
+=== Returns
+byte
+
+--
+// OVERVIEW SECTION ENDS
+
+
+// SEE ALSO SECTION
+[#see_also]
+--
+
+[float]
+=== See also
+
+[role="language"]
+* #LANGUAGE# link:../../../variables/data-types/word[word()]
+
+--
+// SEE ALSO SECTION ENDS

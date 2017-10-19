@@ -1,0 +1,67 @@
+---
+title: Keyboard.end()
+---
+:source-highlighter: pygments
+:pygments-style: arduino
+
+
+
+= Keyboard.end()
+
+
+// OVERVIEW SECTION STARTS
+[#overview]
+--
+
+[float]
+=== Description
+Stops the keyboard emulation to a connected computer. To start keyboard emulation, use link:../keyboardBegin[Keyboard.begin()].
+[%hardbreaks]
+
+
+[float]
+=== Syntax
+`Keyboard.end()`
+
+
+[float]
+=== Parameters
+Nothing
+
+[float]
+=== Returns
+Nothing
+
+--
+// OVERVIEW SECTION ENDS
+
+
+
+
+// HOW TO USE SECTION STARTS
+[#howtouse]
+--
+
+[float]
+=== Example Code
+// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+
+
+[source,arduino]
+----
+void setup() {
+  //start keyboard communication
+  Keyboard.begin();
+  //send a keystroke
+  Keyboard.print("Hello!");
+  //end keyboard communication
+  Keyboard.end();
+}
+
+void loop() {
+ //do nothing
+}
+----
+
+--
+// HOW TO USE SECTION ENDS

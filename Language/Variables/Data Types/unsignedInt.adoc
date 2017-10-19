@@ -1,0 +1,81 @@
+---
+title: unsignedInt
+categories: [ "Variables" ]
+subCategories: [ "Data Types" ]
+---
+
+:source-highlighter: pygments
+:pygments-style: arduino
+
+
+
+= unsigned int
+
+
+// OVERVIEW SECTION STARTS
+[#overview]
+--
+
+[float]
+=== Description
+On the Uno and other ATMEGA based boards, unsigned ints (unsigned integers) are the same as ints in that they store a 2 byte value. Instead of storing negative numbers however they only store positive values, yielding a useful range of 0 to 65,535 (2^16) - 1).
+
+The Due stores a 4 byte (32-bit) value, ranging from 0 to 4,294,967,295 (2^32 - 1).
+
+The difference between unsigned ints and (signed) ints, lies in the way the highest bit, sometimes referred to as the "sign" bit, is interpreted. In the Arduino int type (which is signed), if the high bit is a "1", the number is interpreted as a negative number, and the other 15 bits are interpreted with (http://en.wikipedia.org/wiki/2%27s_complement[2's complement math]).
+[%hardbreaks]
+
+--
+// OVERVIEW SECTION ENDS
+
+[float]
+=== Syntax
+`unsigned int var = val;`
+`var` - your unsigned int variable name
+`val` - the value you assign to that variable
+
+
+// HOW TO USE SECTION STARTS
+[#howtouse]
+--
+
+[float]
+=== Example Code
+// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+
+
+[source,arduino]
+----
+  unsigned int ledPin = 13;
+----
+[%hardbreaks]
+
+[float]
+=== Notes and Warnings
+When unsigned variables are made to exceed their maximum capacity they "roll over" back to 0, and also the other way around:
+
+[source,arduino]
+----
+unsigned int x;
+   x = 0;
+   x = x - 1;       // x now contains 65535 - rolls over in neg direction
+   x = x + 1;       // x now contains 0 - rolls over
+----
+
+
+--
+// HOW TO USE SECTION ENDS
+
+
+// SEE ALSO SECTION STARTS
+[#see_also]
+--
+
+[float]
+=== See also
+
+[role="language"]
+* #LANGUAGE# link:../../constants/integerconstants[Integer Constants]
+
+--
+// SEE ALSO SECTION ENDS

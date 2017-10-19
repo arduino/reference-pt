@@ -1,0 +1,41 @@
+---
+title: bitClear()
+categories: [ "Functions" ]
+subCategories: [ "Bits and Bytes" ]
+---
+
+:source-highlighter: pygments
+:pygments-style: arduino
+
+
+
+= bitClear()
+
+
+// OVERVIEW SECTION STARTS
+[#overview]
+--
+
+[float]
+=== Description
+Clears (writes a 0 to) a bit of a numeric variable.
+[%hardbreaks]
+
+
+[float]
+=== Syntax
+`bitClear(x, n)`
+
+
+[float]
+=== Parameters
+`x`: the numeric variable whose bit to clear
+
+`n`: which bit to clear, starting at 0 for the least-significant (rightmost) bit
+
+[float]
+=== Returns
+Nothing
+
+--
+// OVERVIEW SECTION ENDS

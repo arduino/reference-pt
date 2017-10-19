@@ -1,0 +1,78 @@
+---
+title: const
+categories: [ "Variables" ]
+subCategories: [ "Variable Scope & Qualifiers" ]
+---
+
+:source-highlighter: pygments
+:pygments-style: arduino
+
+
+
+= const keyword
+
+
+// OVERVIEW SECTION STARTS
+[#overview]
+--
+
+[float]
+=== Description
+The `const` keyword stands for constant. It is a variable _qualifier_ that modifies the behavior of the variable, making a variable "_read-only_". This means that the variable can be used just as any other variable of its type, but its value cannot be changed. You will get a compiler error if you try to assign a value to a `const` variable.
+
+Constants defined with the const keyword obey the rules of link:../scope[variable scoping] that govern other variables. This, and the pitfalls of using#define, makes the const keyword a superior method for defining constants and is preferred over using link:../define[[#define].
+[%hardbreaks]
+
+--
+// OVERVIEW SECTION ENDS
+
+
+
+
+// HOW TO USE SECTION STARTS
+[#howtouse]
+--
+
+[float]
+=== Example Code
+// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+
+
+[source,arduino]
+----
+const float pi = 3.14;
+float x;
+
+// ....
+
+x = pi * 2;    // it's fine to use const's in math
+
+pi = 7;        // illegal - you can't write to (modify) a constant
+
+
+----
+[%hardbreaks]
+
+[float]
+=== Notes and Warnings
+*`#define` or `const`*
+
+You can use either `const` or `#define` for creating numeric or string constants. For link:../array[arrays], you will need to use `const`. In general `const` is preferred over `#define` for defining constants.
+
+
+--
+// HOW TO USE SECTION ENDS
+
+
+// SEE ALSO SECTION STARTS
+[#see_also]
+--
+
+[float]
+=== See also
+
+[role="language"]
+* #LANGUAGE# link:../../../structure/further-syntax/define[#define]
+
+--
+// SEE ALSO SECTION ENDS

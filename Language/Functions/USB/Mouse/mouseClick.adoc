@@ -1,0 +1,97 @@
+---
+title: Mouse.click()
+---
+:source-highlighter: pygments
+:pygments-style: arduino
+
+
+
+= Mouse.click()
+
+
+// OVERVIEW SECTION STARTS
+[#overview]
+--
+
+[float]
+=== Description
+Sends a momentary click to the computer at the location of the cursor. This is the same as pressing and immediately releasing the mouse button.
+
+`Mouse.click()` defaults to the left mouse button.
+[%hardbreaks]
+
+
+[float]
+=== Syntax
+`Mouse.click();` +
+`Mouse.click(button);`
+
+
+[float]
+=== Parameters
+`button`: which mouse button to press - `char`
+
+* `MOUSE_LEFT` (default)
+* `MOUSE_RIGHT`
+* `MOUSE_MIDDLE`
+
+[float]
+=== Returns
+Nothing
+
+--
+// OVERVIEW SECTION ENDS
+
+
+
+
+// HOW TO USE SECTION STARTS
+[#howtouse]
+--
+
+[float]
+=== Example Code
+// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+
+
+[source,arduino]
+----
+void setup(){
+  pinMode(2,INPUT);
+  //initiate the Mouse library
+  Mouse.begin();
+}
+
+void loop(){
+  //if the button is pressed, send a Right mouse click
+  if(digitalRead(2) == HIGH){
+    Mouse.click();
+  }
+}
+----
+[%hardbreaks]
+
+[float]
+=== Notes and Warnings
+When you use the `Mouse.click()` command, the Arduino takes over your mouse! Make sure you have control before you use the command. A pushbutton to toggle the mouse control state is effective.
+
+--
+// HOW TO USE SECTION ENDS
+
+
+// SEE ALSO SECTION
+[#see_also]
+--
+
+[float]
+=== See also
+
+[role="language"]
+* #LANGUAGE# link:../mouseend[Mouse.end()]
+* #LANGUAGE# link:../mousemove[Mouse.move()]
+* #LANGUAGE# link:../mousepress[Mouse.press()]
+* #LANGUAGE# link:../mouserelease[Mouse.release()]
+* #LANGUAGE# link:../mouseispressed[Mouse.isPressed()]
+
+--
+// SEE ALSO SECTION ENDS

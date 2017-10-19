@@ -1,0 +1,81 @@
+---
+title: if(Serial)
+---
+:source-highlighter: pygments
+:pygments-style: arduino
+
+
+
+= if (Serial)
+
+
+// OVERVIEW SECTION STARTS
+[#overview]
+--
+
+[float]
+=== Description
+Indicates if the specified Serial port is ready.
+
+On the Leonardo, `if (Serial)` indicates whether or not the USB CDC serial connection is open. For all other instances, including `if (Serial1)` on the Leonardo, this will always returns true.
+
+This was introduced in Arduino 1.0.1.
+[%hardbreaks]
+
+
+[float]
+=== Syntax
+_All boards:_
+
+`if (Serial)`
+
+_Arduino Leonardo specific:_
+
+`if (Serial1)`
+
+_Arduino Mega specific:_
+
+`if (Serial1)` +
+`if (Serial2)` +
+`if (Serial3)`
+
+[float]
+=== Parameters
+Nothing
+
+[float]
+=== Returns
+`boolean` : returns true if the specified serial port is available. This will only return false if querying the Leonardo's USB CDC serial connection before it is ready.
+
+--
+// OVERVIEW SECTION ENDS
+
+
+
+
+// HOW TO USE SECTION STARTS
+[#howtouse]
+--
+
+[float]
+=== Example Code
+// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+
+
+[source,arduino]
+----
+void setup() {
+ //Initialize serial and wait for port to open:
+  Serial.begin(9600);
+  while (!Serial) {
+    ; // wait for serial port to connect. Needed for Leonardo only
+  }
+}
+
+void loop() {
+ //proceed normally
+}
+----
+
+--
+// HOW TO USE SECTION ENDS

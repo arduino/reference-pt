@@ -1,0 +1,88 @@
+---
+title: Mouse.end()
+---
+:source-highlighter: pygments
+:pygments-style: arduino
+
+
+
+= Mouse.end()
+
+
+// OVERVIEW SECTION STARTS
+[#overview]
+--
+
+[float]
+=== Description
+Stops emulating the mouse connected to a computer. To start control, use link:../mouseBegin[Mouse.begin()].
+[%hardbreaks]
+
+
+[float]
+=== Syntax
+`Mouse.end()`
+
+
+[float]
+=== Parameters
+Nothing
+
+[float]
+=== Returns
+Nothing
+
+--
+// OVERVIEW SECTION ENDS
+
+
+
+
+// HOW TO USE SECTION STARTS
+[#howtouse]
+--
+
+[float]
+=== Example Code
+// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+
+
+[source,arduino]
+----
+void setup(){
+  pinMode(2,INPUT);
+  //initiate the Mouse library
+  Mouse.begin();
+}
+
+void loop(){
+  //if the button is pressed, send a Right mouse click
+  //then end the Mouse emulation
+  if(digitalRead(2) == HIGH){
+    Mouse.click();
+    Mouse.end();
+  }
+}
+
+----
+
+--
+// HOW TO USE SECTION ENDS
+
+
+// SEE ALSO SECTION
+[#see_also]
+--
+
+[float]
+=== See also
+
+[role="language"]
+* #LANGUAGE# link:../mouseclick[Mouse.click()]
+* #LANGUAGE# link:../mousemove[Mouse.move()]
+* #LANGUAGE# link:../mousepress[Mouse.press()]
+* #LANGUAGE# link:../mouserelease[Mouse.release()]
+* #LANGUAGE# link:../mouseispressed[Mouse.isPressed()]
+
+--
+// SEE ALSO SECTION ENDS

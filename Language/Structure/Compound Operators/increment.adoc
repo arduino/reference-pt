@@ -1,0 +1,75 @@
+---
+title: "++"
+title_expanded: increment
+categories: [ "Structure" ]
+subCategories: [ "Compound Operators" ]
+---
+
+:source-highlighter: pygments
+:pygments-style: arduino
+
+
+
+= ++ Increment
+
+
+// OVERVIEW SECTION STARTS
+[#overview]
+--
+
+[float]
+=== Description
+Increments the value of a variable by 1.
+[%hardbreaks]
+
+
+[float]
+=== Syntax
+[source,arduino]
+----
+x++;  // increment x by one and returns the old value of x
+++x;  // increment x by one and returns the new value of x
+----
+
+[float]
+=== Parameters
+`x`: variable. *Allowed data types:* integer, long (possibly unsigned)
+
+[float]
+=== Returns
+The original or newly incremented value of the variable.
+
+--
+// OVERVIEW SECTION ENDS
+
+
+
+// HOW TO USE SECTION STARTS
+[#howtouse]
+--
+
+[float]
+=== Example Code
+
+[source,arduino]
+----
+x = 2;
+y = ++x;      // x now contains 3, y contains 3
+y = x++;      // x contains 4, but y still contains 3
+----
+
+--
+// HOW TO USE SECTION ENDS
+
+
+// SEE ALSO SECTION
+[#see_also]
+--
+
+[float]
+=== See also
+
+[role="language"]
+
+--
+// SEE ALSO SECTION ENDS

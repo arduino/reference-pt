@@ -1,0 +1,67 @@
+---
+title: Serial.flush()
+---
+:source-highlighter: pygments
+:pygments-style: arduino
+
+
+
+= flush()
+
+
+// OVERVIEW SECTION STARTS
+[#overview]
+--
+
+[float]
+=== Description
+Waits for the transmission of outgoing serial data to complete. (Prior to Arduino 1.0, this instead removed any buffered incoming serial data.)
+
+`flush()` inherits from the link:../flush[Stream] utility class.
+[%hardbreaks]
+
+
+[float]
+=== Syntax
+`Serial.flush()`
+
+_Arduino Mega only:_
+
+`Serial1.flush()` +
+`Serial2.flush()` +
+`Serial3.flush()`
+
+
+[float]
+=== Parameters
+Nothing
+
+[float]
+=== Returns
+Nothing
+
+--
+// OVERVIEW SECTION ENDS
+
+
+// SEE ALSO SECTION
+[#see_also]
+--
+
+[float]
+=== See also
+
+[role="language"]
+* #LANGUAGE# link:../begin[begin()]
+* #LANGUAGE# link:../end[end()]
+* #LANGUAGE# link:../available[available()]
+* #LANGUAGE# link:../read[read()]
+* #LANGUAGE# link:../peek[peek()]
+* #LANGUAGE# link:../print[print()]
+* #LANGUAGE# link:../println[println()]
+* #LANGUAGE# link:../write[write()]
+* #LANGUAGE# link:../serialEvent[SerialEvent()]
+* #LANGUAGE# link:../../stream/streamflush[stream.flush()]
+
+--
+// SEE ALSO SECTION ENDS

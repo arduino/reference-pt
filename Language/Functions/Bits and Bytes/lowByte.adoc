@@ -1,0 +1,52 @@
+---
+title: lowByte()
+categories: [ "Functions" ]
+subCategories: [ "Bits and Bytes" ]
+---
+
+:source-highlighter: pygments
+:pygments-style: arduino
+
+
+
+= lowByte()
+
+
+// OVERVIEW SECTION STARTS
+[#overview]
+--
+
+[float]
+=== Description
+Extracts the low-order (rightmost) byte of a variable (e.g. a word).
+[%hardbreaks]
+
+
+[float]
+=== Syntax
+`lowByte(x)`
+
+
+[float]
+=== Parameters
+`x`: a value of any type
+
+[float]
+=== Returns
+byte
+--
+// OVERVIEW SECTION ENDS
+
+
+// SEE ALSO SECTION
+[#see_also]
+--
+
+[float]
+=== See also
+
+[role="language"]
+* #LANGUAGE# link:../../../variables/data-types/word[word()]
+
+--
+// SEE ALSO SECTION ENDS

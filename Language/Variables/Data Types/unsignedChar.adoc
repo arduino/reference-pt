@@ -1,0 +1,63 @@
+---
+title: unsignedChar
+categories: [ "Variables" ]
+subCategories: [ "Data Types" ]
+---
+
+:source-highlighter: pygments
+:pygments-style: arduino
+
+
+
+= unsigned char
+
+
+// OVERVIEW SECTION STARTS
+[#overview]
+--
+
+[float]
+=== Description
+An unsigned data type that occupies 1 byte of memory. Same as the link:../byte[byte] datatype.
+
+The unsigned char datatype encodes numbers from 0 to 255.
+
+For consistency of Arduino programming style, the byte data type is to be preferred.
+[%hardbreaks]
+
+--
+// OVERVIEW SECTION ENDS
+
+
+
+
+// HOW TO USE SECTION STARTS
+[#howtouse]
+--
+
+[float]
+=== Example Code
+// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+
+
+[source,arduino]
+----
+unsigned char myChar = 240;
+----
+
+--
+// HOW TO USE SECTION ENDS
+
+
+// SEE ALSO SECTION STARTS
+[#see_also]
+--
+
+[float]
+=== See also
+
+[role="language"]
+* #LANGUAGE# link:../../../functions/communication/serial/println[Serial.println]
+
+--
+// SEE ALSO SECTION ENDS

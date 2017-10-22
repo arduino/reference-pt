@@ -17,8 +17,8 @@ subCategories: [ "Main" ]
 --
 
 [float]
-=== Description
-After creating a link:../setup[setup()] function, which initializes and sets the initial values, the `loop()` function does precisely what its name suggests, and loops consecutively, allowing your program to change and respond. Use it to actively control the Arduino board.
+=== Descrição
+Depois de criar uma função link:../setup[setup()], a qual inicializa e atribui os valores iniciais, a função `loop()` faz precisamente o que o seu nome sugere, e repete-se consecutivamente enaqunto a placa estiver ligada, permitindo o seu programa mudar e responder a essas mudanças. Use-a para controlar ativamente uma placa Arduino.
 [%hardbreaks]
 
 --
@@ -30,20 +30,20 @@ After creating a link:../setup[setup()] function, which initializes and sets the
 --
 
 [float]
-=== Example Code
+=== Código de Exemplo
 [source,arduino]
 ----
 int buttonPin = 3;
 
-// setup initializes serial and the button pin
+// setup inicializa a porta serial e o pino para o botão
 void setup()
 {
   beginSerial(9600);
   pinMode(buttonPin, INPUT);
 }
 
-// loop checks the button pin each time,
-// and will send serial if it is pressed
+// loop checa o estado do botão repetidamente, e envia
+// pela serial um 'H' se este está sendo pressionado
 void loop()
 {
   if (digitalRead(buttonPin) == HIGH)

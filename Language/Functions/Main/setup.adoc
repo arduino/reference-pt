@@ -17,8 +17,8 @@ subCategories: [ "Main" ]
 --
 
 [float]
-=== Description
-The `setup()` function is called when a sketch starts. Use it to initialize variables, pin modes, start using libraries, etc. The `setup()` function will only run once, after each powerup or reset of the Arduino board.
+=== Descrição
+A função `setup()` é chamada quando um sketch inicia. Use-a para inicializar variáveis, configurar o modo dos pinos(INPUT ou OUTPUT), inicializar bibliotecas, etc. A função `setup()` será executada apenas uma vez, apoós a placa ser alimentada ou acontecer um reset.
 [%hardbreaks]
 
 --
@@ -30,7 +30,7 @@ The `setup()` function is called when a sketch starts. Use it to initialize vari
 --
 
 [float]
-=== Example Code
+=== Código de Exemplo
 
 [source,arduino]
 ----
@@ -38,7 +38,9 @@ int buttonPin = 3;
 
 void setup()
 {
+  // Inicializa a porta serial
   Serial.begin(9600);
+  // configura o pino 3 como INPUT
   pinMode(buttonPin, INPUT);
 }
 

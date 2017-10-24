@@ -1,8 +1,8 @@
 ---
 title: ";"
 title_expanded: semicolon
-categories: [ "Structure" ]
-subCategories: [ "Further Syntax" ]
+categories: [ "Estruturas" ]
+subCategories: [ "Outros elementos da sintaxe" ]
 ---
 
 :source-highlighter: pygments

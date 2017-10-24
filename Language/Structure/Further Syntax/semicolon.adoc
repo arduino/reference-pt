@@ -1,7 +1,7 @@
 ---
 title: ";"
 title_expanded: semicolon
-categories: [ "Estruturas" ]
+categories: [ "Structure" ]
 subCategories: [ "Outros elementos da sintaxe" ]
 ---
 

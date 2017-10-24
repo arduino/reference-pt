@@ -59,7 +59,7 @@ Nada
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
 The código configura o pino digital 13 como `OUTPUT` e troca seu estado entre `HIGH` e `LOW`
 
-//[source,arduino]
+[source,arduino]
 ----
 void setup()
 {

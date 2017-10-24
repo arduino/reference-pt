@@ -1,7 +1,7 @@
 ---
 title: digitalWrite()
 categories: [ "Functions" ]
-subCategories: [ "Digital I/O" ]
+subCategories: [ "Entradas e Saídas Digitais" ]
 ---
 
 :source-highlighter: pygments
@@ -17,32 +17,32 @@ subCategories: [ "Digital I/O" ]
 --
 
 [float]
-=== Description
-Write a `HIGH` or a `LOW` value to a digital pin.
+=== Descrição
+Aciona um valor `HIGH` ou `LOW` em um pino digital.
 
-If the pin has been configured as an OUTPUT with `pinMode()`, its voltage will be set to the corresponding value: 5V (or 3.3V on 3.3V boards) for `HIGH`, 0V (ground) for `LOW`.
+Se o pino for configurado como saída (OUTPUT) com a função `pinMode()`, sua tensão será acionada para o valor correspondente: 5V (ou 3.3V em placas alimentadas com 3.3V como o DUE) para o valor `HIGH`, 0V (ou ground) para `LOW`.
 [%hardbreaks]
 
-If the pin is configured as an INPUT, `digitalWrite()` will enable (HIGH) or disable (LOW) the internal pullup on the input pin. It is recommended to set the pinMode() to INPUT_PULLUP to enable the internal pull-up resistor. See the digital pins tutorial for more information.
+Se o pino for configurado como entrada (INPUT), a função `digitalWrite()` irá ativar (HIGH) ou desativar (LOW) o resistor interno de pull-up no pino de entrada. É recomendado configurar pinMode() com INPUT_PULLUP para ativar o resistor interno de pull-up. Veja o tutorial sobre pinos digitais para mais informações.
 [%hardbreaks]
 
-If you do not set the `pinMode()` to `OUTPUT`, and connect an LED to a pin, when calling `digitalWrite(HIGH)`, the LED may appear dim. Without explicitly setting `pinMode()`, `digitalWrite()` will have enabled the internal pull-up resistor, which acts like a large current-limiting resistor.
+Se você não configurar o pino com `pinMode()` e `OUTPUT`, e conectar um LED ao pino, quando chamar `digitalWrite(HIGH)`, o LED pode aparecer um pouco apagado. Sem configurar explicitamente `pinMode()`, `digitalWrite()` irá apenas ativar o resistor de pull-up interno, que age como um grande resistor limitador de corrente.
 [%hardbreaks]
 
 [float]
-=== Syntax
-`digitalWrite(pin, value)`
+=== Sintaxe
+`digitalWrite(pino, valor)`
 
 
 [float]
-=== Parameters
-`pin`: the pin number
+=== Parâmetros
+`pino`: o número do pino
 
-`value`: `HIGH` or `LOW`
+`valor`: `HIGH` ou `LOW`
 
 [float]
-=== Returns
-Nothing
+=== Retorna
+Nada
 
 --
 // OVERVIEW SECTION ENDS
@@ -55,31 +55,30 @@ Nothing
 --
 
 [float]
-=== Example Code
+=== Código de Exemplo
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-The code makes the digital pin 13 `OUTPUT` and Togles it `HIGH` and `LOW`
+The código configura o pino digital 13 como `OUTPUT` e troca seu estado entre `HIGH` e `LOW`
 
 //[source,arduino]
 ----
 void setup()
 {
-  pinMode(13, OUTPUT);          // sets the digital pin 13 as output
+  pinMode(13, OUTPUT);          // configura o pino digital 13 como saída
 }
 
 void loop()
 {
-  digitalWrite(13, HIGH);       // sets the digital pin 13 on
-  delay(1000);                  // waits for a second
-  digitalWrite(13, LOW);        // sets the digital pin 13 off
-  delay(1000);                  // waits for a second
+  digitalWrite(13, HIGH);       // ativa o pino digital 13
+  delay(1000);                  // espera por um segundo
+  digitalWrite(13, LOW);        // desativa o pino digital 13
+  delay(1000);                  // espera por um segundo
 }
 ----
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
-The analog input pins can be used as digital pins, referred to as A0, A1, etc.
-
+=== Notas e Advertências
+Os pinos de entrada analógica podem ser também usados como pinos digitais, referidos como A0, A1, etc.
 --
 // HOW TO USE SECTION ENDS
 
@@ -89,10 +88,10 @@ The analog input pins can be used as digital pins, referred to as A0, A1, etc.
 --
 
 [float]
-=== See also
+=== Ver Também
 
 [role="example"]
-* #EXAMPLE# http://arduino.cc/en/Tutorial/DigitalPins[Tutorial: Digital Pins]
+* #EXEMPLO# http://arduino.cc/en/Tutorial/DigitalPins[Tutorial: Pinos digitais (Em Inglês)]
 
 --
 // SEE ALSO SECTION ENDS

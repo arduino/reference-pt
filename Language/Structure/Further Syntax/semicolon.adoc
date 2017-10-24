@@ -2,7 +2,7 @@
 title: ";"
 title_expanded: semicolon
 categories: [ "Structure" ]
-subCategories: [ "Further Syntax" ]
+subCategories: [ "Outros elementos da sintaxe" ]
 ---
 
 :source-highlighter: pygments
@@ -10,7 +10,7 @@ subCategories: [ "Further Syntax" ]
 
 
 
-= ; Semicolon
+= ; Ponto e vírgula
 
 
 // OVERVIEW SECTION STARTS
@@ -18,8 +18,8 @@ subCategories: [ "Further Syntax" ]
 --
 
 [float]
-=== Description
-Used to end a statement.
+=== Descrição
+Usado para encerrar um comando.
 [%hardbreaks]
 
 --
@@ -33,7 +33,7 @@ Used to end a statement.
 --
 
 [float]
-=== Example Code
+=== Código de Exemplo
 
 [source,arduino]
 ----
@@ -42,8 +42,8 @@ int a = 13;
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
-Forgetting to end a line in a semicolon will result in a compiler error. The error text may be obvious, and refer to a missing semicolon, or it may not. If an impenetrable or seemingly illogical compiler error comes up, one of the first things to check is a missing semicolon, in the immediate vicinity, preceding the line at which the compiler complained.
+=== Notas e Advertências
+Se esquecer de encerar uma linha com um ponto e vírgula irá resultar em um erro de compilação. A mensagem de erro pode ser óbvia, e mencionar a falta de um ponto e vírgula, mas pode também não mencionar a falta do mesmo. Se um erro de compilação incompreensível ou aparentemente ilógico aparecer, uma das primeiras coisas a se checar é a falta de um ponto e vírgula no código anterior a linha mencionada na mensagem de erro do compilador.
 [%hardbreaks]
 
 --
@@ -57,7 +57,7 @@ Forgetting to end a line in a semicolon will result in a compiler error. The err
 --
 
 [float]
-=== See also
+=== Ver também
 
 [role="language"]
 

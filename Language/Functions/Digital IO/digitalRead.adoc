@@ -1,6 +1,6 @@
 ---
 title: digitalRead()
-categories: [ "Funções" ]
+categories: [ "Functions" ]
 subCategories: [ "Entradas e Saídas Digitais" ]
 ---
 
@@ -84,10 +84,10 @@ Os pinos de entrada analógica podem ser também usados como pinos digitais, ref
 --
 
 [float]
-=== See also
+=== Ver Também
 
 [role="example"]
-* #EXAMPLE# Tutorial: (http://arduino.cc/en/Tutorial/DigitalPins[Digital Pins])
+* #EXEMPLO# Tutorial (Em Inglês): (http://arduino.cc/en/Tutorial/DigitalPins[Digital Pins])
 
 --
 // SEE ALSO SECTION ENDS

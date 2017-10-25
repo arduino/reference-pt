@@ -34,7 +34,7 @@ Configura a tensão de referência para a entrada analógica (o valor máximo do
 
 
 [float]
-=== Parameters
+=== Parâmetros
 `tipo`: qual tipo de referência usar (DEFAULT, INTERNAL, INTERNAL1V1, INTERNAL2V56 ou EXTERNAL).
 
 [float]

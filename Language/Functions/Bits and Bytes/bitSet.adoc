@@ -1,7 +1,7 @@
 ---
 title: bitSet()
 categories: [ "Functions" ]
-subCategories: [ "Bits and Bytes" ]
+subCategories: [ "Bits e Bytes" ]
 ---
 
 :source-highlighter: pygments
@@ -13,29 +13,29 @@ subCategories: [ "Bits and Bytes" ]
 
 
 // OVERVIEW SECTION STARTS
-Sets (writes a 1 to) a bit of a numeric variable.
+Ativa (escreve 1 em) um bit de uma variável numérica.
 [#overview]
 --
 
 [float]
-=== Description
+=== Descrição
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Sintaxe
 `bitSet(x, n)`
 
 
 [float]
-=== Parameters
-`x`: the numeric variable whose bit to set
+=== Parâmetros
+`x`: a variável numérica cujo bit se quer ativar
 
-`n`: which bit to set, starting at 0 for the least-significant (rightmost) bit
+`n`: qual bit ativar, começando em 0 para o bit menos significativo (mais à direita)
 
 [float]
-=== Returns
-Nothing
+=== Retorna
+Nada
 
 --
 // OVERVIEW SECTION ENDS

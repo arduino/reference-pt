@@ -1,0 +1,9 @@
+pipeline:
+  trigger:
+    image: plugins/downstream
+    server: https://drone.arduino.cc
+    secrets: [ downstream_token ]
+    repositories:
+      - bcmi-labs/reference
+    when:
+      branch: [master]

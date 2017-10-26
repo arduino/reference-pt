@@ -1,7 +1,7 @@
 ---
 title: bitRead()
 categories: [ "Functions" ]
-subCategories: [ "Bits and Bytes" ]
+subCategories: [ "Bits e Bytes" ]
 ---
 
 :source-highlighter: pygments
@@ -17,26 +17,26 @@ subCategories: [ "Bits and Bytes" ]
 --
 
 [float]
-=== Description
-Reads a bit of a number.
+=== Descrição
+Lê o valor de um bit em um número.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Sintaxe
 `bitRead(x, n)`
 
 
 [float]
-=== Parameters
-`x`: the number from which to read
+=== Parâmetros
+`x`: o número do qual se quer ler o bit
 
-`n`: which bit to read, starting at 0 for the least-significant (rightmost) bit
+`n`: qual bit ler, começando em 0 para o bit menos significativo (mais à direita)
 
 
 [float]
-=== Returns
-the value of the bit (0 or 1).
+=== Retorna
+O valor do bit (0 ou 1).
 
 --
 // OVERVIEW SECTION ENDS

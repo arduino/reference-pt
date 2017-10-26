@@ -1,7 +1,7 @@
 ---
 title: highByte()
 categories: [ "Functions" ]
-subCategories: [ "Bits and Bytes" ]
+subCategories: [ "Bits e Bytes" ]
 ---
 
 :source-highlighter: pygments
@@ -17,22 +17,22 @@ subCategories: [ "Bits and Bytes" ]
 --
 
 [float]
-=== Description
-Extracts the high-order (leftmost) byte of a word (or the second lowest byte of a larger data type).
+=== Descrição
+Extrai o byte mais significativo (o mais à esquerda) de uma word (valor de 16 bits), ou o segundo byte menos significativo de um tipo de dado maior.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Sintaxe
 `highByte(x)`
 
 
 [float]
-=== Parameters
-`x`: a value of any type
+=== Parâmetros
+`x`: um valor de qualquer tipo
 
 [float]
-=== Returns
+=== Retorna
 byte
 
 --
@@ -44,10 +44,10 @@ byte
 --
 
 [float]
-=== See also
+=== Ver Também
 
 [role="language"]
-* #LANGUAGE# link:../../../variables/data-types/word[word()]
+* #LINGUAGEM# link:../../../variables/data-types/word[word()]
 
 --
 // SEE ALSO SECTION ENDS

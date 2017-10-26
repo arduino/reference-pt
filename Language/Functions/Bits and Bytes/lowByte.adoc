@@ -1,7 +1,7 @@
 ---
 title: lowByte()
 categories: [ "Functions" ]
-subCategories: [ "Bits and Bytes" ]
+subCategories: [ "Bits e Bytes" ]
 ---
 
 :source-highlighter: pygments
@@ -17,22 +17,22 @@ subCategories: [ "Bits and Bytes" ]
 --
 
 [float]
-=== Description
-Extracts the low-order (rightmost) byte of a variable (e.g. a word).
+=== Descrição
+Extrai o byte menos significativo (mais à direita) de uma variável (ex. uma word).
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Sintaxe
 `lowByte(x)`
 
 
 [float]
-=== Parameters
-`x`: a value of any type
+=== Parâmetros
+`x`: um valor de qualquer tipo
 
 [float]
-=== Returns
+=== Retorna
 byte
 --
 // OVERVIEW SECTION ENDS
@@ -43,10 +43,10 @@ byte
 --
 
 [float]
-=== See also
+=== Ver Também
 
 [role="language"]
-* #LANGUAGE# link:../../../variables/data-types/word[word()]
+* #LINGUAGEM# link:../../../variables/data-types/word[word()]
 
 --
 // SEE ALSO SECTION ENDS

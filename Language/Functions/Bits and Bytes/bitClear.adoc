@@ -1,7 +1,7 @@
 ---
 title: bitClear()
 categories: [ "Functions" ]
-subCategories: [ "Bits and Bytes" ]
+subCategories: [ "Bits e Bytes" ]
 ---
 
 :source-highlighter: pygments
@@ -17,25 +17,25 @@ subCategories: [ "Bits and Bytes" ]
 --
 
 [float]
-=== Description
-Clears (writes a 0 to) a bit of a numeric variable.
+=== Descrição
+Limpa (escreve um 0) em um bit de uma variável numérica.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Sintaxe
 `bitClear(x, n)`
 
 
 [float]
-=== Parameters
-`x`: the numeric variable whose bit to clear
+=== Parâmetros
+`x`: a variável numérica da qual se deseja limpar um bit
 
-`n`: which bit to clear, starting at 0 for the least-significant (rightmost) bit
+`n`: qual bit limpar, começando em 0 para o bit menos significativo (o bit mais à direta)
 
 [float]
-=== Returns
-Nothing
+=== Retorna
+Nada
 
 --
 // OVERVIEW SECTION ENDS

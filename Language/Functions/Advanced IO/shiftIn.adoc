@@ -38,11 +38,11 @@ Nota: essa é uma implementação por software; O Arduino também provê uma lin
 `clockPin`: o pino alternado para sinalizar uma leitura de *dataPin*
 
 `bitOrder`: em que ordem receber os bits; pode ser *MSBFIRST* ou *LSBFIRST*.
-Respectivamente primeiro o bite mais significativo (Most Significant Bit First), ou o primeiro o bit menso significativo (Least Significant Bit First)
+Respectivamente primeiro o bit mais significativo (Most Significant Bit First), ou o primeiro o bit menos significativo (Least Significant Bit First)
 
 [float]
 === Retorna
-o valor lido (byte)
+O valor lido (byte)
 
 --
 // OVERVIEW SECTION ENDS

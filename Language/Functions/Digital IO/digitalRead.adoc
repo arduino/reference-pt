@@ -49,7 +49,7 @@ Lê o valor de um pino digital especificado, que pode ser `HIGH` ou `LOW`.
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
 Aciona o pino 13 para o mesmo valor que o pino 7, declarado como entrada.
 
-//[source,arduino]
+[source,arduino]
 ----
 int ledPin = 13;   // LED conectado ao pino digital 13
 int inPin = 7;     // botão conectado ao pino digital 7

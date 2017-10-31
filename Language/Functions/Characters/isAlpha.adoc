@@ -1,7 +1,7 @@
 ﻿---
 title: "isAlpha()"
 categories: [ "Functions" ]
-subCategories: [ "Characters" ]
+subCategories: [ "Caracteres" ]
 ---
 
 :source-highlighter: pygments
@@ -17,25 +17,25 @@ subCategories: [ "Characters" ]
 --
 
 [float]
-=== Description
-Analyse if a char is alpha (that is a letter). Returns true if thisChar contains a letter. 
+=== Descrição
+Analisa se um caractere é alfabético (isto é, se é uma letra). Retorna true (verdadeiro) se thisChar contém uma letra. 
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Sintaxe
 [source,arduino]
 ----
 `isAlpha(thisChar)`
 ----
 
 [float]
-=== Parameters
-`thisChar`: variable. *Allowed data types:* char
+=== Parâmetros
+`thisChar`: variável. *Tipos de dados permitidos:* char
 
 [float]
-=== Returns
-`true`: if thisChar is alpha.
+=== Retorna
+`true`: se thisChar é um caractere alfabético.
 
 --
 // OVERVIEW SECTION ENDS
@@ -47,11 +47,11 @@ Analyse if a char is alpha (that is a letter). Returns true if thisChar contains
 --
 
 [float]
-=== Example Code
-
+=== Código de Exemplo
+O código a seguir testa se uma variável chamada this é uma letra.
 [source,arduino]
 ----
-if (isAlpha(this))      // tests if this is a letter
+if (isAlpha(this))      // testa se a variável this é uma letra
 {
 	Serial.println("The character is alphanumeric");
 }
@@ -71,13 +71,13 @@ else
 --
 
 [float]
-=== See also
+=== Ver Também
 
 [role="language"]
-* #LANGUAGE#  link:../../../variables/data-types/char[char]
-* #LANGUAGE#  link:../../../structure/control-structure/if[if (conditional operators)]
-* #LANGUAGE#  link:../../../structure/control-structure/while[while (conditional operators)]
-* #LANGUAGE# link:../../communication/serial/read[read()]
+* #LINGUAGEM#  link:../../../variables/data-types/char[char]
+* #LINGUAGEM#  link:../../../structure/control-structure/if[if (operadores condicionais)]
+* #LINGUAGEM#  link:../../../structure/control-structure/while[while (operadores condicionais)]
+* #LINGUAGEM# link:../../communication/serial/read[read()]
 
 --
 // SEE ALSO SECTION ENDS

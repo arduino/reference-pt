@@ -1,7 +1,7 @@
 ---
 title: "isAlphaNumeric()"
 categories: [ "Functions" ]
-subCategories: [ "Characters" ]
+subCategories: [ "Caracteres" ]
 ---
 
 :source-highlighter: pygments
@@ -17,25 +17,25 @@ subCategories: [ "Characters" ]
 --
 
 [float]
-=== Description
-Analyse if a char is alphanumeric (that is a letter or a numbers). Returns true if thisChar contains either a number or a letter. 
+=== Descrição
+Analisa se um caractere é alfanumérico (isto é, uma letra ou um número). Retorna true (verdadeiro) se thisChar contém ou uma letra ou um número. 
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Sintaxe
 [source,arduino]
 ----
 `isAlphaNumeric(thisChar)`
 ----
 
 [float]
-=== Parameters
-`thisChar`: variable. *Allowed data types:* char
+=== Parâmetros
+`thisChar`: variável. *Tipos de dados permitidos:* char
 
 [float]
-=== Returns
-`true`: if thisChar is alphanumeric.
+=== Retorna
+`true`: se a variável thisChar é uma letra ou um número..
 
 --
 // OVERVIEW SECTION ENDS
@@ -47,11 +47,11 @@ Analyse if a char is alphanumeric (that is a letter or a numbers). Returns true 
 --
 
 [float]
-=== Example Code
+=== Código de Exemplo
 
 [source,arduino]
 ----
-if (isAlphaNumeric(this))      // tests if this isa letter or a number
+if (isAlphaNumeric(this))      // testa se this é uma letra ou um número
 {
 	Serial.println("The character is alphanumeric");
 }
@@ -71,13 +71,13 @@ else
 --
 
 [float]
-=== See also
+=== Ver Também
 
 [role="language"]
-* #LANGUAGE#  link:../../../variables/data-types/char[char]
-* #LANGUAGE#  link:../../../structure/control-structure/if[if (conditional operators)]
-* #LANGUAGE#  link:../../../structure/control-structure/while[while (conditional operators)]
-* #LANGUAGE# link:../../communication/serial/read[read()]
+* #LINGUAGEM#  link:../../../variables/data-types/char[char]
+* #LINGUAGEM#  link:../../../structure/control-structure/if[if (operadores condicionais)]
+* #LINGUAGEM#  link:../../../structure/control-structure/while[while (operadores condicionais)]
+* #LINGUAGEM# link:../../communication/serial/read[read()]
 
 --
 // SEE ALSO SECTION ENDS

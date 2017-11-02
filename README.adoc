@@ -1,5 +1,6 @@
 = Reference-pt
-Referência-pt é o repositório da documentação de referência para a sintaxe da linguagem Arduino em *Português*.  
+
+Reference-pt é o repositório da documentação de referência para a sintaxe da linguagem Arduino em *Português*.  
 Todos os arquivos da referência devem estar no formato AsciiDoc.
 Obrigado por se interessar em contribuir para a documentação de referência, isso ajuda bastante toda a comunidade Arduino.
 

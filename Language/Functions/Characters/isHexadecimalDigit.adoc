@@ -1,7 +1,7 @@
 ﻿---
 title: "isHexadecimalDigit()"
 categories: [ "Functions" ]
-subCategories: [ "Characters" ]
+subCategories: [ "Caracteres" ]
 ---
 
 :source-highlighter: pygments
@@ -17,25 +17,25 @@ subCategories: [ "Characters" ]
 --
 
 [float]
-=== Description
-Analyse if a char is an hexadecimal digit (A-F, 0-9). Returns true if thisChar contains an hexadecimal digit. 
+=== Descrição
+Analisa se uma caractere é um digito hexadecimal (A-F, 0-9). Retorna true se thisChar contém um digito hexadecimal. 
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Sintaxe
 [source,arduino]
 ----
 `isHexadecilamDigit(thisChar)`
 ----
 
 [float]
-=== Parameters
-`thisChar`: variable. *Allowed data types:* char
+=== Parâmetros
+`thisChar`: variável. *Tipos de dados permitidos:* char
 
 [float]
-=== Returns
-`true`: if thisChar is an hexadecimal digit.
+=== Retorna
+`true`: se thisChar é um digito hexadecimal.
 
 --
 // OVERVIEW SECTION ENDS
@@ -47,11 +47,11 @@ Analyse if a char is an hexadecimal digit (A-F, 0-9). Returns true if thisChar c
 --
 
 [float]
-=== Example Code
+=== Código de Exemplo
 
 [source,arduino]
 ----
-if (isHexadecimalDigit(this))      // tests if this is an hexadecimal digit
+if (isHexadecimalDigit(this))      // testa se this é um digito hexadecimal
 {
 	Serial.println("The character is an hexadecimal digit");
 }
@@ -71,13 +71,13 @@ else
 --
 
 [float]
-=== See also
+=== Ver Também
 
 [role="language"]
-* #LANGUAGE#  link:../../../variables/data-types/char[char]
-* #LANGUAGE#  link:../../../structure/control-structure/if[if (conditional operators)]
-* #LANGUAGE#  link:../../../structure/control-structure/while[while (conditional operators)]
-* #LANGUAGE# link:../../communication/serial/read[read()]
+* #INGUAGEM#  link:../../../variables/data-types/char[char]
+* #LINGUAGEM#  link:../../../structure/control-structure/if[if (operadores condicionais)]
+* #LINGUAGEM#  link:../../../structure/control-structure/while[while (operadores condicionais)]
+* #LINGUAGEM# link:../../communication/serial/read[read()]
 
 --
 // SEE ALSO SECTION ENDS

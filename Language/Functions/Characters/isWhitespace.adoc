@@ -1,7 +1,7 @@
 ﻿---
 title: "isWhitespace()"
 categories: [ "Functions" ]
-subCategories: [ "Characters" ]
+subCategories: [ "Caracteres" ]
 ---
 
 :source-highlighter: pygments
@@ -17,26 +17,26 @@ subCategories: [ "Characters" ]
 --
 
 [float]
-=== Description
-Analyse if a char is a white space, that is space, formfeed ('\f'), newline ('\n'), carriage return ('\r'), horizontal tab ('\t'), and vertical tab ('\v')). 
-Returns true if thisChar contains a white space. 
+=== Descrição
+Analisa se um caractere é um espaço em branco, isto é o próprio caractere de espaço (' '), formfeed ('\f'), nova linha ('\n'), retorno ('\r'), tab horizontal tab ('\t') e tab vertical ('\v')). 
+Retorna true se thisChar contém um espaço em branco. 
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Sintaxe
 [source,arduino]
 ----
 `isWhitespace(thisChar)`
 ----
 
 [float]
-=== Parameters
-`thisChar`: variable. *Allowed data types:* char
+=== Parâmetros
+`thisChar`: variável. *Tipos de dados permitidos:* char
 
 [float]
-=== Returns
-`true`: if thisChar is a white space.
+=== Retorna
+`true`: se thisChar é um caractere de espaço em branco.
 
 --
 // OVERVIEW SECTION ENDS
@@ -48,11 +48,11 @@ Returns true if thisChar contains a white space.
 --
 
 [float]
-=== Example Code
+=== Código de Exemplo
 
 [source,arduino]
 ----
-if (isWhitespace(this))      // tests if this is a white space
+if (isWhitespace(this))      // testa se this é um caractere de espaço em branco
 {
 	Serial.println("The character is a white space");
 }
@@ -72,13 +72,13 @@ else
 --
 
 [float]
-=== See also
+=== Ver Também
 
 [role="language"]
-* #LANGUAGE#  link:../../../variables/data-types/char[char]
-* #LANGUAGE#  link:../../../structure/control-structure/if[if (conditional operators)]
-* #LANGUAGE#  link:../../../structure/control-structure/while[while (conditional operators)]
-* #LANGUAGE# link:../../communication/serial/read[read()]
+* #LINGUAGEM#  link:../../../variables/data-types/char[char]
+* #LINGUAGEM#  link:../../../structure/control-structure/if[if (operadores condicionais)]
+* #LINGUAGEM#  link:../../../structure/control-structure/while[while (operadores condicionais)]
+* #LINGUAGEM# link:../../communication/serial/read[read()]
 
 --
 // SEE ALSO SECTION ENDS

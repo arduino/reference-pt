@@ -1,7 +1,7 @@
 ﻿---
 title: "isPunct()"
 categories: [ "Functions" ]
-subCategories: [ "Characters" ]
+subCategories: [ "Caracteres" ]
 ---
 
 :source-highlighter: pygments
@@ -17,25 +17,25 @@ subCategories: [ "Characters" ]
 --
 
 [float]
-=== Description
-Analyse if a char is punctuation (that is a comma, a semicolon, an exlamation mark and so on). Returns true if thisChar is punctuation. 
+=== Descrição
+Analisa se uma caractere é pontuação (isto é, uma vírgula, um ponto-e-vírgula, um ponto de exlamação etc). Retorna true se thisChar é um caractere de pontuação. 
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Sintaxe
 [source,arduino]
 ----
 `isPunct(thisChar)`
 ----
 
 [float]
-=== Parameters
-`thisChar`: variable. *Allowed data types:* char
+=== Parâmetros
+`thisChar`: variável. *Tipos de dados permitidos:* char
 
 [float]
-=== Returns
-`true`: if thisChar is a punctuation.
+=== Retorna
+`true`: se thisChar é um caractere de pontuação
 
 --
 // OVERVIEW SECTION ENDS
@@ -47,11 +47,11 @@ Analyse if a char is punctuation (that is a comma, a semicolon, an exlamation ma
 --
 
 [float]
-=== Example Code
+=== Código de Exemplo
 
 [source,arduino]
 ----
-if (isPunct(this))      // tests if this is a letter
+if (isPunct(this))      // testa se this é um caractere de pontuação
 {
 	Serial.println("The character is a punctuation");
 }
@@ -71,13 +71,13 @@ else
 --
 
 [float]
-=== See also
+=== Ver Também
 
 [role="language"]
-* #LANGUAGE#  link:../../../variables/data-types/char[char]
-* #LANGUAGE#  link:../../../structure/control-structure/if[if (conditional operators)]
-* #LANGUAGE#  link:../../../structure/control-structure/while[while (conditional operators)]
-* #LANGUAGE# link:../../communication/serial/read[read()]
+* #LINGUAGEM#  link:../../../variables/data-types/char[char]
+* #LINGUAGEM#  link:../../../structure/control-structure/if[if (operadores condicionais)]
+* #LINGUAGEM#  link:../../../structure/control-structure/while[while (operadores condicionais)]
+* #LINGUAGEM#  link:../../communication/serial/read[read()]
 
 --
 // SEE ALSO SECTION ENDS

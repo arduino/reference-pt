@@ -74,7 +74,7 @@ else
 === Ver Também
 
 [role="language"]
-* #LiNGUAGEM#  link:../../../variables/data-types/char[char]
+* #LINGUAGEM#  link:../../../variables/data-types/char[char]
 * #LINGUAGEM#  link:../../../structure/control-structure/if[if (operadores condicionais)]
 * #LINGUAGEM#  link:../../../structure/control-structure/while[while (operadores condicionais)]
 * #LINGUAGEM# link:../../communication/serial/read[read()]

@@ -1,7 +1,7 @@
 ﻿---
 title: "isUpperCase()"
 categories: [ "Functions" ]
-subCategories: [ "Characters" ]
+subCategories: [ "Caracteres" ]
 ---
 
 :source-highlighter: pygments
@@ -17,25 +17,25 @@ subCategories: [ "Characters" ]
 --
 
 [float]
-=== Description
-Analyse if a char is upper case (that is a letter in upper case). Returns true if thisChar is upper case. 
+=== Descrição
+Analisa se uma caractere é maiúsculo (isto é, uma letra maisúcula). Retorna true se thisChar é uma letra maiúscula.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Sintaxe
 [source,arduino]
 ----
 `isUpperCase(thisChar)`
 ----
 
 [float]
-=== Parameters
-`thisChar`: variable. *Allowed data types:* char
+=== Parâmetros
+`thisChar`: variável. *Tipos de dados permitidos:* char
 
 [float]
-=== Returns
-`true`: if thisChar is upper case.
+=== Retorna
+`true`: se thisChar é uma letra maiúscula.
 
 --
 // OVERVIEW SECTION ENDS
@@ -47,13 +47,13 @@ Analyse if a char is upper case (that is a letter in upper case). Returns true i
 --
 
 [float]
-=== Example Code
+=== Código de Exemplo
 
 [source,arduino]
 ----
-if (isAlpha(this))      // tests if this is a letter
+if (isUpperCase(this))      // testa se this é uma letra maiúscula
 {
-	Serial.println("The character is UPPER case");
+	Serial.println("The character is upper case");
 }
 else
 {
@@ -71,13 +71,13 @@ else
 --
 
 [float]
-=== See also
+=== Ver Também
 
 [role="language"]
-* #LANGUAGE#  link:../../../variables/data-types/char[char]
-* #LANGUAGE#  link:../../../structure/control-structure/if[if (conditional operators)]
-* #LANGUAGE#  link:../../../structure/control-structure/while[while (conditional operators)]
-* #LANGUAGE# link:../../communication/serial/read[read()]
+* #LINGUAGEM#  link:../../../variables/data-types/char[char]
+* #LINGUAGEM#  link:../../../structure/control-structure/if[if (operadores condicionais)]
+* #LINGUAGEM#  link:../../../structure/control-structure/while[while (operadores condicionais)]
+* #LINGUAGEM# link:../../communication/serial/read[read()]
 
 --
 // SEE ALSO SECTION ENDS

@@ -1,7 +1,7 @@
 ﻿---
 title: "isSpace()"
 categories: [ "Functions" ]
-subCategories: [ "Characters" ]
+subCategories: [ "Caracteres" ]
 ---
 
 :source-highlighter: pygments
@@ -17,25 +17,25 @@ subCategories: [ "Characters" ]
 --
 
 [float]
-=== Description
-Analyse if a char is the space character. Returns true if thisChar contains a letter. 
+=== Descrição
+Analisa se uma caractere é o caractere de espaço. Retorna true se thisChar contém um espaço. 
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Sintaxe
 [source,arduino]
 ----
 `isSpace(thisChar)`
 ----
 
 [float]
-=== Parameters
-`thisChar`: variable. *Allowed data types:* char
+=== Parâmetros
+`thisChar`: variável. *Tipos de dados permitidos:* char
 
 [float]
-=== Returns
-`true`: if thisChar is a space.
+=== Retorna
+`true`: se thisChar é o caractere de espaço.
 
 --
 // OVERVIEW SECTION ENDS
@@ -47,11 +47,11 @@ Analyse if a char is the space character. Returns true if thisChar contains a le
 --
 
 [float]
-=== Example Code
+=== Código de Exemplo
 
 [source,arduino]
 ----
-if (isSpace(this))      // tests if this is the space character
+if (isSpace(this))      // testa se this é o caractere de espaço
 {
 	Serial.println("The character is a space");
 }
@@ -71,13 +71,13 @@ else
 --
 
 [float]
-=== See also
+=== Ver Também
 
 [role="language"]
-* #LANGUAGE#  link:../../../variables/data-types/char[char]
-* #LANGUAGE#  link:../../../structure/control-structure/if[if (conditional operators)]
-* #LANGUAGE#  link:../../../structure/control-structure/while[while (conditional operators)]
-* #LANGUAGE# link:../../communication/serial/read[read()]
+* #LINGUAGEM#  link:../../../variables/data-types/char[char]
+* #LINGUAGEM#  link:../../../structure/control-structure/if[if (operadores condicionais)]
+* #LINGUAGEM#  link:../../../structure/control-structure/while[while (operadores condicionais)]
+* #LINGUAGEM# link:../../communication/serial/read[read()]
 
 --
 // SEE ALSO SECTION ENDS

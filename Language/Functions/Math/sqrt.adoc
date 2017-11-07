@@ -1,7 +1,7 @@
 ---
 title: sqrt()
 categories: [ "Functions" ]
-subCategories: [ "Math" ]
+subCategories: [ "Funções Matemáticas" ]
 ---
 
 :source-highlighter: pygments
@@ -13,27 +13,27 @@ subCategories: [ "Math" ]
 
 
 // OVERVIEW SECTION STARTS
-Calculates the square root of a number.
+
 [#overview]
 --
 
 [float]
-=== Description
+=== Descrição
 [%hardbreaks]
-
+Calcula a raiz quadrada de um número.
 
 [float]
-=== Syntax
+=== Sintaxe
 `sqrt(x)`
 
 
 [float]
-=== Parameters
-`x`: the number, any data type
+=== Parâmetros
+`x`: o número a se calcular a raiz quadrada, qualquer tipo de dados
 
 [float]
-=== Returns
-The number's square root. (double)
+=== Retorna
+A raiz quadrada do número. (double)
 
 --
 // OVERVIEW SECTION ENDS

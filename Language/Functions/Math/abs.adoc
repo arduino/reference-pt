@@ -1,7 +1,7 @@
 ---
 title: abs()
 categories: [ "Functions" ]
-subCategories: [ "Math" ]
+subCategories: [ "Funções Matemáticas" ]
 ---
 
 :source-highlighter: pygments
@@ -17,24 +17,23 @@ subCategories: [ "Math" ]
 --
 
 [float]
-=== Description
-Calculates the absolute of two numbers.
+=== Descrição
+Calcula o módulo (ou valor absoluto) de um número.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Sintaxe
 `abs(x)`
 
 [float]
-=== Parameters
-`x`: the number
-
+=== Parâmetros
+`x`: o número do qual se deseja saber o módulo
 [float]
-=== Returns
-`x`: if x is greater than or equal to 0.
+=== Retorna
+`x`: se x é maior ou igual a 0.
 
-`-x`: if x is less than 0.
+`-x`: se x é menor que 0.
 
 --
 // OVERVIEW SECTION ENDS
@@ -48,14 +47,14 @@ Calculates the absolute of two numbers.
 
 
 [float]
-=== Notes and Warnings
-Because of the way the abs() function is implemented, avoid using other functions inside the brackets, it may lead to incorrect results.
+=== Notas e Advertências
+Por causa da forma em que a função abs() é implementada, evite usar outras funções dentro dos parênteses, isso pode levar a resultados incorretos.
 [source,arduino]
 ----
-abs(a++);   // avoid this - yields incorrect results
+abs(a++);   // evitar isso - causa resultados incorretos
 
-abs(a);         // use this instead -
-a++;        // keep other math outside the function
+abs(a);     // Ao invés disso, usar esta forma
+a++;        // manter o incremento fora da função
 ----
 [%hardbreaks]
 

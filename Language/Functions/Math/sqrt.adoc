@@ -19,8 +19,9 @@ subCategories: [ "Funções Matemáticas" ]
 
 [float]
 === Descrição
-[%hardbreaks]
 Calcula a raiz quadrada de um número.
+[%hardbreaks]
+
 
 [float]
 === Sintaxe

@@ -26,7 +26,7 @@ Analisa se uma caractere é o caractere de espaço. Retorna true se thisChar con
 === Sintaxe
 [source,arduino]
 ----
-`isSpace(thisChar)`
+isSpace(thisChar)
 ----
 
 [float]

@@ -1,7 +1,7 @@
 ---
 title: sq()
 categories: [ "Functions" ]
-subCategories: [ "Math" ]
+subCategories: [ "Funções Matemáticas" ]
 ---
 
 :source-highlighter: pygments
@@ -17,23 +17,23 @@ subCategories: [ "Math" ]
 --
 
 [float]
-=== Description
-Calculates the square of a number: the number multiplied by itself.
+=== Descrição
+Calcula o quadrado de um número: o número multiplicado por si mesmo.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Sintaxe
 `sq(x)`
 
 
 [float]
-=== Parameters
-`x`: the number, any data type
+=== Parâmetros
+`x`: o número que se deseja calcular o quadrado, qualquer tipo de dados
 
 [float]
-=== Returns
-The square of the number. (double)
+=== Retorna
+O quadrado do número. (double)
 
 --
 // OVERVIEW SECTION ENDS

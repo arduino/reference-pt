@@ -26,7 +26,7 @@ Analisa se uma caractere é um digito (isto é, um número). Retorna true (verda
 === Sintaxe
 [source,arduino]
 ----
-`isDigit(thisChar)`
+isDigit(thisChar)
 ----
 
 [float]

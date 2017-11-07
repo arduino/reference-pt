@@ -26,7 +26,7 @@ Analisa se uma caractere é maiúsculo (isto é, uma letra maisúcula). Retorna 
 === Sintaxe
 [source,arduino]
 ----
-`isUpperCase(thisChar)`
+isUpperCase(thisChar)
 ----
 
 [float]

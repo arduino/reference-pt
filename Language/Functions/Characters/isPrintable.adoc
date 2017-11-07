@@ -26,7 +26,7 @@ Analisa se uma caractere é imprimível (isto é, qualquer caractere que produz 
 === Sintaxe
 [source,arduino]
 ----
-`isAlpha(thisChar)`
+isPrintable(thisChar)
 ----
 
 [float]

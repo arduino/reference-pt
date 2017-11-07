@@ -26,7 +26,7 @@ Analisa se uma caractere é um digito hexadecimal (A-F, 0-9). Retorna true se th
 === Sintaxe
 [source,arduino]
 ----
-`isHexadecilamDigit(thisChar)`
+isHexadecilamDigit(thisChar)
 ----
 
 [float]

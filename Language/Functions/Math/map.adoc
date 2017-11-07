@@ -1,7 +1,7 @@
 ---
 title: map()
 categories: [ "Functions" ]
-subCategories: [ "Math" ]
+subCategories: [ "Funções Matemáticas" ]
 ---
 
 :source-highlighter: pygments
@@ -9,7 +9,7 @@ subCategories: [ "Math" ]
 
 
 
-= map(value, fromLow, fromHigh, toLow, toHigh)
+= map(valor, deMenor, deMaior, paraMenor, paraMaior)
 
 
 // OVERVIEW SECTION STARTS
@@ -17,45 +17,45 @@ subCategories: [ "Math" ]
 --
 
 [float]
-=== Description
-Re-maps a number from one range to another. That is, a value of *fromLow* would get mapped to *toLow*, a value of *fromHigh* to *toHigh*, values in-between to values in-between, etc.
+=== Descrição
+Remapeia um número *de* um intervalo *para* outro. Isto é, um valor de *deMenor* seria mapeado para *paraMenor*, um valor de *deMaior* para *paraMaior*, valores dentro de uma faixa para volores dentro da outra faixa, etc.
 
-Does not constrain values to within the range, because out-of-range values are sometimes intended and useful. The `constrain()` function may be used either before or after this function, if limits to the ranges are desired.
+Não restringe valores a ficar dentro do intervalo, porque valores fora do intervalo são as vezes úteis e pretendidos. A função `constrain()` pode ser usada tanto antes como depois dessa função, se limites para os intervalos são desejados.
 
-Note that the "lower bounds" of either range may be larger or smaller than the "upper bounds" so the `map()` function may be used to reverse a range of numbers, for example
+Note que os "limites mínimos" de cada intervalo podem ser maiores ou menores que os "limites máximos" tal que a função `map()` pode ser usada para reverter um intervalo de números, por exemplo
 
 `y = map(x, 1, 50, 50, 1);`
 
-The function also handles negative numbers well, so that this example
+A função também funciona bem com números negativos, tal que esse exemplo
 
 `y = map(x, 1, 50, 50, -100);`
 
-is also valid and works well.
+também é valido e funciona bem.
 
-The `map()` function uses integer math so will not generate fractions, when the math might indicate that it should do so. Fractional remainders are truncated, and are not rounded or averaged.
+A função `map()` usa números inteiros e não irá gerar números fracionários, quando a matemática indicar que deveria. Resíduos fracionários são truncados e não são arredondados.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
-
+=== Sintaxe
+`=map(valor, deMenor, deMaior, paraMenor, paraMaior);`
 
 
 [float]
-=== Parameters
-`value`: the number to map
+=== Parâmetros
+`valor`: o número a ser mapeado
 
-`fromLow`: the lower bound of the value's current range
+`deMenor`: o menor limite do intervalo atual do valor
 
-`fromHigh`: the upper bound of the value's current range
+`deMaior`: o maior limite do intervalo atual do valor
 
-`toLow`: the lower bound of the value's target range
+`paraMenor`: o menor limite do intervalo alvo
 
-`toHigh`: the upper bound of the value's target range
+`paraMaior`: o maior limite do intervalo alvo
 
 [float]
-=== Returns
-The mapped value.
+=== Retorna
+O valor mapeado para o novo intervalo.
 
 --
 // OVERVIEW SECTION ENDS
@@ -68,13 +68,13 @@ The mapped value.
 --
 
 [float]
-=== Example Code
+=== Código de Exemplo
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
 
 
 [source,arduino]
 ----
-/* Map an analog value to 8 bits (0 to 255) */
+/* Mapeia um valor analógico para 8 bits (0 a 255) */
 void setup() {}
 
 void loop()
@@ -87,9 +87,9 @@ void loop()
 [%hardbreaks]
 
 [float]
-=== Appendix
+=== Apêndice
 
-For the mathematically inclined, here's the whole function
+Para os matematicamnete interessados, aqui tem-se o código da função:
 
 [source,arduino]
 ----

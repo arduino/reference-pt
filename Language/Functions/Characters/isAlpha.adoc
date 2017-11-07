@@ -26,7 +26,7 @@ Analisa se um caractere é alfabético (isto é, se é uma letra). Retorna true 
 === Sintaxe
 [source,arduino]
 ----
-`isAlpha(thisChar)`
+isAlpha(thisChar)
 ----
 
 [float]

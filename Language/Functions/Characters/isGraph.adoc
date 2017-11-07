@@ -26,7 +26,7 @@ Analisa se um caractere é imprimível com algum conteúdo (espaços são imprim
 === Sintaxe
 [source,arduino]
 ----
-`isGraph(thisChar)`
+isGraph(thisChar)
 ----
 
 [float]

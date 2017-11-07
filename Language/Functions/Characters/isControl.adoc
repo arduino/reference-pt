@@ -26,7 +26,7 @@ Analisa se uma caractere é um caractere de controle. Retorna true (verdadeiro) 
 === Sintaxe
 [source,arduino]
 ----
-`isControl(thisChar)`
+isControl(thisChar)
 ----
 
 [float]

@@ -26,7 +26,7 @@ Analisa se um caractere é alfanumérico (isto é, uma letra ou um número). Ret
 === Sintaxe
 [source,arduino]
 ----
-`isAlphaNumeric(thisChar)`
+isAlphaNumeric(thisChar)
 ----
 
 [float]

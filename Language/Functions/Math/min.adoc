@@ -1,7 +1,7 @@
 ---
 title: min()
 categories: [ "Functions" ]
-subCategories: [ "Math" ]
+subCategories: [ "Funções Matemáticas" ]
 ---
 
 :source-highlighter: pygments
@@ -17,25 +17,25 @@ subCategories: [ "Math" ]
 --
 
 [float]
-=== Description
-Calculates the minimum of two numbers.
+=== Descrição
+Calcula o menor de dois números.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Sintaxe
 `min(x, y)`
 
 
 [float]
-=== Parameters
-`x`: the first number, any data type
+=== Parâmetros
+`x`: o primeiro número, qualquer tipo de dado
 
-`y`: the second number, any data type
+`y`: o segundo número, qualquer tipo de dado
 
 [float]
-=== Returns
-The smaller of the two numbers.
+=== Retorna
+O menor dos dois números passados para a função.
 
 --
 // OVERVIEW SECTION ENDS
@@ -48,28 +48,28 @@ The smaller of the two numbers.
 --
 
 [float]
-=== Example Code
+=== ECódigo de Exemplo
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-The code ensures that it never gets above 100.
+O código garante que o valor de sensVal nunca é maior que 100.
 
 [source,arduino]
 ----
-sensVal = min(sensVal, 100); // assigns sensVal to the smaller of sensVal or 100
-                             // ensuring that it never gets above 100.
+sensVal = min(sensVal, 100); // atribui a sensVal o menor valor, seja sensVal ou 100
+                             // garantindo que esse nunca seja maior que 100.
 ----
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
-Perhaps counter-intuitively, `max()` is often used to constrain the lower end of a variable's range, while `min()` is used to constrain the upper end of the range.
+=== Notas e Advertências
+Talvez contraintuitivamente, `max()` é constantemente usada para restringir o extremo inferior do intervalo de uma variável, enquanto `min()` é usado para restringir o extremo superior do intervalo.
 
-Because of the way the `min()` function is implemented, avoid using other functions inside the brackets, it may lead to incorrect results
+Por causa da forma em que a função `max()` é implementada, evite usar outras funções dentro dos parênteses, isso pode levar a resultados incorretos.
 [source,arduino]
 ----
-min(a++, 100);   // avoid this - yields incorrect results
+min(a++, 100);   // evitar isso - causa resultados incorretos
 
-min(a, 100);
-a++;    // use this instead - keep other math outside the function
+min(a, 100);     // ao invés disso, usar esta forma
+a++;             // manter a aritmética fora da função
 ----
 
 --

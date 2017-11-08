@@ -1,7 +1,7 @@
 ---
 title: sin()
 categories: [ "Functions" ]
-subCategories: [ "Trigonometry" ]
+subCategories: [ "Trigonometria" ]
 ---
 
 :source-highlighter: pygments
@@ -17,23 +17,23 @@ subCategories: [ "Trigonometry" ]
 --
 
 [float]
-=== Description
-Calculates the sine of an angle (in radians). The result will be between -1 and 1.
+=== Descrição
+Calcula o seno de um ângulo (em radianos). O resultado é dado entre -1 e 1.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Sintaxe
 `sin(rad)`
 
 
 [float]
-=== Parameters
-`rad`: The angle in Radians (`float`).
+=== Parâmetros
+`rad`: O ângulo em radianos (`float`).
 
 [float]
-=== Returns
-The sine of the angle (`double`).
+=== Retorna
+O seno do ângulo (`double`).
 
 --
 // OVERVIEW SECTION ENDS
@@ -44,11 +44,11 @@ The sine of the angle (`double`).
 --
 
 [float]
-=== See also
+=== Ver Também
 
 [role="language"]
-* #LANGUAGE# link:../../../variables/data-types/float[float]
-* #LANGUAGE# link:../../../variables/data-types/double[double]
+* #LINGUAGEM# link:../../../variables/data-types/float[float]
+* #LINGUAGEM# link:../../../variables/data-types/double[double]
 
 --
 // SEE ALSO SECTION ENDS

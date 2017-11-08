@@ -1,7 +1,7 @@
 ---
 title: max()
 categories: [ "Functions" ]
-subCategories: [ "Math" ]
+subCategories: [ "Funções Matemáticas" ]
 ---
 
 :source-highlighter: pygments
@@ -17,24 +17,24 @@ subCategories: [ "Math" ]
 --
 
 [float]
-=== Description
-Calculates the maximum of two numbers.
+=== Descrição
+Calcula o maior de dois números.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Sintaxe
 `max(x, y)`
 
 
 [float]
-=== Parameters
-`x`: the first number, any data type
-`y`: the second number, any data type
+=== Parâmetros
+`x`: o primeiro número, qualquer tipo de dado
+`y`: o segundo número, qualquer tipo de dado
 
 [float]
-=== Returns
-The larger of the two parameter values.
+=== Retorna
+O maior dos dois parâmetros passados para a função.
 
 --
 // OVERVIEW SECTION ENDS
@@ -47,28 +47,28 @@ The larger of the two parameter values.
 --
 
 [float]
-=== Example Code
+=== Código de Exemplo
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-The code ensures that sensVal is at least 20.
+O código ganrante que o valor de sensVal seja pelo menos 20.
 
 [source,arduino]
 ----
-sensVal = max(senVal, 20); // assigns sensVal to the larger of sensVal or 20
-                           // (effectively ensuring that it is at least 20)
+sensVal = max(sensVal, 20); // atribui a sensVal o maior valor, seja sensVal ou 20
+                           // (efetivamente garantindo que sensVal seja ao menos 20)
 ----
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
-Perhaps counter-intuitively, `max()` is often used to constrain the lower end of a variable's range, while `min()` is used to constrain the upper end of the range.
+=== Notas e Advertências
+Talvez contraintuitivamente, `max()` é constantemente usada para restringir o extremo inferior do intervalo de uma variável, enquanto `min()` é usado para restringir o extremo superior do intervalo.
 
-Because of the way the `max()` function is implemented, avoid using other functions inside the brackets, it may lead to incorrect results
+Por causa da forma em que a função `max()` é implementada, evite usar outras funções dentro dos parênteses, isso pode levar a resultados incorretos.
 [source,arduino]
 ----
-max(a--, 0);   // avoid this - yields incorrect results
+max(a--, 0);   // evitar isso - causa resultados incorretos
 
-max(a, 0);           // use this instead -
-a--;     // keep other math outside the function
+max(a, 0);     // ao invés disso, usar esta forma
+a--;           // manter a aritmética fora da função
 ----
 
 --

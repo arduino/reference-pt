@@ -34,7 +34,7 @@ Calcula o maior de dois números.
 
 [float]
 === Retorna
-O maior dos dois parâmetros passados para a função.
+O maior dos dois números passados para a função.
 
 --
 // OVERVIEW SECTION ENDS
@@ -49,7 +49,7 @@ O maior dos dois parâmetros passados para a função.
 [float]
 === Código de Exemplo
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-O código ganrante que o valor de sensVal seja pelo menos 20.
+O código garante que o valor de sensVal seja pelo menos 20.
 
 [source,arduino]
 ----

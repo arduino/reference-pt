@@ -1,7 +1,7 @@
 ---
 title: tan()
 categories: [ "Functions" ]
-subCategories: [ "Trigonometry" ]
+subCategories: [ "Trigonometria" ]
 ---
 
 :source-highlighter: pygments
@@ -17,23 +17,23 @@ subCategories: [ "Trigonometry" ]
 --
 
 [float]
-=== Description
-Calculates the tangent of an angle (in radians). The result will be between negative infinity and infinity.
+=== Descrição
+Calcula a tangente de um ângulo (em radianos). O resultado é dado entre -infinito e +infinito (limitado pela tamanho do tipo de dado double).
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Sintaxe
 `tan(rad)`
 
 
 [float]
-=== Parameters
-`rad`: The angle in Radians (`float`).
+=== Parâmetros
+`rad`: O ângulo em radianos (`float`).
 
 [float]
-=== Returns
-The tangent of the angle (`double`).
+=== Retorna
+A tangente do ângulo (`double`).
 
 --
 // OVERVIEW SECTION ENDS
@@ -44,11 +44,11 @@ The tangent of the angle (`double`).
 --
 
 [float]
-=== See also
+=== Ver Também
 
 [role="language"]
-* #LANGUAGE# link:../../../variables/data-types/float[float]
-* #LANGUAGE# link:../../../variables/data-types/double[double]
+* #LINGUAGEM# link:../../../variables/data-types/float[float]
+* #LINGUAGEM# link:../../../variables/data-types/double[double]
 
 --
 // SEE ALSO SECTION ENDS

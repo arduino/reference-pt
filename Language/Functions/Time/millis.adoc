@@ -1,7 +1,7 @@
 ---
 title: millis()
 categories: [ "Functions" ]
-subCategories: [ "Time" ]
+subCategories: [ "Funções Temporizadoras" ]
 ---
 
 :source-highlighter: pygments
@@ -17,23 +17,23 @@ subCategories: [ "Time" ]
 --
 
 [float]
-=== Description
-Returns the number of milliseconds since the Arduino board began running the current program. This number will overflow (go back to zero), after approximately 50 days.
+=== Descrição
+Retorna o número de milissegundos passados desde que a placa Arduino começou a executar o programa atual. Esse número irá sofrer overflow (chegar ao maior número possível e então voltar pra zero), após aproximadamente 50 dias.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Sintaxe
 `time = millis()`
 
 
 [float]
-=== Parameters
-Nothing
+=== Parâmetros
+Nenhum
 
 [float]
-=== Returns
-Number of milliseconds since the program started (unsigned long)
+=== Retorna
+O número de milissegundos desde que o programa iniciou (unsigned long)
 
 --
 // OVERVIEW SECTION ENDS
@@ -46,9 +46,9 @@ Number of milliseconds since the program started (unsigned long)
 --
 
 [float]
-=== Example Code
+=== Código de Exemplo
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-The code reads the milllisecond since the Arduino board began.
+O código lê o tempo em milissegundos desde que a placa Arduino foi ligada.
 
 [source,arduino]
 ----
@@ -61,15 +61,15 @@ void loop(){
   Serial.print("Time: ");
   time = millis();
 
-  Serial.println(time);    //prints time since program started
-  delay(1000);             // wait a second so as not to send massive amounts of data
+  Serial.println(time);    // imprime o tempo desde que o programa iniciou
+  delay(1000);             // espera um segundo, para não enviar quantidades massivas de dados
 }
 ----
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
-Note that the parameter for millis is an unsigned long, errors may be generated if a programmer tries to do math with other datatypes such as ints.
+=== Notas e Advertências
+Note que o valor retornado por `millis()` é unsigned long, erros podem ser gerados se o programador tentar fazer operações matemáticas com outros tipos de dados, como ints.
 
 --
 // HOW TO USE SECTION ENDS
@@ -80,10 +80,10 @@ Note that the parameter for millis is an unsigned long, errors may be generated 
 --
 
 [float]
-=== See also
+=== Ver Também
 
 [role="example"]
-* #EXAMPLE# http://arduino.cc/en/Tutorial/BlinkWithoutDelay[Blink Without Delay]
+* #EXEMPLO# http://arduino.cc/en/Tutorial/BlinkWithoutDelay[Blink Sem Delay (Em Inglês)]
 
 --
 // SEE ALSO SECTION ENDS

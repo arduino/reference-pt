@@ -1,7 +1,7 @@
 ---
 title: delay()
 categories: [ "Functions" ]
-subCategories: [ "Time" ]
+subCategories: [ "Funções Temporizadoras" ]
 ---
 
 :source-highlighter: pygments
@@ -17,23 +17,23 @@ subCategories: [ "Time" ]
 --
 
 [float]
-=== Description
-Pauses the program for the amount of time (in milliseconds) specified as parameter. (There are 1000 milliseconds in a second.)
+=== Descrição
+Pausa o programa por uma quantidade especificada de tempo (em milissegundos). Cada segundo equivale a 1000 milissegundos.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Sintaxe
 `delay(ms)`
 
 
 [float]
-=== Parameters
-`ms`: the number of milliseconds to pause (`unsigned long`)
+=== Parâmetros
+`ms`: o número de milissegundos para pausar o programa (`unsigned long`)
 
 [float]
-=== Returns
-Nothing
+=== Retorna
+Nada
 
 --
 // OVERVIEW SECTION ENDS
@@ -46,34 +46,34 @@ Nothing
 --
 
 [float]
-=== Example Code
+=== Código de Exemplo
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-The code pauses the program for one second before toggling the output pin.
+O código pausa o programa por um segundo antes de trocar o estado do pino 13.
 
 [source,arduino]
 ----
-int ledPin = 13;                 // LED connected to digital pin 13
+int ledPin = 13;                 // LED conectado ao pino digital 13
 
 void setup()
 {
-  pinMode(ledPin, OUTPUT);      // sets the digital pin as output
+  pinMode(ledPin, OUTPUT);      // configura o pino digital como saída
 }
 
 void loop()
 {
-  digitalWrite(ledPin, HIGH);   // sets the LED on
-  delay(1000);                  // waits for a second
-  digitalWrite(ledPin, LOW);    // sets the LED off
-  delay(1000);                  // waits for a second
+  digitalWrite(ledPin, HIGH);   // acende o LED
+  delay(1000);                  // espera por um segundo
+  digitalWrite(ledPin, LOW);    // apaga o LED
+  delay(1000);                  // espera por um segundo
 }
 ----
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
-While it is easy to create a blinking LED with the `delay()` function, and many sketches use short delays for such tasks as switch debouncing, the use of `delay()` in a sketch has significant drawbacks. No other reading of sensors, mathematical calculations, or pin manipulation can go on during the delay function, so in effect, it brings most other activity to a halt. For alternative approaches to controlling timing see the link:../millis[millis()] function and the sketch sited below. More knowledgeable programmers usually avoid the use of `delay()` for timing of events longer than 10's of milliseconds unless the Arduino sketch is very simple.
+=== Notas e Advertências
+Mesmo que seja fácil fazer um LED piscar usando a função `delay()`, e muitos sketches usam delays pequenos para tarefas como debouncing de botões, o uso de `delay()` em um sketch possui desvantagens significantes. Nenhuma leitura de sensores, cálculos matemáticos, ou manipulação de pinos podem ocorrer durante a função `delay()`, para resumir, causa a pausa de qualquer atividade. Para métodos alternativos de controlar temporizações, veja a função link:../millis[millis()] e os sketches citados abaixo. Programadores mais habilidosos usualmente evitam o uso da função `delay()` para timing de eventos mais longos que dezenas de milissegundos, a menos que o sketch Arduino seja muito simples.
 
-Certain things do go on while the delay() function is controlling the Atmega chip however, because the delay function does not disable interrupts. Serial communication that appears at the RX pin is recorded, PWM (link:../analog-io/analogWrite[analogWrite]) values and pin states are maintained, and link:../../external-interrupts/attachInterrupt[interrupts] will work as they should.
+No entanto, certas coisas continuam a acontecer enquanto a função delay() está controlando o microcontrolador, porque a função delay não desativa interrupções. Comunicação serial recebida no pino RX é armazenada, valores PWM de (link:../analog-io/analogWrite[analogWrite]) e estados dos pinos são mantidos, e link:../../external-interrupts/attachInterrupt[interrupções externas] irão funcionar como devem.
 
 --
 // HOW TO USE SECTION ENDS
@@ -84,10 +84,10 @@ Certain things do go on while the delay() function is controlling the Atmega chi
 --
 
 [float]
-=== See also
+=== Ver Também
 
 [role="example"]
-* #EXAMPLE# http://arduino.cc/en/Tutorial/BlinkWithoutDelay[Blink Without Delay]
+* #EXEMPLO# http://arduino.cc/en/Tutorial/BlinkWithoutDelay[Blink Sem Delay (Em Inglês)]
 
 --
 // SEE ALSO SECTION ENDS

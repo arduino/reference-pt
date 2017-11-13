@@ -1,7 +1,7 @@
 ---
 title: micros()
 categories: [ "Functions" ]
-subCategories: [ "Time" ]
+subCategories: [ "Funções Temporizadoras" ]
 ---
 
 :source-highlighter: pygments
@@ -17,23 +17,23 @@ subCategories: [ "Time" ]
 --
 
 [float]
-=== Description
-Returns the number of microseconds since the Arduino board began running the current program. This number will overflow (go back to zero), after approximately 70 minutes. On 16 MHz Arduino boards (e.g. Duemilanove and Nano), this function has a resolution of four microseconds (i.e. the value returned is always a multiple of four). On 8 MHz Arduino boards (e.g. the LilyPad), this function has a resolution of eight microseconds.
+=== Descrição
+Retorna o número de microssegundos passados desde que a placa Arduino começou a executar o programa atual. Esse número irá sofrer overflow (chegar ao maior número possível e então voltar pra zero), após aproximadamente 70 minutos. Em placas Arduino 16 MHz (ex. UNO e Nano), essa função possui uma resolução de quatro microssegundos (isto é, o número retornado é sempre um múltiplo de quatro). Em placas Arduino 8 MHz (ex. LilyPad), essa função possui uma resolução de oito microssegundos.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Sintaxe
 `time = micros()`
 
 
 [float]
-=== Parameters
-Nothing
+=== Parâmetros
+Nenhum
 
 [float]
-=== Returns
-Returns the number of microseconds since the Arduino board began running the current program.(unsigned long)
+=== Retorna
+O número de microssegundos desde que o programa iniciou (unsigned long).
 
 --
 // OVERVIEW SECTION ENDS
@@ -46,10 +46,9 @@ Returns the number of microseconds since the Arduino board began running the cur
 --
 
 [float]
-=== Example Code
+=== Código de Exemplo
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-The code returns the number of microseconds since the Arduino board began.
-
+O código abaixo imprime o número de microssegundos passados desde que a placa Arduino foi ligada.
 [source,arduino]
 ----
 unsigned long time;
@@ -61,15 +60,14 @@ void loop(){
   Serial.print("Time: ");
   time = micros();
 
-  Serial.println(time);  //prints time since program started
-  delay(1000);           // wait a second so as not to send massive amounts of data
-}
+  Serial.println(time);  // imprime o tempo desde que o programa iniciou
+  delay(1000);           // espera um segundo, para não enviar quantidades massivas de dados
 ----
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
-There are 1,000 microseconds in a millisecond and 1,000,000 microseconds in a second.
+=== Notas e Advertências
+Há 1000 (mil) microssegundos em um milissegundo e 1000000 (um milhão) de microssegundos em um segundo.
 
 --
 // HOW TO USE SECTION ENDS

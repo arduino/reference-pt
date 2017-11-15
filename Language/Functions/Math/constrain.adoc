@@ -4,8 +4,7 @@ categories: [ "Functions" ]
 subCategories: [ "Funções Matemáticas" ]
 ---
 
-:source-highlighter: pygments
-:pygments-style: arduino
+
 
 
 

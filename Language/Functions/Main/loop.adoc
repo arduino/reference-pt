@@ -4,8 +4,7 @@ categories: [ "Functions" ]
 subCategories: [ "Main" ]
 ---
 
-:source-highlighter: pygments
-:pygments-style: arduino
+
 
 
 

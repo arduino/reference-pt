@@ -6,8 +6,7 @@ subCategories: [ "Entradas e Saídas Avançadas" ]
 aliases: [ /language/functions/advanced-io/noTone/ ]
 ---
 
-:source-highlighter: pygments
-:pygments-style: arduino
+
 
 
 

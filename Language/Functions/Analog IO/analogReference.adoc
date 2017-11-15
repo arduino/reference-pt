@@ -4,8 +4,7 @@ categories: [ "Functions" ]
 subCategories: [ "Entradas e Saídas Analógicas" ]
 ---
 
-:source-highlighter: pygments
-:pygments-style: arduino
+
 //
 
 

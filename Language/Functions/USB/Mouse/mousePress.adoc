@@ -14,9 +14,9 @@ title: Mouse.press()
 
 [float]
 === Description
-Sends a button press to a connected computer. A press is the equivalent of clicking and continuously holding the mouse button. A press is cancelled with link:../mouseRelease[Mouse.release()].
+Sends a button press to a connected computer. A press is the equivalent of clicking and continuously holding the mouse button. A press is cancelled with link:../mouserelease[Mouse.release()].
 
-Before using `Mouse.press()`, you need to start communication with link:../mouseBegin[Mouse.begin()].
+Before using `Mouse.press()`, you need to start communication with link:../mousebegin[Mouse.begin()].
 
 `Mouse.press()` defaults to a left button press.
 [%hardbreaks]
@@ -59,6 +59,8 @@ Nothing
 
 [source,arduino]
 ----
+#include <Mouse.h>
+
 void setup(){
   //The switch that will initiate the Mouse press
   pinMode(2,INPUT);
@@ -69,11 +71,11 @@ void setup(){
 }
 
 void loop(){
-  //if the switch attached to pin 2 is closed, press and hold the right mouse button
+  //if the switch attached to pin 2 is closed, press and hold the left mouse button
   if(digitalRead(2) == HIGH){
     Mouse.press();
   }
-  //if the switch attached to pin 3 is closed, release the right mouse button
+  //if the switch attached to pin 3 is closed, release the left mouse button
   if(digitalRead(3) == HIGH){
     Mouse.release();
   }

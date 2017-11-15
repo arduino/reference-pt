@@ -14,7 +14,7 @@ title: Mouse.end()
 
 [float]
 === Description
-Stops emulating the mouse connected to a computer. To start control, use link:../mouseBegin[Mouse.begin()].
+Stops emulating the mouse connected to a computer. To start control, use link:../mousebegin[Mouse.begin()].
 [%hardbreaks]
 
 
@@ -48,6 +48,8 @@ Nothing
 
 [source,arduino]
 ----
+#include <Mouse.h>
+
 void setup(){
   pinMode(2,INPUT);
   //initiate the Mouse library
@@ -55,7 +57,7 @@ void setup(){
 }
 
 void loop(){
-  //if the button is pressed, send a Right mouse click
+  //if the button is pressed, send a left mouse click
   //then end the Mouse emulation
   if(digitalRead(2) == HIGH){
     Mouse.click();

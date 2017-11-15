@@ -14,7 +14,7 @@ title: Keyboard.begin()
 
 [float]
 === Description
-When used with a Leonardo or Due board, `Keyboard.begin()` starts emulating a keyboard connected to a computer. To end control, use link:../keyboardEnd[Keyboard.end()].
+When used with a Leonardo or Due board, `Keyboard.begin()` starts emulating a keyboard connected to a computer. To end control, use link:../keyboardend[Keyboard.end()].
 [%hardbreaks]
 
 
@@ -48,6 +48,8 @@ Nothing
 
 [source,arduino]
 ----
+#include <Keyboard.h>
+
 void setup() {
   // make pin 2 an input and turn on the
   // pullup resistor so it goes high unless

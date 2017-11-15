@@ -14,7 +14,7 @@ title: Mouse.release()
 
 [float]
 === Description
-Sends a message that a previously pressed button (invoked through link:../mousePress[Mouse.press()]) is released. Mouse.release() defaults to the left button.
+Sends a message that a previously pressed button (invoked through link:../mousepress[Mouse.press()]) is released. Mouse.release() defaults to the left button.
 [%hardbreaks]
 
 
@@ -54,6 +54,8 @@ Nothing
 
 [source,arduino]
 ----
+#include <Mouse.h>
+
 void setup(){
   //The switch that will initiate the Mouse press
   pinMode(2,INPUT);
@@ -64,11 +66,11 @@ void setup(){
 }
 
 void loop(){
-  //if the switch attached to pin 2 is closed, press and hold the right mouse button
+  //if the switch attached to pin 2 is closed, press and hold the left mouse button
   if(digitalRead(2) == HIGH){
     Mouse.press();
   }
-  //if the switch attached to pin 3 is closed, release the right mouse button
+  //if the switch attached to pin 3 is closed, release the left mouse button
   if(digitalRead(3) == HIGH){
     Mouse.release();
   }

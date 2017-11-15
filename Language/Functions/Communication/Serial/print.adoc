@@ -51,7 +51,7 @@ To send a single byte, use link:../write[Serial.write()].
 
 [float]
 === Returns
-`size_t (long)`: `print()` returns the number of bytes written, though reading that number is optional.
+`size_t`: `print()` returns the number of bytes written, though reading that number is optional.
 
 --
 // OVERVIEW SECTION ENDS
@@ -144,7 +144,7 @@ As of version 1.0, serial transmission is asynchronous; `Serial.print()` will re
 * #LANGUAGE# link:../flush[flush()]
 * #LANGUAGE# link:../println[println()]
 * #LANGUAGE# link:../write[write()]
-* #LANGUAGE# link:../serialEvent[SerialEvent()]
+* #LANGUAGE# link:../serialevent[SerialEvent()]
 * #LANGUAGE# link:https://www.arduino.cc/en/Tutorial/Memory[Memory]
 
 --

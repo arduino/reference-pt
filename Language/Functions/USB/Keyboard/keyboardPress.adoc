@@ -14,9 +14,9 @@ title: Keyboard.press()
 
 [float]
 === Description
-When called, `Keyboard.press()` functions as if a key were pressed and held on your keyboard. Useful when using link:../keyboardModifier[modifier keys]. To end the key press, use link:../keyboardRelease[Keyboard.release()] or link:../keyboardReleaseAll[Keyboard.releaseAll()].
+When called, `Keyboard.press()` functions as if a key were pressed and held on your keyboard. Useful when using link:../keyboardmodifiers[modifier keys]. To end the key press, use link:../keyboardrelease[Keyboard.release()] or link:../keyboardreleaseall[Keyboard.releaseAll()].
 
-It is necessary to call link:../keyboardBegin[Keyboard.begin()] before using `press()`.
+It is necessary to call link:../keyboardbegin[Keyboard.begin()] before using `press()`.
 [%hardbreaks]
 
 
@@ -31,7 +31,7 @@ It is necessary to call link:../keyboardBegin[Keyboard.begin()] before using `pr
 
 [float]
 === Returns
-Nothing
+`size_t` : number of key presses sent.
 
 --
 // OVERVIEW SECTION ENDS
@@ -50,6 +50,8 @@ Nothing
 
 [source,arduino]
 ----
+#include <Keyboard.h>
+
 // use this option for OSX:
 char ctrlKey = KEY_LEFT_GUI;
 // use this option for Windows and Linux:

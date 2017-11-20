@@ -21,7 +21,7 @@ Transfere um byte de dados um bit de cada vez. Começa com ou o bit mais signifi
 
 Nota - se você está conectando um dispositivo que é sincronizado pela borda de subida do clock, irá precisar fazer com que o pino clock seja  low antes de chamar `shiftOut()`, ex. com `digitalWrite(clockPin, LOW)`.
 
-Essa é uma implementação por software; O Arduino também provê uma link:../SPI[biblioteca SPI] que faz a implementação em hardware, que é mais rápida, mas apenas funciona em pinos específicos.
+Essa é uma implementação por software; O Arduino também provê uma https://www.arduino.cc/en/Reference/SPI[biblioteca SPI] que faz a implementação em hardware, que é mais rápida, mas apenas funciona em pinos específicos.
 [%hardbreaks]
 
 
@@ -104,7 +104,7 @@ void loop() {
 
 [float]
 === Notas e Advertências
-Os pinos data e clock devem ser configurados como saídas com uma chamada de link:../digital-io/pinMode[pinMode()].
+Os pinos data e clock devem ser configurados como saídas com uma chamada de link:../digital-io/pinmode[pinMode()].
 
 A função `shiftOut()` atualmente funciona para transferir apenas 1 byte (8 bits) então requer uma operação em dois passos para transferir valores maiores que 255.
 [source,arduino]

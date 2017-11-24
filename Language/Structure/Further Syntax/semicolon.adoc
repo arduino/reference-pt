@@ -1,8 +1,8 @@
 ---
 title: ";"
-title_expanded: semicolon
+title_expanded: Ponto e vírgula
 categories: [ "Structure" ]
-subCategories: [ "Outros elementos da sintaxe" ]
+subCategories: [ "Outros Elementos da Sintaxe" ]
 ---
 
 

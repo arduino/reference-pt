@@ -1,7 +1,7 @@
 ---
 title: tan()
 categories: [ "Functions" ]
-subCategories: [ "Trigonometria" ]
+subCategories: [ "Funções Trigonométricas" ]
 ---
 
 

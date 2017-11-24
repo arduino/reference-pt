@@ -1,12 +1,8 @@
 ---
 title: randomSeed()
 categories: [ "Functions" ]
-subCategories: [ "Random Numbers" ]
+subCategories: [ "Números Aleatórios" ]
 ---
-
-
-
-
 
 = randomSeed(seed)
 

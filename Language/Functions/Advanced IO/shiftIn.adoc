@@ -21,7 +21,7 @@ Receb um byte de dados, um bit de cada vez. Começa com ou o bit mais significan
 
 Se está conectando um dispositivo que funciona a partir da borda de subida sinal de clock, você irá precisar garantir que o pino de clock está em estado LOW antes da primeira chamada de `shiftIn()`, ex. chamando `digitalWrite(clockPin, LOW)`.
 
-Nota: essa é uma implementação por software; O Arduino também provê uma link:../SPI[biblioteca SPI] que faz a implementação em hardware, que é mais rápida, mas apenas funciona em pinos específicos.
+Nota: essa é uma implementação por software; O Arduino também provê uma https://www.arduino.cc/en/Reference/SPI[biblioteca SPI] que faz a implementação em hardware, que é mais rápida, mas apenas funciona em pinos específicos.
 [%hardbreaks]
 
 

@@ -2,35 +2,31 @@
 title: Serial.find()
 ---
 
-
-
-
 = Serial.find()
-
 
 // OVERVIEW SECTION STARTS
 [#overview]
 --
 
 [float]
-=== Description
-Serial.find() reads data from the serial buffer until the target string of given length is found. The function returns true if target string is found, false if it times out.
+=== Descrição
+Serial.find() lê dados do buffer serial de recebimento até a string especificada ser encontrada. A função retorna `true` se a string denominada é encontrada, `false` se ocorre time-out.
 
-Serial.find() inherits from the link:../../stream[stream] utility class.
+Serial.find() herda da classe link:../../stream[Stream] .
 [%hardbreaks]
 
 
 [float]
-=== Syntax
-`Serial.find(target)`
+=== Sintaxe
+`Serial.find(str)`
 
 [float]
-=== Parameters
-`target` : the string to search for (char)
+=== Parâmetros
+`str` : a string para ser procurada no buffer (*char)
 
 [float]
-=== Returns
-`boolean`
+=== Retorna
+`true` ou `false` (tipo booleano)
 
 --
 // OVERVIEW SECTION ENDS
@@ -41,11 +37,11 @@ Serial.find() inherits from the link:../../stream[stream] utility class.
 --
 
 [float]
-=== See also
+=== Ver também
 
 [role="language"]
-* #LANGUAGE# link:../../stream[stream] +
-* #LANGUAGE# link:../../stream/streamfind[stream.find()]
+* #LINGUAGEM# link:../../stream[stream] +
+* #LINGUAGEM# link:../../stream/streamfind[stream.find()]
 
 --
 // SEE ALSO SECTION ENDS

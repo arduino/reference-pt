@@ -42,6 +42,7 @@ O número de bytes disponíveis para leitura.
 // HOW TO USE SECTION STARTS
 [#howtouse]
 --
+[float]
 === Código de Exemplo
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
 O código abaixo devolve um caractere recebido na porta serial.

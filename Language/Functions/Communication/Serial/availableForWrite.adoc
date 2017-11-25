@@ -2,27 +2,23 @@
 title: Serial.availableForWrite()
 ---
 
-
-
-
 = availableForWrite()
-
 
 // OVERVIEW SECTION STARTS
 [#overview]
 --
 
 [float]
-=== Description
-Get the number of bytes (characters) available for writing in the serial buffer without blocking the write operation.
+=== Descrição
+Retorna o número de bytes (caracteres) livres no buffer de transmissão serial que podem ser ocupados sem bloquear a operação de trasnmissão.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Sintaxe
 `Serial.availableForWrite()`
 
-_Arduino Mega only:_
+_Apenas Arduino Mega:_
 
 `Serial1.availableForWrite()` +
 `Serial2.availableForWrite()` +
@@ -30,12 +26,12 @@ _Arduino Mega only:_
 
 
 [float]
-=== Parameters
-Nothing
+=== Parâmetros
+Nenhum
 
 [float]
-=== Returns
-The number of bytes available to read .
+=== Retorna
+O número de bytes livres no buffer de transmissão.
 --
 // OVERVIEW SECTION ENDS
 
@@ -45,19 +41,19 @@ The number of bytes available to read .
 --
 
 [float]
-=== See also
+=== Ver Também
 
 [role="language"]
-* #LANGUAGE# link:../begin[begin()] +
-* #LANGUAGE# link:../end[end()] +
-* #LANGUAGE# link:../read[read()] +
-* #LANGUAGE# link:../peek[peek()] +
-* #LANGUAGE# link:../flush[flush()] +
-* #LANGUAGE# link:../print[print()] +
-* #LANGUAGE# link:../println[println()] +
-* #LANGUAGE# link:../write[write()] +
-* #LANGUAGE# link:../serialevent[SerialEvent()] +
-* #LANGUAGE# link:../../stream/streamavailable[Stream.available()]
+* #LINGUAGEM# link:../begin[begin()] +
+* #LINGUAGEM# link:../end[end()] +
+* #LINGUAGEM# link:../read[read()] +
+* #LINGUAGEM# link:../peek[peek()] +
+* #LINGUAGEM# link:../flush[flush()] +
+* #LINGUAGEM# link:../print[print()] +
+* #LINGUAGEM# link:../println[println()] +
+* #LINGUAGEM# link:../write[write()] +
+* #LINGUAGEM# link:../serialevent[SerialEvent()] +
+* #LINGUAGEM# link:../../stream/streamavailable[Stream.available()]
 
 --
 // SEE ALSO SECTION ENDS

@@ -92,7 +92,7 @@ As ondas PWM generadas nos pinos 5 e 6 terão duty cycles maiores que o esperado
 === Ver Também
 
 [role="language"]
-* #LINGUAGEM# link:../../arduino-due-only/analogwriteresolution[analogWriteResolution()]
+* #LINGUAGEM# link:../../zero-due-mkr-family/analogwriteresolution[analogWriteResolution()]
 
 [role="definition"]
 * #DEFINIÇÃO# http://arduino.cc/en/Tutorial/PWM[PWM^]

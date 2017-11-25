@@ -104,7 +104,7 @@ void loop() {
 
 [float]
 === Notas e Advertências
-Os pinos data e clock devem ser configurados como saídas com uma chamada de link:../digital-io/pinmode[pinMode()].
+Os pinos data e clock devem ser configurados como saídas com uma chamada de link:../../digital-io/pinmode[pinMode()].
 
 A função `shiftOut()` atualmente funciona para transferir apenas 1 byte (8 bits) então requer uma operação em dois passos para transferir valores maiores que 255.
 [source,arduino]

@@ -72,11 +72,11 @@ else
 [float]
 === Ver Também
 
-[role="linguagem"]
-* #LINGUAGEM#  link:../../../variables/data-types/char[char]
-* #LINGUAGEM#  link:../../../structure/control-structure/if[if (operadores condicionais)]
-* #LINGUAGEM#  link:../../../structure/control-structure/while[while (operadores condicionais)]
-* #LINGUAGEM# link:../../communication/serial/read[read()]
+[role="language"]
+#LINGUAGEM#  link:../../../variables/data-types/char[char]
+#LINGUAGEM#  link:../../../structure/control-structure/if[if (operadores condicionais)]
+#LINGUAGEM#  link:../../../structure/control-structure/while[while (operadores condicionais)]
+#LINGUAGEM# link:../../communication/serial/read[read()]
 
 --
 // SEE ALSO SECTION ENDS

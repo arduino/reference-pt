@@ -71,7 +71,8 @@ link:../serial/serialevent[serialEvent()]
 
 [role="example"]
 
-Exemplos (Em Inglês): +
+Exemplos (Em Inglês):
+
 * #EXEMPLO# https://www.arduino.cc/en/Tutorial/ReadAsciiString[ReadAsciiString^]
 * #EXEMPLO# https://www.arduino.cc/en/Tutorial/ASCIITable[ASCII TAble^]
 * #EXEMPLO# https://www.arduino.cc/en/Tutorial/Dimmer[Dimmer^]

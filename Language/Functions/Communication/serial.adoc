@@ -1,31 +1,28 @@
 ---
 title: serial
 categories: [ "Functions" ]
-subCategories: [ "Communication" ]
+subCategories: [ "Comunicação" ]
 ---
 
-
-
-
 = Serial()
-
 
 // OVERVIEW SECTION STARTS
 [#overview]
 --
 
 [float]
-=== Description
-Used for communication between the Arduino board and a computer or other devices. All Arduino boards have at least one serial port (also known as a UART or USART): Serial. It communicates on digital pins 0 (RX) and 1 (TX) as well as with the computer via USB. Thus, if you use these functions, you cannot also use pins 0 and 1 for digital input or output. +
-You can use the Arduino environment's built-in serial monitor to communicate with an Arduino board. Click the serial monitor button in the toolbar and select the same baud rate used in the call to `begin()`.
+=== Descrição
+Usada para comunicação entre uma placa Arduino e um computador ou outros dispositivos. Todas as placas Arduino possuem pelo menos uma porta serial (também conhecida como UART ou USART), chamada `Serial`. Ela comunica-se nos pinos digitais 0 (RX) e 1 (TX) como também com um computador via USB. Logo, se você usar essas funções, você não pode usar ao mesmo tempo os pinos 0 e 1 como entradas ou saídas digitais.
 [%hardbreaks]
-Serial communication on pins TX/RX uses TTL logic levels (5V or 3.3V depending on the board). Don't connect these pins directly to an RS232 serial port; they operate at +/- 12V and can damage your Arduino board.
+Você pode usar o monitor serial presente na IDE do Arduino para se comunicar com uma placa Arduino. Clique no botão do monitor serial na barra de ferramentas e escolha e usar a mesma taxa de transferência (baud rate) usada na chamada de `begin()`.
 [%hardbreaks]
-The *Arduino Mega* has three additional serial ports: `Serial1` on pins 19 (RX) and 18 (TX), `Serial2` on pins 17 (RX) and 16 (TX), `Serial3` on pins 15 (RX) and 14 (TX). To use these pins to communicate with your personal computer, you will need an additional USB-to-serial adaptor, as they are not connected to the Mega's USB-to-serial adaptor. To use them to communicate with an external TTL serial device, connect the TX pin to your device's RX pin, the RX to your device's TX pin, and the ground of your Mega to your device's ground.
+Comunicação serial nos pinos TX/RX usa níveis lógicos TTL (5V ou 3.3V dependendo da placa). *Não conecte esses pinos diretamente um uma porta serial RS232; esses operam em +/- 12V e podem danificar sua placa Arduino.*
 [%hardbreaks]
-The *Arduino DUE* has three additional 3.3V TTL serial ports: `Serial1` on pins 19 (RX) and 18 (TX); `Serial2` on pins 17 (RX) and 16 (TX), `Serial3` on pins 15 (RX) and 14 (TX). Pins 0 and 1 are also connected to the corresponding pins of the ATmega16U2 USB-to-TTL Serial chip, which is connected to the USB debug port. Additionally, there is a native USB-serial port on the SAM3X chip, SerialUSB'.
+O *Arduino Mega* tem três portas seriais adicionais: `Serial1` nos pinos 19 (RX) e 18 (TX), `Serial2` nos pinos 17 (RX) e 16 (TX), `Serial3` nos pinos 15 (RX) e 14 (TX). Para usar esses pinos para comunicar com seu computador pessoal, você vai precisar de um adaptador USB-serial extra, pois esses pinos não são conectados ao adaptador USB-serial do Arduino Mega. para usá-los para comunicar com um dispositivo serial TTL externo, conecte o pino TX do Arduino ao pino RX do dispositivo, o pino RX ao pino TX do dispositivo, e o ground de seu Mega ao ground do dispositivo.
 [%hardbreaks]
-The *Arduino Leonardo* board uses `Serial1` to communicate via TTL (5V) serial on pins 0 (RX) and 1 (TX). `Serial` is reserved for USB CDC communication. For more information, refer to the Leonardo getting started page and hardware page.
+O *Arduino DUE* tem três portas seriais TTL de 3.3V adicionais: `Serial1` nos pinos 19 (RX) e 18 (TX); `Serial2` nos pinos 17 (RX) e 16 (TX), `Serial3` nos pinos 15 (RX) e 14 (TX). Pinos 0 e 1 são também conectados aos pinos correspondentes do chip serial ATmega16U2, o qual é conectado a porta debug USB. Adicionalmente, há uma porta USB-serial nativa no chip SAM3X, `SerialUSB`.
+[%hardbreaks]
+A placa *Arduino Leonardo* usa `Serial1` para comunicar-se via serial TTL (5V) nos pinos 0 (RX) e 1 (TX). `Serial` é reservada para comunicação USB CDC. Para mais informações, consulte as páginas getting started e hardware para o Leonardo .
 
 --
 // OVERVIEW SECTION ENDS
@@ -38,8 +35,8 @@ The *Arduino Leonardo* board uses `Serial1` to communicate via TTL (5V) serial o
 '''
 
 [float]
-=== Functions
-link:../serial/ifserial[If] (Serial) +
+=== Funções
+link:../serial/ifserial[If(Serial)] +
 link:../serial/available[available()] +
 link:../serial/availableforwrite[availableForWrite()] +
 link:../serial/begin[begin()] +
@@ -70,16 +67,18 @@ link:../serial/serialevent[serialEvent()]
 --
 
 [float]
-=== See also
+=== Ver Também
 
 [role="example"]
-* #EXAMPLE# https://www.arduino.cc/en/Tutorial/ReadAsciiString[ReadAsciiString^]
-* #EXAMPLE# https://www.arduino.cc/en/Tutorial/ASCIITable[ASCII TAble^]
-* #EXAMPLE# https://www.arduino.cc/en/Tutorial/Dimmer[Dimmer^]
-* #EXAMPLE# https://www.arduino.cc/en/Tutorial/Graph[Graph^]
-* #EXAMPLE# https://www.arduino.cc/en/Tutorial/PhysicalPixel[Physical Pixel^]
-* #EXAMPLE# https://www.arduino.cc/en/Tutorial/SerialCallResponse[Serial Call Response^]
-* #EXAMPLE# https://www.arduino.cc/en/Tutorial/SerialCallResponseASCII[Serial Call Response ASCII^]
+
+Exemplos (Em Inglês): +
+* #EXEMPLO# https://www.arduino.cc/en/Tutorial/ReadAsciiString[ReadAsciiString^]
+* #EXEMPLO# https://www.arduino.cc/en/Tutorial/ASCIITable[ASCII TAble^]
+* #EXEMPLO# https://www.arduino.cc/en/Tutorial/Dimmer[Dimmer^]
+* #EXEMPLO# https://www.arduino.cc/en/Tutorial/Graph[Graph^]
+* #EXEMPLO# https://www.arduino.cc/en/Tutorial/PhysicalPixel[Physical Pixel^]
+* #EXEMPLO# https://www.arduino.cc/en/Tutorial/SerialCallResponse[Serial Call Response^]
+* #EXEMPLO# https://www.arduino.cc/en/Tutorial/SerialCallResponseASCII[Serial Call Response ASCII^]
 
 
 --

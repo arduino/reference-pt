@@ -2,29 +2,26 @@
 title: Serial.flush()
 ---
 
-
-
-
 = flush()
-
 
 // OVERVIEW SECTION STARTS
 [#overview]
 --
 
 [float]
-=== Description
-Waits for the transmission of outgoing serial data to complete. (Prior to Arduino 1.0, this instead removed any buffered incoming serial data.)
+=== Descrição
+Espera a transmissão de daodos seriais enviados terminar. +
+(Antes do Arduino versão 1.0, em vez disso removia qualquer dados recebidos armazenados no buffer).
 
-`flush()` inherits from the link:../flush[Stream] utility class.
+`flush()` herda da classe link:../flush[Stream].
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Sintaxe
 `Serial.flush()`
 
-_Arduino Mega only:_
+_Apenas Arduino Mega:_
 
 `Serial1.flush()` +
 `Serial2.flush()` +
@@ -32,35 +29,34 @@ _Arduino Mega only:_
 
 
 [float]
-=== Parameters
-Nothing
+=== Parâmetros
+Nenhum
 
 [float]
-=== Returns
-Nothing
+=== Retorna
+Nada
 
 --
 // OVERVIEW SECTION ENDS
-
 
 // SEE ALSO SECTION
 [#see_also]
 --
 
 [float]
-=== See also
+=== Ver Também 
 
 [role="language"]
-* #LANGUAGE# link:../begin[begin()]
-* #LANGUAGE# link:../end[end()]
-* #LANGUAGE# link:../available[available()]
-* #LANGUAGE# link:../read[read()]
-* #LANGUAGE# link:../peek[peek()]
-* #LANGUAGE# link:../print[print()]
-* #LANGUAGE# link:../println[println()]
-* #LANGUAGE# link:../write[write()]
-* #LANGUAGE# link:../serialevent[SerialEvent()]
-* #LANGUAGE# link:../../stream/streamflush[stream.flush()]
+* #LINGUAGEM# link:../begin[begin()]
+* #LINGUAGEM# link:../end[end()]
+* #LINGUAGEM# link:../available[available()]
+* #LINGUAGEM# link:../read[read()]
+* #LINGUAGEM# link:../peek[peek()]
+* #LINGUAGEM# link:../print[print()]
+* #LINGUAGEM# link:../println[println()]
+* #LINGUAGEM# link:../write[write()]
+* #LINGUAGEM# link:../serialevent[SerialEvent()]
+* #LINGUAGEM# link:../../stream/streamflush[stream.flush()]
 
 --
 // SEE ALSO SECTION ENDS

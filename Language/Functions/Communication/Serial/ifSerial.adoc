@@ -2,77 +2,70 @@
 title: if(Serial)
 ---
 
-
-
-
 = if (Serial)
-
 
 // OVERVIEW SECTION STARTS
 [#overview]
 --
-
 [float]
-=== Description
-Indicates if the specified Serial port is ready.
+=== Descrição
+Indica se a porta serial especificada está pronta.
 
-On the Leonardo, `if (Serial)` indicates whether or not the USB CDC serial connection is open. For all other instances, including `if (Serial1)` on the Leonardo, this will always return true.
+No Leonardo, `if (Serial)` indica se a conexão serial USB CDC está aberta. Para todas as outras instâncias, incluindo `if (Serial1)` no Leonardo, isso irá sempre retornar `true`.
 
-This was introduced in Arduino IDE 1.0.1.
+Essa função foi introduzida na IDE Arduino 1.0.1.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
-_All boards:_
+=== Sintaxe
+_Todas as placas:_
 
 `if (Serial)`
 
-_Arduino Leonardo specific:_
+_Específico para o Arduino Leonardo:_
 
 `if (Serial1)`
 
-_Arduino Mega specific:_
+_Específico para o Arduino Mega:_
 
 `if (Serial1)` +
 `if (Serial2)` +
 `if (Serial3)`
 
 [float]
-=== Parameters
-Nothing
+=== Parâmetros
+Nenhum
 
 [float]
-=== Returns
-`boolean` : returns true if the specified serial port is available. This will only return false if querying the Leonardo's USB CDC serial connection before it is ready.
-
+=== Retorna
+`boolean` : retorna `true` se a porta serial especificada está disponível. Irá retornar `false` apenas caso verificada a conexão serial USB CDC do Leonardo antes que a mesma esteja pronta.
 --
+
 // OVERVIEW SECTION ENDS
-
-
-
 
 // HOW TO USE SECTION STARTS
 [#howtouse]
 --
 
 [float]
-=== Example Code
+=== Código de Exemplo
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-
+O código abaixo inicializa uma porta serial e espera a mesma conectar.
 
 [source,arduino]
 ----
 void setup() {
- //Initialize serial and wait for port to open:
+  // Inicializa a porta erial
   Serial.begin(9600);
+  // Espera ela estar pronta
   while (!Serial) {
-    ; // wait for serial port to connect. Needed for native USB
+    ; // Espera a porta serial conectar. Necessário para USB nativa
   }
 }
 
 void loop() {
- //proceed normally
+ //porcede normalmente
 }
 ----
 

@@ -2,27 +2,23 @@
 title: Serial.peek()
 ---
 
-
-
-
 = peek()
-
 
 // OVERVIEW SECTION STARTS
 [#overview]
 --
 
 [float]
-=== Description
-Returns the next byte (character) of incoming serial data without removing it from the internal serial buffer. That is, successive calls to `peek()` will return the same character, as will the next call to `read()`. `peek()` inherits from the link:../../stream[Stream] utility class.
+=== Descrição
+Retorna o próximo byte (caractere) de dados seriais recebidos sem o remover do buffer serial interno. Isto é, successivas chamadas de  `peek()` irão retornar o mesmo caractere, assim como irá a próxima chamada de `read()`. A função `peek()` é herdada da classe link:../../stream[Stream].
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Sintaxe
 `Serial.peek()`
 
-_Arduino Mega only:_
+_Apenas Arduino Mega:_
 
 `Serial1.peek()` +
 `Serial2.peek()` +
@@ -30,12 +26,12 @@ _Arduino Mega only:_
 
 
 [float]
-=== Parameters
-Nothing
+=== Parâmetros
+Nenhum
 
 [float]
-=== Returns
-The first byte of incoming serial data available (or -1 if no data is available) - `int`
+=== Retorna
+O primeiro byte dos dados seriais recebidos disponível (ou -1 se não há dados disponíveis) - `int`
 
 --
 // OVERVIEW SECTION ENDS
@@ -46,20 +42,20 @@ The first byte of incoming serial data available (or -1 if no data is available)
 --
 
 [float]
-=== See also
+=== Ver Também
 
 [role="language"]
-* #LANGUAGE# link:../begin[begin()] +
-* #LANGUAGE# link:../end[end()] +
-* #LANGUAGE# link:../available[available()] +
-* #LANGUAGE# link:../read[read()] +
-* #LANGUAGE# link:../peek[peek()] +
-* #LANGUAGE# link:../flush[flush()] +
-* #LANGUAGE# link:../print[print()] +
-* #LANGUAGE# link:../println[println()] +
-* #LANGUAGE# link:../write[write()] +
-* #LANGUAGE# link:../serialevent[SerialEvent()] +
-* #LANGUAGE# link:../../stream/streampeek[Stream.peek()]
+* #LINGUAGEM# link:../begin[begin()] +
+* #LINGUAGEM# link:../end[end()] +
+* #LINGUAGEM# link:../available[available()] +
+* #LINGUAGEM# link:../read[read()] +
+* #LINGUAGEM# link:../peek[peek()] +
+* #LINGUAGEM# link:../flush[flush()] +
+* #LINGUAGEM# link:../print[print()] +
+* #LINGUAGEM# link:../println[println()] +
+* #LINGUAGEM# link:../write[write()] +
+* #LINGUAGEM# link:../serialevent[SerialEvent()] +
+* #LINGUAGEM# link:../../stream/streampeek[Stream.peek()]
 
 --
 // SEE ALSO SECTION ENDS

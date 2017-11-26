@@ -2,36 +2,32 @@
 title: Serial.parseFloat()
 ---
 
-
-
-
 = Serial.parseFloat()
-
 
 // OVERVIEW SECTION STARTS
 [#overview]
 --
 
 [float]
-=== Description
-`Serial.parseFloat()` returns the first valid floating point number from the Serial buffer. Characters that are not digits (or the minus sign) are skipped. `parseFloat()` is terminated by the first character that is not a floating point number.
+=== Descrição
+`Serial.parseFloat()` retorna o primeiro número válido de ponto flutuante do buffer serial. Caracteres que não são dígitos (ou o sinal de menos) são pulados. `parseFloat()` é terminada pelo primeiro caractere que não é um número de ponto flutuante.
 
-`Serial.parseFloat()` inherits from the link:../../stream[Stream] utility class.
+`Serial.parseFloat()` herda da classe link:../../stream[Stream].
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Sintaxe
 `Serial.parseFloat()`
 
 
 [float]
-=== Parameters
-Nothing
+=== Parâmetros
+Nenhum
 
 [float]
-=== Returns
-`float`
+=== Retorna
+O primeiro número válido `float` no buffer de recebimento. (float)
 
 --
 // OVERVIEW SECTION ENDS
@@ -42,11 +38,11 @@ Nothing
 --
 
 [float]
-=== See also
+=== Ver também
 
 [role="language"]
-* #LANGUAGE# link:../../stream[stream()]
-* #LANGUAGE# link:../../stream/streamparsefloat[Stream.parseFloat()]
+* #LINGUAGEM# link:../../stream[stream()]
+* #LINGUAGEM# link:../../stream/streamparsefloat[Stream.parseFloat()]
 
 --
 // SEE ALSO SECTION ENDS

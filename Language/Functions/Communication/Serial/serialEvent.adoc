@@ -2,56 +2,52 @@
 title: Serial.serialEvent()
 ---
 
-
-
-
 = serialEvent()
-
 
 // OVERVIEW SECTION STARTS
 [#overview]
 --
 
 [float]
-=== Description
-Called when data is available. Use `Serial.read()` to capture this data.
+=== Descrição
+Chamada quando dados estão disponíveis no buffer serial. Use `Serial.read()` para ler esses dados.
 
-NB : Currently, `serialEvent()` is not compatible with the Esplora, Leonardo, or Micro
+Nota: Atualmente, `serialEvent()` não é compativel com o Esplora, Leonardo, ou Micro
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Sintaxe
 
 [source,arduino]
 ----
 void serialEvent(){
-//statements
+//código
 }
 ----
-Arduino Mega only:
+Apenas Arduino Mega:
 [source,arduino]
 ----
 void serialEvent1(){
-//statements
+//código
 }
 
 void serialEvent2(){
-//statements
+//código
 }
 
 void serialEvent3(){
-//statements
+//código
 }
 ----
 
 [float]
-=== Parameters
-`statements`: any valid statements
+=== Parâmetros
+`código`: quaisquer linhas de código válidas
 
 [float]
-=== Returns
-Nothing
+=== Retorna
+Nada
 
 --
 // OVERVIEW SECTION ENDS
@@ -62,21 +58,21 @@ Nothing
 --
 
 [float]
-=== See also
+=== Ver Também
 
 [role="example"]
-* #EXAMPLE# http://arduino.cc/en/Tutorial/SerialEvent[SerialEvent Tutorial]
+* #EXEMPLO# http://arduino.cc/en/Tutorial/SerialEvent[SerialEvent Tutorial (Em Inglês)]
 
 [role="language"]
-* #LANGUAGE# link:../begin[begin()]
-* #LANGUAGE# link:../end[end()]
-* #LANGUAGE# link:../available[available()]
-* #LANGUAGE# link:../read[read()]
-* #LANGUAGE# link:../peek[peek()]
-* #LANGUAGE# link:../flush[flush()]
-* #LANGUAGE# link:../print[print()]
-* #LANGUAGE# link:../println[println()]
-* #LANGUAGE# link:../write[write()]
+* #LINGUAGEM# link:../begin[begin()]
+* #LINGUAGEM# link:../end[end()]
+* #LINGUAGEM# link:../available[available()]
+* #LINGUAGEM# link:../read[read()]
+* #LINGUAGEM# link:../peek[peek()]
+* #LINGUAGEM# link:../flush[flush()]
+* #LINGUAGEM# link:../print[print()]
+* #LINGUAGEM# link:../println[println()]
+* #LINGUAGEM# link:../write[write()]
 
 --
 // SEE ALSO SECTION ENDS

@@ -2,9 +2,6 @@
 title: Serial.findUntil()
 ---
 
-
-
-
 = Serial.findUntil()
 
 
@@ -13,28 +10,28 @@ title: Serial.findUntil()
 --
 
 [float]
-=== Description
-`Serial.findUntil()` reads data from the serial buffer until a target string of given length or terminator string is found.
+=== Descrição
+`Serial.findUntil()` lê dados do buffer serial até uma string especificada de dado tamanho ou um terminador serem encontrados.
 
-The function returns true if the target string is found, false if it times out.
+A função retorna `true` se a string especificada é encontrada, `false` se ocorre time-out.
 
-`Serial.findUntil()` inherits from the link:../../stream[Stream] utility class.
+A função `Serial.findUntil()` é herdada da classe link:../../stream[Stream].
 [%hardbreaks]
 
 
 [float]
-=== Syntax
-`Serial.findUntil(target, terminal)`
+=== Sintaxe
+`Serial.findUntil(str, terminal)`
 
 
 [float]
-=== Parameters
-`target` : the string to search for (char)
-`terminal` : the terminal string in the search (char)
+=== Parâmetros
+`str` : a string a ser procurada (*char)
+`terminal` : a string terminadora da busca (*char)
 
 [float]
-=== Returns
-`boolean`
+=== Retorna
+Se a string foi ou não encontrada no buffer - `boolean`
 
 --
 // OVERVIEW SECTION ENDS
@@ -47,7 +44,7 @@ The function returns true if the target string is found, false if it times out.
 --
 
 [float]
-=== Notes and Warnings
+=== Notas e Advertências
 
 --
 // HOW TO USE SECTION ENDS
@@ -58,11 +55,11 @@ The function returns true if the target string is found, false if it times out.
 --
 
 [float]
-=== See also
+=== Ver Também
 
 [role="language"]
-* #LANGUAGE# link:../../stream[stream] +
-* #LANGUAGE# link:../../stream/streamfinduntil[stream.findUntil()]
+* #LINGUAGEM# link:../../stream[stream] +
+* #LINGUAGEM# link:../../stream/streamfinduntil[stream.findUntil()]
 
 --
 // SEE ALSO SECTION ENDS

@@ -2,30 +2,26 @@
 title: Serial.begin()
 ---
 
-
-
-
 = begin()
-
 
 // OVERVIEW SECTION STARTS
 [#overview]
 --
 
 [float]
-=== Description
-Sets the data rate in bits per second (baud) for serial data transmission. For communicating with the computer, use one of these rates: 300, 600, 1200, 2400, 4800, 9600, 14400, 19200, 28800, 38400, 57600, or 115200. You can, however, specify other rates - for example, to communicate over pins 0 and 1 with a component that requires a particular baud rate.
+=== Descrição
+Configura a taxa de transferência em bits por segundo (baud rate) para transmissão serial. Para comunicação com um computador, use uma dessas taxas: 300, 600, 1200, 2400, 4800, 9600, 14400, 19200, 28800, 38400, 57600, ou 115200. Você pode, no entanto, especificar outras taxas - por examplo, para comunicar nos pinos 0 e 1 com um componente que requer uma taxa de transferência peculiar.
 
-An optional second argument configures the data, parity, and stop bits. The default is 8 data bits, no parity, one stop bit.
+Um segundo argumento opcional configura o número de bits no dado, paridade, e bits de parada (stop bits). Caso esse argumento não seja especificado, o padrão é 8 bits de dados, sem paridade e um stop bit.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Sintaxe
 `Serial.begin(speed)`
 `Serial.begin(speed, config)`
 
-_Arduino Mega only:_
+_Apenas Arduino Mega:_
 
 `Serial1.begin(speed)` +
 `Serial2.begin(speed)` +
@@ -38,14 +34,14 @@ _Arduino Mega only:_
 
 [float]
 === Parameters
-`speed`: in bits per second (baud) - `long`
+`speed`: a taxa de transmissão em bits per second (baud rate) - (long)
 
-`config`: sets data, parity, and stop bits. Valid values are
+`config`: configuração do número de bits por transmissão, paridade, e stop bits. Opções válidas são:
 
 `SERIAL_5N1` +
 `SERIAL_6N1` +
 `SERIAL_7N1` +
-`SERIAL_8N1` (the default) +
+`SERIAL_8N1` (o padrão) +
 `SERIAL_5N2` +
 `SERIAL_6N2` +
 `SERIAL_7N2` +
@@ -68,8 +64,8 @@ _Arduino Mega only:_
 `SERIAL_8O2` +
 
 [float]
-=== Returns
-Nothing
+=== Retorna
+Nada
 
 --
 // OVERVIEW SECTION ENDS
@@ -82,9 +78,9 @@ Nothing
 --
 
 [float]
-=== Example Code
+=== Códigos de Exemplo
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-
+O código abaixo inicia a porta serial a 9600 bps.
 
 [source,arduino]
 ----
@@ -92,16 +88,19 @@ void setup() {
     Serial.begin(9600); // opens serial port, sets data rate to 9600 bps
 }
 
-void loop() {}
+void loop() {
+}
 ----
 [%hardbreaks]
 
-*Arduino Mega example:*
+*Exemplo para o Arduino Mega:*
+O código abaixo inicia todas as portas seriais no Arduino Mega com diferentes taxas de trasnmissão.
 [source,arduino]
 ----
-// Arduino Mega using all four of its Serial ports
+// Exemplo por Jeff Gray (originalmente em Inglês)
+// Arduino Mega usando todas suas quatro portas seriais
 // (Serial, Serial1, Serial2, Serial3),
-// with different baud rates:
+// com baud rates diferentes:
 
 void setup(){
   Serial.begin(9600);
@@ -114,10 +113,10 @@ void setup(){
   Serial2.println("Hello Serial 2");
   Serial3.println("Hello Serial 3");
 }
-void loop() {}
+void loop() {
+}
 ----
 [%hardbreaks]
-Thanks to Jeff Gray for the mega example
 
 --
 // HOW TO USE SECTION ENDS

@@ -2,35 +2,30 @@
 title: Serial.parseInt()
 ---
 
-
-
-
 = parseInt()
-
 
 // OVERVIEW SECTION STARTS
 [#overview]
 --
 
 [float]
-=== Description
-Looks for the next valid integer in the incoming serial `stream.parseInt()` inherits from the link:../../stream[Stream] utility class.
+=== Descrição
+Procura o próximo inteiro válido no buffer de recebimento serial. A função `stream.parseInt()` é herdada da classe link:../../stream[Stream].
 
+Em particular:
 
-In particular:
-
-* Initial characters that are not digits or a minus sign, are skipped; +
-* Parsing stops when no characters have been read for a configurable time-out value, or a non-digit is read; +
-* If no valid digits were read when the time-out (see Serial.setTimeout()) occurs, 0 is returned;
+* Caracteres iniciais que não são dígitos ou um sinal de menos, são ignorados; +
+* O Parsing termina quando caractetes não foram lidos em um time-out configurável, ou um valor não-digito é lido; +
+* Se nenhum dígito válido foi lido quando ocorre o time-out (ver Serial.setTimeout()), 0 é retornado;
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Sintaxe
 `Serial.parseInt()`
 `Serial.parseInt(char skipChar)`
 
-_Arduino Mega only:_
+_Arduino Mega:_
 
 `Serial1.parseInt()` +
 `Serial2.parseInt()` +
@@ -38,12 +33,12 @@ _Arduino Mega only:_
 
 
 [float]
-=== Parameters
-`skipChar`: used to skip the indicated char in the search. Used for example to skip thousands divider.
+=== Parâmetros
+`skipChar`: usado para ignorar o caractere indicado na busca. Usado, por exemplo, para ignorar o ponto em "2.000.000".
 
 [float]
-=== Returns
-`long` : the next valid integer
+=== Retorna
+O próximo inteiro válido - `long`.
 
 --
 // OVERVIEW SECTION ENDS
@@ -54,20 +49,20 @@ _Arduino Mega only:_
 --
 
 [float]
-=== See also
+=== Ver Também
 
 [role="language"]
-* #LANGUAGE# link:../begin[begin()] +
-* #LANGUAGE# link:../end[end()] +
-* #LANGUAGE# link:../available[available()] +
-* #LANGUAGE# link:../read[read()] +
-* #LANGUAGE# link:../peek[peek()] +
-* #LANGUAGE# link:../flush[flush()] +
-* #LANGUAGE# link:../print[print()] +
-* #LANGUAGE# link:../println[println()] +
-* #LANGUAGE# link:../write[write()] +
-* #LANGUAGE# link:../serialevent[SerialEvent()] +
-* #LANGUAGE# link:../../stream/streamparsefloat[Stream.parseFloat()]
+* #LINGUAGEM# link:../begin[begin()] +
+* #LINGUAGEM# link:../end[end()] +
+* #LINGUAGEM# link:../available[available()] +
+* #LINGUAGEM# link:../read[read()] +
+* #LINGUAGEM# link:../peek[peek()] +
+* #LINGUAGEM# link:../flush[flush()] +
+* #LINGUAGEM# link:../print[print()] +
+* #LINGUAGEM# link:../println[println()] +
+* #LINGUAGEM# link:../write[write()] +
+* #LINGUAGEM# link:../serialevent[SerialEvent()] +
+* #LINGUAGEM# link:../../stream/streamparsefloat[Stream.parseFloat()]
 
 --
 // SEE ALSO SECTION ENDS

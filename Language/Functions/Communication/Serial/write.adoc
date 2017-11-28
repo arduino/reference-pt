@@ -2,46 +2,45 @@
 title: Serial.write()
 ---
 
-
-
-
 = write()
-
 
 // OVERVIEW SECTION STARTS
 [#overview]
 --
 
 [float]
-=== Description
-Writes binary data to the serial port. This data is sent as a byte or series of bytes; to send the characters representing the digits of a number use the link:../print[print()] function instead.
+=== Descrição
+Escreve dados binários na porta serial. Esses dados são enviados como um byte ou séries de bytes; para enviar os caracteres representando os dígitos de um número, use em vez disso a função link:../print[print()].
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Sintaxe
 `Serial.write(val)` +
 `Serial.write(str)` +
 `Serial.write(buf, len)`
 
-_Arduino Mega also supports:_
+_O Arduino Mega também supporta:_
 
-`Serial1`, `Serial2`, `Serial3` (in place of `Serial`)
+`Serial1.write()`
+`Serial2.write()`
+`Serial3.write()`
 
-
-[float]
-=== Parameters
-`val`: a value to send as a single byte
-
-`str`: a string to send as a series of bytes
-
-`buf`: an array to send as a series of bytes
 
 [float]
-=== Returns
-`size_t`
+=== Parâmetros
+`val`: o valor a ser enviado como um único byte.
 
-`write()` will return the number of bytes written, though reading that number is optional
+`str`: uma string a ser enviada como uma série de bytes.
+
+`buf`: um vetor a ser enviado como uma série de bytes.
+
+[float]
+=== Retorna
+
+O número de bytes escritos na porta serial - `size_t`
+
+`write()` irá retornar o número de bytes escritos, apesar de ler esse valor ser opcional 
 
 --
 // OVERVIEW SECTION ENDS
@@ -53,9 +52,9 @@ _Arduino Mega also supports:_
 [#howtouse]
 --
 [float]
-=== Example Code
+=== Código de Exemplo
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-
+O código abaixo usa a função Serial.write() para escrever um valor e uma string na porta serial. 
 
 [source,arduino]
 ----
@@ -64,9 +63,9 @@ void setup(){
 }
 
 void loop(){
-  Serial.write(45); // send a byte with the value 45
+  Serial.write(45); // envia um byte com valor 45 (0b101101)
 
-   int bytesSent = Serial.write(“hello”); //send the string “hello” and return the length of the string.
+   int bytesSent = Serial.write(“hello”); //envia a string “hello” e retorna o tamanho da string.
 }
 ----
 

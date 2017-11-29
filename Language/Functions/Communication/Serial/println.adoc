@@ -59,11 +59,11 @@ void loop() {
   analogValue = analogRead(0);
 
   // Imprime a leitura em vários formatos:
-  Serial.println(analogValue);       // print as an ASCII-encoded decimal
-  Serial.println(analogValue, DEC);  // print as an ASCII-encoded decimal
-  Serial.println(analogValue, HEX);  // print as an ASCII-encoded hexadecimal
-  Serial.println(analogValue, OCT);  // print as an ASCII-encoded octal
-  Serial.println(analogValue, BIN);  // print as an ASCII-encoded binary
+  Serial.println(analogValue);       // imprime como decimal (padrão) codificado em ASCII
+  Serial.println(analogValue, DEC);  // imprime como decimal codificado em ASCII
+  Serial.println(analogValue, HEX);  // imprime como hexadecimal codificado em ASCII
+  Serial.println(analogValue, OCT);  // imprime como octal codificado em ASCII
+  Serial.println(analogValue, BIN);  // imprime como binário codificado em ASCII
 
   // espera 10 milissegundos antes da próxima leitura:
   delay(10);

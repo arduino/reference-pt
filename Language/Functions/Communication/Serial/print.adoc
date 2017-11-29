@@ -107,7 +107,7 @@ void loop() {
 
     Serial.println(x, BIN);  // imprime como binário codificado em ASCII
     //                             então adiciona o retorno (enter) com "println"
-    delay(200);            // delay de 200 milisegundos
+    delay(200);            // delay de 200 milissegundos
   }
   Serial.println("");      // imprime outro retorno
 }

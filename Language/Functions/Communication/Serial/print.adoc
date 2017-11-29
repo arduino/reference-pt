@@ -48,7 +48,7 @@ Para enviar um único byte, sem convertê-lo para texto ASCII, use link:../write
 
 [float]
 === Retorna
-`print()` retorna o número de bytes impressos, porém ler esse valor é opcional - `size_t
+`print()` retorna o número de bytes escritos, porém a leitura desse número é opcional - `size_t
 
 --
 // OVERVIEW SECTION ENDS
@@ -130,15 +130,15 @@ A partir da versão 1.0, a transmissão serial é assíncrona; `Serial.print()` 
 === Ver Também
 
 [role="language"]
-#LINGUAGEM# link:../begin[begin()]
-#LINGUAGEM# link:../end[end()]
-#LINGUAGEM# link:../available[available()]
-#LINGUAGEM# link:../read[read()]
-#LINGUAGEM# link:../peek[peek()]
-#LINGUAGEM# link:../flush[flush()]
-#LINGUAGEM# link:../println[println()]
-#LINGUAGEM# link:../write[write()]
-#LINGUAGEM# link:../serialevent[SerialEvent()]
+#LINGUAGEM# link:../begin[begin()] +
+#LINGUAGEM# link:../end[end()] +
+#LINGUAGEM# link:../available[available()] +
+#LINGUAGEM# link:../read[read()] +
+#LINGUAGEM# link:../peek[peek()] +
+#LINGUAGEM# link:../flush[flush()] +
+#LINGUAGEM# link:../println[println()] +
+#LINGUAGEM# link:../write[write()] +
+#LINGUAGEM# link:../serialevent[SerialEvent()] +
 #LINGUAGEM# link:https://www.arduino.cc/en/Tutorial/Memory[Tutorial: Memórias (Em Inglês)]
 
 --

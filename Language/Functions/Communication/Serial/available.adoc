@@ -59,7 +59,7 @@ void loop() {
 
 	// enviar resposta apenas quando receber dados:
 	if (Serial.available() > 0) {
-		// read the incoming byte:
+		// lê o dado recebido:
 		incomingByte = Serial.read();
 
 		// responder o que foi recebido:
@@ -108,16 +108,16 @@ void loop() {
 === Ver também
 
 [role="language"]
-* #LINGUAGEM# link:../begin[begin()] +
-* #LINGUAGEM# link:../end[end()] +
-* #LINGUAGEM# link:../read[read()] +
-* #LINGUAGEM# link:../peek[peek()] +
-* #LINGUAGEM# link:../flush[flush()] +
-* #LINGUAGEM# link:../print[print()] +
-* #LINGUAGEM# link:../println[println()] +
-* #LINGUAGEM# link:../write[write()] +
-* #LINGUAGEM# link:../serialevent[SerialEvent()] +
-* #LINGUAGEM# link:../../stream/streamavailable[Stream.available()]
+#LINGUAGEM# link:../begin[begin()] +
+#LINGUAGEM# link:../end[end()] +
+#LINGUAGEM# link:../read[read()] +
+#LINGUAGEM# link:../peek[peek()] +
+#LINGUAGEM# link:../flush[flush()] +
+#LINGUAGEM# link:../print[print()] +
+#LINGUAGEM# link:../println[println()] +
+#LINGUAGEM# link:../write[write()] +
+#LINGUAGEM# link:../serialevent[SerialEvent()] +
+#LINGUAGEM# link:../../stream/streamavailable[Stream.available()]
 
 --
 // SEE ALSO SECTION ENDS

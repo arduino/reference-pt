@@ -2,27 +2,23 @@
 title: Serial.read()
 ---
 
-
-
-
 = read()
-
 
 // OVERVIEW SECTION STARTS
 [#overview]
 --
 
 [float]
-=== Description
-Reads incoming serial data. read() inherits from the link:../../stream[Stream] utility class.
+=== Descrição
+Lê dados recebidos na porta serial. A função `read()` é herdada da classe link:../../stream[Stream].
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Sintaxe
 `Serial.read()`
 
-_Arduino Mega only:_
+_Apenas Arduino Mega:_
 
 `Serial1.read()` +
 `Serial2.read()` +
@@ -30,44 +26,41 @@ _Arduino Mega only:_
 
 
 [float]
-=== Parameters
-Nothing
+=== Parâmetros
+Nenhum
 
 [float]
-=== Returns
-The first byte of incoming serial data available (or -1 if no data is available) - `int`.
+=== Retorna
+O primeiro byte de dados recebidos disponível (ou -1 se não há dados disponíveis) - `int`.
 
 --
 // OVERVIEW SECTION ENDS
-
-
-
 
 // HOW TO USE SECTION STARTS
 [#howtouse]
 --
 
 [float]
-=== Example Code
+=== Código de Exemplo
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-
+O código abaixo devolve um dado recebido na porta serial.
 
 [source,arduino]
 ----
-int incomingByte = 0;   // for incoming serial data
+int incomingByte = 0;   // variável para o dado recebido
 
 void setup() {
-        Serial.begin(9600);     // opens serial port, sets data rate to 9600 bps
+        Serial.begin(9600);     // abre a porta serial, configura a taxa de transferência para 9600 bps
 }
 
 void loop() {
 
-        // send data only when you receive data:
+        // apenas responde quando dados são recebidos:
         if (Serial.available() > 0) {
-                // read the incoming byte:
+                // lê do buffer o dado recebido:
                 incomingByte = Serial.read();
 
-                // say what you got:
+                // responde com o dado recebido:
                 Serial.print("I received: ");
                 Serial.println(incomingByte, DEC);
         }

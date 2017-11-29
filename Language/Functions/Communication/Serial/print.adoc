@@ -44,7 +44,7 @@ Para enviar um único byte, sem convertê-lo para texto ASCII, use link:../write
 [float]
 === Parâmetros
 `val`: o valor a ser impresso - qualquer tipo de dados +
-`formato`: a base a ser usada ou o número de casas decimais para valores float
+`formato`: especifica a base do numeral (para tipos de dados int) ou número de casas decimais (para tipos de dados float)
 
 [float]
 === Retorna
@@ -60,7 +60,7 @@ Para enviar um único byte, sem convertê-lo para texto ASCII, use link:../write
 [float]
 === Código de Exemplo
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-
+O código abaixo imprime um valor na porta serial em vários formatos.
 
 [source,arduino]
 ----

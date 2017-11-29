@@ -40,7 +40,7 @@ Nada
 === Ver Também
 
 [role="language"]
-#LINGUAGEM# link:../../stream[stream]
+#LINGUAGEM# link:../../stream[stream] +
 #LINGUAGEM# link:../../stream/streamsettimeout[stream.setTimeout()]
 
 --

@@ -2,79 +2,70 @@
 title: Serial.println()
 ---
 
-
-
-
 = println()
-
 
 // OVERVIEW SECTION STARTS
 [#overview]
 --
 
 [float]
-=== Description
-Prints data to the serial port as human-readable ASCII text followed by a carriage return character (ASCII 13, or '\r') and a newline character (ASCII 10, or '\n'). This command takes the same forms as link:../print[Serial.print().
+=== Descrição
+Imprime dados na porta serial como texto ASCII seguido pelo caratere de retorno de carruagem (ASCII 13, ou '\r') e um cactere de nova linha (ASCII 10, ou '\n'). Essa função assume as mesmas formas que link:../print[Serial.print()].
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Sintaxe
 `Serial.println(val)` +
-`Serial.println(val, format)`
+`Serial.println(val, formato)`
 
 
 [float]
-=== Parameters
-`val`: the value to print - any data type
+=== Parâmetros
+`val`: o valor a ser impresso - qualquer tipo de dados
 
-`format`: specifies the number base (for integral data types) or number of decimal places (for floating point types)
+`formato`: especifica a base do numeral (para tipos de dados int) ou número de casas decimais (para tipos de dados float)
 
 [float]
-=== Returns
-`size_t`: `println()` returns the number of bytes written, though reading that number is optional
---
+=== Retorna
+`size_t`: `println()` retorna o número de bytes escritos, porém a leitura desse número é opcional
 // OVERVIEW SECTION ENDS
-
-
-
 
 // HOW TO USE SECTION STARTS
 [#howtouse]
 --
 
 [float]
-=== Example Code
+=== Código de Exemplo
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-
-
+O código abaixo faz a leitura de um valor analógico a cada 10 ms e imprime esse valor na porta serial em vários formatos.
 [source,arduino]
 ----
 /*
- Analog input reads an analog input on analog in 0, prints the value out.
- created 24 March 2006
- by Tom Igoe
+ Lê um valor analógico no pino de entrada analógica 0, imprime esse dado na porta serial.
+ criado em 24 de Março de 2006 por Tom Igoe
+ Tradução em 29 de Novembro de 2017
  */
 
-int analogValue = 0;    // variable to hold the analog value
+int analogValue = 0;    // variável para guardar a leitura analógica 
 
 void setup() {
-  // open the serial port at 9600 bps:
+  // abre a porta serial a 9600 bps:
   Serial.begin(9600);
 }
 
 void loop() {
-  // read the analog input on pin 0:
+  // Lê o valor analógico no pino 0:
   analogValue = analogRead(0);
 
-  // print it out in many formats:
+  // Imprime a leitura em vários formatos:
   Serial.println(analogValue);       // print as an ASCII-encoded decimal
   Serial.println(analogValue, DEC);  // print as an ASCII-encoded decimal
   Serial.println(analogValue, HEX);  // print as an ASCII-encoded hexadecimal
   Serial.println(analogValue, OCT);  // print as an ASCII-encoded octal
   Serial.println(analogValue, BIN);  // print as an ASCII-encoded binary
 
-  // delay 10 milliseconds before the next reading:
+  // espera 10 milissegundos antes da próxima leitura:
   delay(10);
 ----
 

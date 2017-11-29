@@ -2,87 +2,81 @@
 title: Serial.print()
 ---
 
-
-
-
 = print()
-
 
 // OVERVIEW SECTION STARTS
 [#overview]
 --
 
 [float]
-=== Description
-Prints data to the serial port as human-readable ASCII text. This command can take many forms. Numbers are printed using an ASCII character for each digit. Floats are similarly printed as ASCII digits, defaulting to two decimal places. Bytes are sent as a single character. Characters and strings are sent as is. For example-
+=== Descrição
+Imprime dados na porta serial em como texto ASCII (facilmente legível, diferentemente dos valores binários). Essa função pode assumir várias formas. números são impressos usando um caractere ASCII para cada dígito. Floats são similarmente impressos como dígitos ASCII, padronizados com duas casas decimais. Bytes são enviados como um único caractere. Caracteres e strings são enviados normalmente, pois já estão em formato ASCII. Por exemplo:
 
-* `Serial.print(78) gives "78"` +
-* `Serial.print(1.23456) gives "1.23"` +
-* `Serial.print('N') gives "N"` +
-* `Serial.print("Hello world.") gives "Hello world." `
+* `Serial.print(78) imprime "78"` +
+* `Serial.print(1.23456) imprime "1.23"` +
+* `Serial.print('N') imprime "N"` +
+* `Serial.print("Hello world.") imprime "Hello world." `
 
-An optional second parameter specifies the base (format) to use; permitted values are `BIN(binary, or base 2)`, `OCT(octal, or base 8)`, `DEC(decimal, or base 10)`, `HEX(hexadecimal, or base 16)`. For floating point numbers, this parameter specifies the number of decimal places to use. For example-
+Um segundo parâmetro opcional especifíca a base (formato) a ser usada; valores permitidos são `BIN(binário, ou base 2)`, `OCT(octal, ou base 8)`, `DEC(decimal, ou base 10)`, `HEX(hexadecimal, ou base 16)`. Para números de ponto flutuante, esse parâmetro especifica o número de casas decimais a serem impressas. Por exemplo:
 
-* `Serial.print(78, BIN) gives "1001110"` +
-* `Serial.print(78, OCT) gives "116"` +
-* `Serial.print(78, DEC) gives "78"` +
-* `Serial.print(78, HEX) gives "4E"` +
-* `Serial.println(1.23456, 0) gives "1"` +
-* `Serial.println(1.23456, 2) gives "1.23"` +
-* `Serial.println(1.23456, 4) gives "1.2346"`
+* `Serial.print(78, BIN) imprime "1001110"` +
+* `Serial.print(78, OCT) imprime "116"` +
+* `Serial.print(78, DEC) imprime "78"` +
+* `Serial.print(78, HEX) imprime "4E"` +
+* `Serial.println(1.23456, 0) imprime "1"` +
+* `Serial.println(1.23456, 2) imprime "1.23"` +
+* `Serial.println(1.23456, 4) imprime "1.2346"`
 
-You can pass flash-memory based strings to Serial.print() by wrapping them with F(). For example:
+Você pode passar strings armazenadas na memória flash para a função Serial.print() envolvendo as com F(). Por exemplo:
 
 `Serial.print(F(“Hello World”))`
 
-To send a single byte, use link:../write[Serial.write()].
+Para enviar um único byte, sem convertê-lo para texto ASCII, use link:../write[Serial.write()].
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Sintaxe
 `Serial.print(val)` +
-`Serial.print(val, format)`
+`Serial.print(val, formato)`
 
 
 [float]
-=== Parameters
-`val`: the value to print - any data type
+=== Parâmetros
+`val`: o valor a ser impresso - qualquer tipo de dados +
+`formato`: a base a ser usada ou o número de casas decimais para valores float
 
 [float]
-=== Returns
-`size_t`: `print()` returns the number of bytes written, though reading that number is optional.
+=== Retorna
+`print()` retorna o número de bytes impressos, porém ler esse valor é opcional - `size_t
 
 --
 // OVERVIEW SECTION ENDS
-
-
-
 
 // HOW TO USE SECTION STARTS
 [#howtouse]
 --
 
 [float]
-=== Example Code
+=== Código de Exemplo
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
 
 
 [source,arduino]
 ----
 /*
-Uses a FOR loop for data and prints a number in various formats.
+Usa um loop for para dados e imprime cada número em vários formatos.
 */
 int x = 0;    // variable
 
 void setup() {
-  Serial.begin(9600);      // open the serial port at 9600 bps:
+  Serial.begin(9600);      // abre a porta serial a 9600 bps:
 }
 
 void loop() {
-  // print labels
-  Serial.print("NO FORMAT");       // prints a label
-  Serial.print("\t");              // prints a tab
+  // imprime rótulos para cada base
+  Serial.print("NO FORMAT");       // imprime um rótulo
+  Serial.print("\t");              // imprime uma tabulação (TAB)
 
   Serial.print("DEC");
   Serial.print("\t");
@@ -96,33 +90,33 @@ void loop() {
   Serial.print("BIN");
   Serial.print("\t");
 
-  for(x=0; x< 64; x++){    // only part of the ASCII chart, change to suit
+  for(x=0; x< 64; x++){    // apenas uma parte da tabela ASCII, edite para mais ou menos valores
 
-    // print it out in many formats:
-    Serial.print(x);       // print as an ASCII-encoded decimal - same as "DEC"
-    Serial.print("\t");    // prints a tab
+    // imprime cada número em vários formatos:
+    Serial.print(x);       // imprime como decimal codificado em ASCII- o mesmo que "DEC"
+    Serial.print("\t");    // imprime uma tabulação
 
-    Serial.print(x, DEC);  // print as an ASCII-encoded decimal
-    Serial.print("\t");    // prints a tab
+    Serial.print(x, DEC);  // imprime como decimal codificado em ASCII
+    Serial.print("\t");    // imprime uma tabulação
 
-    Serial.print(x, HEX);  // print as an ASCII-encoded hexadecimal
-    Serial.print("\t");    // prints a tab
+    Serial.print(x, HEX);  // imprime como hexadecimal codificado em ASCII
+    Serial.print("\t");    // imprime uma tabulação
 
-    Serial.print(x, OCT);  // print as an ASCII-encoded octal
-    Serial.print("\t");    // prints a tab
+    Serial.print(x, OCT);  // imprime como octal codificado em ASCII
+    Serial.print("\t");    // imprime uma tabulação
 
-    Serial.println(x, BIN);  // print as an ASCII-encoded binary
-    //                             then adds the carriage return with "println"
-    delay(200);            // delay 200 milliseconds
+    Serial.println(x, BIN);  // imprime como binário codificado em ASCII
+    //                             então adiciona o retorno (enter) com "println"
+    delay(200);            // delay de 200 milisegundos
   }
-  Serial.println("");      // prints another carriage return
+  Serial.println("");      // imprime outro retorno
 }
 ----
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
-As of version 1.0, serial transmission is asynchronous; `Serial.print()` will return before any characters are transmitted.
+=== Notas e Advertências
+A partir da versão 1.0, a transmissão serial é assíncrona; `Serial.print()` irá retornar antes de qualquer caractere ser impresso.
 
 --
 // HOW TO USE SECTION ENDS
@@ -133,19 +127,19 @@ As of version 1.0, serial transmission is asynchronous; `Serial.print()` will re
 --
 
 [float]
-=== See also
+=== Ver Também
 
 [role="language"]
-* #LANGUAGE# link:../begin[begin()]
-* #LANGUAGE# link:../end[end()]
-* #LANGUAGE# link:../available[available()]
-* #LANGUAGE# link:../read[read()]
-* #LANGUAGE# link:../peek[peek()]
-* #LANGUAGE# link:../flush[flush()]
-* #LANGUAGE# link:../println[println()]
-* #LANGUAGE# link:../write[write()]
-* #LANGUAGE# link:../serialevent[SerialEvent()]
-* #LANGUAGE# link:https://www.arduino.cc/en/Tutorial/Memory[Memory]
+#LINGUAGEM# link:../begin[begin()]
+#LINGUAGEM# link:../end[end()]
+#LINGUAGEM# link:../available[available()]
+#LINGUAGEM# link:../read[read()]
+#LINGUAGEM# link:../peek[peek()]
+#LINGUAGEM# link:../flush[flush()]
+#LINGUAGEM# link:../println[println()]
+#LINGUAGEM# link:../write[write()]
+#LINGUAGEM# link:../serialevent[SerialEvent()]
+#LINGUAGEM# link:https://www.arduino.cc/en/Tutorial/Memory[Tutorial: Memórias (Em Inglês)]
 
 --
 // SEE ALSO SECTION ENDS

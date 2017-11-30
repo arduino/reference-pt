@@ -12,7 +12,7 @@ title: Serial.readBytes()
 === Descrição
 `Serial.readBytes()` lê caracteres da porta serial e os move para um buffer. A função termina se a quantidade de bytes determinada foi lida, ou se ocorre time-out (ver link:../settimeout[Serial.setTimeout()]).
 
-`Serial.readBytes()` retorna o número de caracteres colocados no buffer. Um valor 0 implica que dados não foram encontrados.
+`Serial.readBytes()` retorna o número de caracteres colocados no buffer. Um valor 0 indica que dados não foram encontrados.
 
 `Serial.readBytes()` é herdada da classe link:../../stream[Stream].
 [%hardbreaks]

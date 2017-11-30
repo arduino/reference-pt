@@ -42,18 +42,18 @@ Uma string lida do buffer serial
 === Ver Também
 
 [role="language"]
-#LINGUAGEM# link:../../serial[Serial]
-#LINGUAGEM# link:../begin[begin()]
-#LINGUAGEM# link:../end[end()]
-#LINGUAGEM# link:../available[available()]
-#LINGUAGEM# link:../read[read()]
-#LINGUAGEM# link:../peek[peek()]
-#LINGUAGEM# link:../flush[flush()]
-#LINGUAGEM# link:../print[print()]
-#LINGUAGEM# link:../println[println()]
-#LINGUAGEM# link:../write[write()]
-#LINGUAGEM# link:../serialEvent[SerialEvent()]
-#LINGUAGEM# link:../../stream/streamParseFloat[Stream.parseFloat()]
+#LINGUAGEM# link:../../serial[Serial] +
+#LINGUAGEM# link:../begin[begin()] +
+#LINGUAGEM# link:../end[end()] +
+#LINGUAGEM# link:../available[available()] +
+#LINGUAGEM# link:../read[read()] +
+#LINGUAGEM# link:../peek[peek()] +
+#LINGUAGEM# link:../flush[flush()] +
+#LINGUAGEM# link:../print[print()] +
+#LINGUAGEM# link:../println[println()] +
+#LINGUAGEM# link:../write[write()] +
+#LINGUAGEM# link:../serialEvent[SerialEvent()] +
+#LINGUAGEM# link:../../stream/streamParseFloat[Stream.parseFloat()] +
 
 --
 // SEE ALSO SECTION ENDS

@@ -14,30 +14,30 @@ title: Serial.readBytesUntil()
 
 [float]
 === Description
-Serial.readBytesUntil() reads characters from the serial buffer into an array. The function terminates if the terminator character is detected, the determined length has been read, or it times out (see link:../settimeout[Serial.setTimeout()]).
+Serial.readBytesUntil() lê caracteres da porta serial e os move para um buffer. A função termina se o caractere terminador foi encontrado, se a quantidade de bytes determinada foi lida, ou se ocorre time-out (ver link:../settimeout[Serial.setTimeout()]).
 
-`Serial.readBytesUntil()` returns the number of characters read into the buffer. A 0 means no valid data was found.
+`Serial.readBytesUntil()` retorna o número de caracteres colocados no buffer. Um valor 0 indica que dados não foram encontrados.
 
-`Serial.readBytesUntil()` inherits from the link:../../stream[Stream] utility class.
+`Serial.readBytesUntil()` é herdada da classe link:../../stream[Stream].
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Sintaxe
 `Serial.readBytesUntil(character, buffer, length)`
 
 
 [float]
-=== Parameters
-`character` : the character to search for (`char`)
+=== Parâmetros
+`character` : o charactere que encerra a busca (`char`)
 
-`buffer`: the buffer to store the bytes in (`char[]` or `byte[]`)
+`buffer`: o buffer para se armazenar os bytes (`char[]` ou `byte[]`)
 
-`length` : the number of bytes to read (`int`)
+`length` : o número de bytes a serem lidos (`int`)
 
 [float]
-=== Returns
-`size_t`
+=== Retorna
+o número de bytes colocados no buffer (`size_t`)
 
 --
 // OVERVIEW SECTION ENDS
@@ -48,11 +48,11 @@ Serial.readBytesUntil() reads characters from the serial buffer into an array. T
 --
 
 [float]
-=== See also
+=== Ver Também
 
 [role="language"]
-* #LANGUAGE# link:../../stream[Stream]
-* #LANGUAGE# link:../../stream/streamreadbytesuntil[Stream.readByteUntil()]
+#LINGUAGEM# link:../../stream[Stream]
+#LINGUAGEM# link:../../stream/streamreadbytesuntil[Stream.readByteUntil()]
 
 --
 // SEE ALSO SECTION ENDS

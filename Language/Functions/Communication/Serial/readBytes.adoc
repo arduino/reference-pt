@@ -2,40 +2,36 @@
 title: Serial.readBytes()
 ---
 
-
-
-
 = Serial.readBytes()
-
 
 // OVERVIEW SECTION STARTS
 [#overview]
 --
 
 [float]
-=== Description
-`Serial.readBytes()` reads characters from the serial port into a buffer. The function terminates if the determined length has been read, or it times out (see link:../settimeout[Serial.setTimeout()]).
+=== Descrição
+`Serial.readBytes()` lê caracteres da porta serial e os move para um buffer. A função termina se a quantidade de bytes determinada foi lida, ou se ocorre time-out (ver link:../settimeout[Serial.setTimeout()]).
 
-`Serial.readBytes()` returns the number of characters placed in the buffer. A 0 means no valid data was found.
+`Serial.readBytes()` retorna o número de caracteres colocados no buffer. Um valor 0 implica que dados não foram encontrados.
 
-`Serial.readBytes()` inherits from the link:../../stream[Stream] utility class.
+`Serial.readBytes()` é herdada da classe link:../../stream[Stream].
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Sintaxe
 `Serial.readBytes(buffer, length)`
 
 
 [float]
-=== Parameters
-`buffer`: the buffer to store the bytes in (`char[]` or `byte[]`)
+=== Parâmetros
+`buffer`: o buffer para se armazenar os bytes (`char[]` ou `byte[]`)
 
-`length` : the number of bytes to read (`int`)
+`length` : o número de bytes a serem lidos (`int`)
 
 [float]
-=== Returns
-The number of bytes placed in the buffer (`size_t`)
+=== Retorna
+o número de bytes colocados no buffer (`size_t`)
 
 --
 // OVERVIEW SECTION ENDS
@@ -46,11 +42,11 @@ The number of bytes placed in the buffer (`size_t`)
 --
 
 [float]
-=== See also
+=== Ver Também
 
 [role="language"]
-* #LANGUAGE# link:../../stream[stream]
-* #LANGUAGE# link:../../stream/streamreadbytes[stream.readBytes()]
+#LINGUAGEM# link:../../stream[stream] +
+#LINGUAGEM# link:../../stream/streamreadbytes[stream.readBytes()]
 
 --
 // SEE ALSO SECTION ENDS

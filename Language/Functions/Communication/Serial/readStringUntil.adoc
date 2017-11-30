@@ -2,37 +2,32 @@
 title: Serial.readStringUntil()
 ---
 
-
-
-
 = readStringUntil()
-
 
 // OVERVIEW SECTION STARTS
 [#overview]
 --
 
 [float]
-=== Description
-`readStringUntil()` reads characters from the serial buffer into a string. The function terminates if it times out (see link:../setTimeout[setTimeout()]).
+=== Descrição
+`readStringUntil()` ê caracteres do buffer serial e os move para uma string. A função termina se o caractere terminador é encontrado, ou se  ocorre time-out (ver link:../setTimeout[setTimeout()]).
 
-This function is part of the Stream class, and is called by any class that inherits from it (Wire, Serial, etc). See the link:../../stream[Stream class] main page for more information.
+Essa função é parte da classe Stream, e é chamada por qualquer classe que herda da mesma (Wire, Serial, etc). Veja a página principal da classe link:../../stream[Stream] para mais informações.
 
 [%hardbreaks]
 
+[float]
+=== Sintaxe
+`Serial.readStringUntil(terminador)`
+
 
 [float]
-=== Syntax
-`Serial.readStringUntil(terminator)`
-
-
-[float]
-=== Parameters
-`terminator` : the character to search for (`char`)
+=== Parâmetros
+`terminador` : o caractere que encerra a busca (`char`)
 
 [float]
-=== Returns
-The entire String read from the serial buffer, until the terminator character is detected
+=== Retorna
+A string completa lida do buffer serial, até o caractere terminador ser encontrado.
 
 --
 // OVERVIEW SECTION ENDS
@@ -43,21 +38,21 @@ The entire String read from the serial buffer, until the terminator character is
 --
 
 [float]
-=== See also
+=== Ver Também
 
 [role="language"]
-* #LANGUAGE# link:../../serial[Serial]
-* #LANGUAGE# link:../begin[begin()]
-* #LANGUAGE# link:../end[end()]
-* #LANGUAGE# link:../available[available()]
-* #LANGUAGE# link:../read[read()]
-* #LANGUAGE# link:../peek[peek()]
-* #LANGUAGE# link:../flush[flush()]
-* #LANGUAGE# link:../print[print()]
-* #LANGUAGE# link:../println[println()]
-* #LANGUAGE# link:../write[write()]
-* #LANGUAGE# link:../serialEvent[SerialEvent()]
-* #LANGUAGE# link:../../stream/streamParseFloat[stream.parseFloat()]
+#LINGUAGEM# link:../../serial[Serial] +
+#LINGUAGEM# link:../begin[begin()] +
+#LINGUAGEM# link:../end[end()] +
+#LINGUAGEM# link:../available[available()] +
+#LINGUAGEM# link:../read[read()] +
+#LINGUAGEM# link:../peek[peek()] +
+#LINGUAGEM# link:../flush[flush()] +
+#LINGUAGEM# link:../print[print()] +
+#LINGUAGEM# link:../println[println()] +
+#LINGUAGEM# link:../write[write()] +
+#LINGUAGEM# link:../serialEvent[SerialEvent()] +
+#LINGUAGEM# link:../../stream/streamParseFloat[stream.parseFloat()]
 
 --
 // SEE ALSO SECTION ENDS

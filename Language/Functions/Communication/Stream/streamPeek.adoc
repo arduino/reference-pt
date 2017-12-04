@@ -2,11 +2,7 @@
 title: Stream.peek()
 ---
 
-
-
-
 = peek()
-
 
 // OVERVIEW SECTION STARTS
 [#overview]
@@ -14,7 +10,7 @@ title: Stream.peek()
 
 [float]
 === Descrição
-Read a byte from the file without advancing to the next one. That is, successive calls to `peek()` will return the same value, as will the next call to `read()`.
+Lê um byte de um arquivo sem avançar para o próximo. Isto é, chamadas sucessivas de `peek()` irão retornar o mesmo valor, assim como irá a próxima chamada de `read()`.
 
 Essa função é parte da classe Stream, e é chamada por qualquer classe que herda da mesma (Wire, Serial, etc). Veja a página principal da link:../../stream[classe Stream] para mais informações.
 [%hardbreaks]
@@ -31,20 +27,17 @@ Essa função é parte da classe Stream, e é chamada por qualquer classe que he
 
 [float]
 === Retorna
-The next byte (or character), or -1 if none is available.
+O próximo byte (ou caractere), ou -1 se não há caracteres disponíveis.
 
 --
 // OVERVIEW SECTION ENDS
-
-
-
 
 // HOW TO USE SECTION STARTS
 [#howtouse]
 --
 
 [float]
-=== Example Code
+//=== Example Code
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
 
 --

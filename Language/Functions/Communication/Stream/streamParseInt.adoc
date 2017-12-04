@@ -2,11 +2,7 @@
 title: Stream.parseInt()
 ---
 
-
-
-
 = parseInt()
-
 
 // OVERVIEW SECTION STARTS
 [#overview]
@@ -14,13 +10,13 @@ title: Stream.parseInt()
 
 [float]
 === Descrição
-`parseInt()` returns the first valid (long) integer number from the current position. Initial characters that are not integers (or the minus sign) are skipped.
+`parseInt()` retorna o primeiro número inteiro (long) válido da stream. Caracteres iniciais que não são dígitos (ou o sinal de menos) são ignorados.
 
-In particular:
+Em particular:
 
-* Initial characters that are not digits or a minus sign, are skipped; +
-* Parsing stops when no characters have been read for a configurable time-out value, or a non-digit is read; +
-* If no valid digits were read when the time-out (see link:../streamsettimeout[Stream.setTimeout()]) occurs, 0 is returned;
+* Caracteres iniciais que não são dígitos ou um sinal de menos, são ignorados; +
+* O parsing para qaundoo nenhum caractere tem sido lido em um time-out de valor confgurável, ou um caractere não-dígito é lido; +
+* Se nehum digito válido foi lido quando ocorre time-out (ver link:../streamsettimeout[Stream.setTimeout()]), é retornado 0;
 
 Essa função é parte da classe Stream, e é chamada por qualquer classe que herda da mesma (Wire, Serial, etc). Veja a página principal da link:../../stream[classe Stream] para mais informações.
 [%hardbreaks]
@@ -36,9 +32,9 @@ Essa função é parte da classe Stream, e é chamada por qualquer classe que he
 === Parâmetros
 `stream` : uma instância de uma classe que herda da classe Stream.
 
-`list` : the stream to check for ints (`char`)
+`list` : a stream a se checar por ints (`char`)
 
-`skipChar`: used to skip the indicated char in the search. Used for example to skip thousands divider.
+`skipChar`: usado para ignorar o carctere indicado na busca. Usado, por exemplo, para ignorar o ponto em "2.000.000".
 
 [float]
 === Retorna

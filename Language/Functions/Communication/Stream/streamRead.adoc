@@ -2,9 +2,6 @@
 title: Stream.read()
 ---
 
-
-
-
 = read()
 
 
@@ -14,7 +11,7 @@ title: Stream.read()
 
 [float]
 === Descrição
-`read()` reads characters from an incoming stream to the buffer.
+`read()` Lê caracteres recebidos em uma stream.
 
 Essa função é parte da classe Stream, e é chamada por qualquer classe que herda da mesma (Wire, Serial, etc). Veja a página principal da link:../../stream[classe Stream] para mais informações.
 [%hardbreaks]
@@ -31,7 +28,7 @@ Essa função é parte da classe Stream, e é chamada por qualquer classe que he
 
 [float]
 === Retorna
-The first byte of incoming data available (or -1 if no data is available).
+O primeiro byte  de dados recebidos disponível (ou -1 se nenhum dado está disponível).
 
 --
 // OVERVIEW SECTION ENDS

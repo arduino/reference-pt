@@ -2,11 +2,7 @@
 title: Stream.findUntil()
 ---
 
-
-
-
 = `findUntil()`
-
 
 // OVERVIEW SECTION STARTS
 [#overview]
@@ -14,9 +10,9 @@ title: Stream.findUntil()
 
 [float]
 === Descrição
-`findUntil()` reads data from the stream until the target string of given length or terminator string is found.
+`findUntil()` lê dados da stream até a string especificada ou terminador serem encontrados.
 
-The function returns true if target string is found, false if timed out
+Essa função retorna true se a string é encontrada, false se ocorre time-out
 
 Essa função é parte da classe Stream, e é chamada por qualquer classe que herda da mesma (Wire, Serial, etc). Veja a página principal da link:../../stream[classe Stream] para mais informações.
 [%hardbreaks]
@@ -30,6 +26,10 @@ Essa função é parte da classe Stream, e é chamada por qualquer classe que he
 [float]
 === Parâmetros
 `stream` : uma instância de uma classe que herda da classe Stream.
+
+`target` : a string a ser procurada.
+
+`terminal` : uma string para encerrar a busca.
 
 [float]
 === Retorna

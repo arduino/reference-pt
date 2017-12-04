@@ -14,9 +14,10 @@ title: Stream.setTimeout()
 
 [float]
 === Descrição
-`setTimeout()` sets the maximum milliseconds to wait for stream data, it defaults to 1000 milliseconds. This function is part of the Stream class, and is called by any class that inherits from it (Wire, Serial, etc). See the #LANGUAGE# link:../../stream[Stream class] main page for more information.
-[%hardbreaks]
+`setTimeout()` configura o número máximo de milissegundos a se esperar por dados. O valor padrão é de 1000 milisegundos.
 
+Essa função é parte da classe Stream, e é chamada por qualquer classe que herda da mesma (Wire, Serial, etc). Veja a página principal da link:../../stream[classe Stream] para mais informações.
+[%hardbreaks]
 
 [float]
 === Sintaxe
@@ -27,11 +28,11 @@ title: Stream.setTimeout()
 === Parâmetros
 `stream` : uma instância de uma classe que herda da classe Stream.
 
-`time` : timeout duration in milliseconds (`long`).
+`time` : duração do timeout em milissegundos (`long`).
 
 [float]
 === Retorna
-Nothing
+Nada
 
 --
 // OVERVIEW SECTION ENDS

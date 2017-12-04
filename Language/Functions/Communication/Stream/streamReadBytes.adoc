@@ -2,11 +2,7 @@
 title: Stream.readBytes()
 ---
 
-
-
-
 = readBytes()
-
 
 // OVERVIEW SECTION STARTS
 [#overview]
@@ -14,9 +10,9 @@ title: Stream.readBytes()
 
 [float]
 === Descrição
-`readBytes()` read characters from a stream into a buffer. The function terminates if the determined length has been read, or it times out (see link:../streamsettimeout[setTimeout()]).
+`readBytes()` lê caracteres de uma stream para um buffer. A função termina se o número de bytes especificado foi lido, ou se ocorre time-out (ver  link:../streamsettimeout[setTimeout()]).
 
-`readBytes()` returns the number of bytes placed in the buffer. A 0 means no valid data was found.
+`readBytes()` retorna o número de bytes colocados no buffer. Um valor 0 indica que não foram encontrados dados válidos.
 
 Essa função é parte da classe Stream, e é chamada por qualquer classe que herda da mesma (Wire, Serial, etc). Veja a página principal da link:../../stream[classe Stream] para mais informações.
 [%hardbreaks]
@@ -31,13 +27,13 @@ Essa função é parte da classe Stream, e é chamada por qualquer classe que he
 === Parâmetros
 `stream` : uma instância de uma classe que herda da classe Stream.
 
-`buffer` : the buffer to store the bytes in (`char[]` or `byte[]`)
+`buffer` : o buffer para se guardar os bytes (`char[]` ou `byte[]`)
 
-`length` : the number of bytes to `read(int)`
+`length` : o número de bytes a serem lidos `read(int)`
 
 [float]
 === Retorna
-The number of bytes placed in the buffer (`size_t`)
+O número de bytes colocados no buffer (`size_t`)
 
 --
 // OVERVIEW SECTION ENDS

@@ -2,11 +2,7 @@
 title: Stream.readString()
 ---
 
-
-
-
 = readString()
-
 
 // OVERVIEW SECTION STARTS
 [#overview]
@@ -14,7 +10,7 @@ title: Stream.readString()
 
 [float]
 === Descrição
-`readString()` reads characters from a stream into a string. The function terminates if it times out (see link:../streamsettimeout[setTimeout()]).
+`readString()` lê caracteres de uma stream em uma string. A função termina se ocorre timeout (ver link:../streamsettimeout[setTimeout()]).
 
 Essa função é parte da classe Stream, e é chamada por qualquer classe que herda da mesma (Wire, Serial, etc). Veja a página principal da link:../../stream[classe Stream] para mais informações.
 [%hardbreaks]
@@ -31,7 +27,7 @@ Essa função é parte da classe Stream, e é chamada por qualquer classe que he
 
 [float]
 === Retorna
-A string read from a stream.
+Uma string lida da stream.
 
 --
 // OVERVIEW SECTION ENDS

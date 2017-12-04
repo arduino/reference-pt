@@ -10,7 +10,7 @@ title: Serial.flush()
 
 [float]
 === Descrição
-Espera a transmissão de daodos seriais enviados terminar. +
+Espera a transmissão de dados seriais enviados terminar. +
 (Antes do Arduino versão 1.0, em vez disso removia qualquer dados recebidos armazenados no buffer).
 
 `flush()` herda da classe link:../flush[Stream].
@@ -47,16 +47,16 @@ Nada
 === Ver Também 
 
 [role="language"]
-* #LINGUAGEM# link:../begin[begin()]
-* #LINGUAGEM# link:../end[end()]
-* #LINGUAGEM# link:../available[available()]
-* #LINGUAGEM# link:../read[read()]
-* #LINGUAGEM# link:../peek[peek()]
-* #LINGUAGEM# link:../print[print()]
-* #LINGUAGEM# link:../println[println()]
-* #LINGUAGEM# link:../write[write()]
-* #LINGUAGEM# link:../serialevent[SerialEvent()]
-* #LINGUAGEM# link:../../stream/streamflush[stream.flush()]
+#LINGUAGEM# link:../begin[begin()] +
+#LINGUAGEM# link:../end[end()] +
+#LINGUAGEM# link:../available[available()] +
+#LINGUAGEM# link:../read[read()] +
+#LINGUAGEM# link:../peek[peek()] +
+#LINGUAGEM# link:../print[print()] +
+#LINGUAGEM# link:../println[println()] +
+#LINGUAGEM# link:../write[write()] +
+#LINGUAGEM# link:../serialevent[SerialEvent()] +
+#LINGUAGEM# link:../../stream/streamflush[stream.flush()] +
 
 --
 // SEE ALSO SECTION ENDS

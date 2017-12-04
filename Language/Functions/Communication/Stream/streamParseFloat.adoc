@@ -14,7 +14,7 @@ title: Stream.parseFloat()
 
 [float]
 === Descrição
-`parseFloat()` returns the first valid floating point number from the current position. Initial characters that are not digits (or the minus sign) are skipped. `parseFloat()` is terminated by the first character that is not a floating point number.
+`parseFloat()` retorna o primeiro número de ponto flutuante da posição atual. Caracteres iniciais que não são digitos (ou o sinal de menos) são ignorados. `parseFloat()` é terminada pelo primeiro caractere que não é um digito encontrado após o número.
 
 Essa função é parte da classe Stream, e é chamada por qualquer classe que herda da mesma (Wire, Serial, etc). Veja a página principal da link:../../stream[classe Stream] para mais informações.
 [%hardbreaks]
@@ -28,7 +28,7 @@ Essa função é parte da classe Stream, e é chamada por qualquer classe que he
 === Parâmetros
 `stream` : uma instância de uma classe que herda da classe Stream.
 
-`list` : the stream to check for floats (`char`)
+`list` : a stream a ser checada por floats (`char`)
 
 [float]
 === Retorna

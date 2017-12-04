@@ -2,11 +2,7 @@
 title: Stream.readBytesUntil()
 ---
 
-
-
-
 = readBytesUntil()
-
 
 // OVERVIEW SECTION STARTS
 [#overview]
@@ -14,9 +10,9 @@ title: Stream.readBytesUntil()
 
 [float]
 === Descrição
-`readBytesUntil()` reads characters from a stream into a buffer. The function terminates if the terminator character is detected, the determined length has been read, or it times out (see link:../streamsettimeout[setTimeout()]).
+`readBytesUntil()` lê bytes de uma stream para um buffer. A função termina se o carctere terminador é encontrado, o número de bytes determinado foi lido, ou ocorre time-out (ver link:../streamsettimeout[setTimeout()]).
 
-`readBytesUntil()` returns the number of bytes placed in the buffer. A 0 means no valid data was found.
+`readBytesUntil()` retorna o número de bytes colocados no buffer. Um valor 0 indica que não foram encontrados dados válidos.
 
 Essa função é parte da classe Stream, e é chamada por qualquer classe que herda da mesma (Wire, Serial, etc). Veja a página principal da link:../../stream[classe Stream] para mais informações.
 [%hardbreaks]
@@ -31,15 +27,15 @@ Essa função é parte da classe Stream, e é chamada por qualquer classe que he
 === Parâmetros
 `stream` : uma instância de uma classe que herda da classe Stream.
 
-`character` : the character to search for (`char`)
+`character` : o caractere para encerra a busca (`char`)
 
-`buffer`: the buffer to store the bytes in (`char[]` or `byte[]`)
+`buffer`: o buffer para armazenar os bytes (`char[]` ou `byte[]`)
 
-`length : the number of bytes to `read(int)`
+`length : o número de bytes a serem lidos (int)
 
 [float]
 === Retorna
-The number of bytes placed in the buffer.
+O número de bytes colocados no buffer.
 
 --
 // OVERVIEW SECTION ENDS

@@ -23,7 +23,7 @@ Essa função é parte da classe Stream, e é chamada por qualquer classe que he
 
 [float]
 === Parâmetros
-`stream` : uma instância de uma classe that herda da classe Stream.
+`stream` : uma instância de uma classe que herda da classe Stream.
 
 [float]
 === Retorna

@@ -13,7 +13,7 @@ title: Stream.readBytesUntil()
 --
 
 [float]
-=== Description
+=== Descrição
 `readBytesUntil()` reads characters from a stream into a buffer. The function terminates if the terminator character is detected, the determined length has been read, or it times out (see link:../streamsettimeout[setTimeout()]).
 
 `readBytesUntil()` returns the number of bytes placed in the buffer. A 0 means no valid data was found.
@@ -23,12 +23,12 @@ This function is part of the Stream class, and is called by any class that inher
 
 
 [float]
-=== Syntax
+=== Sintaxe
 `stream.readBytesUntil(character, buffer, length)`
 
 
 [float]
-=== Parameters
+=== Parâmetros
 `stream` : an instance of a class that inherits from Stream.
 
 `character` : the character to search for (`char`)
@@ -38,7 +38,7 @@ This function is part of the Stream class, and is called by any class that inher
 `length : the number of bytes to `read(int)`
 
 [float]
-=== Returns
+=== Retorna
 The number of bytes placed in the buffer.
 
 --

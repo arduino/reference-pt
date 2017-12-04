@@ -13,7 +13,7 @@ title: Stream.parseInt()
 --
 
 [float]
-=== Description
+=== Descrição
 `parseInt()` returns the first valid (long) integer number from the current position. Initial characters that are not integers (or the minus sign) are skipped.
 
 In particular:
@@ -27,13 +27,13 @@ This function is part of the Stream class, and is called by any class that inher
 
 
 [float]
-=== Syntax
+=== Sintaxe
 `stream.parseInt(list)`
 
 `stream.parseInt(''list', char skipchar')`
 
 [float]
-=== Parameters
+=== Parâmetros
 `stream` : an instance of a class that inherits from Stream.
 
 `list` : the stream to check for ints (`char`)
@@ -41,7 +41,7 @@ This function is part of the Stream class, and is called by any class that inher
 `skipChar`: used to skip the indicated char in the search. Used for example to skip thousands divider.
 
 [float]
-=== Returns
+=== Retorna
 `long`
 
 --

@@ -13,7 +13,7 @@ title: Stream.readString()
 --
 
 [float]
-=== Description
+=== Descrição
 `readString()` reads characters from a stream into a string. The function terminates if it times out (see link:../streamsettimeout[setTimeout()]).
 
 This function is part of the Stream class, and is called by any class that inherits from it (Wire, Serial, etc). See the link:../../stream[Stream class] main page for more information.
@@ -21,16 +21,16 @@ This function is part of the Stream class, and is called by any class that inher
 
 
 [float]
-=== Syntax
+=== Sintaxe
 `stream.readString()`
 
 
 [float]
-=== Parameters
+=== Parâmetros
 Nothing
 
 [float]
-=== Returns
+=== Retorna
 A string read from a stream.
 
 --

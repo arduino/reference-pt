@@ -14,7 +14,7 @@ title: Stream.flush()
 
 [float]
 === Descrição
-`flush()` clears the buffer once all outgoing characters have been sent.
+`flush()` espera até que todos os caracteres em um buffer de trasnmissão sejam enviados.
 
 Essa função é parte da classe Stream, e é chamada por qualquer classe que herda da mesma (Wire, Serial, etc). Veja a página principal da link:../../stream[classe Stream] para mais informações.
 [%hardbreaks]

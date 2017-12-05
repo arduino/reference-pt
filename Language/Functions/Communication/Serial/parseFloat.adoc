@@ -41,8 +41,8 @@ O primeiro número válido `float` no buffer de recebimento. (float)
 === Ver também
 
 [role="language"]
-* #LINGUAGEM# link:../../stream[stream()]
-* #LINGUAGEM# link:../../stream/streamparsefloat[Stream.parseFloat()]
+#LINGUAGEM# link:../../stream[stream()] +
+#LINGUAGEM# link:../../stream/streamparsefloat[Stream.parseFloat()]
 
 --
 // SEE ALSO SECTION ENDS

@@ -58,8 +58,8 @@ Se a string foi ou não encontrada no buffer - `boolean`
 === Ver Também
 
 [role="language"]
-* #LINGUAGEM# link:../../stream[stream] +
-* #LINGUAGEM# link:../../stream/streamfinduntil[stream.findUntil()]
+#LINGUAGEM# link:../../stream[stream] +
+#LINGUAGEM# link:../../stream/streamfinduntil[stream.findUntil()]
 
 --
 // SEE ALSO SECTION ENDS

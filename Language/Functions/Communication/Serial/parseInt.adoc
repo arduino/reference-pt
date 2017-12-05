@@ -52,17 +52,17 @@ O próximo inteiro válido - `long`.
 === Ver Também
 
 [role="language"]
-* #LINGUAGEM# link:../begin[begin()] +
-* #LINGUAGEM# link:../end[end()] +
-* #LINGUAGEM# link:../available[available()] +
-* #LINGUAGEM# link:../read[read()] +
-* #LINGUAGEM# link:../peek[peek()] +
-* #LINGUAGEM# link:../flush[flush()] +
-* #LINGUAGEM# link:../print[print()] +
-* #LINGUAGEM# link:../println[println()] +
-* #LINGUAGEM# link:../write[write()] +
-* #LINGUAGEM# link:../serialevent[SerialEvent()] +
-* #LINGUAGEM# link:../../stream/streamparsefloat[Stream.parseFloat()]
+#LINGUAGEM# link:../begin[begin()] +
+#LINGUAGEM# link:../end[end()] +
+#LINGUAGEM# link:../available[available()] +
+#LINGUAGEM# link:../read[read()] +
+#LINGUAGEM# link:../peek[peek()] +
+#LINGUAGEM# link:../flush[flush()] +
+#LINGUAGEM# link:../print[print()] +
+#LINGUAGEM# link:../println[println()] +
+#LINGUAGEM# link:../write[write()] +
+#LINGUAGEM# link:../serialevent[SerialEvent()] +
+#LINGUAGEM# link:../../stream/streamparsefloat[Stream.parseFloat()]
 
 --
 // SEE ALSO SECTION ENDS

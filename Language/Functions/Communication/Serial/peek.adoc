@@ -45,17 +45,17 @@ O primeiro byte dos dados seriais recebidos disponível (ou -1 se não há dados
 === Ver Também
 
 [role="language"]
-* #LINGUAGEM# link:../begin[begin()] +
-* #LINGUAGEM# link:../end[end()] +
-* #LINGUAGEM# link:../available[available()] +
-* #LINGUAGEM# link:../read[read()] +
-* #LINGUAGEM# link:../peek[peek()] +
-* #LINGUAGEM# link:../flush[flush()] +
-* #LINGUAGEM# link:../print[print()] +
-* #LINGUAGEM# link:../println[println()] +
-* #LINGUAGEM# link:../write[write()] +
-* #LINGUAGEM# link:../serialevent[SerialEvent()] +
-* #LINGUAGEM# link:../../stream/streampeek[Stream.peek()]
+#LINGUAGEM# link:../begin[begin()] +
+#LINGUAGEM# link:../end[end()] +
+#LINGUAGEM# link:../available[available()] +
+#LINGUAGEM# link:../read[read()] +
+#LINGUAGEM# link:../peek[peek()] +
+#LINGUAGEM# link:../flush[flush()] +
+#LINGUAGEM# link:../print[print()] +
+#LINGUAGEM# link:../println[println()] +
+#LINGUAGEM# link:../write[write()] +
+#LINGUAGEM# link:../serialevent[SerialEvent()] +
+#LINGUAGEM# link:../../stream/streampeek[Stream.peek()]
 
 --
 // SEE ALSO SECTION ENDS

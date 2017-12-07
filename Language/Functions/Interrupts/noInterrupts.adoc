@@ -26,7 +26,7 @@ Nothing
 
 [float]
 === Retorna
-Nothing
+Nada
 
 --
 // OVERVIEW SECTION ENDS

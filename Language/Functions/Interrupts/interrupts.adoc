@@ -1,15 +1,10 @@
 ---
 title: interrupts()
 categories: [ "Functions" ]
-subCategories: [ "Interrupts" ]
+subCategories: [ "Interrupções" ]
 ---
 
-
-
-
-
 = interrupts()
-
 
 // OVERVIEW SECTION STARTS
 [#overview]

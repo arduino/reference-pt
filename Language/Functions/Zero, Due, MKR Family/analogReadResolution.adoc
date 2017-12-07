@@ -1,11 +1,8 @@
 ---
 title: analogReadResolution()
 categories: [ "Functions" ]
-subCategories: [ "Zero, Due & MKR Family" ]
+subCategories: [ "Apenas Zero, Due e Família MKR" ]
 ---
-
-
-
 
 = analogReadResolution()
 
@@ -15,23 +12,23 @@ subCategories: [ "Zero, Due & MKR Family" ]
 --
 
 [float]
-=== Description
-analogReadResolution() is an extension of the Analog API for the Arduino Due, Zero and MKR Family.
+=== Descrição
+analogReadResolution() é um extensão da API Analog para o Arduino Due, Zero e família MKR.
 
-Sets the size (in bits) of the value returned by `analogRead()`. It defaults to 10 bits (returns values between 0-1023) for backward compatibility with AVR based boards.
+Configura o tamanho (em bits) do valor retornado por `analogRead()`. O padrão é 10 bits (retorna valores entre 0-1023) para compatibilidade com placas baseadas em microcontroladores AVR.
 
-The *Due, Zero and MKR Family* boards have 12-bit ADC capabilities that can be accessed by changing the resolution to 12. This will return values from `analogRead()` between 0 and 4095.
+As placas *Due, Zero e da família MKR* possuem um conversor analógico digital (ADC) com capacidade 12-bits que pode ser accessado, em completude, mudando-se a resolução para 12. Isso fará com que os valores retornados por `analogRead()` estejam entre 0 e 4095.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Sintaxe
 `analogReadResolution(bits)`
 
 
 [float]
-=== Parameters
-`bits`: determines the resolution (in bits) of the value returned by the `analogRead()` function. You can set this between 1 and 32. You can set resolutions higher than 12 but values returned by `analogRead()` will suffer approximation. See the note below for details.
+=== Parâmetros
+`bits`: determina a resolução (em bits) dos valores retornados pela função `analogRead()`. Você pode configurar esse valor entre 1 e 32. Você pode escolher resoluções mais altas que 12, porém assim, valores retornados por `analogRead()` irão sofrer aproximação. Veja a nota abaixo para detalhes.
 
 [float]
 === Returns
@@ -41,61 +38,59 @@ Nothing
 // OVERVIEW SECTION ENDS
 
 
-
-
 // HOW TO USE SECTION STARTS
 [#howtouse]
 --
 
 [float]
-=== Example Code
+=== Código de Exemplo
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-The code shows how to use ADC with different resolutions.
+O código abaixo mostra como usar o conversor analógico digital com resoluções diferentes.
 
 [source,arduino]
 ----
 void setup() {
-  // open a serial connection
+  // abre a conexão serial
   Serial.begin(9600);
 }
 
 void loop() {
-  // read the input on A0 at default resolution (10 bits)
-  // and send it out the serial connection
+  // lê o valor no pino A0 na resolução padrão (10 bits)
+  // e o envia pela conexão serial
   analogReadResolution(10);
-  Serial.print("ADC 10-bit (default) : ");
+  Serial.print("ADC 10-bit (padrão) : ");
   Serial.print(analogRead(A0));
 
-  // change the resolution to 12 bits and read A0
+  // muda a resolução para 12 bits e lê o pino A0
   analogReadResolution(12);
   Serial.print(", 12-bit : ");
   Serial.print(analogRead(A0));
 
-  // change the resolution to 16 bits and read A0
+  // muda a resolução para 16 bits e lê o pino A0
   analogReadResolution(16);
   Serial.print(", 16-bit : ");
   Serial.print(analogRead(A0));
 
-  // change the resolution to 8 bits and read A0
+  // muda a resolução para 8 bits e lê o pino
   analogReadResolution(8);
   Serial.print(", 8-bit : ");
   Serial.println(analogRead(A0));
 
-  // a little delay to not hog Serial Monitor
+  // um pequeno delay para não enviar dados muito rapidamente para o Serial Monitor
   delay(100);
 }
 ----
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
-If you set the `analogReadResolution()` value to a value higher than your board's capabilities, the Arduino will only report back at its highest resolution, padding the extra bits with zeros.
+=== Notas e Advertências
+Se você configurar o valor de `analogReadResolution()` para um valor maior que acapacidade de sua placa, o Arduino irá retornar apenas na sua resolução máxima, preenchendo os bits extras com zeros.
 
-For example: using the Due with `analogReadResolution(16)` will give you an approximated 16-bit number with the first 12 bits containing the real ADC reading and the last 4 bits *padded with zeros*.
+Por exemplo: usando-se o DUE com `analogReadResolution(16)` irá retornar um número 16-bit aproximado, com os primerios 12 bits contendo a leitura real do ADC  e os últimos 4 bits *preenchidos com zeros*.
 
-If you set the `analogReadResolution()` value to a value lower than your board's capabilities, the extra least significant bits read from the ADC will be *discarded*.
+Se você configurar o valor de `analogReadResolution()`  para um valor menor que acapacidade de sua placa, os bits menos significantes extras lidos do ADC serão *descartados*.
 
-Using a 16 bit resolution (or any resolution *higher* than actual hardware capabilities) allows you to write sketches that automatically handle devices with a higher resolution ADC when these become available on future boards without changing a line of code.
+Usar uma resolução de 16 bits (ou qualquer resolução *mais alta* que as capacidades reais do hardware) permite esccrever sketches que automaticamente suportam dispositivos com uma resolução do ADC mais alta quando estes estiverem disponíveis em palcas futuras, sem a necessidade de se fazer mudanças no código.
 
 --
 // HOW TO USE SECTION ENDS
@@ -106,13 +101,13 @@ Using a 16 bit resolution (or any resolution *higher* than actual hardware capab
 --
 
 [float]
-=== See also
+=== Ver Também
 
 [role="example"]
-* #EXAMPLE# http://arduino.cc/en/Tutorial/AnalogInputPins[Description of the analog input pins]
+#EXEMPLO# http://arduino.cc/en/Tutorial/AnalogInputPins[Description of the analog input pins] +
 
 [role="language"]
-* #LANGUAGE# link:../../analog-io/analogread[analogRead()]
+#LINGUAGEM# link:../../analog-io/analogread[analogRead()]
 
 --
 // SEE ALSO SECTION ENDS

@@ -1,7 +1,7 @@
 ---
 title: int()
 categories: [ "Variables" ]
-subCategories: [ "Conversion" ]
+subCategories: [ "Conversão" ]
 ---
 
 = int()

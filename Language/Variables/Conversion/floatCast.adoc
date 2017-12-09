@@ -1,15 +1,10 @@
 ---
 title: float()
 categories: [ "Variables" ]
-subCategories: [ "Conversion" ]
+subCategories: [ "Conversão" ]
 ---
 
-
-
-
-
 = float()
-
 
 // OVERVIEW SECTION STARTS
 [#overview]
@@ -17,7 +12,7 @@ subCategories: [ "Conversion" ]
 
 [float]
 === Descrição
-Converts a value to the link:../../data-types/float[float] data type.
+Converte um valor para o tipo de dado link:../../data-types/float[float].
 [%hardbreaks]
 
 
@@ -28,16 +23,14 @@ Converts a value to the link:../../data-types/float[float] data type.
 
 [float]
 === Parâmetros
-`x`: a value of any type
+`x`: um valor de qualquer tipo
 
 [float]
 === Retorna
-`float`
+o valor passado para a função, convertido para o tipo `float`
 
 --
 // OVERVIEW SECTION ENDS
-
-
 
 
 // HOW TO USE SECTION STARTS
@@ -46,13 +39,11 @@ Converts a value to the link:../../data-types/float[float] data type.
 
 [float]
 === Notas e Advertências
-See the reference for link:../../data-types/float[float] for details about the precision and limitations of floating point numbers on Arduino.
+Veja a página da referência para o tipo link:../../data-types/float[float] para detalhes sobre a precisão e limitações dos números de ponto flutuante no Arduino.
 [%hardbreaks]
 
 --
 // HOW TO USE SECTION ENDS
-
-
 
 // SEE ALSO SECTION BEGINS
 [#see_also]
@@ -61,9 +52,8 @@ See the reference for link:../../data-types/float[float] for details about the p
 [float]
 === Ver Também
 
-
 [role="language"]
-#LINGUAGEM# link:../../data-types/float[float]
+#LINGUAGEM# link:../../data-types/float[float] +
 
 --
 // SEE ALSO SECTION ENDS

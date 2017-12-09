@@ -1,15 +1,10 @@
 ---
 title: word()
 categories: [ "Variables" ]
-subCategories: [ "Conversion" ]
+subCategories: [ "Conversão" ]
 ---
 
-
-
-
-
 = word()
-
 
 // OVERVIEW SECTION STARTS
 [#overview]
@@ -17,7 +12,7 @@ subCategories: [ "Conversion" ]
 
 [float]
 === Descrição
-Converts a value to the link:../../data-types/word[word] data type.
+Converte um valor para o tipo de dado link:../../data-types/word[word].
 [%hardbreaks]
 
 
@@ -28,20 +23,17 @@ Converts a value to the link:../../data-types/word[word] data type.
 
 [float]
 === Parâmetros
-`x`: a value of any type
+`x`: um valor de qualquer tipo
 
-`h`: the high-order (leftmost) byte of the word
+`h`: o byte mais significativo (mais à esquerda) da palavra
 
-`l`: the low-order (rightmost) byte of the word
+`l`: o byte menos significativo (mais à direita) da palavra
 [float]
 === Retorna
-`word`
+O valor passado para a função, convertido para o tipo `word`
 
 --
 // OVERVIEW SECTION ENDS
-
-
-
 
 // SEE ALSO SECTION STARTS
 [#see_also]
@@ -51,7 +43,7 @@ Converts a value to the link:../../data-types/word[word] data type.
 === Ver Também
 
 [role="language"]
-#LINGUAGEM# link:../../data-types/word[word]
+#LINGUAGEM# link:../../data-types/word[word] +
 
 
 --

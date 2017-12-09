@@ -1,15 +1,10 @@
 ---
 title: char()
 categories: [ "Variables" ]
-subCategories: [ "Conversion" ]
+subCategories: [ "Conversão" ]
 ---
 
-
-
-
-
 = char()
-
 
 // OVERVIEW SECTION STARTS
 [#overview]
@@ -17,7 +12,7 @@ subCategories: [ "Conversion" ]
 
 [float]
 === Descrição
-Converts a value to the link:../../data-types/char[char] data type.
+Converte um valor para o tipo de dado link:../../data-types/char[char].
 [%hardbreaks]
 
 
@@ -28,15 +23,14 @@ Converts a value to the link:../../data-types/char[char] data type.
 
 [float]
 === Parâmetros
-`x`: a value of any type
+`x`: um valor de qualquer tipo
 
 [float]
 === Retorna
-`char`
+o valor passado para a função, convertido para o tipo `char`
 
 --
 // OVERVIEW SECTION ENDS
-
 
 
 // SEE ALSO SECTION STARTS
@@ -47,7 +41,7 @@ Converts a value to the link:../../data-types/char[char] data type.
 === Ver Também
 
 [role="language"]
-#LINGUAGEM# link:../../data-types/char[char]
+#LINGUAGEM# link:../../data-types/char[char] +
 
 --
 // SEE ALSO SECTION ENDS

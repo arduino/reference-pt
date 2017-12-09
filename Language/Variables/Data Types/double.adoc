@@ -16,7 +16,7 @@ subCategories: [ "Data Types" ]
 --
 
 [float]
-=== Description
+=== Descrição
 Double precision floating point number. On the Uno and other ATMEGA based boards, this occupies 4 bytes. That is, the double implementation is exactly the same as the float, with no gain in precision.
 
 On the Arduino Due, doubles have 8-byte (64 bit) precision.
@@ -34,7 +34,7 @@ On the Arduino Due, doubles have 8-byte (64 bit) precision.
 
 
 [float]
-=== Notes and Warnings
+=== Notas e Advertências
 Users who borrow code from other sources that includes double variables may wish to examine the code to see if the implied precision is different from that actually achieved on ATMEGA based Arduinos.
 [%hardbreaks]
 
@@ -49,7 +49,7 @@ Users who borrow code from other sources that includes double variables may wish
 --
 
 [float]
-=== See also
+=== Ver Também
 
 --
 // SEE ALSO SECTION ENDS

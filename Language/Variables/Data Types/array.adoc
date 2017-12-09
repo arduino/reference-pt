@@ -16,7 +16,7 @@ subCategories: [ "Data Types" ]
 --
 
 [float]
-=== Description
+=== Descrição
 An array is a collection of variables that are accessed with an index number. Arrays in the C programming language, on which Arduino is based, can be complicated, but using simple arrays is relatively straightforward.
 === Creating (Declaring) an Array
 
@@ -87,7 +87,7 @@ for (i = 0; i < 5; i = i + 1) {
 --
 
 [float]
-=== Example Code
+=== Código de Exemplo
 For a complete program that demonstrates the use of arrays, see the (http://www.arduino.cc/en/Tutorial/KnightRider[Knight Rider example]) from the (http://www.arduino.cc/en/Main/LearnArduino[Tutorials]).
 
 --
@@ -99,10 +99,10 @@ For a complete program that demonstrates the use of arrays, see the (http://www.
 --
 
 [float]
-=== See also
+=== Ver Também
 
 [role="language"]
-* #LANGUAGE# link:../../utilities/progmem[PROGMEM]
+#LINGUAGEM# link:../../utilities/progmem[PROGMEM]
 
 
 --

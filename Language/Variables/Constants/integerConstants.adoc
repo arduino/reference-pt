@@ -16,7 +16,7 @@ subCategories: [ "Constants" ]
 --
 
 [float]
-=== Description
+=== Descrição
 Integer constants are numbers that are used directly in a sketch, like 123. By default, these numbers are treated as link:../../data-types/int[int] but you can change this with the U and L modifiers (see below).
 [%hardbreaks]
 
@@ -113,7 +113,7 @@ n = 0x101;   // same as 257 decimal   ((1 * 16^2) + (0 * 16^1) + 1)
 
 
 [float]
-=== Notes and Warnings
+=== Notas e Advertências
 *U & L formatters:*
 
 By default, an integer constant is treated as an int with the attendant limitations in values. To specify an integer constant with another data type, follow it with:
@@ -135,7 +135,7 @@ By default, an integer constant is treated as an int with the attendant limitati
 --
 
 [float]
-=== See also
+=== Ver Também
 
 [role="language"]
 

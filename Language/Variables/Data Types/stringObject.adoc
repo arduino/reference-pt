@@ -16,7 +16,7 @@ subCategories: [ "Data Types" ]
 --
 
 [float]
-=== Description
+=== Descrição
 Constructs an instance of the String class. There are multiple versions that construct Strings from different data types (i.e. format them as sequences of characters), including:
 
 * a constant string of characters, in double quotes (i.e. a char array)
@@ -53,7 +53,7 @@ gives you the String "1101", which is the binary representation of 13.
 
 
 [float]
-=== Syntax
+=== Sintaxe
 [source,arduino]
 ----
 String(val)
@@ -62,13 +62,13 @@ String(val, decimalPlaces)
 ----
 
 [float]
-=== Parameters
+=== Parâmetros
 `val`:  a variable to format as a String - *Allowed data types:* string, char, byte, int, long, unsigned int, unsigned long, float, double +
 `base` (optional): the base in which to format an integral value
 `decimalPlaces` (*only if val is float or double*): the desired decimal places
 
 [float]
-=== Returns
+=== Retorna
 an instance of the String class.
 
 --
@@ -81,7 +81,7 @@ an instance of the String class.
 --
 
 [float]
-=== Example Code
+=== Código de Exemplo
 All of the following are valid declarations for Strings.
 [source,arduino]
 ----
@@ -105,43 +105,43 @@ String stringOne =  String(5.698, 3);                                // using a 
 === Functions
 
 [role="language"]
-* #LANGUAGE# link:../string/functions/charat[charAt()]
-* #LANGUAGE# link:../string/functions/compareto[compareTo()]
-* #LANGUAGE# link:../string/functions/concat[concat()]
-* #LANGUAGE# link:../string/functions/c_str[c_str()]
-* #LANGUAGE# link:../string/functions/endswith[endsWith()]
-* #LANGUAGE# link:../string/functions/equals[equals()]
-* #LANGUAGE# link:../string/functions/equalsignorecase[equalsIgnoreCase()]
-* #LANGUAGE# link:../string/functions/getbytes[getBytes()]
-* #LANGUAGE# link:../string/functions/indexof[indexOf()]
-* #LANGUAGE# link:../string/functions/lastindexof[lastIndexOf()]
-* #LANGUAGE# link:../string/functions/length[length()]
-* #LANGUAGE# link:../string/functions/remove[remove()]
-* #LANGUAGE# link:../string/functions/replace[replace()]
-* #LANGUAGE# link:../string/functions/reserve[reserve()]
-* #LANGUAGE# link:../string/functions/setcharat[setCharAt()]
-* #LANGUAGE# link:../string/functions/startswith[StartsWith()]
-* #LANGUAGE# link:../string/functions/substring[substring()]
-* #LANGUAGE# link:../string/functions/tochararray[toCharArray()]
-* #LANGUAGE# link:../string/functions/toint[toInt()]
-* #LANGUAGE# link:../string/functions/tofloat[toFloat()]
-* #LANGUAGE# link:../string/functions/tolowercase[toLowerCase()]
-* #LANGUAGE# link:../string/functions/touppercase[toUpperCase()]
-* #LANGUAGE# link:../string/functions/trim[trim()]
+#LINGUAGEM# link:../string/functions/charat[charAt()]
+#LINGUAGEM# link:../string/functions/compareto[compareTo()]
+#LINGUAGEM# link:../string/functions/concat[concat()]
+#LINGUAGEM# link:../string/functions/c_str[c_str()]
+#LINGUAGEM# link:../string/functions/endswith[endsWith()]
+#LINGUAGEM# link:../string/functions/equals[equals()]
+#LINGUAGEM# link:../string/functions/equalsignorecase[equalsIgnoreCase()]
+#LINGUAGEM# link:../string/functions/getbytes[getBytes()]
+#LINGUAGEM# link:../string/functions/indexof[indexOf()]
+#LINGUAGEM# link:../string/functions/lastindexof[lastIndexOf()]
+#LINGUAGEM# link:../string/functions/length[length()]
+#LINGUAGEM# link:../string/functions/remove[remove()]
+#LINGUAGEM# link:../string/functions/replace[replace()]
+#LINGUAGEM# link:../string/functions/reserve[reserve()]
+#LINGUAGEM# link:../string/functions/setcharat[setCharAt()]
+#LINGUAGEM# link:../string/functions/startswith[StartsWith()]
+#LINGUAGEM# link:../string/functions/substring[substring()]
+#LINGUAGEM# link:../string/functions/tochararray[toCharArray()]
+#LINGUAGEM# link:../string/functions/toint[toInt()]
+#LINGUAGEM# link:../string/functions/tofloat[toFloat()]
+#LINGUAGEM# link:../string/functions/tolowercase[toLowerCase()]
+#LINGUAGEM# link:../string/functions/touppercase[toUpperCase()]
+#LINGUAGEM# link:../string/functions/trim[trim()]
 
 [float]
 === Operators
 
 [role="language"]
-* #LANGUAGE# link:../string/operators/elementaccess[[\] (element access)]
-* #LANGUAGE# link:../string/operators/concatenation[+ (concatenation)]
-* #LANGUAGE# link:../string/operators/append[+= (append)]
-* #LANGUAGE# link:../string/operators/comparison[== (comparison)]
-* #LANGUAGE# link:../string/operators/greaterthan[> (greater than)]
-* #LANGUAGE# link:../string/operators/greaterthanorequalto[>= (greater than or equal to)]
-* #LANGUAGE# link:../string/operators/lessthan[< (less than)]
-* #LANGUAGE# link:../string/operators/lessthanorequalto[\<= (less than or equal to)]
-* #LANGUAGE# link:../string/operators/differentfrom[!= (different from)]
+#LINGUAGEM# link:../string/operators/elementaccess[[\] (element access)]
+#LINGUAGEM# link:../string/operators/concatenation[+ (concatenation)]
+#LINGUAGEM# link:../string/operators/append[+= (append)]
+#LINGUAGEM# link:../string/operators/comparison[== (comparison)]
+#LINGUAGEM# link:../string/operators/greaterthan[> (greater than)]
+#LINGUAGEM# link:../string/operators/greaterthanorequalto[>= (greater than or equal to)]
+#LINGUAGEM# link:../string/operators/lessthan[< (less than)]
+#LINGUAGEM# link:../string/operators/lessthanorequalto[\<= (less than or equal to)]
+#LINGUAGEM# link:../string/operators/differentfrom[!= (different from)]
 
 [role="example"]
 * #EXAMPLE# link: https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[Built-in String Tutorials]
@@ -152,7 +152,7 @@ String stringOne =  String(5.698, 3);                                // using a 
 --
 
 [float]
-=== See also
+=== Ver Também
 
 [role="language"]
 

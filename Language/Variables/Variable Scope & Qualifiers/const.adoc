@@ -16,7 +16,7 @@ subCategories: [ "Variable Scope & Qualifiers" ]
 --
 
 [float]
-=== Description
+=== Descrição
 The `const` keyword stands for constant. It is a variable _qualifier_ that modifies the behavior of the variable, making a variable "_read-only_". This means that the variable can be used just as any other variable of its type, but its value cannot be changed. You will get a compiler error if you try to assign a value to a `const` variable.
 
 Constants defined with the `const` keyword obey the rules of link:../scope[variable scoping] that govern other variables. This, and the pitfalls of using `#define`, makes the `const` keyword a superior method for defining constants and is preferred over using link:../../../structure/further-syntax/define[`#define`].
@@ -33,7 +33,7 @@ Constants defined with the `const` keyword obey the rules of link:../scope[varia
 --
 
 [float]
-=== Example Code
+=== Código de Exemplo
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
 
 
@@ -53,7 +53,7 @@ pi = 7;        // illegal - you can't write to (modify) a constant
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
+=== Notas e Advertências
 *`#define` or `const`*
 
 You can use either `const` or `#define` for creating numeric or string constants. For link:../../data-types/array[arrays], you will need to use `const`. In general `const` is preferred over `#define` for defining constants.
@@ -68,10 +68,10 @@ You can use either `const` or `#define` for creating numeric or string constants
 --
 
 [float]
-=== See also
+=== Ver Também
 
 [role="language"]
-* #LANGUAGE# link:../../../structure/further-syntax/define[#define]
+#LINGUAGEM# link:../../../structure/further-syntax/define[#define]
 
 --
 // SEE ALSO SECTION ENDS

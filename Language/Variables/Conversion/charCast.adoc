@@ -16,22 +16,22 @@ subCategories: [ "Conversion" ]
 --
 
 [float]
-=== Description
+=== Descrição
 Converts a value to the link:../../data-types/char[char] data type.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Sintaxe
 `char(x)`
 
 
 [float]
-=== Parameters
+=== Parâmetros
 `x`: a value of any type
 
 [float]
-=== Returns
+=== Retorna
 `char`
 
 --
@@ -44,10 +44,10 @@ Converts a value to the link:../../data-types/char[char] data type.
 --
 
 [float]
-=== See also
+=== Ver Também
 
 [role="language"]
-* #LANGUAGE# link:../../data-types/char[char]
+#LINGUAGEM# link:../../data-types/char[char]
 
 --
 // SEE ALSO SECTION ENDS

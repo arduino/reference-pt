@@ -16,22 +16,22 @@ subCategories: [ "Conversion" ]
 --
 
 [float]
-=== Description
+=== Descrição
 Converts a value to the link:../../data-types/byte[byte] data type.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Sintaxe
 `byte(x)`
 
 
 [float]
-=== Parameters
+=== Parâmetros
 `x`: a value of any type
 
 [float]
-=== Returns
+=== Retorna
 `byte`
 
 --
@@ -44,10 +44,10 @@ Converts a value to the link:../../data-types/byte[byte] data type.
 --
 
 [float]
-=== See also
+=== Ver Também
 
 [role="language"]
-* #LANGUAGE# link:../../data-types/byte[byte]
+#LINGUAGEM# link:../../data-types/byte[byte]
 
 --
 // SEE ALSO SECTION ENDS

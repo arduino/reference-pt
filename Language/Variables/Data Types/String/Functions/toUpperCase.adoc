@@ -16,25 +16,25 @@ subCategories: [ "StringObject Function" ]
 --
 
 [float]
-=== Description
+=== Descrição
 Get an upper-case version of a String. As of 1.0, toUpperCase() modifies the string in place rather than returning a new one.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Sintaxe
 [source,arduino]
 ----
 string.toUpperCase()
 ----
 
 [float]
-=== Parameters
+=== Parâmetros
 `string`: a variable of type String
 
 
 [float]
-=== Returns
+=== Retorna
 None
 
 --
@@ -50,7 +50,7 @@ None
 --
 
 [float]
-=== See also
+=== Ver Também
 
 [role="example"]
 * #EXAMPLE# link: https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[Built-in String Tutorials]

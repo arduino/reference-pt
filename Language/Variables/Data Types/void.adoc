@@ -16,7 +16,7 @@ subCategories: [ "Data Types" ]
 --
 
 [float]
-=== Description
+=== Descrição
 The `void` keyword is used only in function declarations. It indicates that the function is expected to return no information to the function from which it was called.
 [%hardbreaks]
 
@@ -31,7 +31,7 @@ The `void` keyword is used only in function declarations. It indicates that the 
 --
 
 [float]
-=== Example Code
+=== Código de Exemplo
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
 The code shows how to use `void`.
 
@@ -61,10 +61,10 @@ void loop()
 --
 
 [float]
-=== See also
+=== Ver Também
 
 [role="language"]
-* #LANGUAGE# link:../../constants/integerconstants[Integer Constants]
+#LINGUAGEM# link:../../constants/integerconstants[Integer Constants]
 
 --
 // SEE ALSO SECTION ENDS

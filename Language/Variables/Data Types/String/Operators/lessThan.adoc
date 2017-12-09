@@ -17,7 +17,7 @@ subCategories: [ "StringObject Operator" ]
 --
 
 [float]
-=== Description
+=== Descrição
 Tests if the string on the left is less than the string on the right. This operator evaluate strings in alphabetical order, on the first character where the two differ. So, for example "a" < "b" and "1" < "2", but "999" > "1000" because 9 comes after 1.
 
 Caution: String comparison operators can be confusing when you're comparing numeric strings, because the numbers are treated as strings and not as numbers. If you need to compare numbers numerically, compare them as ints, floats, or longs, and not as Strings.
@@ -26,18 +26,18 @@ Caution: String comparison operators can be confusing when you're comparing nume
 
 
 [float]
-=== Syntax
+=== Sintaxe
 [source,arduino]
 ----
 string1 < string2
 ----
 
 [float]
-=== Parameters
+=== Parâmetros
 `string1, string2`: variables of type String
 
 [float]
-=== Returns
+=== Retorna
 `true`: if string1 is greater than string2
 
 `false`: otherwise
@@ -55,7 +55,7 @@ string1 < string2
 --
 
 [float]
-=== See also
+=== Ver Também
 
 [role="example"]
 * #EXAMPLE# link: https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[Built-in String Tutorials]

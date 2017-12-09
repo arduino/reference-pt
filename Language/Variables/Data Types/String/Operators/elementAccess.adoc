@@ -17,21 +17,21 @@ subCategories: [ "StringObject Operator" ]
 --
 
 [float]
-=== Description
+=== Descrição
 Allows you access to the individual characters of a string.
 
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Sintaxe
 [source,arduino]
 ----
 char thisChar = string1[n]
 ----
 
 [float]
-=== Parameters
+=== Parâmetros
 `char thisChar` - a character variable
 
 `string1` - a string variable
@@ -39,7 +39,7 @@ char thisChar = string1[n]
 `int n` - a numeric variable
 
 [float]
-=== Returns
+=== Retorna
 The nth char of the string. Same as charAt().
 
 --
@@ -56,7 +56,7 @@ The nth char of the string. Same as charAt().
 --
 
 [float]
-=== See also
+=== Ver Também
 
 [role="example"]
 * #EXAMPLE# link: https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[Built-in String Tutorials]

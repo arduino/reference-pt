@@ -17,25 +17,25 @@ subCategories: [ "StringObject Operator" ]
 --
 
 [float]
-=== Description
+=== Descrição
 Combines, or concatenates two strings into one new String. The second string is appended to the first, and the result is placed in a new String. Works the same as string.concat().
 
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Sintaxe
 [source,arduino]
 ----
 string3 = string1 + string 2; string3 += string2;
 ----
 
 [float]
-=== Parameters
+=== Parâmetros
 `string, string1, string2, string3` - a string variable
 
 [float]
-=== Returns
+=== Retorna
 new String that is the combination of the original two Strings.
 
 --
@@ -52,7 +52,7 @@ new String that is the combination of the original two Strings.
 --
 
 [float]
-=== See also
+=== Ver Também
 
 [role="example"]
 * #EXAMPLE# link: https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[Built-in String Tutorials]

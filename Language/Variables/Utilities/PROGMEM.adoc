@@ -16,7 +16,7 @@ subCategories: [ "Utilities" ]
 --
 
 [float]
-=== Description
+=== Descrição
 Store data in flash (program) memory instead of SRAM. There's a description of the various http://www.arduino.cc/playground/Learning/Memory[types of memory] available on an Arduino board.
 
 The `PROGMEM` keyword is a variable modifier, it should be used only with the datatypes defined in pgmspace.h. It tells the compiler "put this information into flash memory", instead of into SRAM, where it would normally go.
@@ -28,7 +28,7 @@ PROGMEM is part of the http://www.nongnu.org/avr-libc/user-manual/group\__avr__p
 
 
 [float]
-=== Syntax
+=== Sintaxe
 const dataType variableName[] PROGMEM = {data0, data1, data3...};`
 
 `dataType` - any variable type
@@ -57,7 +57,7 @@ Using `PROGMEM` is also a two-step procedure. After getting the data into Flash 
 --
 
 [float]
-=== Example Code
+=== Código de Exemplo
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
 The following code fragments illustrate how to read and write unsigned chars (bytes) and ints (2 bytes) to PROGMEM.
 
@@ -168,7 +168,7 @@ void loop()
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
+=== Notas e Advertências
 Please note that variables must be either globally defined, OR defined with the static keyword, in order to work with PROGMEM.
 
 The following code will NOT work when inside a function:
@@ -209,7 +209,7 @@ Serial.print(F("Write something on the Serial Monitor that is stored in FLASH"))
 --
 
 [float]
-=== See also
+=== Ver Também
 
 [role="example"]
 * #EXAMPLE# https://www.arduino.cc/playground/Learning/Memory[Types of memory available on an Arduino board]

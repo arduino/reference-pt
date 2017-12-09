@@ -16,14 +16,14 @@ subCategories: [ "Data Types" ]
 --
 
 [float]
-=== Description
+=== Descrição
 Long variables are extended size variables for number storage, and store 32 bits (4 bytes), from -2,147,483,648 to 2,147,483,647.
 
 If doing math with integers, at least one of the numbers must be followed by an L, forcing it to be a long. See the link:../../constants/integerconstants[Integer Constants] page for details.
 [%hardbreaks]
 
 [float]
-=== Syntax
+=== Sintaxe
 
 `long var = val;`
 
@@ -41,7 +41,7 @@ If doing math with integers, at least one of the numbers must be followed by an 
 --
 
 [float]
-=== Example Code
+=== Código de Exemplo
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
 
 
@@ -58,10 +58,10 @@ If doing math with integers, at least one of the numbers must be followed by an 
 --
 
 [float]
-=== See also
+=== Ver Também
 
 [role="language"]
-* #LANGUAGE# link:../../constants/integerconstants[Integer Constants]
+#LINGUAGEM# link:../../constants/integerconstants[Integer Constants]
 
 --
 // SEE ALSO SECTION ENDS

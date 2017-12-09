@@ -16,14 +16,14 @@ subCategories: [ "StringObject Function" ]
 --
 
 [float]
-=== Description
+=== Descrição
 Locates a character or String within another String. By default, searches from the end of the String, but can also work backwards from a given index, allowing for the locating of all instances of the character or String.
 
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Sintaxe
 [source,arduino]
 ----
 string.lastIndexOf(val)
@@ -32,7 +32,7 @@ string.lastIndexOf(val, from)
 ----
 
 [float]
-=== Parameters
+=== Parâmetros
 `string`: a variable of type String
 
 `val`: the value to search for - char or String
@@ -41,7 +41,7 @@ string.lastIndexOf(val, from)
 
 
 [float]
-=== Returns
+=== Retorna
 The index of val within the String, or -1 if not found.
 
 --
@@ -57,7 +57,7 @@ The index of val within the String, or -1 if not found.
 --
 
 [float]
-=== See also
+=== Ver Também
 
 [role="example"]
 * #EXAMPLE# link: https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[Built-in String Tutorials]

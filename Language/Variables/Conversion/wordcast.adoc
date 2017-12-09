@@ -16,25 +16,25 @@ subCategories: [ "Conversion" ]
 --
 
 [float]
-=== Description
+=== Descrição
 Converts a value to the link:../../data-types/word[word] data type.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Sintaxe
 `word(x)` +
 `word(h, l)`
 
 [float]
-=== Parameters
+=== Parâmetros
 `x`: a value of any type
 
 `h`: the high-order (leftmost) byte of the word
 
 `l`: the low-order (rightmost) byte of the word
 [float]
-=== Returns
+=== Retorna
 `word`
 
 --
@@ -48,10 +48,10 @@ Converts a value to the link:../../data-types/word[word] data type.
 --
 
 [float]
-=== See also
+=== Ver Também
 
 [role="language"]
-* #LANGUAGE# link:../../data-types/word[word]
+#LINGUAGEM# link:../../data-types/word[word]
 
 
 --

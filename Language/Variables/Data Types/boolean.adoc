@@ -16,7 +16,7 @@ subCategories: [ "Data Types" ]
 --
 
 [float]
-=== Description
+=== Descrição
 A `boolean` holds one of two values, `true` or `false`. (Each `boolean` variable occupies one byte of memory.)
 
 
@@ -33,7 +33,7 @@ A `boolean` holds one of two values, `true` or `false`. (Each `boolean` variable
 --
 
 [float]
-=== Example Code
+=== Código de Exemplo
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
 This code shows how to use the `boolean` datatype.
 
@@ -71,10 +71,10 @@ void loop()
 --
 
 [float]
-=== See also
+=== Ver Também
 
 [role="language"]
-* #LANGUAGE# link:../../../variables/constants/constants[constants]
+#LINGUAGEM# link:../../../variables/constants/constants[constants]
 
 --
 // SEE ALSO SECTION ENDS

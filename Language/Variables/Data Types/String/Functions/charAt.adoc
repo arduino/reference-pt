@@ -16,28 +16,28 @@ subCategories: [ "StringObject Function" ]
 --
 
 [float]
-=== Description
+=== Descrição
 Access a particular character of the String.
 
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Sintaxe
 [source,arduino]
 ----
 string.charAt(n)
 ----
 
 [float]
-=== Parameters
+=== Parâmetros
 `string`: a variable of type String
 
 `n`: a variable of type unsigned int
 
 
 [float]
-=== Returns
+=== Retorna
 The n'th character of the String.
 
 --
@@ -53,7 +53,7 @@ The n'th character of the String.
 --
 
 [float]
-=== See also
+=== Ver Também
 
 [role="example"]
 * #EXAMPLE# link: https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[Built-in String Tutorials]

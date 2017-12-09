@@ -16,7 +16,7 @@ subCategories: [ "Variable Scope & Qualifiers" ]
 --
 
 [float]
-=== Description
+=== Descrição
 `volatile` is a keyword known as a variable _qualifier_, it is usually used before the datatype of a variable, to modify the way in which the compiler and subsequent program treats the variable.
 
 Declaring a variable volatile is a directive to the compiler. The compiler is software which translates your C/C++ code into the machine code, which are the real instructions for the Atmega chip in the Arduino.
@@ -37,7 +37,7 @@ A variable should be declared volatile whenever its value can be changed by some
 --
 
 [float]
-=== Example Code
+=== Código de Exemplo
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
 
 
@@ -75,10 +75,10 @@ void blink()
 --
 
 [float]
-=== See also
+=== Ver Também
 
 [role="language"]
-* #LANGUAGE# link:../../../functions/external-interrupts/attachinterrupt[attachInterrupt]
+#LINGUAGEM# link:../../../functions/external-interrupts/attachinterrupt[attachInterrupt]
 
 --
 // SEE ALSO SECTION ENDS

@@ -16,22 +16,22 @@ subCategories: [ "Conversion" ]
 --
 
 [float]
-=== Description
+=== Descrição
 Converts a value to the link:../../data-types/int[int] data type.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Sintaxe
 `int(x)`
 
 
 [float]
-=== Parameters
+=== Parâmetros
 `x`: a value of any type
 
 [float]
-=== Returns
+=== Retorna
 `int`
 
 --
@@ -45,10 +45,10 @@ Converts a value to the link:../../data-types/int[int] data type.
 --
 
 [float]
-=== See also
+=== Ver Também
 
 [role="language"]
-* #LANGUAGE# link:../../data-types/int[int]
+#LINGUAGEM# link:../../data-types/int[int]
 
 
 --

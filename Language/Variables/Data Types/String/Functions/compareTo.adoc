@@ -16,28 +16,28 @@ subCategories: [ "StringObject Function" ]
 --
 
 [float]
-=== Description
+=== Descrição
 Compares two Strings, testing whether one comes before or after the other, or whether they're equal. The strings are compared character by character, using the ASCII values of the characters. That means, for example, that 'a' comes before 'b' but after 'A'. Numbers come before letters.
 
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Sintaxe
 [source,arduino]
 ----
 string.compareTo(string2)
 ----
 
 [float]
-=== Parameters
+=== Parâmetros
 `string`: a variable of type String
 
 `string2`: another variable of type String
 
 
 [float]
-=== Returns
+=== Retorna
 `a negative number`: if string comes before string2
 
 `0`: if string equals string2
@@ -57,7 +57,7 @@ string.compareTo(string2)
 --
 
 [float]
-=== See also
+=== Ver Também
 
 [role="example"]
 * #EXAMPLE# link: https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[Built-in String Tutorials]

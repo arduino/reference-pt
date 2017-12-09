@@ -16,21 +16,21 @@ subCategories: [ "StringObject Function" ]
 --
 
 [float]
-=== Description
+=== Descrição
 Copies the string's characters to the supplied buffer.
 
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Sintaxe
 [source,arduino]
 ----
 string.getBytes(buf, len)
 ----
 
 [float]
-=== Parameters
+=== Parâmetros
 `string`: a variable of type String
 
 `buf`: the buffer to copy the characters into (_byte []_)
@@ -38,7 +38,7 @@ string.getBytes(buf, len)
 `len`: the size of the buffer (_unsigned int_)
 
 [float]
-=== Returns
+=== Retorna
 None
 
 --
@@ -54,7 +54,7 @@ None
 --
 
 [float]
-=== See also
+=== Ver Também
 
 [role="example"]
 * #EXAMPLE# link: https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[Built-in String Tutorials]

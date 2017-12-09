@@ -16,21 +16,21 @@ subCategories: [ "StringObject Function" ]
 --
 
 [float]
-=== Description
+=== Descrição
 Sets a character of the String. Has no effect on indices outside the existing length of the String.
 
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Sintaxe
 [source,arduino]
 ----
 string.setCharAt(index, c)
 ----
 
 [float]
-=== Parameters
+=== Parâmetros
 `string`: a variable of type String
 
 `index`: the index to set the character at
@@ -39,7 +39,7 @@ string.setCharAt(index, c)
 
 
 [float]
-=== Returns
+=== Retorna
 None
 
 --
@@ -55,7 +55,7 @@ None
 --
 
 [float]
-=== See also
+=== Ver Também
 
 [role="example"]
 * #EXAMPLE# link: https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[Built-in String Tutorials]

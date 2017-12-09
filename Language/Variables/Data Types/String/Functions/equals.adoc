@@ -16,26 +16,26 @@ subCategories: [ "StringObject Function" ]
 --
 
 [float]
-=== Description
+=== Descrição
 Compares two strings for equality. The comparison is case-sensitive, meaning the String "hello" is not equal to the String "HELLO".
 
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Sintaxe
 [source,arduino]
 ----
 string.equals(string2)
 ----
 
 [float]
-=== Parameters
+=== Parâmetros
 `string, string2`: variables of type String
 
 
 [float]
-=== Returns
+=== Retorna
 `true`: if string equals string2 
 
 `false`: otherwise
@@ -52,7 +52,7 @@ string.equals(string2)
 --
 
 [float]
-=== See also
+=== Ver Também
 
 [role="example"]
 * #EXAMPLE# link: https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[Built-in String Tutorials]

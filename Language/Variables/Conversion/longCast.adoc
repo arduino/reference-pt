@@ -1,15 +1,10 @@
 ---
 title: long()
 categories: [ "Variables" ]
-subCategories: [ "Conversion" ]
+subCategories: [ "Conversão" ]
 ---
 
-
-
-
-
 = long()
-
 
 // OVERVIEW SECTION STARTS
 [#overview]
@@ -17,9 +12,8 @@ subCategories: [ "Conversion" ]
 
 [float]
 === Descrição
-Converts a value to the link:../../data-types/long[long] data type.
+Converte um valor para o tipo de dado link:../../data-types/long[long].
 [%hardbreaks]
-
 
 [float]
 === Sintaxe
@@ -28,17 +22,14 @@ Converts a value to the link:../../data-types/long[long] data type.
 
 [float]
 === Parâmetros
-`x`: a value of any type
+`x`: um valor de qualquer tipo
 
 [float]
 === Retorna
-`long`
+O valor passado para a função, convertido para o tipo `long`
 
 --
 // OVERVIEW SECTION ENDS
-
-
-
 
 // SEE ALSO SECTION STARTS
 [#see_also]
@@ -48,7 +39,7 @@ Converts a value to the link:../../data-types/long[long] data type.
 === Ver Também
 
 [role="language"]
-#LINGUAGEM# link:../../data-types/long[long]
+#LINGUAGEM# link:../../data-types/long[long] +
 
 
 --

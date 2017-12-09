@@ -4,10 +4,6 @@ categories: [ "Variables" ]
 subCategories: [ "Conversion" ]
 ---
 
-
-
-
-
 = int()
 
 
@@ -17,7 +13,7 @@ subCategories: [ "Conversion" ]
 
 [float]
 === Descrição
-Converts a value to the link:../../data-types/int[int] data type.
+Converte um valor para o tipo de dado link:../../data-types/int[int].
 [%hardbreaks]
 
 
@@ -25,20 +21,16 @@ Converts a value to the link:../../data-types/int[int] data type.
 === Sintaxe
 `int(x)`
 
-
 [float]
 === Parâmetros
-`x`: a value of any type
+`x`: um valor de qualquer tipo
 
 [float]
 === Retorna
-`int`
+O valor passado para a função, convertido para o tipo `int`
 
 --
 // OVERVIEW SECTION ENDS
-
-
-
 
 // SEE ALSO SECTION
 [#see_also]
@@ -48,8 +40,7 @@ Converts a value to the link:../../data-types/int[int] data type.
 === Ver Também
 
 [role="language"]
-#LINGUAGEM# link:../../data-types/int[int]
-
+#LINGUAGEM# link:../../data-types/int[int] +
 
 --
 // SEE ALSO SECTION ENDS

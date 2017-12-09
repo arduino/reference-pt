@@ -1,15 +1,10 @@
 ---
 title: byte()
 categories: [ "Variables" ]
-subCategories: [ "Conversion" ]
+subCategories: [ "Conversão" ]
 ---
 
-
-
-
-
 = byte()
-
 
 // OVERVIEW SECTION STARTS
 [#overview]
@@ -17,7 +12,7 @@ subCategories: [ "Conversion" ]
 
 [float]
 === Descrição
-Converts a value to the link:../../data-types/byte[byte] data type.
+Converte um valor para o tipo de dado link:../../data-types/byte[byte].
 [%hardbreaks]
 
 
@@ -28,16 +23,14 @@ Converts a value to the link:../../data-types/byte[byte] data type.
 
 [float]
 === Parâmetros
-`x`: a value of any type
+`x`: um valor de qualquer tipo
 
 [float]
 === Retorna
-`byte`
+o valor passado para a função, convertido para o tipo `byte`
 
 --
 // OVERVIEW SECTION ENDS
-
-
 
 // SEE ALSO SECTION BEGINS
 [#see_also]
@@ -47,7 +40,7 @@ Converts a value to the link:../../data-types/byte[byte] data type.
 === Ver Também
 
 [role="language"]
-#LINGUAGEM# link:../../data-types/byte[byte]
+#LINGUAGEM# link:../../data-types/byte[byte] +
 
 --
 // SEE ALSO SECTION ENDS

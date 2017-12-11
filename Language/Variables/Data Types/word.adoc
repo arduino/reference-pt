@@ -1,15 +1,10 @@
 ---
 title: word
 categories: [ "Variables" ]
-subCategories: [ "Data Types" ]
+subCategories: [ "Tipos de Dados" ]
 ---
 
-
-
-
-
 = word
-
 
 // OVERVIEW SECTION STARTS
 [#overview]
@@ -17,14 +12,11 @@ subCategories: [ "Data Types" ]
 
 [float]
 === Descrição
-A word stores a 16-bit unsigned number, from 0 to 65535. Same as an unsigned int.
+Uma variável word armazena um número sem sinal de 16 bits, de 0 A 65535. O mesmo que uma variável unsigned int.
 [%hardbreaks]
 
 --
 // OVERVIEW SECTION ENDS
-
-
-
 
 // HOW TO USE SECTION STARTS
 [#howtouse]
@@ -33,7 +25,7 @@ A word stores a 16-bit unsigned number, from 0 to 65535. Same as an unsigned int
 [float]
 === Código de Exemplo
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-
+O trecho de código abaixo cria uma variável do tipo word.
 
 [source,arduino]
 ----

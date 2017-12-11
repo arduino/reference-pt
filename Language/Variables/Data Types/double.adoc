@@ -40,7 +40,7 @@ Usuários que pegam código de outras fontes que inclua variáveis double pidem 
 === Ver Também
 
 [role="language"]
-#LINGUAGEM# link:./float[Tipo de dado float] +
+#LINGUAGEM# link:../float[Tipo de dado float] +
 
 --
 // SEE ALSO SECTION ENDS

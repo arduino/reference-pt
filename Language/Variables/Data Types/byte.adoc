@@ -1,15 +1,10 @@
 ---
 title: byte
 categories: [ "Variables" ]
-subCategories: [ "Data Types" ]
+subCategories: [ "Tipos de Dados" ]
 ---
 
-
-
-
-
 = byte
-
 
 // OVERVIEW SECTION STARTS
 [#overview]
@@ -17,13 +12,11 @@ subCategories: [ "Data Types" ]
 
 [float]
 === Descrição
-A byte stores an 8-bit unsigned number, from 0 to 255.
+Uma variável 'byte' armazena valores numéricos de 8-bit sem sinal, de 0 a 255.
 [%hardbreaks]
 
 --
 // OVERVIEW SECTION ENDS
-
-
 
 
 // HOW TO USE SECTION STARTS
@@ -31,7 +24,7 @@ A byte stores an 8-bit unsigned number, from 0 to 255.
 --
 
 [float]
-=== Código de Exemplo
+//=== Código de Exemplo
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
 
 
@@ -51,7 +44,7 @@ A byte stores an 8-bit unsigned number, from 0 to 255.
 === Ver Também
 
 [role="language"]
-#LINGUAGEM# link:../../conversion/bytecast[byte()]
+#LINGUAGEM# link:../../conversion/bytecast[byte()] +
 
 --
 // SEE ALSO SECTION ENDS

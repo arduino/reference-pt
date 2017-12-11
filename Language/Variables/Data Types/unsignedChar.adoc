@@ -1,12 +1,8 @@
 ---
 title: unsignedChar
 categories: [ "Variables" ]
-subCategories: [ "Data Types" ]
+subCategories: [ "Tipos de Dados" ]
 ---
-
-
-
-
 
 = unsigned char
 
@@ -17,18 +13,13 @@ subCategories: [ "Data Types" ]
 
 [float]
 === Descrição
-An unsigned data type that occupies 1 byte of memory. Same as the link:../byte[byte] datatype.
+Um tipo de dado sem sinal, que ocupa um byte na memória. O mesmo que o tipo de dado link:../byte[byte]. O tipo de dado unsigned char armazena valores de 0 a 255.
 
-The unsigned char datatype encodes numbers from 0 to 255.
-
-For consistency of Arduino programming style, the byte data type is to be preferred.
+Para consistência do estilo de programação Arduino, o tipo de dado byte é preferido.
 [%hardbreaks]
 
 --
 // OVERVIEW SECTION ENDS
-
-
-
 
 // HOW TO USE SECTION STARTS
 [#howtouse]
@@ -37,7 +28,7 @@ For consistency of Arduino programming style, the byte data type is to be prefer
 [float]
 === Código de Exemplo
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-
+O trecho de código abaixo cria uma variável do tipo unsigned char
 
 [source,arduino]
 ----
@@ -56,7 +47,7 @@ unsigned char myChar = 240;
 === Ver Também
 
 [role="language"]
-#LINGUAGEM# link:../../../functions/communication/serial/println[Serial.println]
+#LINGUAGEM# link:../../../functions/communication/serial/println[Serial.println] +
 
 --
 // SEE ALSO SECTION ENDS

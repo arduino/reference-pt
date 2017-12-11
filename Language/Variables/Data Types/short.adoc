@@ -4,12 +4,7 @@ categories: [ "Variables" ]
 subCategories: [ "Data Types" ]
 ---
 
-
-
-
-
 = short
-
 
 // OVERVIEW SECTION STARTS
 [#overview]
@@ -17,22 +12,19 @@ subCategories: [ "Data Types" ]
 
 [float]
 === Descrição
-A short is a 16-bit data-type.
+O tipo short é um tipo de dado 16-bit.
 
-On all Arduinos (ATMega and ARM based) a short stores a 16-bit (2-byte) value. This yields a range of -32,768 to 32,767 (minimum value of -2^15 and a maximum value of (2^15) - 1).
+Em todos os Arduinos (baseados no ATMega ou ARM) um short armazena um valor 16-bit (2 bytes). Isso fornece um intervalo de -32,768 a 32,767 (valor mínimo de -2^15 e valor máximo de (2^15) - 1).
 [%hardbreaks]
 
 [float]
 === Sintaxe
 `short var = val;`
 
-`var` - your short variable name
-`val` - the value you assign to that variable
+`var` - o nome da sua variável short
+`val` - o valor a ser dado a variável
 --
 // OVERVIEW SECTION ENDS
-
-
-
 
 // HOW TO USE SECTION STARTS
 [#howtouse]
@@ -60,7 +52,7 @@ On all Arduinos (ATMega and ARM based) a short stores a 16-bit (2-byte) value. T
 === Ver Também
 
 [role="language"]
-#LINGUAGEM# link:../../constants/integerconstants[Integer Constants]
+#LINGUAGEM# link:../../constants/integerconstants[Constantes Inteiras] +
 
 --
 // SEE ALSO SECTION ENDS

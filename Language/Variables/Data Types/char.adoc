@@ -1,15 +1,10 @@
 ---
 title: char
 categories: [ "Variables" ]
-subCategories: [ "Data Types" ]
+subCategories: [ "Tipos de Dados" ]
 ---
 
-
-
-
-
 = char
-
 
 // OVERVIEW SECTION STARTS
 [#overview]
@@ -17,11 +12,11 @@ subCategories: [ "Data Types" ]
 
 [float]
 === Descrição
-A data type that takes up 1 byte of memory that stores a character value. Character literals are written in single quotes, like this: 'A' (for multiple characters - strings - use double quotes: "ABC").
+Um tipo de dado que ocupa 1 byte na memória que armazena um caractere. Caracteres literais são escritos em aspas simples, dessa forma: 'A' (para múltiplos caracteres - ou seja, strings - use aspas duplas: "ABC").
 
-Characters are stored as numbers however. You can see the specific encoding in the link:https://www.arduino.cc/en/Reference/ASCIIchart[ASCII chart]. This means that it is possible to do arithmetic on characters, in which the ASCII value of the character is used (e.g. 'A' + 1 has the value 66, since the ASCII value of the capital letter A is 65). See link:../../../functions/communication/serial/println[`Serial.println`] reference for more on how characters are translated to numbers.
+No entanto, caracteres são armazenados como números. Você pode ver a codificação na link:https://www.arduino.cc/en/Reference/ASCIIchart[tabela ASCII]. Isso significa que é possível fazer aritmética com caracteres, na  qual o valor ASCII para o caractere é usado (ex. 'A' + 1 tem valor 66, pois o valor ASCII da letra maiúscula A é 65). Veja a referência de link:../../../functions/communication/serial/println[`Serial.println`] para mais sobre como caracteres são traduzidos para números.
 
-The char datatype is a signed type, meaning that it encodes numbers from -128 to 127. For an unsigned, one-byte (8 bit) data type, use the _byte_ data type.
+O tipo de dado char é um tipo com sinal, armazenando números de -128 a 127. Para um tipo de dado sem sinal, de um byte (8 bits), use o tipo de dado _byte_.
 [%hardbreaks]
 
 --
@@ -41,7 +36,7 @@ The char datatype is a signed type, meaning that it encodes numbers from -128 to
 [source,arduino]
 ----
   char myChar = 'A';
-  char myChar = 65;      // both are equivalent
+  char myChar = 65;      // ambas as formas são equivalentes
 ----
 
 
@@ -57,7 +52,7 @@ The char datatype is a signed type, meaning that it encodes numbers from -128 to
 === Ver Também
 
 [role="language"]
-#LINGUAGEM# link:../../../functions/communication/serial/println[Serial.println]
+#LINGUAGEM# link:../../../functions/communication/serial/println[Serial.println] +
 
 --
 // SEE ALSO SECTION ENDS

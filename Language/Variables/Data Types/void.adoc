@@ -13,7 +13,7 @@ subCategories: [ "Tipos de Dados" ]
 
 [float]
 === Descrição
-A palavra chave `void` é usada apenas em declaraçes de funções. Ela indica que é esperado que a função não retorne nenhuma informação para a função de qual foi chamada.
+A palavra chave `void` é usada apenas em declarações de funções. Ela indica que é esperado que a função não retorne nenhuma informação para a função da qual foi chamada.
 [%hardbreaks]
 
 --

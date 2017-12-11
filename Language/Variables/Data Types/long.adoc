@@ -1,12 +1,8 @@
 ---
 title: long
 categories: [ "Variables" ]
-subCategories: [ "Data Types" ]
+subCategories: [ "Tipos de Dados" ]
 ---
-
-
-
-
 
 = long
 
@@ -17,9 +13,9 @@ subCategories: [ "Data Types" ]
 
 [float]
 === Descrição
-Long variables are extended size variables for number storage, and store 32 bits (4 bytes), from -2,147,483,648 to 2,147,483,647.
+Variáveis long são variáveis de tamanho extendido para armazenamento de números, armazenam 32 bits (4 bytes), de  -2,147,483,648 a 2,147,483,647.
 
-If doing math with integers, at least one of the numbers must be followed by an L, forcing it to be a long. See the link:../../constants/integerconstants[Integer Constants] page for details.
+Ao se fazer cálculos com inteiros, pelo menos um dos números deve ser seguido por um L, forçando-o a ser um long. Veja a página sobre link:../../constants/integerconstants[Constantes Inteiras] para detalhes.
 [%hardbreaks]
 
 [float]
@@ -27,13 +23,11 @@ If doing math with integers, at least one of the numbers must be followed by an 
 
 `long var = val;`
 
-`var` - the long variable name
-`val` - the value assigned to the variable
+`var` - o nome da variável long
+`val` - o valor dado à variável
 [%hardbreaks]
 --
 // OVERVIEW SECTION ENDS
-
-
 
 
 // HOW TO USE SECTION STARTS
@@ -47,7 +41,7 @@ If doing math with integers, at least one of the numbers must be followed by an 
 
 [source,arduino]
 ----
-  long speedOfLight = 186000L;   // see the Integer Constants page for explanation of the 'L'
+  long speedOfLight = 186000L;   // veja a página sobre constantes inteiras para uma explicação sobre o 'L'
 ----
 
 --
@@ -61,7 +55,7 @@ If doing math with integers, at least one of the numbers must be followed by an 
 === Ver Também
 
 [role="language"]
-#LINGUAGEM# link:../../constants/integerconstants[Integer Constants]
+#LINGUAGEM# link:../../constants/integerconstants[Constantes Inteiras] +
 
 --
 // SEE ALSO SECTION ENDS

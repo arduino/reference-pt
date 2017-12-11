@@ -1,15 +1,10 @@
 ---
 title: unsignedLong
 categories: [ "Variables" ]
-subCategories: [ "Data Types" ]
+subCategories: [ "Tipos de Dados" ]
 ---
 
-
-
-
-
 = unsigned long
-
 
 // OVERVIEW SECTION STARTS
 [#overview]
@@ -17,7 +12,7 @@ subCategories: [ "Data Types" ]
 
 [float]
 === Descrição
-Unsigned long variables are extended size variables for number storage, and store 32 bits (4 bytes). Unlike standard longs unsigned longs won't store negative numbers, making their range from 0 to 4,294,967,295 (2^32 - 1).
+Variáveis Unsigned long são variáveis de tamanho extendido para armazenamento de números, e armazenam 32 bits (4 bytes). Diferentemente de longs padrão, unsigned longs não guardam números negativos, fazendo com que possa armazenar valores de 0 a 4,294,967,295 (2^32 - 1).
 [%hardbreaks]
 
 [float]
@@ -25,14 +20,12 @@ Unsigned long variables are extended size variables for number storage, and stor
 
 `unsigned long var = val;`
 
-`var` - your long variable name
-`val` - the value you assign to that variable
+`var` - o nome da sua variável long
+`val` - o valor a ser dado a variável
 [%hardbreaks]
 
 --
 // OVERVIEW SECTION ENDS
-
-
 
 
 // HOW TO USE SECTION STARTS
@@ -42,11 +35,11 @@ Unsigned long variables are extended size variables for number storage, and stor
 [float]
 === Código de Exemplo
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-
+O código abaixo cria uma variável do tipo long para guardar o número de milissegundos desde que o programa iniciou.
 
 [source,arduino]
 ----
-unsigned long time;
+unsigned long time; //variável do tipo long
 
 void setup()
 {
@@ -57,9 +50,9 @@ void loop()
 {
   Serial.print("Time: ");
   time = millis();
-  //prints time since program started
+  //imprime o tempo desde que o programa iniciou, em milissegundos
   Serial.println(time);
-  // wait a second so as not to send massive amounts of data
+  // espera um segundo, para não enviar quantidades massivas de dados
   delay(1000);
 }
 ----
@@ -76,7 +69,7 @@ void loop()
 === Ver Também
 
 [role="language"]
-#LINGUAGEM# link:../../constants/integerconstants[Integer Constants]
+#LINGUAGEM# link:../../constants/integerconstants[Constantes Inteiras] +
 
 --
 // SEE ALSO SECTION ENDS

@@ -1,12 +1,8 @@
-﻿---
+---
 title: "String()"
 categories: [ "Variables" ]
-subCategories: [ "Data Types" ]
+subCategories: [ "Tipos de Dados" ]
 ---
-
-
-
-
 
 = String()
 
@@ -17,23 +13,25 @@ subCategories: [ "Data Types" ]
 
 [float]
 === Descrição
-Constructs an instance of the String class. There are multiple versions that construct Strings from different data types (i.e. format them as sequences of characters), including:
+Constrói uma instância da classe String. Há múltiplas versões que constroem Strings a partir de diferentes tipos de dados (ex. formatam-nos como uma sequência de caracteres), incluindo:
 
-* a constant string of characters, in double quotes (i.e. a char array)
-* a single constant character, in single quotes
-* another instance of the String object
-* a constant integer or long integer
-* a constant integer or long integer, using a specified base
-* an integer or long integer variable
-* an integer or long integer variable, using a specified base
-* a float or double, using a specified decimal palces
+* uma string constante de caracteres, em aspas duplas (ex. um vetor de caracteres)
+* um único caractere constante, em aspas simples
+* uma outra instância de um objeto String
+* um int constante ou long int
+* um int constante ou long int, usando uma base especificada
+* uma variável int ou long int
+* uma variável int ou long int, usando uma base especificada
+* um float ou double, usando um número especificado de casas decimais
 
-Constructing a String from a number results in a string that contains the ASCII representation of that number. The default is base ten, so
+Nesse texto, sequências de caracteres são chamadas `strings`, enquanto instâncias da classe String (objetos) são chamados `String`. 
+
+Construir uma String a partir de um número resulta em uma String que contém a representação ASCII desse número. A base padrão é dez, então:
 [source,arduino]
 ----
 String thisString = String(13);
 ----
-gives you the String "13". You can use other bases, however. For example,
+Fornece a String "13". No entanto, você pode usar outras bases. Por exemplo,
 
 
 [source,arduino]
@@ -41,14 +39,14 @@ gives you the String "13". You can use other bases, however. For example,
 String thisString = String(13, HEX);
 ----
 
-gives you the String "D", which is the hexadecimal representation of the decimal value 13. Or if you prefer binary,
+que fornece a String "D", que é a representação hexadecimal do valor 13. Ou se você preferir binário,
 
 [source,arduino]
 ----
 String thisString = String(13, BIN);
 ----
 
-gives you the String "1101", which is the binary representation of 13.
+forneca a String "1101", que é a representação binária de 13.
 [%hardbreaks]
 
 
@@ -63,17 +61,15 @@ String(val, decimalPlaces)
 
 [float]
 === Parâmetros
-`val`:  a variable to format as a String - *Allowed data types:* string, char, byte, int, long, unsigned int, unsigned long, float, double +
-`base` (optional): the base in which to format an integral value
-`decimalPlaces` (*only if val is float or double*): the desired decimal places
+`val`:  a variável a ser formatada como String - *Tipos de dados permitidos:* string, char, byte, int, long, unsigned int, unsigned long, float, double +
+`base` (opcional): a base na qual formatar valores inteiros 
+`decimalPlaces` (*apenas se val é float ou double*): o número desejado de casas decimais
 
 [float]
 === Retorna
-an instance of the String class.
-
+Uma instância da classe String.
 --
 // OVERVIEW SECTION ENDS
-
 
 
 // HOW TO USE SECTION STARTS
@@ -82,19 +78,19 @@ an instance of the String class.
 
 [float]
 === Código de Exemplo
-All of the following are valid declarations for Strings.
+Todas a seguir são declarações válidas para Strings.
 [source,arduino]
 ----
-String stringOne = "Hello String";                                     // using a constant String
-String stringOne =  String('a');                                          // converting a constant char into a String
-String stringTwo =  String("This is a string");                 // converting a constant string into a String object
-String stringOne =  String(stringTwo + " with more"); // concatenating two strings
-String stringOne =  String(13);                                          // using a constant integer
-String stringOne =  String(analogRead(0), DEC);          // using an int and a base
-String stringOne =  String(45, HEX);                                // using an int and a base (hexadecimal)
-String stringOne =  String(255, BIN);                               // using an int and a base (binary)
-String stringOne =  String(millis(), DEC);                        // using a long and a base
-String stringOne =  String(5.698, 3);                                // using a float and the decimal places
+String stringOne = "Hello String";                     // usando uma string constante
+String stringOne =  String('a');                       // convertendo um caractere constante para uma String
+String stringTwo =  String("This is a string");        // convertendo uma string constante para um objeto String
+String stringOne =  String(stringTwo + " with more");  // concatenando duas strings
+String stringOne =  String(13);                        // usando um inteiro constante
+String stringOne =  String(analogRead(0), DEC);        // usando um int e uma base especificada (decimal)
+String stringOne =  String(45, HEX);                   // usando um int e uma base especificada (hexadecimal)
+String stringOne =  String(255, BIN);                  // usando um int e uma base especificada (binário)
+String stringOne =  String(millis(), DEC);             // usando um long e uma base especificada
+String stringOne =  String(5.698, 3);                  // usando um float e o número de casas decimais
 ----
 
 --
@@ -102,49 +98,49 @@ String stringOne =  String(5.698, 3);                                // using a 
 
 
 [float]
-=== Functions
+=== Funções
 
 [role="language"]
-#LINGUAGEM# link:../string/functions/charat[charAt()]
-#LINGUAGEM# link:../string/functions/compareto[compareTo()]
-#LINGUAGEM# link:../string/functions/concat[concat()]
-#LINGUAGEM# link:../string/functions/c_str[c_str()]
-#LINGUAGEM# link:../string/functions/endswith[endsWith()]
-#LINGUAGEM# link:../string/functions/equals[equals()]
-#LINGUAGEM# link:../string/functions/equalsignorecase[equalsIgnoreCase()]
-#LINGUAGEM# link:../string/functions/getbytes[getBytes()]
-#LINGUAGEM# link:../string/functions/indexof[indexOf()]
-#LINGUAGEM# link:../string/functions/lastindexof[lastIndexOf()]
-#LINGUAGEM# link:../string/functions/length[length()]
-#LINGUAGEM# link:../string/functions/remove[remove()]
-#LINGUAGEM# link:../string/functions/replace[replace()]
-#LINGUAGEM# link:../string/functions/reserve[reserve()]
-#LINGUAGEM# link:../string/functions/setcharat[setCharAt()]
-#LINGUAGEM# link:../string/functions/startswith[StartsWith()]
-#LINGUAGEM# link:../string/functions/substring[substring()]
-#LINGUAGEM# link:../string/functions/tochararray[toCharArray()]
-#LINGUAGEM# link:../string/functions/toint[toInt()]
-#LINGUAGEM# link:../string/functions/tofloat[toFloat()]
-#LINGUAGEM# link:../string/functions/tolowercase[toLowerCase()]
-#LINGUAGEM# link:../string/functions/touppercase[toUpperCase()]
-#LINGUAGEM# link:../string/functions/trim[trim()]
+#LINGUAGEM# link:../string/functions/charat[charAt()] +
+#LINGUAGEM# link:../string/functions/compareto[compareTo()] +
+#LINGUAGEM# link:../string/functions/concat[concat()] +
+#LINGUAGEM# link:../string/functions/c_str[c_str()] +
+#LINGUAGEM# link:../string/functions/endswith[endsWith()] +
+#LINGUAGEM# link:../string/functions/equals[equals()] +
+#LINGUAGEM# link:../string/functions/equalsignorecase[equalsIgnoreCase()] +
+#LINGUAGEM# link:../string/functions/getbytes[getBytes()] +
+#LINGUAGEM# link:../string/functions/indexof[indexOf()] +
+#LINGUAGEM# link:../string/functions/lastindexof[lastIndexOf()] +
+#LINGUAGEM# link:../string/functions/length[length()] +
+#LINGUAGEM# link:../string/functions/remove[remove()] +
+#LINGUAGEM# link:../string/functions/replace[replace()] +
+#LINGUAGEM# link:../string/functions/reserve[reserve()] +
+#LINGUAGEM# link:../string/functions/setcharat[setCharAt()] +
+#LINGUAGEM# link:../string/functions/startswith[StartsWith()] +
+#LINGUAGEM# link:../string/functions/substring[substring()] +
+#LINGUAGEM# link:../string/functions/tochararray[toCharArray()] +
+#LINGUAGEM# link:../string/functions/toint[toInt()] +
+#LINGUAGEM# link:../string/functions/tofloat[toFloat()] +
+#LINGUAGEM# link:../string/functions/tolowercase[toLowerCase()] +
+#LINGUAGEM# link:../string/functions/touppercase[toUpperCase()] +
+#LINGUAGEM# link:../string/functions/trim[trim()] +
 
 [float]
-=== Operators
+=== Operadores
 
 [role="language"]
-#LINGUAGEM# link:../string/operators/elementaccess[[\] (element access)]
-#LINGUAGEM# link:../string/operators/concatenation[+ (concatenation)]
-#LINGUAGEM# link:../string/operators/append[+= (append)]
-#LINGUAGEM# link:../string/operators/comparison[== (comparison)]
-#LINGUAGEM# link:../string/operators/greaterthan[> (greater than)]
-#LINGUAGEM# link:../string/operators/greaterthanorequalto[>= (greater than or equal to)]
-#LINGUAGEM# link:../string/operators/lessthan[< (less than)]
-#LINGUAGEM# link:../string/operators/lessthanorequalto[\<= (less than or equal to)]
-#LINGUAGEM# link:../string/operators/differentfrom[!= (different from)]
+#LINGUAGEM# link:../string/operators/elementaccess[[\] (acesso de elementos)]  +
+#LINGUAGEM# link:../string/operators/concatenation[+ (concatenação)] +
+#LINGUAGEM# link:../string/operators/append[+= (anexação)] +
+#LINGUAGEM# link:../string/operators/comparison[== (comparação)] +
+#LINGUAGEM# link:../string/operators/greaterthan[> (maior que)] +
+#LINGUAGEM# link:../string/operators/greaterthanorequalto[>= (maior ou igual a)] +
+#LINGUAGEM# link:../string/operators/lessthan[< (menor que)] +
+#LINGUAGEM# link:../string/operators/lessthanorequalto[\<= (menor que ou igual a)] +
+#LINGUAGEM# link:../string/operators/differentfrom[!= (diferente de)] +
 
 [role="example"]
-* #EXAMPLE# link: https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[Built-in String Tutorials]
+#EXEMPLO# link: https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[Tutoriais sobre objetos String (Em Inglês)] +
 
 
 // SEE ALSO SECTION STARTS

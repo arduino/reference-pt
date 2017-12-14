@@ -1,15 +1,10 @@
 ---
 title: float
 categories: [ "Variables" ]
-subCategories: [ "Data Types" ]
+subCategories: [ "Tipos de Dados" ]
 ---
 
-
-
-
-
 = float
-
 
 // OVERVIEW SECTION STARTS
 [#overview]
@@ -17,29 +12,27 @@ subCategories: [ "Data Types" ]
 
 [float]
 === Descrição
-Datatype for floating-point numbers, a number that has a decimal point. Floating-point numbers are often used to approximate analog and continuous values because they have greater resolution than integers. Floating-point numbers can be as large as 3.4028235E+38 and as low as -3.4028235E+38. They are stored as 32 bits (4 bytes) of information.
+Tipo de dado para números de ponto flutuante, ou seja, um número racional. Números de ponto flutuante são frequentemente usados para aproximar valores analógicos e contínuos porque possuem maior resolução que inteiros (int). Números de ponto flutuante podem ser tão grandes quanto 3.4028235E+38 ou pequenos quanto -3.4028235E+38. Floats são armazenados em 32 bits (4 bytes) de memória.
 
-Floats have only 6-7 decimal digits of precision. That means the total number of digits, not the number to the right of the decimal point. Unlike other platforms, where you can get more precision by using a double (e.g. up to 15 digits), on the Arduino, double is the same size as float.
+Floats possuem apenas 6-7 dígitos decimais de precisão. Isso para o número total de dígitos, não de dígitos à direita do ponto decimal. Diferentemente de outras plataformas, onde se pode ter mais precisão usando-se um double (até 15 dígitos), no Arduino, o double possui o mesmo tamanho que float.
 
-Floating point numbers are not exact, and may yield strange results when compared. For example 6.0 / 3.0 may not equal 2.0. You should instead check that the absolute value of the difference between the numbers is less than some small number.
+Números de ponto flutuante não são exatos, e podem gerar resultados estranhos quando comparados. Por exemplo, 6.0 / 3.0 pode não ser igual a 2.0. Você deveria, em vez disso, checar se o valor absoluto da diferença entre dois números é menor que algum número.
 
-Floating point math is also much slower than integer math in performing calculations, so should be avoided if, for example, a loop has to run at top speed for a critical timing function. Programmers often go to some lengths to convert floating point calculations to integer math to increase speed.
+A matemática em números de ponto flutuante também é muito mais lenta que em inteiros ao se realizar cálculos, então deve ser evitada se, por exemplo, um loop tem que ser executado em alta velocidade para uma função de tempo crítico. Programadores frequentemente fazem o possível para converter cálculos em números flutuantes para matemática em inteiros para aumentar a velocidade, mas sacrificando precisão.
 
-If doing math with floats, you need to add a decimal point, otherwise it will be treated as an int. See the link:../../constants/floatingpointconstants[Floating point] constants page for details.
+Quando fizer cálculos com floats, você precisa adicionar um ponto decimal, do contrário o número será tratado como um int. Veja a página sobre link:../../constants/floatingpointconstants[constantes de ponto flutuante] para mais detalhes.
 [%hardbreaks]
 
 [float]
 === Sintaxe
 `float var=val;`
 
-`var` - your float variable name
-`val` - the value you assign to that variable
+`var` - o nome da sua variável float
+`val` - o valor a ser dado a variável
 [%hardbreaks]
 
 --
 // OVERVIEW SECTION ENDS
-
-
 
 
 // HOW TO USE SECTION STARTS
@@ -49,7 +42,7 @@ If doing math with floats, you need to add a decimal point, otherwise it will be
 [float]
 === Código de Exemplo
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-
+O trecho de código demonstra algumas operações com floats.
 
 [source,arduino]
 ----
@@ -61,8 +54,8 @@ If doing math with floats, you need to add a decimal point, otherwise it will be
   float z;
 
   x = 1;
-  y = x / 2;            // y now contains 0, ints can't hold fractions
-  z = (float)x / 2.0;   // z now contains .5 (you have to use 2.0, not 2)
+  y = x / 2;            // y agora contém 0, ints não podem guardar frações
+  z = (float)x / 2.0;   // z agora contém 0.5 (você deve usar 2.0, não 2)
 ----
 
 

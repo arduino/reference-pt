@@ -1,15 +1,10 @@
 ---
 title: unsignedInt
 categories: [ "Variables" ]
-subCategories: [ "Data Types" ]
+subCategories: [ "Tipos de Dados" ]
 ---
 
-
-
-
-
 = unsigned int
-
 
 // OVERVIEW SECTION STARTS
 [#overview]
@@ -17,11 +12,11 @@ subCategories: [ "Data Types" ]
 
 [float]
 === Descrição
-On the Uno and other ATMEGA based boards, unsigned ints (unsigned integers) are the same as ints in that they store a 2 byte value. Instead of storing negative numbers however they only store positive values, yielding a useful range of 0 to 65,535 (2^16) - 1).
+No UNO e outras placas baseadas nos microcontroladores ATmega, unsigned ints (inteiros sem sinal) são o mesmo que o tipo int no que esses também armazenam um valor de 2 bytes. Em vez de guardar números negativos, no entanto, esses apenas armazenam valores positivos, garantindo um intervalo útil de 0 a 65,535 (2^16) - 1).
 
-The Due stores a 4 byte (32-bit) value, ranging from 0 to 4,294,967,295 (2^32 - 1).
+O Due e outras placas ARM armazenam um unsigned int em 4 bytes (32 bits), de 0 a 4,294,967,295 (2^32 - 1).
 
-The difference between unsigned ints and (signed) ints, lies in the way the highest bit, sometimes referred to as the "sign" bit, is interpreted. In the Arduino int type (which is signed), if the high bit is a "1", the number is interpreted as a negative number, and the other 15 bits are interpreted with (http://en.wikipedia.org/wiki/2%27s_complement[2's complement math]).
+A diferença entre unsigned ints e ints (com sinal), está na forma como o bit mais significativo, as vezes chamado de o bit "de sinal", é interpretado. No tipo int do Arduino (que possui sinal), se o bit mais significativo é "1", o número é interpretado como um número negativo, e os outros 15 bits são interpretados com (https://pt.wikipedia.org/wiki/Complemento_para_dois[complemento de 2]).
 [%hardbreaks]
 
 --
@@ -30,8 +25,8 @@ The difference between unsigned ints and (signed) ints, lies in the way the high
 [float]
 === Sintaxe
 `unsigned int var = val;`
-`var` - your unsigned int variable name
-`val` - the value you assign to that variable
+`var` - o nome da sua variável unsigned int
+`val` - o valor a ser dado a variável
 
 
 // HOW TO USE SECTION STARTS
@@ -41,7 +36,7 @@ The difference between unsigned ints and (signed) ints, lies in the way the high
 [float]
 === Código de Exemplo
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-
+O trecho de código abaixo cria uma variável unsigned int chamada ledPin e a atribui o valor 13.
 
 [source,arduino]
 ----
@@ -51,14 +46,14 @@ The difference between unsigned ints and (signed) ints, lies in the way the high
 
 [float]
 === Notas e Advertências
-When unsigned variables are made to exceed their maximum capacity they "roll over" back to 0, and also the other way around:
+Quando variáveis unsigned tem sua capacidade máxima excedida, elas "estouram" e voltam para 0, e também o contrário. Exemplo:
 
 [source,arduino]
 ----
 unsigned int x;
    x = 0;
-   x = x - 1;       // x now contains 65535 - rolls over in neg direction
-   x = x + 1;       // x now contains 0 - rolls over
+   x = x - 1;       // x agora contém 65535
+   x = x + 1;       // x agora contém 0
 ----
 
 
@@ -74,7 +69,7 @@ unsigned int x;
 === Ver Também
 
 [role="language"]
-#LINGUAGEM# link:../../constants/integerconstants[Integer Constants]
+#LINGUAGEM# link:../../constants/integerconstants[Constantes Inteiras]
 
 --
 // SEE ALSO SECTION ENDS

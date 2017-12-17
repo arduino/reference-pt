@@ -15,7 +15,8 @@ subCategories: [ "Tipos de Dados" ]
 === Descrição
 Um vetor (array) é uma coleção de variáveis que são acessadas com um número índice. Vetores na linguagem C, na qual o Arduino é baseado, podem ser complicados, mas usar vetores simples é relativamente fácil.
 
-=== Criando-se (Declarando) um Vetor
+[float]
+=== Criando-se um Vetor
 
 Todos os métodos abaixo são formas válidas de criar (declarar) um vetor.
 [source,arduino]

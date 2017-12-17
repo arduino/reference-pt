@@ -1,15 +1,10 @@
 ---
 title: int
 categories: [ "Variables" ]
-subCategories: [ "Data Types" ]
+subCategories: [ "Tipos de Dados" ]
 ---
 
-
-
-
-
 = int
-
 
 // OVERVIEW SECTION STARTS
 [#overview]
@@ -17,14 +12,14 @@ subCategories: [ "Data Types" ]
 
 [float]
 === Descrição
-Integers are your primary data-type for number storage.
+Ints (integer ou inteiros) são o tipo o tipo de dados primário para armazenamento de números.
 
-On the Arduino Uno (and other ATmega based boards) an int stores a 16-bit (2-byte) value. This yields a range of -32,768 to 32,767 (minimum value of -2^15 and a maximum value of (2^15) - 1).
-On the Arduino Due and SAMD based boards (like MKR1000 and Zero), an int stores a 32-bit (4-byte) value. This yields a range of -2,147,483,648 to 2,147,483,647 (minimum value of -2^31 and a maximum value of (2^31) - 1).
+No Arduino Uno (e outras placas baseadas em micros ATmega) um int armazena um valor 16-bit (2 bytes). Isso garante um intervalo de -32,768 a 32,767 (um valor mínimo de -2^15 e um valor máximo de (2^15) - 1).
+No Arduino Due e outras placas baseadas em micros SAMD (como o MKR1000 e Zero), um int armazena um valor 32-bit (4 bytes). O que garante um intervalo de -2,147,483,648 a 2,147,483,647 (um valor mínimo de -2^31 e um valor máximo de (2^31) - 1).
 
-int's store negative numbers with a technique called (http://en.wikipedia.org/wiki/2%27s_complement[2's complement math]). The highest bit, sometimes referred to as the "sign" bit, flags the number as a negative number. The rest of the bits are inverted and 1 is added.
+Variáveis int armazenam números negativos com uma técnica chamada (https://pt.wikipedia.org/wiki/Complemento_para_dois[Complemento de 2]). O bit mais significativo, as vezes chamado de o "bit de sinal", indica que o número é negativo. O resto dos bits são invertidos e 1 é adicionado.
 
-The Arduino takes care of dealing with negative numbers for you, so that arithmetic operations work transparently in the expected manner. There can be an unexpected complication in dealing with the link:../../../structure/bitwise-operators/bitshiftright/[bitshift right operator] (>>) however.
+O Arduino cuida dos detalhes nas operações com números negativos por você, tal que operações aritméticas funcionam transparentemente na maneira esperada. No entanto, pode-se haver uma complicação ao lidar com o operador de link:../../../structure/bitwise-operators/bitshiftright/[deslocamento de bits a direita] (>>).
 [%hardbreaks]
 
 
@@ -32,12 +27,11 @@ The Arduino takes care of dealing with negative numbers for you, so that arithme
 === Sintaxe
 `int var = val;`
 
-`var` - your int variable name +
-`val` - the value you assign to that variable
+`var` - o nome da sua variável int +
+`val` - o valor a ser dado a variável
 
 --
 // OVERVIEW SECTION ENDS
-
 
 
 
@@ -58,7 +52,7 @@ The Arduino takes care of dealing with negative numbers for you, so that arithme
 
 [float]
 === Notas e Advertências
-When signed variables are made to exceed their maximum or minimum capacity they _overflow_.  The result of an overflow is unpredictable so this should be avoided.  A typical symptom of an overflow is the variable "rolling over" from its maximum capacity to its minimum or vice versa, but this is not always the case.  If you want this behavior, use link:../unsignedint/[unsigned int].
+Quando variáveis com  sinal são forçadas a exceder sua capacidade máxima ou mínima, elas _estouram_; ou do Inglês, sofrem _overflow_.  O resultado de um overflow é imprevisível, então isso deve ser evitado.  Um sintoma típico de um overflow é a variável "rolar" de sua capacidade máxima para a mínima ou vice-versa, mas não é sempre o caso.  Se você deseja esse comportamento, use o tipo link:../unsignedint/[unsigned int].
 
 
 --
@@ -73,7 +67,7 @@ When signed variables are made to exceed their maximum or minimum capacity they 
 === Ver Também
 
 [role="language"]
-#LINGUAGEM# link:../../constants/integerconstants[Integer Constants]
+#LINGUAGEM# link:../../constants/integerconstants[Integer Constants] +
 
 --
 // SEE ALSO SECTION ENDS

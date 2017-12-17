@@ -12,7 +12,7 @@ subCategories: [ "Tipos de Dados" ]
 
 [float]
 === Descrição
-Variáveis Unsigned long são variáveis de tamanho extendido para armazenamento de números, e armazenam 32 bits (4 bytes). Diferentemente de longs padrão, unsigned longs não guardam números negativos, fazendo com que possa armazenar valores de 0 a 4,294,967,295 (2^32 - 1).
+Variáveis unsigned long são variáveis de tamanho extendido para armazenamento de números, que armazenam 32 bits (4 bytes). Diferentemente de longs padrão, unsigned longs não guardam números negativos, o que faz com que possam armazenar valores de 0 a 4,294,967,295 (2^32 - 1).
 [%hardbreaks]
 
 [float]

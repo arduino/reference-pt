@@ -1,15 +1,10 @@
-﻿---
+---
 title: "c_str()"
 categories: [ "Data Types" ]
 subCategories: [ "StringObject Function" ]
 ---
 
-
-
-
-
 = c_str()
-
 
 // OVERVIEW SECTION STARTS
 [#overview]
@@ -17,7 +12,7 @@ subCategories: [ "StringObject Function" ]
 
 [float]
 === Descrição
-Converts the contents of a string as a C-style, null-terminated string. Note that this gives direct access to the internal String buffer and should be used with care. In particular, you should never modify the string through the pointer returned. When you modify the String object, or when it is destroyed, any pointer previously returned by c_str() becomes invalid and should not be used any longer.
+Converte o conteúdo de um objeto String para uma string estilo C, terminada em null. Note que isso dá acesso direto ao buffer da String  e deve ser usado com cuidado. Em particular, você não deve modificar a string através do ponteiro retornado. Quando você modificar o objeto String, ou quando esse é destruído, qualquer ponteiro previamente retornado por c_str() se torna inválido e não deve ser mais utilizado.
 
 [%hardbreaks]
 
@@ -31,11 +26,11 @@ string.c_str()
 
 [float]
 === Parâmetros
-none
+Nenhum
 
 [float]
 === Retorna
-A pointer to the C-style version of the invoking string.
+Um ponteiro para a versão em estilo C do objeto String.
 
 --
 // OVERVIEW SECTION ENDS
@@ -53,6 +48,6 @@ A pointer to the C-style version of the invoking string.
 === Ver Também
 
 [role="example"]
-* #EXAMPLE# link: https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[Built-in String Tutorials]
+#EXEMPLO# link: https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[Tutoriais String (Em Inglês)] +
 --
 // SEE ALSO SECTION ENDS

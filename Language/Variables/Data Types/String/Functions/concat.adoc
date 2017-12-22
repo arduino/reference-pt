@@ -1,15 +1,10 @@
-﻿---
+---
 title: "concat()"
 categories: [ "Data Types" ]
 subCategories: [ "StringObject Function" ]
 ---
 
-
-
-
-
 = concat()
-
 
 // OVERVIEW SECTION STARTS
 [#overview]
@@ -17,7 +12,7 @@ subCategories: [ "StringObject Function" ]
 
 [float]
 === Descrição
-Appends the parameter to a String.
+Adiciona o parâmetro ao final da String.
 
 [%hardbreaks]
 
@@ -26,18 +21,18 @@ Appends the parameter to a String.
 === Sintaxe
 [source,arduino]
 ----
-string.concat(parameter)
+string.concat(param)
 ----
 
 [float]
 === Parâmetros
-`parameter`: *Allowed types are* String, string, char, byte, int, unsigned int, long, unsigned long, float, double, __FlashStringHelper(F() macro).
+`param`: *Tipos de dados permitidos* String, string, char, byte, int, unsigned int, long, unsigned long, float, double, e a __FlashStringHelper(macro F()).
 
 [float]
 === Retorna
-`true`: success
+`true`: sucesso
 
-`false`: failure (in which case the string is left unchanged).
+`false`: falha ( em qual a string é deixada como antes).
 
 --
 // OVERVIEW SECTION ENDS

@@ -1,15 +1,10 @@
-﻿---
+---
 title: "charAt()"
 categories: [ "Data Types" ]
 subCategories: [ "StringObject Function" ]
 ---
 
-
-
-
-
 = charAt()
-
 
 // OVERVIEW SECTION STARTS
 [#overview]
@@ -17,7 +12,7 @@ subCategories: [ "StringObject Function" ]
 
 [float]
 === Descrição
-Access a particular character of the String.
+Acessa um caractere em uma determinada posição na String.
 
 [%hardbreaks]
 
@@ -31,14 +26,14 @@ string.charAt(n)
 
 [float]
 === Parâmetros
-`string`: a variable of type String
+`string`: uma variável do tipo String
 
-`n`: a variable of type unsigned int
+`n`: a posição do caractere a ser lido da String
 
 
 [float]
 === Retorna
-The n'th character of the String.
+O caractere na posição n da String.
 
 --
 // OVERVIEW SECTION ENDS

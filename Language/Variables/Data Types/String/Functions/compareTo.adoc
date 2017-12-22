@@ -60,6 +60,6 @@ string.compareTo(string2)
 === Ver Também
 
 [role="example"]
-#EXEMPLO# link: https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[Tutoriais String (Em Inglês)] +
+#EXEMPLO# https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[Tutoriais String (Em Inglês)] +
 --
 // SEE ALSO SECTION ENDS

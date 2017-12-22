@@ -55,6 +55,6 @@ string.startsWith(string2)
 === Ver Também
 
 [role="example"]
-* #EXAMPLE# link: https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[Built-in String Tutorials]
+#EXEMPLO# link: https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[Tutoriais String (Em Inglês)] +
 --
 // SEE ALSO SECTION ENDS

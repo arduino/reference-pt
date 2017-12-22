@@ -1,15 +1,10 @@
-﻿---
+---
 title: "equals()"
 categories: [ "Data Types" ]
 subCategories: [ "StringObject Function" ]
 ---
 
-
-
-
-
 = equals()
-
 
 // OVERVIEW SECTION STARTS
 [#overview]
@@ -17,7 +12,7 @@ subCategories: [ "StringObject Function" ]
 
 [float]
 === Descrição
-Compares two strings for equality. The comparison is case-sensitive, meaning the String "hello" is not equal to the String "HELLO".
+Verifica se duas Strings são iguais. A comparação é case-sensitive (letras maísuclas e minúsculas são diferenciadas), o que significa que a String "hello" não é igual a String "HELLO".
 
 [%hardbreaks]
 
@@ -31,14 +26,14 @@ string.equals(string2)
 
 [float]
 === Parâmetros
-`string, string2`: variables of type String
+`string, string2`: variáveis do tipo String
 
 
 [float]
 === Retorna
-`true`: if string equals string2 
+`true`: se string é igual a string2 
 
-`false`: otherwise
+`false`: do contrário
 --
 // OVERVIEW SECTION ENDS
 

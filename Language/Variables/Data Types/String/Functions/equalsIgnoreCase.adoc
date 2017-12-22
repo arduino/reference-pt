@@ -4,12 +4,7 @@ categories: [ "Data Types" ]
 subCategories: [ "StringObject Function" ]
 ---
 
-
-
-
-
 = equalsIgnoreCase()
-
 
 // OVERVIEW SECTION STARTS
 [#overview]
@@ -17,7 +12,7 @@ subCategories: [ "StringObject Function" ]
 
 [float]
 === Descrição
-Compares two strings for equality. The comparison is not case-sensitive, meaning the String("hello") is equal to the String("HELLO").
+Verifica se duas strings são iguais. A comparação, nesse caso, não é case-sensitive, o que significa que a String "hello" é dada como igual a the String "HELLO".
 
 [%hardbreaks]
 
@@ -31,12 +26,12 @@ string.equalsIgnoreCase(string2)
 
 [float]
 === Parâmetros
-`string, string2`: variables of type String
+`string, string2`: vvariáveis do tipo String
 
 
 [float]
 === Retorna
-`true`: if string equals string2 (ignoring case) 
+`true`: se string é igual a string2 (sem diferenciar maiúsculas e minúsculas) 
 
 `false`: otherwise
 --

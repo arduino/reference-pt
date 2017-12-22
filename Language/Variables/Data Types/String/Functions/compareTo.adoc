@@ -1,15 +1,10 @@
-﻿---
+---
 title: "compareTo()"
 categories: [ "Data Types" ]
 subCategories: [ "StringObject Function" ]
 ---
 
-
-
-
-
 = compareTo()
-
 
 // OVERVIEW SECTION STARTS
 [#overview]
@@ -17,7 +12,7 @@ subCategories: [ "StringObject Function" ]
 
 [float]
 === Descrição
-Compares two Strings, testing whether one comes before or after the other, or whether they're equal. The strings are compared character by character, using the ASCII values of the characters. That means, for example, that 'a' comes before 'b' but after 'A'. Numbers come before letters.
+Compara duas Strings, testando se uma vem antes da outra na tabela ASCII, ou se são iguais. As strings são comparadas caractere por caractere, usando os valores ASCII dos caracteres. Isso significa, por exemplo, que 'a' vem antes 'b', em ordem alfabética, mas depois de 'A' e 'B' etc. Números vem antes das letras.
 
 [%hardbreaks]
 
@@ -31,18 +26,18 @@ string.compareTo(string2)
 
 [float]
 === Parâmetros
-`string`: a variable of type String
+`string`: uma variável do tipo String
 
-`string2`: another variable of type String
+`string2`: outra variável do tipo String
 
 
 [float]
 === Retorna
-`a negative number`: if string comes before string2
+`um número negativo`: se string vem antes de string2
 
-`0`: if string equals string2
+`0`: se string é igual a string2
 
-`a positive number`: if string comes after string2
+`um número positivo`: se string vem depois de string2
 --
 
 // OVERVIEW SECTION ENDS

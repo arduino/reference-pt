@@ -1,15 +1,12 @@
 ﻿---
 title: "+="
-title_expanded: append
+title_expanded: Concatenação
 categories: [ "Data Types" ]
 subCategories: [ "StringObject Operator" ]
 ---
 
 
-
-
-
-= += Append
+= += Concatenação
 
 
 // OVERVIEW SECTION STARTS
@@ -18,7 +15,7 @@ subCategories: [ "StringObject Operator" ]
 
 [float]
 === Descrição
-It concatenates Strings with other data.
+Concatena Strings com outros dados.
 
 [%hardbreaks]
 
@@ -32,11 +29,11 @@ string += data
 
 [float]
 === Parâmetros
-None
+Nenhum
 
 [float]
 === Retorna
-None
+Nada
 
 --
 

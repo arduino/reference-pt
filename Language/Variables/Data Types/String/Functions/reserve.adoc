@@ -1,15 +1,10 @@
-﻿---
+---
 title: "reserve()"
 categories: [ "Data Types" ]
 subCategories: [ "StringObject Function" ]
 ---
 
-
-
-
-
 = reserve()
-
 
 // OVERVIEW SECTION STARTS
 [#overview]
@@ -17,7 +12,7 @@ subCategories: [ "StringObject Function" ]
 
 [float]
 === Descrição
-The String reserve() function allows you to allocate a buffer in memory for manipulating strings.
+A função reserve() permite alocar um buffer de memória no objeto String para manipular strings.
 
 [%hardbreaks]
 
@@ -26,17 +21,17 @@ The String reserve() function allows you to allocate a buffer in memory for mani
 === Sintaxe
 [source,arduino]
 ----
-string.reserve(size)
+string.reserve(tamanho)
 ----
 
 [float]
 === Parâmetros
-`size`: unsigned int declaring the number of bytes in memory to save for string manipulation 
+`tamanho`: número de bytes na memória a serem reservados para manipulação de strings - unsigned int
 
 
 [float]
 === Retorna
-None
+Nada
 --
 // OVERVIEW SECTION ENDS
 
@@ -52,23 +47,24 @@ None
 String myString;
 
 void setup() {
-  // initialize serial and wait for port to open:
+  // Inicializa a Serial e espera a porta abrir:
   Serial.begin(9600);
   while (!Serial) {
-    ; // wait for serial port to connect. Needed for native USB
+    ; // Espera até a porta serial conectar. Necessário em placas com USB nativa
   }
 
+  //Reserva 26 bytes no objeto myString e os preenche com outras substrings
   myString.reserve(26);
   myString = "i=";
   myString += "1234";
   myString += ", is that ok?";
 
-  // print the String:
+  // imprime a String:
   Serial.println(myString);
 }
 
 void loop() {
- // nothing to do here
+ // nada a ser feito aqui
 }
  
 ----

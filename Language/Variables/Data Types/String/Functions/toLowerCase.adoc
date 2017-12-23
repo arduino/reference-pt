@@ -4,12 +4,7 @@ categories: [ "Data Types" ]
 subCategories: [ "StringObject Function" ]
 ---
 
-
-
-
-
 = toLowerCase()
-
 
 // OVERVIEW SECTION STARTS
 [#overview]
@@ -17,7 +12,7 @@ subCategories: [ "StringObject Function" ]
 
 [float]
 === Descrição
-Get a lower-case version of a String. As of 1.0, toLowerCase() modifies the string in place rather than returning a new one.
+Converte uma string para sua versão composta apenas de letras minúsculas. Antes da versão 1.0, toLowerCase() retornava um ponteiro para uma nova String em vez de modificar o objeto String.
 
 [%hardbreaks]
 
@@ -31,12 +26,12 @@ string.toLowerCase()
 
 [float]
 === Parâmetros
-`string`: a variable of type String
+`string`: uma variável do tipo String
 
 
 [float]
 === Retorna
-None
+Nada
 
 --
 // OVERVIEW SECTION ENDS

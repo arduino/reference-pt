@@ -31,7 +31,7 @@ string.indexOf(string2, desde)
 === Parâmetros
 `string`: uma variável do tipo String
 
-`string2`: a string a ser procurada - *char ou String
+`string2`: a string a ser procurada - char ou String
 
 `desde`: a posição a partir da qual iniciar a busca
 

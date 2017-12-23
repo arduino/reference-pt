@@ -1,15 +1,10 @@
-﻿---
+---
 title: "trim()"
 categories: [ "Data Types" ]
 subCategories: [ "StringObject Function" ]
 ---
 
-
-
-
-
 = trim()
-
 
 // OVERVIEW SECTION STARTS
 [#overview]
@@ -17,7 +12,7 @@ subCategories: [ "StringObject Function" ]
 
 [float]
 === Descrição
-Get a version of the String with any leading and trailing whitespace removed. As of 1.0, trim() modifies the string in place rather than returning a new one.
+Remove quaisquer espaços no começo ou final da String. Antes da versão 1.0, trim() retornava um ponteiro para uma nova String em vez de modificar a String.
 
 [%hardbreaks]
 
@@ -31,12 +26,12 @@ string.trim()
 
 [float]
 === Parâmetros
-`string`: a variable of type String
+`string`: uma variável do tipo String
 
 
 [float]
 === Retorna
-None
+Nada
 
 --
 // OVERVIEW SECTION ENDS

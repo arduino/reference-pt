@@ -12,7 +12,7 @@ subCategories: [ "StringObject Function" ]
 
 [float]
 === Descrição
-Remove quaisquer espaços no começo ou final da String. Antes da versão 1.0, trim() retornava um ponteiro para uma nova String em vez de modificar a String.
+Remove quaisquer espaços no começo ou final da String. Antes da versão 1.0, trim() retornava um ponteiro para uma nova String em vez de modificar o objeto String.
 
 [%hardbreaks]
 

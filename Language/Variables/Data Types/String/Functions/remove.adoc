@@ -1,15 +1,10 @@
-﻿---
+---
 title: "remove()"
 categories: [ "Data Types" ]
 subCategories: [ "StringObject Function" ]
 ---
 
-
-
-
-
 = remove()
-
 
 // OVERVIEW SECTION STARTS
 [#overview]
@@ -17,7 +12,7 @@ subCategories: [ "StringObject Function" ]
 
 [float]
 === Descrição
-Modify in place a string removing chars from the provided index to the end of the string or from the provided index to index plus count.
+Modifica uma string, removendo os caracteres a partir de determinado índice até o final da String, ou determinado número de caracteres a partir do índice fornecido.
 
 [%hardbreaks]
 
@@ -33,14 +28,14 @@ string.remove(index, count)
 
 [float]
 === Parâmetros
-`index`: a variable of type unsigned int
+`index`: índice a partir do qual remover os caracteres -int
 
-`count`: a variable of type unsigned int
+`count`: o número de caracteres a serem removidos a partir do indíce - int
 
 
 [float]
 === Retorna
-None
+Nada
 
 --
 // OVERVIEW SECTION ENDS

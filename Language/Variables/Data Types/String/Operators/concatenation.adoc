@@ -1,16 +1,11 @@
-﻿---
+---
 title: "+"
-title_expanded: concatenation
+title_expanded: Concatenação
 categories: [ "Data Types" ]
 subCategories: [ "StringObject Operator" ]
 ---
 
-
-
-
-
-= + Concatenation
-
+= + Concatenação
 
 // OVERVIEW SECTION STARTS
 [#overview]
@@ -18,7 +13,7 @@ subCategories: [ "StringObject Operator" ]
 
 [float]
 === Descrição
-Combines, or concatenates two strings into one new String. The second string is appended to the first, and the result is placed in a new String. Works the same as string.concat().
+Combina, ou concatena duas Strings em uma única String. A segunda String é anexada a primeira, e o resultado é colocado em uma nova String. Funciona da mesma forma que string.concat().
 
 [%hardbreaks]
 
@@ -32,11 +27,11 @@ string3 = string1 + string 2; string3 += string2;
 
 [float]
 === Parâmetros
-`string, string1, string2, string3` - a string variable
+`string, string1, string2, string3` - variáveis do tipo String
 
 [float]
 === Retorna
-new String that is the combination of the original two Strings.
+Uma String que é a combinação das duas Strings originais.
 
 --
 

@@ -1,12 +1,8 @@
-﻿---
+---
 title: "getBytes()"
 categories: [ "Data Types" ]
 subCategories: [ "StringObject Function" ]
 ---
-
-
-
-
 
 = getBytes()
 
@@ -17,7 +13,7 @@ subCategories: [ "StringObject Function" ]
 
 [float]
 === Descrição
-Copies the string's characters to the supplied buffer.
+Copia os caracteres da String para o buffer fornecido.
 
 [%hardbreaks]
 
@@ -31,15 +27,15 @@ string.getBytes(buf, len)
 
 [float]
 === Parâmetros
-`string`: a variable of type String
+`string`: uma variável do tipo String
 
-`buf`: the buffer to copy the characters into (_byte []_)
+`buf`: o buffer no qual os caracteres devem ser copiados (_byte []_)
 
-`len`: the size of the buffer (_unsigned int_)
+`len`: o tamanho do buffer (_unsigned int_)
 
 [float]
 === Retorna
-None
+Nada
 
 --
 // OVERVIEW SECTION ENDS

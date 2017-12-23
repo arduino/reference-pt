@@ -12,7 +12,7 @@ subCategories: [ "StringObject Function" ]
 
 [float]
 === Descrição
-Muda uma string para sua versão composta apenas de letras maiúsculas. Antes da versão 1.0, toUpperCase() retornava um ponteiro para uma nova String em vez de modificar o objeto String.
+Converte uma string para sua versão composta apenas de letras maiúsculas. Antes da versão 1.0, toUpperCase() retornava um ponteiro para uma nova String em vez de modificar o objeto String.
 [%hardbreaks]
 
 

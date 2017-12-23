@@ -1,12 +1,12 @@
-﻿---
+---
 title: "+="
-title_expanded: Concatenação
+title_expanded: Anexação
 categories: [ "Data Types" ]
 subCategories: [ "StringObject Operator" ]
 ---
 
 
-= += Concatenação
+= += Anexação
 
 
 // OVERVIEW SECTION STARTS
@@ -15,7 +15,7 @@ subCategories: [ "StringObject Operator" ]
 
 [float]
 === Descrição
-Concatena Strings com outros dados.
+Acrescenta uma String no final de outra.
 
 [%hardbreaks]
 
@@ -24,7 +24,7 @@ Concatena Strings com outros dados.
 === Sintaxe
 [source,arduino]
 ----
-string += data
+string += string2
 ----
 
 [float]

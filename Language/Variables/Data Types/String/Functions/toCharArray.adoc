@@ -1,12 +1,8 @@
-﻿---
+---
 title: "toCharArray()"
 categories: [ "Data Types" ]
 subCategories: [ "StringObject Function" ]
 ---
-
-
-
-
 
 = toCharArray()
 
@@ -17,7 +13,7 @@ subCategories: [ "StringObject Function" ]
 
 [float]
 === Descrição
-Copies the string's characters to the supplied buffer.
+Copia os caracteres da String para o buffer fornecido.
 
 [%hardbreaks]
 
@@ -26,20 +22,20 @@ Copies the string's characters to the supplied buffer.
 === Sintaxe
 [source,arduino]
 ----
-string.toCharArray(buf, len)
+string.toCharArray(buf, compr)
 ----
 
 [float]
 === Parâmetros
-`string`: a variable of type String
+`string`: umavariável do tipo String
 
-`buf`: the buffer to copy the characters into (_char []_)
+`buf`: the buffer no qual os caracteres devem ser copiados(_char []_)
 
-`len`: the size of the buffer (_unsigned int_)
+`compr`: o comprimento do buffer (_unsigned int_)
 
 [float]
 === Retorna
-None
+Nada
 
 --
 // OVERVIEW SECTION ENDS

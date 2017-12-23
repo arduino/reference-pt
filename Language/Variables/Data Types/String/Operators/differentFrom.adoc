@@ -1,15 +1,11 @@
-﻿---
+---
 title: "!="
-title_expanded: different from
+title_expanded: Diferença
 categories: [ "Data Types" ]
 subCategories: [ "StringObject Operator" ]
 ---
 
-
-
-
-
-= != Different From
+= != Diferença
 
 
 // OVERVIEW SECTION STARTS
@@ -18,7 +14,7 @@ subCategories: [ "StringObject Operator" ]
 
 [float]
 === Descrição
-Compares two strings for difference. The comparison is case-sensitive, meaning the String "hello" is not equal to the String "HELLO". Functionally the same as string.equals()
+Verifica se duas Strings são diferentes. A comparação é case-sensitive (letras maiúsculas e minúsculas são diferenciadas), o que significa que a String "hello" é diferente da String "HELLO". Possui funcionalidade semelhante a função string.equals(), porém de maneira inversa.
 
 [%hardbreaks]
 
@@ -32,13 +28,13 @@ string1 != string2
 
 [float]
 === Parâmetros
-`string1, string2` - a string variable
+`string1, string2` - variáveis do tipo String
 
 [float]
 === Retorna
-`true`: if string1 is different from string2 
+`true`: se a as duas Strings são diferentes (case-sensitive) 
 
-`false`: otherwise
+`false`: do contrário
 
 --
 

@@ -1,15 +1,10 @@
-﻿---
+---
 title: "length()"
 categories: [ "Data Types" ]
 subCategories: [ "StringObject Function" ]
 ---
 
-
-
-
-
 = length()
-
 
 // OVERVIEW SECTION STARTS
 [#overview]
@@ -17,7 +12,7 @@ subCategories: [ "StringObject Function" ]
 
 [float]
 === Descrição
-Retorna the length of the String, in characters. (Note that this doesn't include a trailing null character.)
+Retorna o comprimento da String, em caracteres. (Note que isso não inclui caracteres `null` no final da String.)
 
 [%hardbreaks]
 
@@ -31,19 +26,16 @@ string.length()
 
 [float]
 === Parâmetros
-`string`: a variable of type String
+`string`: uma variável do tipo String
 
 
 [float]
 === Retorna
-The length of the String in characters.
+O comprimento da String em caracteres.
 
 --
 // OVERVIEW SECTION ENDS
 
-
-
-// HOW TO USE SECTION ENDS
 
 
 // SEE ALSO SECTION

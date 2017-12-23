@@ -1,15 +1,10 @@
-﻿---
+---
 title: "lastIndexOf()"
 categories: [ "Data Types" ]
 subCategories: [ "StringObject Function" ]
 ---
 
-
-
-
-
 = lastIndexOf()
-
 
 // OVERVIEW SECTION STARTS
 [#overview]
@@ -17,7 +12,7 @@ subCategories: [ "StringObject Function" ]
 
 [float]
 === Descrição
-Locates a character or String within another String. By default, searches from the end of the String, but can also work backwards from a given index, allowing for the locating of all instances of the character or String.
+Localiza um caractere ou String dentro de outra String. Por padrão, busca desde o final da String, mas pode também começar de uma determinada posição, permitindo encontrar todas as instâncias do caractere ou String.
 
 [%hardbreaks]
 
@@ -26,23 +21,23 @@ Locates a character or String within another String. By default, searches from t
 === Sintaxe
 [source,arduino]
 ----
-string.lastIndexOf(val)
+string.lastIndexOf(string2)
 
-string.lastIndexOf(val, from)
+string.lastIndexOf(string2, desde)
 ----
 
 [float]
 === Parâmetros
-`string`: a variable of type String
+`string`: uma variável do tipo String
 
-`val`: the value to search for - char or String
+`string2`: a string a ser procurada - char ou String
 
-`from`: the index to work backwards from
+`from`: a posição a partir da qual iniciar a busca (do final para o começo)
 
 
 [float]
 === Retorna
-The index of val within the String, or -1 if not found.
+A posição da string especificada dentro do objeto String, ou -1 se não for encontrada.
 
 --
 // OVERVIEW SECTION ENDS

@@ -12,7 +12,7 @@ subCategories: [ "StringObject Function" ]
 
 [float]
 === Descrição
-Verifica se duas Strings são iguais. A comparação é case-sensitive (letras maísuclas e minúsculas são diferenciadas), o que significa que a String "hello" não é igual a String "HELLO".
+Verifica se duas Strings são iguais. A comparação é case-sensitive (letras maiúsculas e minúsculas são diferenciadas), o que significa que a String "hello" não é igual a String "HELLO".
 
 [%hardbreaks]
 

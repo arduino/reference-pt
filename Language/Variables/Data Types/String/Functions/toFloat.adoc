@@ -1,15 +1,10 @@
-﻿---
+---
 title: "toFloat()"
 categories: [ "Data Types" ]
 subCategories: [ "StringObject Function" ]
 ---
 
-
-
-
-
 = toFloat()
-
 
 // OVERVIEW SECTION STARTS
 [#overview]
@@ -17,7 +12,7 @@ subCategories: [ "StringObject Function" ]
 
 [float]
 === Descrição
-Converts a valid String to a float. The input string should start with a digit. If the string contains non-digit characters, the function will stop performing the conversion. For example, the strings "123.45", "123", and "123fish" are converted to 123.45, 123.00, and 123.00 respectively. Note that "123.456" is approximated with 123.46. Note too that floats have only 6-7 decimal digits of precision and that longer strings might be truncated.
+Converte uma String válida para um float. A String fornecida deve começar com um dígito. Se a String contém caracteres não-dígitos, a função não faz a conversão. Por exemplo, as Strings "123.45", "123" e "123peixe" são convertidas para 123.45, 123.00, e 123.00 respectivamente. Note que "123.456" é aproximado como 123.46. Note também que floats possuem apenas 6-7 digitos de precisão e que Strings mais longas podem ser truncadas.
 
 [%hardbreaks]
 
@@ -31,14 +26,14 @@ string.toFloat()
 
 [float]
 === Parâmetros
-`string`: a variable of type String
+`string`: uma variável do tipo String
 
 
 [float]
 === Retorna
-`float`
+O número contido na String - `float`
 
-If no valid conversion could be performed because the string doesn't start with a digit, a zero is returned.
+Se não foi possível realizar uma conversão válida, porque a String não começa com um número inteiro, o valor zero é retornado.
 
 --
 // OVERVIEW SECTION ENDS

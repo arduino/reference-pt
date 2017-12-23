@@ -13,7 +13,7 @@ subCategories: [ "StringObject Function" ]
 
 [float]
 === Descrição
-Localiza um caractere ou String dentro de outra String. Por padrão, busca desde o começo da String, mas pode também começar de uma determinada posição, permitindo encontrar todas as instância do caractere ou String.
+Localiza um caractere ou String dentro de outra String. Por padrão, busca desde o começo da String, mas pode também começar de uma determinada posição, permitindo encontrar todas as instâncias do caractere ou String.
 
 [%hardbreaks]
 
@@ -33,11 +33,11 @@ string.indexOf(string2, desde)
 
 `string2`: a string a ser procurada - *char ou String
 
-`desde`: a poisção a partir da qual iniciar a busca
+`desde`: a posição a partir da qual iniciar a busca
 
 [float]
 === Retorna
-A posição da string especificada dentro do objeto String, ou -1 se não for encontrado.
+A posição da string especificada dentro do objeto String, ou -1 se não for encontrada.
 
 --
 // OVERVIEW SECTION ENDS

@@ -1,15 +1,10 @@
-﻿---
+---
 title: "toInt()"
 categories: [ "Data Types" ]
 subCategories: [ "StringObject Function" ]
 ---
 
-
-
-
-
 = toInt()
-
 
 // OVERVIEW SECTION STARTS
 [#overview]
@@ -17,7 +12,7 @@ subCategories: [ "StringObject Function" ]
 
 [float]
 === Descrição
-Converts a valid String to an integer. The input string should start with an integer number. If the string contains non-integer numbers, the function will stop performing the conversion.
+Converte uma String válida para um valor inteiro. A String deve começar com um número inteiro. Se a String conter números não inteiros, a função não irá realizar a conversão.
 
 [%hardbreaks]
 
@@ -31,14 +26,14 @@ string.toInt()
 
 [float]
 === Parâmetros
-`string`: a variable of type String
+`string`: uma variável do tipo String
 
 
 [float]
 === Retorna
-`long`
+O valor inteiro contido na String - `long`
 
-If no valid conversion could be performed because the string doesn't start with a integer number, a zero is returned.
+Se não foi possível realizar uma conversão válida, porque a String não começa com um número inteiro, o valor zero é retornado.
 
 --
 // OVERVIEW SECTION ENDS

@@ -1,12 +1,8 @@
-﻿---
+---
 title: "substring()"
 categories: [ "Data Types" ]
 subCategories: [ "StringObject Function" ]
 ---
-
-
-
-
 
 = substring()
 
@@ -17,7 +13,7 @@ subCategories: [ "StringObject Function" ]
 
 [float]
 === Descrição
-Get a substring of a String. The starting index is inclusive (the corresponding character is included in the substring), but the optional ending index is exclusive (the corresponding character is not included in the substring). If the ending index is omitted, the substring continues to the end of the String.
+Retorna uma substring de uma String. O índice do início é inclusivo (o caractere correspondente é incluído na substring), mas o índice finalizador opcional é exclusivo (o caractere correspondente não é incluído na substring). Se o índice finalizador é omitido, a substring continua até o final da String.
 
 [%hardbreaks]
 
@@ -26,23 +22,23 @@ Get a substring of a String. The starting index is inclusive (the corresponding 
 === Sintaxe
 [source,arduino]
 ----
-string.substring(from)
+string.substring(inicio)
 
-string.substring(from, to)
+string.substring(inicio, fim)
 ----
 
 [float]
 === Parâmetros
 `string`: a variable of type String
 
-`from`: the index to start the substring at
+`inicio`: o índice no qual começar a substring (inclusivo)
 
-`to` (optional): the index to end the substring before
+`fim` (optional): o índice no qual terminar a substring (exclusivo)
 
 
 [float]
 === Retorna
-The substring.
+A substring.
 
 --
 // OVERVIEW SECTION ENDS

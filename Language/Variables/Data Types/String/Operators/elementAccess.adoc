@@ -1,16 +1,11 @@
-﻿---
+---
 title: "[] "
-title_expanded: element access
+title_expanded: Acesso de elementos
 categories: [ "Data Types" ]
 subCategories: [ "StringObject Operator" ]
 ---
 
-
-
-
-
-= [] Element Access
-
+= [] Acesso de elementos
 
 // OVERVIEW SECTION STARTS
 [#overview]
@@ -18,7 +13,7 @@ subCategories: [ "StringObject Operator" ]
 
 [float]
 === Descrição
-Allows you access to the individual characters of a string.
+Permite acessar os caracteres de uma String individualmente.
 
 [%hardbreaks]
 
@@ -32,15 +27,15 @@ char thisChar = string1[n]
 
 [float]
 === Parâmetros
-`char thisChar` - a character variable
+`char thisChar` - uma variável char
 
-`string1` - a string variable
+`string1` - uma variável String
 
-`int n` - a numeric variable
+`int n` - a posição do caractere a ser lido da String
 
 [float]
 === Retorna
-The nth char of the string. Same as charAt().
+O carctere na posição n da String. O mesmo que charAt().
 
 --
 

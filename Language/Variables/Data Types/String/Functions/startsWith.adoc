@@ -1,15 +1,10 @@
-﻿---
+---
 title: "startsWith()"
 categories: [ "Data Types" ]
 subCategories: [ "StringObject Function" ]
 ---
 
-
-
-
-
 = startsWith()
-
 
 // OVERVIEW SECTION STARTS
 [#overview]
@@ -17,7 +12,7 @@ subCategories: [ "StringObject Function" ]
 
 [float]
 === Descrição
-Tests whether or not a String starts with the characters of another String.
+Testa se uma String começa ou não com os caracteres de uma outra String.
 
 [%hardbreaks]
 
@@ -31,14 +26,14 @@ string.startsWith(string2)
 
 [float]
 === Parâmetros
-`string, string2`: a variable of type String
+`string, string2`: variáveis do tipo String
 
 
 [float]
 === Retorna
-`true`: if string starts with the characters of string2
+`true`: se string começa com os carcateres de string2
 
-`false`: otherwise
+`false`: do contrário
 --
 // OVERVIEW SECTION ENDS
 

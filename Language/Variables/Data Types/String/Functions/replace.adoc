@@ -1,15 +1,10 @@
-﻿---
+---
 title: "replace()"
 categories: [ "Data Types" ]
 subCategories: [ "StringObject Function" ]
 ---
 
-
-
-
-
 = replace()
-
 
 // OVERVIEW SECTION STARTS
 [#overview]
@@ -17,7 +12,7 @@ subCategories: [ "StringObject Function" ]
 
 [float]
 === Descrição
-The String replace() function allows you to replace all instances of a given character with another character. You can also use replace to replace substrings of a string with a different substring.
+A função replace() permite substituir todas as instâncias de um determinado caractere por outro caractere. Você pode também substituir  substrings de uma String com uma substring diferente.
 
 [%hardbreaks]
 
@@ -31,17 +26,17 @@ string.replace(substring1, substring2)
 
 [float]
 === Parâmetros
-`string`: a variable of type String
+`string`: Uma variável do tipo String
 
-`substring1`: another variable of type String
+`substring1`: Outra variável do tipo String
 
-`substring2`: another variable of type String
+`substring2`: Outra variável do tipo String
 
 
 
 [float]
 === Retorna
-None
+Nada
 --
 // OVERVIEW SECTION ENDS
 

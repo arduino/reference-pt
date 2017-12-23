@@ -1,15 +1,11 @@
-﻿---
+---
 title: "=="
-title_expanded: comparison
+title_expanded: Comparação
 categories: [ "Data Types" ]
 subCategories: [ "StringObject Operator" ]
 ---
 
-
-
-
-
-= == Comparison
+= == Comparação
 
 
 // OVERVIEW SECTION STARTS
@@ -18,11 +14,9 @@ subCategories: [ "StringObject Operator" ]
 
 [float]
 === Descrição
-Compares two strings for equality. The comparison is case-sensitive, meaning the String "hello" is not equal to the String "HELLO". Functionally the same as string.equals()
-
+Verifica se duas Strings são iguais. A comparação é case-sensitive (letras maiúsculas e minúsculas são diferenciadas), o que significa que a String "hello" não é igual a String "HELLO". Possui a mesma funcionalidade que string.equals().
 
 [%hardbreaks]
-
 
 [float]
 === Sintaxe
@@ -33,14 +27,13 @@ string1 == string2
 
 [float]
 === Parâmetros
-`string1, string2` - a string variable
+`string1, string2` - variáveis do tipo String
 
 [float]
 === Retorna
-The nth char of the string. Same as charAt().
-`true`: if string1 equals string2
+`true`: se as Strings passadas como parâmetros são iguais
  
-`false`: otherwise
+`false`: do contrário
 --
 
 // OVERVIEW SECTION ENDS

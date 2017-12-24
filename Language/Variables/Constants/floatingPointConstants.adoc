@@ -36,11 +36,11 @@ n = 0.005;  // 0.005 é uma constante de ponto flutuante
 
 [float]
 === Notas e Advertências
-Constantes de ponto flutuante podem ser também expressadas em uma variedade de notaçes cieníficas. 'E' e 'e' são ambas aceitas como indicadores de expoente.
+Constantes de ponto flutuante podem ser também expressas em uma variedade de notações científicas. 'E' e 'e' são ambas aceitas como indicadores de expoente.
 [%hardbreaks]
 
 |===
-|Constante de ponto flutuante | Calculada como: |Calculada também como:
+|Constante de ponto flutuante | Interpretada como: |Interpretada também como:
 
 |10.0
 |10

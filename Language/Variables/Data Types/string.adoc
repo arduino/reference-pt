@@ -1,15 +1,10 @@
 ---
 title: string
 categories: [ "Variables" ]
-subCategories: [ "Data Types" ]
+subCategories: [ "Tipos de Dados" ]
 ---
 
-
-
-
-
 = string
-
 
 // OVERVIEW SECTION STARTS
 [#overview]
@@ -17,12 +12,12 @@ subCategories: [ "Data Types" ]
 
 [float]
 === Descrição
-Text strings can be represented in two ways. you can use the String data type, which is part of the core as of version 0019, or you can make a string out of an array of type char and null-terminate it. This page described the latter method. For more details on the String object, which gives you more functionality at the cost of more memory, see the link:../stringobject[String object] page.
+As strings de texto podem ser representadas de duas maneiras. Você pode usar o tipo de dado String, que é parte do core desde a versão 0019, ou você pode fazer uma string com um vetor do tipo char e terminá-lo em null. Essa página descreve o segundo método. Para mais detalhes sobre o objeto String, que possui mais funcionalidades ao custo de mais memória ocupada, veja a página sobre os link:../stringobject[objetos String].
 [%hardbreaks]
 
 [float]
 === Sintaxe
-All of the following are valid declarations for strings.
+Todos as declarações seguintes são válidas para Strings.
 
 `char Str1[15];` +
 `char Str2[8] = {'a', 'r', 'd', 'u', 'i', 'n', 'o'};` +
@@ -31,43 +26,43 @@ All of the following are valid declarations for strings.
 `char Str5[8] = "arduino";` +
 `char Str6[15] = "arduino";`
 
-*Possibilities for declaring strings*
+*Possibilidades para declarar strings*
 
-* Declare an array of chars without initializing it as in Str1
-* Declare an array of chars (with one extra char) and the compiler will add the required null character, as in Str2
-* Explicitly add the null character, Str3
-* Initialize with a string constant in quotation marks; the compiler will size the array to fit the string constant and a terminating null character, Str4
-* Initialize the array with an explicit size and string constant, Str5
-* Initialize the array, leaving extra space for a larger string, Str6
+* Declarar um vetor de chars sem inicializá-lo, como em Str1
+* Declarar um vetor de chars (com um char extra) e o compilador irá adicionar o caractere null requerido, como em Str2
+* Adicionar o caractere null explicitamente, Str3
+* Inicializar uma string constante em aspas; o compilador irá ajustar o tamanho do vetor para a string mais o caractere null terminador, como em Str4
+* Inicializar o vetor com o tamanho explícito e a string constante, Str5
+* Inicializar o vetor, deixando espaço extra para uma string maior, Str6
 
-*Null termination*
+*Terminação em null*
 
-Generally, strings are terminated with a null character (ASCII code 0). This allows functions (like `Serial.print()`) to tell where the end of a string is. Otherwise, they would continue reading subsequent bytes of memory that aren't actually part of the string.
+Geralmente, strings são terminadas com um caractere null (código ASCII 0). Isso permite que funções (como `Serial.print()`) saibam onde está o final de uma string. Do contrário, essas funções continuariam lendo bytes consequentes da memória que não fazem parte da string.
 
-This means that your string needs to have space for one more character than the text you want it to contain. That is why Str2 and Str5 need to be eight characters, even though "arduino" is only seven - the last position is automatically filled with a null character. Str4 will be automatically sized to eight characters, one for the extra null. In Str3, we've explicitly included the null character (written '\0') ourselves.
+Isso significa que sua string precisa ter espaço para mais um caractere além do texto que você quer que ela contenha. Por isso que Str2 e Str5 precisam ter oito carcteres, mesmo que "arduino" seja apenas sete - a última posição é automaticamente preenchida com um caractere null. Str4 é automaticamente ajustada para oito caracteres, sendo um para o null extra. Em Str3, o caractere null foi explicitamente incluído, adicionando-se '\0'.
 
-Note that it's possible to have a string without a final null character (e.g. if you had specified the length of Str2 as seven instead of eight). This will break most functions that use strings, so you shouldn't do it intentionally. If you notice something behaving strangely (operating on characters not in the string), however, this could be the problem.
+Note que é possível criar uma string sem uma caractere null no final (ex. se se você tivesse especificado o tamanho de Str2 como sete em vez de oito). Porém isso irá quebrar a maioria das funções que usam strings, então você não deve fazê-lo intencionalmente. Se você notar algo se comportando estranhamente no seu programa (operando em caracteres fora da string), isso pode ser o problema.
 
-*Single quotes or double quotes?*
+*Aspas simples ou aspas duplas?*
 
-Strings are always defined inside double quotes ("Abc") and characters are always defined inside single quotes('A').
+Strings são sempre definidas envoltas em aspas duplas ("Abc") e caracteres são sempre definidos envoltos em aspas simples('A').
 
-*Wrapping long strings*
+*Escrevendo strings muito longas*
 
-You can wrap long strings like this:
+Você pode escrever uma string muito longa em várias linhas, da seguinte forma:
 
 [source,arduino]
 ----
-char myString[] = "This is the first line"
-" this is the second line"
+char myString[] = "Essa é a primeira linha"
+" Essa é a segunda linha"
 " etcetera";
 ----
 
-*Arrays of strings*
+*Vetores de strings*
 
-It is often convenient, when working with large amounts of text, such as a project with an LCD display, to setup an array of strings. Because strings themselves are arrays, this is in actually an example of a two-dimensional array.
+Frequentemente é conveniente, quando lidando-se com grandes quantidades de texto, como um projeto com um display LCD, configurar um vetor de strings. Como strings por sí próprias já são vetores, isso é na verdade um exemplo de um vetor bidimensional.
 
-In the code below, the asterisk after the datatype `char` "`char*`" indicates that this is an array of "`pointers`". All array names are actually pointers, so this is required to make an array of arrays. Pointers are one of the more esoteric parts of C for beginners to understand, but it isn't necessary to understand pointers in detail to use them effectively here.
+No código abaixo, o asterisco depois do tipo de dado `char` "`char*`" indica que esse é um vetor de "ponteiros". Todos os nomes de vetores são na verdade ponteiros, então isso é necessário para criar um vetor de vetores. Ponteiros são uma partes mais esotéricas da linguagem C para inicinates entenderem, mas não é necessário entender ponteiros profundamente para usá-los efetivamente aqui.
 
 --
 // OVERVIEW SECTION ENDS
@@ -86,7 +81,7 @@ In the code below, the asterisk after the datatype `char` "`char*`" indicates th
 
 [source,arduino]
 ----
-char* myStrings[]={"This is string 1", "This is string 2", "This is string 3",
+char* mStrings[]={"This is string 1", "This is string 2", "This is string 3",
 "This is string 4", "This is string 5","This is string 6"};
 
 void setup(){

@@ -1,15 +1,10 @@
 ---
 title: sizeof()
 categories: [ "Variables" ]
-subCategories: [ "Utilities" ]
+subCategories: [ "Utilitários" ]
 ---
 
-
-
-
-
 = sizeof
-
 
 // OVERVIEW SECTION STARTS
 [#overview]
@@ -17,27 +12,25 @@ subCategories: [ "Utilities" ]
 
 [float]
 === Descrição
-The sizeof operator returns the number of bytes in a variable type, or the number of bytes occupied by an array.
+O operador sizeof retorna o número de bytes usados pelo tipo de uma variável, ou o número de bytes ocupados em um vetor.
 [%hardbreaks]
 
 
 [float]
 === Sintaxe
-`sizeof(variable)`
+`sizeof(variável)`
 
 
 [float]
 === Parâmetros
-`variable`: any variable type or array (e.g. int, float, byte)
+`variável`: uma variável ou vetor de qualquer tipo (ex: int, float, byte)
 
 [float]
 === Retorna
-Nothing
+Nada
 
 --
 // OVERVIEW SECTION ENDS
-
-
 
 
 // HOW TO USE SECTION STARTS
@@ -47,13 +40,13 @@ Nothing
 [float]
 === Código de Exemplo
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-The `sizeof` operator is useful for dealing with arrays (such as strings) where it is convenient to be able to change the size of the array without breaking other parts of the program.
+O perador `sizeof` é útil para manipular arrays (tais como strings), onde é conveniente ser possível mudar o tamanho do vetor sem quebrar outras partes do programa.
 
-This program prints out a text string one character at a time. Try changing the text phrase.
+O programa abaixo imprime um string um caractere de cada vez. Tente mudar o texto da frase.
 
 [source,arduino]
 ----
-char myStr[] = "this is a test";
+char minhaStr[] = "Esse é um teste";
 int i;
 
 void setup(){
@@ -61,25 +54,25 @@ void setup(){
 }
 
 void loop() {
-  for (i = 0; i < sizeof(myStr) - 1; i++){
+  for (i = 0; i < sizeof(minhaStr) - 1; i++){
     Serial.print(i, DEC);
     Serial.print(" = ");
-    Serial.write(myStr[i]);
+    Serial.write(minhaStr[i]);
     Serial.println();
   }
-  delay(5000); // slow down the program
+  delay(5000); // espera 5 segundos
 }
 ----
 [%hardbreaks]
 
 [float]
 === Notas e Advertências
-Note that `sizeof` returns the total number of bytes. So for larger variable types such as ints, the for loop would look something like this. Note also that a properly formatted string ends with the NULL symbol, which has ASCII value 0.
+Note que `sizeof` retorna o número total de bytes. Então, para os tipos de dados maiores, como ints, o loop for parece algo do tipo abaixo. Note também que uma string apropriadamente formatada é encerrada com o símbolo NULL, que tem valor ASCII 0.
 
 [source,arduino]
 ----
-for (i = 0; i < (sizeof(myInts)/sizeof(int)); i++) {
-  // do something with myInts[i]
+for (i = 0; i < (sizeof(meusInts)/sizeof(int)); i++) {
+  // faz algo com meusInts[i]
 }
 ----
 

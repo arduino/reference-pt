@@ -1,12 +1,8 @@
 ---
-title: Floating Point Constants
+title: Constantes de Ponto Flutuante
 categories: [ "Variables" ]
-subCategories: [ "Constants" ]
+subCategories: [ "Constantes" ]
 ---
-
-
-
-
 
 = Floating Point Constants
 
@@ -17,7 +13,7 @@ subCategories: [ "Constants" ]
 
 [float]
 === Descrição
-Similar to integer constants, floating point constants are used to make code more readable. Floating point constants are swapped at compile time for the value to which the expression evaluates.
+Similar as constantes inteiras, constantes de ponto flutuante são usadas para tornar o código mais legível. Constantes de ponto flutuante são trocadas em tempo de compilação para o valor calculado para a expressão.
 [%hardbreaks]
 
 --
@@ -34,17 +30,17 @@ Similar to integer constants, floating point constants are used to make code mor
 
 [source,arduino]
 ----
-n = 0.005;  // 0.005 is a floating point constant
+n = 0.005;  // 0.005 é uma constante de ponto flutuante
 ----
 [%hardbreaks]
 
 [float]
 === Notas e Advertências
-Floating point constants can also be expressed in a variety of scientific notation. 'E' and 'e' are both accepted as valid exponent indicators.
+Constantes de ponto flutuante podem ser também expressadas em uma variedade de notaçes cieníficas. 'E' e 'e' são ambas aceitas como indicadores de expoente.
 [%hardbreaks]
 
 |===
-|floating-point constant |evaluates to: |also evaluates to:
+|Constante de ponto flutuante | Calculada como: |Calculada também como:
 
 |10.0
 |10
@@ -63,9 +59,6 @@ Floating point constants can also be expressed in a variety of scientific notati
 
 --
 // HOW TO USE SECTION ENDS
-
-
-
 
 // SEE ALSO SECTION BEGINS
 [#see_also]

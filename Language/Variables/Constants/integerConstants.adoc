@@ -1,12 +1,8 @@
 ---
-title: Integer Constants
+title: Constantes Inteiras 
 categories: [ "Variables" ]
-subCategories: [ "Constants" ]
+subCategories: [ "Constantes" ]
 ---
-
-
-
-
 
 = Integer Constants
 
@@ -17,34 +13,34 @@ subCategories: [ "Constants" ]
 
 [float]
 === Descrição
-Integer constants are numbers that are used directly in a sketch, like 123. By default, these numbers are treated as link:../../data-types/int[int] but you can change this with the U and L modifiers (see below).
+Constantes Inteiras são números usados diretamente em um sketch, como 123. Por padrão, esses números são tratados como link:../../data-types/int[int] mas você pode mudar isso com os modificadores U e L (ver abaixo).
 [%hardbreaks]
 
-Normally, integer constants are treated as base 10 (decimal) integers, but special notation (formatters) may be used to enter numbers in other bases.
+Normalmente, constantes inteiras são tratadas como inteiros na base 10 (decimais), mas notações especiais (modificadores) podem ser usados para escrever-se números em outras bases.
 [%hardbreaks]
 
 |===
-|Base |Example |Formatter |Comment
+|Base |Exemplo |Modificador |Comentário
 
 |10 (decimal)
 |123
-|none
+|nenhum
 |
 
-|2 (binary)
+|2 (binário)
 |B1111011
-|leading 'B'
-|only works with 8 bit values (0 to 255)   characters 0&1 valid
+|prefixo 'B'
+|funciona apenas com valores 8-bit (0 a 255) caracteres 0 e 1 válidos
 
 |8 (octal)
 |0173
-|leading "0"
-|characters 0-7 valid
+|prefixo "0"
+|caracteres 0-7 válidos
 
 |16 (hexadecimal)
 |0x7B
-|leading "0x"
-|characters 0-9, A-F, a-f valid
+|prefixo "0x"
+|caracteres 0-9, A-F, a-f válidos
 |===
 [%hardbreaks]
 
@@ -58,69 +54,69 @@ Normally, integer constants are treated as base 10 (decimal) integers, but speci
 --
 [float]
 == Decimal (base 10)
-This is the common-sense math with which you are acquainted. Constants without other prefixes are assumed to be in decimal format.
+Essa é a matemática de senso comum a qual você já está acostumado. Constantes sem prefixos são assumidas como valores decimais.
 
 [float]
-=== Example  Code:
+=== Código de Exemplo:
 [source,arduino]
 ----
-n = 101;     // same as 101 decimal   ((1 * 10^2) + (0 * 10^1) + 1)
+n = 101;     // o mesmo que 101 decimal   ((1 * 10^2) + (0 * 10^1) + 1)
 ----
 [%hardbreaks]
 
 [float]
-== Binary (base 2)
-Only the characters 0 and 1 are valid.
+== Binário (base 2)
+Apenas os caracteres 0 e 1 são válidos.
 
 [float]
-=== Example  Code:
+=== Código de Exemplo:
 [source,arduino]
 ----
-n = B101;    // same as 5 decimal   ((1 * 2^2) + (0 * 2^1) + 1)
+n = B101;    // o mesmo que 5 decimal   ((1 * 2^2) + (0 * 2^1) + 1)
 ----
 
-The binary formatter only works on bytes (8 bits) between 0 (B0) and 255 (B11111111). If it is convenient to input an int (16 bits) in binary form you can do it a two-step procedure such as:
+O modificador binário funciona apenas em bytes (8 bits), ou seja, entre 0 (B0) e 255 (B11111111). Se for conveniente inserir um int (16 bits) em formato binário, você pode fazê-lo com um procedimento em dois passos, como:
 [source,arduino]
 ----
-myInt = (B11001100 * 256) + B10101010;    // B11001100 is the high byte`
+meuInt = (B11001100 * 256) + B10101010;    // B11001100 é o byte mais significativo
 ----
 [%hardbreaks]
 
 [float]
 == Octal (base 8)
-Only the characters 0 through 7 are valid. Octal values are indicated by the prefix "0" (zero).
+Apenas os caracteres 0 a 7 são válidos. Valores octais são indicados pelo prefixo "0" (zero).
 
 [float]
-=== Example  Code:
+=== Código de Exemplo:
 [source,arduino]
 ----
-n = 0101;    // same as 65 decimal   ((1 * 8^2) + (0 * 8^1) + 1)
+n = 0101;    // o mesmo que 65 decimal   ((1 * 8^2) + (0 * 8^1) + 1)
 ----
-It is possible to generate a hard-to-find bug by (unintentionally) including a leading zero before a constant and having the compiler unintentionally interpret your constant as octal.
+*Cuidado:* é possível criar um bug difícil de encontrar (acidentalmente), caso seja inserido um zero antes de uma constante, fazendo com que o compilador interprete sua constante como octal.
 [%hardbreaks]
 
 [float]
 == Hexadecimal (base 16)
-Valid characters are 0 through 9 and letters A through F; A has the value 10, B is 11, up to F, which is 15. Hex values are indicated by the prefix "0x". Note that A-F may be syted in upper or lower case (a-f).
+Os caracteres válidos são 0 a 9 e as letras A a F; A possui valor 10, B é 11, até o F, que é 15. Valores hexadecimais são indicados pelo prefixo "0x". Note que as letras A-F podem ser também iseridas em minúsculo (a-f).
 
 [float]
-=== Example  Code:
+=== Código de Exemplo:
 [source,arduino]
 ----
-n = 0x101;   // same as 257 decimal   ((1 * 16^2) + (0 * 16^1) + 1)
+n = 0x101;   // o qmesmo que 257 decimal   ((1 * 16^2) + (0 * 16^1) + 1)
 ----
 [%hardbreaks]
 
 
 [float]
 === Notas e Advertências
-*U & L formatters:*
+*Modificadores 'U' e 'L':*
 
-By default, an integer constant is treated as an int with the attendant limitations in values. To specify an integer constant with another data type, follow it with:
+Por padrão, uma constante inteira é tratada como int com as mesmas limitações desse tipo de dado. Para especificar uma constante inteira com outro tipo de dado, termine-a com:
 
-  - a 'u' or 'U' to force the constant into an unsigned data format. Example: 33u
-  - a 'l' or 'L' to force the constant into a long data format. Example: 100000L
-  - a 'ul' or 'UL' to force the constant into an unsigned long constant. Example: 32767ul
+  - um 'u' ou 'U' para forçar a constante para formato unsigned (sem sinal). Exemplo: 33u
+  - um 'l' ou 'L' para forçar a constante para formato long. Exemplo: 100000L
+  - um 'ul' ou 'UL' para forçar a constante para formato unsigned long. Exemplo: 32767ul
 
 [%hardbreaks]
 

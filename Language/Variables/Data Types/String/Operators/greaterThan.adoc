@@ -1,16 +1,11 @@
-﻿---
+---
 title: ">"
 title_expanded: greater than
 categories: [ "Data Types" ]
 subCategories: [ "StringObject Operator" ]
 ---
 
-
-
-
-
 = > Greater Than
-
 
 // OVERVIEW SECTION STARTS
 [#overview]
@@ -18,9 +13,9 @@ subCategories: [ "StringObject Operator" ]
 
 [float]
 === Descrição
-Tests if the string on the left is greater than the string on the right. This operator evaluates strings in alphabetical order, on the first character where the two differ. So, for example "b" > "a" and "2" > "1", but "999" > "1000" because 9 comes after 1.
+Testa se a String à esquerda é maior que a String à direita. Esse operador avalia Strings em ordem alfabética, no primeiro caractere no qual as duas diferem. Então, por exemplo "b" > "a" e "2" > "1", mas "999" > "1000" porque 9 vem depois de 1.
 
-Caution: String comparison operators can be confusing when you're comparing numeric strings, because the numbers are treated as strings and not as numbers. If you need to compare numbers numerically, compare them as ints, floats, or longs, and not as Strings.
+Cuidado: Operadores de comparação de Strings podem ser confusos quando você está comparando Strings numéricas, porque os numerais são tratados como strings e não números. Se você precisa comparar números numericamente, compare-os como ints, floats ou longs, e não como Strings.
 [%hardbreaks]
 
 
@@ -33,13 +28,13 @@ string1 > string2
 
 [float]
 === Parâmetros
-`string1, string2` - a string variable
+`string1, string2` - variáveis do tipo String
 
 [float]
 === Retorna
-`true`: if string1 is greater than string2 
+`true`: se a String à esquerda é maior que String à direita 
 
-`false`: otherwise
+`false`: do contrário
 
 --
 

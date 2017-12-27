@@ -52,7 +52,7 @@ c = a + b; // A variável 'c' recebe o valor 15 depois que essa operação é ex
 
 [float]
 === Notas e Advertências
-1. O operação de adição pode causar overflow se o resultado é maior que o que pode ser armazenado no tipo de dado (ex. adicionar 1 a um inteiro com valor 32,767 resulta em -32,768).
+1. O operação de adição pode causar overflow se o resultado é maior que o que pode ser armazenado no tipo de dado (ex. adicionar 1 a um `int` com valor 32,767 resulta em -32,768).
 
 2. Se um dos números (operandos) é do tipo float ou double, a matemática de ponto flutuante será usada no cálculo.
 

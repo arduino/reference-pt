@@ -53,7 +53,7 @@ c = a / b; // A variável 'c' recebe o valor 5 depois que essa operação é exe
 === Notas e Advertências
 1. Se um dos números (operandos) é do tipo float ou double, a matemática de ponto flutuante será usada no cálculo.
 
-2. Se os operandos são do tipo de dado float ou double e a variável que armazena armazena a soma é int, então apenas a parte inteira é salva no resultado e e a parte racional é perdida.
+2. Se os operandos são do tipo de dado float ou double e a variável que armazena a divisão é int, então apenas a parte inteira é salva no resultado e a parte racional é perdida.
 
 [source,arduino]
 ----

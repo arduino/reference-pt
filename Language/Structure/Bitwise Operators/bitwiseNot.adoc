@@ -17,7 +17,7 @@ subCategories: [ "Bitwise Operators" ]
 --
 
 [float]
-=== Description
+=== Descrição
 The bitwise NOT operator in C++ is the tilde character `~`. Unlike & and |, the bitwise NOT operator is applied to a single operand to its right. Bitwise NOT changes each bit to its opposite: 0 becomes 1, and 1 becomes 0.
 [%hardbreaks]
 
@@ -37,7 +37,7 @@ In other words:
 --
 
 [float]
-=== Example Code
+=== Código de Exemplo
 
 [source,arduino]
 ----
@@ -47,7 +47,7 @@ int b = ~a;     // binary:  1111111110011000 = -104
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
+=== Notas e Advertências
 You might be surprised to see a negative number like -104 as the result of this operation. This is because the highest bit in an int variable is the so-called sign bit. If the highest bit is 1, the number is interpreted as negative. This encoding of positive and negative numbers is referred to as two's complement. For more information, see the Wikipedia article on http://en.wikipedia.org/wiki/Twos_complement[two's complement^].
 
 As an aside, it is interesting to note that for any integer x, ~x is the same as -x-1.
@@ -65,12 +65,12 @@ At times, the sign bit in a signed integer expression can cause some unwanted su
 --
 
 [float]
-=== See also
+=== Ver Também
 
 [role="language"]
 
 [role="example"]
-* #EXAMPLE# https://www.arduino.cc/playground/Code/BitMath[BitMath Tutorial^]
+#EXEMPLO# https://www.arduino.cc/playground/Code/BitMath[BitMath Tutorial^]
 
 --
 //SEE ALSO SECTION ENDS

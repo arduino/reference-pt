@@ -2,7 +2,7 @@
 title: "{}"
 title_expanded: curly braces
 categories: [ "Structure" ]
-subCategories: [ "Further Syntax" ]
+subCategories: [ "Further Sintaxe" ]
 ---
 
 
@@ -16,7 +16,7 @@ subCategories: [ "Further Syntax" ]
 --
 
 [float]
-=== Description
+=== Descrição
 Curly braces (also referred to as just "braces" or as "curly brackets") are a major part of the C programming language. They are used in several different constructs, outlined below, and this can sometimes be confusing for beginners. +
 An opening curly brace `{` must always be followed by a closing curly brace `}`. This is a condition that is often referred to as the braces being balanced. The Arduino IDE (Integrated Development Environment) includes a convenient feature to check the balance of curly braces. Just select a brace, or even click the insertion point immediately following a brace, and its logical companion will be highlighted.
 [%hardbreaks]
@@ -36,7 +36,7 @@ Unbalanced braces can often lead to cryptic, impenetrable compiler errors that c
 --
 
 [float]
-=== Example Code
+=== Código de Exemplo
 The main uses of curly braces are listed in the examples below.
 
 
@@ -108,7 +108,7 @@ else
 --
 
 [float]
-=== See also
+=== Ver Também
 [role="language"]
 
 --

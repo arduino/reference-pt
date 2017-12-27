@@ -17,7 +17,7 @@ subCategories: [ "Compound Operators" ]
 --
 
 [float]
-=== Description
+=== Descrição
 The compound bitwise AND operator `&=` is often used with a variable and a constant to force particular bits in a variable to the LOW state (to 0). This is often referred to in programming guides as "clearing" or "resetting" bits.
 [%hardbreaks]
 
@@ -30,14 +30,14 @@ A review of the Bitwise AND `&` operator:
 [%hardbreaks]
 
 [float]
-=== Syntax
+=== Sintaxe
 [source,arduino]
 ----
 x &= y;   // equivalent to x = x & y;
 ----
 
 [float]
-=== Parameters
+=== Parâmetros
 `x`: variable. *Allowed data types:* char, int, long +
 `y`: variable or constant. *Allowed data types:* char, int, long
 
@@ -51,7 +51,7 @@ x &= y;   // equivalent to x = x & y;
 --
 
 [float]
-=== Example Code
+=== Código de Exemplo
 Bits that are "bitwise ANDed" with 0 are cleared to 0 so, if myByte is a byte variable,
 
 [source,arduino]
@@ -68,7 +68,7 @@ myByte & B11111111 = myByte;
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
+=== Notas e Advertências
 Because we are dealing with bits in a bitwise operator - it is convenient to use the binary formatter with constants. The numbers are still the same value in other representations, they are just not as easy to understand. Also, B00000000 is shown for clarity, but zero in any number format is zero (hmmm something philosophical there?)
 
 Consequently - to clear (set to zero) bits 0 & 1 of a variable, while leaving the rest of the variable unchanged, use the compound bitwise AND operator (&=) with the constant B11111100
@@ -112,10 +112,10 @@ myByte &= B11111100; // results in B10101000
 --
 
 [float]
-=== See also
+=== Ver Também
 
 [role="language"]
-* #LANGUAGE#  link:../../bitwise-operators/bitwiseand[& Bitwise AND]
+#LINGUAGEM#  link:../../bitwise-operators/bitwiseand[& Bitwise AND]
 
 --
 // SEE ALSO SECTION ENDS

@@ -17,20 +17,20 @@ subCategories: [ "Compound Operators" ]
 --
 
 [float]
-=== Description
+=== Descrição
 This is a convenient shorthand to perform subtraction of a constant or a variable from a variable.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Sintaxe
 [source,arduino]
 ----
 x -= y;   // equivalent to the expression x = x - y;
 ----
 
 [float]
-=== Parameters
+=== Parâmetros
 `x`: variable. *Allowed data types:* int, float, double, byte, short, long +
 `y`: variable or constant. *Allowed data types:* int, float, double, byte, short, long
 
@@ -44,7 +44,7 @@ x -= y;   // equivalent to the expression x = x - y;
 --
 
 [float]
-=== Example Code
+=== Código de Exemplo
 
 [source,arduino]
 ----
@@ -62,10 +62,10 @@ x -= 2;      // x now contains 18
 --
 
 [float]
-=== See also
+=== Ver Também
 
 [role="language"]
-* #LANGUAGE#  link:../../arithmetic-operators/subtraction[Normal Subtraction]
+#LINGUAGEM#  link:../../arithmetic-operators/subtraction[Normal Subtraction]
 
 --
 // SEE ALSO SECTION ENDS

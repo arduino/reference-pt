@@ -17,7 +17,7 @@ subCategories: [ "Bitwise Operators" ]
 --
 
 [float]
-=== Description
+=== Descrição
 There is a somewhat unusual operator in C++ called bitwise EXCLUSIVE OR, also known as bitwise XOR. (In English this is usually pronounced "eks-or".) The bitwise XOR operator is written using the caret symbol `^`. A bitwise XOR operation results in a 1 only if the input bits are different, else it results in a 0.
 [%hardbreaks]
 
@@ -39,7 +39,7 @@ Precisely,
 --
 
 [float]
-=== Example Code
+=== Código de Exemplo
 
 [source,arduino]
 ----
@@ -76,10 +76,10 @@ delay(100);
 --
 
 [float]
-=== See also
+=== Ver Também
 
 [role="example"]
-* #EXAMPLE# https://www.arduino.cc/playground/Code/BitMath[BitMath Tutorial^]
+#EXEMPLO# https://www.arduino.cc/playground/Code/BitMath[BitMath Tutorial^]
 
 --
 // SEE ALSO SECTION ENDS

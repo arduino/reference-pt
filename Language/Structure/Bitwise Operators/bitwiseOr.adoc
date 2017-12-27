@@ -17,7 +17,7 @@ subCategories: [ "Bitwise Operators" ]
 --
 
 [float]
-=== Description
+=== Descrição
 The bitwise OR operator in C++ is the vertical bar symbol, |. Like the & operator, | operates independently each bit in its two surrounding integer expressions, but what it does is different (of course). The bitwise OR of two bits is 1 if either or both of the input bits is 1, otherwise it is 0.
 [%hardbreaks]
 
@@ -39,7 +39,7 @@ In other words:
 --
 
 [float]
-=== Example Code
+=== Código de Exemplo
 
 [source,arduino]
 ----
@@ -66,14 +66,14 @@ DDRD = DDRD | B11111100; // set direction bits for pins 2 to 7, leave 0 and 1 un
 --
 
 [float]
-=== See also
+=== Ver Também
 
 
 [role="language"]
-* #LANGUAGE# link:../../boolean-operators/logicalor[|| Logical OR]
+#LINGUAGEM# link:../../boolean-operators/logicalor[|| Logical OR]
 
 [role="example"]
-* #EXAMPLE# https://www.arduino.cc/playground/Code/BitMath[BitMath Tutorial^]
+#EXEMPLO# https://www.arduino.cc/playground/Code/BitMath[BitMath Tutorial^]
 
 --
 // SEE ALSO SECTION ENDS

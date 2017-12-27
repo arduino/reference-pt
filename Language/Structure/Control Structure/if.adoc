@@ -15,12 +15,12 @@ subCategories: [ "Control Structure" ]
 [#overview]
 --
 [float]
-=== Description
+=== Descrição
 The `if` statement checks for a condition and executes the proceeding statement or set of statements if the condition is 'true'.
 [%hardbreaks]
 
 [float]
-=== Syntax
+=== Sintaxe
 [source,arduino]
 ----
 if (condition)
@@ -30,11 +30,11 @@ if (condition)
 ----
 
 [float]
-=== Parameters
+=== Parâmetros
 condition: a boolean expression i.e., can be `true` or `false`
 
 [float]
-=== Example Code
+=== Código de Exemplo
 
 The brackets may be omitted after an if statement. If this is done, the next line (defined by the semicolon) becomes the only conditional statement.
 [%hardbreaks]
@@ -57,7 +57,7 @@ if (x > 120){
 
 
 [float]
-=== Notes and Warnings
+=== Notas e Advertências
 The statements being evaluated inside the parentheses require the use of one or more operators shown below.
 [%hardbreaks]
 
@@ -87,7 +87,7 @@ This is because C evaluates the statement `if (x=10)` as follows: 10 is assigned
 --
 
 [float]
-=== See also
+=== Ver Também
 
 [role="language"]
 

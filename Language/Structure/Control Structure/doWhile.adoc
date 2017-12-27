@@ -16,12 +16,12 @@ subCategories: [ "Control Structure" ]
 --
 
 [float]
-=== Description
+=== Descrição
 [%hardbreaks]
 The `do...while` loop works in the same manner as the link:../while[while] loop, with the exception that the condition is tested at the end of the loop, so the do loop will always run at least once.
 
 [float]
-=== Syntax
+=== Sintaxe
 [source,arduino]
 ----
 do
@@ -42,7 +42,7 @@ The `condition` is a boolean expression that evaluates to `true` or `false`.
 --
 
 [float]
-=== Example Code
+=== Código de Exemplo
 
 [source,arduino]
 ----
@@ -64,7 +64,7 @@ do
 --
 
 [float]
-=== See also
+=== Ver Também
 
 [role="language"]
 

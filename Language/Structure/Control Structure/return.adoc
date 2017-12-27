@@ -16,13 +16,13 @@ subCategories: [ "Control Structure" ]
 --
 
 [float]
-=== Description
+=== Descrição
 Terminate a function and return a value from a function to the calling function, if desired.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Sintaxe
 [source,arduino]
 ----
 return;
@@ -32,7 +32,7 @@ return value; // both forms are valid
 
 
 [float]
-=== Parameters
+=== Parâmetros
 `value': any variable or constant type
 
 --
@@ -46,7 +46,7 @@ return value; // both forms are valid
 --
 
 [float]
-=== Example Code
+=== Código de Exemplo
 A function to compare a sensor input to a threshold
 
 [source,arduino]
@@ -88,7 +88,7 @@ return;
 --
 
 [float]
-=== See also
+=== Ver Também
 [role="language"]
 
 --

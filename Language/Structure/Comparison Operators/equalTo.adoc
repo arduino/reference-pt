@@ -17,20 +17,20 @@ subCategories: [ "Comparison Operators" ]
 --
 
 [float]
-=== Description
+=== Descrição
 Compares the variable on the left with the value or variable on the right of the operator. Returns true when the two operands are equal. 
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Sintaxe
 [source,arduino]
 ----
 x == y;   // is true if x is equal to y and it is false if x is not equal to y
 ----
 
 [float]
-=== Parameters
+=== Parâmetros
 `x`: variable. *Allowed data types:* int, float, double, byte, short, long +
 `y`: variable or constant. *Allowed data types:* int, float, double, byte, short, long
 
@@ -44,7 +44,7 @@ x == y;   // is true if x is equal to y and it is false if x is not equal to y
 --
 
 [float]
-=== Example Code
+=== Código de Exemplo
 
 [source,arduino]
 ----
@@ -65,7 +65,7 @@ if (x==y)      // tests if x is equal to y
 --
 
 [float]
-=== See also
+=== Ver Também
 
 [role="language"]
 

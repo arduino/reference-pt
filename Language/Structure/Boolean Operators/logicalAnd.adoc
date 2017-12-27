@@ -17,7 +17,7 @@ subCategories: [ "Boolean Operators" ]
 --
 
 [float]
-=== Description
+=== Descrição
 *Logical AND* results in `true` *only* if both operands are `true`.
 [%hardbreaks]
 
@@ -31,7 +31,7 @@ subCategories: [ "Boolean Operators" ]
 --
 
 [float]
-=== Example Code
+=== Código de Exemplo
 This operator can be used inside the condition of an link:../../control-structure/if[if] statement.
 
 [source,arduino]
@@ -43,7 +43,7 @@ if (digitalRead(2) == HIGH  && digitalRead(3) == HIGH) { // if BOTH the switches
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
+=== Notas e Advertências
 Make sure you don't mistake the boolean AND operator, && (double ampersand) for the bitwise AND operator & (single ampersand). They are entirely different beasts.
 
 --
@@ -55,10 +55,10 @@ Make sure you don't mistake the boolean AND operator, && (double ampersand) for 
 --
 
 [float]
-=== See also
+=== Ver Também
 
 [role="language"]
-* #LANGUAGE# link:../../bitwise-operators/bitwiseand[& (Bitwise AND)]
+#LINGUAGEM# link:../../bitwise-operators/bitwiseand[& (Bitwise AND)]
 
 --
 // SEE ALSO SECTION ENDS

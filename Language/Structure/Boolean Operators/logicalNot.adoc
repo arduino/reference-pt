@@ -17,7 +17,7 @@ subCategories: [ "Boolean Operators" ]
 --
 
 [float]
-=== Description
+=== Descrição
 *Logical NOT* results in a `true` if the operand is `false` and vice versa.
 [%hardbreaks]
 
@@ -31,7 +31,7 @@ subCategories: [ "Boolean Operators" ]
 --
 
 [float]
-=== Example Code
+=== Código de Exemplo
 This operator can be used inside the condition of an link:../../control-structure/if/[if] statement.
 
 [source,arduino]
@@ -51,7 +51,7 @@ x = !y;   // the inverted value of y is stored in x
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
+=== Notas e Advertências
 The bitwise not ~ (tilde) looks much different than the boolean not ! (exclamation point or "bang" as the programmers say) but you still have to be sure which one you want where.
 
 --
@@ -63,10 +63,10 @@ The bitwise not ~ (tilde) looks much different than the boolean not ! (exclamati
 --
 
 [float]
-=== See also
+=== Ver Também
 
 [role="language"]
-* #LANGUAGE# link:../../bitwise-operators/bitwisenot[~ Bitwise NOT]
+#LINGUAGEM# link:../../bitwise-operators/bitwisenot[~ Bitwise NOT]
 
 --
 // SEE ALSO SECTION ENDS

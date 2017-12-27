@@ -2,7 +2,7 @@
 title: "/* */"
 title_expanded: block comment
 categories: [ "Structure" ]
-subCategories: [ "Further Syntax" ]
+subCategories: [ "Further Sintaxe" ]
 ---
 
 
@@ -17,7 +17,7 @@ subCategories: [ "Further Syntax" ]
 --
 
 [float]
-=== Description
+=== Descrição
 *Comments* are lines in the program that are used to inform yourself or others about the way the program works. They are ignored by the compiler, and not exported to the processor, so they don't take up any space in the microcontroller's flash memory. Comments' only purpose is to help you understand (or remember), or to inform others about how your program works.
 [%hardbreaks]
 
@@ -36,7 +36,7 @@ The beginning of a *block comment* or a *multi-line comment* is marked by the sy
 --
 
 [float]
-=== Example Code
+=== Código de Exemplo
 [source,arduino]
 ----
 /* This is a valid comment */
@@ -59,7 +59,7 @@ The beginning of a *block comment* or a *multi-line comment* is marked by the sy
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
+=== Notas e Advertências
 When experimenting with code, "commenting out" parts of your program is a convenient way to remove lines that may be buggy. This leaves the lines in the code, but turns them into comments, so the compiler just ignores them. This can be especially useful when trying to locate a problem, or when a program refuses to compile and the compiler error is cryptic or unhelpful.
 [%hardbreaks]
 
@@ -74,7 +74,7 @@ When experimenting with code, "commenting out" parts of your program is a conven
 --
 
 [float]
-=== See also
+=== Ver Também
 [role="language"]
 
 --

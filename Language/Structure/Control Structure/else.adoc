@@ -16,7 +16,7 @@ subCategories: [ "Control Structure" ]
 --
 
 [float]
-=== Description
+=== Descrição
 The `if...else` allows greater control over the flow of code than the basic link:../if[if] statement, by allowing multiple tests to be grouped together. An `else` clause (if at all exists) will be executed if the condition in the `if` statement results in `false`. The `else` can proceed another `if` test, so that multiple, mutually exclusive tests can be run at the same time.
 [%hardbreaks]
 
@@ -26,7 +26,7 @@ Each test will proceed to the next one until a true test is encountered. When a 
 Note that an `else if` block may be used with or without a terminating `else` block and vice versa. An unlimited number of such `else if` branches is allowed.
 
 [float]
-=== Syntax
+=== Sintaxe
 [source,arduino]
 ----
 if (condition1)
@@ -51,7 +51,7 @@ else
 [#howtouse]
 --
 [float]
-=== Example Code
+=== Código de Exemplo
 Below is an extract from a code for temperature sensor system
 [source,arduino]
 ----
@@ -79,7 +79,7 @@ else
 --
 
 [float]
-=== See also
+=== Ver Também
 
 [role="language"]
 

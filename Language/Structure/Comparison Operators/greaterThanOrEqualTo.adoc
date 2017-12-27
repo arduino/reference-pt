@@ -17,20 +17,20 @@ subCategories: [ "Comparison Operators" ]
 --
 
 [float]
-=== Description
+=== Descrição
 Compares the variable on the left with the value or variable on the right of the operator. Returns true when the operand on the left is greater (bigger) than or equal to the operand on the right. 
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Sintaxe
 [source,arduino]
 ----
 x >= y;   // is true if x is bigger than or equal to y and it is false if x is smaller than y
 ----
 
 [float]
-=== Parameters
+=== Parâmetros
 `x`: variable. *Allowed data types:* int, float, double, byte, short, long +
 `y`: variable or constant. *Allowed data types:* int, float, double, byte, short, long
 
@@ -44,7 +44,7 @@ x >= y;   // is true if x is bigger than or equal to y and it is false if x is s
 --
 
 [float]
-=== Example Code
+=== Código de Exemplo
 
 [source,arduino]
 ----
@@ -56,7 +56,7 @@ if (x>=y)      // tests if x is greater (bigger) than or equal to y
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
+=== Notas e Advertências
 Positive numbers are greater than negative numbers. 
 [%hardbreaks]
 
@@ -69,7 +69,7 @@ Positive numbers are greater than negative numbers.
 --
 
 [float]
-=== See also
+=== Ver Também
 
 
 --

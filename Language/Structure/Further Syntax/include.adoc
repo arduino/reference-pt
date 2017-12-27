@@ -2,7 +2,7 @@
 title: "#include"
 title_expanded: include
 categories: [ "Structure" ]
-subCategories: [ "Further Syntax" ]
+subCategories: [ "Further Sintaxe" ]
 ---
 
 
@@ -17,7 +17,7 @@ subCategories: [ "Further Syntax" ]
 --
 
 [float]
-=== Description
+=== Descrição
 `#include` is used to include outside libraries in your sketch. This gives the programmer access to a large group of standard C libraries (groups of pre-made functions), and also libraries written especially for Arduino.
 [%hardbreaks]
 
@@ -38,7 +38,7 @@ Note that `#include`, similar to link:../define[`#define`], has no semicolon ter
 --
 
 [float]
-=== Example Code
+=== Código de Exemplo
 This example includes a library that is used to put data into the program space _flash_ instead of _ram_. This saves the ram space for dynamic memory needs and makes large lookup tables more practical.
 
 
@@ -61,7 +61,7 @@ prog_uint16_t myConstants[] PROGMEM = {0, 21140, 702  , 9128,  0, 25764, 8456,
 --
 
 [float]
-=== See also
+=== Ver Também
 
 [role="language"]
 

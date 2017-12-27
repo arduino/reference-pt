@@ -17,7 +17,7 @@ subCategories: [ "Boolean Operators" ]
 --
 
 [float]
-=== Description
+=== Descrição
 *Logical OR* results in a `true` if either of the two operands is `true`.
 [%hardbreaks]
 
@@ -31,7 +31,7 @@ subCategories: [ "Boolean Operators" ]
 --
 
 [float]
-=== Example Code
+=== Código de Exemplo
 This operator can be used inside the condition of an link:../../control-structure/if[if] statement.
 
 [source,arduino]
@@ -44,7 +44,7 @@ if (x > 0 || y > 0) { // if either x or y is greater than zero
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
+=== Notas e Advertências
 Do not confuse the boolean || (double pipe) operator with the bitwise OR operator | (single pipe).
 [%hardbreaks]
 
@@ -57,10 +57,10 @@ Do not confuse the boolean || (double pipe) operator with the bitwise OR operato
 --
 
 [float]
-=== See also
+=== Ver Também
 
 [role="language"]
-* #LANGUAGE# link:../../bitwise-operators/bitwiseor[| Bitwise OR]
+#LINGUAGEM# link:../../bitwise-operators/bitwiseor[| Bitwise OR]
 
 --
 // SEE ALSO SECTION ENDS

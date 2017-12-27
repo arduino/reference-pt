@@ -16,13 +16,13 @@ subCategories: [ "Control Structure" ]
 --
 
 [float]
-=== Description
+=== Descrição
 The `for` statement is used to repeat a block of statements enclosed in curly braces. An increment counter is usually used to increment and terminate the loop. The `for` statement is useful for any repetitive operation, and is often used in combination with arrays to operate on collections of data/pins.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Sintaxe
 [source,arduino]
 ----
 for (initialization; condition; increment) {
@@ -44,7 +44,7 @@ The *initialization* happens first and exactly once. Each time through the loop,
 --
 
 [float]
-=== Example Code
+=== Código de Exemplo
 [source,arduino]
 ----
 // Dim an LED using a PWM pin
@@ -66,7 +66,7 @@ void loop()
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
+=== Notas e Advertências
 The C `for` loop is much more flexible than `for` loops found in some other computer languages, including BASIC. Any or all of the three header elements may be omitted, although the semicolons are required. Also the statements for initialization, condition, and increment can be any valid C statements with unrelated variables, and use any C datatypes including floats. These types of unusual `for` statements may provide solutions to some rare programming problems.
 [%hardbreaks]
 
@@ -107,7 +107,7 @@ void loop()
 --
 
 [float]
-=== See also
+=== Ver Também
 
 [role="language"]
 

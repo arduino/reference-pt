@@ -17,7 +17,7 @@ subCategories: [ "Pointer Access Operators" ]
 --
 
 [float]
-=== Description
+=== Descrição
 Dereferencing is one of the features specifically for use with pointers. The asterisk operator `*` is used for this purpose. If `p` is a pointer, then `*p` represents the value contained in the address pointed by `p`.
 [%hardbreaks]
 
@@ -31,7 +31,7 @@ Dereferencing is one of the features specifically for use with pointers. The ast
 --
 
 [float]
-=== Example Code
+=== Código de Exemplo
 
 [source,arduino]
 ----
@@ -44,7 +44,7 @@ result = *p;  // 'result' gets the value at the address pointed by 'p'
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
+=== Notas e Advertências
 Pointers are one of the complicated subjects for beginners in learning C, and it is possible to write the vast majority of Arduino sketches without ever encountering pointers. However for manipulating certain data structures, the use of pointers can simplify the code, and and knowledge of manipulating pointers is handy to have in one's toolkit.
 [%hardbreaks]
 
@@ -59,7 +59,7 @@ Pointers are one of the complicated subjects for beginners in learning C, and it
 --
 
 [float]
-=== See also
+=== Ver Também
 
 [role="language"]
 

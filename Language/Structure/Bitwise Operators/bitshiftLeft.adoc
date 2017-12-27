@@ -17,20 +17,20 @@ subCategories: [ "Bitwise Operators" ]
 --
 
 [float]
-=== Description
+=== Descrição
 The left shift operator `<<` causes the bits of the left operand to be shifted *left* by the number of positions specified by the right operand.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Sintaxe
 [source,arduino]
 ----
 variable << number_of_bits;
 ----
 
 [float]
-=== Parameters
+=== Parâmetros
 `variable`: *Allowed data types:* byte, int, long +
 `number_of_bits`: a number that is < = 32. *Allowed data types:* int
 
@@ -44,7 +44,7 @@ variable << number_of_bits;
 --
 
 [float]
-=== Example Code
+=== Código de Exemplo
 
 [source,arduino]
 ----
@@ -54,7 +54,7 @@ int b = a << 3;   // binary: 0000000000101000, or 40 in decimal
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
+=== Notas e Advertências
 When you shift a value x by y bits (x << y), the leftmost y bits in x are lost, literally shifted out of existence:
 
 [source,arduino]
@@ -111,12 +111,12 @@ void printOut1(int c) {
 --
 
 [float]
-=== See also
+=== Ver Também
 
 [role="language"]
 
 [role="example"]
-* #EXAMPLE# https://www.arduino.cc/playground/Code/BitMath[BitMath Tutorial^]
+#EXEMPLO# https://www.arduino.cc/playground/Code/BitMath[BitMath Tutorial^]
 
 --
 //SEE ALSO SECTION ENDS

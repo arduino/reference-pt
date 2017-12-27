@@ -17,20 +17,20 @@ subCategories: [ "Arithmetic Operators" ]
 --
 
 [float]
-=== Description
+=== Descrição
 *Modulo* operation calculates the remainder when one integer is divided by another. It is useful for keeping a variable within a particular range (e.g. the size of an array). The `%` (percent) symbol is used to carry out modulo operation.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Sintaxe
 [source,arduino]
 ----
 remainder = dividend % divisor;
 ----
 
 [float]
-=== Parameters
+=== Parâmetros
 `remainder` : variable. *Allowed data types:* int, float, double +
 `dividend` : variable or constant. *Allowed data types:* int +
 `divisor` : *non zero* variable or constant. *Allowed data types:* int
@@ -46,7 +46,7 @@ remainder = dividend % divisor;
 --
 
 [float]
-=== Example Code
+=== Código de Exemplo
 
 [source,arduino]
 ----
@@ -75,7 +75,7 @@ void loop()
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
+=== Notas e Advertências
 The modulo operator does not work on floats.
 [%hardbreaks]
 
@@ -87,7 +87,7 @@ The modulo operator does not work on floats.
 --
 
 [float]
-=== See also
+=== Ver Também
 
 [role="language"]
 

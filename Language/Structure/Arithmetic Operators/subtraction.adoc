@@ -2,9 +2,8 @@
 title: "-"
 title_expanded: "subtração"
 categories: [ "Structure" ]
-subCategories: [ "Arithmetic Operators" ]
+subCategories: [ "Operadores Aritméticos" ]
 ---
-
 
 = - Subtração
 

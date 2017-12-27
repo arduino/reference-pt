@@ -1,15 +1,12 @@
 ---
 title: "-"
-title_expanded: "subtraction"
+title_expanded: "subtração"
 categories: [ "Structure" ]
 subCategories: [ "Arithmetic Operators" ]
 ---
 
 
-
-
-
-= - Subtraction
+= - Subtração
 
 
 // OVERVIEW SECTION STARTS
@@ -18,7 +15,7 @@ subCategories: [ "Arithmetic Operators" ]
 
 [float]
 === Descrição
-*Subtraction* is one of the four primary arithmetic operations. The operator `-` (minus) operates on two operands to produce the difference of the second from the first.
+*Subtração* é uma das quatro operações aritméticas fundamentais. O operador `-` (menos) opera em dois operanddos para produzir a diferença do segundo pelo primeiro.
 [%hardbreaks]
 
 
@@ -26,20 +23,18 @@ subCategories: [ "Arithmetic Operators" ]
 === Sintaxe
 [source,arduino]
 ----
-difference = operand1 - operand2;
+diferença = operando1 - operando2;
 ----
 
 [float]
 === Parâmetros
-`difference` : variável. *Tipos de dados permitidos:* int, float, double, byte, short, long +
-`operand1` : variável ou constante. *Tipos de dados permitidos:* int, float, double, byte, short, long +
-`operand2` : variável ou constante. *Tipos de dados permitidos:* int, float, double, byte, short, long
+`diferença` : variável. *Tipos de dados permitidos:* int, float, double, byte, short, long +
+`operando1` : variável ou constante. *Tipos de dados permitidos:* int, float, double, byte, short, long +
+`operando2` : variável ou constante. *Tipos de dados permitidos:* int, float, double, byte, short, long
 [%hardbreaks]
 
 --
 // OVERVIEW SECTION ENDS
-
-
 
 
 // HOW TO USE SECTION STARTS
@@ -52,23 +47,23 @@ difference = operand1 - operand2;
 [source,arduino]
 ----
 int a = 5, b = 10, c = 0;
-c = a - b; // the variable 'c' gets a value of -5 after this statement is executed
+c = a - b; // A variável 'c' recebe o valor -5 depois que essa operação é executada
 ----
 [%hardbreaks]
 
 [float]
 === Notas e Advertências
-1. The subtraction operation can overflow if the result is smaller than that which can be stored in the data type (e.g. subtracting 1 from an integer with the value -32,768 gives 32,767).
+1. O operação de subtração pode causar overflow se o resultado é menor que o que pode ser armazenado no tipo de dado (ex. subtrair 1 de um `int` com valor -32,768 resulta em 32,767).
 
-2. If one of the numbers (operands) are of the type float or of type double, floating point math will be used for the calculation.
+2. Se um dos números (operandos) é do tipo float ou double, a matemática de ponto flutuante será usada no cálculo.
 
-3. If the operands are of float / double data type and the variable that stores the difference is an integer, then only the integral part is stored and the fractional part of the number is lost.
+3. Se os operandos são do tipo de dado float ou double e a variável que armazena a diferença é int, então apenas a parte inteira é salva no resultado e a parte racional é perdida.
 
 [source,arduino]
 ----
 float a = 5.5, b = 6.6;
 int c = 0;
-c = a - b; // the variable 'c' stores a value of -1 only as opposed to the expected difference of -1.1
+c = a - b; // a variável 'c' armazena o valor -1 em vez do resultado esperado -1.1
 ----
 [%hardbreaks]
 

@@ -1,15 +1,11 @@
 ---
 title: "||"
-title_expanded: logical or
+title_expanded: OU lógico
 categories: [ "Structure" ]
 subCategories: [ "Boolean Operators" ]
 ---
 
-
-
-
-
-= || Logical OR
+= || OU lógico
 
 
 // OVERVIEW SECTION STARTS
@@ -18,13 +14,11 @@ subCategories: [ "Boolean Operators" ]
 
 [float]
 === Descrição
-*Logical OR* results in a `true` if either of the two operands is `true`.
+*O OU lógico* resulta em `true` se pelo menos um dos operandos é `true`.
 [%hardbreaks]
 
 --
 // OVERVIEW SECTION ENDS
-
-
 
 // HOW TO USE SECTION STARTS
 [#howtouse]
@@ -32,12 +26,12 @@ subCategories: [ "Boolean Operators" ]
 
 [float]
 === Código de Exemplo
-This operator can be used inside the condition of an link:../../control-structure/if[if] statement.
+Esse operador pode ser usado dentro da condição de um laço link:../../control-structure/if/[if].
 
 [source,arduino]
 ----
-if (x > 0 || y > 0) { // if either x or y is greater than zero
-  // statements
+if (x > 0 || y > 0) { // se x ou y é maior que zero
+  // código a ser executado
 }
 ----
 
@@ -45,7 +39,7 @@ if (x > 0 || y > 0) { // if either x or y is greater than zero
 
 [float]
 === Notas e Advertências
-Do not confuse the boolean || (double pipe) operator with the bitwise OR operator | (single pipe).
+Não confunda o operador OU booleano || (pipe duplo) com o operador OU bitwise | (pipe único).
 [%hardbreaks]
 
 --
@@ -60,7 +54,7 @@ Do not confuse the boolean || (double pipe) operator with the bitwise OR operato
 === Ver Também
 
 [role="language"]
-#LINGUAGEM# link:../../bitwise-operators/bitwiseor[| Bitwise OR]
+#LINGUAGEM# link:../../bitwise-operators/bitwiseor[| OU Bitwise] +
 
 --
 // SEE ALSO SECTION ENDS

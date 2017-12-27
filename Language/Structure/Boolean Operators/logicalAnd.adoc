@@ -1,15 +1,11 @@
 ---
 title: "&&"
-title_expanded: logical and
+title_expanded: E lógico
 categories: [ "Structure" ]
 subCategories: [ "Boolean Operators" ]
 ---
 
-
-
-
-
-= && Logical AND
+= E lógico - &&
 
 
 // OVERVIEW SECTION STARTS
@@ -18,7 +14,7 @@ subCategories: [ "Boolean Operators" ]
 
 [float]
 === Descrição
-*Logical AND* results in `true` *only* if both operands are `true`.
+*O E lógico* resulta em `true` *apenas* se ambos os operandos são `true`.
 [%hardbreaks]
 
 --
@@ -32,19 +28,19 @@ subCategories: [ "Boolean Operators" ]
 
 [float]
 === Código de Exemplo
-This operator can be used inside the condition of an link:../../control-structure/if[if] statement.
+Esse operador pode ser usado dentro da condição de um laço link:../../control-structure/if[if].
 
 [source,arduino]
 ----
-if (digitalRead(2) == HIGH  && digitalRead(3) == HIGH) { // if BOTH the switches read HIGH
-    // statements
+if (digitalRead(2) == HIGH  && digitalRead(3) == HIGH) { // se AMBOS os botões estão em HIGH
+    // código a ser executado caso as duas condições sejam verdadeiras
 }
 ----
 [%hardbreaks]
 
 [float]
 === Notas e Advertências
-Make sure you don't mistake the boolean AND operator, && (double ampersand) for the bitwise AND operator & (single ampersand). They are entirely different beasts.
+Tome cuidado para não confundir o operatdor booleano E, && (e comercial duplo); com operador bitwise E, & (e comercial único). Eles são usados para propósitos diferentes.
 
 --
 // HOW TO USE SECTION ENDS
@@ -58,7 +54,7 @@ Make sure you don't mistake the boolean AND operator, && (double ampersand) for 
 === Ver Também
 
 [role="language"]
-#LINGUAGEM# link:../../bitwise-operators/bitwiseand[& (Bitwise AND)]
+#LINGUAGEM# link:../../bitwise-operators/bitwiseand[& (E Bitwise)] +
 
 --
 // SEE ALSO SECTION ENDS

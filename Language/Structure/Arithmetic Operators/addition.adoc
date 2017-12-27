@@ -13,7 +13,7 @@ subCategories: [ "Operadores Aritméticos" ]
 
 [float]
 === Descrição
-*Adição* é uma das quatro operações ariméticas primárias. O operador `+` (mais) opera em dois operandos para produzir a soma dos mesmos.
+*Adição* é uma das quatro operações ariméticas fundamentais. O operador `+` (mais) opera em dois operandos para produzir a soma dos mesmos.
 [%hardbreaks]
 
 

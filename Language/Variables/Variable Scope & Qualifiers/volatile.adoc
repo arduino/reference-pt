@@ -1,14 +1,10 @@
 ---
 title: volatile
 categories: [ "Variables" ]
-subCategories: [ "Variable Scope & Qualifiers" ]
+subCategories: [ "Escopo de Variáveis e Qualificadores" ]
 ---
 
-
-
-
-
-= volatile keyword
+= palavra-chave volatile
 
 
 // OVERVIEW SECTION STARTS
@@ -17,13 +13,13 @@ subCategories: [ "Variable Scope & Qualifiers" ]
 
 [float]
 === Descrição
-`volatile` is a keyword known as a variable _qualifier_, it is usually used before the datatype of a variable, to modify the way in which the compiler and subsequent program treats the variable.
+A palavra chave `volatile` é conhecida como um _qualificador_ de variáveis, e é geralmente usada antes do tipo de dado da variável, para modificar a forma com qual o compilador e o programa tratam a variável.
 
-Declaring a variable volatile is a directive to the compiler. The compiler is software which translates your C/C++ code into the machine code, which are the real instructions for the Atmega chip in the Arduino.
+Declarar uma variável como volatile é uma diretiva para o compilador. O compilador é o software que traduz seu código C/C++ em linguagem de máquina, que são as instruções reais entendidas pelo chip microcontrolador na placa Arduino.
 
-Specifically, it directs the compiler to load the variable from RAM and not from a storage register, which is a temporary memory location where program variables are stored and manipulated. Under certain conditions, the value for a variable stored in registers can be inaccurate.
+Especificamente, essa diretiva faz com que o compilador carregue a variável da RAM e não de um registrador, que é uma localização temporária da memória onde variáveis do programa são guardadas e manipuladas. Sob certas circunstâncias, o valor de uma variável armazenada em registradores pode ser impreciso.
 
-A variable should be declared volatile whenever its value can be changed by something beyond the control of the code section in which it appears, such as a concurrently executing thread. In the Arduino, the only place that this is likely to occur is in sections of code associated with interrupts, called an interrupt service routine.
+Uma variável deve ser declarada volatile quando seu valor pode ser mudado por algo além do controle da seção de código na qual ela aparece, como uma thread paralela. No Arduino, o único lugar do código onde isso pode ocorrer é em seções associadas com interrupções, chamadas de rotina de serviço de interrupção (interrupt service routine).
 [%hardbreaks]
 
 --
@@ -43,7 +39,7 @@ A variable should be declared volatile whenever its value can be changed by some
 
 [source,arduino]
 ----
-// toggles LED when interrupt pin changes state
+// muda o estado do LED quando o estado do botão é mudado
 
 int pin = 13;
 volatile int state = LOW;
@@ -78,7 +74,7 @@ void blink()
 === Ver Também
 
 [role="language"]
-#LINGUAGEM# link:../../../functions/external-interrupts/attachinterrupt[attachInterrupt]
+#LINGUAGEM# link:../../../functions/external-interrupts/attachinterrupt[attachInterrupt] +
 
 --
 // SEE ALSO SECTION ENDS

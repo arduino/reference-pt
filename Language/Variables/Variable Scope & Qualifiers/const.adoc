@@ -1,15 +1,10 @@
 ---
 title: const
 categories: [ "Variables" ]
-subCategories: [ "Variable Scope & Qualifiers" ]
+subCategories: [ "Escopo de Variáveis e Qualificadores" ]
 ---
 
-
-
-
-
-= const keyword
-
+= palavra-chave const
 
 // OVERVIEW SECTION STARTS
 [#overview]
@@ -17,15 +12,13 @@ subCategories: [ "Variable Scope & Qualifiers" ]
 
 [float]
 === Descrição
-The `const` keyword stands for constant. It is a variable _qualifier_ that modifies the behavior of the variable, making a variable "_read-only_". This means that the variable can be used just as any other variable of its type, but its value cannot be changed. You will get a compiler error if you try to assign a value to a `const` variable.
+A palavra-chave `const` é uma abreviação de constante. É um _qualificador_  de variáveis que modifica o comportamento da variável, fazendo com que a variável seja de "_apenas-leitura_". Isso significa que a variável pode ser usada como qualquer outra variável de seu tipo, mas seu valor não pode ser mudado. Você terá um erro de compilação se tentar atribuir um valor a uma variável `const`.
 
-Constants defined with the `const` keyword obey the rules of link:../scope[variable scoping] that govern other variables. This, and the pitfalls of using `#define`, makes the `const` keyword a superior method for defining constants and is preferred over using link:../../../structure/further-syntax/define[`#define`].
+Constantes definidas com a palavra chave `const` obedecem as regras dos link:../scope[escopos de variáveis] que governam variáveis. Isso, e as armadilhas de se usar `#define`, fazem com que o modificador `const` um método superior de se definir constantes e é favorecido em lugar de se usar link:../../../structure/further-syntax/define[`#define`].
 [%hardbreaks]
 
 --
 // OVERVIEW SECTION ENDS
-
-
 
 
 // HOW TO USE SECTION STARTS
@@ -44,9 +37,9 @@ float x;
 
 // ....
 
-x = pi * 2;    // it's fine to use consts in math
+x = pi * 2;    // constantes podem ser usadas em cálculos
 
-pi = 7;        // illegal - you can't write to (modify) a constant
+pi = 7;        // ilegal - você não pode modificar o valor de uma constante
 
 
 ----
@@ -54,9 +47,9 @@ pi = 7;        // illegal - you can't write to (modify) a constant
 
 [float]
 === Notas e Advertências
-*`#define` or `const`*
+*`#define` ou `const`*
 
-You can use either `const` or `#define` for creating numeric or string constants. For link:../../data-types/array[arrays], you will need to use `const`. In general `const` is preferred over `#define` for defining constants.
+Você pode usar ambos `const` ou `#define` para criar constantes numéricas ou strings constantes. Para link:../../data-types/array[vetores], você irá precisar usar `const`. Em geral, `const` é favorecido em lugar de `#define` ao se definir constantes.
 
 
 --
@@ -71,7 +64,7 @@ You can use either `const` or `#define` for creating numeric or string constants
 === Ver Também
 
 [role="language"]
-#LINGUAGEM# link:../../../structure/further-syntax/define[#define]
+#LINGUAGEM# link:../../../structure/further-syntax/define[#define] +
 
 --
 // SEE ALSO SECTION ENDS

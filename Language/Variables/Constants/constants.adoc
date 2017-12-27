@@ -1,5 +1,5 @@
 ---
-title: constantes
+title: Constantes
 categories: [ "Variables" ]
 subCategories: [ "Constantes" ]
 ---

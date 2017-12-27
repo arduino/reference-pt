@@ -33,7 +33,7 @@ return value; // both forms are valid
 
 [float]
 === Parâmetros
-`value': any variable or constant type
+`value': any variável ou constante type
 
 --
 // OVERVIEW SECTION ENDS

@@ -31,8 +31,8 @@ x != y;   // is false if x is equal to y and it is true if x is not equal to y
 
 [float]
 === Parâmetros
-`x`: variable. *Allowed data types:* int, float, double, byte, short, long +
-`y`: variable or constant. *Allowed data types:* int, float, double, byte, short, long
+`x`: variável. *Tipos de dados permitidos:* int, float, double, byte, short, long +
+`y`: variável ou constante. *Tipos de dados permitidos:* int, float, double, byte, short, long
 
 --
 // OVERVIEW SECTION ENDS

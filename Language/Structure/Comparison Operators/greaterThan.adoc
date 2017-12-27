@@ -31,8 +31,8 @@ x > y;   // is true if x is bigger than y and it is false if x is equal or small
 
 [float]
 === Parâmetros
-`x`: variable. *Allowed data types:* int, float, double, byte, short, long +
-`y`: variable or constant. *Allowed data types:* int, float, double, byte, short, long
+`x`: variável. *Tipos de dados permitidos:* int, float, double, byte, short, long +
+`y`: variável ou constante. *Tipos de dados permitidos:* int, float, double, byte, short, long
 
 --
 // OVERVIEW SECTION ENDS

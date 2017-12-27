@@ -31,9 +31,9 @@ product = operand1 * operand2;
 
 [float]
 === Parâmetros
-`product` : variable. *Allowed data types:* int, float, double, byte, short, long  +
-`operand1` : variable or constant. *Allowed data types:* int, float, double, byte, short, long  +
-`operand2` : variable or constant. *Allowed data types:* int, float, double, byte, short, long
+`product` : variável. *Tipos de dados permitidos:* int, float, double, byte, short, long  +
+`operand1` : variável ou constante. *Tipos de dados permitidos:* int, float, double, byte, short, long  +
+`operand2` : variável ou constante. *Tipos de dados permitidos:* int, float, double, byte, short, long
 [%hardbreaks]
 
 --

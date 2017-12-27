@@ -31,9 +31,9 @@ result = numerator / denominator;
 
 [float]
 === Parâmetros
-`result` : variable. *Allowed data types:* int, float, double, byte, short, long  +
-`numerator` : variable or constant. *Allowed data types:* int, float, double, byte, short, long  +
-`denominator` : *non zero* variable or constant. *Allowed data types:* int, float, double, byte, short, long
+`result` : variável. *Tipos de dados permitidos:* int, float, double, byte, short, long  +
+`numerator` : variável ou constante. *Tipos de dados permitidos:* int, float, double, byte, short, long  +
+`denominator` : variável ou constante *diferente de zero*. *Tipos de dados permitidos:* int, float, double, byte, short, long
 [%hardbreaks]
 
 --

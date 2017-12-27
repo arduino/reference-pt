@@ -43,8 +43,8 @@ switch (var) {
 
 [float]
 === Parâmetros
-`var`: a variable whose value to compare with various cases. *Allowed data types:* int, char +
-`label1`, `label2`: constants. *Allowed data types:* int, char
+`var`: a variable whose value to compare with various cases. *Tipos de dados permitidos:* int, char +
+`label1`, `label2`: constants. *Tipos de dados permitidos:* int, char
 
 [float]
 === Returns

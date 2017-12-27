@@ -31,9 +31,9 @@ remainder = dividend % divisor;
 
 [float]
 === Parâmetros
-`remainder` : variable. *Allowed data types:* int, float, double +
-`dividend` : variable or constant. *Allowed data types:* int +
-`divisor` : *non zero* variable or constant. *Allowed data types:* int
+`remainder` : variável. *Tipos de dados permitidos:* int, float, double +
+`dividend` : variável ou constante. *Tipos de dados permitidos:* int +
+`divisor` : variável ou constante *diferente de zero*. *Tipos de dados permitidos:* int
 [%hardbreaks]
 
 --

@@ -31,8 +31,8 @@ x /= y;   // equivalent to the expression x = x / y;
 
 [float]
 === Parâmetros
-`x`: variable. *Allowed data types:* int, float, double, byte, short, long +
-`y`: *non zero* variable or constant. *Allowed data types:* int, float, double, byte, short, long
+`x`: variável. *Tipos de dados permitidos:* int, float, double, byte, short, long +
+`y`: variável ou constante *diferente de zero*. *Tipos de dados permitidos:* int, float, double, byte, short, long
 
 --
 // OVERVIEW SECTION ENDS

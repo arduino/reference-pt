@@ -31,8 +31,8 @@ variable >> number_of_bits;
 
 [float]
 === Parâmetros
-`variable`: *Allowed data types:* byte, int, long +
-`number_of_bits`: a number that is < = 32. *Allowed data types:* int
+`variable`: *Tipos de dados permitidos:* byte, int, long +
+`number_of_bits`: a number that is < = 32. *Tipos de dados permitidos:* int
 
 --
 // OVERVIEW SECTION ENDS

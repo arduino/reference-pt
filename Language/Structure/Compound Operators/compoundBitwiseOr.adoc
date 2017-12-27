@@ -38,8 +38,8 @@ x |= y;   // equivalent to x = x | y;
 
 [float]
 === Parâmetros
-`x`: variable. *Allowed data types:* char, int, long +
-`y`: variable or constant. *Allowed data types:* char, int, long
+`x`: variável. *Tipos de dados permitidos:* char, int, long +
+`y`: variável ou constante. *Tipos de dados permitidos:* char, int, long
 
 --
 // OVERVIEW SECTION ENDS

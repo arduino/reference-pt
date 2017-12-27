@@ -32,7 +32,7 @@ x++;  // increment x by one and returns the old value of x
 
 [float]
 === Parâmetros
-`x`: variable. *Allowed data types:* integer, long (possibly unsigned)
+`x`: variável. *Tipos de dados permitidos:* integer, long (possibly unsigned)
 
 [float]
 === Returns

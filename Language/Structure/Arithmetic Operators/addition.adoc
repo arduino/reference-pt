@@ -56,7 +56,7 @@ c = a + b; // A variável 'c' recebe o valor 15 depois que essa operação é ex
 
 2. Se um dos números (operandos) é do tipo float ou double, a matemática de ponto flutuante será usada no cálculo.
 
-3. Se os operandos são do tipo de dado float ou double e a variável que armazena armazena a soma é int, então apenas a parte inteira é salva no resultado e e a parte racional é perdida.
+3. Se os operandos são do tipo de dado float ou double e a variável que armazena a soma é int, então apenas a parte inteira é salva no resultado e e a parte racional é perdida.
 
 [source,arduino]
 ----

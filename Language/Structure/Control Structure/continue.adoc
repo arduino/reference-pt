@@ -1,13 +1,8 @@
 ---
 title: continue
 categories: [ "Structure" ]
-subCategories: [ "Control Structure" ]
+subCategories: [ "Estruturas de Controle" ]
 ---
-
-
-
-
-
 = continue
 
 
@@ -18,7 +13,7 @@ subCategories: [ "Control Structure" ]
 [float]
 === Descrição
 [%hardbreaks]
-The `continue` statement skips the rest of the current iteration of a loop (link:../for[for], link:../while[while], or link:../dowhile[do...while]). It continues by checking the conditional expression of the loop, and proceeding with any subsequent iterations.
+O comando `continue` "pula" o resto da iteração atual de um loop (link:../for[for], link:../while[while], ou link:../dowhile[do...while]). Esse comando continua a checar a expressão condicional do loop, e procede com qualquer iterações subsequentes.
 [%hardbreaks]
 
 --
@@ -33,12 +28,12 @@ The `continue` statement skips the rest of the current iteration of a loop (link
 
 [float]
 === Código de Exemplo
-The following code writes the value of 0 to 255 to the `PWMpin`, but skips the values in the range of 41 to 119.
+O código abaixo escreve o valor de 0 a 255 ao pino `PWMpin`, mas pula os valores no intervalo 41 a 119.
 [source,arduino]
 ----
 for (x = 0; x <= 255; x ++)
 {
-    if (x > 40 && x < 120){      // create jump in values
+    if (x > 40 && x < 120){      // cria um salto nos valores
         continue;
     }
 

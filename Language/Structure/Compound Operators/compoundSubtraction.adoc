@@ -1,15 +1,11 @@
 ---
 title: "-="
-title_expanded: compound subtraction
+title_expanded: atribuição por subtração
 categories: [ "Structure" ]
 subCategories: [ "Compound Operators" ]
 ---
 
-
-
-
-
-= -= Compound Subtraction
+= -= Atribuição por subtração
 
 
 // OVERVIEW SECTION STARTS
@@ -18,7 +14,7 @@ subCategories: [ "Compound Operators" ]
 
 [float]
 === Descrição
-This is a convenient shorthand to perform subtraction of a constant or a variable from a variable.
+Essa é uma abreviação conveniente para realizar a subtração de uma variável com outra variável ou constante.
 [%hardbreaks]
 
 
@@ -26,7 +22,7 @@ This is a convenient shorthand to perform subtraction of a constant or a variabl
 === Sintaxe
 [source,arduino]
 ----
-x -= y;   // equivalent to the expression x = x - y;
+x -= y;   // equivalente a expressão x = x - y;
 ----
 
 [float]
@@ -49,7 +45,7 @@ x -= y;   // equivalent to the expression x = x - y;
 [source,arduino]
 ----
 x = 20;
-x -= 2;      // x now contains 18
+x -= 2;      // x agora contém 18
 ----
 
 
@@ -65,7 +61,7 @@ x -= 2;      // x now contains 18
 === Ver Também
 
 [role="language"]
-#LINGUAGEM#  link:../../arithmetic-operators/subtraction[Normal Subtraction]
+#LINGUAGEM#  link:../../arithmetic-operators/subtraction[Subtração comum]
 
 --
 // SEE ALSO SECTION ENDS

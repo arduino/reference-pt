@@ -14,27 +14,26 @@ title: Keyboard.println()
 
 [float]
 === Descrição
-Sends a keystroke to a connected computer, followed by a newline and carriage return.
+Envia uma tecla pressionada, ou uma sequência de teclas, para um computador conectado, seguido dos carcteres newline e carriage return.
 
-`Keyboard.println()` must be called after initiating link:../keyboardbegin[Keyboard.begin()].
+`Keyboard.println()` deve ser chamada após a inicialização com link:../keyboardbegin[Keyboard.begin()].
 [%hardbreaks]
 
 
 [float]
 === Sintaxe
-`Keyboard.println()` +
-`Keyboard.println(character)`+
-`Keyboard.println(characters)`
+`Keyboard.println(caractere)` +
+`Keyboard.println(caracteres)`
 
 [float]
 === Parâmetros
-`character` : a char or int to be sent to the computer as a keystroke, followed by newline and carriage return.
+`caractere` : um char ou int a ser enviado ao computador como se fosse uma tecla pressionada no teclado., seguido dos caracteres newline e carriage return.
 
-`characters` : a string to be sent to the computer as a keystroke, followed by a newline and carriage return.
+`caracteres` : uma string a ser enviada ao computador como se fosse uma palavra ou frase digitada no teclado, seguida dos caracteres newline e carriage return.
 
 [float]
 === Retorna
-`size_t` : number of bytes sent
+`size_t` : número de bytes enviados.
 
 --
 // OVERVIEW SECTION ENDS
@@ -54,17 +53,18 @@ Sends a keystroke to a connected computer, followed by a newline and carriage re
 #include <Keyboard.h>
 
 void setup() {
-  // make pin 2 an input and turn on the
-  // pullup resistor so it goes high unless
-  // connected to ground:
+  // Configura o pino 2 como entrada e ativa
+  // o resistor pull-up tal que o pino seja HIGH
+  // a menos que conectado ao ground:
   pinMode(2, INPUT_PULLUP);
+  // inicializa a emulação de um teclado USB
   Keyboard.begin();
 }
 
 void loop() {
-  //if the button is pressed
+  // se o botão for pressionado
   if(digitalRead(2)==LOW){
-    //Send the message
+    // envia a mensagem, automaticamnete seguida de \n e \r
     Keyboard.println("Hello!");
   }
 }
@@ -72,8 +72,7 @@ void loop() {
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
-When you use the Keyboard.println() command, the Arduino takes over your keyboard! Make sure you have control before you use the command. A pushbutton to toggle the keyboard control state is effective.
-
+=== Notas and Warnings
+Quando você usa a função `Keyboard.println()`, o Arduino toma o controle do computador! Tenha certeza que você tem controle de quando as mensagens vão ser enviadas antes de usar essa função. Pode ser difícil gravar um novo código no Arduino se ele estiver digitando algo o tempo todo. Um botão para ativar/desativar o controle do teclado é bastante efetivo.
 --
 // HOW TO USE SECTION ENDS

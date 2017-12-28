@@ -2,9 +2,6 @@
 title: Keyboard.releaseAll()
 ---
 
-
-
-
 = Keyboard.releaseAll()
 
 
@@ -14,7 +11,7 @@ title: Keyboard.releaseAll()
 
 [float]
 === Descrição
-Lets go of all keys currently pressed. See link:../keyboardpress[Keyboard.press()] for additional information.
+Libera todas as teclas seguradas. Veja link:../keyboardpress[Keyboard.press()] para mais informações.
 [%hardbreaks]
 
 
@@ -25,11 +22,11 @@ Lets go of all keys currently pressed. See link:../keyboardpress[Keyboard.press(
 
 [float]
 === Parâmetros
-Nothing
+Nenhum
 
 [float]
 === Retorna
-Nothing
+Nada
 
 --
 // OVERVIEW SECTION ENDS
@@ -49,32 +46,32 @@ Nothing
 ----
 #include <Keyboard.h>
 
-// use this option for OSX:
-char ctrlKey = KEY_LEFT_GUI;
-// use this option for Windows and Linux:
-//  char ctrlKey = KEY_LEFT_CTRL;
+// use essa opção para OSX:
+// char ctrlKey = KEY_LEFT_GUI;
+// use essa opção para Windows e Linux:
+char ctrlKey = KEY_LEFT_CTRL;
 
 void setup() {
-  // make pin 2 an input and turn on the
-  // pullup resistor so it goes high unless
-  // connected to ground:
+  // Configura o pino 2 como entrada e ativa
+  // o resistor pull-up tal que o pino seja HIGH
+  // a menos que conectado ao ground:
   pinMode(2, INPUT_PULLUP);
-  // initialize control over the keyboard:
+  // Inicia a emulação de um teclado USB
   Keyboard.begin();
 }
 
 void loop() {
   while (digitalRead(2) == HIGH) {
-    // do nothing until pin 2 goes low
+    // não faz nada até que o pino 2 esteja em LOW
     delay(500);
   }
   delay(1000);
-  // new document:
+  // novo documento:
   Keyboard.press(ctrlKey);
   Keyboard.press('n');
   delay(100);
   Keyboard.releaseAll();
-  // wait for new window to open:
+  // espera uma nova janela abrir no computador:
   delay(1000);
 }
 ----

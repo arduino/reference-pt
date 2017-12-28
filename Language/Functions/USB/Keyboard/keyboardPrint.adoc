@@ -24,8 +24,8 @@ Envia uma tecla pressionada, ou uma sequência de teclas, para um computador con
 
 [float]
 === Parâmetros
-`character` : um char ou int a ser enviado ao computador como se fosse uma tecla pressionada no teclado. + 
-`characters` : uma string a ser enviada ao computador como se fosse uma palavra ou frase digitada no teclado.
+`caractere` : um char ou int a ser enviado ao computador como se fosse uma tecla pressionada no teclado. + 
+`caracteres` : uma string a ser enviada ao computador como se fosse uma palavra ou frase digitada no teclado.
 
 [float]
 === Retorna

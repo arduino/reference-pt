@@ -1,16 +1,11 @@
 ---
 title: "*="
-title_expanded: compound multiplication
+title_expanded: atribuição por multiplicação
 categories: [ "Structure" ]
-subCategories: [ "Compound Operators" ]
+subCategories: [ "Operadores de Atribuição Composta" ]
 ---
 
-
-
-
-
-= *= Compound Multiplication
-
+= *= Atribuição por multiplicação
 
 // OVERVIEW SECTION STARTS
 [#overview]
@@ -18,7 +13,7 @@ subCategories: [ "Compound Operators" ]
 
 [float]
 === Descrição
-This is a convenient shorthand to perform multiplication of a variable with another constant or variable.
+Essa é uma abreviação conveniente para realizar a multiplicação de uma variável com outra variável ou constante.
 [%hardbreaks]
 
 
@@ -26,7 +21,7 @@ This is a convenient shorthand to perform multiplication of a variable with anot
 === Sintaxe
 [source,arduino]
 ----
-x *= y;   // equivalent to the expression x = x * y;
+x *= y;   // equivalente a expressão x = x * y;
 ----
 
 [float]
@@ -49,15 +44,11 @@ x *= y;   // equivalent to the expression x = x * y;
 [source,arduino]
 ----
 x = 2;
-x *= 2;      // x now contains 4
+x *= 2;      // x agora contém 4
 ----
-
 
 --
 // HOW TO USE SECTION ENDS
-
-
-
 
 //SEE ALSO SECTION BEGINS
 [#see_also]
@@ -67,7 +58,7 @@ x *= 2;      // x now contains 4
 === Ver Também
 
 [role="language"]
-#LINGUAGEM#  link:../../arithmetic-operators/multiplication[Normal Multiplication]
+#LINGUAGEM#  link:../../arithmetic-operators/multiplication[Multiplicação comum]
 
 --
 // SEE ALSO SECTION ENDS

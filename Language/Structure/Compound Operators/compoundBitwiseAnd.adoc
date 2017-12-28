@@ -1,15 +1,11 @@
 ---
 title: "&="
-title_expanded: compound bitwise and
+title_expanded: atribuição por e
 categories: [ "Structure" ]
-subCategories: [ "Compound Operators" ]
+subCategories: [ "Operadores de Atribuição Composta" ]
 ---
 
-
-
-
-
-= &= Compound Bitwise AND
+= &= Atribuição por E
 
 
 // OVERVIEW SECTION STARTS
@@ -18,22 +14,22 @@ subCategories: [ "Compound Operators" ]
 
 [float]
 === Descrição
-The compound bitwise AND operator `&=` is often used with a variable and a constant to force particular bits in a variable to the LOW state (to 0). This is often referred to in programming guides as "clearing" or "resetting" bits.
+O operador de atribuição composta E `&=` é frequentemente usado com uma variável e uma constante para forçar detreminados bits de uma variável para 0. Isso é  frequentemente chamado de "limpar" ou "resetar" os bits.
 [%hardbreaks]
 
-A review of the Bitwise AND `&` operator:
+Uma revisão do operator bitwise E `&`:
 
-   0  0  1  1    operand1
-   0  1  0  1    operand2
+   0  0  1  1    operando1
+   0  1  0  1    operando2
    ----------
-   0  0  0  1    (operand1 & operand2) - returned result
+   0  0  0  1    (operando1 & operando2) - resultado retornado
 [%hardbreaks]
 
 [float]
 === Sintaxe
 [source,arduino]
 ----
-x &= y;   // equivalent to x = x & y;
+x &= y;   // equivalente a x = x & y;
 ----
 
 [float]
@@ -52,51 +48,52 @@ x &= y;   // equivalent to x = x & y;
 
 [float]
 === Código de Exemplo
-Bits that are "bitwise ANDed" with 0 are cleared to 0 so, if myByte is a byte variable,
+Bits que são operados através do E com 0 são limpos, então se meuByte é uma variável byte:,
 
 [source,arduino]
 ----
-myByte & B00000000 = 0;
+meuByte & B00000000 = 0;
 ----
 
-Bits that are "bitwise ANDed" with 1 are unchanged so,
+Bits que são operados através do E com 1 não são mudados, então se meuByte é uma variável byte:
 
 [source,arduino]
 ----
-myByte & B11111111 = myByte;
+meuByte & B11111111 = meuByte;
 ----
 [%hardbreaks]
 
 [float]
 === Notas e Advertências
-Because we are dealing with bits in a bitwise operator - it is convenient to use the binary formatter with constants. The numbers are still the same value in other representations, they are just not as easy to understand. Also, B00000000 is shown for clarity, but zero in any number format is zero (hmmm something philosophical there?)
+Porque estamos lidando com bits em um operador bitwise, é conveniente usar o modificador binário com constantes na representação. Os números ainda são os mesmos em outras representações, só não são tão fáceis de entender. Também, B00000000 é mostrado para claridade, mas zero em qualquer outro formato é zero.
+[%hardbreaks]
 
-Consequently - to clear (set to zero) bits 0 & 1 of a variable, while leaving the rest of the variable unchanged, use the compound bitwise AND operator (&=) with the constant B11111100
+Consequentemente - para limpar os bits 0 e 1 de um variável, ao mesmo tempo deixando o resto da variável intocado, useo o operador de atribuição por bitwise E  (&=) com a constante B11111100
 
-   1  0  1  0  1  0  1  0    variable
-   1  1  1  1  1  1  0  0    mask
+   1  0  1  0  1  0  1  0    variável
+   1  1  1  1  1  1  0  0    máscara
    ----------------------
    1  0  1  0  1  0  0  0
 
-    bits unchanged
-                     bits cleared
+    bits intactos
+                     bits limpos
 
-Here is the same representation with the variable's bits replaced with the symbol x
+Abaixo a mesma representação com os bits da variável substituidos pelo símbolo x
 
-   x  x  x  x  x  x  x  x    variable
-   1  1  1  1  1  1  0  0    mask
+   x  x  x  x  x  x  x  x    variável
+   1  1  1  1  1  1  0  0    máscara
    ----------------------
    x  x  x  x  x  x  0  0
 
-    bits unchanged
-                     bits cleared
+    bits intactos
+                     bits limpos
 
-So if:
+Então:
 
 [source,arduino]
 ----
 myByte =  B10101010;
-myByte &= B11111100; // results in B10101000
+myByte &= B11111100; // resulta em B10101000
 ----
 
 [%hardbreaks]
@@ -115,7 +112,7 @@ myByte &= B11111100; // results in B10101000
 === Ver Também
 
 [role="language"]
-#LINGUAGEM#  link:../../bitwise-operators/bitwiseand[& Bitwise AND]
+#LINGUAGEM#  link:../../bitwise-operators/bitwiseand[& Bitwise E]
 
 --
 // SEE ALSO SECTION ENDS

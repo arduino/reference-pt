@@ -14,7 +14,7 @@ title: Keyboard.begin()
 
 [float]
 === Descrição
-When used with a Leonardo or Due board, `Keyboard.begin()` starts emulating a keyboard connected to a computer. To end control, use link:../keyboardend[Keyboard.end()].
+Quando usado com uma placa com USB nativa, como o Leonardo ou Due, `Keyboard.begin()` começa a emulação de um teclado conectado ao computador. Para encerrar o controle, use link:../keyboardend[Keyboard.end()].
 [%hardbreaks]
 
 
@@ -25,17 +25,14 @@ When used with a Leonardo or Due board, `Keyboard.begin()` starts emulating a ke
 
 [float]
 === Parâmetros
-Nothing
+Nenhum
 
 [float]
 === Retorna
-Nothing
+Nada
 
 --
 // OVERVIEW SECTION ENDS
-
-
-
 
 // HOW TO USE SECTION STARTS
 [#howtouse]
@@ -51,17 +48,18 @@ Nothing
 #include <Keyboard.h>
 
 void setup() {
-  // make pin 2 an input and turn on the
-  // pullup resistor so it goes high unless
-  // connected to ground:
+  // Configura o pino 2 como entrada e ativa
+  // o resistor pull-up tal que o pino seja HIGH
+  // a menos que conectado ao ground:
   pinMode(2, INPUT_PULLUP);
+  //Inicia a emulação de um teclado USB
   Keyboard.begin();
 }
 
 void loop() {
-  //if the button is pressed
+  //se o botão for pressionado
   if(digitalRead(2)==LOW){
-    //Send the message
+    //envia a mensagem
     Keyboard.print("Hello!");
   }
 }

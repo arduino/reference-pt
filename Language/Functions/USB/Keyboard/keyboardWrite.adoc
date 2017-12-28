@@ -2,9 +2,6 @@
 title: Keyboard.write()
 ---
 
-
-
-
 = Keyboard.write()
 
 
@@ -14,11 +11,11 @@ title: Keyboard.write()
 
 [float]
 === Descrição
-Sends a keystroke to a connected computer. This is similar to pressing and releasing a key on your keyboard. You can send some ASCII characters or the additional link:../keyboardmodifiers[keyboard modifiers and special keys].
+Envia uma tecla pressionada para um computador conectado. Isso é similar a pressionar e soltar uma tecla do seu teclado. Você pode enviar alguns caracteres ASCII ou as link:../keyboardmodifiers[teclas modificadoras e especiais] adicionais.
 
-Only ASCII characters that are on the keyboard are supported. For example, ASCII 8 (backspace) would work, but ASCII 25 (Substitution) would not. When sending capital letters, Keyboard.write() sends a shift command plus the desired character, just as if typing on a keyboard. If sending a numeric type, it sends it as an ASCII character (ex. Keyboard.write(97) will send 'a').
+Apenas caracteres ASCII que estão no teclado são suportados. Por exemplo, o caractere ASCII 8 (backspace) funciona, mas o caractere ASCII 25 (Substituição) não. Ao enviar letras maiúsculas, Keyboard.write() envia o comando shift mais o caractere desejado, da mesma forma que quando se digita em um teclado comum. Se um tipo numérico é enviado, este é interpretado como o caractere ASCII correspondente (ex. Keyboard.write(97) irá enviar 'a').
 
-For a complete list of ASCII characters, see http://www.asciitable.com/[ASCIITable.com].
+Para uma lista completa de caracteres ASCII, veja http://www.asciitable.com/[asciitable.com].
 [%hardbreaks]
 
 
@@ -29,18 +26,18 @@ For a complete list of ASCII characters, see http://www.asciitable.com/[ASCIITab
 
 [float]
 === Parâmetros
-`character` : a char or int to be sent to the computer. Can be sent in any notation that's acceptable for a char. For example, all of the below are acceptable and send the same value, 65 or ASCII A:
+`character` : um char ou int a ser enviado ao computador. Pode ser enviado em qualquer notação que é aceitável para um char. Por exemplo, todas as formas abaixo são aceitáveis e enviadas como o mesmo valor, 65 ou ASCII A:
 [source,arduino]
 ----
-Keyboard.write(65);         // sends ASCII value 65, or A
-Keyboard.write('A');            // same thing as a quoted character
-Keyboard.write(0x41);       // same thing in hexadecimal
-Keyboard.write(0b01000001); // same thing in binary (weird choice, but it works)
+Keyboard.write(65);         // envia o valor ASCII 65, ou A
+Keyboard.write('A');        // mesma coisa, mas como um caractere entre aspas simples
+Keyboard.write(0x41);       // mesma coisa, porém em notação hexadecimal
+Keyboard.write(0b01000001); // mesmo valor, mas em binário (escolha estranha, mas funciona)
 ----
 
 [float]
 === Retorna
-`size_t` : number of bytes sent.
+`size_t` : o número de bytes enviados.
 
 --
 // OVERVIEW SECTION ENDS
@@ -62,17 +59,18 @@ Keyboard.write(0b01000001); // same thing in binary (weird choice, but it works)
 #include <Keyboard.h>
 
 void setup() {
-  // make pin 2 an input and turn on the
-  // pullup resistor so it goes high unless
-  // connected to ground:
+  // Configura o pino 2 como entrada e ativa
+  // o resistor pull-up tal que o pino seja HIGH
+  // a menos que conectado ao ground:
   pinMode(2, INPUT_PULLUP);
+  // Inicia a emulação de um teclado USB
   Keyboard.begin();
 }
 
 void loop() {
-  //if the button is pressed
+  // se o botão for pressionado
   if(digitalRead(2)==LOW){
-    //Send an ASCII 'A',
+    // envia o caratere ASCII 'A',
     Keyboard.write(65);
   }
 }
@@ -81,7 +79,7 @@ void loop() {
 
 [float]
 === Notes and Warnings
-When you use the Keyboard.write() command, the Arduino takes over your keyboard! Make sure you have control before you use the command. A pushbutton to toggle the keyboard control state is effective.
+Quando você usa a função `Keyboard.write()`, o Arduino toma o controle do computador! Tenha certeza que você tem controle de quando as mensagens vão ser enviadas antes de usar essa função. Pode ser difícil gravar um novo código no Arduino se ele estiver digitando algo o tempo todo. Um botão para ativar/desativar o controle do teclado é bastante efetivo.
 
 --
 // HOW TO USE SECTION ENDS

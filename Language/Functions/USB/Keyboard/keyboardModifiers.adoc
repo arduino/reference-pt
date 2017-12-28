@@ -1,12 +1,8 @@
 ---
-title: Keyboard Modifiers
+title: Teclas modificadoras
 ---
 
-
-
-
-= Keyboard Modifiers
-
+= Teclas Modificadoras
 
 // OVERVIEW SECTION STARTS
 [#overview]
@@ -14,20 +10,20 @@ title: Keyboard Modifiers
 
 [float]
 === Descrição
-The `Keyboard.write()` and `Keyboard.press()` and `Keyboard.release()` commands don’t work with every possible ASCII character, only those that correspond to a key on the keyboard. For example, backspace works, but many of the other non-printable characters produce unpredictable results. For capital letters (and other keys), what’s sent is shift plus the character (i.e. the equivalent of pressing both of those keys on the keyboard).
+Os comandos `Keyboard.write()`, `Keyboard.press()` e `Keyboard.release()` não funcionam com todo caractere ASCII possível, apenas aqueles que correspondem a uma tecla no teclado. Por exemplo, backspace funciona, mas muitos dos outros caracteres não imprimíveis produzem resultados imprevisíveis. Para letras maiúsculas (e outras teclas), o que é enviado é shift mais o caractere (isto é, o equivalente ao pressionar ambas as teclas no teclado).
 [%hardbreaks]
-A modifier key is a special key on a computer keyboard that modifies the normal action of another key when the two are pressed in combination.
+Uma tecla modificadora é uma tecla especial em um teclado que modifica a ação comum de outra tecla quando as duas são pressionadas em conjunto.
 [%hardbreaks]
-For more on ASCII values and the characters or functions they represent, see http://www.asciitable.com/[asciitable.com]
+Para mais informações sobre os valores ASCII e os caracteres ou funções que eles representam, veja a página http://www.asciitable.com/[asciitable.com]
 [%hardbreaks]
-For multiple key presses use link:../keyboardpress[Keyboard.press]()
+Para pressionar múltiplas teclas, use link:../keyboardpress[Keyboard.press]()
 [%hardbreaks]
-The Leonardo's definitions for modifier keys are listed below:
+As difinições de teclas modificadoras para o Leonardo são listadas abaixo:
 [%hardbreaks]
 
 
 |===
-|Key	|Hexadecimal value	|Decimal value
+|Tecla	|Valor Hexadecimal | Valor Decimal
 
 |KEY_LEFT_CTRL	|0x80	|128
 |KEY_LEFT_SHIFT	|0x81	|129

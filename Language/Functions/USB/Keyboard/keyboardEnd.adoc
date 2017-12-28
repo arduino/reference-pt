@@ -2,11 +2,7 @@
 title: Keyboard.end()
 ---
 
-
-
-
 = Keyboard.end()
-
 
 // OVERVIEW SECTION STARTS
 [#overview]
@@ -14,7 +10,7 @@ title: Keyboard.end()
 
 [float]
 === Descrição
-Stops the keyboard emulation to a connected computer. To start keyboard emulation, use link:../keyboardbegin[Keyboard.begin()].
+Encerra a emulação de um teclado USB conectado a um computador. Para iniciar a emulação de um teclado, use link:../keyboardbegin[Keyboard.begin()].
 [%hardbreaks]
 
 
@@ -25,11 +21,11 @@ Stops the keyboard emulation to a connected computer. To start keyboard emulatio
 
 [float]
 === Parâmetros
-Nothing
+Nenhum
 
 [float]
 === Retorna
-Nothing
+Nada
 
 --
 // OVERVIEW SECTION ENDS
@@ -51,16 +47,16 @@ Nothing
 #include <Keyboard.h>
 
 void setup() {
-  //start keyboard communication
+  //inicia a emulação de um teclado USB
   Keyboard.begin();
-  //send a keystroke
+  //envia uma mensagem como se fosse teclada em um teclado real
   Keyboard.print("Hello!");
-  //end keyboard communication
+  //encerra a emulação do teclado
   Keyboard.end();
 }
 
 void loop() {
- //do nothing
+ //não faz nada aqui
 }
 ----
 

@@ -1,16 +1,11 @@
 ---
 title: "--"
-title_expanded: decrement
+title_expanded: decremento
 categories: [ "Structure" ]
-subCategories: [ "Compound Operators" ]
+subCategories: [ "Operadores de Atribuição Composta" ]
 ---
 
-
-
-
-
-= -- Decrement
-
+= -- Decremento
 
 // OVERVIEW SECTION STARTS
 [#overview]
@@ -18,7 +13,7 @@ subCategories: [ "Compound Operators" ]
 
 [float]
 === Descrição
-Decrements the value of a variable by 1.
+Decrementa o valor de uma variável em 1.
 [%hardbreaks]
 
 
@@ -26,8 +21,8 @@ Decrements the value of a variable by 1.
 === Sintaxe
 [source,arduino]
 ----
-x-- ;   // decrement x by one and returns the old value of x
---x ;   // decrement x by one and returns the new value of x
+x-- ;   // decrementa x em um e retorna o valor antigo de x
+--x ;   // decrementa x em um e retorna o novo valor de x
 ----
 
 [float]
@@ -36,12 +31,10 @@ x-- ;   // decrement x by one and returns the old value of x
 
 [float]
 === Returns
-The original or newly decremented value of the variable.
+O valor original ou decrementado da variável, que depende se o operador está à esquerda ou direita da variável.
 
 --
 // OVERVIEW SECTION ENDS
-
-
 
 // HOW TO USE SECTION STARTS
 [#howtouse]
@@ -53,8 +46,8 @@ The original or newly decremented value of the variable.
 [source,arduino]
 ----
 x = 2;
-y = --x;      // x now contains 1, y contains 1
-y = x--;      // x contains 0, but y still contains 1
+y = --x;      // x agora contém 1, y contém 1
+y = x--;      // x contém 0, mas y ainda contém 1
 ----
 
 --

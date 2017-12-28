@@ -1,11 +1,11 @@
 ---
 title: "!"
-title_expanded: NÃO lógico 
+title_expanded: NÃO lógico
 categories: [ "Structure" ]
-subCategories: [ "Boolean Operators" ]
+subCategories: [ "Operadores Boleanos" ]
 ---
 
-= NÃO Lógico - !
+= ! NÃO Lógico
 
 
 // OVERVIEW SECTION STARTS
@@ -14,7 +14,7 @@ subCategories: [ "Boolean Operators" ]
 
 [float]
 === Descrição
-*O Não lógico* resulta em `true` se o operando é `false` e vice-versa.
+*O NÃO lógico* resulta em verdadeiro se o operando é falso, e vice-versa. Vale lembrar que condições verdadeiras e falsas na linguagem Arduino são representadas por `true` e `false` respectivamente.
 [%hardbreaks]
 
 --
@@ -32,7 +32,7 @@ Esse operador pode ser usado dentro da condição de um laço link:../../control
 
 [source,arduino]
 ----
-if (!x) { // se x não é true 
+if (!x) { // se x não é true
   // código a ser executado
 }
 ----

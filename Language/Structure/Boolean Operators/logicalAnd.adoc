@@ -2,10 +2,10 @@
 title: "&&"
 title_expanded: E lógico
 categories: [ "Structure" ]
-subCategories: [ "Boolean Operators" ]
+subCategories: [ "Operadores Boleanos" ]
 ---
 
-= E lógico - &&
+= && E lógico
 
 
 // OVERVIEW SECTION STARTS
@@ -14,7 +14,7 @@ subCategories: [ "Boolean Operators" ]
 
 [float]
 === Descrição
-*O E lógico* resulta em `true` *apenas* se ambos os operandos são `true`.
+*O E lógico* resulta em verdadeiro, *apenas* se ambos os operandos são verdadeiros. Vale lembrar que condições verdadeiras e falsas na linguagem Arduino são representadas por `true` e `false` respectivamente.
 [%hardbreaks]
 
 --

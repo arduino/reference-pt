@@ -1,15 +1,11 @@
 ---
 title: "/="
-title_expanded: compound division
+title_expanded: atribuição por divisão
 categories: [ "Structure" ]
-subCategories: [ "Compound Operators" ]
+subCategories: [ "Operadores de Atribuição Composta" ]
 ---
 
-
-
-
-
-= /= Compound Division
+= /= atribuição por divisão
 
 
 // OVERVIEW SECTION STARTS
@@ -18,7 +14,7 @@ subCategories: [ "Compound Operators" ]
 
 [float]
 === Descrição
-This is a convenient shorthand to perform division of a variable with another constant or variable.
+Essa é uma abreviação conveniente para realizar a divisão de uma variável com outra variável ou constante.
 [%hardbreaks]
 
 
@@ -26,7 +22,7 @@ This is a convenient shorthand to perform division of a variable with another co
 === Sintaxe
 [source,arduino]
 ----
-x /= y;   // equivalent to the expression x = x / y;
+x /= y;   // equivalente a expressão x = x / y;
 ----
 
 [float]
@@ -49,14 +45,13 @@ x /= y;   // equivalent to the expression x = x / y;
 [source,arduino]
 ----
 x = 2;
-x /= 2;      // x now contains 1
+x /= 2;      // x agora contém 1
 ----
 [%hardbreaks]
 
 
 --
 // HOW TO USE SECTION ENDS
-
 
 
 //SEE ALSO SECTION BEGINS
@@ -67,7 +62,7 @@ x /= 2;      // x now contains 1
 === Ver Também
 
 [role="language"]
-#LINGUAGEM#  link:../../arithmetic-operators/division[Normal Division]
+#LINGUAGEM#  link:../../arithmetic-operators/division[Divisão comum]
 
 --
 // SEE ALSO SECTION ENDS

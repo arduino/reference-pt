@@ -13,7 +13,7 @@ title: Keyboard.print()
 --
 
 [float]
-=== Description
+=== Descrição
 Sends a keystroke to a connected computer.
 
 `Keyboard.print()` must be called after initiating link:../keyboardbegin[Keyboard.begin()].
@@ -21,16 +21,16 @@ Sends a keystroke to a connected computer.
 
 
 [float]
-=== Syntax
+=== Sintaxe
 `Keyboard.print(character)` +
 `Keyboard.print(characters)`
 
 [float]
-=== Parameters
+=== Parâmetros
 `character` : a char or int to be sent to the computer as a keystroke characters : a string to be sent to the computer as a keystroke.
 
 [float]
-=== Returns
+=== Retorna
 `size_t` : number of bytes sent.
 
 --
@@ -44,7 +44,7 @@ Sends a keystroke to a connected computer.
 --
 
 [float]
-=== Example Code
+=== Código de Exemplo
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
 
 

@@ -13,18 +13,18 @@ title: Mouse.release()
 --
 
 [float]
-=== Description
+=== Descrição
 Sends a message that a previously pressed button (invoked through link:../mousepress[Mouse.press()]) is released. Mouse.release() defaults to the left button.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Sintaxe
 `Mouse.release();` +
 `Mouse.release(button);`
 
 [float]
-=== Parameters
+=== Parâmetros
 `button`: which mouse button to press - char
 
 * `MOUSE_LEFT` (default)
@@ -34,7 +34,7 @@ Sends a message that a previously pressed button (invoked through link:../mousep
 * `MOUSE_MIDDLE`
 
 [float]
-=== Returns
+=== Retorna
 Nothing
 
 --
@@ -48,7 +48,7 @@ Nothing
 --
 
 [float]
-=== Example Code
+=== Código de Exemplo
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
 
 

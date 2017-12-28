@@ -13,18 +13,18 @@ title: Mouse.isPressed()
 --
 
 [float]
-=== Description
+=== Descrição
 Checks the current status of all mouse buttons, and reports if any are pressed or not.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Sintaxe
 `Mouse.isPressed();` +
 `Mouse.isPressed(button);`
 
 [float]
-=== Parameters
+=== Parâmetros
 When there is no value passed, it checks the status of the left mouse button.
 
 `button`: which mouse button to check - `char`
@@ -36,7 +36,7 @@ When there is no value passed, it checks the status of the left mouse button.
 * `MOUSE_MIDDLE`
 
 [float]
-=== Returns
+=== Retorna
 `boolean` : reports whether a button is pressed or not.
 
 --
@@ -50,7 +50,7 @@ When there is no value passed, it checks the status of the left mouse button.
 --
 
 [float]
-=== Example Code
+=== Código de Exemplo
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
 
 

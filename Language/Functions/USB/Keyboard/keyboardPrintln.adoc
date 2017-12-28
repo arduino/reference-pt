@@ -13,7 +13,7 @@ title: Keyboard.println()
 --
 
 [float]
-=== Description
+=== Descrição
 Sends a keystroke to a connected computer, followed by a newline and carriage return.
 
 `Keyboard.println()` must be called after initiating link:../keyboardbegin[Keyboard.begin()].
@@ -21,19 +21,19 @@ Sends a keystroke to a connected computer, followed by a newline and carriage re
 
 
 [float]
-=== Syntax
+=== Sintaxe
 `Keyboard.println()` +
 `Keyboard.println(character)`+
 `Keyboard.println(characters)`
 
 [float]
-=== Parameters
+=== Parâmetros
 `character` : a char or int to be sent to the computer as a keystroke, followed by newline and carriage return.
 
 `characters` : a string to be sent to the computer as a keystroke, followed by a newline and carriage return.
 
 [float]
-=== Returns
+=== Retorna
 `size_t` : number of bytes sent
 
 --
@@ -45,7 +45,7 @@ Sends a keystroke to a connected computer, followed by a newline and carriage re
 --
 
 [float]
-=== Example Code
+=== Código de Exemplo
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
 
 

@@ -13,7 +13,7 @@ title: Keyboard Modifiers
 --
 
 [float]
-=== Description
+=== Descrição
 The `Keyboard.write()` and `Keyboard.press()` and `Keyboard.release()` commands don’t work with every possible ASCII character, only those that correspond to a key on the keyboard. For example, backspace works, but many of the other non-printable characters produce unpredictable results. For capital letters (and other keys), what’s sent is shift plus the character (i.e. the equivalent of pressing both of those keys on the keyboard).
 [%hardbreaks]
 A modifier key is a special key on a computer keyboard that modifies the normal action of another key when the two are pressed in combination.

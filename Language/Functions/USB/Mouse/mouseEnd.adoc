@@ -13,22 +13,22 @@ title: Mouse.end()
 --
 
 [float]
-=== Description
+=== Descrição
 Stops emulating the mouse connected to a computer. To start control, use link:../mousebegin[Mouse.begin()].
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Sintaxe
 `Mouse.end()`
 
 
 [float]
-=== Parameters
+=== Parâmetros
 Nothing
 
 [float]
-=== Returns
+=== Retorna
 Nothing
 
 --
@@ -42,7 +42,7 @@ Nothing
 --
 
 [float]
-=== Example Code
+=== Código de Exemplo
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
 
 

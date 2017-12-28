@@ -13,22 +13,22 @@ title: Keyboard.release()
 --
 
 [float]
-=== Description
+=== Descrição
 Lets go of the specified key. See link:../keyboardpress[Keyboard.press()] for more information.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Sintaxe
 `Keyboard.release(key)`
 
 
 [float]
-=== Parameters
+=== Parâmetros
 `key` : the key to release. `char`
 
 [float]
-=== Returns
+=== Retorna
 `size_t` : the number of keys released
 
 --
@@ -42,7 +42,7 @@ Lets go of the specified key. See link:../keyboardpress[Keyboard.press()] for mo
 --
 
 [float]
-=== Example Code
+=== Código de Exemplo
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
 
 

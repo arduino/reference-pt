@@ -1,12 +1,8 @@
 ---
 title: do...while
 categories: [ "Structure" ]
-subCategories: [ "Control Structure" ]
+subCategories: [ "Estruturas de Controle" ]
 ---
-
-
-
-
 
 = do...while loop
 
@@ -18,7 +14,7 @@ subCategories: [ "Control Structure" ]
 [float]
 === Descrição
 [%hardbreaks]
-The `do...while` loop works in the same manner as the link:../while[while] loop, with the exception that the condition is tested at the end of the loop, so the do loop will always run at least once.
+O loop `do...while` funciona da mesma forma que o loop link:../while[while], com a exceção de a condição ser testada no final do loop, tal que o loop será executado pelo menos uma vez.
 
 [float]
 === Sintaxe
@@ -26,10 +22,10 @@ The `do...while` loop works in the same manner as the link:../while[while] loop,
 ----
 do
 {
-    // statement block
-} while (condition);
+    // bloco de comandos
+} while (condição);
 ----
-The `condition` is a boolean expression that evaluates to `true` or `false`.
+A `condição` é uma expressão booleana que é avaliada como verdadeiro ou falso, respectivamente `true` ou `false` na linguagem Arduino.
 
 --
 // OVERVIEW SECTION ENDS
@@ -48,8 +44,8 @@ The `condition` is a boolean expression that evaluates to `true` or `false`.
 ----
 do
 {
-  delay(50);          // wait for sensors to stabilize
-  x = readSensors();  // check the sensors
+  delay(50);          // espera os sensores estabilizarem
+  x = readSensors();  // checa os sensores
 
 } while (x < 100);
 ----

@@ -1,15 +1,11 @@
 ---
 title: "<="
-title_expanded: less than or equal to
+title_expanded: menor que ou igual a
 categories: [ "Structure" ]
-subCategories: [ "Comparison Operators" ]
+subCategories: [ "Operadores de Comparação" ]
 ---
 
-
-
-
-
-= <= Less Than or Equal To
+= <= Menor que ou Igual a
 
 
 // OVERVIEW SECTION STARTS
@@ -18,7 +14,7 @@ subCategories: [ "Comparison Operators" ]
 
 [float]
 === Descrição
-Compares the variable on the left with the value or variable on the right of the operator. Returns true when the operand on the left is less (smaller) than or equal to the operand on the right. 
+Compara a variável à esquerda com o valor ou variável à direita do operador. Retorna verdadeiro (`true`) quando o operando à esquerda é menor ou igual ao operando à direita.  
 [%hardbreaks]
 
 
@@ -26,7 +22,7 @@ Compares the variable on the left with the value or variable on the right of the
 === Sintaxe
 [source,arduino]
 ----
-x <= y;   // is true if x is smaller than or equal to y and it is false if x is greater than y
+x <= y;   // é verdadeiro se x é menor ou igual a y e é falso se x é maior que y
 ----
 
 [float]
@@ -48,16 +44,16 @@ x <= y;   // is true if x is smaller than or equal to y and it is false if x is 
 
 [source,arduino]
 ----
-if (x<=y)      // tests if x is less (smaller) than or equal to y
+if (x<=y)      // testa se x é menor que ou igual a y
 {
-// do something only if the comparison result is true
+  // faz algo apenas se o resultado da comparação é verdadeiro
 }
 ----
 [%hardbreaks]
 
 [float]
 === Notas e Advertências
-Negative numbers are smaller than positive numbers. 
+Números positivos são maiores que números negativos.
 [%hardbreaks]
 
 --

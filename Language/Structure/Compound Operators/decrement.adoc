@@ -30,7 +30,7 @@ x-- ;   // decrementa x em um e retorna o valor antigo de x
 `x`: variável. *Tipos de dados permitidos:* integer, long (possibly unsigned)
 
 [float]
-=== Returns
+=== Retorna
 O valor original ou decrementado da variável, que depende se o operador está à esquerda ou direita da variável.
 
 --

@@ -2,9 +2,6 @@
 title: Keyboard.print()
 ---
 
-
-
-
 = Keyboard.print()
 
 
@@ -14,24 +11,25 @@ title: Keyboard.print()
 
 [float]
 === Descrição
-Sends a keystroke to a connected computer.
+Envia uma tecla pressionada, ou uma sequência de teclas, para um computador conectado.
 
-`Keyboard.print()` must be called after initiating link:../keyboardbegin[Keyboard.begin()].
+`Keyboard.print()` deve ser chamada após a inicialização com link:../keyboardbegin[Keyboard.begin()].
 [%hardbreaks]
 
 
 [float]
 === Sintaxe
-`Keyboard.print(character)` +
-`Keyboard.print(characters)`
+`Keyboard.print(caractere)` +
+`Keyboard.print(caracteres)`
 
 [float]
 === Parâmetros
-`character` : a char or int to be sent to the computer as a keystroke characters : a string to be sent to the computer as a keystroke.
+`character` : um char ou int a ser enviado ao computador como se fosse uma tecla pressionada no teclado. + 
+`characters` : uma string a ser enviada ao computador como se fosse uma palavra ou frase digitada no teclado.
 
 [float]
 === Retorna
-`size_t` : number of bytes sent.
+`size_t` : número de bytes enviados.
 
 --
 // OVERVIEW SECTION ENDS
@@ -53,17 +51,18 @@ Sends a keystroke to a connected computer.
 #include <Keyboard.h>
 
 void setup() {
-  // make pin 2 an input and turn on the
-  // pullup resistor so it goes high unless
-  // connected to ground:
+  // Configura o pino 2 como entrada e ativa
+  // o resistor pull-up tal que o pino seja HIGH
+  // a menos que conectado ao ground:
   pinMode(2, INPUT_PULLUP);
+  // inicializa a emulação de um teclado USB
   Keyboard.begin();
 }
 
 void loop() {
-  //if the button is pressed
+  // se o botão for pressionado
   if(digitalRead(2)==LOW){
-    //Send the message
+    // envia a mensagem
     Keyboard.print("Hello!");
   }
 }
@@ -72,7 +71,7 @@ void loop() {
 
 [float]
 === Notes and Warnings
-When you use the `Keyboard.print()` command, the Arduino takes over your keyboard! Make sure you have control before you use the command. A pushbutton to toggle the keyboard control state is effective.
+Quando você usa a função `Keyboard.print()`, o Arduino toma o controle do computador! Tenha certeza que você tem controle de quando as mensagens vão ser enviadas antes de usar essa função. Pode ser difícil gravar um novo código no Arduino se ele estiver digitando algo o tempo todo. Um botão para ativar/desativar o controle do teclado é bastante efetivo.
 
 --
 // HOW TO USE SECTION ENDS

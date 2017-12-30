@@ -2,9 +2,6 @@
 title: Mouse.press()
 ---
 
-
-
-
 = Mouse.press()
 
 
@@ -14,33 +11,35 @@ title: Mouse.press()
 
 [float]
 === Descrição
-Sends a button press to a connected computer. A press is the equivalent of clicking and continuously holding the mouse button. A press is cancelled with link:../mouserelease[Mouse.release()].
+Envia o apertar de um botão do mouse ao computador conectado. Isso é equivalente a clicar e segurar o botão do mouse. O botão segurado pode ser liberado com  link:../mouserelease[Mouse.release()].
 
-Before using `Mouse.press()`, you need to start communication with link:../mousebegin[Mouse.begin()].
+Antes de usar `Mouse.press()`, você precisa iniciar a comunicação com link:../mousebegin[Mouse.begin()].
 
-`Mouse.press()` defaults to a left button press.
+`Mouse.press()` por padrão aperta o botão esquerdo do mouse.
 [%hardbreaks]
 
 
 [float]
 === Sintaxe
 `Mouse.press();` +
-`Mouse.press(button)`
+`Mouse.press(botão)`
 
 
 [float]
 === Parâmetros
-`button`: which mouse button to press - `char`
+`botão`: qual o botão do mouse a se apertar - `char`
 
-* `MOUSE_LEFT (default)`
+* `MOUSE_LEFT (padrão)`
 
 * `MOUSE_RIGHT`
 
 * `MOUSE_MIDDLE`
 
+Que correspondem ao botão esquerdo, direito e do meio, respectivamente.
+
 [float]
 === Retorna
-Nothing
+Nada
 
 --
 // OVERVIEW SECTION ENDS
@@ -62,20 +61,20 @@ Nothing
 #include <Mouse.h>
 
 void setup(){
-  //The switch that will initiate the Mouse press
+  // o botão que inicia o apertar do botão do mouse
   pinMode(2,INPUT);
-  //The switch that will terminate the Mouse press
+  // o botão que libera do botão do mouse
   pinMode(3,INPUT);
-  //initiate the Mouse library
+  // inicia a biblioteca Mouse
   Mouse.begin();
 }
 
 void loop(){
-  //if the switch attached to pin 2 is closed, press and hold the left mouse button
+  // se o botão conectado ao pino 2 for pressionado, aperta e segura o botão do mouse virtual
   if(digitalRead(2) == HIGH){
     Mouse.press();
   }
-  //if the switch attached to pin 3 is closed, release the left mouse button
+  // se o botão conectado ao pino 2 for pressionado, solta o botão do mouse virtual
   if(digitalRead(3) == HIGH){
     Mouse.release();
   }
@@ -85,7 +84,7 @@ void loop(){
 
 [float]
 === Notas e Advertências
-When you use the `Mouse.press()` command, the Arduino takes over your mouse! Make sure you have control before you use the command. A pushbutton to toggle the mouse control state is effective.
+Quando você usa a função `Mouse.press()`, o Arduino toma o controle do computador! Tenha certeza que você tem controle de quando as comandos vão ser enviados antes de usar essa função. Pode ser difícil gravar um novo código no Arduino se ele estiver enviando cliques  o tempo todo. Um botão para ativar/desativar o controle do mouse emulado é bastante efetivo.
 
 --
 // HOW TO USE SECTION ENDS
@@ -99,11 +98,11 @@ When you use the `Mouse.press()` command, the Arduino takes over your mouse! Mak
 === Ver Também
 
 [role="language"]
-#LINGUAGEM# link:../mouseclick[Mouse.click()]
-#LINGUAGEM# link:../mouseend[Mouse.end()]
-#LINGUAGEM# link:../mousemove[Mouse.move()]
-#LINGUAGEM# link:../mouserelease[Mouse.release()]
-#LINGUAGEM# link:../mouseispressed[Mouse.isPressed()]
+#LINGUAGEM# link:../mouseclick[Mouse.click()] +
+#LINGUAGEM# link:../mouseend[Mouse.end()] +
+#LINGUAGEM# link:../mousemove[Mouse.move()] +
+#LINGUAGEM# link:../mouserelease[Mouse.release()] +
+#LINGUAGEM# link:../mouseispressed[Mouse.isPressed()] +
 
 --
 // SEE ALSO SECTION ENDS

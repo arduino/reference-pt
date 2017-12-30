@@ -1,15 +1,11 @@
 ---
 title: "&"
-title_expanded: reference opearator
+title_expanded: referência
 categories: [ "Structure" ]
-subCategories: [ "Pointer Access Operators" ]
+subCategories: [ "Operadores para Ponteiros" ]
 ---
 
-
-
-
-
-= & Reference Operator
+= & Operador de referência
 
 
 // OVERVIEW SECTION STARTS
@@ -18,7 +14,7 @@ subCategories: [ "Pointer Access Operators" ]
 
 [float]
 === Descrição
-Referencing is one of the features specifically for use with pointers. The ampersand operator `&` is used for this purpose. If `x` is a variable, then `&x` represents the address of the variable `x`.
+Referência é uma das características da linguagem C para uso especificamente com ponteiros.  O operador `&` ('e' comercial ou ampersand) é utilizado para esse propósito. Se `x` é uma variável, então `&x` representa o endereço da variável `x`.
 [%hardbreaks]
 
 --
@@ -35,17 +31,19 @@ Referencing is one of the features specifically for use with pointers. The amper
 
 [source,arduino]
 ----
-int *p;       // declare a pointer to an int data type
-int i = 5, result = 0;
-p = &i;       // now 'p' contains the address of 'i'
-result = *p;  // 'result' gets the value at the address pointed by 'p'
-              // i.e., it gets the value of 'i' which is 5
+
+int *p;          // declara um ponteiro para uma variável do tipo int
+int i = 5, resultado = 0;
+p = &i;          // agora 'p' contém o endereço de 'i'
+resultado = *p;  // 'resultado' recebe o valor contido no endereço apontado por 'p'
+                 // isto é, recebe o valor de 'i', que é 5
+
 ----
 [%hardbreaks]
 
 [float]
 === Notas e Advertências
-Pointers are one of the complicated subjects for beginners in learning C, and it is possible to write the vast majority of Arduino sketches without ever encountering pointers. However for manipulating certain data structures, the use of pointers can simplify the code, and knowledge of manipulating pointers is handy to have in one's toolkit.
+Ponteiros são um dos assuntos mais complicados para iniciantes na linguagem C aprenderem, e é possível escrever a grande maioria dos sketches Arduino sem nunca encontrar ponteiros. No entanto, para manipular certas estruturas de dados, o uso de ponteiros pode simplificar o código. O conhecimento da manipulação de ponteiros é vantajoso de se ter no seu kit de ferramentas.
 [%hardbreaks]
 
 
@@ -65,7 +63,6 @@ Pointers are one of the complicated subjects for beginners in learning C, and it
 [role="language"]
 
 [role="definition"]
-* #DEFINITION#  https://en.wikipedia.org/wiki/Pointer_%28computer_programming%29[Pointers^]
-
+#DEFINIÇÃO#  https://pt.wikipedia.org/wiki/Ponteiro_(programa%C3%A7%C3%A3o)[Ponteiros^] +
 --
 // SEE ALSO SECTION ENDS

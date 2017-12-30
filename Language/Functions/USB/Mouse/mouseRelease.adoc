@@ -2,11 +2,7 @@
 title: Mouse.release()
 ---
 
-
-
-
 = Mouse.release()
-
 
 // OVERVIEW SECTION STARTS
 [#overview]
@@ -14,28 +10,30 @@ title: Mouse.release()
 
 [float]
 === Descrição
-Sends a message that a previously pressed button (invoked through link:../mousepress[Mouse.press()]) is released. Mouse.release() defaults to the left button.
+Envia ao computador a mensagem que um botão previamente apertado e segurado (através de link:../mousepress[Mouse.press()]) foi liberado. Mouse.release() por padrão usa o botão esquerdo.
 [%hardbreaks]
 
 
 [float]
 === Sintaxe
 `Mouse.release();` +
-`Mouse.release(button);`
+`Mouse.release(botão);`
 
 [float]
 === Parâmetros
-`button`: which mouse button to press - char
+`botão`: qual botão do mouse liberar - char
 
-* `MOUSE_LEFT` (default)
+* `MOUSE_LEFT` (padrão)
 
 * `MOUSE_RIGHT`
 
 * `MOUSE_MIDDLE`
 
+Que correspondem ao botão esquerdo, direito e do meio, respectivamente.
+
 [float]
 === Retorna
-Nothing
+Nada
 
 --
 // OVERVIEW SECTION ENDS
@@ -57,20 +55,20 @@ Nothing
 #include <Mouse.h>
 
 void setup(){
-  //The switch that will initiate the Mouse press
+  // o botão que inicia o apertar do botão do mouse
   pinMode(2,INPUT);
-  //The switch that will terminate the Mouse press
+  // o botão que libera do botão do mouse
   pinMode(3,INPUT);
-  //initiate the Mouse library
+  // inicia a biblioteca Mouse
   Mouse.begin();
 }
 
 void loop(){
-  //if the switch attached to pin 2 is closed, press and hold the left mouse button
+  // se o botão conectado ao pino 2 for pressionado, aperta e segura o botão do mouse virtual
   if(digitalRead(2) == HIGH){
     Mouse.press();
   }
-  //if the switch attached to pin 3 is closed, release the left mouse button
+  // se o botão conectado ao pino 2 for pressionado, solta o botão do mouse virtual
   if(digitalRead(3) == HIGH){
     Mouse.release();
   }
@@ -78,11 +76,6 @@ void loop(){
 ----
 [%hardbreaks]
 
-[float]
-=== Notas e Advertências
-When you use the `Mouse.release()` command, the Arduino takes over your mouse! Make sure you have control before you use the command. A pushbutton to toggle the mouse control state is effective.
-
---
 // HOW TO USE SECTION ENDS
 
 
@@ -94,11 +87,11 @@ When you use the `Mouse.release()` command, the Arduino takes over your mouse! M
 === Ver Também
 
 [role="language"]
-#LINGUAGEM# link:../mouseclick[Mouse.click()]
-#LINGUAGEM# link:../mouseend[Mouse.end()]
-#LINGUAGEM# link:../mousemove[Mouse.move()]
-#LINGUAGEM# link:../mousepress[Mouse.press()]
-#LINGUAGEM# link:../mouseispressed[Mouse.isPressed()]
+#LINGUAGEM# link:../mouseclick[Mouse.click()] +
+#LINGUAGEM# link:../mouseend[Mouse.end()] +
+#LINGUAGEM# link:../mousemove[Mouse.move()] +
+#LINGUAGEM# link:../mousepress[Mouse.press()] +
+#LINGUAGEM# link:../mouseispressed[Mouse.isPressed()] +
 
 --
 // SEE ALSO SECTION ENDS

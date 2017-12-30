@@ -1,12 +1,8 @@
 ---
 title: return
 categories: [ "Structure" ]
-subCategories: [ "Control Structure" ]
+subCategories: [ "Estruturas de Controle" ]
 ---
-
-
-
-
 
 = return
 
@@ -17,7 +13,7 @@ subCategories: [ "Control Structure" ]
 
 [float]
 === Descrição
-Terminate a function and return a value from a function to the calling function, if desired.
+Termina uma função e retorna um valor, caso desejado.
 [%hardbreaks]
 
 
@@ -27,13 +23,13 @@ Terminate a function and return a value from a function to the calling function,
 ----
 return;
 
-return value; // both forms are valid
+return valor; // ambas as formas são válidas
 ----
 
 
 [float]
 === Parâmetros
-`value': any variável ou constante type
+`valor': qualquer variável ou constante de qualquer tipo de dado
 
 --
 // OVERVIEW SECTION ENDS
@@ -47,11 +43,11 @@ return value; // both forms are valid
 
 [float]
 === Código de Exemplo
-A function to compare a sensor input to a threshold
+Uma função para comparar a saída de um sensor com um limiar
 
 [source,arduino]
 ----
- int checkSensor(){
+ int checaSensor(){
     if (analogRead(0) > 400) {
         return 1;
     }
@@ -61,19 +57,19 @@ A function to compare a sensor input to a threshold
 }
 ----
 
-The return keyword is handy to test a section of code without having to "comment out" large sections of possibly buggy code.
-[source,arduino]
-----
-void loop(){
+//The return keyword is handy to test a section of code without having to "comment out" large sections of possibly buggy code.
+//[source,arduino]
+//----
+//void loop(){
 
 // brilliant code idea to test here
 
-return;
+//return;
 
 // the rest of a dysfunctional sketch here
 // this code will never be executed
-}
-----
+//}
+//----
 [%hardbreaks]
 
 --

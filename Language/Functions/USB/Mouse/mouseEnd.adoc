@@ -76,14 +76,14 @@ void loop(){
 --
 
 [float]
-=== See also
+=== Ver Também
 
 [role="language"]
-* #LANGUAGE# link:../mouseclick[Mouse.click()]
-* #LANGUAGE# link:../mousemove[Mouse.move()]
-* #LANGUAGE# link:../mousepress[Mouse.press()]
-* #LANGUAGE# link:../mouserelease[Mouse.release()]
-* #LANGUAGE# link:../mouseispressed[Mouse.isPressed()]
+#LINGUAGEM# link:../mouseclick[Mouse.click()]
+#LINGUAGEM# link:../mousemove[Mouse.move()]
+#LINGUAGEM# link:../mousepress[Mouse.press()]
+#LINGUAGEM# link:../mouserelease[Mouse.release()]
+#LINGUAGEM# link:../mouseispressed[Mouse.isPressed()]
 
 --
 // SEE ALSO SECTION ENDS

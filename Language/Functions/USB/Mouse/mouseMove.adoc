@@ -126,7 +126,7 @@ int readAxis(int axisNumber) {
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
+=== Notas e Advertências
 When you use the `Mouse.move()` command, the Arduino takes over your mouse! Make sure you have control before you use the command. A pushbutton to toggle the mouse control state is effective.
 
 --
@@ -138,14 +138,14 @@ When you use the `Mouse.move()` command, the Arduino takes over your mouse! Make
 --
 
 [float]
-=== See also
+=== Ver Também
 
 [role="language"]
-* #LANGUAGE# link:../mouseclick[Mouse.click()]
-* #LANGUAGE# link:../mouseend[Mouse.end()]
-* #LANGUAGE# link:../mousepress[Mouse.press()]
-* #LANGUAGE# link:../mouserelease[Mouse.release()]
-* #LANGUAGE# link:../mouseispressed[Mouse.isPressed()]
+#LINGUAGEM# link:../mouseclick[Mouse.click()]
+#LINGUAGEM# link:../mouseend[Mouse.end()]
+#LINGUAGEM# link:../mousepress[Mouse.press()]
+#LINGUAGEM# link:../mouserelease[Mouse.release()]
+#LINGUAGEM# link:../mouseispressed[Mouse.isPressed()]
 
 --
 // SEE ALSO SECTION ENDS

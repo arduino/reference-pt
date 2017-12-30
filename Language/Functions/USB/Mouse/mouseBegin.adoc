@@ -2,10 +2,6 @@
 title: Mouse.begin()
 ---
 
-
-
-
-
 = Mouse.begin()
 
 
@@ -15,7 +11,7 @@ title: Mouse.begin()
 
 [float]
 === Descrição
-Begins emulating the mouse connected to a computer. `begin()` must be called before controlling the computer. To end control, use link:../mouseend[Mouse.end()].
+Quando usado com uma placa com USB nativa, como o Leonardo ou Due, `Mouse.begin()` começa a emulação de um mouse USB conectado ao computador. A função `begin()` deve ser chamada antes das outras funções de controle do mouse. Para encerrar o controle, use link:../mouseend[Mouse.end()].
 [%hardbreaks]
 
 
@@ -26,17 +22,14 @@ Begins emulating the mouse connected to a computer. `begin()` must be called bef
 
 [float]
 === Parâmetros
-Nothing
+Nenhum
 
 [float]
 === Retorna
-Nothing
+Nada
 
 --
 // OVERVIEW SECTION ENDS
-
-
-
 
 // HOW TO USE SECTION STARTS
 [#howtouse]
@@ -57,7 +50,7 @@ void setup(){
 
 void loop(){
 
-  //initiate the Mouse library when button is pressed
+  // inicia a biblioteca Mouse qaundo o botão é pressionado
   if(digitalRead(2) == HIGH){
      Mouse.begin();
    }
@@ -77,12 +70,12 @@ void loop(){
 === Ver Também
 
 [role="language"]
-#LINGUAGEM# link:../mouseclick[Mouse.click()]
-#LINGUAGEM# link:../mouseend[Mouse.end()]
-#LINGUAGEM# link:../mousemove[Mouse.move()]
-#LINGUAGEM# link:../mousepress[Mouse.press()]
-#LINGUAGEM# link:../mouserelease[Mouse.release()]
-#LINGUAGEM# link:../mouseispressed[Mouse.isPressed()]
+#LINGUAGEM# link:../mouseclick[Mouse.click()] +
+#LINGUAGEM# link:../mouseend[Mouse.end()] +
+#LINGUAGEM# link:../mousemove[Mouse.move()] +
+#LINGUAGEM# link:../mousepress[Mouse.press()] +
+#LINGUAGEM# link:../mouserelease[Mouse.release()] +
+#LINGUAGEM# link:../mouseispressed[Mouse.isPressed()] +
 
 --
 // SEE ALSO SECTION ENDS

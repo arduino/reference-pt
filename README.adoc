@@ -7,7 +7,7 @@ Obrigado por se interessar em contribuir para a documentação de referência, i
 A tradução da documentação para Português está em progresso e pode ser encontrada nessa https://www.arduino.cc/reference/pt/[Página]
 
 == Criação e Edição de Conteúdo
-Se você quer contribuir com um novo conteúdo, crie um novo arquivo (com qualquer editor de texto ou código) e salve-o como um arquivo formato AsciiDoc (extensção ".adoc"). Não use parênteses ou qualquer outro caractere especial no nome do arquivo.  
+Se você quer contribuir com um novo conteúdo, crie um novo arquivo (com qualquer editor de texto ou código) e salve-o como um arquivo formato AsciiDoc (extensão ".adoc"). Não use parênteses ou qualquer outro caractere especial no nome do arquivo.  
 No link https://raw.githubusercontent.com/arduino/reference-en/master/AsciiDoc_sample/AsciiDoc_Dictionary/AsciiDoc_Template-Dictionary.adoc[`reference-en/AsciiDoc_sample/AsciiDoc_Dictionary`] você vai encontrar uma visão geral da sintaxe AsciiDoc. Isso inclui títulos, texto, links, imagens, tabelas, código e vários _embeds_ (vídeo, slideshow, áudio e código). Você pode ver esse exemplo renderizado https://www.arduino.cc/reference/pt/asciidoc_sample/asciidoc_dictionary/asciidoc_template-dictionary/[aqui].
 
 Se você quer contribuir para a documentação de referência da linguagem ou editar um conteúdo existente, há dois templates disponíveis em reference-pt/AsciiDoc_sample/Reference_Terms:

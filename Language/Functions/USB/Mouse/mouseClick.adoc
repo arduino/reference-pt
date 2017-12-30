@@ -2,9 +2,6 @@
 title: Mouse.click()
 ---
 
-
-
-
 = Mouse.click()
 
 
@@ -14,29 +11,31 @@ title: Mouse.click()
 
 [float]
 === Descrição
-Sends a momentary click to the computer at the location of the cursor. This is the same as pressing and immediately releasing the mouse button.
+Envia um clique momentâneo para o computador, na localização atual do cursor. Isso equivale a pressionar e liberar imediatamente o botão do mouse.
 
-`Mouse.click()` defaults to the left mouse button.
+`Mouse.click()` por padrão usa o botão esquerdo do mouse, mas os outros botões podem ser passados para a função com um argumento opcional.
 [%hardbreaks]
 
 
 [float]
 === Sintaxe
 `Mouse.click();` +
-`Mouse.click(button);`
+`Mouse.click(botão);`
 
 
 [float]
 === Parâmetros
-`button`: which mouse button to press - `char`
+`botão`: qual o botão do mouse a ser pressionado. Um dos valores abaixo. - `char`
 
-* `MOUSE_LEFT` (default)
+* `MOUSE_LEFT` (padrão)
 * `MOUSE_RIGHT`
 * `MOUSE_MIDDLE`
 
+Que são o botão esquerdo, direito e do meio, respectivamente.
+
 [float]
 === Retorna
-Nothing
+Nada
 
 --
 // OVERVIEW SECTION ENDS
@@ -59,12 +58,12 @@ Nothing
 
 void setup(){
   pinMode(2,INPUT);
-  //initiate the Mouse library
+  // inicializa a biblioteca mouse
   Mouse.begin();
 }
 
 void loop(){
-  //if the button is pressed, send a left mouse click
+  //se o botão for pressionado, envia um clique com o botão esquerdo do mouse
   if(digitalRead(2) == HIGH){
     Mouse.click();
   }
@@ -74,7 +73,7 @@ void loop(){
 
 [float]
 === Notas e Advertências
-When you use the `Mouse.click()` command, the Arduino takes over your mouse! Make sure you have control before you use the command. A pushbutton to toggle the mouse control state is effective.
+Quando você usa a função `Mouse.click()`, o Arduino toma o controle do computador! Tenha certeza que você tem controle de quando as comanndos vão ser enviados antes de usar essa função. Pode ser difícil gravar um novo código no Arduino se ele estiver enviando cliques  o tempo todo. Um botão para ativar/desativar o controle do mouse emulado é bastante efetivo.
 
 --
 // HOW TO USE SECTION ENDS
@@ -88,11 +87,11 @@ When you use the `Mouse.click()` command, the Arduino takes over your mouse! Mak
 === Ver Também
 
 [role="language"]
-#LINGUAGEM# link:../mouseend[Mouse.end()]
-#LINGUAGEM# link:../mousemove[Mouse.move()]
-#LINGUAGEM# link:../mousepress[Mouse.press()]
-#LINGUAGEM# link:../mouserelease[Mouse.release()]
-#LINGUAGEM# link:../mouseispressed[Mouse.isPressed()]
+#LINGUAGEM# link:../mouseend[Mouse.end()] +
+#LINGUAGEM# link:../mousemove[Mouse.move()] +
+#LINGUAGEM# link:../mousepress[Mouse.press()] +
+#LINGUAGEM# link:../mouserelease[Mouse.release()] +
+#LINGUAGEM# link:../mouseispressed[Mouse.isPressed()] +
 
 --
 // SEE ALSO SECTION ENDS

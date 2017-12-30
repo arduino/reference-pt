@@ -2,9 +2,6 @@
 title: Mouse.isPressed()
 ---
 
-
-
-
 = Mouse.isPressed()
 
 
@@ -14,30 +11,32 @@ title: Mouse.isPressed()
 
 [float]
 === Descrição
-Checks the current status of all mouse buttons, and reports if any are pressed or not.
+Checa o estado atual de um botão do mouse emulado e reporta se o mesmo está pressionado ou não.
 [%hardbreaks]
 
 
 [float]
 === Sintaxe
 `Mouse.isPressed();` +
-`Mouse.isPressed(button);`
+`Mouse.isPressed(botão);`
 
 [float]
 === Parâmetros
-When there is no value passed, it checks the status of the left mouse button.
+Quando nenhum argumento é passado, a função checa o estado do botão esquerdo.
 
-`button`: which mouse button to check - `char`
+`botão`: qual botão do mouse checar - `char`
 
-* `MOUSE_LEFT (default)`
+* `MOUSE_LEFT (padrão)`
 
 * `MOUSE_RIGHT`
 
 * `MOUSE_MIDDLE`
 
+Os argumentos acima são o botão esquerdo, direito e do meio, respectivamente.
+
 [float]
 === Retorna
-`boolean` : reports whether a button is pressed or not.
+Se o botão do mouse passado para a função está pressionado ou não - `boolean`
 
 --
 // OVERVIEW SECTION ENDS
@@ -59,30 +58,35 @@ When there is no value passed, it checks the status of the left mouse button.
 #include <Mouse.h>
 
 void setup(){
-  //The switch that will initiate the Mouse press
+  // o botão que inicia o clique do mouse
   pinMode(2,INPUT);
-  //The switch that will terminate the Mouse press
+  // o botão que termina o clique do mouse
   pinMode(3,INPUT);
-  //Start serial communication with the computer
+  
+  // inicia a comunicação serial com o computador
   Serial1.begin(9600);
-  //initiate the Mouse library
+  
+  // inicia a biblioteca Mouse
   Mouse.begin();
 }
 
 void loop(){
-  //a variable for checking the button's state
+  //  variável para checar o esatdo do botão do mouse
   int mouseState=0;
-  //if the switch attached to pin 2 is closed, press and hold the left mouse button and save the state ina  variable
+  
+  //se o botão conectado ao pino 2 for pressionado, aperta e segura o botão do mouse virtual e salva o estado do mesmo na variável
   if(digitalRead(2) == HIGH){
     Mouse.press();
     mouseState=Mouse.isPressed();
   }
-  //if the switch attached to pin 3 is closed, release the left mouse button and save the state in a variable
+  
+  //se o botão conectado ao pino 3 for pressionado, libera o botão do mouse virtual e salva o estado do mesmo na variável
   if(digitalRead(3) == HIGH){
     Mouse.release();
     mouseState=Mouse.isPressed();
   }
-  //print out the current mouse button state
+  
+  // imprime o estado atual do botão do mouse emulado
   Serial1.println(mouseState);
   delay(10);
 }
@@ -100,11 +104,11 @@ void loop(){
 === Ver Também
 
 [role="language"]
-#LINGUAGEM# link:../mouseclick[Mouse.click()]
-#LINGUAGEM# link:../mouseend[Mouse.end()]
-#LINGUAGEM# link:../mousemove[Mouse.move()]
-#LINGUAGEM# link:../mousepress[Mouse.press()]
-#LINGUAGEM# link:../mouserelease[Mouse.release()]
+#LINGUAGEM# link:../mouseclick[Mouse.click()] +
+#LINGUAGEM# link:../mouseend[Mouse.end()] +
+#LINGUAGEM# link:../mousemove[Mouse.move()] +
+#LINGUAGEM# link:../mousepress[Mouse.press()] +
+#LINGUAGEM# link:../mouserelease[Mouse.release()] +
 
 --
 // SEE ALSO SECTION ENDS

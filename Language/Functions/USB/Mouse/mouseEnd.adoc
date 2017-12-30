@@ -2,9 +2,6 @@
 title: Mouse.end()
 ---
 
-
-
-
 = Mouse.end()
 
 
@@ -14,7 +11,7 @@ title: Mouse.end()
 
 [float]
 === Descrição
-Stops emulating the mouse connected to a computer. To start control, use link:../mousebegin[Mouse.begin()].
+Encerra a emulação do mouse USB. Para iniciar o controle, use link:../mousebegin[Mouse.begin()].
 [%hardbreaks]
 
 
@@ -25,11 +22,11 @@ Stops emulating the mouse connected to a computer. To start control, use link:..
 
 [float]
 === Parâmetros
-Nothing
+Nenhum
 
 [float]
 === Retorna
-Nothing
+Nada
 
 --
 // OVERVIEW SECTION ENDS
@@ -52,13 +49,13 @@ Nothing
 
 void setup(){
   pinMode(2,INPUT);
-  //initiate the Mouse library
+  // inicializa a biblioteca Mouse
   Mouse.begin();
 }
 
 void loop(){
-  //if the button is pressed, send a left mouse click
-  //then end the Mouse emulation
+  // se o botão for pressionado, envia um clique com o botão esquerdo do mouse
+  // e depois encerra a emulação do mouse
   if(digitalRead(2) == HIGH){
     Mouse.click();
     Mouse.end();
@@ -79,11 +76,11 @@ void loop(){
 === Ver Também
 
 [role="language"]
-#LINGUAGEM# link:../mouseclick[Mouse.click()]
-#LINGUAGEM# link:../mousemove[Mouse.move()]
-#LINGUAGEM# link:../mousepress[Mouse.press()]
-#LINGUAGEM# link:../mouserelease[Mouse.release()]
-#LINGUAGEM# link:../mouseispressed[Mouse.isPressed()]
+#LINGUAGEM# link:../mouseclick[Mouse.click()] +
+#LINGUAGEM# link:../mousemove[Mouse.move()] +
+#LINGUAGEM# link:../mousepress[Mouse.press()] +
+#LINGUAGEM# link:../mouserelease[Mouse.release()] +
+#LINGUAGEM# link:../mouseispressed[Mouse.isPressed()] +
 
 --
 // SEE ALSO SECTION ENDS

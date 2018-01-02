@@ -1,12 +1,8 @@
 ---
 title: goto
 categories: [ "Structure" ]
-subCategories: [ "Control Structure" ]
+subCategories: [ "Estruturas de Controle" ]
 ---
-
-
-
-
 
 = goto
 
@@ -17,7 +13,7 @@ subCategories: [ "Control Structure" ]
 
 [float]
 === Descrição
-Transfers program flow to a labeled point in the program
+Transfere o fluxo do programa para um ponto rotulado no código.
 [%hardbreaks]
 
 
@@ -25,15 +21,13 @@ Transfers program flow to a labeled point in the program
 === Sintaxe
 [source,arduino]
 ----
-label:
+rótulo:
 
-goto label; // sends program flow to the label
+goto rótulo; // envia o fluxo do programa de volta para o rótulo
 ----
 
 --
 // OVERVIEW SECTION ENDS
-
-
 
 
 // HOW TO USE SECTION STARTS
@@ -42,27 +36,27 @@ goto label; // sends program flow to the label
 
 [float]
 === Código de Exemplo
-
+O código abaixo "foge" de dentro de todos os laços caso a leitura no pino analógico 0 seja maior que 250. 
 [source,arduino]
 ----
 for(byte r = 0; r < 255; r++){
     for(byte g = 255; g > -1; g--){
         for(byte b = 0; b < 255; b++){
-            if (analogRead(0) > 250){ goto bailout;}
-            // more statements ...
+            if (analogRead(0) > 250){ goto cancelar;}
+            // mais comandos ...
         }
     }
 }
 
-bailout:
+cancelar:
 ----
 [%hardbreaks]
 
 [float]
 === Notas e Advertências
-The use of `goto` is discouraged in C programming, and some authors of C programming books claim that the `goto` statement is never necessary, but used judiciously, it can simplify certain programs. The reason that many programmers frown upon the use of goto is that with the unrestrained use of `goto` statements, it is easy to create a program with undefined program flow, which can never be debugged.
+O uso do `goto` é *desencorajado* na programação em C, e alguns autores de livros sobre a linguagem C afirmam que o uso do comando `goto` nunca é necessário, mas se usado judiciosamente ele pode simplificar certos programas. A pela qual muitos programadores desaprovam o uso do goto é que com o uso descuidado de comando `goto`, é fácil criar um programa com fluxo indefinido, que não pode ser depurado.
 
-With that said, there are instances where a `goto` statement can come in handy, and simplify coding. One of these situations is to break out of deeply nested link:../for[for] loops, or link:../if[if] logic blocks, on a certain condition.
+Tendo dito isso, há algumas instâncias onde o comando `goto` pode ser considerado, por simplificar o código. Uma dessas situações é sair de laços link:../for[for] profundamente aninhados, ou blocos link:../if[if], em determinada condição.
 [%hardbreaks]
 
 --

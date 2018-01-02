@@ -1,40 +1,35 @@
 ---
 title: detachInterrupt()
 categories: [ "Functions" ]
-subCategories: [ "External Interrupts" ]
+subCategories: [ "Interrupções Externas" ]
 ---
 
-
-
-
-
 = detachInterrupt()
-
 
 // OVERVIEW SECTION STARTS
 [#overview]
 --
 
 [float]
-=== Description
-Turns off the given interrupt.
+=== Descrição
+Desativa a interrupção especificada.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Sintaxe
 `detachInterrupt()` +
-`detachInterrupt(pin)` 	(Arduino Due only)
+`detachInterrupt(pino)` 	(Apenas Arduino Due)
 
 [float]
-=== Parameters
-`interrupt`: the number of the interrupt to disable (see link:../attachinterrupt[attachInterrupt()] for more details).
+=== Parâmetros
+`interrupt`: o número da interrupção a ser desativada (veja link:../attachinterrupt[attachInterrupt()] para mais detalhes).
 
-`pin`: the pin number of the interrupt to disable (Arduino Due only)
+`pino`: o número do pino da interrupção a ser desativada (apenas Arduino Due)
 
 [float]
-=== Returns
-Nothing
+=== Retorna
+Nada
 
 --
 // OVERVIEW SECTION ENDS

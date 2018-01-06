@@ -1,16 +1,11 @@
 ---
 title: "//"
-title_expanded: single line comment
+title_expanded: comentário
 categories: [ "Structure" ]
-subCategories: [ "Further Sintaxe" ]
+subCategories: [ "Outros Elementos da Sintaxe" ]
 ---
 
-
-
-
-
-= // Single Line Comment
-
+= // Comentário de única linha
 
 // OVERVIEW SECTION STARTS
 [#overview]
@@ -18,14 +13,12 @@ subCategories: [ "Further Sintaxe" ]
 
 [float]
 === Descrição
-*Comments* are lines in the program that are used to inform yourself or others about the way the program works. They are ignored by the compiler, and not exported to the processor, so they don't take up any space in the microcontroller's flash memory. Comments' only purpose is to help you understand (or remember), or to inform others about how your program works.
+*Comentários* são textos no programa que são usadas para informar você e a outros a forma como o programa funciona. Eles são ignorados pelo compilador, e não fazem parte do arquivo gravado no chip, então não ocupam nenhum espaço na memória flash do microcontrolador. O propósito dos comentários é lhe ajudar a entender (ou lembrar) como funcionam partes do seu código, ou informar a outros também como o seu programa funciona.
 [%hardbreaks]
 
-A *single line comment* begins with `//` (two adjacent slashes). This comment ends automatically at the end of a line. whatever follows `//` till the end of a line will be ignored by the compiler.
+Um *comentário de uma só linha* começa com `//` (duas barras adjacentes). Esse tipo de comentário termina automaticamente no final da linha. O que quer que seja que estiver após `//` até o final da linha será ignorado pelo compilador.
 --
 // OVERVIEW SECTION ENDS
-
-
 
 
 // HOW TO USE SECTION STARTS
@@ -34,29 +27,27 @@ A *single line comment* begins with `//` (two adjacent slashes). This comment en
 
 [float]
 === Código de Exemplo
-There are two different ways of marking a line as a comment:
+Há duas formas diferentes de se usar um comentário de uma só linha:
 
 [source,arduino]
 ----
-// Pin 13 has an LED connected on most Arduino boards.
-// give it a name:
+// O pino 13 tem um LED conectado na maioria das placas Arduino.
+// Dá um nome para esse LED:
 int led = 13;
 
 
-digitalWrite(led, HIGH);   // turn the LED on (HIGH is the voltage level)
+digitalWrite(led, HIGH);   // acendo o LED (HIGH é o nível da tensão)
 ----
 [%hardbreaks]
 
 [float]
 === Notas e Advertências
-When experimenting with code, "commenting out" parts of your program is a convenient way to remove lines that may be buggy. This leaves the lines in the code, but turns them into comments, so the compiler just ignores them. This can be especially useful when trying to locate a problem, or when a program refuses to compile and the compiler error is cryptic or unhelpful.
+Quando experimentar com código, "comentar" partes de seu programa é uma forma conveniente de remover partes problemáticas do seu código temporariamente. Isso mantém as linhas de código, mas as transforma em comentários, se forma que o compilador apenas as ignora. Isso pode ser útil quando você estiver procurando um problema, ou quando um programa se recusa a compilar e o erro de compilação é enigmático ou inútil.
 [%hardbreaks]
 
 
 --
 // HOW TO USE SECTION ENDS
-
-
 
 
 // SEE ALSO SECTION BEGINS

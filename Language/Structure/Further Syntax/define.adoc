@@ -2,15 +2,10 @@
 title: "#define"
 title_expanded: define
 categories: [ "Structure" ]
-subCategories: [ "Further Sintaxe" ]
+subCategories: [ "Outros Elementos da Sintaxe" ]
 ---
 
-
-
-
-
 = #define
-
 
 // OVERVIEW SECTION STARTS
 [#overview]
@@ -18,22 +13,22 @@ subCategories: [ "Further Sintaxe" ]
 
 [float]
 === Descrição
-`#define` is a useful C component that allows the programmer to give a name to a constant value before the program is compiled. Defined constants in arduino don't take up any program memory space on the chip. The compiler will replace references to these constants with the defined value at compile time.
+`#define` é uma diretiva muito útil da linguagem C que  permite ao programador dar um nome a um valor constante antes de o programa ser compilado. Constantes definidas no arduino não ocupam nenhum espaço na memória de programa do chip. O compilador irá substituir referências a essas constantes pelo valor definido no tempo de compilação.
 [%hardbreaks]
 
-This can have some unwanted side effects though, if for example, a constant name that had been #defined is included in some other constant or variable name. In that case the text would be replaced by the #defined number (or text).
+Isso pode ter alguns efeitos colaterais desagradáveis no entanto, por exemplo, se o nome de uma constante que foi definida com #defined é incluído em outra constante ou nome de uma variável. Nesse caso o texto seria trocado pelo número  (ou texto) definido com #define.
 [%hardbreaks]
 
-In general, the link:../../../variables/variable-scope\--qualifiers/const[const] keyword is preferred for defining constants and should be used instead of #define.
+Em geral, a palavra-chave link:../../../variables/variable-scope\--qualifiers/const[const] é recomendada para se definir constantes e deveria ser usada em vez de #define.
 [%hardbreaks]
 
 [float]
 === Sintaxe
 [source,arduino]
 ----
-#define constantName value
+#define nomeDaConstante valor
 ----
-Note that the # is necessary.
+Note que o # é necessário.
 [%hardbreaks]
 
 --
@@ -51,25 +46,25 @@ Note that the # is necessary.
 
 [source,arduino]
 ----
-#define ledPin 3
-// The compiler will replace any mention of ledPin with the value 3 at compile time.
+#define pinoLED 3
+// O compilador irá substituir qualquer menção de pinoLED com o valor 3 no tempo de compilação.
 ----
 [%hardbreaks]
 
 [float]
 === Notas e Advertências
-There is no semicolon after the #define statement. If you include one, the compiler will throw cryptic errors further down the page.
+Não há ponto e vírgula após a diretiva #define. Se você incluir uma, o compilador irá acusar erros.
 
 [source,arduino]
 ----
-#define ledPin 3;    // this is an error
+#define pinoLED 3;    // isso é inválido
 ----
 
-Similarly, including an equal sign after the #define statement will also generate a cryptic compiler error further down the page.
+Similarmente, incluir sinal de igual após #define também resultará em erros
 
 [source,arduino]
 ----
-#define ledPin  = 3  // this is also an error
+#define pinoLED  = 3  // também é inválido
 ----
 [%hardbreaks]
 
@@ -87,8 +82,8 @@ Similarly, including an equal sign after the #define statement will also generat
 === Ver Também
 
 [role="language"]
-#LINGUAGEM#	link:../../../variables/variable-scope\--qualifiers/const[const]
-#LINGUAGEM#	link:../../../variables/constants/constants[Constants]
+#LINGUAGEM#	link:../../../variables/variable-scope\--qualifiers/const[palavra-chave const] +
+#LINGUAGEM#	link:../../../variables/constants/constants[Constantes]
 
 --
 // SEE ALSO SECTION ENDS

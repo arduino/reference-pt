@@ -2,12 +2,8 @@
 title: "#include"
 title_expanded: include
 categories: [ "Structure" ]
-subCategories: [ "Further Sintaxe" ]
+subCategories: [ "Outros Elementos da Sintaxe" ]
 ---
-
-
-
-
 
 = #include
 
@@ -18,13 +14,13 @@ subCategories: [ "Further Sintaxe" ]
 
 [float]
 === Descrição
-`#include` is used to include outside libraries in your sketch. This gives the programmer access to a large group of standard C libraries (groups of pre-made functions), and also libraries written especially for Arduino.
+A diretiva `#include` é usada para incluir bibliotecas externas ao seu sketch. Isso dá acesso a um grande número de bibliotecas padrão da linguagem C (grupos de funções prontas), e também bibliotecas escritas especialmente para a linguagem Arduino.
 [%hardbreaks]
 
-The main reference page for AVR C libraries (AVR is a reference to the Atmel chips on which the Arduino is based) is http://www.nongnu.org/avr-libc/user-manual/modules.html[here^].
+A referência principal para bibliotecas C AVR C (AVR é a referência dos chips Microchip (previamente Atmel) utilizados em muitas placas Arduino) pode ser encontrada http://www.nongnu.org/avr-libc/user-manual/modules.html[aqui^].
 [%hardbreaks]
 
-Note that `#include`, similar to link:../define[`#define`], has no semicolon terminator, and the compiler will yield cryptic error messages if you add one.
+Note que `#include`, similarmente a link:../define[`#define`], não é terminada com um ponto e vírgula, e o compilador irá mostrar  mensagens de erro enigmáticas se você adicionar um.
 [%hardbreaks]
 
 --
@@ -39,7 +35,7 @@ Note that `#include`, similar to link:../define[`#define`], has no semicolon ter
 
 [float]
 === Código de Exemplo
-This example includes a library that is used to put data into the program space _flash_ instead of _ram_. This saves the ram space for dynamic memory needs and makes large lookup tables more practical.
+Esse exemplo inclui uma biblioteca que é usada para colocar dados no espaço de programa (memória _flash_) em vez da _ram_. Isso salva  espaço da ram para necessidades dinâmicas e faz tabelas de consulta (lookup tables) mais práticas.
 
 
 [source,arduino]

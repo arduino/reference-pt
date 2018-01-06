@@ -1,6 +1,6 @@
 ---
 title: "/* */"
-title_expanded: block comment
+title_expanded: commentário em bloco
 categories: [ "Structure" ]
 subCategories: [ "Outros Elementos da Sintaxe" ]
 ---

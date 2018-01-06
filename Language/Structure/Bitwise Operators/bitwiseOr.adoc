@@ -2,15 +2,10 @@
 title: "|"
 title_expanded: bitwise or
 categories: [ "Structure" ]
-subCategories: [ "Bitwise Operators" ]
+subCategories: [ "Operadores Bitwise" ]
 ---
 
-
-
-
-
-= | Bitwise OR
-
+= | OU Bitwise
 
 // OVERVIEW SECTION STARTS
 [#overview]
@@ -18,15 +13,15 @@ subCategories: [ "Bitwise Operators" ]
 
 [float]
 === Descrição
-The bitwise OR operator in C++ is the vertical bar symbol, |. Like the & operator, | operates independently each bit in its two surrounding integer expressions, but what it does is different (of course). The bitwise OR of two bits is 1 if either or both of the input bits is 1, otherwise it is 0.
+O operador bitwise OU em C++ é o caractere barra vertical, `|`. Da mesma forma que o operador `&`, `|` opera  independentemente em cada bit dos dois operandos, mas seu propósito é diferente (duh!). O resultado da operação OU entre dois bits é 1 se qualquer um ou ambos os bits de entrada são 1, do contrário é 0.
 [%hardbreaks]
 
-In other words:
+Explicado de outra forma:
 
-    0  0  1  1    operand1
-    0  1  0  1    operand2
+    0  0  1  1    operando1
+    0  1  0  1    operando2
     ----------
-    0  1  1  1    (operand1 | operand2) - returned result
+    0  1  1  1    (operando1 | operando2) - resultado retornado
 [%hardbreaks]
 
 --
@@ -43,18 +38,18 @@ In other words:
 
 [source,arduino]
 ----
-int a =  92;    // in binary: 0000000001011100
-int b = 101;    // in binary: 0000000001100101
-int c = a | b;  // result:    0000000001111101, or 125 in decimal.
+int a =  92;    // em binário: 0000000001011100
+int b = 101;    // em binário: 0000000001100101
+int c = a | b;  // resultado:    0000000001111101, ou 125 em decimal.
 ----
 [%hardbreaks]
 
-One of the most common uses of the Bitwise OR is to set multiple bits in a bit-packed number.
+Um dos usos mais comuns do OU bit-a-bit é "setar" um ou mais bits em um valor.
 
 [source,arduino]
 ----
-DDRD = DDRD | B11111100; // set direction bits for pins 2 to 7, leave 0 and 1 untouched (xx | 00 == xx)
-// same as pinMode(pin, OUTPUT) for pins 2 to 7
+DDRD = DDRD | B11111100; // configura os bits de direção para os pinos 2 a 7, deixa 0 e 1 intocados (xx | 00 == xx)
+// o mesmo que pinMode(pino, OUTPUT) para os pinos 2 a 7
 ----
 
 --
@@ -70,10 +65,10 @@ DDRD = DDRD | B11111100; // set direction bits for pins 2 to 7, leave 0 and 1 un
 
 
 [role="language"]
-#LINGUAGEM# link:../../boolean-operators/logicalor[|| Logical OR]
+#LINGUAGEM# link:../../boolean-operators/logicalor[|| OU lógico]
 
 [role="example"]
-#EXEMPLO# https://www.arduino.cc/playground/Code/BitMath[BitMath Tutorial^]
+#EXEMPLO# https://www.arduino.cc/playground/Code/BitMath[Tutorial BitMath (Em Inglês)^]
 
 --
 // SEE ALSO SECTION ENDS

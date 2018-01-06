@@ -2,15 +2,10 @@
 title: "~"
 title_expanded: bitwise not
 categories: [ "Structure" ]
-subCategories: [ "Bitwise Operators" ]
+subCategories: [ "Operadores Bitwise (Bit-a-Bit)" ]
 ---
 
-
-
-
-
-= ~ Bitwise NOT
-
+= ~ Bitwise NÃO
 
 // OVERVIEW SECTION STARTS
 [#overview]
@@ -18,14 +13,14 @@ subCategories: [ "Bitwise Operators" ]
 
 [float]
 === Descrição
-The bitwise NOT operator in C++ is the tilde character `~`. Unlike & and |, the bitwise NOT operator is applied to a single operand to its right. Bitwise NOT changes each bit to its opposite: 0 becomes 1, and 1 becomes 0.
+O operador NÃO bit-a-bit em C++ é o caractere til `~`. Diferentemente de `&` e `|`, o operador bitwise NÃO é aplicado a um único operando a sua direita. O NÃO Bitwise muda cada bit para seu valor oposto: 0 se torna 1, e 1 se torna 0.
 [%hardbreaks]
 
-In other words:
+Em outras palavras:
 
-    0  1    operand1
+    0  1    operando1
     -----
-    1  0   ~operand1
+    1  0   ~operando1
 [%hardbreaks]
 --
 // OVERVIEW SECTION ENDS
@@ -41,18 +36,18 @@ In other words:
 
 [source,arduino]
 ----
-int a = 103;    // binary:  0000000001100111
-int b = ~a;     // binary:  1111111110011000 = -104
+int a = 103;    // binário:  0000000001100111
+int b = ~a;     // binário:  1111111110011000 = -104
 ----
 [%hardbreaks]
 
 [float]
 === Notas e Advertências
-You might be surprised to see a negative number like -104 as the result of this operation. This is because the highest bit in an int variable is the so-called sign bit. If the highest bit is 1, the number is interpreted as negative. This encoding of positive and negative numbers is referred to as two's complement. For more information, see the Wikipedia article on http://en.wikipedia.org/wiki/Twos_complement[two's complement^].
+Você pode ficar surpreso ao ver um número negativo como -104 como o resultado dessa operação. Isso acontece porque o bit mais significativo de um valor `int` é o chamado bit de sinal. Se esse bit é 1, o número é interpretado como negativo. Essa codificação de números positivos e negativos é referido como complemento de dois. Para mais informações, veja o arquivo da Wikipédia a respeito do https://pt.wikipedia.org/wiki/Complemento_para_dois[complemento de dois^].
 
-As an aside, it is interesting to note that for any integer x, ~x is the same as -x-1.
+Um comentário adicional: é interessante notar que para qualquer inteiro x, ~x é o mesmo que -x-1.
 
-At times, the sign bit in a signed integer expression can cause some unwanted surprises.
+As vezes, o bit de sinal em uma expressão pode causar alguns efeitos indesejados, veja a página do operador de deslocamento à direita (>>), por exemplo, para mais detalhes.
 [%hardbreaks]
 
 --
@@ -70,7 +65,7 @@ At times, the sign bit in a signed integer expression can cause some unwanted su
 [role="language"]
 
 [role="example"]
-#EXEMPLO# https://www.arduino.cc/playground/Code/BitMath[BitMath Tutorial^]
+#EXEMPLO# https://www.arduino.cc/playground/Code/BitMath[Tutorial BitMath (Em Inglês)^]
 
 --
 //SEE ALSO SECTION ENDS

@@ -5,11 +5,7 @@ categories: [ "Structure" ]
 subCategories: [ "Further Sintaxe" ]
 ---
 
-
-
-
-
-= /* */ Block Comment
+= /* */ Comentário de bloco
 
 
 // OVERVIEW SECTION STARTS
@@ -18,10 +14,10 @@ subCategories: [ "Further Sintaxe" ]
 
 [float]
 === Descrição
-*Comments* are lines in the program that are used to inform yourself or others about the way the program works. They are ignored by the compiler, and not exported to the processor, so they don't take up any space in the microcontroller's flash memory. Comments' only purpose is to help you understand (or remember), or to inform others about how your program works.
+*Comentários* são textos no programa que são usadas para informar você e a outros a forma como o programa funciona. Eles são ignorados pelo compilador, e não fazem parte do arquivo gravado no chip, então não ocupam nenhum espaço na memória flash do microcontrolador. O  propósito dos comentários lhe ajudar a entender (ou lembrar) como funcionam partes do seu código, ou informar a outros também como o seu programa funciona.
 [%hardbreaks]
 
-The beginning of a *block comment* or a *multi-line comment* is marked by the symbol `/\*` and the symbol `*/` marks its end. This type of a comment is called so as this can extend over more than one line; once the compiler reads the `/\*` it ignores whatever follows unitl it enounters a `*/`.
+O começo de um *comentário em bloco* ou *comentário de múltiplas linhas* é marcado pelo símbolo `/\*` e o símbolo `*/` marca o seu final. Esse tipo de comentário é chamado assim pois pode se estender por mais de uma linha; um vez que o compilador encontre o símbolo `/\*`, ele ignora o texto seguinte até encontrar um `*/`.
 
 // NOTE TO THE EDITOR: The '\' before the '*' in certain places are to escape the '*' from making the text bolder.
 // In places were '\' is not used before '*', it is not actually required.
@@ -39,28 +35,28 @@ The beginning of a *block comment* or a *multi-line comment* is marked by the sy
 === Código de Exemplo
 [source,arduino]
 ----
-/* This is a valid comment */
+/* Esse é um comentário válido */
 
 /*
   Blink
-  Turns on an LED on for one second, then off for one second, repeatedly.
+  Acende um LED por um segundo, depois apaga por um segundo, repetidamente.
 
-  This example code is in the public domain.
-  (Another valid comment)
+  Esse código encontra-se um domínio público.
+  (outro comentário válido)
 */
 
 /*
-  if (gwb == 0){   // single line comment is OK inside a multi-line comment
-  x = 3;           /* but not another multi-line comment - this is invalid */
+  if (gwb == 0){   // Comentários de única linha não permitidos dentro de um comentário em bloco 
+  x = 3;           /* Mas outro comentário de múltiplas linhas, não. Esse comentário é inválido */
   }
-// don't forget the "closing" comment - they have to be balanced!
+// Não esqueça o símbolo para "fechar" o comentário - deve estar balanceado!
 */
 ----
 [%hardbreaks]
 
 [float]
 === Notas e Advertências
-When experimenting with code, "commenting out" parts of your program is a convenient way to remove lines that may be buggy. This leaves the lines in the code, but turns them into comments, so the compiler just ignores them. This can be especially useful when trying to locate a problem, or when a program refuses to compile and the compiler error is cryptic or unhelpful.
+Quando experimentar com código, "comentar" partes de seu programa é uma forma conveniente de remover partes problemáticas do seu código tempoariamente. Isso mantém as linhas de código, mas as transforma em comentários, se forma que o compilador apenas as ignora. Isso pode ser útil quando você estiver procurando um problema, ou quando um programa se recusa a compilar e o erro de compilação é enigmático ou inútil.
 [%hardbreaks]
 
 --

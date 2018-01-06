@@ -2,7 +2,7 @@
 title: "/* */"
 title_expanded: block comment
 categories: [ "Structure" ]
-subCategories: [ "Further Sintaxe" ]
+subCategories: [ "Outros Elementos da Sintaxe" ]
 ---
 
 = /* */ Comentário de bloco

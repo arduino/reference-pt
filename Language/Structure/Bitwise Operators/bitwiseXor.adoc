@@ -5,11 +5,7 @@ categories: [ "Structure" ]
 subCategories: [ "Bitwise Operators" ]
 ---
 
-
-
-
-
-= ^ Bitwise XOR
+= ^ XOR Bitwise 
 
 
 // OVERVIEW SECTION STARTS
@@ -18,15 +14,15 @@ subCategories: [ "Bitwise Operators" ]
 
 [float]
 === Descrição
-There is a somewhat unusual operator in C++ called bitwise EXCLUSIVE OR, also known as bitwise XOR. (In English this is usually pronounced "eks-or".) The bitwise XOR operator is written using the caret symbol `^`. A bitwise XOR operation results in a 1 only if the input bits are different, else it results in a 0.
+Na linguagem C++ existe um operador um pouco incomum chamado de OU EXCLUSIVO, também conhecido como XOR,  bit-a-bit. (Em Inglês é pronunciado "eks-or"). O operador XOR bitwise é escrito usando-se o símbolo `^`. Uma operação XOR bit-a-bit resulta em 1 apenas se os bits de entrada são diferentes. Se iguais, o resultado é zero.
 [%hardbreaks]
 
-Precisely,
+Precisamente,
 
-    0  0  1  1    operand1
-    0  1  0  1    operand2
+    0  0  1  1    operando1
+    0  1  0  1    operando2
     ----------
-    0  1  1  0    (operand1 ^ operand2) - returned result
+    0  1  1  0    (operando1 ^ operando2) - resultado retornado
 [%hardbreaks]
 
 --
@@ -43,26 +39,26 @@ Precisely,
 
 [source,arduino]
 ----
-int x = 12;     // binary: 1100
-int y = 10;     // binary: 1010
-int z = x ^ y;  // binary: 0110, or decimal 6
+int x = 12;     // binário: 1100
+int y = 10;     // binário: 1010
+int z = x ^ y;  // binário: 0110, ou decimal 6
 ----
 [%hardbreaks]
 
-The ^ operator is often used to toggle (i.e. change from 0 to 1, or 1 to 0) some of the bits in an integer expression. In a bitwise XOR operation if there is a 1 in the mask bit, that bit is inverted; if there is a 0, the bit is not inverted and stays the same. Below is a program to blink digital pin 5.
+O operador ^ é frequentemente utilizado para trocar (isto é, mudar de 0 para 1, ou 1 para 0) alguns dos bits em uma expressão inteira. Em uma operação XOR se há um 1 no bit da máscara, aquele bit é invertido; se há um 0, o bit não é invertido e continua o mesmo. Abaixo um programa para piscar um LED no pino digital 5.
 
 [source,arduino]
 ----
 // Blink_Pin_5
-// demo for Exclusive OR
+// Demo do XOR
 void setup(){
-DDRD = DDRD | B00100000; // set digital pin five as OUTPUT
-Serial.begin(9600);
+    DDRD = DDRD | B00100000; // configura o pino digital 5 como saída
+    Serial.begin(9600);
 }
 
 void loop(){
-PORTD = PORTD ^ B00100000;  // invert bit 5 (digital pin 5), leave others untouched
-delay(100);
+    PORTD = PORTD ^ B00100000;  // inverte bit 5 (pino 5), e deixa os outros intocados
+    delay(100);
 }
 ----
 
@@ -79,7 +75,7 @@ delay(100);
 === Ver Também
 
 [role="example"]
-#EXEMPLO# https://www.arduino.cc/playground/Code/BitMath[BitMath Tutorial^]
+#EXEMPLO# https://www.arduino.cc/playground/Code/BitMath[Tutorial BitMath (Em Inglês)^]
 
 --
 // SEE ALSO SECTION ENDS

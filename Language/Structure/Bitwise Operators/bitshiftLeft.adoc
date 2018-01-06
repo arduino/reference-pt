@@ -5,10 +5,6 @@ categories: [ "Structure" ]
 subCategories: [ "Bitwise Operators" ]
 ---
 
-
-
-
-
 = << Bitshift Left
 
 
@@ -18,7 +14,7 @@ subCategories: [ "Bitwise Operators" ]
 
 [float]
 === Descrição
-The left shift operator `<<` causes the bits of the left operand to be shifted *left* by the number of positions specified by the right operand.
+O operador de deslocamento a esquerda `<<` faz os bits do operando à esquerda do operador serem deslocados a *esquerda* pelo número de posições especificadas pelo operando à direita do operador.
 [%hardbreaks]
 
 
@@ -26,13 +22,13 @@ The left shift operator `<<` causes the bits of the left operand to be shifted *
 === Sintaxe
 [source,arduino]
 ----
-variable << number_of_bits;
+variável << numero_de_bits;
 ----
 
 [float]
 === Parâmetros
-`variable`: *Tipos de dados permitidos:* byte, int, long +
-`number_of_bits`: a number that is < = 32. *Tipos de dados permitidos:* int
+`variável`: *Tipos de dados permitidos:* byte, int, long +
+`numero_de_bits`: um número menor ou igual 32. *Tipos de dados permitidos:* int
 
 --
 // OVERVIEW SECTION ENDS
@@ -48,27 +44,27 @@ variable << number_of_bits;
 
 [source,arduino]
 ----
-int a = 5;        // binary: 0000000000000101
-int b = a << 3;   // binary: 0000000000101000, or 40 in decimal
+int a = 5;        // binário: 0000000000000101
+int b = a << 3;   // binário: 0000000000101000, ou 40 em decimal
 ----
 [%hardbreaks]
 
 [float]
 === Notas e Advertências
-When you shift a value x by y bits (x << y), the leftmost y bits in x are lost, literally shifted out of existence:
+Quando você desloca um valor x por y bits (x << y), os y bits mais a esquerda em x são perdidos, literalmente deslocados para fora da existência:
 
 [source,arduino]
 ----
-int x = 5;        // binary: 0000000000000101
+int x = 5;        // binário: 0000000000000101
 int y = 14;
-int result = x << y;  // binary: 0100000000000000 - the first 1 in 101 was discarded
+int resultado = x << y;  // binário: 0100000000000000 - os primeiros 1 em 101 foram descartados
 ----
 
-If you are certain that none of the ones in a value are being shifted into oblivion, a simple way to think of the left-shift operator is that it multiplies the left operand by 2 raised to the right operand power. For example, to generate powers of 2, the following expressions can be employed:
+Se você tem certeza que nenhum dos bits 1 em um valor serão descartados no deslocamento, uma forma simples de pensar do operador de deslocamento à esquerda é que ele multiplica o operando a esquerda por 2 elevado ao operando a direita. Por exemplo, para gerar potências de 2, as seguintes expressões podem ser utilizadas:
 
 [source,arduino]
 ----
-   Operation  Result
+   Operação  Resultado
    ---------  ------
     1 <<  0      1
     1 <<  1      2
@@ -81,14 +77,14 @@ If you are certain that none of the ones in a value are being shifted into obliv
     ...
 ----
 
-The following example can be used to print out the value of a received byte to the serial monitor, using the left shift operator to move along the byte from bottom(LSB) to top (MSB), and print out its Binary value:
+O exemplo a seguir pode ser utilizado para imprimir um byte recebido no monitor serial, usando o operador de deslocamento à esquerda para mover 1 pelo número de bits especificado, testar o valor com o E (&), e imprimir seu valor (1 ou 0):
 
 [source,arduino]
 ----
-// Prints out Binary value (1 or 0) of byte
+// Imprime o valor binário (1 ou 0) de um byte
 void printOut1(int c) {
   for (int bits = 7; bits > -1; bits--) {
-    // Compare bits 7-0 in byte
+    // Compara bits 7-0 no byte
     if (c & (1 << bits)) {
       Serial.print ("1");
     }
@@ -116,7 +112,7 @@ void printOut1(int c) {
 [role="language"]
 
 [role="example"]
-#EXEMPLO# https://www.arduino.cc/playground/Code/BitMath[BitMath Tutorial^]
+#EXEMPLO# https://www.arduino.cc/playground/Code/BitMath[Tutorial BitMath (Em Inglês)^] 
 
 --
 //SEE ALSO SECTION ENDS

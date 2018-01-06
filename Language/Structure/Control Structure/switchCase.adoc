@@ -1,14 +1,10 @@
 ---
 title: switch...case
 categories: [ "Structure" ]
-subCategories: [ "Control Structure" ]
+subCategories: [ "Estruturas de Controle" ]
 ---
 
-
-
-
-
-= switch...case statement
+= comando switch...case
 
 
 // OVERVIEW SECTION STARTS
@@ -17,10 +13,10 @@ subCategories: [ "Control Structure" ]
 
 [float]
 === Descrição
-Like link:../if[if] statements, link:../switchcase[switch case] controls the flow of programs by allowing programmers to specify different code that should be executed in various conditions. In particular, a switch statement compares the value of a variable to the values specified in case statements. When a case statement is found whose value matches that of the variable, the code in that case statement is run.
+Da mesma forma que o comando link:../if[if], o comando link:../switchcase[switch case] controla o fluxo do programa permitindo ao programador especificar código diferente para ser executado em várias condições. Em particular, um comando `switch` compara o valor de uma variável aos valores especificados nos comandos `case`. Quando um comando `case` é encontrado cujo valor é igual ao da variável, o código para esse comando `case` é executado.
 [%hardbreaks]
 
-The link:../break[break] keyword exits the switch statement, and is typically used at the end of each case. Without a break statement, the switch statement will continue executing the following expressions ("falling-through") until a break, or the end of the switch statement is reached.
+A palavra-chave link:../break[break] interrompe o comando switch, e é tipicamente usada no final de cada `case`. Sem um comando `break`, o comando `switch` irá continuar a executar as expressões seguintes (desnecessariamente) até encontrar um break, ou até o final do comando switch ser alcançado.
 [%hardbreaks]
 
 
@@ -29,26 +25,26 @@ The link:../break[break] keyword exits the switch statement, and is typically us
 [source,arduino]
 ----
 switch (var) {
-  case label1:
-    // statements
+  case valor1:
+    // comando(s)
     break;
-  case label2:
-    // statements
+  case valor2:
+    // comando(s)
     break;
   default:
-    // statements
+    // comando(s)
 }
 ----
 
 
 [float]
 === Parâmetros
-`var`: a variable whose value to compare with various cases. *Tipos de dados permitidos:* int, char +
-`label1`, `label2`: constants. *Tipos de dados permitidos:* int, char
+`var`: uma variável para ser comparada com os vários cases. *Tipos de dados permitidos:* int, char +
+`valor1`, `valor2`: constantes. *Tipos de dados permitidos:* int, char
 
 [float]
-=== Returns
-Nothing
+=== Retorna
+Nada
 
 --
 // OVERVIEW SECTION ENDS
@@ -67,14 +63,14 @@ Nothing
 ----
   switch (var) {
     case 1:
-      //do something when var equals 1
+      // faz algo quando var é igual a 1
       break;
     case 2:
-      //do something when var equals 2
+      // faz algo quando var é igual a 1
       break;
     default:
-      // if nothing else matches, do the default
-      // default is optional
+      // Se nenhum dos anteriores, faz o caso padrão default
+      // default é opcional
       break;
   }
 

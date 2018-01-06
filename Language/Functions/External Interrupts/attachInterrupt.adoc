@@ -1,87 +1,82 @@
 ---
 title: attachInterrupt()
 categories: [ "Functions" ]
-subCategories: [ "External Interrupts" ]
+subCategories: [ "Interrupções Externas" ]
 ---
 
-
-
-
-
 = attachInterrupt()
-
 
 // OVERVIEW SECTION STARTS
 [#overview]
 --
 
 [float]
-=== Description
-*Digital Pins With Interrupts*
+=== Descrição
+*Pinos Digitais com Interrupções*
 
-The first parameter to attachInterrupt is an interrupt number. Normally you should use digitalPinToInterrupt(pin) to translate the actual digital pin to the specific interrupt number. For example, if you connect to pin 3, use digitalPinToInterrupt(3) as the first parameter to attachInterrupt.
+O primeiro parâmetro de attachInterrupt() é o número da interrupção. É recomendado usar digitalPinToInterrupt(pino) para converter o número do pino digital para o número específico da interrupção. Por exemplo, se você usar o pino 3, passe digitalPinToInterrupt(3) como o primeiro parâmetro de attachInterrupt().
 
 [options="header"]
 |===================================================
-|Board                             |Digital Pins Usable For Interrupts
-|Uno, Nano, Mini, other 328-based  |2, 3
-|Mega, Mega2560, MegaADK           |2, 3, 18, 19, 20, 21
-|Micro, Leonardo, other 32u4-based |0, 1, 2, 3, 7
-|Zero                              |all digital pins, except 4
-|MKR1000 Rev.1                     |0, 1, 4, 5, 6, 7, 8, 9, A1, A2
-|Due                               |all digital pins
-|101                               |all digital pins (Only pins 2, 5, 7, 8, 10, 11, 12, 13 work with *CHANGE*)
+|Placa                                |Pinos digitais possíveis para interrupções
+|Uno, Nano, Mini e outros com 328p    |2, 3
+|Mega, Mega2560, MegaADK              |2, 3, 18, 19, 20, 21
+|Micro, Leonardo e outros com 32u4    |0, 1, 2, 3, 7
+|Zero                                 |todos os pinos digitais, exceto 4
+|MKR1000 Rev.1                        |0, 1, 4, 5, 6, 7, 8, 9, A1, A2
+|Due                                  |todos os pinos digitais
+|101                                  |todos os pinos digitais (Apenas pinos 2, 5, 7, 8, 10, 11, 12, 13 funcionam com *CHANGE*)
 |===================================================
 
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
+=== Notas e Advertências
 
-*Note* +
-Inside the attached function, `delay()` won't work and the value returned by `millis()` will not increment. Serial data received while in the function may be lost. You should declare as volatile any variables that you modify within the attached function. See the section on ISRs below for more information.
+*Nota* +
+Dentro da função associada, `delay()` não funcionará e o valor retornado por `millis()` não será incrementado. Dados recebidos na porta serial enquanto a interrupção é executada podem ser perdidos. Você deve declarar como `volatile` quaisquer que você modificar dentro da função associada. Veja a seção sobre ISRs abaixo para mais informação.
 [%hardbreaks]
 
 [float]
-== Using Interrupts
-Interrupts are useful for making things happen automatically in microcontroller programs, and can help solve timing problems. Good tasks for using an interrupt may include reading a rotary encoder, or monitoring user input.
+== Usando Interrupções
+Interrupções são úteis para fazer coisas automaticamente em programas de microcontroladores, e podem ajudar a resolver problemas de temporização. Boas tarefas para se udar uma interrupção podem icnluir a leitura de um codificador rotativo, ou monitorar entradas de dados pelo usuário.
 
-If you wanted to insure that a program always caught the pulses from a rotary encoder, so that it never misses a pulse, it would make it very tricky to write a program to do anything else, because the program would need to constantly poll the sensor lines for the encoder, in order to catch pulses when they occurred. Other sensors have a similar interface dynamic too, such as trying to read a sound sensor that is trying to catch a click, or an infrared slot sensor (photo-interrupter) trying to catch a coin drop. In all of these situations, using an interrupt can free the microcontroller to get some other work done while not missing the input.
-
-[float]
-== About Interrupt Service Routines
-ISRs are special kinds of functions that have some unique limitations most other functions do not have. An ISR cannot have any parameters, and they shouldn't return anything.
-
-Generally, an ISR should be as short and fast as possible. If your sketch uses multiple ISRs, only one can run at a time, other interrupts will be executed after the current one finishes in an order that depends on the priority they have. millis() relies on interrupts to count, so it will never increment inside an ISR. Since delay() requires interrupts to work, it will not work if called inside an ISR. micros() works initially, but will start behaving erratically after 1-2 ms. delayMicroseconds() does not use any counter, so it will work as normal.
-
-Typically global variables are used to pass data between an ISR and the main program. To make sure variables shared between an ISR and the main program are updated correctly, declare them as `volatile`.
-
-For more information on interrupts, see http://gammon.com.au/interrupts[Nick Gammon's notes].
+Supomos que você quisesse ter certeza que um programa sempre captura os pulsos de um codifcador rotativo, sem nunca perder um pulso, seria muito complicado criar um programa que pudesse fazer qualquer outra coisa além disso, porque o programa precisaria checar constantemente os pinos do codificador, para capturar os pulsos exatamente quando eles ocorreram. Outros sensores são similarmente dinâmicos também, como um sensor de som que pode ser usado para capturar um clique, ou um sensor infravermelho (foto-interruptor) para capturar a queda de uma moeda. Em todas essas situações, usar uma interrupção pode permitir o microcontrolador trabalhar em outras tarefas sem perder a interrupção.
 
 [float]
-=== Syntax
-`attachInterrupt(digitalPinToInterrupt(pin), ISR, mode);`	(recommended) +
-`attachInterrupt(interrupt, ISR, mode);`	(not recommended) + 
-`attachInterrupt(pin, ISR, mode);`	(not recommended Arduino Due, Zero, MKR1000, 101 only)
+== Sobre Rotinas de Serviço de Interrupções (ISRs)
+ISRs são tipos especiais de funções que possuem  algumas limitações únicas que as outras funções não possuem. Uma ISR não recebe argumentos, e não devem retornar nada.
+
+Geralmente, uma ISR deve ser o mais curta e rápida possível. Se o seu sketch usa múltiplas ISRs, apenas uma pode ser executada de cada vez, outras interrupções serão executadas após a atual terminar, em uma ordem que depende de sua prioridade. millis() depende de interrupções para contar, então essa nunca irá incrementar dentro de uma ISR. Como delay() também depende de interrupções, não irá funcionar dentro de uma ISR. micros() funciona inicialmente, mas começará a se comportar erraticamente após 1-2 ms. delayMicroseconds() não usa nenhum contador, então funciona normalmente.
+
+Tipicamente variáveis globais são usadas para passar dados entre uma ISR e o programa principal. Tenha certeza que variáveis compartilhadas entre uma ISR e o programa principal são atualizadas corretamente, para isso, as declare usando o modificador `volatile`.
+
+Para mais informações sobre interrupções, veja as http://gammon.com.au/interrupts[notas de Nick Gammon's (Em Inglês)].
+
+[float]
+=== Sintaxe
+`attachInterrupt(digitalPinToInterrupt(pino), ISR, modo);` (recomendado) +
+`attachInterrupt(interrupção, ISR, modo);` (não recomendado) +
+`attachInterrupt(pino, ISR, modo);` (não recomendado - Arduino Due, Zero, MKR1000, 101 apenas)
 
 
 [float]
-=== Parameters
-`interrupt`: 	the number of the interrupt (`int`) +
-`pin`: 	      the pin number 	            _(Arduino Due, Zero, MKR1000 only)_ +
-`ISR`: 	      the ISR to call when the interrupt occurs; this function must take no parameters and return nothing. This function is sometimes referred to as an interrupt service routine. +
-`mode`: 	     defines when the interrupt should be triggered. Four constants are predefined as valid values: +
+=== Parâmetros
+`interrupção`: 	o número da interrupção (`int`) +
+`pino`: 	      o número do pino    _(Arduino Due, Zero, MKR1000 apenas)_ +
+`ISR`: 	      a ISR a ser chamada quando a interrupção ocorre; essa função deve não tomar nenhum parâmetro nem retornar nada. Essa função é chamada de rotina de serviço da interrupção ou ISR (do Inglês, interrupt service routine). +
+`modo`: 	     define quando a interrupção deve ser ativada. Quatro constantes estão predefinidas como valores válidos: +
 
-* *LOW* to trigger the interrupt whenever the pin is low, +
-* *CHANGE* to trigger the interrupt whenever the pin changes value +
-* *RISING* to trigger when the pin goes from low to high, +
-* *FALLING* for when the pin goes from high to low. +
- The Due, Zero and MKR1000 boards allows also: +
-* *HIGH* to trigger the interrupt whenever the pin is high.
+* *LOW* acionar a interrupção quando o estado do pino for LOW, +
+* *CHANGE* acionar a interrupção quando o sempre estado do pino mudar +
+* *RISING* acionar a interrupção quando o estado do pino for de LOW para HIGH apenas, +
+* *FALLING* acionar a interrupção quando o estado do pino for de HIGH para LOW apenas. +
+Placas Due, Zero e MKR1000 suportam também: +
+* *HIGH* acionar a interrupção quando o estado do pino for HIGH.
 
 [float]
-=== Returns
-Nothing
+=== Retorna
+Nada
 
 --
 // OVERVIEW SECTION ENDS
@@ -93,7 +88,7 @@ Nothing
 [float]
 === Example Code
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-
+O código abaixo usa uma interrupção para capturar a mudança no estado do pino 2 e acender o LED de acordo.
 
 [source,arduino]
 ----
@@ -117,21 +112,21 @@ void blink() {
 ----
 
 [float]
-=== Interrupt Numbers
-Normally you should use digitalPinToInterrupt(pin), rather than place an interrupt number directly into your sketch. The specific pins with interrupts, and their mapping to interrupt number varies on each type of board. Direct use of interrupt numbers may seem simple, but it can cause compatibility trouble when your sketch is run on a different board.
+=== Números das Interrupções
+Normalmente você deve usar digitalPinToInterrupt(pino), em vez de colocar diretamente o número da interrupção no seu sketch. Os pinos específicos para interrupções, e seu mapeamento para o número da interrupção variam para cada tipo de placa. O uso direto dos números das interrupções pode parecer mais simples, porém pode causar problemas de compatibilidade quando seu sketch for executado em uma placa diferente.
 
-However, older sketches often have direct interrupt numbers. Often number 0 (for digital pin 2) or number 1 (for digital pin 3) were used. The table below shows the available interrupt pins on various boards.
+Mesmo assim, sketches mais antigos frequentemente têm os números das interrupções usados diretamente. Frequentemente o número 0 (para o pino digital 2) ou o número 1 (para o pino digital 3) foram usados. A tabela abaixo mostra os pinos com interrupções disponíveis em cada placa.
 
-Note that in the table below, the interrupt numbers refer to the number to be passed to attachInterrupt(). For historical reasons, this numbering does not always correspond directly to the interrupt numbering on the atmega chip (e.g. int.0 corresponds to INT4 on the Atmega2560 chip).
+Note que na tabela abaixo, os números das interrupções se referem aos números a serem passados para attachInterrupt(). Por razões históricas, essa numeração nem sempre corresponde diretamente a numeração do chip atmega (ex. int.0 corresponde à INT4 no chip Atmega2560).
 
 [options="header"]
 |===================================================
-|Board                          | int.0   | int.1   | int.2   | int.3   | int.4   | int.5
+|Placa                          | int.0   | int.1   | int.2   | int.3   | int.4   | int.5
 |Uno, Ethernet                  | 2 | 3 | | | |
 |Mega2560                       | 2 | 3 | 21 | 20 | 19 | 18
-|32u4 based (e.g Leonardo, Micro) | 3 | 2 | 0 | 1 | 7 | 
+|Leonardo, Micro (32u4)         | 3 | 2 | 0 | 1 | 7 |
 |===================================================
-For Due, Zero, MKR1000 and 101 boards the *interrupt number = pin number*.
+Para as placas Due, Zero, MKR1000 e 101 o *número da interrupção = número do pino*.
 
 
 --

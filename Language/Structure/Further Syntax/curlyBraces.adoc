@@ -2,13 +2,10 @@
 title: "{}"
 title_expanded: curly braces
 categories: [ "Structure" ]
-subCategories: [ "Further Sintaxe" ]
+subCategories: [ "Outros Elementos da Sintaxe" ]
 ---
 
-
-
-
-= {} Curly Braces
+= {} Chaves
 
 
 // OVERVIEW SECTION STARTS
@@ -17,12 +14,13 @@ subCategories: [ "Further Sintaxe" ]
 
 [float]
 === Descrição
-Curly braces (also referred to as just "braces" or as "curly brackets") are a major part of the C programming language. They are used in several different constructs, outlined below, and this can sometimes be confusing for beginners. +
-An opening curly brace `{` must always be followed by a closing curly brace `}`. This is a condition that is often referred to as the braces being balanced. The Arduino IDE (Integrated Development Environment) includes a convenient feature to check the balance of curly braces. Just select a brace, or even click the insertion point immediately following a brace, and its logical companion will be highlighted.
+As chaves são uma característica importante da linguagem C. Elas são usadas em diversas estruturas diferentes, mostradas abaixo, e isso pode as vezes ser confuso para iniciantes. +
+Uma chave `{` deve ser sempre fechada por outra chave `}`. Essa é uma condição que é frequentemente chamada de as chaves estarem balanceadas. A IDE Arduino inclui uma forma conveniente de checar o balanço de duas chaves. Apenas escolha uma chave, ou até mesmo clique no ponto de inserção imediatamente após a chave, se a outra chave do par será destacada.
 [%hardbreaks]
-Beginners programmers, and programmers coming to C from the BASIC language often find using braces confusing or daunting. After all, the same curly braces replace the RETURN statement in a subroutine (function), the ENDIF statement in a conditional and the NEXT statement in a FOR loop.
+//// Beginners programmers, and programmers coming to C from the BASIC language often find using braces confusing or daunting. After all, the same curly braces replace the RETURN statement in a subroutine (function), the ENDIF statement in a conditional and the NEXT statement in a FOR loop.
 [%hardbreaks]
-Unbalanced braces can often lead to cryptic, impenetrable compiler errors that can sometimes be hard to track down in a large program. Because of their varied usages, braces are also incredibly important to the syntax of a program and moving a brace one or two lines will often dramatically affect the meaning of a program.
+////
+Chaves desbalanceadas podem frequentemente resultar em erros enigmáticos, que podem as vezes ser difíceis de se encontrar em um programa longo. Por causa de seu uso variado, as chaves são incrivelmente importantes para o programa e mover uma chave pode afetar dramaticamente o funcionamento de um programa.
 [%hardbreaks]
 
 --
@@ -37,16 +35,16 @@ Unbalanced braces can often lead to cryptic, impenetrable compiler errors that c
 
 [float]
 === Código de Exemplo
-The main uses of curly braces are listed in the examples below.
+Os usos principais das chaves são listados nos exemplos abaixo.
 
 
 [float]
-==== Functions
+==== Funções
 
 [source,arduino]
 ----
-void myfunction(datatype argument){
-  statements(s)
+void minhafuncao(tipo argumento){
+  comando(s)
 }
 ----
 [%hardbreaks]
@@ -57,19 +55,19 @@ void myfunction(datatype argument){
 
 [source,arduino]
 ----
-while (boolean expression)
+while (expressão boolena)
 {
- statement(s)
+ comando(s)
 }
 
 do
 {
- statement(s)
-} while (boolean expression);
+ comando(s)
+} while (expressão boolena);
 
-for (initialisation; termination condition; incrementing expr)
+for (inicialização; condição; incremento)
 {
- statement(s)
+ comando(s)
 }
 ----
 [%hardbreaks]
@@ -78,22 +76,22 @@ for (initialisation; termination condition; incrementing expr)
 
 
 [float]
-==== Conditional Statements
+==== Estruturas Condicionais
 
 [source,arduino]
 ----
-if (boolean expression)
+if (expressão boolena)
 {
- statement(s)
+ comandos(s)
 }
 
-else if (boolean expression)
+else if (expressão boolena)
 {
- statement(s)
+ comandos(s)
 }
 else
 {
- statement(s)
+ comandos(s)
 }
 ----
 [%hardbreaks]

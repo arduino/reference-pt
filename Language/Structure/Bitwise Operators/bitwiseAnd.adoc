@@ -1,16 +1,11 @@
 ---
 title: "&"
-title_expanded: bitwise and
+title_expanded: E bit-a-bit
 categories: [ "Structure" ]
-subCategories: [ "Bitwise Operators" ]
+subCategories: [ "Operadores Bitwise (Bit-a-Bit)" ]
 ---
 
-
-
-
-
-= & Bitwise AND
-
+= & Bitwise E
 
 // OVERVIEW SECTION STARTS
 [#overview]
@@ -18,18 +13,18 @@ subCategories: [ "Bitwise Operators" ]
 
 [float]
 === Descrição
-The bitwise AND operator in C++ is a single ampersand `&`, used between two other integer expressions. Bitwise AND operates on each bit position of the surrounding expressions independently, according to this rule: if both input bits are 1, the resulting output is 1, otherwise the output is 0.
+O operador bitwise E em C++ é um único `&` (e comercial ou ampersand), usado entre duas expressões inteiras. O operador E bit-a-bit atua em cada bit dos operandos independentemente, de acordo com a seguinte regra: se ambas entradas são 1, a saída resultante é 1, do contrário o resultado é 0.
 [%hardbreaks]
 
-Another way of expressing this is:
+Outra forma de se expressão isso é:
 
-    0  0  1  1    operand1
-    0  1  0  1    operand2
+    0  0  1  1    operando1
+    0  1  0  1    operando2
     ----------
-    0  0  0  1    (operand1 & operand2) - returned result
+    0  0  0  1    (operando1 & operando2) - resultado retornado
 [%hardbreaks]
 
-In Arduino, the type int is a 16-bit value, so using & between two int expressions causes 16 simultaneous AND operations to occur.
+No Arduino, o tipo int é um valor 16-bit, então `&` usado entre dois operandos do tipo int causa 16 operações bit-a-bit E simultâneas.
 [%hardbreaks]
 
 --
@@ -43,22 +38,22 @@ In Arduino, the type int is a 16-bit value, so using & between two int expressio
 
 [float]
 === Código de Exemplo
-In a code fragment like:
+Em um fragmento de código do tipo:
 
 [source,arduino]
 ----
-int a =  92;    // in binary: 0000000001011100
-int b = 101;    // in binary: 0000000001100101
-int c = a & b;  // result:    0000000001000100, or 68 in decimal.
+int a =  92;    // em binário: 0000000001011100
+int b = 101;    // em binário: 0000000001100101
+int c = a & b;  // resultado:    0000000001000100, ou 68 em decimal.
 ----
-Each of the 16 bits in a and b are processed by using the bitwise AND, and all 16 resulting bits are stored in c, resulting in the value 01000100 in binary, which is 68 in decimal.
+Cada um dos 16 bits em a e b são processados com o operador &, e todos os 16 bits resultantes são armazenados em c, resultando no valor binário 01000100, que é 68 em decimal.
 [%hardbreaks]
 
-One of the most common uses of bitwise AND is to select a particular bit (or bits) from an integer value, often called masking. See below for an example
+Um dos usos mais comuns da operação bit-a-bit E é selecionar um bit particular (ou bits) de um valor inteiro, frequentemente chamado de _masking_. Veja abaixo um exemplo:
 
 [source,arduino]
 ----
-PORTD = PORTD & B00000011;  // clear out bits 2 - 7, leave pins 0 and 1 untouched (xx & 11 == xx)
+PORTD = PORTD & B00000011;  // apaga os bits 2 - 7, deixando o valor dos pinos 0 e 1 intocados (xx & 11 == xx)
 ----
 
 --
@@ -74,10 +69,10 @@ PORTD = PORTD & B00000011;  // clear out bits 2 - 7, leave pins 0 and 1 untouche
 
 
 [role="language"]
-#LINGUAGEM# link:../../boolean-operators/logicaland[&& Logical AND]
+#LINGUAGEM# link:../../boolean-operators/logicaland[&& E lógico] +
 
 [role="example"]
-#EXEMPLO# https://www.arduino.cc/playground/Code/BitMath[BitMath Tutorial^]
+#EXEMPLO# https://www.arduino.cc/playground/Code/BitMath[Tutorial BitMath (Em Inglês)^]
 
 --
 // SEE ALSO SECTION ENDS

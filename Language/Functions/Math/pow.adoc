@@ -1,12 +1,8 @@
 ---
 title: pow()
 categories: [ "Functions" ]
-subCategories: [ "Math" ]
+subCategories: [ "Funções Matemáticas" ]
 ---
-
-
-
-
 
 = pow(base, exponent)
 
@@ -16,25 +12,25 @@ subCategories: [ "Math" ]
 --
 
 [float]
-=== Description
-Calculates the value of a number raised to a power. `Pow()` can be used to raise a number to a fractional power. This is useful for generating exponential mapping of values or curves.
+=== Descrição
+Calcula o valor de um número elevado a uma potência. `Pow()` pode ser usada para transformar um número em uma potência fracionária. Isso pode ser útil para gerar mapeamentos exponenciais de valores ou curvas.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
-`pow(base, exponent)`
+=== Sintaxe
+`pow(base, expoente)`
 
 
 [float]
-=== Parameters
-`base`: the number (`float`)
+=== Parâmetros
+`base`: o número (`float`)
 
-`exponent`: the power to which the base is raised (`float`)
+`expoente`: a potência a qual o número deve ser elevado (`float`)
 
 [float]
-=== Returns
-The result of the exponentiation. (`double`)
+=== Retorna
+O resultado da exponenciação. (`double`)
 
 --
 // OVERVIEW SECTION ENDS
@@ -45,9 +41,9 @@ The result of the exponentiation. (`double`)
 --
 
 [float]
-=== Example Code
+=== Código de exemplo
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-See the (http://arduino.cc/playground/Main/Fscale[fscale]) function in the code library.
+Veja a função (http://arduino.cc/playground/Main/Fscale[fscale (Em Inglês)]) no Arduino Playground.
 
 --
 // HOW TO USE SECTION ENDS
@@ -58,11 +54,11 @@ See the (http://arduino.cc/playground/Main/Fscale[fscale]) function in the code 
 --
 
 [float]
-=== See also
+=== Ver Também
 
 [role="definition"]
-* #DEFINITION# link:../../../variables/data-types/float[float]
-* #DEFENITION# link:../../../variables/data-types/double[double]
+#DEFINIÇÃO# link:../../../variables/data-types/float[float] +
+#DEFINIÇÃO# link:../../../variables/data-types/double[double]
 
 --
 // SEE ALSO SECTION ENDS

@@ -1,14 +1,10 @@
 ---
 title: if...else
 categories: [ "Structure" ]
-subCategories: [ "Control Structure" ]
+subCategories: [ "Estruturas de Controle" ]
 ---
 
-
-
-
-
-= if (conditional) and ==, !=, <, > (comparison operators)
+= if e ==, !=, <, > (operador condicional e operadores de comparação)
 
 
 // OVERVIEW SECTION STARTS
@@ -16,64 +12,64 @@ subCategories: [ "Control Structure" ]
 --
 [float]
 === Descrição
-The `if` statement checks for a condition and executes the proceeding statement or set of statements if the condition is 'true'.
+O comando `if` checa uma condição e executas o comando a seguir ou um bloco de comandos delimitados por chaves, se a condição é verdadeira ('true').
 [%hardbreaks]
 
 [float]
 === Sintaxe
 [source,arduino]
 ----
-if (condition)
+if (condição)
 {
-  //statement(s)
+  //comando(s)
 }
 ----
 
 [float]
 === Parâmetros
-condition: a boolean expression i.e., can be `true` or `false`
+condição: uma expressão booleana, isto é, que pode resultar apenas em `true` ou `false`
 
 [float]
 === Código de Exemplo
 
-The brackets may be omitted after an if statement. If this is done, the next line (defined by the semicolon) becomes the only conditional statement.
+As chaves podem ser omitidas depois de um comando `if`. Se isso é feito, a próxima linha (definida pelo ponto e vírgula) é interpretada como o único comando condicional. Para mais de um comando, use as chaves para delimitar o bloco de comandos.
 [%hardbreaks]
 
 [source,arduino]
 ----
-if (x > 120) digitalWrite(LEDpin, HIGH);
+if (x > 120) digitalWrite(pinoLED, HIGH);
 
 if (x > 120)
-digitalWrite(LEDpin, HIGH);
+digitalWrite(pinoLED, HIGH);
 
-if (x > 120){ digitalWrite(LEDpin, HIGH); }
+if (x > 120){ digitalWrite(pinoLED, HIGH); }
 
 if (x > 120){
-  digitalWrite(LEDpin1, HIGH);
-  digitalWrite(LEDpin2, HIGH);
-}                                 // all are correct
+  digitalWrite(pinoLED1, HIGH);
+  digitalWrite(pinoLED2, HIGH);
+}                                 // todas as formas acima estão corretas
 ----
 [%hardbreaks]
 
 
 [float]
 === Notas e Advertências
-The statements being evaluated inside the parentheses require the use of one or more operators shown below.
+As expressões sendo testadas dentro dos parênteses geralmente requerem o uso de um ou mais dos operadores mostrados abaixo.
 [%hardbreaks]
 
-*Comparison Operators:*
+*Operadores de comparação:*
 
- x == y (x is equal to y)
- x != y (x is not equal to y)
- x <  y (x is less than y)
- x >  y (x is greater than y)
- x <= y (x is less than or equal to y)
- x >= y (x is greater than or equal to y)
+ x == y (x é igual a y)
+ x != y (x é diferente de y)
+ x <  y (x é menor que y)
+ x >  y (x maior que y)
+ x <= y (x é menor ou igual a y)
+ x >= y (x é maior ou igual a y)
 
 
-Beware of accidentally using the single equal sign (e.g. `if (x = 10)` ). The single equal sign is the assignment operator, and sets `x` to 10 (puts the value 10 into the variable `x`). Instead use the double equal sign (e.g. `if (x == 10)` ), which is the comparison operator, and tests _whether_ `x` is equal to 10 or not. The latter statement is only true if `x` equals 10, but the former statement will always be true.
+Cuidado para não usar acidentalmente o símbolo de igual simples (ex. `if (x = 10)` ). O símbolo de igual simples é o operador de atribuição, se atribui 10 a `x` (coloca o valor 10 na variável `x`). Em vez disso, o símbolo de igual duplo (ex. `if (x == 10)` ) deve ser usado, que é o operador de comparação, e testa _se_ `x` é igaul a 10 ou não. O último é apenas verdadeiro se `x` é igual a 10, enquanto o primeiro comando mostrado sempre resultará em verdadeiro.
 
-This is because C evaluates the statement `if (x=10)` as follows: 10 is assigned to `x` (remember that the single equal sign is the (http://arduino.cc/en/Reference/Assignment[assignment operator^])), so `x` now contains 10. Then the 'if' conditional evaluates 10, which always evaluates to `TRUE`, since any non-zero number evaluates to TRUE. Consequently, `if (x = 10)` will always evaluate to `TRUE`, which is not the desired result when using an 'if' statement. Additionally, the variable `x` will be set to 10, which is also not a desired action.
+Isso acontece porque a linguagem C interpreta `if (x=10)` da seguinte forma: 10 é atribuído a `x` (Lembre que o símbolo de igual simples é o (http://arduino.cc/en/Reference/Assignment[operador de atribuição^])), então `x` agora contém 10. então o comando 'if' testa 10, o que sempre resulta `true`, desde que qualquer número diferente de zero resulta em `true`. Consequentemente, `if (x = 10)` irá sempre resultar em `true`, que não é desejável ao se usar um comando 'if'. Além disso, a variável `x` irá receber o valor 10, o que também é indesejado.
 [%hardbreaks]
 
 --

@@ -1,15 +1,10 @@
 ---
 title: for
 categories: [ "Structure" ]
-subCategories: [ "Control Structure" ]
+subCategories: [ "Estruturas de Controle" ]
 ---
 
-
-
-
-
 = for loop
-
 
 // OVERVIEW SECTION STARTS
 [#overview]
@@ -17,7 +12,7 @@ subCategories: [ "Control Structure" ]
 
 [float]
 === Descrição
-The `for` statement is used to repeat a block of statements enclosed in curly braces. An increment counter is usually used to increment and terminate the loop. The `for` statement is useful for any repetitive operation, and is often used in combination with arrays to operate on collections of data/pins.
+O comando `for` [e usado para repetir um bloco de código envolvido por chaves. Um contador de incremento é geralmente utilizado para terminar o loop. O comando `for` é útil para qualquer operação repetitiva, e é usado frequentemente com vetores para operar em coleções de dados ou pinos.
 [%hardbreaks]
 
 
@@ -25,12 +20,12 @@ The `for` statement is used to repeat a block of statements enclosed in curly br
 === Sintaxe
 [source,arduino]
 ----
-for (initialization; condition; increment) {
-	//statement(s);
+for (inicialização; condição; incremento) {
+	//comando(s);
 }
 ----
 
-The *initialization* happens first and exactly once. Each time through the loop, the *condition* is tested; if it's `true`, the statement block, and the *increment* is executed, then the *condition* is tested again. When the *condition* becomes `false`, the loop ends.
+A *inicialização* ocorre primeiro e apenas uma vez. A cada repetição do loop, a *condição* é testada; se é verdadeira (`true`), o bloco de comandos, e o *incremento* são executados. Quando a *condição* se torna falsa (`false`), o loop termina.
 [%hardbreaks]
 
 --
@@ -47,18 +42,18 @@ The *initialization* happens first and exactly once. Each time through the loop,
 === Código de Exemplo
 [source,arduino]
 ----
-// Dim an LED using a PWM pin
-int PWMpin = 10; // LED in series with 470 ohm resistor on pin 10
+// Varia o brilho de um LED usando um pino PWM
+int pinoPWM = 10; // LED em série com um resistor de 470 ohm no pino 10
 
 void setup()
 {
-  // no setup needed
+  // setup não necessário
 }
 
 void loop()
 {
    for (int i=0; i <= 255; i++){
-      analogWrite(PWMpin, i);
+      analogWrite(pinoPWM, i);
       delay(10);
    }
 }
@@ -67,22 +62,22 @@ void loop()
 
 [float]
 === Notas e Advertências
-The C `for` loop is much more flexible than `for` loops found in some other computer languages, including BASIC. Any or all of the three header elements may be omitted, although the semicolons are required. Also the statements for initialization, condition, and increment can be any valid C statements with unrelated variables, and use any C datatypes including floats. These types of unusual `for` statements may provide solutions to some rare programming problems.
+O loop `for` na linguagem C é muito mais flexível que os loops `for` encontrados em outras linguagens. Quaisquer dos três elementos da sintaxe podem ser omitidos, porém os ponto e vírgula (';') são necessários. Além disso, os comandos para inicialização, condição e incremento podem ser quaisquer comandos válidos na linguagem C, mesmo com variáveis não relacionadas ao loop, e podem usar quaisquer tipos de dados da linguagem C incluindo floats. Esses tipos de comandos `for` incomuns podem prover soluções rápidas para alguns problemas raros de programação.
 [%hardbreaks]
 
-For example, using a multiplication in the increment line will generate a logarithmic progression:
+Por exemplo, usar uma multiplicação no comando de incremento irá gerar uma progressão logarítmica:
 
 [source,arduino]
 ----
 for(int x = 2; x < 100; x = x * 1.5){
-println(x);
+  println(x);
 }
 ----
 
-Generates: 2,3,4,6,9,13,19,28,42,63,94
+Gera: 2,3,4,6,9,13,19,28,42,63,94.
 [%hardbreaks]
 
-Another example, fade an LED up and down with one `for` loop:
+Outro exemplo, Aplica um efeito de _fading_ crescente e decrescente em um LED com apenas um loop `for`:
 
 [source,arduino]
 ----
@@ -90,8 +85,8 @@ void loop()
 {
    int x = 1;
    for (int i = 0; i > -1; i = i + x){
-      analogWrite(PWMpin, i);
-      if (i == 255) x = -1;             // switch direction at peak
+      analogWrite(pinoPWM, i);
+      if (i == 255) x = -1;             // muda a direção no pico
       delay(10);
    }
 }

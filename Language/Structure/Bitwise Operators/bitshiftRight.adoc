@@ -2,7 +2,7 @@
 title: ">>"
 title_expanded: bitshift right
 categories: [ "Structure" ]
-subCategories: [ "Operadores Bitwise (Bit-a-Bit)" ]
+subCategories: [ "Operadores Bitwise" ]
 ---
 
 = >> Bitshift Right

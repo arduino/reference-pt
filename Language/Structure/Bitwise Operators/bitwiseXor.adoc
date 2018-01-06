@@ -2,10 +2,10 @@
 title: "^"
 title_expanded: bitwise xor
 categories: [ "Structure" ]
-subCategories: [ "Bitwise Operators" ]
+subCategories: [ "Operadores Bitwise" ]
 ---
 
-= ^ XOR Bitwise 
+= ^ XOR Bitwise
 
 
 // OVERVIEW SECTION STARTS

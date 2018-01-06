@@ -2,7 +2,7 @@
 title: "<<"
 title_expanded: bitshift left
 categories: [ "Structure" ]
-subCategories: [ "Bitwise Operators" ]
+subCategories: [ "Operadores Bitwise" ]
 ---
 
 = << Bitshift Left
@@ -112,8 +112,7 @@ void printOut1(int c) {
 [role="language"]
 
 [role="example"]
-#EXEMPLO# https://www.arduino.cc/playground/Code/BitMath[Tutorial BitMath (Em Inglês)^] 
+#EXEMPLO# https://www.arduino.cc/playground/Code/BitMath[Tutorial BitMath (Em Inglês)^]
 
 --
 //SEE ALSO SECTION ENDS
-

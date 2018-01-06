@@ -2,7 +2,7 @@
 title: "&"
 title_expanded: E bit-a-bit
 categories: [ "Structure" ]
-subCategories: [ "Operadores Bitwise (Bit-a-Bit)" ]
+subCategories: [ "Operadores Bitwise" ]
 ---
 
 = & Bitwise E

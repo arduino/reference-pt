@@ -78,7 +78,7 @@ void loop() {
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
+=== Notas e Advertências
 Quando você usa a função `Keyboard.write()`, o Arduino toma o controle do computador! Tenha certeza que você tem controle de quando as mensagens vão ser enviadas antes de usar essa função. Pode ser difícil gravar um novo código no Arduino se ele estiver digitando algo o tempo todo. Um botão para ativar/desativar o controle do teclado é bastante efetivo.
 
 --

@@ -33,7 +33,7 @@ _Apenas Arduino Mega:_
 
 
 [float]
-=== Parameters
+=== Parâmetros
 `speed`: a taxa de transmissão em bits per second (baud rate) - (long)
 
 `config`: configuração do número de bits por transmissão, paridade, e stop bits. Opções válidas são:
@@ -71,8 +71,6 @@ Nada
 // OVERVIEW SECTION ENDS
 
 
-
-
 // HOW TO USE SECTION STARTS
 [#howtouse]
 --
@@ -85,7 +83,7 @@ O código abaixo inicia a porta serial a 9600 bps.
 [source,arduino]
 ----
 void setup() {
-    Serial.begin(9600); // opens serial port, sets data rate to 9600 bps
+    Serial.begin(9600); // inicia a porta serial, configura a taxa de dados para 9600 bps
 }
 
 void loop() {

@@ -13,7 +13,7 @@ title: Serial.readBytesUntil()
 --
 
 [float]
-=== Description
+=== Descrição
 Serial.readBytesUntil() lê caracteres da porta serial e os move para um buffer. A função termina se o caractere terminador foi encontrado, se a quantidade de bytes determinada foi lida, ou se ocorre time-out (ver link:../settimeout[Serial.setTimeout()]).
 
 `Serial.readBytesUntil()` retorna o número de caracteres colocados no buffer. Um valor 0 indica que dados não foram encontrados.
@@ -51,7 +51,7 @@ o número de bytes colocados no buffer (`size_t`)
 === Ver Também
 
 [role="language"]
-#LINGUAGEM# link:../../stream[Stream]
+#LINGUAGEM# link:../../stream[Stream] +
 #LINGUAGEM# link:../../stream/streamreadbytesuntil[Stream.readByteUntil()]
 
 --

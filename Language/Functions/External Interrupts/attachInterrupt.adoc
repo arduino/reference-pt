@@ -86,7 +86,7 @@ Nada
 --
 
 [float]
-=== Example Code
+=== Código de Exemplo
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
 O código abaixo usa uma interrupção para capturar a mudança no estado do pino 2 e acender o LED de acordo.
 

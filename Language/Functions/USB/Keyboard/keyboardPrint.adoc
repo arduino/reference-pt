@@ -24,7 +24,7 @@ Envia uma tecla pressionada, ou uma sequência de teclas, para um computador con
 
 [float]
 === Parâmetros
-`caractere` : um char ou int a ser enviado ao computador como se fosse uma tecla pressionada no teclado. + 
+`caractere` : um char ou int a ser enviado ao computador como se fosse uma tecla pressionada no teclado. +
 `caracteres` : uma string a ser enviada ao computador como se fosse uma palavra ou frase digitada no teclado.
 
 [float]
@@ -70,7 +70,7 @@ void loop() {
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
+=== Notas e Advertências
 Quando você usa a função `Keyboard.print()`, o Arduino toma o controle do computador! Tenha certeza que você tem controle de quando as mensagens vão ser enviadas antes de usar essa função. Pode ser difícil gravar um novo código no Arduino se ele estiver digitando algo o tempo todo. Um botão para ativar/desativar o controle do teclado é bastante efetivo.
 
 --

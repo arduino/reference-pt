@@ -9,7 +9,7 @@ title: Serial.end()
 --
 
 [float]
-=== Description
+=== Descrição
 Desativa a comunicação serial, permitindo os pinos RX e TX serem usados novamente como entradas e saídas digitais. Para re-ativar a comunicação serial, chame link:../begin[Serial.begin()].
 [%hardbreaks]
 

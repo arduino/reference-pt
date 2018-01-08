@@ -11,7 +11,7 @@ subCategories: [ "Interrupções" ]
 --
 
 [float]
-=== Description
+=== Descrição
 Reativa interrupções (quando elas tiverem sido desativadas por link:../nointerrupts[nointerrupts()]. Interrupções permitem certas tarefas importantes acontecerem ao fundo e são, por padrão, ativadas. Algumas funções não irão funcionar enquanto as interrupções estiverem desativadas, e dados recebidos podem ser ignorados. Interrupções podem levemente interferir no timing do código, no entanto, e podem ser desativadas em seções particulamente críticas do código.
 [%hardbreaks]
 

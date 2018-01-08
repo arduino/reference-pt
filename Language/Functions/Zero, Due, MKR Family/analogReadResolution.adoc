@@ -31,8 +31,8 @@ As placas *Due, Zero e da família MKR* possuem um conversor analógico digital 
 `bits`: determina a resolução (em bits) dos valores retornados pela função `analogRead()`. Você pode configurar esse valor entre 1 e 32. Você pode escolher resoluções mais altas que 12, porém assim, valores retornados por `analogRead()` irão sofrer aproximação. Veja a nota abaixo para detalhes.
 
 [float]
-=== Returns
-Nothing
+=== Retorna
+Nada
 
 --
 // OVERVIEW SECTION ENDS
@@ -104,7 +104,7 @@ Usar uma resolução de 16 bits (ou qualquer resolução *mais alta* que as capa
 === Ver Também
 
 [role="example"]
-#EXEMPLO# http://arduino.cc/en/Tutorial/AnalogInputPins[Description of the analog input pins] +
+#EXEMPLO# http://arduino.cc/en/Tutorial/AnalogInputPins[Descrição dos pinos analógicos de entrada(Em Inglês)] +
 
 [role="language"]
 #LINGUAGEM# link:../../analog-io/analogread[analogRead()]

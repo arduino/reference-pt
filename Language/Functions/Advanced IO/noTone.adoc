@@ -6,12 +6,7 @@ subCategories: [ "Entradas e Saídas Avançadas" ]
 aliases: [ /language/functions/advanced-io/noTone/ ]
 ---
 
-
-
-
-
 = noTone()
-
 
 // OVERVIEW SECTION STARTS
 [#overview]
@@ -24,7 +19,7 @@ Interrompe a geração de uma onda quadrada iniciada pela função `tone()`. Nã
 
 
 [float]
-=== Syntax
+=== Sintaxe
 `noTone(pino)`
 
 

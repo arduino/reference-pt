@@ -4,7 +4,7 @@ Reference-pt é o repositório da documentação de referência para a sintaxe d
 Todos os arquivos da referência devem estar no formato AsciiDoc.
 Obrigado por se interessar em contribuir para a documentação de referência, isso ajuda bastante toda a comunidade Arduino.
 
-A tradução da documentação para Português está em progresso e pode ser encontrada nessa https://www.arduino.cc/reference/pt/[Página]
+A documentação traduzida em Português pode ser encontrada nessa https://www.arduino.cc/reference/pt/[Página]
 
 == Criação e Edição de Conteúdo
 Se você quer contribuir com um novo conteúdo, crie um novo arquivo (com qualquer editor de texto ou código) e salve-o como um arquivo formato AsciiDoc (extensão ".adoc"). Não use parênteses ou qualquer outro caractere especial no nome do arquivo.  

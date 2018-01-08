@@ -1,13 +1,9 @@
 ---
 title: ";"
-title_expanded: Ponto e vírgula
+title_expanded: ponto e vírgula
 categories: [ "Structure" ]
 subCategories: [ "Outros Elementos da Sintaxe" ]
 ---
-
-
-
-
 
 = ; Ponto e vírgula
 

@@ -1,6 +1,6 @@
 ---
 title: "^"
-title_expanded: bitwise xor
+title_expanded: OU EXCLUSIVO
 categories: [ "Structure" ]
 subCategories: [ "Operadores Bitwise" ]
 ---
@@ -14,7 +14,7 @@ subCategories: [ "Operadores Bitwise" ]
 
 [float]
 === Descrição
-Na linguagem C++ existe um operador um pouco incomum chamado de OU EXCLUSIVO, também conhecido como XOR,  bit-a-bit. (Em Inglês é pronunciado "eks-or"). O operador XOR bitwise é escrito usando-se o símbolo `^`. Uma operação XOR bit-a-bit resulta em 1 apenas se os bits de entrada são diferentes. Se iguais, o resultado é zero.
+Na linguagem C++ existe um operador um pouco incomum chamado de OU EXCLUSIVO, também conhecido como XOR (Em Inglês é pronunciado "eks-or"), bit-a-bit. O operador XOR bitwise é escrito usando-se o símbolo `^`. Uma operação XOR bit-a-bit resulta em 1 apenas se os bits de entrada são diferentes. Se iguais, o resultado é zero.
 [%hardbreaks]
 
 Precisamente,

@@ -1,6 +1,6 @@
 ---
 title: "<<"
-title_expanded: bitshift left
+title_expanded: deslocamento à esquerda
 categories: [ "Structure" ]
 subCategories: [ "Operadores Bitwise" ]
 ---

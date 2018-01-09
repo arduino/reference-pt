@@ -4,10 +4,6 @@ categories: [ "Functions" ]
 subCategories: [ "Funções Matemáticas" ]
 ---
 
-
-
-
-
 = max(x, y)
 
 
@@ -29,6 +25,7 @@ Calcula o maior de dois números.
 [float]
 === Parâmetros
 `x`: o primeiro número, qualquer tipo de dado
+
 `y`: o segundo número, qualquer tipo de dado
 
 [float]

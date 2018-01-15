@@ -19,6 +19,8 @@ subCategories: [ "Entradas e Saídas Analógicas" ]
 === Descrição
 Configura a tensão de referência para a entrada analógica (o valor máximo do intervalo de entrada). As opções são:
 
+Placas Arduino AVR (Uno, Mega, etc.)
+
 * DEFAULT: a referência analógica padrão de 5 volts (em placas Arduino de 5V) ou 3.3 volts (em placas Arduino de 3.3V)
 * INTERNAL: uma referência interna, igual a 1.1 volts no ATmega168 ou ATmega328P e 2.56 volts no ATmega8 (Não disponível no Arduino Mega)
 * INTERNAL1V1: uma referência interna de 1.1V (apenas Arduino Mega)
@@ -26,6 +28,19 @@ Configura a tensão de referência para a entrada analógica (o valor máximo do
 * EXTERNAL: a tensão aplicada ao pino AREF (0 a 5V apenas) é usada como referência.
 [%hardbreaks]
 
+
+Placas Arduino SAMD (Zero, etc.)
+
+* AR_DEFAULT: a referência analógica padrão de 3.3V
+* AR_INTERNAL: uma referência integrada de 2.23V 
+* AR_INTERNAL1V0: uma referência integrada de 1.0V
+* AR_INTERNAL1V65: uma referência integrada de 1.65V
+* AR_INTERNAL2V23: uma referência integrada de 2.23V
+* AR_EXTERNAL: a tensão aplicada ao pino AREF é usada como referência
+
+Placas Arduino SAM (Due)
+
+* AR_DEFAULT: a referência analógica padrão de 3.3V. Essa é a única opção suportada pelo DUE.
 
 [float]
 === Sintaxe

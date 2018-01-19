@@ -83,5 +83,7 @@ Se é importante que uma sequência de valores gerados por `random()` seja difer
 
 Por outro lado, pode ser ocasionalmente útil usar sequências pseudoaleatórias exatamente repetidas. Isso pode ser conseguido chamando-se  `randomSeed()` com um número fixo, antes de começar a usar a sequência aleatória.
 
+O parâmetro `max` deve ser escolhido de acordo com o tipo de dado da variável na qual o valor será guardado. De qulquer forma, o valor máximo absoluto é limitado pela natureza `long` (32 bit - 2,147,483,647) do valor gerado. Escolher um valor `max` maior que isso não irá gerar erros durante a compilação, mas durante a execução do sketch, os números gerados irão se comportar de forma impredizível.
+
 --
 // HOW TO USE SECTION ENDS

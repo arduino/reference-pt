@@ -1,24 +1,18 @@
 ---
 title: bool
 categories: [ "Variables" ]
-subCategories: [ "Data Types" ]
+subCategories: [ "Tipos de Dados" ]
 ---
 
-
-
-
-
 = bool
-
 
 // OVERVIEW SECTION STARTS
 [#overview]
 --
 
 [float]
-=== Description
-A `bool` holds one of two values, `true` or `false`. (Each `bool` variable occupies one byte of memory.)
-
+=== Descrição
+O tipo `bool` pode armazenar dois valores: `true` or `false`. (Cada variável `bool` ocupa um byte na memória.)
 
 [%hardbreaks]
 
@@ -26,38 +20,36 @@ A `bool` holds one of two values, `true` or `false`. (Each `bool` variable occup
 // OVERVIEW SECTION ENDS
 
 
-
-
 // HOW TO USE SECTION STARTS
 [#howtouse]
 --
 
 [float]
-=== Example Code
+=== Código de Exemplo
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-This code shows how to use the `bool` datatype.
+O código abaixo mostra como usar o tipo de dado `bool`.
 
 [source,arduino]
 ----
-int LEDpin = 5;       // LED on pin 5
-int switchPin = 13;   // momentary switch on 13, other side connected to ground
+int LEDpin = 5;       // LED no pino digital 5
+int switchPin = 13;   // botão conectado ao pino 13 e o outro terminal ao ground
 
-bool running = false;
+bool running = false; //variável do tipo boolean 
 
 void setup()
 {
   pinMode(LEDpin, OUTPUT);
   pinMode(switchPin, INPUT);
-  digitalWrite(switchPin, HIGH);      // turn on pullup resistor
+  digitalWrite(switchPin, HIGH);      // ativa o resistor pull-up
 }
 
 void loop()
 {
   if (digitalRead(switchPin) == LOW)
-  {  // switch is pressed - pullup keeps pin high normally
-    delay(100);                        // delay to debounce switch
-    running = !running;                // toggle running variable
-    digitalWrite(LEDpin, running);     // indicate via LED
+  {  // botão foi pressionado, o pull-up mantém o pino em HIGH internamente
+    delay(100);                        // delay para fazer o debounce no botão
+    running = !running;                // troca o valor da variável running
+    digitalWrite(LEDpin, running);     // indica via LED
   }
 }
 ----
@@ -71,10 +63,10 @@ void loop()
 --
 
 [float]
-=== See also
+=== Ver Também
 
 [role="language"]
-* #LANGUAGE# link:../../../variables/constants/constants[constants]
+#LINGUAGEM# link:../../../variables/constants/constants[constantes] +
 
 --
 // SEE ALSO SECTION ENDS

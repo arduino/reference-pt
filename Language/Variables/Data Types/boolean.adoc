@@ -11,14 +11,9 @@ subCategories: [ "Tipos de Dados" ]
 --
 
 [float]
-<<<<<<< HEAD
 === Descrição
-O tipo `boolean` pode armazenar dois valores: `true` or `false`. (Cada variável `boolean` ocupa um byte na memória.)
-=======
-=== Description
-`boolean` is a non-standard type alias for link:../../../variables/data-types/bool/[bool] defined by Arduino. It's recommended to instead use the standard type `bool`, which is identical.
 
->>>>>>> a1ceb3b... Document bool data type
+`boolean` é um alias de tipos de dados não padrão para link:../../../variables/data-types/bool/[bool] definido pelo Arduino. É recomendado usar em vez disso o tipo padrão `bool`, que é idêntico.
 
 [%hardbreaks]
 
@@ -26,7 +21,6 @@ O tipo `boolean` pode armazenar dois valores: `true` or `false`. (Cada variável
 // OVERVIEW SECTION ENDS
 
 
-<<<<<<< HEAD
 // HOW TO USE SECTION STARTS
 [#howtouse]
 --
@@ -63,9 +57,6 @@ void loop()
 
 --
 // HOW TO USE SECTION ENDS
-=======
->>>>>>> a1ceb3b... Document bool data type
-
 
 // SEE ALSO SECTION STARTS
 [#see_also]
@@ -75,11 +66,8 @@ void loop()
 === Ver Também
 
 [role="language"]
-<<<<<<< HEAD
-#LINGUAGEM# link:../../../variables/constants/constants[constants] +
-=======
-* #LANGUAGE# link:../../../variables/data-types/bool/[bool]
->>>>>>> a1ceb3b... Document bool data type
+#LINGUAGEM# link:../../../variables/constants/constants[constantes] +
+#LINGUAGEM# link:../../../variables/data-types/bool/[bool]
 
 --
 // SEE ALSO SECTION ENDS

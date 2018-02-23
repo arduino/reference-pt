@@ -4,10 +4,6 @@ categories: [ "Functions" ]
 subCategories: [ "Sketch" ]
 ---
 
-
-
-
-
 = loop()
 
 
@@ -37,7 +33,7 @@ int buttonPin = 3;
 // setup inicializa a porta serial e o pino para o botão
 void setup()
 {
-  beginSerial(9600);
+  Serial.begin(9600);
   pinMode(buttonPin, INPUT);
 }
 
@@ -46,9 +42,9 @@ void setup()
 void loop()
 {
   if (digitalRead(buttonPin) == HIGH)
-    serialWrite('H');
+    Serial.write('H');
   else
-    serialWrite('L');
+    Serial.write('L');
 
   delay(1000);
 }

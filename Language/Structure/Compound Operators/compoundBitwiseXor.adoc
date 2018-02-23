@@ -1,11 +1,11 @@
 ---
 title: "^="
-title_expanded: compound bitwise xor
+title_expanded: atribuição por ou exclusivo
 categories: [ "Structure" ]
-subCategories: [ "Compound Operators" ]
+subCategories: [ "Operadores de Atribuição Composta" ]
 ---
 
-= ^= Compound Bitwise XOR
+= |= Atribuição por OU EXCLUSIVO
 
 
 // OVERVIEW SECTION STARTS
@@ -13,30 +13,29 @@ subCategories: [ "Compound Operators" ]
 --
 
 [float]
-=== Description
-The compound bitwise XOR operator `^=` is often used with a variable and a constant to toggle (invert) particular bits in a variable.
+=== Descrição
+O operador de atribuição composta bitwise OU EXCLUSIVO `^=` é frequentemente usado com uma variável e uma constante para "inverter" (ou trocar) bits particulares de uma variável.
 [%hardbreaks]
 
-A review of the Bitwise XOR `^` operator:
+Uma revisão do operador bitwise OU EXCLUSIVO `^`:
 
-   0  0  1  1    operand1
-   0  1  0  1    operand2
+   0  0  1  1    operando1
+   0  1  0  1    operando2
    ----------
-   0  1  1  0    (operand1 ^ operand2) - returned result
+   0  1  1  0    (operando1 ^ operando2) - resultado retornado
 [%hardbreaks]
 
 [float]
-=== Syntax
+=== Sintaxe
 [source,arduino]
 ----
-x ^= y;   // equivalent to x = x ^ y;
+x ^= y;   // equivalente a x = x ^ y;
 ----
 
 [float]
-=== Parameters
-`x`: variable. *Allowed data types:* char, int, long +
-`y`: variable or constant. *Allowed data types:* char, int, long
-
+=== Parâmetros
+`x`: variável. *Tipos de dados permitidos:* char, int, long +
+`y`: variável ou constante. *Tipos de dados permitidos:* char, int, long
 --
 // OVERVIEW SECTION ENDS
 
@@ -47,47 +46,47 @@ x ^= y;   // equivalent to x = x ^ y;
 --
 
 [float]
-=== Example Code
-Bits that are "bitwise XORed" with 0 are left unchanged. So if myByte is a byte variable,
+=== Código de Exemplo
+Bits que são operados através do OU OEXCLUSIVO com 0 não são mudados, então se meuByte é uma variável byte:
 [source,arduino]
 ----
-myByte ^ B00000000 = myByte;
+meuByte ^ B00000000 = meuByte;
 ----
 
-Bits that are "bitwise XORed" with 1 are toggled so:
+Bits que são operados através do OU EXCLUSIVO com 1 são invertidos, então:
 [source,arduino]
 ----
-myByte ^ B11111111 = ~myByte;
+meuByte ^ B11111111 = ~meuByte;
 ----
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
-Because we are dealing with bits in a bitwise operator - it is convenient to use the binary formatter with constants. The numbers are still the same value in other representations, they are just not as easy to understand. Also, B00000000 is shown for clarity, but zero in any number format is zero.
+=== Notas e Advertências
+Porque estamos lidando com bits em um operador bitwise, é conveniente usar o modificador binário com constantes na representação. Os números ainda são os mesmos em outras representações, só não são tão fáceis de entender. Também, B00000000 é mostrado para claridade, mas zero em qualquer outro formato é zero.
 [%hardbreaks]
 
-Consequently - to toggle bits 0 & 1 of a variable, while leaving the rest of the variable unchanged, use the compound bitwise XOR operator (^=) with the constant B00000011
+Consequentemente, para inverter os bits 0 e 1 de um variável ao mesmo tempo, deixando o resto da variável intocado, use o operador de atribuição por bitwise OU EXCLUSIVO (^=) com a constante B00000011
 
-   1  0  1  0  1  0  1  0    variable
-   0  0  0  0  0  0  1  1    mask
+   1  0  1  0  1  0  1  0    variável
+   0  0  0  0  0  0  1  1    máscara
    ----------------------
    1  0  1  0  1  0  0  1
 
-    bits unchanged
-                     bits toggled
+    bits intactos
+                     bits invertidos
 
 
-Here is the same representation with the variables bits replaced with the symbol x. ~x represents the complement of x.
+Abaixo a mesma representação com os bits da variável substituidos pelo símbolo x. ~x representa o complemento de x.
 
-   x  x  x  x  x  x  x  x    variable
-   0  0  0  0  0  0  1  1    mask
+   x  x  x  x  x  x  x  x    variável
+   0  0  0  0  0  0  1  1    máscara
    ----------------------
    x  x  x  x  x  x ~x ~x
 
-    bits unchanged
-                     bits set
+    bits intactos
+                     bits invertidos
 
-So if:
+Então:
 [source,arduino]
 ----
 myByte =  B10101010;
@@ -105,10 +104,10 @@ myByte ^= B00000011 == B10101001;
 --
 
 [float]
-=== See also
+=== Ver Também
 
 [role="language"]
-* #LANGUAGE#  link:../../bitwise-operators/bitwisexor[& Bitwise XOR]
+#LINGUAGEM#  link:../../bitwise-operators/bitwisexor[^ OU EXCLUSIVO Bitwise]
 
 --
 // SEE ALSO SECTION ENDS

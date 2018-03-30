@@ -12,7 +12,7 @@ subCategories: [ "StringObject Function" ]
 
 [float]
 === Descrição
-Converte uma string para sua versão composta apenas de letras minúsculas. Antes da versão 1.0, toLowerCase() retornava um ponteiro para uma nova String em vez de modificar o objeto String.
+Converte uma String para sua versão composta apenas de letras minúsculas. Antes da versão 1.0, toLowerCase() retornava um ponteiro para uma nova String em vez de modificar o objeto String.
 
 [%hardbreaks]
 

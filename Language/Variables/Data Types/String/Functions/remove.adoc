@@ -12,7 +12,7 @@ subCategories: [ "StringObject Function" ]
 
 [float]
 === Descrição
-Modifica uma string, removendo os caracteres a partir de determinado índice até o final da String, ou determinado número de caracteres a partir do índice fornecido.
+Modifica uma String, removendo os caracteres a partir de determinado índice até o final da String, ou determinado número de caracteres a partir do índice fornecido.
 
 [%hardbreaks]
 

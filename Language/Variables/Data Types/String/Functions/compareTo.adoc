@@ -12,7 +12,7 @@ subCategories: [ "StringObject Function" ]
 
 [float]
 === Descrição
-Compara duas Strings, testando se uma vem antes da outra na tabela ASCII, ou se são iguais. As strings são comparadas caractere por caractere, usando os valores ASCII dos caracteres. Isso significa, por exemplo, que 'a' vem antes 'b', em ordem alfabética, mas depois de 'A' e 'B' etc. Números vem antes das letras.
+Compara duas Strings, testando se uma vem antes da outra na tabela ASCII, ou se são iguais. As Strings são comparadas caractere por caractere, usando os valores ASCII dos caracteres. Isso significa, por exemplo, que 'a' vem antes 'b', em ordem alfabética, mas depois de 'A' e 'B' etc. Números vem antes das letras.
 
 [%hardbreaks]
 

@@ -32,7 +32,7 @@ string.concat(param)
 === Retorna
 `true`: sucesso
 
-`false`: falha ( em qual a string é deixada como antes).
+`false`: falha ( em qual a String é deixada como antes).
 
 --
 // OVERVIEW SECTION ENDS

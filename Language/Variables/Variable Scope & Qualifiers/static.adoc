@@ -55,7 +55,7 @@ void setup()
 }
 
 void loop()
-{        //  tetst randomWalk function
+{        //  test randomWalk function
   stepsize = 5;
   thisTime = randomWalk(stepsize);
   Serial.println(thisTime);
@@ -83,3 +83,12 @@ int randomWalk(int moveSize){
 
 --
 // HOW TO USE SECTION ENDS
+
+// SEE ALSO SECTION STARTS
+[#see_also]
+--
+
+[float]
+=== Ver também
+--
+// SEE ALSO SECTION ENDS

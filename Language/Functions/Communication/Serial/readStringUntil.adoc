@@ -10,7 +10,7 @@ title: Serial.readStringUntil()
 
 [float]
 === Descrição
-`readStringUntil()` ê caracteres do buffer serial e os move para uma string. A função termina se o caractere terminador é encontrado, ou se  ocorre time-out (ver link:../setTimeout[setTimeout()]).
+`readStringUntil()` ê caracteres do buffer serial e os move para uma String. A função termina se o caractere terminador é encontrado, ou se  ocorre time-out (ver link:../setTimeout[setTimeout()]).
 
 Essa função é parte da classe Stream, e é chamada por qualquer classe que herda da mesma (Wire, Serial, etc). Veja a página principal da classe link:../../stream[Stream] para mais informações.
 
@@ -27,7 +27,7 @@ Essa função é parte da classe Stream, e é chamada por qualquer classe que he
 
 [float]
 === Retorna
-A string completa lida do buffer serial, até o caractere terminador ser encontrado.
+A String completa lida do buffer serial, até o caractere terminador ser encontrado.
 
 --
 // OVERVIEW SECTION ENDS

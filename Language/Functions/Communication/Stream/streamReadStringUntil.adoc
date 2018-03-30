@@ -12,7 +12,7 @@ title: Stream.readStringUntil()
 
 [float]
 === Descrição
-`readStringUntil()` lê caracteres de uma stream para uma string. A função termina se o caractere terminador é detectado ou se ocorre time-out (ver link:../streamsettimeout[setTimeout()]).
+`readStringUntil()` lê caracteres de uma stream para uma String. A função termina se o caractere terminador é detectado ou se ocorre time-out (ver link:../streamsettimeout[setTimeout()]).
 
 Essa função é parte da classe Stream, e é chamada por qualquer classe que herda da mesma (Wire, Serial, etc). Veja a página principal da link:../../stream[classe Stream] para mais informações.
 [%hardbreaks]
@@ -31,7 +31,7 @@ Essa função é parte da classe Stream, e é chamada por qualquer classe que he
 
 [float]
 === Retorna
-A string completa da stream, até o caractere terminador.
+A String completa da Stream, até o caractere terminador.
 
 --
 // OVERVIEW SECTION ENDS

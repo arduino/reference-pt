@@ -56,32 +56,32 @@ unsigned int x;
    x = x + 1;       // x agora contém 0
 ----
 
-Math with unsigned variables may produce unexpected results, even if your unsigned variable never rolls over.
+A matemática com variávies `unsigned` pode produzir resultados inesperados, mesmo se a variável `unsigned` nunca estourar.
 
-The MCU applies the following rules:
+O microcontrolador aplica as seguintes regras:
 
-The calculation is done in the scope of the destination variable. E.g. if the destination variable is signed, it will do signed math, even if both input variables are unsigned.
+O cálculo é feito de acordo com a variável de destino. Exemplo, se a variável destino possui sinal, ele irá realizar o cálculo levando em conta o sinal, mesmo que ambas as variáveis de entrada sejam `unsigned`.
 
-However with a calculation which requires an intermediate result, the scope of the intermediate result is unspecified by the code. In this case, the MCU will do unsigned math for the intermediate result, because both inputs are unsigned!
+No entanto, em um cálculo que requer um resultado intermediário, o escopo da variável intermediária não é especificado pelo código. Nesse caso, o micro irá usar matemática sem sinal para o resultado intermediário, porque ambas as entradas são `unsigned`!
 
 
 [source,arduino]
 ----
 unsigned int x=5;
 unsigned int y=10;
-int result;
+int resultado;
 
-   result = x - y; // 5 - 10 = -5, as expected
-   result = (x - y)/2; // 5 - 10 in unsigned math is 65530!  65530/2 = 32765 
+   resultado = x - y; // 5 - 10 = -5, como esperado
+   resultado = (x - y)/2; // 5 - 10 com matemática unsigned é 65530!  65530/2 = 32765 
    
-   // solution: use signed variables, or do the calculation step by step.
-   result = x - y; // 5 - 10 = -5, as expected
-   result = result / 2; //  -5/2 = -2 (only integer math, decimal places are dropped)
+   // solução: usar variáveis com sinal, ou fazer o cálculo passo a passo.
+   result = x - y; // 5 - 10 = -5, como esperado
+   result = result / 2; //  -5/2 = -2 (matemática inteira, casas decimais não são consideradas)
 ----
-Why use unsigned variables at all?
+Então porque usar variáveis sem sinal?
 
-- The rollover behaviour is desired, e.g. counters
-- The signed variable is a bit too small, but you want to avoid the memory and speed loss of long/float.
+- Quando o comportamento de estouro é desejado, ex. contadores
+- A variável com sinal é muito pequena, e se quer evitar a perda de memória e performance de long/float.
 --
 // HOW TO USE SECTION ENDS
 

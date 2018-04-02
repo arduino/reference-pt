@@ -75,8 +75,8 @@ int resultado;
    resultado = (x - y)/2; // 5 - 10 com matemática unsigned é 65530!  65530/2 = 32765 
    
    // solução: usar variáveis com sinal, ou fazer o cálculo passo a passo.
-   result = x - y; // 5 - 10 = -5, como esperado
-   result = result / 2; //  -5/2 = -2 (matemática inteira, casas decimais não são consideradas)
+   resultado = x - y; // 5 - 10 = -5, como esperado
+   resultado = resultado / 2; //  -5/2 = -2 (matemática inteira, casas decimais não são consideradas)
 ----
 Então porque usar variáveis sem sinal?
 

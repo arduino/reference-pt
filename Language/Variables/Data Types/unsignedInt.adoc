@@ -56,7 +56,32 @@ unsigned int x;
    x = x + 1;       // x agora contém 0
 ----
 
+A matemática com variávies `unsigned` pode produzir resultados inesperados, mesmo se a variável `unsigned` nunca estourar.
 
+O microcontrolador aplica as seguintes regras:
+
+O cálculo é feito de acordo com a variável de destino. Exemplo, se a variável destino possui sinal, ele irá realizar o cálculo levando em conta o sinal, mesmo que ambas as variáveis de entrada sejam `unsigned`.
+
+No entanto, em um cálculo que requer um resultado intermediário, o escopo da variável intermediária não é especificado pelo código. Nesse caso, o micro irá usar matemática sem sinal para o resultado intermediário, porque ambas as entradas são `unsigned`!
+
+
+[source,arduino]
+----
+unsigned int x=5;
+unsigned int y=10;
+int resultado;
+
+   resultado = x - y; // 5 - 10 = -5, como esperado
+   resultado = (x - y)/2; // 5 - 10 com matemática unsigned é 65530!  65530/2 = 32765 
+   
+   // solução: usar variáveis com sinal, ou fazer o cálculo passo a passo.
+   resultado = x - y; // 5 - 10 = -5, como esperado
+   resultado = resultado / 2; //  -5/2 = -2 (matemática inteira, casas decimais não são consideradas)
+----
+Então porque usar variáveis sem sinal?
+
+- Quando o comportamento de estouro é desejado, ex. contadores
+- A variável com sinal é muito pequena, e se quer evitar a perda de memória e performance de long/float.
 --
 // HOW TO USE SECTION ENDS
 

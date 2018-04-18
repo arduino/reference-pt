@@ -12,7 +12,7 @@ subCategories: [ "Tipos de Dados" ]
 
 [float]
 === Descrição
-No UNO e outras placas baseadas nos microcontroladores ATmega, unsigned ints (inteiros sem sinal) são o mesmo que o tipo int no que esses também armazenam um valor de 2 bytes. Em vez de guardar números negativos, no entanto, esses apenas armazenam valores positivos, garantindo um intervalo útil de 0 a 65,535 (2^16) - 1).
+No UNO e outras placas baseadas nos microcontroladores ATmega, unsigned ints (inteiros sem sinal) são o mesmo que o tipo int no que esses também armazenam um valor de 2 bytes. Em vez de guardar números negativos, no entanto, esses apenas armazenam valores positivos, garantindo um intervalo útil de 0 a 65,535 ((2^16) - 1).
 
 O Due e outras placas ARM armazenam um unsigned int em 4 bytes (32 bits), de 0 a 4,294,967,295 (2^32 - 1).
 

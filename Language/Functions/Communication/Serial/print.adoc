@@ -88,7 +88,7 @@ void loop() {
   Serial.print("\t");
 
   Serial.print("BIN");
-  Serial.print("\t");
+  Serial.println("\t");
 
   for(x=0; x< 64; x++){    // apenas uma parte da tabela ASCII, edite para mais ou menos valores
 

@@ -14,7 +14,8 @@ subCategories: [ "Operadores de Comparação" ]
 
 [float]
 === Descrição
-Compara a variável à esquerda com o valor ou variável à direita do operador. Retorna verdadeiro (`true`) quando o operando à esquerda é menor ou igual ao operando à direita.  
+Compara a variável à esquerda com o valor ou variável à direita do operador. Retorna verdadeiro (`true`) quando o operando à esquerda é menor ou igual ao operando à direita. Por favor note que você pode comparar variáveis de tipos de dados diferentes, mas isso pode gerar resultados imprevisíveis. Por isso é recomendado comparar variáveis do mesmo tipo de dados incluindo o atributo signed/unsigned.
+
 [%hardbreaks]
 
 

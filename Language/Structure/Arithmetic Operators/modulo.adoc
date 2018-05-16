@@ -1,6 +1,6 @@
 ---
 title: "%"
-title_expanded: "módulo"
+title_expanded: "resto"
 categories: [ "Structure" ]
 subCategories: [ "Operadores Aritméticos" ]
 ---
@@ -13,7 +13,7 @@ subCategories: [ "Operadores Aritméticos" ]
 
 [float]
 === Descrição
-A operação *Módulo* calcula o resto da divisão de um inteiro por outro. Não confunda o operador módulo (%) com o módulo da matemática ( |x| ), que na linguagem arduino é calculado através da função `abs()`. Esse operador é útil para manter uma variável dentro de um intervalo (ex. o tamanho de um vetor). O símbolo `%` (porcentagem) é usado para realizar a operação módulo.
+A operação *resto* calcula o resto da divisão de um inteiro por outro. Esse operador também pode ser chamado de módulo. Apesar do nome, não confunda o operador módulo (%) da computação com o módulo da matemática ( |x| ), que na linguagem arduino é calculado através da função `abs()`. Esse operador é útil para manter uma variável dentro de um intervalo (ex. o tamanho de um vetor). O símbolo `%` (porcentagem) é usado para realizar a operação resto.
 [%hardbreaks]
 
 
@@ -72,7 +72,7 @@ void loop()
 [float]
 === Notas e Advertências
 
-O operador módulo não funciona em floats.
+O operador resto não funciona em floats.
 [%hardbreaks]
 
 --

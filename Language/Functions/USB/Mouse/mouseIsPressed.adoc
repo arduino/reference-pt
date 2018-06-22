@@ -36,7 +36,7 @@ Os argumentos acima são o botão esquerdo, direito e do meio, respectivamente.
 
 [float]
 === Retorna
-Se o botão do mouse passado para a função está pressionado ou não - `boolean`
+Se o botão do mouse passado para a função está pressionado ou não - `bool`
 
 --
 // OVERVIEW SECTION ENDS

@@ -33,7 +33,7 @@ Essa função é parte da classe Stream, e é chamada por qualquer classe que he
 
 [float]
 === Retorna
-`boolean`
+`bool`
 
 --
 // OVERVIEW SECTION ENDS

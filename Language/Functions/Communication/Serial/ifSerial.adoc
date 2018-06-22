@@ -39,7 +39,7 @@ Nenhum
 
 [float]
 === Retorna
-`boolean` : retorna `true` se a porta serial especificada está disponível. Irá retornar `false` apenas caso verificada a conexão serial USB CDC do Leonardo antes que a mesma esteja pronta.
+`bool` : retorna `true` se a porta serial especificada está disponível. Irá retornar `false` apenas caso verificada a conexão serial USB CDC do Leonardo antes que a mesma esteja pronta.
 --
 
 // OVERVIEW SECTION ENDS

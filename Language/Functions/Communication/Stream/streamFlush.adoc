@@ -31,7 +31,7 @@ stream` : uma instância de uma classe que herda da classe Stream.
 
 [float]
 === Retorna
-`bool`
+Nada.
 
 --
 // OVERVIEW SECTION ENDS

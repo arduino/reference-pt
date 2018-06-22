@@ -40,7 +40,7 @@ O código abaixo "foge" de dentro de todos os laços caso a leitura no pino anal
 [source,arduino]
 ----
 for(byte r = 0; r < 255; r++){
-    for(byte g = 255; g > -1; g--){
+    for(byte g = 255; g > 0; g--){
         for(byte b = 0; b < 255; b++){
             if (analogRead(0) > 250){ goto cancelar;}
             // mais comandos ...

@@ -10,7 +10,7 @@ title: Serial.readString()
 
 [float]
 === Descrição
-`Serial.readString()` lê caracteres do buffer serial e os move para uma String. A função termina se ocorre time-out (ver link:../setTimeout[setTimeout()]).
+`Serial.readString()` lê caracteres do buffer serial e os move para uma String. A função termina se ocorre time-out (ver link:../settimeout[setTimeout()]).
 
 Essa função é parte da classe Stream, e é chamada por qualquer classe que herda da mesma (Wire, Serial, etc). Veja a página principal da classe link:../../stream[Stream] para mais informações.
 
@@ -52,8 +52,8 @@ Uma String lida do buffer serial
 #LINGUAGEM# link:../print[print()] +
 #LINGUAGEM# link:../println[println()] +
 #LINGUAGEM# link:../write[write()] +
-#LINGUAGEM# link:../serialEvent[SerialEvent()] +
-#LINGUAGEM# link:../../stream/streamParseFloat[Stream.parseFloat()] +
+#LINGUAGEM# link:../serialevent[SerialEvent()] +
+#LINGUAGEM# link:../../stream/streamparsefloat[Stream.parseFloat()] +
 
 --
 // SEE ALSO SECTION ENDS

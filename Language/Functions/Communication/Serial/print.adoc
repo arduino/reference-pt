@@ -15,7 +15,7 @@ Imprime dados na porta serial em como texto ASCII (facilmente legível, diferent
 * `Serial.print(78) imprime "78"` +
 * `Serial.print(1.23456) imprime "1.23"` +
 * `Serial.print('N') imprime "N"` +
-* `Serial.print("Hello world.") imprime "Hello world." `
+* `Serial.print("Hello world.") imprime "Hello world."`
 
 Um segundo parâmetro opcional especifíca a base (formato) a ser usada; valores permitidos são `BIN(binário, ou base 2)`, `OCT(octal, ou base 8)`, `DEC(decimal, ou base 10)`, `HEX(hexadecimal, ou base 16)`. Para números de ponto flutuante, esse parâmetro especifica o número de casas decimais a serem impressas. Por exemplo:
 
@@ -23,15 +23,15 @@ Um segundo parâmetro opcional especifíca a base (formato) a ser usada; valores
 * `Serial.print(78, OCT) imprime "116"` +
 * `Serial.print(78, DEC) imprime "78"` +
 * `Serial.print(78, HEX) imprime "4E"` +
-* `Serial.println(1.23456, 0) imprime "1"` +
-* `Serial.println(1.23456, 2) imprime "1.23"` +
-* `Serial.println(1.23456, 4) imprime "1.2346"`
+* `Serial.print(1.23456, 0) imprime "1"` +
+* `Serial.print(1.23456, 2) imprime "1.23"` +
+* `Serial.print(1.23456, 4) imprime "1.2346"`
 
-Você pode passar strings armazenadas na memória flash para a função Serial.print() envolvendo as com F(). Por exemplo:
+Você pode passar strings armazenadas na memória flash para a função Serial.print() envolvendo as com link:../../../../variables/utilities/progmem[F()]. Por exemplo:
 
 `Serial.print(F(“Hello World”))`
 
-Para enviar um único byte, sem convertê-lo para texto ASCII, use link:../write[Serial.write()].
+Para enviar dados, sem convertê-los para texto ASCII, use link:../write[Serial.write()].
 [%hardbreaks]
 
 
@@ -75,7 +75,7 @@ void setup() {
 
 void loop() {
   // imprime rótulos para cada base
-  Serial.print("NO FORMAT");       // imprime um rótulo
+  Serial.print("NUMERO");       // imprime um rótulo
   Serial.print("\t");              // imprime uma tabulação (TAB)
 
   Serial.print("DEC");
@@ -105,11 +105,12 @@ void loop() {
     Serial.print(x, OCT);  // imprime como octal codificado em ASCII
     Serial.print("\t");    // imprime uma tabulação
 
-    Serial.println(x, BIN);  // imprime como binário codificado em ASCII
-    //                             então adiciona o retorno (enter) com "println"
-    delay(200);            // delay de 200 milissegundos
+    Serial.println(x, BIN); // imprime como binário codificado em ASCII
+                            //então adiciona o retorno (enter) com "println"
+    
+    delay(200);             // delay de 200 milissegundos
   }
-  Serial.println("");      // imprime outro retorno
+  Serial.println();         // imprime outro retorno
 }
 ----
 [%hardbreaks]

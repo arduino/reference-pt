@@ -12,7 +12,7 @@ subCategories: [ "Entradas e Saídas Avançadas" ]
 
 [float]
 === Descrição
-Captura a duração de um pulso em um pino (que pode ser 'HIGH' ou 'LOW'). Por exemplo, se o valor 'HIGH' é passado para a função, a função `pulseIn()` espera o pino ir para do estado 'LOW' para 'HIGH', começa a temporizar, então espera o pino ir para o estado 'LOW' e para de temporizar. Retorna o tamanho do pulso em microssegundos ou desiste e retorna 0 se não receber nenhum pulso dentro de um tempo máximo de espera especificado.
+Captura a duração de um pulso em um pino (que pode ser `HIGH` ou `LOW`). Por exemplo, se o valor `HIGH` é passado para a função, a função `pulseIn()` espera o pino ir para do estado 'LOW' para `HIGH`, começa a temporizar, então espera o pino ir para o estado `LOW` e para de temporizar. Retorna o tamanho do pulso em microssegundos ou desiste e retorna 0 se não receber nenhum pulso dentro de um tempo máximo de espera especificado.
 
 A temporização dessa função foi determinada empiricamente e irá provavelmente mostrar erros em pulsos mais longos. funciona em pulsos de 10 microssegundos a 3 minutos de duração.
 [%hardbreaks]
@@ -30,10 +30,10 @@ A temporização dessa função foi determinada empiricamente e irá provavelmen
 
 `valor`: tipo de pulso a ser lido: pode ser link:../../../variables/constants/constants/[HIGH] ou link:../../../variables/constants/constants/[LOW]. (int)
 
-`tempo_de_espera` (opcional): o numero de microssegundos a se esperar pelo começo do pulso; o padrão é um segundo (unsigned long)
+`tempo_de_espera` (opcional): o número de microssegundos a se esperar pelo começo do pulso; o padrão é um segundo. (unsigned long)
 [float]
 === Retorna
-a duração do pulso (em microssegundos) ou 0 se nenhum pulso começar antes de se esgotar o tempo de espera (unsigned long)
+A duração do pulso (em microssegundos) ou 0 se nenhum pulso começar antes de se esgotar o tempo de espera (unsigned long).
 
 --
 // OVERVIEW SECTION ENDS

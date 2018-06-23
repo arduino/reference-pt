@@ -1,0 +1,74 @@
+---
+title: pulseInLong()
+categories: [ "Functions" ]
+subCategories: [ "Entradas e Saídas Avançadas" ]
+---
+
+= pulseInLong()
+
+
+// OVERVIEW SECTION STARTS
+[#overview]
+--
+
+[float]
+=== Descrição
+Reads a pulse (either HIGH or LOW) on a pin. For example, if value is HIGH, `pulseInLong()` waits for the pin to go `HIGH`, starts timing, then waits for the pin to go `LOW` and stops timing. Returns the length of the pulse in microseconds or 0 if no complete pulse was received within the timeout.
+
+A temporização dessa função foi determinada empiricamente e irá provavelmente mostrar erros em pulsos mais curtos. Funciona em pulsos de 10 microssegundos a 3 minutos de duração. Por favor note que se a função for configurada para recebr um pulso `HIGH` e o pino já estiver no estado `HIGH` quando a função for chamada, essa irá primeiro esperar o pino ir para estado `LOW` e então `HIGH` antes de começar a contar. Essa função pode ser utilizada apenas quando interrupções estiverem ativadas. Além disso, resoluções maiores são alcançadas com intervalos maiores.
+[%hardbreaks]
+
+
+[float]
+=== Sintaxe
+`pulseInLong(pino, valor)`
+
+`pulseInLong(pino, valor, tempo_de_espera)`
+
+[float]
+=== Parâmetros
+`pino`: o número do pino no qual se quer capturar a duração de um pulso. (int)
+
+`valor`: tipo de pulso a ser lido: pode ser link:../../../variables/constants/constants/[HIGH] ou link:../../../variables/constants/constants/[LOW]. (int)
+
+`tempo_de_espera` (opcional): o número de microssegundos a se esperar pelo começo do pulso; o padrão é um segundo. (unsigned long)
+[float]
+=== Retorna
+A duração do pulso (em microssegundos) ou 0 se nenhum pulso começar antes de se esgotar o tempo de espera (unsigned long).
+
+--
+// OVERVIEW SECTION ENDS
+
+
+
+
+// HOW TO USE SECTION STARTS
+[#howtouse]
+--
+
+[float]
+=== Código de Exemplo
+// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+O exemplo abaixo calcula a duração de um pulso no pino 7.
+
+[source,arduino]
+----
+int pin = 7;              // pino para a entrada do pulso
+unsigned long duration;   // variável para guardar a duração do pulso
+
+void setup() {
+  pinMode(pin, INPUT);    // pino 7 como entrada
+}
+
+void loop() {
+  duration = pulseInLong(pin, HIGH);  //mede a duração de um pulso HIGH no pino 7
+}
+----
+[%hardbreaks]
+
+[float]
+=== Notes and Warnings
+Essa função depende da função micros(), então não pode ser usada quando interrupções estiverem desativadas com link:../../interrupts/nointerrupts[noInterrupts()].
+
+--
+// HOW TO USE SECTION ENDS

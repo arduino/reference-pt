@@ -24,9 +24,12 @@ PROGMEM é parte da biblioteca http://www.nongnu.org/avr-libc/user-manual/group\
 
 [float]
 === Sintaxe
-const dataType variableName[] PROGMEM = {data0, data1, data3...};
+`const dataType variableName[] PROGMEM = {data0, data1, data3...};`
 
-`dataType` - qualquer tipo de dados
+Onde:
+
+`dataType` - qualquer tipo de dados 
+
 `variableName` - o nome do seu vetor de dados
 
 Note que porque PROGMEM é um modificador de variável, não há uma regra rigorosa de onde ele deve ir, então o compilador aceita todos os tipos de definição abaixo, que também são sinônimos. Mesmo assim, experimentos indicaram que, em várias versões do Arduino (relacionado a versão do GCC), PROGMEM pode funcionar em uma localização e não em outra. O exemplo da "tabela de strings" abaixo foi testado com a versão 13 do Arduino. Versões mais antigas da IDE podem funcionar melhor se PROGMEM for incluído  depois do nome da variável.
@@ -38,7 +41,7 @@ Note que porque PROGMEM é um modificador de variável, não há uma regra rigor
 
 Enquanto `PROGMEM` pode ser usada em uma única variável, realmente só vale a pena o trabalho de usá-lo se você tiver um bloco de dados maior para ser armazenado, o que geralmente é mais fácil de fazer com vetores (ou outra estrutura de dados da linguagem C fora do escopo da nossa discussão atual).
 
-Usar `PROGMEM` é também um procedimento realizado em dois passos. Depois de resgatar os dados da memória flash, são requeridas funções especiais, também definidas na biblioteca http://www.nongnu.org/avr-libc/user-manual/group__avr__pgmspace.html[pgmspace.h], para ler os dados da memória de programa para a memória SRAM, tal que possamos fazer algo com eles.
+Usar `PROGMEM` é também um procedimento realizado em dois passos. Depois de resgatar os dados da memória flash, são requeridas funções especiais, também definidas na biblioteca http://www.nongnu.org/avr-libc/user-manual/group\__avr__pgmspace.html[pgmspace.h], para ler os dados da memória de programa para a memória SRAM, tal que possamos fazer algo com eles.
 
 
 --
@@ -178,6 +181,7 @@ O código a seguir irá funcionar, mesmo se definido localmente dentro de uma fu
 const static char long_str[] PROGMEM = "Olá, gostaria de falar um pouco sobre mim mesmo.\n";
 ----
 
+[float]
 === A macro `F()`
 
 Quando uma instrução do tipo:
@@ -191,7 +195,7 @@ Serial.print("Escreve algo no Monitor Serial");
 
 [source,arduino]
 ----
-Serial.print(F("Escreve algo que foi guardado na flash no Monitor Serial"));
+Serial.print(F("Esse texto foi guardado na memória flash do Arduino"));
 ----
 
 --

@@ -45,7 +45,7 @@ Não é possível gerar tons de freqeuência mais baixa que 31Hz. Para detalhes 
 
 [float]
 === Retorna
-Nada
+Nada.
 
 --
 // OVERVIEW SECTION ENDS
@@ -58,7 +58,7 @@ Nada
 --
 
 [float]
-=== Notas e Advertências`
+=== Notas e Advertências
 Se você quiser tocar tons diferentes em múltiplos pinos, você precisa chamar `noTone()` em um pino antes de chamar `tone()` no próximo pino.
 [%hardbreaks]
 

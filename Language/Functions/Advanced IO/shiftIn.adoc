@@ -17,7 +17,7 @@ subCategories: [ "Entradas e Saídas Avançadas" ]
 
 [float]
 === Descrição
-Receb um byte de dados, um bit de cada vez. Começa com ou o bit mais significante (o mais à esquerda) ou o menos significante (mais à direita). Para cada bit, o pino de clock é colocado em estado em HIGH, o próximo bit é lido no pino de dados (data), e então o pino é colocado em estado LOW novamente.
+Recebe um byte de dados, um bit de cada vez. Começa com ou o bit mais significante (o mais à esquerda) ou o menos significante (mais à direita). Para cada bit, o pino de clock é colocado em estado em HIGH, o próximo bit é lido no pino de dados (data), e então o pino é colocado em estado LOW novamente.
 
 Se está conectando um dispositivo que funciona a partir da borda de subida sinal de clock, você irá precisar garantir que o pino de clock está em estado LOW antes da primeira chamada de `shiftIn()`, ex. chamando `digitalWrite(clockPin, LOW)`.
 
@@ -32,16 +32,16 @@ Nota: essa é uma implementação por software; O Arduino também provê uma htt
 
 [float]
 === Parâmetros
-`dataPin`: o pino no qual receber cada bit (int)
+`dataPin`: o pino no qual receber cada bit (int).
 
-`clockPin`: o pino alternado para sinalizar uma leitura de *dataPin*
+`clockPin`: o pino alternado para sinalizar uma leitura de *dataPin*.
 
 `bitOrder`: em que ordem receber os bits; pode ser *MSBFIRST* ou *LSBFIRST*.
-Respectivamente primeiro o bit mais significativo (Most Significant Bit First), ou o primeiro o bit menos significativo (Least Significant Bit First)
+Correspondendo respectivamente a primeiro o bit mais significativo (Most Significant Bit First), ou o primeiro o bit menos significativo (Least Significant Bit First)
 
 [float]
 === Retorna
-O valor lido (byte)
+O valor lido (byte).
 
 --
 // OVERVIEW SECTION ENDS

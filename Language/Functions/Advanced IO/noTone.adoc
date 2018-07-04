@@ -25,7 +25,7 @@ Interrompe a geração de uma onda quadrada iniciada pela função `tone()`. Nã
 
 [float]
 === Parâmetros
-`pino`: o pino no qual se quer parar de gerar um tom
+`pino`: o pino no qual se quer parar de gerar um tom.
 
 [float]
 === Retorna

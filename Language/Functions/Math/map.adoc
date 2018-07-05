@@ -4,12 +4,7 @@ categories: [ "Functions" ]
 subCategories: [ "Funções Matemáticas" ]
 ---
 
-
-
-
-
 = map(valor, deMenor, deMaior, paraMenor, paraMaior)
-
 
 // OVERVIEW SECTION STARTS
 [#overview]

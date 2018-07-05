@@ -4,10 +4,6 @@ categories: [ "Functions" ]
 subCategories: [ "Funções Matemáticas" ]
 ---
 
-
-
-
-
 = min(x, y)
 
 

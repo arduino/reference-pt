@@ -4,12 +4,7 @@ categories: [ "Functions" ]
 subCategories: [ "Funções Matemáticas" ]
 ---
 
-
-
-
-
 = sq(x)
-
 
 // OVERVIEW SECTION STARTS
 [#overview]

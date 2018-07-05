@@ -6,7 +6,6 @@ subCategories: [ "Funções Matemáticas" ]
 
 = max(x, y)
 
-
 // OVERVIEW SECTION STARTS
 [#overview]
 --

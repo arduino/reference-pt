@@ -71,7 +71,9 @@ Para mais informações sobre interrupções, veja as http://gammon.com.au/inter
 * *CHANGE* acionar a interrupção quando o sempre estado do pino mudar +
 * *RISING* acionar a interrupção quando o estado do pino for de LOW para HIGH apenas, +
 * *FALLING* acionar a interrupção quando o estado do pino for de HIGH para LOW apenas. +
+
 Placas Due, Zero e MKR1000 suportam também: +
+
 * *HIGH* acionar a interrupção quando o estado do pino for HIGH.
 
 [float]

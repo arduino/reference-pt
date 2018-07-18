@@ -31,9 +31,6 @@ Ficamos felizes que você tenha interesse em contribuir para a documentação de
 
 Se sua contribuição está adicionando ou modificando código existente ou descrições completas, por favor sempre consulte se há _issues_ abertos ou abra um novo _issue_ antes de contribuir. 
 
-Por favor note que sua contribuição para a documentação de referência é licenciada sob a licença Creative Commons Attribution-Share Alike 3.0. Veja https://creativecommons.org/licenses/by-sa/3.0/
-
-
 === Estrutura de Diretórios
 [source]
 ----
@@ -56,3 +53,10 @@ reference-pt
 ----
 
 Dentro da pasta Language, a arvore de arquivos segue a mesma estrutura que no link: https://www.arduino.cc/reference/en[Página da Referência do Arduino (Em Inglês)]
+
+
+=== Licença
+
+Por favor note que sua contribuição para a documentação de referência é licenciada sob a licença Creative Commons Attribution-Share Alike 3.0. Veja https://creativecommons.org/licenses/by-sa/3.0/
+
+image:https://i.creativecommons.org/l/by-sa/3.0/88x31.png[Creative Commons License, title="Creative Commons License"] Este trabalho está licenceado sob a licença: https://creativecommons.org/licenses/by-sa/3.0/deed.en[Creative Commons Attribution-ShareAlike 3.0 Unported].

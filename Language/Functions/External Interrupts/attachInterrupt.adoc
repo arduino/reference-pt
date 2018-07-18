@@ -20,13 +20,15 @@ O primeiro parâmetro de attachInterrupt() é o número da interrupção. É rec
 |===================================================
 |Placa                                |Pinos digitais possíveis para interrupções
 |Uno, Nano, Mini e outros com 328p    |2, 3
+|Uno WiFi Rev.2                       |todos os pinos digitais
 |Mega, Mega2560, MegaADK              |2, 3, 18, 19, 20, 21
 |Micro, Leonardo e outros com 32u4    |0, 1, 2, 3, 7
 |Zero                                 |todos os pinos digitais, exceto 4
-|MKR1000 Rev.1                        |0, 1, 4, 5, 6, 7, 8, 9, A1, A2
+|Família MKR                          |0, 1, 4, 5, 6, 7, 8, 9, A1, A2
 |Due                                  |todos os pinos digitais
 |101                                  |todos os pinos digitais (Apenas pinos 2, 5, 7, 8, 10, 11, 12, 13 funcionam com *CHANGE*)
 |===================================================
+Para as placas Uno WiFiRev.2, Due, Zero, Família MKR e 101, *número da interrupção = número do pino*.
 
 [%hardbreaks]
 

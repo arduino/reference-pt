@@ -31,7 +31,7 @@ for (x = 0; x < 255; x ++)
 {
     analogWrite(PWMpin, x);
     sens = analogRead(sensorPin);
-    if (sens > lim){      // "foge" do o loop `for`
+    if (sens > 40){      // "foge" do o loop `for`
        x = 0;
        break;
     }

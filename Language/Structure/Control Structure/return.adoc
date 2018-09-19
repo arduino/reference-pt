@@ -29,7 +29,7 @@ return valor; // ambas as formas são válidas
 
 [float]
 === Parâmetros
-`valor': qualquer variável ou constante de qualquer tipo de dado
+`valor`: qualquer variável ou constante de qualquer tipo de dado
 
 --
 // OVERVIEW SECTION ENDS

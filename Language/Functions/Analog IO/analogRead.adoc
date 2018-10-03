@@ -16,7 +16,7 @@ subCategories: [ "Entradas e Saídas Analógicas" ]
 
 [float]
 === Descrição
-Lê o valor de um pino analógico especificado. A placa Arduino possui um conversor analógico-digital de 6 canais (8 canais nos Mini e Nano, 16 no Mega). Isso significa que este irá mapear tensões entre 0 e 5 volts para valores inteiros entre 0 e 1023. Isso permite uma resolução entre leituras de: 5 volts / 1024 unidades, ou .0049 volts (4.9 mV) por unidade. O intervalo de tensões de entrada pode ser mudado usando-se a função link:../analogreference[analogReference()].
+Lê o valor de um pino analógico especificado. A placa Arduino possui um conversor analógico-digital de 6 canais (8 canais nos Mini e Nano, 16 no Mega, 7 canais em placas MKR). Isso significa que este irá mapear tensões entre 0 e 5 volts para valores inteiros entre 0 e 1023. Isso permite uma resolução entre leituras de: 5 volts / 1024 unidades, ou .0049 volts (4.9 mV) por unidade. O intervalo de tensões de entrada pode ser mudado usando-se a função link:../analogreference[analogReference()].
 
 Ler um valor analógico leva em torno de 100 microssegundos (0.0001 s), então a taxa de leitura máxima é aproximadamente 10,000 leituras por segundo.
 [%hardbreaks]
@@ -29,7 +29,7 @@ Ler um valor analógico leva em torno de 100 microssegundos (0.0001 s), então a
 
 [float]
 === Parâmetros
-`pino`: o número do pino de entrada analógica o qual se quer ler (0 a 5 na maioria das placas, 0 a 7 nos Mini e Nano, 0 a 15 no Mega)
+`pino`: o número do pino de entrada analógica o qual se quer ler (0 a 5 na maioria das placas, 0 a 7 nos Mini e Nano, 0 a 15 no Mega, 0 a 6 nas placas MKR).
 
 [float]
 === Retorna

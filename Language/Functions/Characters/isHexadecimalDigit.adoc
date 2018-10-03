@@ -1,4 +1,4 @@
-﻿---
+---
 title: "isHexadecimalDigit()"
 categories: [ "Functions" ]
 subCategories: [ "Caracteres" ]

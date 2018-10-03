@@ -17,7 +17,7 @@ As strings de texto podem ser representadas de duas maneiras. Você pode usar o 
 
 [float]
 === Sintaxe
-Todos as declarações seguintes são válidas para Strings.
+Todos as declarações seguintes são válidas para strings.
 
 `char Str1[15];` +
 `char Str2[8] = {'a', 'r', 'd', 'u', 'i', 'n', 'o'};` +
@@ -45,7 +45,7 @@ Note que é possível criar uma string sem uma caractere null no final (ex. se s
 
 *Aspas simples ou aspas duplas?*
 
-Strings são sempre definidas envoltas em aspas duplas ("Abc") e caracteres são sempre definidos envoltos em aspas simples('A').
+As strings são sempre definidas envoltas em aspas duplas ("Abc") e caracteres são sempre definidos envoltos em aspas simples('A').
 
 *Escrevendo strings muito longas*
 

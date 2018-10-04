@@ -42,6 +42,7 @@ A `condição` é uma expressão booleana que é avaliada como verdadeiro ou fal
 
 [source,arduino]
 ----
+int x = 0;
 do
 {
   delay(50);          // espera os sensores estabilizarem

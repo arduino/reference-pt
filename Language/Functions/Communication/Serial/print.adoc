@@ -12,20 +12,20 @@ title: Serial.print()
 === Descrição
 Imprime dados na porta serial em como texto ASCII (facilmente legível, diferentemente dos valores binários). Essa função pode assumir várias formas. números são impressos usando um caractere ASCII para cada dígito. Floats são similarmente impressos como dígitos ASCII, padronizados com duas casas decimais. Bytes são enviados como um único caractere. Caracteres e strings são enviados normalmente, pois já estão em formato ASCII. Por exemplo:
 
-* `Serial.print(78) imprime "78"` +
-* `Serial.print(1.23456) imprime "1.23"` +
-* `Serial.print('N') imprime "N"` +
-* `Serial.print("Hello world.") imprime "Hello world."`
+* `Serial.print(78)` imprime "78" +
+* `Serial.print(1.23456)` imprime "1.23" +
+* `Serial.print('N')` imprime "N" +
+* `Serial.print("Hello world.")` imprime "Hello world."
 
 Um segundo parâmetro opcional especifíca a base (formato) a ser usada; valores permitidos são `BIN(binário, ou base 2)`, `OCT(octal, ou base 8)`, `DEC(decimal, ou base 10)`, `HEX(hexadecimal, ou base 16)`. Para números de ponto flutuante, esse parâmetro especifica o número de casas decimais a serem impressas. Por exemplo:
 
-* `Serial.print(78, BIN) imprime "1001110"` +
-* `Serial.print(78, OCT) imprime "116"` +
-* `Serial.print(78, DEC) imprime "78"` +
-* `Serial.print(78, HEX) imprime "4E"` +
-* `Serial.print(1.23456, 0) imprime "1"` +
-* `Serial.print(1.23456, 2) imprime "1.23"` +
-* `Serial.print(1.23456, 4) imprime "1.2346"`
+* `Serial.print(78, BIN)` imprime "1001110" +
+* `Serial.print(78, OCT)` imprime "116" +
+* `Serial.print(78, DEC)` imprime "78" +
+* `Serial.print(78, HEX)` imprime "4E" +
+* `Serial.print(1.23456, 0)` imprime "1" +
+* `Serial.print(1.23456, 2)` imprime "1.23" +
+* `Serial.print(1.23456, 4)` imprime "1.2346"
 
 Você pode passar strings armazenadas na memória flash para a função Serial.print() envolvendo as com link:../../../../variables/utilities/progmem[F()]. Por exemplo:
 

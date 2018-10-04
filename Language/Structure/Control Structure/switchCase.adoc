@@ -33,6 +33,7 @@ switch (var) {
     break;
   default:
     // comando(s)
+    break;
 }
 ----
 

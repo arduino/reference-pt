@@ -4,11 +4,7 @@ categories: [ "Functions" ]
 subCategories: [ "Entradas e Saídas Analógicas" ]
 ---
 
-
-
-
 = analogRead()
-
 
 // OVERVIEW SECTION STARTS
 [#overview]
@@ -16,11 +12,31 @@ subCategories: [ "Entradas e Saídas Analógicas" ]
 
 [float]
 === Descrição
-Lê o valor de um pino analógico especificado. A placa Arduino possui um conversor analógico-digital de 6 canais (8 canais nos Mini e Nano, 16 no Mega, 7 canais em placas MKR). Isso significa que este irá mapear tensões entre 0 e 5 volts para valores inteiros entre 0 e 1023. Isso permite uma resolução entre leituras de: 5 volts / 1024 unidades, ou .0049 volts (4.9 mV) por unidade. O intervalo de tensões de entrada pode ser mudado usando-se a função link:../analogreference[analogReference()].
+Lê o valor de um pino analógico especificado. A placa Arduino possui um conversor analógico-digital 10 bts de 6 canais (8 canais nos Mini e Nano, 16 no Mega, 7 canais em placas MKR). Isso significa que este irá mapear tensões entre 0 e a tensão operacional (5V or 3.3V) para valores inteiros entre 0 e 1023. No Arduino UNO, por exemplo, isso permite uma resolução entre leituras de: 5 volts / 1024 unidades, ou .0049 volts (4.9 mV) por unidade. Veja a tabela abaixo para os pinos utilizáveis, tensão de operação e resolução máxima para algumas placas Arduino. 
 
-Ler um valor analógico leva em torno de 100 microssegundos (0.0001 s), então a taxa de leitura máxima é aproximadamente 10,000 leituras por segundo.
+O intervalo de entrada pode ser mudado atrvés da função link:../analogreference[analogReference()], enquanto a resolução pode ser mudada (apenas nas placas Zero, Due e MKR) usando-se link:../../zero-due-mkr-family/analogreadresolution[analogReadResolution()].
+
+Em placas baseadas em microcontroladores AVR (UNO, Nano, Mini, Mega), ler um valor analógico leva em torno de 100 microssegundos (0.0001 s), então a taxa de leitura máxima é aproximadamente 10,000 leituras por segundo.
+
 [%hardbreaks]
 
+[options="header"]
+|===================================================
+|Board                     |Operating voltage |Usable pins |Max resolution
+|Uno                       |5 Volts           |A0 to A5    |10 bits
+|Mini, Nano                |5 Volts           |A0 to A7    |10 bits
+|Mega, Mega2560, MegaADK   |5 Volts           |A0 to A14   |10 bits
+|Micro                     |5 Volts           |A0 to A11*  |10 bits
+|Leonardo                  |5 Volts           |A0 to A11*  |10 bits
+|Zero                      |3.3 Volts         |A0 to A5    |12 bits**
+|Due                       |3.3 Volts         |A0 to A11   |12 bits**
+|MKR Family boards         |3.3 Volts         |A0 to A6    |12 bits**
+|===================================================
+
+*A0 through A5 are labelled on the board, A6 through A11 are respectively available on pins 4, 6, 8, 9, 10, and 12 +
+**The default analogRead() resolution for these boards is 10 bits, for compatibility. You need to use link:../../zero-due-mkr-family/analogreadresolution[analogReadResolution()] to change it to 12 bits.
+
+[%hardbreaks]
 
 [float]
 === Sintaxe
@@ -29,16 +45,15 @@ Ler um valor analógico leva em torno de 100 microssegundos (0.0001 s), então a
 
 [float]
 === Parâmetros
-`pino`: o número do pino de entrada analógica o qual se quer ler (0 a 5 na maioria das placas, 0 a 7 nos Mini e Nano, 0 a 15 no Mega, 0 a 6 nas placas MKR).
+`pino`: o *nome* do pino de entrada analógica que se quer ler (A0 a A5 na maioria das placas, A0 a A6 em placas MKR, A0 a A7 no Mini e Nano, A0 a A15 no Mega).
 
 [float]
 === Retorna
-int(0 a 1023)
+
+A leitura analógica no pino (int). No entanto esta é limitada a resolução do conversor analógico digital (0-1023 para 10 bits ou 0-4095 para 12 bits).
 
 --
 // OVERVIEW SECTION ENDS
-
-
 
 
 // HOW TO USE SECTION STARTS
@@ -52,7 +67,7 @@ O código abaixo lê o valor de um pino de entrada analógica e mostra seu valor
 
 [source,arduino]
 ----
-int analogPin = 3;     // terminal do meio de um potênciometro conectado ao pino analógico 3
+int analogPin = A3;     // terminal do meio de um potênciometro conectado ao pino analógico 3
                        // terminais mais externos são conectados um no ground e o outro em +5V
 int val = 0;           // variável para guardar o valor lido
 

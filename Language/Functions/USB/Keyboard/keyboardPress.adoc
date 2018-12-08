@@ -75,6 +75,7 @@ void loop() {
   Keyboard.releaseAll();
   // espera uma nova janela abrir no computador:
   delay(1000);
+}
 ----
 
 --

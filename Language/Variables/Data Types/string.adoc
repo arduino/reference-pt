@@ -62,7 +62,7 @@ char myString[] = "Essa é a primeira linha"
 
 Frequentemente é conveniente, quando lidando-se com grandes quantidades de texto, como um projeto com um display LCD, configurar um vetor de strings. Como strings por sí próprias já são vetores, isso é na verdade um exemplo de um vetor bidimensional.
 
-No código abaixo, o asterisco depois do tipo de dado `char` "`char*`" indica que esse é um vetor de "ponteiros". Todos os nomes de vetores são na verdade ponteiros, então isso é necessário para criar um vetor de vetores. Ponteiros são uma partes mais esotéricas da linguagem C para inicinates entenderem, mas não é necessário entender ponteiros profundamente para usá-los efetivamente aqui.
+No código abaixo, o asterisco depois do tipo de dado `char` "`char*`" indica que esse é um vetor de "ponteiros". Todos os nomes de vetores são na verdade ponteiros, então isso é necessário para criar um vetor de vetores. Ponteiros são uma partes mais esotéricas da linguagem C++ para inicinates entenderem, mas não é necessário entender ponteiros profundamente para usá-los efetivamente aqui.
 
 --
 // OVERVIEW SECTION ENDS

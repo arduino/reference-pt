@@ -69,7 +69,7 @@ As expressões sendo testadas dentro dos parênteses geralmente requerem o uso d
 
 Cuidado para não usar acidentalmente o símbolo de igual simples (ex. `if (x = 10)` ). O símbolo de igual simples é o operador de atribuição, se atribui 10 a `x` (coloca o valor 10 na variável `x`). Em vez disso, o símbolo de igual duplo (ex. `if (x == 10)` ) deve ser usado, que é o operador de comparação, e testa _se_ `x` é igaul a 10 ou não. O último é apenas verdadeiro se `x` é igual a 10, enquanto o primeiro comando mostrado sempre resultará em verdadeiro.
 
-Isso acontece porque a linguagem C interpreta `if (x=10)` da seguinte forma: 10 é atribuído a `x` (Lembre que o símbolo de igual simples é o (http://arduino.cc/en/Reference/Assignment[operador de atribuição^])), então `x` agora contém 10. então o comando 'if' testa 10, o que sempre resulta `true`, desde que qualquer número diferente de zero resulta em `true`. Consequentemente, `if (x = 10)` irá sempre resultar em `true`, que não é desejável ao se usar um comando 'if'. Além disso, a variável `x` irá receber o valor 10, o que também é indesejado.
+Isso acontece porque a linguagem C++ interpreta `if (x=10)` da seguinte forma: 10 é atribuído a `x` (Lembre que o símbolo de igual simples é o (http://arduino.cc/en/Reference/Assignment[operador de atribuição^])), então `x` agora contém 10. então o comando 'if' testa 10, o que sempre resulta `true`, desde que qualquer número diferente de zero resulta em `true`. Consequentemente, `if (x = 10)` irá sempre resultar em `true`, que não é desejável ao se usar um comando 'if'. Além disso, a variável `x` irá receber o valor 10, o que também é indesejado.
 [%hardbreaks]
 
 --

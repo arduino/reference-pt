@@ -13,7 +13,7 @@ subCategories: [ "Operadores Aritméticos" ]
 
 [float]
 === Descrição
-O sinal de igual `=` na linguagem de programação C é chamado operador de atribuição. Seu significado é diferente das aulas de matemática, onde ele indica uma equação ou igualdade. O operador de atribuição indica ao microcontrolador que compute qualquer valor ou expressão que estiver à direita do sinal de igual, e o armazene na variável à esquerda do sinal de igual.
+O sinal de igual `=` na linguagem de programação C++ é chamado operador de atribuição. Seu significado é diferente das aulas de matemática, onde ele indica uma equação ou igualdade. O operador de atribuição indica ao microcontrolador que compute qualquer valor ou expressão que estiver à direita do sinal de igual, e o armazene na variável à esquerda do sinal de igual.
 [%hardbreaks]
 
 --

@@ -60,7 +60,7 @@ void loop() {
 
 [float]
 === Notas e Advertências
-O loop `for` na linguagem C é muito mais flexível que os loops `for` encontrados em outras linguagens. Quaisquer dos três elementos da sintaxe podem ser omitidos, porém os ponto e vírgula (';') são necessários. Além disso, os comandos para inicialização, condição e incremento podem ser quaisquer comandos válidos na linguagem C, mesmo com variáveis não relacionadas ao loop, e podem usar quaisquer tipos de dados da linguagem C incluindo floats. Esses tipos de comandos `for` incomuns podem prover soluções rápidas para alguns problemas raros de programação.
+O loop `for` na linguagem C++ é muito mais flexível que os loops `for` encontrados em outras linguagens. Quaisquer dos três elementos da sintaxe podem ser omitidos, porém os ponto e vírgula (';') são necessários. Além disso, os comandos para inicialização, condição e incremento podem ser quaisquer comandos válidos na linguagem C++, mesmo com variáveis não relacionadas ao loop, e podem usar quaisquer tipos de dados da linguagem, incluindo floats. Esses tipos de comandos `for` incomuns podem prover soluções rápidas para alguns problemas raros de programação.
 [%hardbreaks]
 
 Por exemplo, usar uma multiplicação no comando de incremento irá gerar uma progressão logarítmica:

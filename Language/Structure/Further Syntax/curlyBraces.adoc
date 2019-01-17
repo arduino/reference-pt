@@ -7,19 +7,17 @@ subCategories: [ "Outros Elementos da Sintaxe" ]
 
 = {} Chaves
 
-
 // OVERVIEW SECTION STARTS
 [#overview]
 --
 
 [float]
 === Descrição
-As chaves são uma característica importante da linguagem C. Elas são usadas em diversas estruturas diferentes, mostradas abaixo, e isso pode as vezes ser confuso para iniciantes. +
+As chaves são uma característica importante da linguagem C++. Elas são usadas em diversas estruturas diferentes, mostradas abaixo, e isso pode as vezes ser confuso para iniciantes. +
 Uma chave `{` deve ser sempre fechada por outra chave `}`. Essa é uma condição que é frequentemente chamada de as chaves estarem balanceadas. A IDE Arduino inclui uma forma conveniente de checar o balanço de duas chaves. Apenas escolha uma chave, ou até mesmo clique no ponto de inserção imediatamente após a chave, se a outra chave do par será destacada.
-[%hardbreaks]
-//// Beginners programmers, and programmers coming to C from the BASIC language often find using braces confusing or daunting. After all, the same curly braces replace the RETURN statement in a subroutine (function), the ENDIF statement in a conditional and the NEXT statement in a FOR loop.
-[%hardbreaks]
-////
+
+// Beginners programmers, and programmers coming to C from the BASIC language often find using braces confusing or daunting. After all, the same curly braces replace the RETURN statement in a subroutine (function), the ENDIF statement in a conditional and the NEXT statement in a FOR loop.
+
 Chaves desbalanceadas podem frequentemente resultar em erros enigmáticos, que podem as vezes ser difíceis de se encontrar em um programa longo. Por causa de seu uso variado, as chaves são incrivelmente importantes para o programa e mover uma chave pode afetar dramaticamente o funcionamento de um programa.
 [%hardbreaks]
 

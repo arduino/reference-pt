@@ -13,7 +13,7 @@ subCategories: [ "Tipos de Dados" ]
 
 [float]
 === Descrição
-Um vetor (array) é uma coleção de variáveis que são acessadas com um número índice. Vetores na linguagem C, na qual o Arduino é baseado, podem ser complicados, mas usar vetores simples é relativamente fácil.
+Um vetor (array) é uma coleção de variáveis que são acessadas com um número índice. Vetores na linguagem C++, na qual o Arduino é baseado, podem ser complicados, mas usar vetores simples é relativamente fácil.
 
 [float]
 === Criando-se um Vetor
@@ -50,7 +50,7 @@ int meuVetor[10] = {9, 3, 2, 4, 3, 2, 7, 8, 9, 11};
 Por esse motivo, você deve ser cuidadoso ao acessar vetores. Acessar um elemento depois do final de um vetor (usar um índice maior que o tamanho declarado - 1) é ler de uma parte da memória que pode estar em uso para outros propósitos. Ler desses locais provavelmente não vai fazer mais que retornar dados inválidos. Escrever em locais aleatórios da memória é definitivamente uma má ideia e pode frequentemente levar a péssimos resultados como crashes ou mal funcionamento do programa. Isso pode também ser um bug difícil de encontrar.
 [%hardbreaks]
 
-Diferentemente de BASIC ou JAVA, o compilador C não faz checagem para confirmar se o acesso a um elemento está dentro dos limites do tamanho declarado do vetor.
+Diferentemente de BASIC ou JAVA, o compilador C++ não faz checagem para confirmar se o acesso a um elemento está dentro dos limites do tamanho declarado do vetor.
 [%hardbreaks]
 
 [float]

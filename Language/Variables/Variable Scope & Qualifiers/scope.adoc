@@ -13,7 +13,7 @@ subCategories: [ "Escopo de Variáveis e Qualificadores" ]
 
 [float]
 === Descrição
-Variáveis na linguagem de programação C, a qual o Arduino usa, possuem uma propriedade chamada escopo. Isso contrasta com antigas versões de linguagens como o BASIC onde toda variável era uma variável _global_.
+Variáveis na linguagem de programação C++, a qual o Arduino usa, possuem uma propriedade chamada escopo. Isso contrasta com antigas versões de linguagens como o BASIC onde toda variável era uma variável _global_.
 
 Uma variável global é uma que pode ser vista por todas as funções de um programa. Diferentemente, variáveis locais são visíveis apenas às funções nas quais são declaradas. No ambiente Arduino, qualquer variável declarada fora de uma função (ex. setup(), loop(), etc. ), é uma variável _ global_.
 

@@ -57,7 +57,7 @@ cancelar:
 
 [float]
 === Notas e Advertências
-O uso do `goto` é *desencorajado* na programação em C, e alguns autores de livros sobre a linguagem C afirmam que o uso do comando `goto` nunca é necessário, mas se usado judiciosamente ele pode simplificar certos programas. A pela qual muitos programadores desaprovam o uso do goto é que com o uso descuidado de comando `goto`, é fácil criar um programa com fluxo indefinido, que não pode ser depurado.
+O uso do `goto` é *desencorajado* na programação em C++, e alguns autores de livros afirmam que o uso do comando `goto` nunca é necessário, mas se usado judiciosamente ele pode simplificar certos programas. A pela qual muitos programadores desaprovam o uso do goto é que com o uso descuidado de comando `goto`, é fácil criar um programa com fluxo indefinido, que não pode ser depurado.
 
 Tendo dito isso, há algumas instâncias onde o comando `goto` pode ser considerado, por simplificar o código. Uma dessas situações é sair de laços link:../for[for] profundamente aninhados, ou blocos link:../if[if], em determinada condição.
 [%hardbreaks]

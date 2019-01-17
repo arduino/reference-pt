@@ -77,7 +77,7 @@ void loop()
 
 [float]
 === Notas e Advertências
-Os pinos de entrada analógica podem ser também usados como pinos digitais, referidos como A0, A1, etc.
+Os pinos de entrada analógica podem ser também usados como pinos digitais, referidos como A0, A1, etc. As exceções são os pinos A6 e A7 do Arduino Nano, Pro Mini, e Mini; os quais podem ser usados apenas como pinos de entrada analógica.
 --
 // HOW TO USE SECTION ENDS
 

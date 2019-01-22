@@ -71,7 +71,7 @@ Note que `sizeof` retorna o número total de bytes. Então, para os tipos de dad
 
 [source,arduino]
 ----
-for (i = 0; i < (sizeof(meusInts)/sizeof(int)); i++) {
+for (i = 0; i < (sizeof(meusInts)/sizeof(meusInts[0])); i++) {
   // faz algo com meusInts[i]
 }
 ----

@@ -119,6 +119,7 @@ String stringOne = String(5.698, 3);                  // usando um float e o nú
 #LINGUAGEM# link:../string/functions/startswith[startsWith()] +
 #LINGUAGEM# link:../string/functions/substring[substring()] +
 #LINGUAGEM# link:../string/functions/tochararray[toCharArray()] +
+#LINGUAGEM# link:../string/functions/todouble[toDouble()]
 #LINGUAGEM# link:../string/functions/toint[toInt()] +
 #LINGUAGEM# link:../string/functions/tofloat[toFloat()] +
 #LINGUAGEM# link:../string/functions/tolowercase[toLowerCase()] +

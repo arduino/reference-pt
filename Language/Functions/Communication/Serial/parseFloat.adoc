@@ -18,12 +18,11 @@ title: Serial.parseFloat()
 
 [float]
 === Sintaxe
-`Serial.parseFloat()`
-
+`_Serial_.parseFloat()`
 
 [float]
 === Parâmetros
-Nenhum
+`_Serial_`: objeto porta serial. Veja a lista de portas seriais disponíveis em cada placa no link:../../serial[Serial - Página principal]
 
 [float]
 === Retorna

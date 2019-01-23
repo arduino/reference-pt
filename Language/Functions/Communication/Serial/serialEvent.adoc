@@ -25,7 +25,7 @@ void serialEvent() {
   //código
 }
 ----
-Apenas Arduino Mega:
+Para placas com portas seriais adicionais (veja a lista de portas seriais disponíveis para cada placa no link:../../serial[Serial - Página principal]):
 [source,arduino]
 ----
 void serialEvent1() {

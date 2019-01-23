@@ -11,7 +11,7 @@ title: if(Serial)
 === Descrição
 Indica se a porta serial especificada está pronta.
 
-No Leonardo, `if (Serial)` indica se a conexão serial USB CDC está aberta. Para todas as outras instâncias, incluindo `if (Serial1)` no Leonardo, isso irá sempre retornar `true`.
+Nas placas com USB nativa, `if (Serial)`, ou `if(SerialUSB)` no Due, indica se a conexão serial USB CDC está aberta. Para todas as outras placas, e portas seriais não USB CDC, isso irá sempre retornar `true`.
 
 Essa função foi introduzida na IDE Arduino 1.0.1.
 [%hardbreaks]
@@ -19,19 +19,7 @@ Essa função foi introduzida na IDE Arduino 1.0.1.
 
 [float]
 === Sintaxe
-_Todas as placas:_
-
 `if (Serial)`
-
-_Específico para o Arduino Leonardo:_
-
-`if (Serial1)`
-
-_Específico para o Arduino Mega:_
-
-`if (Serial1)` +
-`if (Serial2)` +
-`if (Serial3)`
 
 [float]
 === Parâmetros

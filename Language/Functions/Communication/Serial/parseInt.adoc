@@ -22,18 +22,13 @@ Em particular:
 
 [float]
 === Sintaxe
-`Serial.parseInt()`
-`Serial.parseInt(char skipChar)`
-
-_Arduino Mega:_
-
-`Serial1.parseInt()` +
-`Serial2.parseInt()` +
-`Serial3.parseInt()`
-
+`_Serial_.parseInt()`
+`_Serial_.parseInt(char skipChar)`
 
 [float]
 === Parâmetros
+`_Serial_`: objeto porta serial. Veja a lista de portas seriais disponíveis em cada placa no link:../../serial[Serial - Página principal]
+
 `skipChar`: usado para ignorar o caractere indicado na busca. Usado, por exemplo, para ignorar o ponto em "2.000.000".
 
 [float]

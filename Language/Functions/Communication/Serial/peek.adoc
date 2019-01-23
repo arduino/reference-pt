@@ -16,18 +16,11 @@ Retorna o próximo byte (caractere) de dados seriais recebidos sem o remover do 
 
 [float]
 === Sintaxe
-`Serial.peek()`
-
-_Apenas Arduino Mega:_
-
-`Serial1.peek()` +
-`Serial2.peek()` +
-`Serial3.peek()`
-
+`_Serial_.peek()`
 
 [float]
 === Parâmetros
-Nenhum
+`_Serial_`: objeto porta serial. Veja a lista de portas seriais disponíveis em cada placa no link:../../serial[Serial - Página principal]
 
 [float]
 === Retorna

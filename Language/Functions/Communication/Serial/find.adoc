@@ -18,12 +18,14 @@ Serial.find() herda da classe link:../../stream[Stream] .
 
 [float]
 === Sintaxe
-`Serial.find(target)` +
-`Serial.find(target, length)`
+`_Serial_.find(target)` +
+`_Serial_.find(target, length)`
 
 
 [float]
 === Parâmetros
+`_Serial_`: objeto porta serial. Veja a lista de portas seriais disponíveis em cada placa no link:../../serial[Serial - Página principal]
+
 `target` : a string para ser procurada no buffer (char[])
 
 `length` : comprimento da string procurada (size_t)

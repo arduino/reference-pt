@@ -11,18 +11,31 @@ subCategories: [ "Comunicação" ]
 --
 
 [float]
-=== Descrição
-Usada para comunicação entre uma placa Arduino e um computador ou outros dispositivos. Todas as placas Arduino possuem pelo menos uma porta serial (também conhecida como UART ou USART), chamada `Serial`. Ela comunica-se nos pinos digitais 0 (RX) e 1 (TX) como também com um computador via USB. Logo, se você usar essas funções, você não pode usar ao mesmo tempo os pinos 0 e 1 como entradas ou saídas digitais.
+=== Description
+Usada para comunicação entre uma placa Arduino e um computador ou outros dispositivos. Todas as placas Arduino possuem pelo menos uma porta serial (também conhecida como UART ou USART), enquanto alguns possuem várias .
+
+[options="header"]
+|================================================================================================================================================
+| Placa                | Nome USB CDC                     | pinos - Serial                | pinos - Serial1  | pinos - Serial2   | pinos - Serial3
+| Uno, Nano, Mini      |                                  | 0(RX), 1(TX)                  |                  |                   |
+| Mega                 |                                  | 0(RX), 1(TX)                  | 19(RX), 18(TX)   | 16(RX), 17(TX)    | 15(RX), 14(TX)
+| Leonardo, Micro, Yún | Serial                           | 0(RX), 1(TX)                  |                  |                   |
+| Uno WiFi Rev.2       |                                  | Conectados a USB              | 0(RX), 1(TX)     | Conectados a NINA |
+| Família MKR          | Serial                           |                               | 13(RX), 14(TX)   |                   |
+| Zero                 | SerialUSB (USB nativa apenas)    | Conect. a porta de gravação   | 0(RX), 1(TX)     |                   |
+| Due                  | SerialUSB (USB nativa apenas)    | 0(RX), 1(TX)                  | 19(RX), 18(TX)   | 16(RX), 17(TX)    | 15(RX), 14(TX)
+| 101                  | Serial                           |                               | 0(RX), 1(TX)     |                   |
+|================================================================================================================================================
+
+No Uno, Nano, Mini, e Mega, pinos 0 e 1 são usados para comunicação com o computador. Conectar qualquer coisa a esses pinos pode interferir nessa comunicação, incluindo causar falhas na gravação da placa.
+[%hardbreaks]
+Você pode usar o monitor serial integrado na IDE do Arduino para comunicar-se com uma placa Arduino. Clique no botão do monitor serial (lupa) na barra de ferramentas e escolha a mesma taxa de tranmissão usada na chamada de `begin()`.
 [%hardbreaks]
 Você pode usar o monitor serial presente na IDE do Arduino para se comunicar com uma placa Arduino. Clique no botão do monitor serial na barra de ferramentas e escolha e usar a mesma taxa de transferência (baud rate) usada na chamada de `begin()`.
 [%hardbreaks]
 Comunicação serial nos pinos TX/RX usa níveis lógicos TTL (5V ou 3.3V dependendo da placa). *Não conecte esses pinos diretamente um uma porta serial RS232; esses operam em +/- 12V e podem danificar sua placa Arduino.*
 [%hardbreaks]
-O *Arduino Mega* tem três portas seriais adicionais: `Serial1` nos pinos 19 (RX) e 18 (TX), `Serial2` nos pinos 17 (RX) e 16 (TX), `Serial3` nos pinos 15 (RX) e 14 (TX). Para usar esses pinos para comunicar com seu computador pessoal, você vai precisar de um adaptador USB-serial extra, pois esses pinos não são conectados ao adaptador USB-serial do Arduino Mega. para usá-los para comunicar com um dispositivo serial TTL externo, conecte o pino TX do Arduino ao pino RX do dispositivo, o pino RX ao pino TX do dispositivo, e o ground de seu Mega ao ground do dispositivo.
-[%hardbreaks]
-O *Arduino DUE* tem três portas seriais TTL de 3.3V adicionais: `Serial1` nos pinos 19 (RX) e 18 (TX); `Serial2` nos pinos 17 (RX) e 16 (TX), `Serial3` nos pinos 15 (RX) e 14 (TX). Pinos 0 e 1 são também conectados aos pinos correspondentes do chip serial ATmega16U2, o qual é conectado a porta debug USB. Adicionalmente, há uma porta USB-serial nativa no chip SAM3X, `SerialUSB`.
-[%hardbreaks]
-A placa *Arduino Leonardo* usa `Serial1` para comunicar-se via serial TTL (5V) nos pinos 0 (RX) e 1 (TX). `Serial` é reservada para comunicação USB CDC. Para mais informações, consulte as páginas getting started e hardware para o Leonardo .
+Para usar esses pinos para comunicar com seu computador pessoal, você vai precisar de um adaptador USB-serial extra, pois esses pinos não são conectados ao adaptador USB-serial do Arduino Mega. para usá-los para comunicar com um dispositivo serial TTL externo, conecte o pino TX do Arduino ao pino RX do dispositivo, o pino RX ao pino TX do dispositivo, e o ground de seu Mega ao ground do dispositivo.
 
 --
 // OVERVIEW SECTION ENDS

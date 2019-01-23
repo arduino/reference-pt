@@ -18,10 +18,12 @@ title: Serial.setTimeout()
 
 [float]
 === Sintaxe
-`Serial.setTimeout(tempo)`
+`_Serial_.setTimeout(tempo)`
 
 [float]
 === Parâmetros
+`_Serial_`: objeto porta serial. Veja a lista de portas seriais disponíveis em cada placa no link:../../serial[Serial - Página principal]
+
 `tempo` : tempo limite em milisegundos (`long`).
 
 [float]

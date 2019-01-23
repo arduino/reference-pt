@@ -17,18 +17,11 @@ Retorna o número de bytes (caracteres) disponíveis para leitura da porta seria
 
 [float]
 === Sintaxe
-`Serial.available()`
-
-_Arduino Mega only:_
-
-`Serial1.available()` +
-`Serial2.available()` +
-`Serial3.available()`
-
+`_Serial_.available()`
 
 [float]
 === Parâmetros
-Nenhum
+`_Serial_`: objeto porta serial. Veja a lista de portas seriais disponíveis em cada placa no link:../../serial[Serial - Página principal]
 
 [float]
 === Retorna

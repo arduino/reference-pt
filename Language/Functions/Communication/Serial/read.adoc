@@ -16,18 +16,12 @@ Lê dados recebidos na porta serial. A função `read()` é herdada da classe li
 
 [float]
 === Sintaxe
-`Serial.read()`
-
-_Apenas Arduino Mega:_
-
-`Serial1.read()` +
-`Serial2.read()` +
-`Serial3.read()`
-
+`_Serial_.read()`
 
 [float]
 === Parâmetros
-Nenhum
+`_Serial_`: objeto porta serial. Veja a lista de portas seriais disponíveis em cada placa no link:../../serial[Serial - Página principal]
+
 
 [float]
 === Retorna

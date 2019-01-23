@@ -67,7 +67,7 @@ void loop() {
 
 [float]
 === Notas e Advertências
-Note que `sizeof` retorna o número total de bytes. Então, para os tipos de dados maiores, como ints, o loop for parece algo do tipo abaixo. Note também que uma string apropriadamente formatada é encerrada com o símbolo NULL, que tem valor ASCII 0.
+Note que `sizeof` retorna o número total de bytes. Então, para os tipos de dados maiores, como ints, o loop for parece algo do tipo abaixo.
 
 [source,arduino]
 ----
@@ -75,6 +75,8 @@ for (i = 0; i < (sizeof(meusInts) / sizeof(int)); i++) {
   // faz algo com meusInts[i]
 }
 ----
+
+Note também que uma string apropriadamente formatada é encerrada com o símbolo NULL, que tem valor ASCII 0.
 
 --
 // HOW TO USE SECTION ENDS

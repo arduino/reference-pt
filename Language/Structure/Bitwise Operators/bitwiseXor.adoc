@@ -45,20 +45,20 @@ int z = x ^ y;  // binário: 0110, ou decimal 6
 ----
 [%hardbreaks]
 
-O operador ^ é frequentemente utilizado para trocar (isto é, mudar de 0 para 1, ou 1 para 0) alguns dos bits em uma expressão inteira. Em uma operação XOR se há um 1 no bit da máscara, aquele bit é invertido; se há um 0, o bit não é invertido e continua o mesmo. Abaixo um programa para piscar um LED no pino digital 5.
+O operador ^ é frequentemente utilizado para trocar (isto é, mudar de 0 para 1, ou 1 para 0) alguns dos bits em uma expressão inteira. Em uma operação XOR se há um 1 no bit da máscara, aquele bit é invertido; se há um 0, o bit não é invertido e continua o mesmo. 
 
 [source,arduino]
 ----
-// Blink_Pin_5
-// Demo do XOR
-void setup() {
-  DDRD = DDRD | B00100000;  // configura o pino digital 5 como saída
+// Nota: Esse código usa registradores específicos para microcontroladores AVR (Uno, Nano, Leonardo, Mega, etc.)
+// Ele não irá compilar para outras arquiteturas
+void setup(){
+  DDRB = DDRB | B00100000; // configura PB5 (pino 13 no Uno/Nano, pino 9 no Leonardo/Micro, pino 11 no Mega) como OUTPUT
   Serial.begin(9600);
 }
 
-void loop() {
-  PORTD = PORTD ^ B00100000;  // inverte bit 5 (pino 5), e deixa os outros intocados
-  delay(100);
+void loop(){
+PORTB = PORTB ^ B00100000;  // inverte PB5, deixa os outros bits intocados
+delay(100);
 }
 ----
 

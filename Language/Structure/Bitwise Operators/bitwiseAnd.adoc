@@ -49,11 +49,11 @@ int c = a & b;  // resultado:    0000000001000100, ou 68 em decimal.
 Cada um dos 16 bits em a e b são processados com o operador &, e todos os 16 bits resultantes são armazenados em c, resultando no valor binário 01000100, que é 68 em decimal.
 [%hardbreaks]
 
-Um dos usos mais comuns da operação bit-a-bit E é selecionar um bit particular (ou bits) de um valor inteiro, frequentemente chamado de _masking_. Veja abaixo um exemplo:
+Um dos usos mais comuns da operação bit-a-bit E é selecionar um bit particular (ou bits) de um valor inteiro, frequentemente chamado de _masking_. Veja abaixo um exemplo (específico para arquitetura AVR):
 
 [source,arduino]
 ----
-PORTD = PORTD & B00000011;  // apaga os bits 2 - 7, deixando o valor dos pinos 0 e 1 intocados (xx & 11 == xx)
+PORTD = PORTD & B00000011;  // apaga os bits 2 - 7, deixando o valor dos pinos PD0 e PD1 intocados (xx & 11 == xx)
 ----
 
 --

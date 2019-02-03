@@ -12,7 +12,6 @@ title: serialEvent()
 === Descrição
 Chamada quando dados estão disponíveis no buffer serial. Use `Serial.read()` para ler esses dados.
 
-Nota: Atualmente, `serialEvent()` não é compativel com o Esplora, Leonardo, ou Micro
 [%hardbreaks]
 
 
@@ -51,6 +50,23 @@ Nada
 
 --
 // OVERVIEW SECTION ENDS
+
+
+// HOW TO USE SECTION STARTS
+[#howtouse]
+--
+
+[float]
+=== Notas e Advertências
+`serialEvent()` não funciona no Leonardo ou Micro.
+
+`serialEvent()` e `serialEvent1()` não funcionam nas placas Arduino SAMD.
+
+`serialEvent()`, `serialEvent1()`, `serialEvent2()`, e `serialEvent3()` não funcionam no Arduino Due.
+[%hardbreaks]
+
+--
+// HOW TO USE SECTION ENDS
 
 
 // SEE ALSO SECTION

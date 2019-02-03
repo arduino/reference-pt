@@ -10,7 +10,7 @@ title: Stream.findUntil()
 
 [float]
 === Descrição
-`findUntil()` lê dados da stream até a string especificada ou terminador serem encontrados.
+`findUntil()` lê dados da stream até a string especificada ou terminador serem encontrados, ou se acabar o tempo limite (veja ../streamsettimeout[Stream.setTimeout()]).
 
 Essa função retorna true se a string é encontrada, false se ocorre time-out
 

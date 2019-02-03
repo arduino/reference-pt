@@ -10,7 +10,7 @@ title: Stream.readBytesUntil()
 
 [float]
 === Descrição
-`readBytesUntil()` lê bytes de uma stream para um buffer. A função termina se o carctere terminador é encontrado, o número de bytes determinado foi lido, ou ocorre time-out (ver link:../streamsettimeout[setTimeout()]).
+`readBytesUntil()` lê bytes de uma stream para um buffer. A função termina se o carctere terminador é encontrado, o número de bytes determinado foi lido, ou ocorre time-out (ver link:../streamsettimeout[setTimeout()]). A função retorna o caractere até o último caractere antes o terminador fornecido. O terminador em si não é retornado no buffer.
 
 `readBytesUntil()` retorna o número de bytes colocados no buffer. Um valor 0 indica que não foram encontrados dados válidos.
 
@@ -39,3 +39,16 @@ O número de bytes colocados no buffer.
 
 --
 // OVERVIEW SECTION ENDS
+
+
+// HOW TO USE SECTION STARTS
+[#howtouse]
+--
+
+[float]
+=== Notas e Advertências
+O caractere terminador é descartado do buffer serial.
+[%hardbreaks]
+
+--
+// HOW TO USE SECTION ENDS

@@ -35,3 +35,16 @@ A String completa da Stream, até o caractere terminador.
 
 --
 // OVERVIEW SECTION ENDS
+
+
+// HOW TO USE SECTION STARTS
+[#howtouse]
+--
+
+[float]
+=== Notes and Warnings
+The terminator character is discarded from the stream.
+[%hardbreaks]
+
+--
+// HOW TO USE SECTION ENDS

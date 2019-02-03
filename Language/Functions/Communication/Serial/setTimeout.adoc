@@ -10,7 +10,7 @@ title: Serial.setTimeout()
 
 [float]
 === Descrição
-`Serial.setTimeout()` configura o número máximo de milissegundos a se esperar por dados seriais quando se usar link:../readbytesuntil[serial.readBytesUntil()] ou link:../readbytes[serial.readBytes()]. O valor padrão é de 1000 milisegundos.
+`Serial.setTimeout()` configura o número máximo de milissegundos a se esperar por dados seriais. O valor padrão é de 1000 milisegundos.
 
 `Serial.setTimeout()` é herdada da classe link:../../stream[Stream].
 [%hardbreaks]
@@ -32,6 +32,29 @@ Nada
 
 --
 // OVERVIEW SECTION ENDS
+
+
+// HOW TO USE SECTION STARTS
+[#howtouse]
+--
+
+[float]
+=== Notas e Advertências
+Funções da classe Serial que usam o valor de tempo limite configurado via `_Serial_.setTimeout()`:
+
+* `_Serial_.find()`
+* `_Serial_.findUntil()`
+* `_Serial_.parseInt()`
+* `_Serial_.parseFloat()`
+* `_Serial_.readBytes()`
+* `_Serial_.readBytesUntil()`
+* `_Serial_.readString()`
+* `_Serial_.readStringUntil()`
+
+[%hardbreaks]
+
+--
+// HOW TO USE SECTION ENDS
 
 
 // SEE ALSO SECTION

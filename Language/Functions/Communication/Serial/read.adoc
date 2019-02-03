@@ -10,7 +10,9 @@ title: Serial.read()
 
 [float]
 === Descrição
-Lê dados recebidos na porta serial. A função `read()` é herdada da classe link:../../stream[Stream].
+Lê dados recebidos na porta serial. 
+
+A função `Serial.read()` é herdada da classe link:../../stream[Stream].
 [%hardbreaks]
 
 

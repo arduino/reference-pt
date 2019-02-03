@@ -12,7 +12,7 @@ title: Serial.setTimeout()
 === Descrição
 `Serial.setTimeout()` configura o número máximo de milissegundos a se esperar por dados seriais. O valor padrão é de 1000 milisegundos.
 
-`Serial.setTimeout()` é herdada da classe link:../../stream[Stream].
+A função `Serial.setTimeout()` é herdada da classe link:../../stream[Stream].
 [%hardbreaks]
 
 

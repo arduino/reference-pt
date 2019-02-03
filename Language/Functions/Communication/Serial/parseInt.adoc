@@ -10,7 +10,9 @@ title: Serial.parseInt()
 
 [float]
 === Descrição
-Procura o próximo inteiro válido no buffer de recebimento serial. A função `stream.parseInt()` é herdada da classe link:../../stream[Stream].
+Procura o próximo inteiro válido no buffer de recebimento serial. 
+
+A função `Serial.parseInt()` é herdada da classe link:../../stream[Stream].
 
 Em particular:
 

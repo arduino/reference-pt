@@ -12,7 +12,7 @@ title: Serial.find()
 === Descrição
 Serial.find() lê dados do buffer serial de recebimento até a string especificada ser encontrada. A função retorna `true` se a string denominada é encontrada, `false` se ocorre time-out.
 
-Serial.find() herda da classe link:../../stream[Stream] .
+A função `Serial.find()` é herdada da classe link:../../stream[Stream].
 [%hardbreaks]
 
 

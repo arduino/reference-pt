@@ -14,7 +14,7 @@ title: Stream.readBytesUntil()
 
 `readBytesUntil()` retorna o número de bytes colocados no buffer. Um valor 0 indica que não foram encontrados dados válidos.
 
-Essa função é parte da classe Stream, e é chamada por qualquer classe que herda da mesma (Wire, Serial, etc). Veja a página principal da link:../../stream[classe Stream] para mais informações.
+Essa função é parte da classe Stream, e pode ser chamada por qualquer classe que herda da mesma (Wire, Serial, etc). Veja a página principal da link:../../stream[classe Stream] para mais informações.
 [%hardbreaks]
 
 

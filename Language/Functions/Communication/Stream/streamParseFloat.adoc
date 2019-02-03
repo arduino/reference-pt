@@ -16,7 +16,7 @@ title: Stream.parseFloat()
 === Descrição
 `parseFloat()` retorna o primeiro número de ponto flutuante da posição atual. Caracteres iniciais que não são digitos (ou o sinal de menos) são ignorados. `parseFloat()` é terminada pelo primeiro caractere que não é um digito encontrado após o número.
 
-Essa função é parte da classe Stream, e é chamada por qualquer classe que herda da mesma (Wire, Serial, etc). Veja a página principal da link:../../stream[classe Stream] para mais informações.
+Essa função é parte da classe Stream, e pode ser chamada por qualquer classe que herda da mesma (Wire, Serial, etc). Veja a página principal da link:../../stream[classe Stream] para mais informações.
 [%hardbreaks]
 
 [float]

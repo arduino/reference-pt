@@ -15,10 +15,10 @@ title: Stream.parseInt()
 Em particular:
 
 * Caracteres iniciais que não são dígitos ou um sinal de menos, são ignorados; +
-* O parsing para qaundoo nenhum caractere tem sido lido em um time-out de valor confgurável, ou um caractere não-dígito é lido; +
+* O parsing para quando nenhum caractere foi lido em um time-out de valor confgurável, ou um caractere não-dígito é lido; +
 * Se nehum digito válido foi lido quando ocorre time-out (ver link:../streamsettimeout[Stream.setTimeout()]), é retornado 0;
 
-Essa função é parte da classe Stream, e é chamada por qualquer classe que herda da mesma (Wire, Serial, etc). Veja a página principal da link:../../stream[classe Stream] para mais informações.
+Essa função é parte da classe Stream, e pode ser chamada por qualquer classe que herda da mesma (Wire, Serial, etc). Veja a página principal da link:../../stream[classe Stream] para mais informações.
 [%hardbreaks]
 
 

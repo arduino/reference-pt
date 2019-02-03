@@ -10,7 +10,7 @@ title: Stream.getTimeout()
 
 [float]
 === Descrição
-`getTimeout()` retorna o valor de tempo limite configrado por `setTimeout()`. Essa função é parte da classe Stream, e é chamada por qualquer classe the herde da mesma (Wire, Serial, etc). Veja a página principal da link:../../stream[classe Stream] para mais informações.
+`getTimeout()` retorna o valor de tempo limite configrado por `setTimeout()`. Essa função é parte da classe Stream, e pode ser chamada por qualquer classe the herde da mesma (Wire, Serial, etc). Veja a página principal da link:../../stream[classe Stream] para mais informações.
 [%hardbreaks]
 
 

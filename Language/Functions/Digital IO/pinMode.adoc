@@ -29,7 +29,7 @@ Desde a versão 1.0.1, é possível ativar os resistores internos de pull-up com
 
 [float]
 === Parâmetros
-`pino`: the número do pino o qual se quer escolher o modo
+`pino`: the número do pino do Arduino no qual se quer configurar o modo
 
 `modo`: o modo do pino. Este pode ser `INPUT`, `OUTPUT` ou `INPUT_PULLUP`; que correspondem respectivamente a entrada, saída e entrada com pull-up ativado.
 

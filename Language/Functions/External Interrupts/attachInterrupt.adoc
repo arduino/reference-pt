@@ -64,7 +64,7 @@ Para mais informações sobre interrupções, veja as http://gammon.com.au/inter
 [float]
 === Parâmetros
 `interrupção`: 	o número da interrupção (`int`) +
-`pino`: 	      o número do pino +
+`pino`: 	      o número do pino do Arduino +
 `ISR`: 	      a ISR a ser chamada quando a interrupção ocorre; essa função deve não tomar nenhum parâmetro nem retornar nada. Essa função é chamada de rotina de serviço da interrupção ou ISR (do Inglês, interrupt service routine). +
 `modo`: 	     define quando a interrupção deve ser ativada. Quatro constantes estão predefinidas como valores válidos: +
 

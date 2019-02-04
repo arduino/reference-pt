@@ -28,7 +28,7 @@ Lê o valor de um pino digital especificado, que pode ser `HIGH` ou `LOW`.
 
 [float]
 === Parâmetros
-`pino`: o número do pino digital que você quiser verificar
+`pino`: o número do pino digital do Arduino que você quiser verificar
 [float]
 === Retorna
 `HIGH` ou `LOW`

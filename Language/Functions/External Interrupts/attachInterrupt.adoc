@@ -57,15 +57,14 @@ Para mais informações sobre interrupções, veja as http://gammon.com.au/inter
 
 [float]
 === Sintaxe
-`attachInterrupt(digitalPinToInterrupt(pino), ISR, modo);` (recomendado) +
-`attachInterrupt(interrupção, ISR, modo);` (não recomendado) +
-`attachInterrupt(pino, ISR, modo);` (não recomendado - Arduino Due, Zero, MKR1000, 101 apenas)
-
+`attachInterrupt(digitalPinToInterrupt(pino), ISR, modo);` (Recomendado) +
+`attachInterrupt(interrupção, ISR, modo);` (Não recomendado) +
+`attachInterrupt(pino, ISR, modo);` (Não recomendado. Apenas placas Arduino SAMD, Uno WiFi Rev2, Due, e 101)
 
 [float]
 === Parâmetros
 `interrupção`: 	o número da interrupção (`int`) +
-`pino`: 	      o número do pino    _(Arduino Due, Zero, MKR1000 apenas)_ +
+`pino`: 	      o número do pino +
 `ISR`: 	      a ISR a ser chamada quando a interrupção ocorre; essa função deve não tomar nenhum parâmetro nem retornar nada. Essa função é chamada de rotina de serviço da interrupção ou ISR (do Inglês, interrupt service routine). +
 `modo`: 	     define quando a interrupção deve ser ativada. Quatro constantes estão predefinidas como valores válidos: +
 

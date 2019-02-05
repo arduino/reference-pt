@@ -70,6 +70,11 @@ void loop() {
   delay(10);
 }
 ----
+[%hardbreaks]
+
+[float]
+=== Notas e Advertências
+Desde a versão 1.0 da IDE do Arduino, a trasmissão serial é assíncrona.; Para mais informações sobre a assincronicidade de `Serial.print()`, veja a seção Notas e Advertências da página de referência da link:../write#howtouse[função Serial.write()].
 
 --
 // HOW TO USE SECTION ENDS

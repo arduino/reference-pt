@@ -101,6 +101,6 @@ Se o pino de entrada analógica não estiver conectado a nada, o valor retornado
 
 [role="language"]
 * #LINGUAGEM# link:../../zero-due-mkr-family/analogreadresolution[analogReadResolution()]
-* #LINGUAGEM# https://www.arduino.cc/en/Tutorial/AnalogInputPins[Tutorial: Pinos de entrada analógica (Em Inglês)]
+* #LINGUAGEM# https://www.arduino.cc/en/Tutorial/AnalogInputPins[Tutorial: Pinos de entrada analógica (Em Inglês)^]
 --
 // SEE ALSO SECTION ENDS

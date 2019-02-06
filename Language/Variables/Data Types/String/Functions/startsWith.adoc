@@ -47,6 +47,6 @@ Testa se uma String começa ou não com os caracteres de uma outra String.
 === Ver Também
 
 [role="example"]
-#EXEMPLO# https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[Tutoriais String (Em Inglês)] +
+#EXEMPLO# https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[Tutoriais String (Em Inglês)^] +
 --
 // SEE ALSO SECTION ENDS

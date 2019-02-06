@@ -104,7 +104,7 @@ Usar uma resolução de 16 bits (ou qualquer resolução *mais alta* que as capa
 === Ver Também
 
 [role="example"]
-#EXEMPLO# http://arduino.cc/en/Tutorial/AnalogInputPins[Descrição dos pinos analógicos de entrada(Em Inglês)] +
+#EXEMPLO# http://arduino.cc/en/Tutorial/AnalogInputPins[Descrição dos pinos analógicos de entrada(Em Inglês)^] +
 
 [role="language"]
 #LINGUAGEM# link:../../analog-io/analogread[analogRead()]

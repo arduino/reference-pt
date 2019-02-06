@@ -63,11 +63,11 @@ link:../keyboard/keyboardwrite[Keyboard.write()]
 Exemplos abaixo em Inglês.
 
 [role="example"]
-#EXEMPLO# http://www.arduino.cc/en/Tutorial/KeyboardAndMouseControl[KeyboardAndMouseControl]: Demonstra os comandos das bibliotecas Mouse e Keyboard em um programa. +
-#EXEMPLO# http://www.arduino.cc/en/Tutorial/KeyboardMessage[KeyboardMessage]: Envia uma string de texto quando um botão é pressionado. +
-#EXEMPLO# http://www.arduino.cc/en/Tutorial/KeyboardLogout[KeyboardLogout]: Desloga o usuário atual com uma combinação de teclas. +
-#EXEMPLO# http://www.arduino.cc/en/Tutorial/KeyboardSerial[KeyboardSerial]: Lê um byte da porta serial e o retorna como uma tecla pressionada. +
-#EXEMPLO# http://www.arduino.cc/en/Tutorial/KeyboardReprogram[KeyboardReprogram]: Abre uma nova janela na IDE Arduino e reprograma a placa com um simples programa blink. +
+#EXEMPLO# http://www.arduino.cc/en/Tutorial/KeyboardAndMouseControl[KeyboardAndMouseControl^]: Demonstra os comandos das bibliotecas Mouse e Keyboard em um programa. +
+#EXEMPLO# http://www.arduino.cc/en/Tutorial/KeyboardMessage[KeyboardMessage^]: Envia uma string de texto quando um botão é pressionado. +
+#EXEMPLO# http://www.arduino.cc/en/Tutorial/KeyboardLogout[KeyboardLogout^]: Desloga o usuário atual com uma combinação de teclas. +
+#EXEMPLO# http://www.arduino.cc/en/Tutorial/KeyboardSerial[KeyboardSerial^]: Lê um byte da porta serial e o retorna como uma tecla pressionada. +
+#EXEMPLO# http://www.arduino.cc/en/Tutorial/KeyboardReprogram[KeyboardReprogram^]: Abre uma nova janela na IDE Arduino e reprograma a placa com um simples programa blink. +
 
 --
 // SEE ALSO SECTION ENDS

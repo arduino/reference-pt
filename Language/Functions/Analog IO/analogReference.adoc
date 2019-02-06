@@ -86,7 +86,7 @@ Alternativamente, você pode conectar a tensão de referência externa ao pino A
 === Ver Também
 
 [role="example"]
-* #EXEMPLO# http://arduino.cc/en/Tutorial/AnalogInputPins[Descrição dos pinos analógicos de entrada (Em Inglês)]
+* #EXEMPLO# http://arduino.cc/en/Tutorial/AnalogInputPins[Descrição dos pinos analógicos de entrada (Em Inglês)^]
 
 --
 // SEE ALSO SECTION ENDS

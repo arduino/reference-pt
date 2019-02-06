@@ -52,6 +52,6 @@ Compara duas Strings, testando se uma vem antes da outra na tabela ASCII, ou se 
 === Ver Também
 
 [role="example"]
-#EXEMPLO# https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[Tutoriais String (Em Inglês)] +
+#EXEMPLO# https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[Tutoriais String (Em Inglês)^] +
 --
 // SEE ALSO SECTION ENDS

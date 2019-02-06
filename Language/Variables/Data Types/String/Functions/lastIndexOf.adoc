@@ -51,6 +51,6 @@ A posição da string especificada dentro do objeto String, ou -1 se não for en
 === Ver Também
 
 [role="example"]
-#EXEMPLO# https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[Tutoriais String (Em Inglês)] +
+#EXEMPLO# https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[Tutoriais String (Em Inglês)^] +
 --
 // SEE ALSO SECTION ENDS

@@ -136,7 +136,7 @@ Se você configurar `analogWriteResolution()` com um valor menor que a capacidad
 #LINGUAGEM# link:../../math/map[map()]
 
 [role="example"]
-#EXAMPLO# http://arduino.cc/en/Tutorial/AnalogInputPins[Descrição dos pinos analógicos de entrada(Em Inglês)]
+#EXAMPLO# http://arduino.cc/en/Tutorial/AnalogInputPins[Descrição dos pinos analógicos de entrada(Em Inglês)^]
 
 --
 // SEE ALSO SECTION ENDS

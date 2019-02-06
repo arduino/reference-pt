@@ -1,10 +1,10 @@
 ---
-title: if...else
+title: if
 categories: [ "Structure" ]
 subCategories: [ "Estruturas de Controle" ]
 ---
 
-= if e ==, !=, <, > (operador condicional e operadores de comparação)
+= if
 
 
 // OVERVIEW SECTION STARTS

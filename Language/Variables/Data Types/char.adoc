@@ -19,6 +19,17 @@ No entanto, caracteres são armazenados como números. Você pode ver a codifica
 O tipo de dado char é um tipo com sinal, armazenando números de -128 a 127. Para um tipo de dado sem sinal, de um byte (8 bits), use o tipo de dado _byte_.
 [%hardbreaks]
 
+
+[float]
+=== Syntax
+`char var = val;`
+
+
+[float]
+=== Parameters
+`var`: variable name +
+`val`: the value to assign to that variable
+
 --
 // OVERVIEW SECTION ENDS
 

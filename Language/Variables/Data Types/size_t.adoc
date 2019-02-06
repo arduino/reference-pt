@@ -15,6 +15,17 @@ subCategories: [ "Data Types" ]
 `size_t` é um tipo de dado capaz de representar o tamanho de qualquer objeto em bytes. Exemplos do uso de `size_t` são o tipo do retorno de link:../../utilities/sizeof[sizeof()] e link:../../../functions/communication/serial/print[Serial.print()].
 [%hardbreaks]
 
+
+[float]
+=== Syntax
+`size_t var = val;`
+
+
+[float]
+=== Parameters
+`var`: variable name +
+`val`: the value to assign to that variable
+
 --
 // OVERVIEW SECTION ENDS
 

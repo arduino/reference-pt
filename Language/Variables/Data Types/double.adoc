@@ -17,6 +17,17 @@ Número de Ponto flutuante Double. No UNO e outras placas baseadas no ATMEGA, oc
 No Arduino Due e outras placas com SAMD, doubles usam 8 bytes, ou seja, precisão de 64 bits.
 [%hardbreaks]
 
+
+[float]
+=== Syntax
+`double var = val;`
+
+
+[float]
+=== Parameters
+`var`: variable name +
+`val`: the value to assign to that variable
+
 --
 // OVERVIEW SECTION ENDS
 

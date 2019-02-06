@@ -18,6 +18,17 @@ Um tipo de dado sem sinal, que ocupa um byte na memória. O mesmo que o tipo de 
 Para consistência do estilo de programação Arduino, o tipo de dado byte é preferido.
 [%hardbreaks]
 
+
+[float]
+=== Syntax
+`unsigned char var = val;`
+
+
+[float]
+=== Parameters
+`var`: variable name +
+`val`: the value to assign to that variable
+
 --
 // OVERVIEW SECTION ENDS
 

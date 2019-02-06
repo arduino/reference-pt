@@ -50,7 +50,7 @@ isGraph(thisChar)
 
 [source,arduino]
 ----
-if (isGraph(this)) {  // testa se this é um caractere imprimível mas não um espaço.
+if (isGraph(meuChar)) {  // testa se meuChar é um caractere imprimível mas não um espaço.
   Serial.println("The character is printable");
 }
 else {

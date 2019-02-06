@@ -4,12 +4,7 @@ categories: [ "Functions" ]
 subCategories: [ "Caracteres" ]
 ---
 
-
-
-
-
 = isUpperCase(thisChar)
-
 
 // OVERVIEW SECTION STARTS
 [#overview]
@@ -50,7 +45,7 @@ isUpperCase(thisChar)
 
 [source,arduino]
 ----
-if (isUpperCase(this)) {  // testa se this é uma letra maiúscula
+if (isUpperCase(meuChar)) {  // testa se meuChar é uma letra maiúscula
   Serial.println("The character is upper case");
 }
 else {

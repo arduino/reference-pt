@@ -13,7 +13,7 @@ title: Keyboard.write()
 === Descrição
 Envia uma tecla pressionada para um computador conectado. Isso é similar a pressionar e soltar uma tecla do seu teclado. Você pode enviar alguns caracteres ASCII ou as link:../keyboardmodifiers[teclas modificadoras e especiais] adicionais.
 
-Apenas caracteres ASCII que estão no teclado são suportados. Por exemplo, o caractere ASCII 8 (backspace) funciona, mas o caractere ASCII 25 (Substituição) não. Ao enviar letras maiúsculas, Keyboard.write() envia o comando shift mais o caractere desejado, da mesma forma que quando se digita em um teclado comum. Se um tipo numérico é enviado, este é interpretado como o caractere ASCII correspondente (ex. Keyboard.write(97) irá enviar 'a').
+Apenas caracteres ASCII que estão no teclado são suportados. Por exemplo, o caractere ASCII 8 (backspace) funciona, mas o caractere ASCII 25 (Substituição) não. Ao enviar letras maiúsculas, `Keyboard.write()` envia o comando shift mais o caractere desejado, da mesma forma que quando se digita em um teclado comum. Se um tipo numérico é enviado, este é interpretado como o caractere ASCII correspondente (ex. Keyboard.write(97) irá enviar 'a').
 
 Para uma lista completa de caracteres ASCII, veja http://www.asciitable.com/[asciitable.com].
 [%hardbreaks]
@@ -26,7 +26,7 @@ Para uma lista completa de caracteres ASCII, veja http://www.asciitable.com/[asc
 
 [float]
 === Parâmetros
-`character` : um char ou int a ser enviado ao computador. Pode ser enviado em qualquer notação que é aceitável para um char. Por exemplo, todas as formas abaixo são aceitáveis e enviadas como o mesmo valor, 65 ou ASCII A:
+`character` : um `char` ou `int` a ser enviado ao computador. Pode ser enviado em qualquer notação que é aceitável para um `char`. Por exemplo, todas as formas abaixo são aceitáveis e enviadas como o mesmo valor, 65 ou ASCII A:
 [source,arduino]
 ----
 Keyboard.write(65);         // envia o valor ASCII 65, ou A

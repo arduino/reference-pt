@@ -10,7 +10,7 @@ title: Mouse.release()
 
 [float]
 === Descrição
-Envia ao computador a mensagem que um botão previamente apertado e segurado (através de link:../mousepress[Mouse.press()]) foi liberado. Mouse.release() por padrão usa o botão esquerdo.
+Envia ao computador a mensagem que um botão previamente apertado e segurado (através de link:../mousepress[Mouse.press()]) foi liberado. `Mouse.release()` por padrão usa o botão esquerdo.
 [%hardbreaks]
 
 

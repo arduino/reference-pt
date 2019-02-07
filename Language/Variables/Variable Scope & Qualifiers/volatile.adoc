@@ -15,11 +15,11 @@ subCategories: [ "Escopo de Variáveis e Qualificadores" ]
 === Descrição
 A palavra chave `volatile` é conhecida como um _qualificador_ de variáveis, e é geralmente usada antes do tipo de dado da variável, para modificar a forma com qual o compilador e o programa tratam a variável.
 
-Declarar uma variável como volatile é uma diretiva para o compilador. O compilador é o software que traduz seu código C/C++ em linguagem de máquina, que são as instruções reais entendidas pelo chip microcontrolador na placa Arduino.
+Declarar uma variável como `volatile` é uma diretiva para o compilador. O compilador é o software que traduz seu código C/C++ em linguagem de máquina, que são as instruções reais entendidas pelo chip microcontrolador na placa Arduino.
 
 Especificamente, essa diretiva faz com que o compilador carregue a variável da RAM e não de um registrador, que é uma localização temporária da memória onde variáveis do programa são guardadas e manipuladas. Sob certas circunstâncias, o valor de uma variável armazenada em registradores pode ser impreciso.
 
-Uma variável deve ser declarada volatile quando seu valor pode ser mudado por algo além do controle da seção de código na qual ela aparece, como uma thread paralela. No Arduino, o único lugar do código onde isso pode ocorrer é em seções associadas com interrupções, chamadas de rotina de serviço de interrupção (interrupt service routine).
+Uma variável deve ser declarada `volatile` quando seu valor pode ser mudado por algo além do controle da seção de código na qual ela aparece, como uma thread paralela. No Arduino, o único lugar do código onde isso pode ocorrer é em seções associadas com interrupções, chamadas de rotina de serviço de interrupção (interrupt service routine).
 [%hardbreaks]
 
 --

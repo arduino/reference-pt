@@ -14,7 +14,7 @@ subCategories: [ "Interrupções Externas" ]
 === Descrição
 *Pinos Digitais com Interrupções*
 
-O primeiro parâmetro de attachInterrupt() é o número da interrupção. É recomendado usar digitalPinToInterrupt(pino) para converter o número do pino digital para o número específico da interrupção. Por exemplo, se você usar o pino 3, passe digitalPinToInterrupt(3) como o primeiro parâmetro de attachInterrupt().
+O primeiro parâmetro de `attachInterrupt()` é o número da interrupção. É recomendado usar `digitalPinToInterrupt(pino)` para converter o número do pino digital para o número específico da interrupção. Por exemplo, se você usar o pino 3, passe `digitalPinToInterrupt(3)` como o primeiro parâmetro de `attachInterrupt()`.
 
 [options="header"]
 |===================================================
@@ -49,7 +49,7 @@ Supomos que você quisesse ter certeza que um programa sempre captura os pulsos 
 == Sobre Rotinas de Serviço de Interrupções (ISRs)
 ISRs são tipos especiais de funções que possuem  algumas limitações únicas que as outras funções não possuem. Uma ISR não recebe argumentos, e não devem retornar nada.
 
-Geralmente, uma ISR deve ser o mais curta e rápida possível. Se o seu sketch usa múltiplas ISRs, apenas uma pode ser executada de cada vez, outras interrupções serão executadas após a atual terminar, em uma ordem que depende de sua prioridade. millis() depende de interrupções para contar, então essa nunca irá incrementar dentro de uma ISR. Como delay() também depende de interrupções, não irá funcionar dentro de uma ISR. micros() funciona inicialmente, mas começará a se comportar erraticamente após 1-2 ms. delayMicroseconds() não usa nenhum contador, então funciona normalmente.
+Geralmente, uma ISR deve ser o mais curta e rápida possível. Se o seu sketch usa múltiplas ISRs, apenas uma pode ser executada de cada vez, outras interrupções serão executadas após a atual terminar, em uma ordem que depende de sua prioridade. `millis()` depende de interrupções para contar, então essa nunca irá incrementar dentro de uma ISR. Como `delay()` também depende de interrupções, não irá funcionar dentro de uma ISR. micros() funciona inicialmente, mas começará a se comportar erraticamente após 1-2 ms. `delayMicroseconds()` não usa nenhum contador, então funciona normalmente.
 
 Tipicamente variáveis globais são usadas para passar dados entre uma ISR e o programa principal. Tenha certeza que variáveis compartilhadas entre uma ISR e o programa principal são atualizadas corretamente, para isso, as declare usando o modificador `volatile`.
 
@@ -117,11 +117,11 @@ void blink() {
 
 [float]
 === Números das Interrupções
-Normalmente você deve usar digitalPinToInterrupt(pino), em vez de colocar diretamente o número da interrupção no seu sketch. Os pinos específicos para interrupções, e seu mapeamento para o número da interrupção variam para cada tipo de placa. O uso direto dos números das interrupções pode parecer mais simples, porém pode causar problemas de compatibilidade quando seu sketch for executado em uma placa diferente.
+Normalmente você deve usar `digitalPinToInterrupt(pino)`, em vez de colocar diretamente o número da interrupção no seu sketch. Os pinos específicos para interrupções, e seu mapeamento para o número da interrupção variam para cada tipo de placa. O uso direto dos números das interrupções pode parecer mais simples, porém pode causar problemas de compatibilidade quando seu sketch for executado em uma placa diferente.
 
 Mesmo assim, sketches mais antigos frequentemente têm os números das interrupções usados diretamente. Frequentemente o número 0 (para o pino digital 2) ou o número 1 (para o pino digital 3) foram usados. A tabela abaixo mostra os pinos com interrupções disponíveis em cada placa.
 
-Note que na tabela abaixo, os números das interrupções se referem aos números a serem passados para attachInterrupt(). Por razões históricas, essa numeração nem sempre corresponde diretamente a numeração do chip atmega (ex. int.0 corresponde à INT4 no chip Atmega2560).
+Note que na tabela abaixo, os números das interrupções se referem aos números a serem passados para `attachInterrupt()`. Por razões históricas, essa numeração nem sempre corresponde diretamente a numeração do chip atmega (ex. int.0 corresponde à INT4 no chip Atmega2560).
 
 [options="header"]
 |===================================================

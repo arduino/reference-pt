@@ -27,6 +27,7 @@ subCategories: [ "Estruturas de Controle" ]
 No códgo seguinte, o break quebra o loop `for` quando o valor do sensor excede o limiar.
 [source,arduino]
 ----
+int lim = 40;
 for (x = 0; x < 255; x ++)
 {
     analogWrite(PWMpin, x);

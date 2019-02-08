@@ -12,7 +12,7 @@ subCategories: [ "Utilitários" ]
 
 [float]
 === Descrição
-O operador sizeof retorna o número de bytes de uma variável, ou o número de bytes ocupados em um vetor.
+O operador `sizeof` retorna o número de bytes de uma variável, ou o número de bytes ocupados em um vetor.
 [%hardbreaks]
 
 

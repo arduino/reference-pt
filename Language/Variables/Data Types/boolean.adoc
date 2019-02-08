@@ -67,7 +67,6 @@ void loop()
 
 [role="language"]
 #LINGUAGEM# link:../../../variables/constants/constants[constantes] +
-#LINGUAGEM# link:../../../variables/data-types/bool/[bool]
 
 --
 // SEE ALSO SECTION ENDS

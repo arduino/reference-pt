@@ -32,3 +32,14 @@ A raiz quadrada do número. (double)
 
 --
 // OVERVIEW SECTION ENDS
+
+
+// SEE ALSO SECTION
+[#see_also]
+--
+
+[float]
+=== Ver Também
+
+--
+// SEE ALSO SECTION ENDS

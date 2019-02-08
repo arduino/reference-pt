@@ -135,3 +135,14 @@ Para as placas Due, Zero, MKR1000 e 101 o *número da interrupção = número do
 
 --
 // HOW TO USE SECTION ENDS
+
+
+// SEE ALSO SECTION
+[#see_also]
+--
+
+[float]
+=== Ver Também
+
+--
+// SEE ALSO SECTION ENDS

@@ -95,3 +95,14 @@ long map(long x, long in_min, long in_max, long out_min, long out_max)
 
 --
 // HOW TO USE SECTION ENDS
+
+
+// SEE ALSO SECTION
+[#see_also]
+--
+
+[float]
+=== Ver Também
+
+--
+// SEE ALSO SECTION ENDS

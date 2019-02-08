@@ -26,7 +26,7 @@ string.c_str()
 
 [float]
 === Parâmetros
-Nenhum
+`minhaString`: uma variável do tipo String
 
 [float]
 === Retorna

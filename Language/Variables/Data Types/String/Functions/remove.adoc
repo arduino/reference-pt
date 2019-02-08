@@ -28,6 +28,8 @@ string.remove(index, count)
 
 [float]
 === Parâmetros
+`minhaString`: uma variável do tipo String
+
 `index`: índice a partir do qual remover os caracteres -int
 
 `count`: o número de caracteres a serem removidos a partir do indíce - int

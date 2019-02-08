@@ -26,6 +26,8 @@ string.reserve(tamanho)
 
 [float]
 === Parâmetros
+`minhaString`: uma variável do tipo String
+
 `tamanho`: número de bytes na memória a serem reservados para manipulação de strings - unsigned int
 
 

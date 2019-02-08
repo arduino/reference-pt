@@ -26,6 +26,8 @@ string.concat(param)
 
 [float]
 === Parâmetros
+`minhaString`: uma variável do tipo String
+
 `param`: *Tipos de dados permitidos* String, string, char, byte, int, unsigned int, long, unsigned long, float, double, e a __FlashStringHelper(macro F()).
 
 [float]

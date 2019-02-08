@@ -19,12 +19,8 @@ Modifica uma String, removendo os caracteres a partir de determinado índice at�
 
 [float]
 === Sintaxe
-[source,arduino]
-----
-string.remove(index)
-
-string.remove(index, count)
-----
+`minhaString.remove(index)` +
+`minhaString.remove(index, count)`
 
 [float]
 === Parâmetros

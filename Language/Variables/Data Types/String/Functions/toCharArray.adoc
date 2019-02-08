@@ -20,14 +20,11 @@ Copia os caracteres da String para o buffer fornecido.
 
 [float]
 === Sintaxe
-[source,arduino]
-----
-string.toCharArray(buf, compr)
-----
+`minhaString.toCharArray(buf, compr)`
 
 [float]
 === Parâmetros
-`string`: umavariável do tipo String
+`minhaString`: umavariável do tipo String
 
 `buf`: the buffer no qual os caracteres devem ser copiados(_char []_)
 

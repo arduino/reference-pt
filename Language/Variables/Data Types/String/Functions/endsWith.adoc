@@ -19,21 +19,18 @@ Testa se uma String termina ou não com os caracteres de outra String.
 
 [float]
 === Sintaxe
-[source,arduino]
-----
-string.endsWith(string2)
-----
+`minhaString.endsWith(minhaString2)`
 
 [float]
 === Parâmetros
-`string`: uma variável do tipo String
+`minhaString`: uma variável do tipo String
 
-`string2`: outra variável do tipo String
+`minhaString2`: outra variável do tipo String
 
 
 [float]
 === Retorna
-`true`: se string termina com os carcateres de string2
+`true`: se minhaString termina com os carcateres de minhaString2
 
 `false`: do contrário
 

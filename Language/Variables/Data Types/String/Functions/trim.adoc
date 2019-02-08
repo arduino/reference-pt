@@ -19,14 +19,11 @@ Remove quaisquer espaços no começo ou final da String. Antes da versão 1.0, t
 
 [float]
 === Sintaxe
-[source,arduino]
-----
-string.trim()
-----
+`minhaString.trim()`
 
 [float]
 === Parâmetros
-`string`: uma variável do tipo String
+`minhaString`: uma variável do tipo String
 
 
 [float]

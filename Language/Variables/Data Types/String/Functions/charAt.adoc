@@ -19,14 +19,11 @@ Acessa um caractere em uma determinada posição na String.
 
 [float]
 === Sintaxe
-[source,arduino]
-----
-string.charAt(n)
-----
+`minhaString.charAt(n)`
 
 [float]
 === Parâmetros
-`string`: uma variável do tipo String
+`minhaString`: uma variável do tipo String
 
 `n`: a posição do caractere a ser lido da String
 

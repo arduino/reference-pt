@@ -19,19 +19,16 @@ Testa se uma String começa ou não com os caracteres de uma outra String.
 
 [float]
 === Sintaxe
-[source,arduino]
-----
-string.startsWith(string2)
-----
+`minhaString.startsWith(minhaString2)`
 
 [float]
 === Parâmetros
-`string, string2`: variáveis do tipo String
+`minhaString, minhaString2`: variáveis do tipo String
 
 
 [float]
 === Retorna
-`true`: se string começa com os carcateres de string2
+`true`: se minhaString começa com os carcateres de minhaString2
 
 `false`: do contrário
 --

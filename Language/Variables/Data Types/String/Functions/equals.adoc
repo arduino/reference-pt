@@ -19,19 +19,16 @@ Verifica se duas Strings são iguais. A comparação é case-sensitive (letras m
 
 [float]
 === Sintaxe
-[source,arduino]
-----
-string.equals(string2)
-----
+`minhaString.equals(minhaString2)`
 
 [float]
 === Parâmetros
-`string, string2`: variáveis do tipo String
+`minhaString, minhaString2`: variáveis do tipo String
 
 
 [float]
 === Retorna
-`true`: se string é igual a string2 
+`true`: se minhaString é igual a minhaString2 
 
 `false`: do contrário
 --

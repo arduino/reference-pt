@@ -20,16 +20,12 @@ Localiza um caractere ou String dentro de outra String. Por padrão, busca desde
 
 [float]
 === Sintaxe
-[source,arduino]
-----
-string.indexOf(string2)
-
-string.indexOf(string2, desde)
-----
+`minhaString.indexOf(string2)` +
+`minhaString.indexOf(string2, desde)`
 
 [float]
 === Parâmetros
-`string`: uma variável do tipo String
+`minhaString`: uma variável do tipo String
 
 `string2`: a string a ser procurada - char ou String
 
@@ -37,7 +33,7 @@ string.indexOf(string2, desde)
 
 [float]
 === Retorna
-A posição da string especificada dentro do objeto String, ou -1 se não for encontrada.
+A posição da minhaString especificada dentro do objeto String, ou -1 se não for encontrada.
 
 --
 // OVERVIEW SECTION ENDS

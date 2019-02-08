@@ -19,14 +19,11 @@ Retorna o comprimento da String, em caracteres. (Note que isso não inclui carac
 
 [float]
 === Sintaxe
-[source,arduino]
-----
-string.length()
-----
+`minhaString.length()`
 
 [float]
 === Parâmetros
-`string`: uma variável do tipo String
+`minhaString`: uma variável do tipo String
 
 
 [float]

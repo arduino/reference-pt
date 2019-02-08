@@ -48,7 +48,7 @@ o número de bytes colocados no buffer (`size_t`)
 
 [role="language"]
 #LINGUAGEM# link:../../stream[Stream] +
-#LINGUAGEM# link:../../stream/streamreadbytesuntil[Stream.readByteUntil()]
+#LINGUAGEM# link:../../stream/streamreadbytesuntil[Stream.readBytesUntil()]
 
 --
 // SEE ALSO SECTION ENDS

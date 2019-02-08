@@ -60,3 +60,14 @@ sensVal = constrain(sensVal, 10, 150);    // limita os valores entre 10 e 150
 
 --
 // HOW TO USE SECTION ENDS
+
+
+// SEE ALSO SECTION
+[#see_also]
+--
+
+[float]
+=== Ver Também
+
+--
+// SEE ALSO SECTION ENDS

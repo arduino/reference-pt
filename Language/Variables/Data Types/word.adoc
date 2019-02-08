@@ -34,3 +34,14 @@ O trecho de código abaixo cria uma variável do tipo word.
 
 --
 // HOW TO USE SECTION ENDS
+
+
+// SEE ALSO SECTION
+[#see_also]
+--
+
+[float]
+=== Ver Também
+
+--
+// SEE ALSO SECTION ENDS

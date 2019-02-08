@@ -70,3 +70,14 @@ Há 1000 (mil) microssegundos em um milissegundo e 1000000 (um milhão) de micro
 
 --
 // HOW TO USE SECTION ENDS
+
+
+// SEE ALSO SECTION
+[#see_also]
+--
+
+[float]
+=== Ver Também
+
+--
+// SEE ALSO SECTION ENDS

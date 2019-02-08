@@ -87,3 +87,14 @@ O parâmetro `max` deve ser escolhido de acordo com o tipo de dado da variável 
 
 --
 // HOW TO USE SECTION ENDS
+
+
+// SEE ALSO SECTION
+[#see_also]
+--
+
+[float]
+=== Ver Também
+
+--
+// SEE ALSO SECTION ENDS

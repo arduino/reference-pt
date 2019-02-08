@@ -74,3 +74,14 @@ Essa função depende da função micros(), então não pode ser usada quando in
 
 --
 // HOW TO USE SECTION ENDS
+
+
+// SEE ALSO SECTION
+[#see_also]
+--
+
+[float]
+=== Ver Também
+
+--
+// SEE ALSO SECTION ENDS

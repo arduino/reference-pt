@@ -78,3 +78,14 @@ for (i = 0; i < (sizeof(meusInts)/sizeof(int)); i++) {
 
 --
 // HOW TO USE SECTION ENDS
+
+
+// SEE ALSO SECTION
+[#see_also]
+--
+
+[float]
+=== Ver Também
+
+--
+// SEE ALSO SECTION ENDS

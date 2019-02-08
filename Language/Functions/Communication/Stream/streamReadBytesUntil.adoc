@@ -31,7 +31,7 @@ Essa função é parte da classe Stream, e é chamada por qualquer classe que he
 
 `buffer`: o buffer para armazenar os bytes (`char[]` ou `byte[]`)
 
-`length : o número de bytes a serem lidos (int)
+`length` : o número de bytes a serem lidos (int)
 
 [float]
 === Retorna

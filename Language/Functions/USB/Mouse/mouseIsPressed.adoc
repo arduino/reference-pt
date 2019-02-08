@@ -64,7 +64,7 @@ void setup(){
   pinMode(3,INPUT);
   
   // inicia a comunicação serial com o computador
-  Serial1.begin(9600);
+  Serial.begin(9600);
   
   // inicia a biblioteca Mouse
   Mouse.begin();
@@ -87,7 +87,7 @@ void loop(){
   }
   
   // imprime o estado atual do botão do mouse emulado
-  Serial1.println(mouseState);
+  Serial.println(mouseState);
   delay(10);
 }
 ----

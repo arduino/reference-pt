@@ -19,14 +19,11 @@ A função replace() permite substituir todas as instâncias de um determinado c
 
 [float]
 === Sintaxe
-[source,arduino]
-----
-string.replace(substring1, substring2)
-----
+`minhaString.replace(substring1, substring2)`
 
 [float]
 === Parâmetros
-`string`: Uma variável do tipo String
+`minhaString`: Uma variável do tipo String
 
 `substring1`: Outra variável do tipo String
 

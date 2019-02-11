@@ -20,14 +20,11 @@ Copia os caracteres da String para o buffer fornecido.
 
 [float]
 === Sintaxe
-[source,arduino]
-----
-string.getBytes(buf, len)
-----
+`minhaString.getBytes(buf, len)`
 
 [float]
 === Parâmetros
-`string`: uma variável do tipo String
+`minhaString`: uma variável do tipo String
 
 `buf`: o buffer no qual os caracteres devem ser copiados (_byte []_)
 

@@ -20,14 +20,11 @@ Coloca um caractere em determinada posição da String. Não tem efeito em índi
 
 [float]
 === Sintaxe
-[source,arduino]
-----
-string.setCharAt(index, c)
-----
+`minhaString.setCharAt(index, c)`
 
 [float]
 === Parâmetros
-`string`: uma variável do tipo String
+`minhaString`: uma variável do tipo String
 `index`: a posição a se escrever o caractere
 
 `c`: o caractere a ser armazenado na posição dada

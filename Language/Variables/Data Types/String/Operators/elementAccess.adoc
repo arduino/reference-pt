@@ -22,14 +22,14 @@ Permite acessar os caracteres de uma String individualmente.
 === Sintaxe
 [source,arduino]
 ----
-char thisChar = string1[n]
+char thisChar = minhaString1[n]
 ----
 
 [float]
 === Parâmetros
 `char thisChar` - uma variável char
 
-`string1` - uma variável String
+`minhaString1` - uma variável String
 
 `int n` - a posição do caractere a ser lido da String
 

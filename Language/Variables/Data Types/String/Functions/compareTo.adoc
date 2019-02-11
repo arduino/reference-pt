@@ -19,25 +19,22 @@ Compara duas Strings, testando se uma vem antes da outra na tabela ASCII, ou se 
 
 [float]
 === Sintaxe
-[source,arduino]
-----
-string.compareTo(string2)
-----
+`minhaString.compareTo(minhaString2)`
 
 [float]
 === Parâmetros
-`string`: uma variável do tipo String
+`minhaString`: uma variável do tipo String
 
-`string2`: outra variável do tipo String
+`minhaString2`: outra variável do tipo String
 
 
 [float]
 === Retorna
-`um número negativo`: se string vem antes de string2
+`um número negativo`: se minhaString vem antes de minhaString2
 
-`0`: se string é igual a string2
+`0`: se minhaString é igual a minhaString2
 
-`um número positivo`: se string vem depois de string2
+`um número positivo`: se minhaString vem depois de minhaString2
 --
 
 // OVERVIEW SECTION ENDS

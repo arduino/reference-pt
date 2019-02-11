@@ -19,10 +19,7 @@ A função reserve() permite alocar um buffer de memória no objeto String para 
 
 [float]
 === Sintaxe
-[source,arduino]
-----
-string.reserve(tamanho)
-----
+`minhaString.reserve(tamanho)`
 
 [float]
 === Parâmetros

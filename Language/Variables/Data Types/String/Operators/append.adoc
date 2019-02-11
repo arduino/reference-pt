@@ -24,12 +24,12 @@ Acrescenta uma String no final de outra.
 === Sintaxe
 [source,arduino]
 ----
-string += string2
+minhaString += string2
 ----
 
 [float]
 === Parâmetros
-Nenhum
+`minhaString` - uma variável do tipo String
 
 [float]
 === Retorna

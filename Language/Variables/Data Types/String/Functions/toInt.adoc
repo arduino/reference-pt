@@ -19,14 +19,11 @@ Converte uma String válida para um valor inteiro. A String deve começar com um
 
 [float]
 === Sintaxe
-[source,arduino]
-----
-string.toInt()
-----
+`minhaString.toInt()`
 
 [float]
 === Parâmetros
-`string`: uma variável do tipo String
+`minhaString`: uma variável do tipo String
 
 
 [float]

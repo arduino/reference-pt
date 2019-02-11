@@ -18,14 +18,11 @@ Converte uma String para sua versão composta apenas de letras maiúsculas. Ante
 
 [float]
 === Sintaxe
-[source,arduino]
-----
-string.toUpperCase()
-----
+`minhaString.toUpperCase()`
 
 [float]
 === Parâmetros
-`string`: uma variável do tipo String
+`minhaString`: uma variável do tipo String
 
 
 [float]

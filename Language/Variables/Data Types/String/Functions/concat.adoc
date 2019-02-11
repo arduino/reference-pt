@@ -19,10 +19,7 @@ Adiciona o parâmetro ao final da String.
 
 [float]
 === Sintaxe
-[source,arduino]
-----
-string.concat(param)
-----
+`minhaString.concat(param)`
 
 [float]
 === Parâmetros

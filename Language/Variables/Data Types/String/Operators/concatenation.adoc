@@ -22,12 +22,12 @@ Combina, ou concatena duas Strings em uma única String. A segunda String é ane
 === Sintaxe
 [source,arduino]
 ----
-string3 = string1 + string 2; string3 += string2;
+minhaString3 = minhaString1 + minhaString2
 ----
 
 [float]
 === Parâmetros
-`string, string1, string2, string3` - variáveis do tipo String
+`minhaString1, minhaString2, minhaString3` - variáveis do tipo String
 
 [float]
 === Retorna

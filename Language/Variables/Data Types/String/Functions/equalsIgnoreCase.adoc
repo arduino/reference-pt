@@ -19,19 +19,16 @@ Verifica se duas strings são iguais. A comparação, nesse caso, não é case-s
 
 [float]
 === Sintaxe
-[source,arduino]
-----
-string.equalsIgnoreCase(string2)
-----
+`minhaString.equalsIgnoreCase(minhaString2)`
 
 [float]
 === Parâmetros
-`string, string2`: vvariáveis do tipo String
+`minhaString, minhaString2`: vvariáveis do tipo String
 
 
 [float]
 === Retorna
-`true`: se string é igual a string2 (sem diferenciar maiúsculas e minúsculas) 
+`true`: se minhaString é igual a minhaString2 (sem diferenciar maiúsculas e minúsculas) 
 
 `false`: otherwise
 --

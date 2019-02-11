@@ -24,12 +24,12 @@ Cuidado: Operadores de comparação de Strings podem ser confusos quando você e
 === Sintaxe
 [source,arduino]
 ----
-string1 <= string2
+minhaString1 <= minhaString2
 ----
 
 [float]
 === Parâmetros
-`string1, string2`: variáveis do tipo String
+`minhaString1, minhaString2`: variáveis do tipo String
 
 [float]
 === Retorna

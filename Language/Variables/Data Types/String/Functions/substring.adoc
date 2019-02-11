@@ -20,16 +20,13 @@ Retorna uma substring de uma String. O índice do início é inclusivo (o caract
 
 [float]
 === Sintaxe
-[source,arduino]
-----
-string.substring(inicio)
-
-string.substring(inicio, fim)
+`minhaString.substring(inicio)` +
+`minhaString.substring(inicio, fim)`
 ----
 
 [float]
 === Parâmetros
-`string`: a variable of type String
+`minhaString`: a variable of type String
 
 `inicio`: o índice no qual começar a substring (inclusivo)
 

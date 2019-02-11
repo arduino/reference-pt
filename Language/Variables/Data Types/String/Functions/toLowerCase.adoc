@@ -19,14 +19,11 @@ Converte uma String para sua versão composta apenas de letras minúsculas. Ante
 
 [float]
 === Sintaxe
-[source,arduino]
-----
-string.toLowerCase()
-----
+`minhaString.toLowerCase()`
 
 [float]
 === Parâmetros
-`string`: uma variável do tipo String
+`minhaString`: uma variável do tipo String
 
 
 [float]

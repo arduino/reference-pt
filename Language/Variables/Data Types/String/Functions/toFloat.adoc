@@ -19,14 +19,11 @@ Converte uma String válida para um float. A String fornecida deve começar com 
 
 [float]
 === Sintaxe
-[source,arduino]
-----
-string.toFloat()
-----
+`minhaString.toFloat()`
 
 [float]
 === Parâmetros
-`string`: uma variável do tipo String
+`minhaString`: uma variável do tipo String
 
 
 [float]

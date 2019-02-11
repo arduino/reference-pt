@@ -20,6 +20,19 @@ Declarar uma variável como `volatile` é uma diretiva para o compilador. O comp
 Especificamente, essa diretiva faz com que o compilador carregue a variável da RAM e não de um registrador, que é uma localização temporária da memória onde variáveis do programa são guardadas e manipuladas. Sob certas circunstâncias, o valor de uma variável armazenada em registradores pode ser impreciso.
 
 Uma variável deve ser declarada `volatile` quando seu valor pode ser mudado por algo além do controle da seção de código na qual ela aparece, como uma thread paralela. No Arduino, o único lugar do código onde isso pode ocorrer é em seções associadas com interrupções, chamadas de rotina de serviço de interrupção (interrupt service routine).
+
+[float]
+=== variáveis volatile int ou long
+Se a variável `volatile` é maior que um byte (ex. um int de 16 bits ou long de 32 bits), o microcontrolador não é capaz de lê-la em apenas um passo, porquê é um microcontrolador 8 bits. Isso significa que enquanto a seção principal do seu código (ex. seu loop) lê o primeiro ou os primeiros bytes da variável, a interrupção pode mudar os outros bytes. Isso irá produzir valores inesperados na variável.
+
+Solução:
+
+Enquanto a variável é lida, as interrupções são desativadas, de forma que estas não podem bagunçar as variáveis durante a leitura.
+Há algumas formas de se fazer isso:
+
+1. link:../../../functions/interrupts/nointerrupts[noInterrupts]
+
+2. usar a macro ATOMIC_BLOCK. Operações atômicas são operações únicas para o microcontrolador - a menor unidade possível.
 [%hardbreaks]
 
 --
@@ -61,6 +74,21 @@ void blink()
 }
 
 ----
+
+
+[source,arduino]
+----
+#include <util/atomic.h> // essa biblioteca inclui a macro ATOMIC_BLOCK.
+
+
+  ATOMIC_BLOCK(ATOMIC_RESTORESTATE) {
+     // código com interrupções bloqueadas (operações atômicas consecutivas não irão ser interrompidas)
+  }
+
+
+----
+
+
 
 --
 // HOW TO USE SECTION ENDS

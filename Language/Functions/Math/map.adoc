@@ -93,6 +93,11 @@ long map(long x, long in_min, long in_max, long out_min, long out_max)
 }
 ----
 
+[float]
+=== Notes & Warnings
+
+Como mencionado anteriormente, a função map() usa matemática inteira. Então frações podem ser suprimidas devido a isso. Por exemplo, frações como 3/2, 4/3, 5/4 irão ser retornadas como 1 pela função map(), apesar de os valores esperados serem diferentes. Então, se seu projeto requer cálculos precisos (ex. tensão elétrica com precisão de três decimais), por gentileza considere evitar a função `map()` e implementar os cálculos manualmente no seu código.
+
 --
 // HOW TO USE SECTION ENDS
 

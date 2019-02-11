@@ -23,7 +23,7 @@ Converte o conteúdo de um objeto String para uma string estilo C, terminada em 
 
 [float]
 === Parâmetros
-Nenhum
+`minhaString`: uma variável do tipo String
 
 [float]
 === Retorna

@@ -4,12 +4,7 @@ categories: [ "Functions" ]
 subCategories: [ "Funções Temporizadoras" ]
 ---
 
-
-
-
-
 = millis()
-
 
 // OVERVIEW SECTION STARTS
 [#overview]
@@ -32,7 +27,7 @@ Nenhum
 
 [float]
 === Retorna
-O número de milissegundos desde que o programa iniciou (unsigned long)
+O número de milissegundos passados desde que o programa iniciou (unsigned long)
 
 --
 // OVERVIEW SECTION ENDS
@@ -47,7 +42,7 @@ O número de milissegundos desde que o programa iniciou (unsigned long)
 [float]
 === Código de Exemplo
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-O código lê o tempo em milissegundos desde que a placa Arduino foi ligada.
+O código imprime na porta serial o tempo em milissegundos passado desde que a placa Arduino começo a executar o código em si.
 
 [source,arduino]
 ----
@@ -68,7 +63,7 @@ void loop() {
 
 [float]
 === Notas e Advertências
-Note que o valor retornado por `millis()` é unsigned long, erros podem ser gerados se o programador tentar fazer operações matemáticas com outros tipos de dados, como ints.
+Note que o valor retornado por `millis()` é unsigned long, erros podem ser gerados se o programador tentar fazer operações matemáticas com outros tipos de dados, como `int`. Até mesmo o tipo `long` com sinal pode causar erros, já que seu valor máximo é metade de sua contraparte sem sinal.
 
 --
 // HOW TO USE SECTION ENDS

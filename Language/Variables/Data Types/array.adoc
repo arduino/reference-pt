@@ -69,8 +69,7 @@ Vetores são frequentemente manipulados dentro de loops `for`, onde o contador d
 
 [source,arduino]
 ----
-int i;
-for (i = 0; i < 5; i = i + 1) {
+for (byte i = 0; i < 5; i = i + 1) {
   Serial.println(meusPinos[i]);
 }
 ----

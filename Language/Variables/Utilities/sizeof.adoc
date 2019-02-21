@@ -47,14 +47,13 @@ O programa abaixo imprime um string um caractere de cada vez. Tente mudar o text
 [source,arduino]
 ----
 char minhaStr[] = "Esse é um teste";
-int i;
 
 void setup() {
   Serial.begin(9600);
 }
 
 void loop() {
-  for (i = 0; i < sizeof(minhaStr) - 1; i++) {
+  for (byte i = 0; i < sizeof(minhaStr) - 1; i++) {
     Serial.print(i, DEC);
     Serial.print(" = ");
     Serial.write(minhaStr[i]);
@@ -74,7 +73,7 @@ Note que `sizeof` retorna o número total de bytes. Então, para vetores de tipo
 int meusValores[] = {123, 456, 789};
 
 // this for loop works correctly with an array of any type or size
-for (i = 0; i < (sizeof(meusValores)/sizeof(meusValores[0])); i++) {
+for (byte i = 0; i < (sizeof(meusValores)/sizeof(meusValores[0])); i++) {
   // fazer algo com meusValores[i]
 }
 ----

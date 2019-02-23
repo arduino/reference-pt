@@ -46,16 +46,16 @@ Esse código cria uma variável do tipo integer chamada 'contador', a qual é in
 
 [source,arduino]
 ----
-  int contador = 0;         //cria uma variável integer chamada 'contador'
+int contador = 0;          //cria uma variável integer chamada 'contador'
 
 void setup() {
-  Serial.begin(9600);       // usa a porta serial para imprimir o número
+  Serial.begin(9600);      // usa a porta serial para imprimir o número
 }
 
 void loop() {
-  contador++;                // soma 1 ao int contador a cada execução do loop
-  Serial.println(contador);  // Imprime o estado atual do contador
-  delay(1000);              
+  contador++;               // soma 1 ao int contador a cada execução do loop
+  Serial.println(contador); // Imprime o estado atual do contador
+  delay(1000);
 }
 ----
 [%hardbreaks]

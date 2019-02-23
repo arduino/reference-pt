@@ -58,14 +58,14 @@ O código abaixo usa a função Serial.write() para escrever um valor e uma stri
 
 [source,arduino]
 ----
-void setup(){
+void setup() {
   Serial.begin(9600);
 }
 
-void loop(){
+void loop() {
   Serial.write(45); // envia um byte com valor 45 (0b101101)
 
-   int bytesSent = Serial.write(“hello”); //envia a string “hello” e retorna o tamanho da string.
+  int bytesSent = Serial.write(“hello”);  //envia a string “hello” e retorna o tamanho da string.
 }
 ----
 

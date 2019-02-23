@@ -55,7 +55,7 @@ O código limita os valores de uma variável com a leitura de um sensor entre 10
 
 [source,arduino]
 ----
-sensVal = constrain(sensVal, 10, 150);    // limita os valores entre 10 e 150
+sensVal = constrain(sensVal, 10, 150);  // limita os valores entre 10 e 150
 ----
 
 --

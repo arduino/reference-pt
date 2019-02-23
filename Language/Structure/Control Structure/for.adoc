@@ -21,7 +21,7 @@ O comando `for` [e usado para repetir um bloco de código envolvido por chaves. 
 [source,arduino]
 ----
 for (inicialização; condição; incremento) {
-	//comando(s);
+  //comando(s);
 }
 ----
 
@@ -45,17 +45,15 @@ A *inicialização* ocorre primeiro e apenas uma vez. A cada repetição do loop
 // Varia o brilho de um LED usando um pino PWM
 int pinoPWM = 10; // LED em série com um resistor de 470 ohm no pino 10
 
-void setup()
-{
+void setup() {
   // setup não necessário
 }
 
-void loop()
-{
-   for (int i=0; i <= 255; i++){
-      analogWrite(pinoPWM, i);
-      delay(10);
-   }
+void loop() {
+  for (int i = 0; i <= 255; i++) {
+    analogWrite(pinoPWM, i);
+    delay(10);
+  }
 }
 ----
 [%hardbreaks]
@@ -69,7 +67,7 @@ Por exemplo, usar uma multiplicação no comando de incremento irá gerar uma pr
 
 [source,arduino]
 ----
-for(int x = 2; x < 100; x = x * 1.5){
+for (int x = 2; x < 100; x = x * 1.5) {
   println(x);
 }
 ----
@@ -81,14 +79,15 @@ Outro exemplo, Aplica um efeito de _fading_ crescente e decrescente em um LED co
 
 [source,arduino]
 ----
-void loop()
-{
-   int x = 1;
-   for (int i = 0; i > -1; i = i + x){
-      analogWrite(pinoPWM, i);
-      if (i == 255) x = -1;             // muda a direção no pico
-      delay(10);
-   }
+void loop() {
+  int x = 1;
+  for (int i = 0; i > -1; i = i + x) {
+    analogWrite(pinoPWM, i);
+    if (i == 255) {
+      x = -1; // muda a direção no pico
+    }
+    delay(10);
+  }
 }
 ----
 

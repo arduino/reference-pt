@@ -60,7 +60,7 @@ Essa é a matemática de senso comum a qual você já está acostumado. Constant
 === Código de Exemplo:
 [source,arduino]
 ----
-n = 101;     // o mesmo que 101 decimal   ((1 * 10^2) + (0 * 10^1) + 1)
+n = 101;  // o mesmo que 101 decimal   ((1 * 10^2) + (0 * 10^1) + 1)
 ----
 [%hardbreaks]
 
@@ -72,13 +72,13 @@ Apenas os caracteres 0 e 1 são válidos.
 === Código de Exemplo:
 [source,arduino]
 ----
-n = B101;    // o mesmo que 5 decimal   ((1 * 2^2) + (0 * 2^1) + 1)
+n = B101; // o mesmo que 5 decimal   ((1 * 2^2) + (0 * 2^1) + 1)
 ----
 
 O modificador binário funciona apenas em bytes (8 bits), ou seja, entre 0 (B0) e 255 (B11111111). Se for conveniente inserir um int (16 bits) em formato binário, você pode fazê-lo com um procedimento em dois passos, como:
 [source,arduino]
 ----
-meuInt = (B11001100 * 256) + B10101010;    // B11001100 é o byte mais significativo
+meuInt = (B11001100 * 256) + B10101010; // B11001100 é o byte mais significativo
 ----
 [%hardbreaks]
 
@@ -90,7 +90,7 @@ Apenas os caracteres 0 a 7 são válidos. Valores octais são indicados pelo pre
 === Código de Exemplo:
 [source,arduino]
 ----
-n = 0101;    // o mesmo que 65 decimal   ((1 * 8^2) + (0 * 8^1) + 1)
+n = 0101; // o mesmo que 65 decimal   ((1 * 8^2) + (0 * 8^1) + 1)
 ----
 *Cuidado:* é possível criar um bug difícil de encontrar (acidentalmente), caso seja inserido um zero antes de uma constante, fazendo com que o compilador interprete sua constante como octal.
 [%hardbreaks]
@@ -103,7 +103,7 @@ Os caracteres válidos são 0 a 9 e as letras A a F; A possui valor 10, B é 11,
 === Código de Exemplo:
 [source,arduino]
 ----
-n = 0x101;   // o qmesmo que 257 decimal   ((1 * 16^2) + (0 * 16^1) + 1)
+n = 0x101;  // o qmesmo que 257 decimal   ((1 * 16^2) + (0 * 16^1) + 1)
 ----
 [%hardbreaks]
 

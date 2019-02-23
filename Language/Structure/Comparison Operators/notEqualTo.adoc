@@ -23,7 +23,7 @@ Compara a variável à esquerda com o valor ou variável à direita do operador.
 === Sintaxe
 [source,arduino]
 ----
-x != y;   // é falso se x é igual a y e é verdadeiro se x não é igual a y
+x != y; // é falso se x é igual a y e é verdadeiro se x não é igual a y
 ----
 
 [float]
@@ -45,8 +45,7 @@ x != y;   // é falso se x é igual a y e é verdadeiro se x não é igual a y
 
 [source,arduino]
 ----
-if (x!=y)      // testa se x é diferente de y
-{
+if (x != y) { // testa se x é diferente de y
   // faz algo apenas se o resultado da comparação é verdadeiro
 }
 ----

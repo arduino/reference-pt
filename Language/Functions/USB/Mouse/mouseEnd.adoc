@@ -47,21 +47,20 @@ Nada
 ----
 #include <Mouse.h>
 
-void setup(){
-  pinMode(2,INPUT);
+void setup() {
+  pinMode(2, INPUT);
   // inicializa a biblioteca Mouse
   Mouse.begin();
 }
 
-void loop(){
+void loop() {
   // se o botão for pressionado, envia um clique com o botão esquerdo do mouse
   // e depois encerra a emulação do mouse
-  if(digitalRead(2) == HIGH){
+  if (digitalRead(2) == HIGH) {
     Mouse.click();
     Mouse.end();
   }
 }
-
 ----
 
 --

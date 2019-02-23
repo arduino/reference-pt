@@ -19,8 +19,8 @@ Envia um clique momentâneo para o computador, na localização atual do cursor.
 
 [float]
 === Sintaxe
-`Mouse.click();` +
-`Mouse.click(botão);`
+`Mouse.click()` +
+`Mouse.click(botão)`
 
 
 [float]
@@ -56,15 +56,15 @@ Nada
 ----
 #include <Mouse.h>
 
-void setup(){
-  pinMode(2,INPUT);
+void setup() {
+  pinMode(2, INPUT);
   // inicializa a biblioteca mouse
   Mouse.begin();
 }
 
-void loop(){
+void loop() {
   //se o botão for pressionado, envia um clique com o botão esquerdo do mouse
-  if(digitalRead(2) == HIGH){
+  if (digitalRead(2) == HIGH) {
     Mouse.click();
   }
 }

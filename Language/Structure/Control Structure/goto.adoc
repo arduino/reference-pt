@@ -39,13 +39,15 @@ goto rótulo; // envia o fluxo do programa de volta para o rótulo
 O código abaixo "foge" de dentro de todos os laços caso a leitura no pino analógico 0 seja maior que 250. 
 [source,arduino]
 ----
-for(byte r = 0; r < 255; r++){
-    for(byte g = 255; g > 0; g--){
-        for(byte b = 0; b < 255; b++){
-            if (analogRead(0) > 250){ goto cancelar;}
-            // mais comandos ...
-        }
+for (byte r = 0; r < 255; r++) {
+  for (byte g = 255; g > 0; g--) {
+    for (byte b = 0; b < 255; b++) {
+      if (analogRead(0) > 250) {
+        goto cancelar;
+      }
+      // mais comandos ...
     }
+  }
 }
 
 cancelar:

@@ -43,8 +43,8 @@ variável`: *Tipos de dados permitidos:* byte, int, long +
 
 [source,arduino]
 ----
-int a = 40;       // binário: 0000000000101000
-int b = a >> 3;   // binário: 0000000000000101, ou 5 em decimal
+int a = 40;     // binário: 0000000000101000
+int b = a >> 3; // binário: 0000000000000101, ou 5 em decimal
 ----
 [%hardbreaks]
 
@@ -54,7 +54,7 @@ Quando você desloca x à direita por y bits (x >> y), e o bit mais significativ
 
 [source,arduino]
 ----
-int x = -16;     // binário: 1111111111110000
+int x = -16;  // binário: 1111111111110000
 int y = 3;
 int resultado = x >> y;  // binário: 1111111111111110
 ----
@@ -62,7 +62,7 @@ Esse comportamento, chamdo extensão do sinal, é frequentemente indesejável. E
 
 [source,arduino]
 ----
-int x = -16;                   // binário: 1111111111110000
+int x = -16;  // binário: 1111111111110000
 int y = 3;
 int resultado = (unsigned int)x >> y;  // binário: 0001111111111110
 ----
@@ -71,7 +71,7 @@ Se você for cuidadoso para evitar a extensão do sinal, você pode usar o opera
 [source,arduino]
 ----
 int x = 1000;
-int y = x >> 3;   // divisão inteira de 1000 por 8, resultando em y = 125.
+int y = x >> 3; // divisão inteira de 1000 por 8, resultando em y = 125.
 ----
 
 --

@@ -32,8 +32,8 @@ Esse operador pode ser usado dentro da condição de um laço link:../../control
 
 [source,arduino]
 ----
-if (digitalRead(2) == HIGH  && digitalRead(3) == HIGH) { // se AMBOS os botões estão em HIGH
-    // código a ser executado caso as duas condições sejam verdadeiras
+if (digitalRead(2) == HIGH  && digitalRead(3) == HIGH) {  // se AMBOS os botões estão em HIGH
+  // código a ser executado caso as duas condições sejam verdadeiras
 }
 ----
 [%hardbreaks]

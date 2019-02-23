@@ -34,14 +34,9 @@ Constantes definidas com a palavra chave `const` obedecem as regras dos link:../
 ----
 const float pi = 3.14;
 float x;
-
 // ....
-
-x = pi * 2;    // constantes podem ser usadas em cálculos
-
-pi = 7;        // ilegal - você não pode modificar o valor de uma constante
-
-
+x = pi * 2; // constantes podem ser usadas em cálculos
+pi = 7; // ilegal - você não pode modificar o valor de uma constante
 ----
 [%hardbreaks]
 

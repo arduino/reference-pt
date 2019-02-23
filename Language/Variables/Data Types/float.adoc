@@ -25,7 +25,7 @@ Quando fizer cálculos com floats, você precisa adicionar um ponto decimal, do 
 
 [float]
 === Sintaxe
-`float var=val;`
+`float var=val`
 
 `var` - o nome da sua variável float
 `val` - o valor a ser dado a variável
@@ -46,16 +46,16 @@ O trecho de código demonstra algumas operações com floats.
 
 [source,arduino]
 ----
-  float myfloat;
-  float sensorCalbrate = 1.117;
+float myfloat;
+float sensorCalbrate = 1.117;
 
-  int x;
-  int y;
-  float z;
+int x;
+int y;
+float z;
 
-  x = 1;
-  y = x / 2;            // y agora contém 0, ints não podem guardar frações
-  z = (float)x / 2.0;   // z agora contém 0.5 (você deve usar 2.0, não 2)
+x = 1;
+y = x / 2;          // y agora contém 0, ints não podem guardar frações
+z = (float)x / 2.0; // z agora contém 0.5 (você deve usar 2.0, não 2)
 ----
 
 

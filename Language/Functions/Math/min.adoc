@@ -49,8 +49,8 @@ O código garante que o valor de sensVal nunca é maior que 100.
 
 [source,arduino]
 ----
-sensVal = min(sensVal, 100); // atribui a sensVal o menor valor, seja sensVal ou 100
-                             // garantindo que esse nunca seja maior que 100.
+sensVal = min(sensVal, 100);  // atribui a sensVal o menor valor, seja sensVal ou 100
+                              // garantindo que esse nunca seja maior que 100.
 ----
 [%hardbreaks]
 
@@ -61,10 +61,10 @@ Talvez contraintuitivamente, `max()` é constantemente usada para restringir o e
 Por causa da forma em que a função `max()` é implementada, evite usar outras funções dentro dos parênteses, isso pode levar a resultados incorretos.
 [source,arduino]
 ----
-min(a++, 100);   // evitar isso - causa resultados incorretos
+min(a++, 100);  // evitar isso - causa resultados incorretos
 
-min(a, 100);     // ao invés disso, usar esta forma
-a++;             // manter a aritmética fora da função
+min(a, 100);    // ao invés disso, usar esta forma
+a++;            // manter a aritmética fora da função
 ----
 
 --

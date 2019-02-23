@@ -46,10 +46,10 @@ Calcula o módulo (ou valor absoluto) de um número.
 Por causa da forma em que a função `abs()` é implementada, evite usar outras funções dentro dos parênteses, isso pode levar a resultados incorretos.
 [source,arduino]
 ----
-abs(a++);   // evitar isso - causa resultados incorretos
+abs(a++); // evitar isso - causa resultados incorretos
 
-abs(a);     // Ao invés disso, usar esta forma
-a++;        // manter a aritmética fora da função
+abs(a);   // Ao invés disso, usar esta forma
+a++;      // manter a aritmética fora da função
 ----
 [%hardbreaks]
 

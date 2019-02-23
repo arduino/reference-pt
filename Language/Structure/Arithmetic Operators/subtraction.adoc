@@ -45,8 +45,10 @@ diferença = operando1 - operando2;
 
 [source,arduino]
 ----
-int a = 5, b = 10, c = 0;
-c = a - b; // A variável 'c' recebe o valor -5 depois que essa operação é executada
+int a = 5;
+int b = 10;
+int c = 0;
+c = a - b;  // A variável 'c' recebe o valor -5 depois que essa operação é executada
 ----
 [%hardbreaks]
 
@@ -60,9 +62,10 @@ c = a - b; // A variável 'c' recebe o valor -5 depois que essa operação é ex
 
 [source,arduino]
 ----
-float a = 5.5, b = 6.6;
+float a = 5.5;
+float b = 6.6;
 int c = 0;
-c = a - b; // a variável 'c' armazena o valor -1 em vez do resultado esperado -1.1
+c = a - b;  // a variável 'c' armazena o valor -1 em vez do resultado esperado -1.1
 ----
 [%hardbreaks]
 

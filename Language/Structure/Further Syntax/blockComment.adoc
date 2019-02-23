@@ -46,9 +46,9 @@ O começo de um *comentário em bloco* ou *comentário de múltiplas linhas* é 
 */
 
 /*
-  if (gwb == 0){   // Comentários de única linha não permitidos dentro de um comentário em bloco 
-  x = 3;           /* Mas outro comentário de múltiplas linhas, não. Esse comentário é inválido */
-  }
+  if (gwb == 0) { // Comentários de única linha não permitidos dentro de um comentário em bloco
+  x = 3;          /* Mas outro comentário de múltiplas linhas, não. Esse comentário é inválido */
+}
 // Não esqueça o símbolo para "fechar" o comentário - deve estar balanceado!
 */
 ----

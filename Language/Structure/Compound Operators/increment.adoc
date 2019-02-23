@@ -45,8 +45,8 @@ O valor original ou incrementado da variável, que depende se o operador está �
 [source,arduino]
 ----
 x = 2;
-y = ++x;      // x agora contém 3, y contém 3
-y = x++;      // x contém 4, mas y ainda contém 3
+y = ++x;  // x agora contém 3, y contém 3
+y = x++;  // x contém 4, mas y ainda contém 3
 ----
 
 --

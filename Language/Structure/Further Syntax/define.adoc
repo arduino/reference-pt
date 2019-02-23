@@ -57,14 +57,14 @@ Não há ponto e vírgula após a diretiva #define. Se você incluir uma, o comp
 
 [source,arduino]
 ----
-#define pinoLED 3;    // isso é inválido
+#define pinoLED 3;  // isso é inválido
 ----
 
 Similarmente, incluir sinal de igual após #define também resultará em erros
 
 [source,arduino]
 ----
-#define pinoLED  = 3  // também é inválido
+#define pinoLED = 3  // também é inválido
 ----
 [%hardbreaks]
 

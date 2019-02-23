@@ -35,16 +35,14 @@ A função `setup()` é chamada quando um sketch inicia. Use-a para inicializar 
 ----
 int buttonPin = 3;
 
-void setup()
-{
+void setup() {
   // Inicializa a porta serial
   Serial.begin(9600);
   // configura o pino 3 como INPUT
   pinMode(buttonPin, INPUT);
 }
 
-void loop()
-{
+void loop() {
   // ...
 }
 ----

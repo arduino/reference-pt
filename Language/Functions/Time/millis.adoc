@@ -53,15 +53,15 @@ O código lê o tempo em milissegundos desde que a placa Arduino foi ligada.
 ----
 unsigned long time;
 
-void setup(){
+void setup() {
   Serial.begin(9600);
 }
-void loop(){
+void loop() {
   Serial.print("Time: ");
   time = millis();
 
-  Serial.println(time);    // imprime o tempo desde que o programa iniciou
-  delay(1000);             // espera um segundo, para não enviar quantidades massivas de dados
+  Serial.println(time); // imprime o tempo desde que o programa iniciou
+  delay(1000);          // espera um segundo, para não enviar quantidades massivas de dados
 }
 ----
 [%hardbreaks]

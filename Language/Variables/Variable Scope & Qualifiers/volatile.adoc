@@ -57,19 +57,16 @@ Há algumas formas de se fazer isso:
 int pin = 13;
 volatile int state = LOW;
 
-void setup()
-{
+void setup() {
   pinMode(pin, OUTPUT);
   attachInterrupt(digitalPinToInterrupt(2), blink, CHANGE);
 }
 
-void loop()
-{
+void loop() {
   digitalWrite(pin, state);
 }
 
-void blink()
-{
+void blink() {
   state = !state;
 }
 
@@ -78,12 +75,12 @@ void blink()
 
 [source,arduino]
 ----
-#include <util/atomic.h> // essa biblioteca inclui a macro ATOMIC_BLOCK.
+#include <util/atomic.h>  // essa biblioteca inclui a macro ATOMIC_BLOCK.
 
 
-  ATOMIC_BLOCK(ATOMIC_RESTORESTATE) {
-     // código com interrupções bloqueadas (operações atômicas consecutivas não irão ser interrompidas)
-  }
+ATOMIC_BLOCK(ATOMIC_RESTORESTATE) {
+  // código com interrupções bloqueadas (operações atômicas consecutivas não irão ser interrompidas)
+}
 
 
 ----

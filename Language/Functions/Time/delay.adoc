@@ -51,19 +51,17 @@ O código pausa o programa por um segundo antes de trocar o estado do pino 13.
 
 [source,arduino]
 ----
-int ledPin = 13;                 // LED conectado ao pino digital 13
+int ledPin = 13;              // LED conectado ao pino digital 13
 
-void setup()
-{
-  pinMode(ledPin, OUTPUT);      // configura o pino digital como saída
+void setup() {
+  pinMode(ledPin, OUTPUT);    // configura o pino digital como saída
 }
 
-void loop()
-{
-  digitalWrite(ledPin, HIGH);   // acende o LED
-  delay(1000);                  // espera por um segundo
-  digitalWrite(ledPin, LOW);    // apaga o LED
-  delay(1000);                  // espera por um segundo
+void loop() {
+  digitalWrite(ledPin, HIGH); // acende o LED
+  delay(1000);                // espera por um segundo
+  digitalWrite(ledPin, LOW);  // apaga o LED
+  delay(1000);                // espera por um segundo
 }
 ----
 [%hardbreaks]

@@ -22,7 +22,7 @@ Essa é uma abreviação conveniente para realizar a divisão de uma variável c
 === Sintaxe
 [source,arduino]
 ----
-x /= y;   // equivalente a expressão x = x / y;
+x /= y; // equivalente a expressão x = x / y;
 ----
 
 [float]
@@ -45,7 +45,7 @@ x /= y;   // equivalente a expressão x = x / y;
 [source,arduino]
 ----
 x = 2;
-x /= 2;      // x agora contém 1
+x /= 2; // x agora contém 1
 ----
 [%hardbreaks]
 

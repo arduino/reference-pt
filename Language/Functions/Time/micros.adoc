@@ -52,15 +52,16 @@ O código abaixo imprime o número de microssegundos passados desde que a placa 
 ----
 unsigned long time;
 
-void setup(){
+void setup() {
   Serial.begin(9600);
 }
-void loop(){
+void loop() {
   Serial.print("Time: ");
   time = micros();
 
-  Serial.println(time);  // imprime o tempo desde que o programa iniciou
-  delay(1000);           // espera um segundo, para não enviar quantidades massivas de dados
+  Serial.println(time); // imprime o tempo desde que o programa iniciou
+  delay(1000);          // espera um segundo, para não enviar quantidades massivas de dados
+}
 ----
 [%hardbreaks]
 

@@ -31,20 +31,20 @@ Depois de criar uma função link:../setup[setup()], a qual inicializa e atribui
 int buttonPin = 3;
 
 // setup inicializa a porta serial e o pino para o botão
-void setup()
-{
+void setup() {
   Serial.begin(9600);
   pinMode(buttonPin, INPUT);
 }
 
 // loop checa o estado do botão repetidamente, e envia
 // pela serial um 'H' se este está sendo pressionado
-void loop()
-{
-  if (digitalRead(buttonPin) == HIGH)
+void loop() {
+  if (digitalRead(buttonPin) == HIGH) {
     Serial.write('H');
-  else
+  }
+  else {
     Serial.write('L');
+  }
 
   delay(1000);
 }

@@ -41,7 +41,7 @@ Ao se fazer cálculos com inteiros, pelo menos um dos números deve ser seguido 
 
 [source,arduino]
 ----
-  long speedOfLight = 186000L;   // veja a página sobre constantes inteiras para uma explicação sobre o 'L'
+long speedOfLight = 186000L;  // veja a página sobre constantes inteiras para uma explicação sobre o 'L'
 ----
 
 --

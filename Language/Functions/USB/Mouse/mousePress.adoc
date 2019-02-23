@@ -21,7 +21,7 @@ Antes de usar `Mouse.press()`, você precisa iniciar a comunicação com link:..
 
 [float]
 === Sintaxe
-`Mouse.press();` +
+`Mouse.press()` +
 `Mouse.press(botão)`
 
 
@@ -60,22 +60,22 @@ Nada
 ----
 #include <Mouse.h>
 
-void setup(){
+void setup() {
   // o botão que inicia o apertar do botão do mouse
-  pinMode(2,INPUT);
+  pinMode(2, INPUT);
   // o botão que libera do botão do mouse
-  pinMode(3,INPUT);
+  pinMode(3, INPUT);
   // inicia a biblioteca Mouse
   Mouse.begin();
 }
 
-void loop(){
+void loop() {
   // se o botão conectado ao pino 2 for pressionado, aperta e segura o botão do mouse virtual
-  if(digitalRead(2) == HIGH){
+  if (digitalRead(2) == HIGH) {
     Mouse.press();
   }
   // se o botão conectado ao pino 2 for pressionado, solta o botão do mouse virtual
-  if(digitalRead(3) == HIGH){
+  if (digitalRead(3) == HIGH) {
     Mouse.release();
   }
 }

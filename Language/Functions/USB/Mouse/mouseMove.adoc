@@ -52,28 +52,30 @@ Nada
 // Código originalmente em Inglês
 // Traduzido em Dezembro de 2017
 
-const int xAxis = A1;         // sensor analógico para o eixo x
-const int yAxis = A2;         // sensor analógico para o eixo y
+const int xAxis = A1;       // sensor analógico para o eixo x
+const int yAxis = A2;       // sensor analógico para o eixo y
 
-int range = 12;               // intervalo se sada do movimento em X ou Y
-int responseDelay = 2;        // atraso de resposta do mouse, em ms
-int threshold = range/4;      // limiar de descanso
-int center = range/2;         // valor da poisção de descanso
+int range = 12;             // intervalo se sada do movimento em X ou Y
+int responseDelay = 2;      // atraso de resposta do mouse, em ms
+int threshold = range / 4;  // limiar de descanso
+int center = range / 2;     // valor da poisção de descanso
 int minima[] = {
-  1023, 1023};                // minima real de analogRead para {x, y}
+  1023, 1023
+};  // minima real de analogRead para {x, y}
 int maxima[] = {
-  0,0};                       // maxima real de analogRead para {x, y}
+  0, 0
+};  // maxima real de analogRead para {x, y}
 int axis[] = {
-  xAxis, yAxis};              // número dos pinos para {x, y}
-int mouseReading[2];          // leituras finais do mouse para {x, y}
+  xAxis, yAxis
+};  // número dos pinos para {x, y}
+int mouseReading[2];  // leituras finais do mouse para {x, y}
 
 
 void setup() {
- Mouse.begin();
+  Mouse.begin();
 }
 
 void loop() {
-
   // lê e escala os dois eixos:
   int xReading = readAxis(0);
   int yReading = readAxis(1);
@@ -84,12 +86,12 @@ void loop() {
 }
 
 /*
-  Lê um eixo (0 ou 1 para x ou y) e escala o intervalo 
+  Lê um eixo (0 ou 1 para x ou y) e escala o intervalo
   da entrada analógica para um intervalo entre 0 e <range>
 */
 
 int readAxis(int axisNumber) {
-  int distance = 0;    // distância ao centro do intervalo de saída
+  int distance = 0; // distância ao centro do intervalo de saída
 
   // lê a entrada nalógica:
   int reading = analogRead(axis[axisNumber]);
@@ -106,12 +108,12 @@ int readAxis(int axisNumber) {
   // mapeia o intervalo da leitura da entrada analógica para o intervalo de saída:
   reading = map(reading, minima[axisNumber], maxima[axisNumber], 0, range);
 
- // se o valor se saída está fora do limiar de descanso, usa-o:
+  // se o valor se saída está fora do limiar de descanso, usa-o:
   if (abs(reading - center) > threshold) {
     distance = (reading - center);
   }
 
-  // O eixo y precisa ser invertido para 
+  // O eixo y precisa ser invertido para
   // mapear o movimento corretamente:
   if (axisNumber == 1) {
     distance = -distance;

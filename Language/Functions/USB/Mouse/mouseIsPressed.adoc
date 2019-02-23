@@ -57,35 +57,35 @@ Se o botão do mouse passado para a função está pressionado ou não - `bool`
 ----
 #include <Mouse.h>
 
-void setup(){
+void setup() {
   // o botão que inicia o clique do mouse
-  pinMode(2,INPUT);
+  pinMode(2, INPUT);
   // o botão que termina o clique do mouse
-  pinMode(3,INPUT);
-  
+  pinMode(3, INPUT);
+
   // inicia a comunicação serial com o computador
   Serial.begin(9600);
-  
+
   // inicia a biblioteca Mouse
   Mouse.begin();
 }
 
-void loop(){
-  //  variável para checar o esatdo do botão do mouse
-  int mouseState=0;
-  
-  //se o botão conectado ao pino 2 for pressionado, aperta e segura o botão do mouse virtual e salva o estado do mesmo na variável
-  if(digitalRead(2) == HIGH){
+void loop() {
+  // variável para checar o esatdo do botão do mouse
+  int mouseState = 0;
+
+  // se o botão conectado ao pino 2 for pressionado, aperta e segura o botão do mouse virtual e salva o estado do mesmo na variável
+  if (digitalRead(2) == HIGH) {
     Mouse.press();
-    mouseState=Mouse.isPressed();
+    mouseState = Mouse.isPressed();
   }
-  
-  //se o botão conectado ao pino 3 for pressionado, libera o botão do mouse virtual e salva o estado do mesmo na variável
-  if(digitalRead(3) == HIGH){
+
+  // se o botão conectado ao pino 3 for pressionado, libera o botão do mouse virtual e salva o estado do mesmo na variável
+  if (digitalRead(3) == HIGH) {
     Mouse.release();
-    mouseState=Mouse.isPressed();
+    mouseState = Mouse.isPressed();
   }
-  
+
   // imprime o estado atual do botão do mouse emulado
   Serial.println(mouseState);
   delay(10);

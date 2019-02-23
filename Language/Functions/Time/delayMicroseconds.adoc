@@ -53,19 +53,17 @@ O código abaixo configura o pino 8 para funcionar como pino de saída. Ele ent�
 
 [source,arduino]
 ----
-int outPin = 8;                 // pino digital 8
+int outPin = 8;               // pino digital 8
 
-void setup()
-{
-  pinMode(outPin, OUTPUT);      // configura o pino digital como saída
+void setup() {
+  pinMode(outPin, OUTPUT);    // configura o pino digital como saída
 }
 
-void loop()
-{
-  digitalWrite(outPin, HIGH);   // ativa o pino
-  delayMicroseconds(50);        // pausa por 50 microssegundos
-  digitalWrite(outPin, LOW);    // desativa o pino
-  delayMicroseconds(50);        // pausa por 50 microssegundos
+void loop() {
+  digitalWrite(outPin, HIGH); // ativa o pino
+  delayMicroseconds(50);      // pausa por 50 microssegundos
+  digitalWrite(outPin, LOW);  // desativa o pino
+  delayMicroseconds(50);      // pausa por 50 microssegundos
 }
 ----
 [%hardbreaks]

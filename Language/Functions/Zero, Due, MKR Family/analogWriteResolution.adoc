@@ -72,7 +72,7 @@ O código configura a resolução da saída PWM para diferentes valores.
 
 [source,arduino]
 ----
-void setup(){
+void setup() {
   // inicia a porta serial
   Serial.begin(9600);
   // configura os pinos digitais 11 a 13 como saída
@@ -81,7 +81,7 @@ void setup(){
   pinMode(13, OUTPUT);
 }
 
-void loop(){
+void loop() {
   // Lê o valor analógico em A0 e mapeia-o para
   // um pino PWM com um LED conectado
   int sensorVal = analogRead(A0);
@@ -90,9 +90,9 @@ void loop(){
 
   // a resolução PWM padrão
   analogWriteResolution(8);
-  analogWrite(11, map(sensorVal, 0, 1023, 0 ,255));
+  analogWrite(11, map(sensorVal, 0, 1023, 0, 255));
   Serial.print(" , 8-bit PWM value : ");
-  Serial.print(map(sensorVal, 0, 1023, 0 ,255));
+  Serial.print(map(sensorVal, 0, 1023, 0, 255));
 
   // Muda a reolução PWM para 12 bits
   // A resolução completa de 12 bits é suportada

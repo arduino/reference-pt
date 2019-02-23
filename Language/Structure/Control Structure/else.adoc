@@ -24,16 +24,13 @@ Note que um bloco `else if` pode ser usado sem um bloco `else` no final e vice-v
 === Sintaxe
 [source,arduino]
 ----
-if (condição1)
-{
+if (condição1) {
   // faz coisa A
 }
-else if (condição2)
-{
+else if (condição2) {
   // faz coisa B
 }
-else
-{
+else {
   // faz coisa C
 }
 ----
@@ -50,16 +47,13 @@ else
 Abaixo um trecho de código de um sistema de controle de temperatura
 [source,arduino]
 ----
-if (temperatura >= 70)
-{
+if (temperatura >= 70) {
   //Perigo! Desligar o sistema
 }
-else if (temperatura >= 60 && temperatura < 70)
-{
+else if (temperatura >= 60 && temperatura < 70) {
   //Cuidado! Requerida a atenção do usuário
 }
-else
-{
+else {
   //Seguro! Continue as tarefas usuais...
 }
 ----

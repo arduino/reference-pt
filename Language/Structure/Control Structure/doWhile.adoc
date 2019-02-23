@@ -20,9 +20,8 @@ O loop `do...while` funciona da mesma forma que o loop link:../while[while], com
 === Sintaxe
 [source,arduino]
 ----
-do
-{
-    // bloco de comandos
+do {
+  // bloco de comandos
 } while (condição);
 ----
 A `condição` é uma expressão booleana que é avaliada como verdadeiro ou falso, respectivamente `true` ou `false` na linguagem Arduino.
@@ -43,11 +42,9 @@ A `condição` é uma expressão booleana que é avaliada como verdadeiro ou fal
 [source,arduino]
 ----
 int x = 0;
-do
-{
+do {
   delay(50);          // espera os sensores estabilizarem
   x = readSensors();  // checa os sensores
-
 } while (x < 100);
 ----
 

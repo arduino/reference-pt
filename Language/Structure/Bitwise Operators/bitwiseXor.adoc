@@ -51,14 +51,14 @@ O operador ^ é frequentemente utilizado para trocar (isto é, mudar de 0 para 1
 ----
 // Blink_Pin_5
 // Demo do XOR
-void setup(){
-    DDRD = DDRD | B00100000; // configura o pino digital 5 como saída
-    Serial.begin(9600);
+void setup() {
+  DDRD = DDRD | B00100000;  // configura o pino digital 5 como saída
+  Serial.begin(9600);
 }
 
-void loop(){
-    PORTD = PORTD ^ B00100000;  // inverte bit 5 (pino 5), e deixa os outros intocados
-    delay(100);
+void loop() {
+  PORTD = PORTD ^ B00100000;  // inverte bit 5 (pino 5), e deixa os outros intocados
+  delay(100);
 }
 ----
 

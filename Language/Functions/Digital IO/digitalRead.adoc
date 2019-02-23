@@ -50,20 +50,18 @@ Aciona o pino 13 para o mesmo valor que o pino 7, declarado como entrada.
 
 [source,arduino]
 ----
-int ledPin = 13;   // LED conectado ao pino digital 13
-int inPin = 7;     // botão conectado ao pino digital 7
-int val = 0;       // variável para guardar o valor lido
+int ledPin = 13;  // LED conectado ao pino digital 13
+int inPin = 7;    // botão conectado ao pino digital 7
+int val = 0;      // variável para guardar o valor lido
 
-void setup()
-{
-  pinMode(ledPin, OUTPUT);      // configura o pino digital 13 como saída
-  pinMode(inPin, INPUT);        // configura o pino digital 7 como entrada
+void setup() {
+  pinMode(ledPin, OUTPUT);    // configura o pino digital 13 como saída
+  pinMode(inPin, INPUT);      // configura o pino digital 7 como entrada
 }
 
-void loop()
-{
-  val = digitalRead(inPin);     // lê o pino de entrada
-  digitalWrite(ledPin, val);    // aciona o LED com o valor lido do botão
+void loop() {
+  val = digitalRead(inPin);   // lê o pino de entrada
+  digitalWrite(ledPin, val);  // aciona o LED com o valor lido do botão
 }
 ----
 [%hardbreaks]

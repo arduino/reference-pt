@@ -22,7 +22,7 @@ Essa é uma abreviação conveniente para realizar a subtração de uma variáve
 === Sintaxe
 [source,arduino]
 ----
-x -= y;   // equivalente a expressão x = x - y;
+x -= y; // equivalente a expressão x = x - y;
 ----
 
 [float]
@@ -45,7 +45,7 @@ x -= y;   // equivalente a expressão x = x - y;
 [source,arduino]
 ----
 x = 20;
-x -= 2;      // x agora contém 18
+x -= 2; // x agora contém 18
 ----
 
 

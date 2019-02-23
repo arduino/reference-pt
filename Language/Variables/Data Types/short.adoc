@@ -37,7 +37,7 @@ Em todos os Arduinos (baseados no ATMega ou ARM) um short armazena um valor 16-b
 
 [source,arduino]
 ----
- short ledPin = 13
+short ledPin = 13
 ----
 
 --

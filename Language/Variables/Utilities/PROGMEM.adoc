@@ -34,9 +34,9 @@ Onde:
 
 Note que porque PROGMEM é um modificador de variável, não há uma regra rigorosa de onde ele deve ir, então o compilador aceita todos os tipos de definição abaixo, que também são sinônimos. Mesmo assim, experimentos indicaram que, em várias versões do Arduino (relacionado a versão do GCC), PROGMEM pode funcionar em uma localização e não em outra. O exemplo da "tabela de strings" abaixo foi testado com a versão 13 do Arduino. Versões mais antigas da IDE podem funcionar melhor se PROGMEM for incluído  depois do nome da variável.
 
-`const dataType variableName[] PROGMEM = {};   // use essa forma` +
-`const PROGMEM  dataType  variableName[] = {}; // ou essa` +
-`const dataType PROGMEM variableName[] = {};   // mas não essa`
+`const dataType variableName[] PROGMEM = {};  // use essa forma` +
+`const PROGMEM dataType variableName[] = {};  // ou essa` +
+`const dataType PROGMEM variableName[] = {};  // mas não essa`
 
 
 Enquanto `PROGMEM` pode ser usada em uma única variável, realmente só vale a pena o trabalho de usá-lo se você tiver um bloco de dados maior para ser armazenado, o que geralmente é mais fácil de fazer com vetores (ou outra estrutura de dados da linguagem C fora do escopo da nossa discussão atual).
@@ -62,13 +62,13 @@ Os fragmentos de código  abaixo ilustram como ler e escrever `unsigned chars` (
 [source,arduino]
 ----
 // armazena alguns unsigned ints
-const PROGMEM  uint16_t conjunto[]  = { 65000, 32796, 16843, 10, 11234};
+const PROGMEM uint16_t conjunto[] = {65000, 32796, 16843, 10, 11234};
 
 // armazena alguns chars
-const char mensagem[] PROGMEM  = {"Um pequeno jabuti xereta viu dez cegonhas felizes"};
+const char mensagem[] PROGMEM = {"Um pequeno jabuti xereta viu dez cegonhas felizes"};
 
 unsigned int displayInt;
-int k;    // vari[avel contadora
+int k;  // vari[avel contadora
 char meuChar;
 
 
@@ -77,17 +77,15 @@ void setup() {
   while (!Serial);  // Espera a porta serial conectar. Necessário para placas com USB nativa
 
   // Lê da memória flash um int (2-bytes, ou word)
-  for (k = 0; k < 5; k++)
-  {
+  for (k = 0; k < 5; k++) {
     displayInt = pgm_read_word_near(conjunto + k);
     Serial.println(displayInt);
   }
   Serial.println();
 
   // Lê um caractere da flash
-  for (k = 0; k < strlen_P(mensagem); k++)
-  {
-    meuCHar =  pgm_read_byte_near(mensagem + k);
+  for (k = 0; k < strlen_P(mensagem); k++) {
+    meuCHar = pgm_read_byte_near(mensagem + k);
     Serial.print(meuCHar);
   }
 
@@ -108,21 +106,21 @@ Essas estruturas tendem a ser muito grandes, de forma que colocá-las na memóri
 [source,arduino]
 ----
 /*
- demo com strings e PROGMEM
- Como armazenar uma tabela de strings na memória de programa (flash),
- e recuperá-los.
+  demo com strings e PROGMEM
+  Como armazenar uma tabela de strings na memória de programa (flash),
+  e recuperá-los.
 
- Informação resumida de:
- http://www.nongnu.org/avr-libc/user-manual/pgmspace.html
+  Informação resumida de:
+  http://www.nongnu.org/avr-libc/user-manual/pgmspace.html
 
- Preparar uma tabela (vetor) de strings na memória de programa é relativamente complicado,
- mas esse template pode ser seguido.
+  Preparar uma tabela (vetor) de strings na memória de programa é relativamente complicado,
+  mas esse template pode ser seguido.
 
- Preparar as strings é um processo em dois passos. O primeiro é definir as strings.
+  Preparar as strings é um processo em dois passos. O primeiro é definir as strings.
 */
 
 #include <avr/pgmspace.h>
-const char string_0[] PROGMEM = "String 0";   // "String 0" etc são as strings a serem armazenadas - adapte ao seu programa.
+const char string_0[] PROGMEM = "String 0"; // "String 0" etc são as strings a serem armazenadas - adapte ao seu programa.
 const char string_1[] PROGMEM = "String 1";
 const char string_2[] PROGMEM = "String 2";
 const char string_3[] PROGMEM = "String 3";
@@ -132,34 +130,30 @@ const char string_5[] PROGMEM = "String 5";
 
 // Então crie uma tabela para apontar para as suas strings.
 
-const char* const string_table[] PROGMEM = {string_0, string_1, string_2, string_3, string_4, string_5};
+const char *const string_table[] PROGMEM = {string_0, string_1, string_2, string_3, string_4, string_5};
 
-char buffer[30];    // Tenha certeza que esse buffer é grande o suficiente para armazenar a maior string
+char buffer[30];  // Tenha certeza que esse buffer é grande o suficiente para armazenar a maior string
 
-void setup()
-{
+void setup() {
   Serial.begin(9600);
-  while(!Serial); // Espera a porta serial conectar. Necessário para placas com USB nativa
+  while (!Serial);  // Espera a porta serial conectar. Necessário para placas com USB nativa
   Serial.println("OK");
 }
 
 
-void loop()
-{
+void loop() {
   /* Usar a tabela de strings da memória de programa requer o uso de funções especiais para recuperar os dados.
      A função strcpy_P copia uma string do espaço de programa para uma string na RAM (em um "buffer").
      Tenha certeza que o seu buffer na RAM é grande o suficiente para armazenar o que quer que seja
      que você estiver lendo da memória de programa. */
 
 
-  for (int i = 0; i < 6; i++)
-  {
-    strcpy_P(buffer, (char*)pgm_read_word(&(string_table[i]))); // Casts e desreferência necessários, apenas copie.
+  for (int i = 0; i < 6; i++) {
+    strcpy_P(buffer, (char *)pgm_read_word(&(string_table[i]))); // Casts e desreferência necessários, apenas copie.
     Serial.println(buffer);
-    delay( 500 );
+    delay(500);
   }
 }
-
 ----
 [%hardbreaks]
 

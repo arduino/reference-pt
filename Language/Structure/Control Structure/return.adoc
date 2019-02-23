@@ -47,29 +47,26 @@ Uma função para comparar a saída de um sensor com um limiar
 
 [source,arduino]
 ----
- int checaSensor(){
-    if (analogRead(0) > 400) {
-        return 1;
-    }
-    else{
-        return 0;
-    }
+int checaSensor() {
+  if (analogRead(0) > 400) {
+    return 1;
+  }
+  else {
+    return 0;
+  }
 }
 ----
 
-//The return keyword is handy to test a section of code without having to "comment out" large sections of possibly buggy code.
-//[source,arduino]
-//----
-//void loop(){
+The return keyword is handy to test a section of code without having to "comment out" large sections of possibly buggy code.
+[source,arduino]
+----
+void loop() {
+  return;
 
-// brilliant code idea to test here
-
-//return;
-
-// the rest of a dysfunctional sketch here
-// this code will never be executed
-//}
-//----
+  // the rest of a dysfunctional sketch here
+  // this code will never be executed
+}
+----
 [%hardbreaks]
 
 --

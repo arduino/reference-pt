@@ -10,7 +10,7 @@ title: Serial.begin()
 
 [float]
 === Descrição
-Configura a taxa de transferência em bits por segundo (baud rate) para transmissão serial. Para comunicação com um computador, use uma dessas taxas: 300, 600, 1200, 2400, 4800, 9600, 14400, 19200, 28800, 38400, 57600, ou 115200. Você pode, no entanto, especificar outras taxas - por examplo, para comunicar nos pinos 0 e 1 com um componente que requer uma taxa de transferência peculiar.
+Configura a taxa de transferência em bits por segundo (baud rate) para transmissão serial. Para comunicação com um computador, através do Monitor Serial da IDE, use uma das taxas listadas no canto inferior direito de sua janela. Você pode, no entanto, especificar outras taxas - por examplo, para comunicar nos pinos 0 e 1 com um componente que requer uma taxa de transferência peculiar.
 
 Um segundo argumento opcional configura o número de bits no dado, paridade, e bits de parada (stop bits). Caso esse argumento não seja especificado, o padrão é 8 bits de dados, sem paridade e um stop bit.
 [%hardbreaks]

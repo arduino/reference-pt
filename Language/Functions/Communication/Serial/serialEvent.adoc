@@ -21,23 +21,23 @@ Nota: Atualmente, `serialEvent()` não é compativel com o Esplora, Leonardo, ou
 
 [source,arduino]
 ----
-void serialEvent(){
-//código
+void serialEvent() {
+  //código
 }
 ----
 Apenas Arduino Mega:
 [source,arduino]
 ----
-void serialEvent1(){
-//código
+void serialEvent1() {
+  //código
 }
 
-void serialEvent2(){
-//código
+void serialEvent2() {
+  //código
 }
 
-void serialEvent3(){
-//código
+void serialEvent3() {
+  //código
 }
 ----
 

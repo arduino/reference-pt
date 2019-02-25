@@ -44,17 +44,16 @@ Nada
 ----
 #include <Mouse.h>
 
-void setup(){
- pinMode(2, INPUT);
+void setup() {
+  pinMode(2, INPUT);
 }
 
-void loop(){
+void loop() {
 
   // inicia a biblioteca Mouse qaundo o botão é pressionado
-  if(digitalRead(2) == HIGH){
-     Mouse.begin();
-   }
-
+  if (digitalRead(2) == HIGH) {
+    Mouse.begin();
+  }
 }
 ----
 

@@ -44,8 +44,7 @@ O código abaixo mostra como desativar e reativar interrupções.
 ----
 void setup() {}
 
-void loop()
-{
+void loop() {
   noInterrupts();
   // código crítico e sensível ao tempo aqui
   interrupts();

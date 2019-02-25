@@ -40,7 +40,7 @@ if (!x) { // se x não é true
 Pode ser usado para inverter o valor booleano.
 [source,arduino]
 ----
-x = !y;   // o valor booleano invertido de y é guardado em x
+x = !y; // o valor booleano invertido de y é guardado em x
 ----
 
 

@@ -49,7 +49,7 @@ O código garante que o valor de sensVal seja pelo menos 20.
 [source,arduino]
 ----
 sensVal = max(sensVal, 20); // atribui a sensVal o maior valor, seja sensVal ou 20
-                           // (efetivamente garantindo que sensVal seja ao menos 20)
+                            // (efetivamente garantindo que sensVal seja ao menos 20)
 ----
 [%hardbreaks]
 
@@ -60,10 +60,10 @@ Talvez contraintuitivamente, `max()` é constantemente usada para restringir o e
 Por causa da forma em que a função `max()` é implementada, evite usar outras funções dentro dos parênteses, isso pode levar a resultados incorretos.
 [source,arduino]
 ----
-max(a--, 0);   // evitar isso - causa resultados incorretos
+max(a--, 0);  // evitar isso - causa resultados incorretos
 
-max(a, 0);     // ao invés disso, usar esta forma
-a--;           // manter a aritmética fora da função
+max(a, 0);    // ao invés disso, usar esta forma
+a--;          // manter a aritmética fora da função
 ----
 
 --

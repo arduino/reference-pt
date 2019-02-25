@@ -50,15 +50,12 @@ isPunct(thisChar)
 
 [source,arduino]
 ----
-if (isPunct(this))      // testa se this é um caractere de pontuação
-{
-	Serial.println("The character is a punctuation");
+if (isPunct(this)) {  // testa se this é um caractere de pontuação
+  Serial.println("The character is a punctuation");
 }
-else
-{
-	Serial.println("The character is not a punctuation");
+else {
+  Serial.println("The character is not a punctuation");
 }
-
 ----
 
 --

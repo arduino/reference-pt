@@ -52,16 +52,14 @@ O exemplo abaixo calcula a duração de um pulso no pino 7.
 
 [source,arduino]
 ----
-int pino = 7;              //pino para a entrada do pulso
-unsigned long duration;   //variável para guardar a duração do pulso
+int pino = 7;           //pino para a entrada do pulso
+unsigned long duration; //variável para guardar a duração do pulso
 
-void setup()
-{
-  pinMode(pino, INPUT);    // pino 7 como entrada
+void setup() {
+  pinMode(pino, INPUT); // pino 7 como entrada
 }
 
-void loop()
-{
+void loop() {
   duration = pulseIn(pino, HIGH); //mede a duração de um pulso HIGH no pino 7
 }
 ----

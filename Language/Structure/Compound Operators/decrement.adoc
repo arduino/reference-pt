@@ -21,8 +21,8 @@ Decrementa o valor de uma variável em 1.
 === Sintaxe
 [source,arduino]
 ----
-x-- ;   // decrementa x em um e retorna o valor antigo de x
---x ;   // decrementa x em um e retorna o novo valor de x
+x--;  // decrementa x em um e retorna o valor antigo de x
+--x;  // decrementa x em um e retorna o novo valor de x
 ----
 
 [float]
@@ -46,8 +46,8 @@ O valor original ou decrementado da variável, que depende se o operador está �
 [source,arduino]
 ----
 x = 2;
-y = --x;      // x agora contém 1, y contém 1
-y = x--;      // x contém 0, mas y ainda contém 1
+y = --x;  // x agora contém 1, y contém 1
+y = x--;  // x contém 0, mas y ainda contém 1
 ----
 
 --

@@ -35,8 +35,8 @@ O tipo de dado char é um tipo com sinal, armazenando números de -128 a 127. Pa
 
 [source,arduino]
 ----
-  char myChar = 'A';
-  char myChar = 65;      // ambas as formas são equivalentes
+char myChar = 'A';
+char myChar = 65; // ambas as formas são equivalentes
 ----
 
 

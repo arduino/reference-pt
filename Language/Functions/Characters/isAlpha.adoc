@@ -50,15 +50,12 @@ isAlpha(thisChar)
 O código a seguir testa se uma variável chamada this é uma letra.
 [source,arduino]
 ----
-if (isAlpha(this))      // testa se a variável this é uma letra
-{
-	Serial.println("The character is alpha");
+if (isAlpha(this)) {  // testa se a variável this é uma letra
+  Serial.println("The character is alpha");
 }
-else
-{
-	Serial.println("The character is not alpha");
+else {
+  Serial.println("The character is not alpha");
 }
-
 ----
 
 --

@@ -29,7 +29,7 @@ Uma revisão do operador bitwise OU EXCLUSIVO `^`:
 === Sintaxe
 [source,arduino]
 ----
-x ^= y;   // equivalente a x = x ^ y;
+x ^= y; // equivalente a x = x ^ y;
 ----
 
 [float]
@@ -89,7 +89,7 @@ Abaixo a mesma representação com os bits da variável substituidos pelo símbo
 Então:
 [source,arduino]
 ----
-myByte =  B10101010;
+myByte = B10101010;
 myByte ^= B00000011 == B10101001;
 ----
 

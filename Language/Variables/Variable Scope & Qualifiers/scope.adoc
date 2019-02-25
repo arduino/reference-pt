@@ -41,21 +41,18 @@ Quando programas começam a ficar muito longos e complexos, variáveis locais s�
 ----
 int gPWMval;  // qualquer função poderá acessar essa variável
 
-void setup()
-{
+void setup() {
   // ...
 }
 
-void loop()
-{
+void loop() {
   int i;    // "i" é "visível" apenas dentro de "loop"
   float f;  // "f" é "visível" apenas dentro de "loop"
   // ...
 
-  for (int j = 0; j <100; j++){
+  for (int j = 0; j < 100; j++) {
     // a variável j pode ser acessada apenas dentro das chaves do loop for
   }
-
 }
 ----
 [%hardbreaks]

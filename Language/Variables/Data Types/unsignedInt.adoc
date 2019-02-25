@@ -40,7 +40,7 @@ O trecho de código abaixo cria uma variável unsigned int chamada ledPin e a at
 
 [source,arduino]
 ----
-  unsigned int ledPin = 13;
+unsigned int ledPin = 13;
 ----
 [%hardbreaks]
 
@@ -51,9 +51,9 @@ Quando variáveis unsigned tem sua capacidade máxima excedida, elas "estouram" 
 [source,arduino]
 ----
 unsigned int x;
-   x = 0;
-   x = x - 1;       // x agora contém 65535
-   x = x + 1;       // x agora contém 0
+x = 0;
+x = x - 1;  // x agora contém 65535
+x = x + 1;  // x agora contém 0
 ----
 
 A matemática com variávies `unsigned` pode produzir resultados inesperados, mesmo se a variável `unsigned` nunca estourar.
@@ -67,16 +67,16 @@ No entanto, em um cálculo que requer um resultado intermediário, o escopo da v
 
 [source,arduino]
 ----
-unsigned int x=5;
-unsigned int y=10;
+unsigned int x = 5;
+unsigned int y = 10;
 int resultado;
 
-   resultado = x - y; // 5 - 10 = -5, como esperado
-   resultado = (x - y)/2; // 5 - 10 com matemática unsigned é 65530!  65530/2 = 32765 
-   
-   // solução: usar variáveis com sinal, ou fazer o cálculo passo a passo.
-   resultado = x - y; // 5 - 10 = -5, como esperado
-   resultado = resultado / 2; //  -5/2 = -2 (matemática inteira, casas decimais não são consideradas)
+resultado = x - y;  // 5 - 10 = -5, como esperado
+resultado = (x - y) / 2;  // 5 - 10 com matemática unsigned é 65530!  65530/2 = 32765
+
+// solução: usar variáveis com sinal, ou fazer o cálculo passo a passo.
+resultado = x - y;  // 5 - 10 = -5, como esperado
+resultado = resultado / 2;  //  -5/2 = -2 (matemática inteira, casas decimais não são consideradas)
 ----
 Então porque usar variáveis sem sinal?
 

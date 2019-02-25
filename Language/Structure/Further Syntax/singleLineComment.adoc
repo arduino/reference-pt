@@ -36,7 +36,7 @@ Há duas formas diferentes de se usar um comentário de uma só linha:
 int led = 13;
 
 
-digitalWrite(led, HIGH);   // acendo o LED (HIGH é o nível da tensão)
+digitalWrite(led, HIGH);  // acendo o LED (HIGH é o nível da tensão)
 ----
 [%hardbreaks]
 

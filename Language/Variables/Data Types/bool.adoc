@@ -34,22 +34,20 @@ O código abaixo mostra como usar o tipo de dado `bool`.
 int LEDpin = 5;       // LED no pino digital 5
 int switchPin = 13;   // botão conectado ao pino 13 e o outro terminal ao ground
 
-bool running = false; //variável de tipo booleano 
+bool running = false; //variável de tipo booleano
 
-void setup()
-{
+void setup() {
   pinMode(LEDpin, OUTPUT);
   pinMode(switchPin, INPUT);
-  digitalWrite(switchPin, HIGH);      // ativa o resistor pull-up
+  digitalWrite(switchPin, HIGH);    // ativa o resistor pull-up
 }
 
-void loop()
-{
-  if (digitalRead(switchPin) == LOW)
-  {  // botão foi pressionado, o pull-up mantém o pino em HIGH internamente
-    delay(100);                        // delay para fazer o debounce no botão
-    running = !running;                // troca o valor da variável running
-    digitalWrite(LEDpin, running);     // indica via LED
+void loop() {
+  if (digitalRead(switchPin) == LOW) {
+    // botão foi pressionado, o pull-up mantém o pino em HIGH internamente
+    delay(100);                     // delay para fazer o debounce no botão
+    running = !running;             // troca o valor da variável running
+    digitalWrite(LEDpin, running);  // indica via LED
   }
 }
 ----

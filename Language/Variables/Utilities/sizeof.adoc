@@ -49,18 +49,18 @@ O programa abaixo imprime um string um caractere de cada vez. Tente mudar o text
 char minhaStr[] = "Esse é um teste";
 int i;
 
-void setup(){
+void setup() {
   Serial.begin(9600);
 }
 
 void loop() {
-  for (i = 0; i < sizeof(minhaStr) - 1; i++){
+  for (i = 0; i < sizeof(minhaStr) - 1; i++) {
     Serial.print(i, DEC);
     Serial.print(" = ");
     Serial.write(minhaStr[i]);
     Serial.println();
   }
-  delay(5000); // espera 5 segundos
+  delay(5000);  // espera 5 segundos
 }
 ----
 [%hardbreaks]
@@ -71,7 +71,7 @@ Note que `sizeof` retorna o número total de bytes. Então, para os tipos de dad
 
 [source,arduino]
 ----
-for (i = 0; i < (sizeof(meusInts)/sizeof(int)); i++) {
+for (i = 0; i < (sizeof(meusInts) / sizeof(int)); i++) {
   // faz algo com meusInts[i]
 }
 ----

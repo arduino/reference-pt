@@ -65,18 +65,18 @@ O código abaixo imprime um valor na porta serial em vários formatos.
 [source,arduino]
 ----
 /*
-Usa um loop for para dados e imprime cada número em vários formatos.
+  Usa um loop for para dados e imprime cada número em vários formatos.
 */
-int x = 0;    // variable
+int x = 0;  // variable
 
 void setup() {
-  Serial.begin(9600);      // abre a porta serial a 9600 bps:
+  Serial.begin(9600); // abre a porta serial a 9600 bps:
 }
 
 void loop() {
   // imprime rótulos para cada base
-  Serial.print("NUMERO");       // imprime um rótulo
-  Serial.print("\t");              // imprime uma tabulação (TAB)
+  Serial.print("NUMERO"); // imprime um rótulo
+  Serial.print("\t"); // imprime uma tabulação (TAB)
 
   Serial.print("DEC");
   Serial.print("\t");
@@ -90,7 +90,7 @@ void loop() {
   Serial.print("BIN");
   Serial.println("\t");
 
-  for(x=0; x< 64; x++){    // apenas uma parte da tabela ASCII, edite para mais ou menos valores
+  for (x = 0; x < 64; x++) {  // apenas uma parte da tabela ASCII, edite para mais ou menos valores
 
     // imprime cada número em vários formatos:
     Serial.print(x);       // imprime como decimal codificado em ASCII- o mesmo que "DEC"
@@ -105,9 +105,9 @@ void loop() {
     Serial.print(x, OCT);  // imprime como octal codificado em ASCII
     Serial.print("\t");    // imprime uma tabulação
 
-    Serial.println(x, BIN); // imprime como binário codificado em ASCII
-                            //então adiciona o retorno (enter) com "println"
-    
+    Serial.println(x, BIN);// imprime como binário codificado em ASCII
+    //então adiciona o retorno (enter) com "println"
+
     delay(200);             // delay de 200 milissegundos
   }
   Serial.println();         // imprime outro retorno

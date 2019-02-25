@@ -44,8 +44,10 @@ resultado = numerador / denominador;
 
 [source,arduino]
 ----
-int a = 50, b = 10, c = 0;
-c = a / b; // A variável 'c' recebe o valor 5 depois que essa operação é executada
+int a = 50;
+int b = 10;
+int c = 0;
+c = a / b;  // A variável 'c' recebe o valor 5 depois que essa operação é executada
 ----
 [%hardbreaks]
 
@@ -57,9 +59,10 @@ c = a / b; // A variável 'c' recebe o valor 5 depois que essa operação é exe
 
 [source,arduino]
 ----
-float a = 55.5, b = 6.6;
+float a = 55.5;
+float b = 6.6;
 int c = 0;
-c = a / b; // a variável 'c' armazena o valor 8 em vez do resultado esperado 8.409
+c = a / b;  // a variável 'c' armazena o valor 8 em vez do resultado esperado 8.409
 ----
 [%hardbreaks]
 

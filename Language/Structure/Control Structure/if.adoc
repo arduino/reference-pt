@@ -19,8 +19,7 @@ O comando `if` checa uma condição e executas o comando a seguir ou um bloco de
 === Sintaxe
 [source,arduino]
 ----
-if (condição)
-{
+if (condição) {
   //comando(s)
 }
 ----
@@ -37,17 +36,22 @@ As chaves podem ser omitidas depois de um comando `if`. Se isso é feito, a pró
 
 [source,arduino]
 ----
-if (x > 120) digitalWrite(pinoLED, HIGH);
+if (x > 120) {
+  digitalWrite(pinoLED, HIGH);
+}
 
-if (x > 120)
-digitalWrite(pinoLED, HIGH);
+if (x > 120) {
+  digitalWrite(pinoLED, HIGH);
+}
 
-if (x > 120){ digitalWrite(pinoLED, HIGH); }
+if (x > 120) {
+  digitalWrite(pinoLED, HIGH);
+}
 
-if (x > 120){
+if (x > 120) {
   digitalWrite(pinoLED1, HIGH);
   digitalWrite(pinoLED2, HIGH);
-}                                 // todas as formas acima estão corretas
+} // todas as formas acima estão corretas
 ----
 [%hardbreaks]
 

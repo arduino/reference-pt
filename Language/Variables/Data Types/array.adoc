@@ -43,9 +43,9 @@ Isso também significa que em um vetor com dez elementos, o índice nove é o ú
 
 [source,arduino]
 ----
-int meuVetor[10]={9,3,2,4,3,2,7,8,9,11};
-     // meuVetor[9]    contém 11
-     // meuVetor[10]   é inválido e contém informação aleatória (endereço de memória fora do vetor)
+int meuVetor[10] = {9, 3, 2, 4, 3, 2, 7, 8, 9, 11};
+// meuVetor[9]    contém 11
+// meuVetor[10]   é inválido e contém informação aleatória (endereço de memória fora do vetor)
 ----
 Por esse motivo, você deve ser cuidadoso ao acessar vetores. Acessar um elemento depois do final de um vetor (usar um índice maior que o tamanho declarado - 1) é ler de uma parte da memória que pode estar em uso para outros propósitos. Ler desses locais provavelmente não vai fazer mais que retornar dados inválidos. Escrever em locais aleatórios da memória é definitivamente uma má ideia e pode frequentemente levar a péssimos resultados como crashes ou mal funcionamento do programa. Isso pode também ser um bug difícil de encontrar.
 [%hardbreaks]

@@ -20,7 +20,7 @@ Um loop `while` irá se repetir continuamente, e infinitamente, até a expressã
 === Sintaxe
 [source,arduino]
 ----
-while(condição){
+while (condição) {
   // código a ser executado repetidamente
 }
 ----
@@ -42,7 +42,7 @@ A `condição` é uma expressão booleana que resulta em `true` ou `false`.
 [source,arduino]
 ----
 var = 0;
-while(var < 200){
+while (var < 200) {
   // faz algo repetitivo 200 vezes
   var++;
 }

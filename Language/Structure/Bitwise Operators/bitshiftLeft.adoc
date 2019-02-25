@@ -44,8 +44,8 @@ variável << numero_de_bits;
 
 [source,arduino]
 ----
-int a = 5;        // binário: 0000000000000101
-int b = a << 3;   // binário: 0000000000101000, ou 40 em decimal
+int a = 5;      // binário: 0000000000000101
+int b = a << 3; // binário: 0000000000101000, ou 40 em decimal
 ----
 [%hardbreaks]
 
@@ -55,7 +55,7 @@ Quando você desloca um valor x por y bits (x << y), os y bits mais a esquerda e
 
 [source,arduino]
 ----
-int x = 5;        // binário: 0000000000000101
+int x = 5;  // binário: 0000000000000101
 int y = 14;
 int resultado = x << y;  // binário: 0100000000000000 - os primeiros 1 em 101 foram descartados
 ----
@@ -86,10 +86,10 @@ void printOut1(int c) {
   for (int bits = 7; bits > -1; bits--) {
     // Compara bits 7-0 no byte
     if (c & (1 << bits)) {
-      Serial.print ("1");
+      Serial.print("1");
     }
     else {
-      Serial.print ("0");
+      Serial.print("0");
     }
   }
 }

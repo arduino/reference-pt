@@ -36,8 +36,8 @@ Em outras palavras:
 
 [source,arduino]
 ----
-int a = 103;    // binário:  0000000001100111
-int b = ~a;     // binário:  1111111110011000 = -104
+int a = 103;  // binário:  0000000001100111
+int b = ~a;   // binário:  1111111110011000 = -104
 ----
 [%hardbreaks]
 
@@ -45,7 +45,7 @@ int b = ~a;     // binário:  1111111110011000 = -104
 === Notas e Advertências
 Você pode ficar surpreso ao ver um número negativo como -104 como o resultado dessa operação. Isso acontece porque o bit mais significativo de um valor `int` é o chamado bit de sinal. Se esse bit é 1, o número é interpretado como negativo. Essa codificação de números positivos e negativos é referido como complemento de dois. Para mais informações, veja o arquivo da Wikipédia a respeito do https://pt.wikipedia.org/wiki/Complemento_para_dois[complemento de dois^].
 
-Um comentário adicional: é interessante notar que para qualquer inteiro x, ~x é o mesmo que -x-1.
+Um comentário adicional: é interessante notar que para qualquer inteiro x, ~x é o mesmo que -x - 1.
 
 As vezes, o bit de sinal em uma expressão pode causar alguns efeitos indesejados, veja a página do operador de deslocamento à direita (>>), por exemplo, para mais detalhes.
 [%hardbreaks]

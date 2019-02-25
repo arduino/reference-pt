@@ -34,13 +34,11 @@ O código mostra como usar a palavra chave `void`.
 // são realizadas ações nas funções "setup" e "loop"
 // porém não é retornada nenhuma informação quando as mesmas são executadas
 
-void setup()
-{
+void setup() {
   // ...
 }
 
-void loop()
-{
+void loop() {
   // ...
 }
 ----

@@ -32,11 +32,11 @@ Referência é uma das características da linguagem C para uso especificamente 
 [source,arduino]
 ----
 
-int *p;          // declara um ponteiro para uma variável do tipo int
+int *p;         // declara um ponteiro para uma variável do tipo int
 int i = 5, resultado = 0;
-p = &i;          // agora 'p' contém o endereço de 'i'
-resultado = *p;  // 'resultado' recebe o valor contido no endereço apontado por 'p'
-                 // isto é, recebe o valor de 'i', que é 5
+p = &i;         // agora 'p' contém o endereço de 'i'
+resultado = *p; // 'resultado' recebe o valor contido no endereço apontado por 'p'
+                // isto é, recebe o valor de 'i', que é 5
 
 ----
 [%hardbreaks]

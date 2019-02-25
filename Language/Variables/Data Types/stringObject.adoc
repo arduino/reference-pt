@@ -81,16 +81,16 @@ Uma instância da classe String.
 Todas a seguir são declarações válidas para Strings.
 [source,arduino]
 ----
-String stringOne = "Hello String";                     // usando uma string constante
-String stringOne =  String('a');                       // convertendo um caractere constante para uma String
-String stringTwo =  String("This is a string");        // convertendo uma string constante para um objeto String
-String stringOne =  String(stringTwo + " with more");  // concatenando duas strings
-String stringOne =  String(13);                        // usando um inteiro constante
-String stringOne =  String(analogRead(0), DEC);        // usando um int e uma base especificada (decimal)
-String stringOne =  String(45, HEX);                   // usando um int e uma base especificada (hexadecimal)
-String stringOne =  String(255, BIN);                  // usando um int e uma base especificada (binário)
-String stringOne =  String(millis(), DEC);             // usando um long e uma base especificada
-String stringOne =  String(5.698, 3);                  // usando um float e o número de casas decimais
+String stringOne = "Hello String";                    // usando uma string constante
+String stringOne = String('a');                       // convertendo um caractere constante para uma String
+String stringTwo = String("This is a string");        // convertendo uma string constante para um objeto String
+String stringOne = String(stringTwo + " with more");  // concatenando duas strings
+String stringOne = String(13);                        // usando um inteiro constante
+String stringOne = String(analogRead(0), DEC);        // usando um int e uma base especificada (decimal)
+String stringOne = String(45, HEX);                   // usando um int e uma base especificada (hexadecimal)
+String stringOne = String(255, BIN);                  // usando um int e uma base especificada (binário)
+String stringOne = String(millis(), DEC);             // usando um long e uma base especificada
+String stringOne = String(5.698, 3);                  // usando um float e o número de casas decimais
 ----
 
 --

@@ -29,7 +29,7 @@ O trecho de código abaixo cria uma variável do tipo word.
 
 [source,arduino]
 ----
-  word w = 10000;
+word w = 10000;
 ----
 
 --

@@ -31,14 +31,13 @@ O comando `continue` "pula" o resto da iteração atual de um loop (link:../for[
 O código abaixo escreve o valor de 0 a 255 ao pino `PWMpin`, mas pula os valores no intervalo 41 a 119.
 [source,arduino]
 ----
-for (x = 0; x <= 255; x ++)
-{
-    if (x > 40 && x < 120){      // cria um salto nos valores
-        continue;
-    }
+for (x = 0; x <= 255; x ++) {
+  if (x > 40 && x < 120) {  // cria um salto nos valores
+    continue;
+  }
 
-    analogWrite(PWMpin, x);
-    delay(50);
+  analogWrite(PWMpin, x);
+  delay(50);
 }
 ----
 

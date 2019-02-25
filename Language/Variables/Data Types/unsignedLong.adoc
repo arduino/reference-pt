@@ -41,13 +41,11 @@ O código abaixo cria uma variável do tipo long para guardar o número de milis
 ----
 unsigned long time; //variável do tipo long
 
-void setup()
-{
+void setup() {
   Serial.begin(9600);
 }
 
-void loop()
-{
+void loop() {
   Serial.print("Time: ");
   time = millis();
   //imprime o tempo desde que o programa iniciou, em milissegundos

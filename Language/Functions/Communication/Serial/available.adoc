@@ -49,23 +49,23 @@ O código abaixo devolve um caractere recebido na porta serial.
 
 [source,arduino]
 ----
-int incomingByte = 0;	// para  dados recebidos na porta serial
+int incomingByte = 0; // para  dados recebidos na porta serial
 
 void setup() {
-	Serial.begin(9600);	// abre a porta serial, taxa de transmissão 9600 bps
+  Serial.begin(9600); // abre a porta serial, taxa de transmissão 9600 bps
 }
 
 void loop() {
 
-	// enviar resposta apenas quando receber dados:
-	if (Serial.available() > 0) {
-		// lê o dado recebido:
-		incomingByte = Serial.read();
+  // enviar resposta apenas quando receber dados:
+  if (Serial.available() > 0) {
+    // lê o dado recebido:
+    incomingByte = Serial.read();
 
-		// responder o que foi recebido:
-		Serial.print("Eu recebi: ");
-		Serial.println(incomingByte, DEC);
-	}
+    // responder o que foi recebido:
+    Serial.print("Eu recebi: ");
+    Serial.println(incomingByte, DEC);
+  }
 }
 ----
 [%hardbreaks]
@@ -78,7 +78,6 @@ O código abaixo transfere os dados de uma porta serial do Arduino Mega para out
 void setup() {
   Serial.begin(9600);
   Serial1.begin(9600);
-
 }
 
 void loop() {
@@ -86,7 +85,6 @@ void loop() {
   if (Serial.available()) {
     int inByte = Serial.read();
     Serial1.print(inByte, DEC);
-
   }
   // Lê da porta 1, envia para porta 0:
   if (Serial1.available()) {

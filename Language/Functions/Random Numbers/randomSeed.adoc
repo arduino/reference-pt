@@ -46,23 +46,22 @@ O código abaixo imprime números aleatórios na porta serial.
 ----
 long randNumber;
 
-void setup(){
+void setup() {
   // inicializa a porta serial.
   Serial.begin(9600);
-  
+
   // inicializa o gerador de números aleatórios.
   // um pino analógico desconectado irá retornar um
   // valor aleatório de tensão em analogRead()
   randomSeed(analogRead(0));
 }
 
-void loop(){
+void loop() {
   // calcula o próximo número aleatório entre 0 e 299
   randNumber = random(300);
-  
+
   // imprime o valor na porta serial
   Serial.println(randNumber);
-
   delay(50);
 }
 ----

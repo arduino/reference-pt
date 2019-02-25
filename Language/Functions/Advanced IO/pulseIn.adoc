@@ -48,19 +48,23 @@ A duração do pulso (em microssegundos) ou 0 se nenhum pulso começar antes de 
 [float]
 === Código de Exemplo
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-O exemplo abaixo calcula a duração de um pulso no pino 7.
+O exemplo abaixo imprime a duração de um pulso no pino 7.
 
 [source,arduino]
 ----
 int pino = 7;           //pino para a entrada do pulso
-unsigned long duration; //variável para guardar a duração do pulso
+unsigned long duracao; //variável para guardar a duração do pulso
 
-void setup() {
-  pinMode(pino, INPUT); // pino 7 como entrada
+void setup()
+{
+  Serial.begin(9600);
+  pinMode(pino, INPUT);
 }
 
-void loop() {
-  duration = pulseIn(pino, HIGH); //mede a duração de um pulso HIGH no pino 7
+void loop()
+{
+  duracao = pulseIn(pino, HIGH);
+  Serial.println(duracao);
 }
 ----
 [%hardbreaks]

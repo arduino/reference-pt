@@ -39,7 +39,7 @@ Note que porque PROGMEM é um modificador de variável, não há uma regra rigor
 `const dataType PROGMEM variableName[] = {};  // mas não essa`
 
 
-Enquanto `PROGMEM` pode ser usada em uma única variável, realmente só vale a pena o trabalho de usá-lo se você tiver um bloco de dados maior para ser armazenado, o que geralmente é mais fácil de fazer com vetores (ou outra estrutura de dados da linguagem C fora do escopo da nossa discussão atual).
+Enquanto `PROGMEM` pode ser usada em uma única variável, realmente só vale a pena o trabalho de usá-lo se você tiver um bloco de dados maior para ser armazenado, o que geralmente é mais fácil de fazer com vetores (ou outra estrutura de dados da linguagem C++ fora do escopo da nossa discussão atual).
 
 Usar `PROGMEM` é também um procedimento realizado em dois passos. Depois de resgatar os dados da memória flash, são requeridas funções especiais, também definidas na biblioteca http://www.nongnu.org/avr-libc/user-manual/group\__avr__pgmspace.html[pgmspace.h], para ler os dados da memória de programa para a memória SRAM, tal que possamos fazer algo com eles.
 

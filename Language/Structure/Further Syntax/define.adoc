@@ -13,7 +13,7 @@ subCategories: [ "Outros Elementos da Sintaxe" ]
 
 [float]
 === Descrição
-`#define` é uma diretiva muito útil da linguagem C que  permite ao programador dar um nome a um valor constante antes de o programa ser compilado. Constantes definidas no arduino não ocupam nenhum espaço na memória de programa do chip. O compilador irá substituir referências a essas constantes pelo valor definido no tempo de compilação.
+`#define` é uma diretiva muito útil da linguagem C++ que  permite ao programador dar um nome a um valor constante antes de o programa ser compilado. Constantes definidas no arduino não ocupam nenhum espaço na memória de programa do chip. O compilador irá substituir referências a essas constantes pelo valor definido no tempo de compilação.
 [%hardbreaks]
 
 Isso pode ter alguns efeitos colaterais desagradáveis no entanto, por exemplo, se o nome de uma constante que foi definida com #defined é incluído em outra constante ou nome de uma variável. Nesse caso o texto seria trocado pelo número  (ou texto) definido com #define.

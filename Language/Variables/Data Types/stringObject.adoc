@@ -140,7 +140,7 @@ String stringOne =  String(5.698, 3);                  // usando um float e o n�
 #LINGUAGEM# link:../string/operators/differentfrom[!= (diferente de)] +
 
 [role="example"]
-#EXEMPLO# https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[Tutoriais sobre objetos String (Em Inglês)] +
+#EXEMPLO# https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[Tutoriais sobre objetos String (Em Inglês)^] +
 
 
 // SEE ALSO SECTION STARTS

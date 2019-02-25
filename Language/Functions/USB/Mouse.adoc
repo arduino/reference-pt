@@ -60,9 +60,9 @@ link:../mouse/mouseispressed[Mouse.isPressed()]
 Exemplos abaixo em Inglês.
 
 [role="example"]
-#EXEMPLO# http://www.arduino.cc/en/Tutorial/KeyboardAndMouseControl[KeyboardAndMouseControl]: Demonstra os comandos das bibliotecas Mouse e Keyboard em um programa. +
-#EXEMPLO# http://www.arduino.cc/en/Tutorial/ButtonMouseControl[ButtonMouseControl]: Controla o movimento do cursor com 5 pushbuttons. +
-#EXEMPLO# http://www.arduino.cc/en/Tutorial/JoystickMouseControl[JoystickMouseControl]: Controla o movimento do cursor com um Joystick quando um botão é pressionado. +
+#EXEMPLO# http://www.arduino.cc/en/Tutorial/KeyboardAndMouseControl[KeyboardAndMouseControl^]: Demonstra os comandos das bibliotecas Mouse e Keyboard em um programa. +
+#EXEMPLO# http://www.arduino.cc/en/Tutorial/ButtonMouseControl[ButtonMouseControl^]: Controla o movimento do cursor com 5 pushbuttons. +
+#EXEMPLO# http://www.arduino.cc/en/Tutorial/JoystickMouseControl[JoystickMouseControl^]: Controla o movimento do cursor com um Joystick quando um botão é pressionado. +
 
 --
 // SEE ALSO SECTION ENDS

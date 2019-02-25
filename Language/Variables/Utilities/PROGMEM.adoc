@@ -209,7 +209,7 @@ Serial.print(F("Esse texto foi guardado na memória flash do Arduino"));
 === Ver Também
 
 [role="example"]
-#EXEMPLO# https://www.arduino.cc/playground/Learning/Memory[Tipos de memória de uma placa Arduino (Em Inglês)] +
+#EXEMPLO# https://www.arduino.cc/playground/Learning/Memory[Tipos de memória de uma placa Arduino (Em Inglês)^] +
 
 [role="definition"]
 #DEFINIÇÃO# link:../../data-types/array[array] +

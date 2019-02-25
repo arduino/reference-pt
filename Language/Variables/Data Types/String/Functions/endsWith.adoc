@@ -50,6 +50,6 @@ Testa se uma String termina ou não com os caracteres de outra String.
 === Ver Também
 
 [role="example"]
-#EXEMPLO# https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[Tutoriais String (Em Inglês)] +
+#EXEMPLO# https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[Tutoriais String (Em Inglês)^] +
 --
 // SEE ALSO SECTION ENDS

@@ -47,6 +47,6 @@ Verifica se duas strings são iguais. A comparação, nesse caso, não é case-s
 === Ver Também
 
 [role="example"]
-#EXEMPLO# https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[Tutoriais String (Em Inglês)] +
+#EXEMPLO# https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[Tutoriais String (Em Inglês)^] +
 --
 // SEE ALSO SECTION ENDS

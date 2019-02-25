@@ -1,0 +1,57 @@
+﻿---
+title: "toDouble()"
+categories: [ "Data Types" ]
+subCategories: [ "StringObject Function" ]
+---
+
+= toDouble()
+
+
+// OVERVIEW SECTION STARTS
+[#overview]
+--
+
+[float]
+=== Descrição
+Converte uma String válida para um double. A String fornecida deve começar com um dígito. Se a String contém caracteres não-dígitos, a função não faz a conversão. Por exemplo, as Strings "123.45", "123" e "123peixe" são convertidas para 123.45, 123.00, e 123.00 respectivamente. Note que "123.456" é aproximado como 123.46. Note também que floats possuem apenas 6-7 digitos de precisão e que Strings mais longas podem ser truncadas.
+
+[%hardbreaks]
+
+
+[float]
+=== Sintaxe
+[source,arduino]
+----
+string.toDouble()
+----
+
+[float]
+=== Parâmetros
+`string`: uma variável do tipo String
+
+
+[float]
+=== Retorna
+O número contido na String - `float`
+
+Se não foi possível realizar uma conversão válida, porque a String não começa com um número inteiro, o valor zero é retornado.
+
+--
+// OVERVIEW SECTION ENDS
+
+
+
+// HOW TO USE SECTION ENDS
+
+
+// SEE ALSO SECTION
+[#see_also]
+--
+
+[float]
+=== Ver Também
+
+[role="example"]
+* #EXEMPLO# link: https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[Tutoriais String (Em Inglês)^]
+--
+// SEE ALSO SECTION ENDS

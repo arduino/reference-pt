@@ -48,7 +48,10 @@ Um dos usos mais comuns do OU bit-a-bit é "setar" um ou mais bits em um valor.
 
 [source,arduino]
 ----
-DDRD = DDRD | B11111100; // configura os bits de direção para os pinos 2 a 7, deixa 0 e 1 intocados (xx | 00 == xx)
+// Nota: Esse código é específico para a arquitetura AVR
+// configura os bits de direção para os pinos 2 a 7, deixa 0 e 1 intocados (xx | 00 == xx)
+// Equivale a pinMode(pino, OUTPUT) para os pinos 2 a 7 no Arduino Uno ou Nano
+DDRD = DDRD | B11111100; 
 // o mesmo que pinMode(pino, OUTPUT) para os pinos 2 a 7
 ----
 

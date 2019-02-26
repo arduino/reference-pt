@@ -4,20 +4,15 @@ categories: [ "Variables" ]
 subCategories: [ "Data Types" ]
 ---
 
-
-
-
-
 = size_t
-
 
 // OVERVIEW SECTION STARTS
 [#overview]
 --
 
 [float]
-=== Description
-`size_t` is a data type capable of representing the size of any object in bytes. Examples of the use of `size_t` are the return type of link:../../Utilities/sizeof[sizeof()] and link:../../../Functions/Communication/Serial/print[Serial.print()].
+=== Descrição
+`size_t` é um tipo de dado capaz de representar o tamanho de qualquer objeto em bytes. Exemplos do uso de `size_t` são o tipo do retorno de link:../../Utilities/sizeof[sizeof()] e link:../../../Functions/Communication/Serial/print[Serial.print()].
 [%hardbreaks]
 
 --
@@ -28,7 +23,7 @@ subCategories: [ "Data Types" ]
 --
 
 [float]
-=== See also
+=== Ver Também
 
 
 --

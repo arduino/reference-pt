@@ -18,11 +18,15 @@ Serial.find() herda da classe link:../../stream[Stream] .
 
 [float]
 === Sintaxe
-`Serial.find(str)`
+`Serial.find(target)` +
+`Serial.find(target, length)`
+
 
 [float]
 === Parâmetros
-`str` : a string para ser procurada no buffer (*char)
+`target` : a string para ser procurada no buffer (char[])
+
+`length` : comprimento da string procurada (size_t)
 
 [float]
 === Retorna

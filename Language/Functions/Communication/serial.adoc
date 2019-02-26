@@ -36,7 +36,7 @@ A placa *Arduino Leonardo* usa `Serial1` para comunicar-se via serial TTL (5V) n
 
 [float]
 === Funções
-link:../serial/ifserial[If(Serial)] +
+link:../serial/ifserial[if(Serial)] +
 link:../serial/available[available()] +
 link:../serial/availableforwrite[availableForWrite()] +
 link:../serial/begin[begin()] +

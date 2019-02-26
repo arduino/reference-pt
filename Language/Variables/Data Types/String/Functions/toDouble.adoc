@@ -21,13 +21,11 @@ Converte uma String válida para um double. A String fornecida deve começar com
 [float]
 === Sintaxe
 [source,arduino]
-----
-string.toDouble()
-----
+`minhaString.toDouble()`
 
 [float]
 === Parâmetros
-`string`: uma variável do tipo String
+`minhaString`: uma variável do tipo String
 
 
 [float]

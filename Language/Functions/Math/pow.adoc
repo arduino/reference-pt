@@ -42,7 +42,13 @@ O resultado da exponenciação. (`double`)
 [float]
 === Código de exemplo
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-Veja a função (http://arduino.cc/playground/Main/Fscale[fscale (Em Inglês)]) no Arduino Playground.
+Z recebe o valor de x elevado a y:
+[source,arduino]
+----
+z = pow(x, y);
+----
+Veja o sketch (http://arduino.cc/playground/Main/Fscale[fscale]) para um exemplo mais complexo do uso de `pow()`.
+[%hardbreaks]
 
 --
 // HOW TO USE SECTION ENDS

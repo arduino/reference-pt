@@ -12,7 +12,7 @@ subCategories: [ "Funções Matemáticas" ]
 
 [float]
 === Descrição
-Calcula o valor de um número elevado a uma potência. `Pow()` pode ser usada para transformar um número em uma potência fracionária. Isso pode ser útil para gerar mapeamentos exponenciais de valores ou curvas.
+Calcula o valor de um número elevado a uma potência. `pow()` pode ser usada para transformar um número em uma potência fracionária. Isso pode ser útil para gerar mapeamentos exponenciais de valores ou curvas.
 [%hardbreaks]
 
 
@@ -29,7 +29,7 @@ Calcula o valor de um número elevado a uma potência. `Pow()` pode ser usada pa
 
 [float]
 === Retorna
-O resultado da exponenciação. (`double`)
+O resultado da exponenciação (`double`)
 
 --
 // OVERVIEW SECTION ENDS

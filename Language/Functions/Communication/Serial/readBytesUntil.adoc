@@ -20,11 +20,13 @@ Serial.readBytesUntil() lê caracteres da porta serial e os move para um buffer.
 
 [float]
 === Sintaxe
-`Serial.readBytesUntil(character, buffer, length)`
+`_Serial_.readBytesUntil(character, buffer, length)`
 
 
 [float]
 === Parâmetros
+`_Serial_`: objeto porta serial. Veja a lista de portas seriais disponíveis em cada placa no link:../../serial[Serial - Página principal]
+
 `character` : o charactere que encerra a busca (`char`)
 
 `buffer`: o buffer para se armazenar os bytes (`char[]` ou `byte[]`)

@@ -18,11 +18,13 @@ Essa função é parte da classe Stream, e é chamada por qualquer classe que he
 
 [float]
 === Sintaxe
-`Serial.readStringUntil(terminador)`
+`_Serial_.readStringUntil(terminador)`
 
 
 [float]
 === Parâmetros
+`_Serial_`: objeto porta serial. Veja a lista de portas seriais disponíveis em cada placa no link:../../serial[Serial - Página principal]
+
 `terminador` : o caractere que encerra a busca (`char`)
 
 [float]

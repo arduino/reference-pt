@@ -18,22 +18,13 @@ Um segundo argumento opcional configura o número de bits no dado, paridade, e b
 
 [float]
 === Sintaxe
-`Serial.begin(speed)`
-`Serial.begin(speed, config)`
-
-_Apenas Arduino Mega:_
-
-`Serial1.begin(speed)` +
-`Serial2.begin(speed)` +
-`Serial3.begin(speed)` +
-`Serial1.begin(speed, config)` +
-`Serial2.begin(speed, config)` +
-`Serial3.begin(speed, config)`
-
-
+`_Serial_.begin(speed)`
+`_Serial_.begin(speed, config)`
 
 [float]
 === Parâmetros
+`_Serial_`: objeto porta serial. Veja a lista de portas seriais disponíveis em cada placa no link:../../serial[Serial - Página principal]
+
 `speed`: a taxa de transmissão em bits per second (baud rate) - (long)
 
 `config`: configuração do número de bits por transmissão, paridade, e stop bits. Opções válidas são:

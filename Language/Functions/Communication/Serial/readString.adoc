@@ -19,12 +19,12 @@ Essa função é parte da classe Stream, e é chamada por qualquer classe que he
 
 [float]
 === Sintaxe
-`Serial.readString()`
-
+`_Serial_.readString()`
 
 [float]
 === Parâmetros
-Nenhum
+`_Serial_`: objeto porta serial. Veja a lista de portas seriais disponíveis em cada placa no link:../../serial[Serial - Página principal]
+
 
 [float]
 === Retorna

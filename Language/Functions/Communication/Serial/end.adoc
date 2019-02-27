@@ -15,17 +15,11 @@ Desativa a comunicação serial, permitindo os pinos RX e TX serem usados novame
 
 [float]
 === Sintaxe
-`Serial.end()`
-
-_Apenas Arduino Mega:_
-
-`Serial1.end()` +
-`Serial2.end()` +
-`Serial3.end()` +
+`_Serial_.end()`
 
 [float]
 === Parâmetros
-Nenhum
+`_Serial_`: objeto porta serial. Veja a lista de portas seriais disponíveis em cada placa no link:../../serial[Serial - Página principal]
 
 [float]
 === Retorna 

@@ -16,19 +16,15 @@ Escreve dados binários na porta serial. Esses dados são enviados como um byte 
 
 [float]
 === Sintaxe
-`Serial.write(val)` +
-`Serial.write(str)` +
-`Serial.write(buf, len)`
-
-_O Arduino Mega também supporta:_
-
-`Serial1.write()`
-`Serial2.write()`
-`Serial3.write()`
+`_Serial_.write(val)` +
+`_Serial_.write(str)` +
+`_Serial_.write(buf, len)`
 
 
 [float]
 === Parâmetros
+`_Serial_`: objeto porta serial. Veja a lista de portas seriais disponíveis em cada placa no link:../../serial[Serial - Página principal]
+
 `val`: o valor a ser enviado como um único byte.
 
 `str`: uma string a ser enviada como uma série de bytes.

@@ -20,11 +20,13 @@ title: Serial.readBytes()
 
 [float]
 === Sintaxe
-`Serial.readBytes(buffer, length)`
+`_Serial_.readBytes(buffer, length)`
 
 
 [float]
 === Parâmetros
+`_Serial_`: objeto porta serial. Veja a lista de portas seriais disponíveis em cada placa no link:../../serial[Serial - Página principal]
+
 `buffer`: o buffer para se armazenar os bytes (`char[]` ou `byte[]`)
 
 `length` : o número de bytes a serem lidos (`int`)

@@ -16,18 +16,11 @@ Retorna o número de bytes (caracteres) livres no buffer de transmissão serial 
 
 [float]
 === Sintaxe
-`Serial.availableForWrite()`
-
-_Apenas Arduino Mega:_
-
-`Serial1.availableForWrite()` +
-`Serial2.availableForWrite()` +
-`Serial3.availableForWrite()`
-
+`_Serial_.availableForWrite()`
 
 [float]
 === Parâmetros
-Nenhum
+`_Serial_`: objeto porta serial. Veja a lista de portas seriais disponíveis em cada placa no link:../../serial[Serial - Página principal]
 
 [float]
 === Retorna

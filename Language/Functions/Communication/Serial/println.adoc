@@ -16,12 +16,13 @@ Imprime dados na porta serial como texto ASCII seguido pelo caratere de retorno 
 
 [float]
 === Sintaxe
-`Serial.println(val)` +
-`Serial.println(val, formato)`
-
+`_Serial_.println(val)` +
+`_Serial_.println(val, formato)`
 
 [float]
 === Parâmetros
+`_Serial_`: objeto porta serial. Veja a lista de portas seriais disponíveis em cada placa no link:../../serial[Serial - Página principal]
+
 `val`: o valor a ser impresso - qualquer tipo de dados
 
 `formato`: especifica a base do numeral (para tipos de dados int) ou número de casas decimais (para tipos de dados float)

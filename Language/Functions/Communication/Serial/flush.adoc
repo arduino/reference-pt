@@ -19,18 +19,11 @@ Espera a transmissão de dados seriais enviados terminar. +
 
 [float]
 === Sintaxe
-`Serial.flush()`
-
-_Apenas Arduino Mega:_
-
-`Serial1.flush()` +
-`Serial2.flush()` +
-`Serial3.flush()`
-
+`_Serial_.flush()`
 
 [float]
 === Parâmetros
-Nenhum
+`_Serial_`: objeto porta serial. Veja a lista de portas seriais disponíveis em cada placa no link:../../serial[Serial - Página principal]
 
 [float]
 === Retorna

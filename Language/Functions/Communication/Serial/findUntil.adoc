@@ -21,12 +21,15 @@ A função `Serial.findUntil()` é herdada da classe link:../../stream[Stream].
 
 [float]
 === Sintaxe
-`Serial.findUntil(str, terminal)`
+`_Serial_.findUntil(str, terminal)`
 
 
 [float]
 === Parâmetros
+`_Serial_`: objeto porta serial. Veja a lista de portas seriais disponíveis em cada placa no link:../../serial[Serial - Página principal]
+
 `str` : a string a ser procurada (*char)
+
 `terminal` : a string terminadora da busca (*char)
 
 [float]

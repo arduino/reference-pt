@@ -37,13 +37,15 @@ Para enviar dados, sem convertê-los para texto ASCII, use link:../write[Serial.
 
 [float]
 === Sintaxe
-`Serial.print(val)` +
-`Serial.print(val, formato)`
-
+`_Serial_.print(val)` +
+`_Serial_.print(val, formato)`
 
 [float]
 === Parâmetros
-`val`: o valor a ser impresso - qualquer tipo de dados +
+`_Serial_`: objeto porta serial. Veja a lista de portas seriais disponíveis em cada placa no link:../../serial[Serial - Página principal]
+
+`val`: o valor a ser impresso - qualquer tipo de dados
+
 `formato`: especifica a base do numeral (para tipos de dados int) ou número de casas decimais (para tipos de dados float)
 
 [float]

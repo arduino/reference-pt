@@ -12,7 +12,7 @@ title: Stream.peek()
 === Descrição
 Lê um byte de um arquivo sem avançar para o próximo. Isto é, chamadas sucessivas de `peek()` irão retornar o mesmo valor, assim como irá a próxima chamada de `read()`.
 
-Essa função é parte da classe Stream, e é chamada por qualquer classe que herda da mesma (Wire, Serial, etc). Veja a página principal da link:../../stream[classe Stream] para mais informações.
+Essa função é parte da classe Stream, e pode ser chamada por qualquer classe que herda da mesma (Wire, Serial, etc). Veja a página principal da link:../../stream[classe Stream] para mais informações.
 [%hardbreaks]
 
 

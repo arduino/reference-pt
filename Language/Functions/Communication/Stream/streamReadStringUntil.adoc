@@ -42,8 +42,8 @@ A String completa da Stream, até o caractere terminador.
 --
 
 [float]
-=== Notes and Warnings
-The terminator character is discarded from the stream.
+=== Notas e Advertências
+O caractere terminador é descartado do buffer serial.
 [%hardbreaks]
 
 --

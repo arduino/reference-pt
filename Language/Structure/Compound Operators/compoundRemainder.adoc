@@ -1,0 +1,76 @@
+---
+title: "%="
+title_expanded: compound remainder
+categories: [ "Structure" ]
+subCategories: [ "Compound Operators" ]
+---
+
+= %= Atribuição de resto
+
+// OVERVIEW SECTION STARTS
+[#overview]
+--
+
+[float]
+=== Descrição
+Esse é um atalho conveniente para calcular o resto quando um inteiro é dividido por outro e atribuí-lo de volta a variável na qual foi feita o cálculo.
+[%hardbreaks]
+
+
+[float]
+=== Sintaxe
+[source,arduino]
+----
+x %= divisor;   // equivalente a expressão x = x % divisor;
+----
+
+[float]
+=== Parâmetros
+`x`: variável. *Tipos de dados permitidos:* int +
+`divisor`: variável or constante *não zero*. *Tipos de dados permitidos:* int
+
+--
+// OVERVIEW SECTION ENDS
+
+
+
+// HOW TO USE SECTION STARTS
+[#howtouse]
+--
+
+[float]
+=== Código de Exemplo
+
+[source,arduino]
+----
+int x = 7;
+x %= 5;    // x agora contém 2
+----
+[%hardbreaks]
+
+[float]
+=== Notas e Advertências
+1. O operador de atribuição de resto não funciona em floats.
+
+2. Se o *primeiro* operando é negativo, o resultado é negativo (ou zero).
+
+Portanto, o resultado de `x %= 10` nem sempre estará entre 0 e 9 se `x` pode ser negativo.
+[%hardbreaks]
+
+--
+// HOW TO USE SECTION ENDS
+
+
+
+//SEE ALSO SECTION BEGINS
+[#see_also]
+--
+
+[float]
+=== Ver Também
+
+[role="language"]
+* #LANGUAGE#  link:../../arithmetic-operators/remainder[Remainder]
+
+--
+// SEE ALSO SECTION ENDS

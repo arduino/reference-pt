@@ -38,19 +38,19 @@ O quadrado do número. (double)
 --
 
 [float]
-=== Notes and Warnings
-Because of the way the `sq()` function is implemented, avoid using other functions inside the brackets, it may lead to incorrect results.
+==== Notas e Advertências
+Por causa da forma como a função `sq()` é implementada, evite usar outras funções dentro dos parênteses, pois isso pode levar a resultados incorretos.
 
-This code will yield incorrect results:
+Esse código gerará resultados incorretos:
 [source,arduino]
 ----
-int inputSquared = sq(Serial.parseInt()); // avoid this
+int inputSquared = sq(Serial.parseInt()); // evite isso
 ----
 
-Use this instead:
+Faça dessa forma:
 [source,arduino]
 ----
-int input = Serial.parseInt();  // keep other operations outside the sq function
+int input = Serial.parseInt();  // manter outras operações fora da função sq()
 int inputSquared = sq(input);
 ----
 [%hardbreaks]

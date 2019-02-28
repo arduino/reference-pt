@@ -59,19 +59,19 @@ sensVal = constrain(sensVal, 10, 150);  // limita os valores entre 10 e 150
 ----
 
 [float]
-=== Notes and Warnings
-Because of the way the `constrain()` function is implemented, avoid using other functions inside the brackets, it may lead to incorrect results.
+=== Notas e Advertências
+Por causa da forma como a função `constrain()` é implementada, evite usar outras funções dentro dos parênteses, pois isso pode levar a resultados incorretos.
 
-This code will yield incorrect results:
+Esse código gerará resultados incorretos:
 [source,arduino]
 ----
-int constrainedInput = constrain(Serial.parseInt(), minimumValue, maximumValue);   // avoid this
+int constrainedInput = constrain(Serial.parseInt(), minimumValue, maximumValue);   // evite isso
 ----
 
-Use this instead:
+Faça essa forma:
 [source,arduino]
 ----
-int input = Serial.parseInt();  // keep other operations outside the constrain function
+int input = Serial.parseInt();  // manter outras operações fora da função constrain()
 int constrainedInput = constrain(input, minimumValue, maximumValue);
 ----
 [%hardbreaks]

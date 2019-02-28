@@ -107,5 +107,11 @@ void loop() {
 ----
 [%hardbreaks]
 
+
+[float]
+=== Notas e Advertências
+Para portas seriais USB CDC (ex. `Serial` no Leonardo), `Serial.begin()` é irrelevante. Você pode usar qulquer taxa de transmissão e configuração para comunicação serial com essas portas específicas. Veja a lista de portas seriais disponíveis para cada plana na link:../../serial[página principal da classe Serial].
+[%hardbreaks]
+
 --
 // HOW TO USE SECTION ENDS

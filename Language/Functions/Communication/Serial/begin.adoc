@@ -109,8 +109,8 @@ void loop() {
 
 
 [float]
-=== Notes and Warnings
-For USB CDC serial ports (e.g. `Serial` on the Leonardo), `Serial.begin()` is irrelevant. You can use any baud rate and configuration for serial communication with these ports. See the list of available serial ports for each board on the link:../../serial[Serial main page].
+=== Notas e Advertências
+Para portas seriais USB CDC (ex. `Serial` no Leonardo), `Serial.begin()` é irrelevante. Você pode usar qulquer taxa de transmissão e configuração para comunicação serial com essas portas específicas. Veja a lista de portas seriais disponíveis para cada plana na link:../../serial[página principal da classe Serial].
 [%hardbreaks]
 
 --

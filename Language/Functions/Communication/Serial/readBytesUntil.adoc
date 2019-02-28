@@ -14,7 +14,7 @@ Serial.readBytesUntil() lê caracteres da porta serial e os move para um buffer.
 
 `Serial.readBytesUntil()` retorna o número de caracteres colocados no buffer. Um valor 0 indica que dados não foram encontrados.
 
-`Serial.readBytesUntil()` é herdada da classe link:../../stream[Stream].
+A função `Serial.readBytesUntil()` é herdada da classe link:../../stream[Stream].
 [%hardbreaks]
 
 

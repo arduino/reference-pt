@@ -14,7 +14,7 @@ title: Serial.readBytes()
 
 `Serial.readBytes()` retorna o número de caracteres colocados no buffer. Um valor 0 indica que dados não foram encontrados.
 
-`Serial.readBytes()` é herdada da classe link:../../stream[Stream].
+A função `Serial.readBytes()` é herdada da classe link:../../stream[Stream].
 [%hardbreaks]
 
 

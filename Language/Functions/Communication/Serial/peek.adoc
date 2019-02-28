@@ -10,7 +10,9 @@ title: Serial.peek()
 
 [float]
 === Descrição
-Retorna o próximo byte (caractere) de dados seriais recebidos sem o remover do buffer serial interno. Isto é, successivas chamadas de  `peek()` irão retornar o mesmo caractere, assim como irá a próxima chamada de `read()`. A função `peek()` é herdada da classe link:../../stream[Stream].
+Retorna o próximo byte (caractere) de dados seriais recebidos sem o remover do buffer serial interno. Isto é, successivas chamadas de  `peek()` irão retornar o mesmo caractere, assim como irá a próxima chamada de `read()`.
+
+ A função `Serial.peek()` é herdada da classe link:../../stream[Stream].
 [%hardbreaks]
 
 

@@ -41,6 +41,19 @@ o número de bytes colocados no buffer (`size_t`)
 // OVERVIEW SECTION ENDS
 
 
+// HOW TO USE SECTION STARTS
+[#howtouse]
+--
+
+[float]
+=== Notas e Advertências
+O caractere terminador é descartado do buffer serial.
+[%hardbreaks]
+
+--
+// HOW TO USE SECTION ENDS
+
+
 // SEE ALSO SECTION
 [#see_also]
 --

@@ -33,6 +33,32 @@ O quadrado do número. (double)
 // OVERVIEW SECTION ENDS
 
 
+// HOW TO USE SECTION STARTS
+[#howtouse]
+--
+
+[float]
+==== Notas e Advertências
+Por causa da forma como a função `sq()` é implementada, evite usar outras funções dentro dos parênteses, pois isso pode levar a resultados incorretos.
+
+Esse código gerará resultados incorretos:
+[source,arduino]
+----
+int inputSquared = sq(Serial.parseInt()); // evite isso
+----
+
+Faça dessa forma:
+[source,arduino]
+----
+int input = Serial.parseInt();  // manter outras operações fora da função sq()
+int inputSquared = sq(input);
+----
+[%hardbreaks]
+
+--
+// HOW TO USE SECTION ENDS
+
+
 // SEE ALSO SECTION
 [#see_also]
 --

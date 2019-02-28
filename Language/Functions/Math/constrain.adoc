@@ -58,6 +58,24 @@ O código limita os valores de uma variável com a leitura de um sensor entre 10
 sensVal = constrain(sensVal, 10, 150);  // limita os valores entre 10 e 150
 ----
 
+[float]
+=== Notas e Advertências
+Por causa da forma como a função `constrain()` é implementada, evite usar outras funções dentro dos parênteses, pois isso pode levar a resultados incorretos.
+
+Esse código gerará resultados incorretos:
+[source,arduino]
+----
+int constrainedInput = constrain(Serial.parseInt(), minimumValue, maximumValue);   // evite isso
+----
+
+Faça essa forma:
+[source,arduino]
+----
+int input = Serial.parseInt();  // manter outras operações fora da função constrain()
+int constrainedInput = constrain(input, minimumValue, maximumValue);
+----
+[%hardbreaks]
+
 --
 // HOW TO USE SECTION ENDS
 

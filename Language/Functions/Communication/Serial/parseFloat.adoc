@@ -10,9 +10,9 @@ title: Serial.parseFloat()
 
 [float]
 === Descrição
-`Serial.parseFloat()` retorna o primeiro número válido de ponto flutuante do buffer serial. Caracteres que não são dígitos (ou o sinal de menos) são pulados. `parseFloat()` é terminada pelo primeiro caractere que não é um número de ponto flutuante.
+`Serial.parseFloat()` retorna o primeiro número válido de ponto flutuante do buffer serial. Caracteres que não são dígitos (ou o sinal de menos) são pulados. `parseFloat()` é terminada pelo primeiro caractere que não é um número de ponto flutuante. A função retorna se acabar o tempo limite (veja link:../settimeout[Serial.setTimeout()]).
 
-`Serial.parseFloat()` herda da classe link:../../stream[Stream].
+A função `Serial.parseFloat()` é herdada da classe link:../../stream[Stream].
 [%hardbreaks]
 
 

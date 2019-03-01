@@ -67,12 +67,15 @@ void loop() {
 
 [float]
 === Notas e Advertências
-Note que `sizeof` retorna o número total de bytes. Então, para os tipos de dados maiores, como ints, o loop for parece algo do tipo abaixo.
+Note que `sizeof` retorna o número total de bytes. Então, para vetores de tipos de dados maiores, como `int`, o loop `for` parece algo do tipo abaixo.
 
 [source,arduino]
 ----
-for (i = 0; i < (sizeof(meusInts) / sizeof(int)); i++) {
-  // faz algo com meusInts[i]
+int meusValores[] = {123, 456, 789};
+
+// this for loop works correctly with an array of any type or size
+for (i = 0; i < (sizeof(meusValores)/sizeof(meusValores[0])); i++) {
+  // fazer algo com meusValores[i]
 }
 ----
 

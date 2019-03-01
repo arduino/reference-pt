@@ -50,7 +50,7 @@ isLowerCase(thisChar)
 
 [source,arduino]
 ----
-if (isLowerCase(this)) {  // testa se this é uma letra minúscula
+if (isLowerCase(meuChar)) {  // testa se meuChar é uma letra minúscula
   Serial.println("The character is lower case");
 }
 else {

@@ -50,7 +50,7 @@ isHexadecimalDigit(thisChar)
 
 [source,arduino]
 ----
-if (isHexadecimalDigit(this)) { // testa se this é um digito hexadecimal
+if (isHexadecimalDigit(meuChar)) { // testa se meuChar é um digito hexadecimal
   Serial.println("The character is an hexadecimal digit");
 }
 else {

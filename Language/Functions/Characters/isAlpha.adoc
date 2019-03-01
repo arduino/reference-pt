@@ -47,14 +47,13 @@ isAlpha(thisChar)
 
 [float]
 === Código de Exemplo
-O código a seguir testa se uma variável chamada this é uma letra.
 [source,arduino]
 ----
-if (isAlpha(this)) {  // testa se a variável this é uma letra
-  Serial.println("The character is alpha");
+if (isAlpha(meuChar)) {  // testa se a variável meuChar é uma letra
+  Serial.println("The character is a letter");
 }
 else {
-  Serial.println("The character is not alpha");
+  Serial.println("The character is not a letter");
 }
 ----
 

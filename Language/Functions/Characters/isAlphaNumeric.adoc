@@ -50,7 +50,7 @@ isAlphaNumeric(thisChar)
 
 [source,arduino]
 ----
-if (isAlphaNumeric(this)) { // testa se this é uma letra ou um número
+if (isAlphaNumeric(meuChar)) { // testa se meuChar é uma letra ou um número
   Serial.println("The character is alphanumeric");
 }
 else {

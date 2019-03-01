@@ -42,7 +42,7 @@ Os usos principais das chaves são listados nos exemplos abaixo.
 [source,arduino]
 ----
 void minhafuncao(tipo argumento) {
-  comando(s)
+  // comando(s)
 }
 ----
 [%hardbreaks]
@@ -54,15 +54,15 @@ void minhafuncao(tipo argumento) {
 [source,arduino]
 ----
 while (expressão boolena) {
-  comando(s)
+  // comando(s)
 }
 
 do {
-  comando(s)
+  // comando(s)
 } while (expressão boolena);
 
 for (inicialização; condição; incremento) {
-  comando(s)
+  // comando(s)
 }
 ----
 [%hardbreaks]
@@ -76,14 +76,14 @@ for (inicialização; condição; incremento) {
 [source,arduino]
 ----
 if (expressão boolena) {
-  comandos(s)
+  // comando(s)
 }
 
 else if (expressão boolena) {
-  comandos(s)
+  // comando(s)
 }
 else {
-  comandos(s)
+  // comando(s)
 }
 ----
 [%hardbreaks]

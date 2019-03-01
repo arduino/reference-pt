@@ -70,7 +70,7 @@ void loop() {
 === Notas e Advertências
 Se o pino não está conectado a nada, digitalRead() pode retornar tanto HIGH como LOW (e isso pode mudar aleatoriamente).
 
-Os pinos de entrada analógica podem ser também usados como pinos digitais, referidos como A0, A1, etc.
+Os pinos de entrada analógica podem ser também usados como pinos digitais, referidos como A0, A1, etc. As exceções são os pinos A6 e A7 das placas Arduino Nano, Pro Mini, e Mini, que podem ser usadas apenas como entradas analógicas.
 
 --
 // HOW TO USE SECTION ENDS

@@ -17,14 +17,14 @@ Uma variável word armazena um número sem sinal de 16 bits, de 0 A 65535. O mes
 
 
 [float]
-=== Syntax
+=== Sintaxe
 `word var = val;`
 
 
 [float]
-=== Parameters
-`var`: variable name +
-`val`: the value to assign to that variable
+=== Parâmetros
+`var`: nome da variável +
+`val`: valor a ser atribuído à variável
 
 --
 // OVERVIEW SECTION ENDS

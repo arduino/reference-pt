@@ -19,14 +19,14 @@ No Arduino Due e outras placas com SAMD, doubles usam 8 bytes, ou seja, precisã
 
 
 [float]
-=== Syntax
+=== Sintaxe
 `double var = val;`
 
 
 [float]
-=== Parameters
-`var`: variable name +
-`val`: the value to assign to that variable
+=== Parâmetros
+`var`: nome da variável +
+`val`: valor a ser atribuído à variável
 
 --
 // OVERVIEW SECTION ENDS

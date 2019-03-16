@@ -21,14 +21,14 @@ O tipo de dado char é um tipo com sinal, armazenando números de -128 a 127. Pa
 
 
 [float]
-=== Syntax
+=== Sintaxe
 `char var = val;`
 
 
 [float]
-=== Parameters
-`var`: variable name +
-`val`: the value to assign to that variable
+=== Parâmetros
+`var`: nome da variável +
+`val`: valor a ser atribuído à variável
 
 --
 // OVERVIEW SECTION ENDS

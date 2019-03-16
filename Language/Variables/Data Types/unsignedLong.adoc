@@ -17,11 +17,12 @@ Variáveis unsigned long são variáveis de tamanho extendido para armazenamento
 
 [float]
 === Sintaxe
-
 `unsigned long var = val;`
 
-`var` - o nome da sua variável long
-`val` - o valor a ser dado a variável
+
+=== Parâmetros
+`var`: nome da variável +
+`val`: valor a ser atribuído à variável
 [%hardbreaks]
 
 --

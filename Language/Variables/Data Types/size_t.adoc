@@ -17,15 +17,14 @@ subCategories: [ "Data Types" ]
 
 
 [float]
-=== Syntax
+=== Sintaxe
 `size_t var = val;`
 
 
 [float]
-=== Parameters
-`var`: variable name +
-`val`: the value to assign to that variable
-
+=== Parâmetros
+`var`: nome da variável +
+`val`: valor a ser atribuído à variável
 --
 // OVERVIEW SECTION ENDS
 

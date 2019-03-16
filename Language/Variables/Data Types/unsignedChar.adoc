@@ -20,14 +20,14 @@ Para consistência do estilo de programação Arduino, o tipo de dado byte é pr
 
 
 [float]
-=== Syntax
+=== Sintaxe
 `unsigned char var = val;`
 
 
 [float]
-=== Parameters
-`var`: variable name +
-`val`: the value to assign to that variable
+=== Parâmetros
+`var`: nome da variável +
+`val`: valor a ser atribuído à variável
 
 --
 // OVERVIEW SECTION ENDS

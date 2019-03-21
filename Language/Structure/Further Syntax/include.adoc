@@ -35,15 +35,30 @@ Note que `#include`, similarmente a link:../define[`#define`], não é terminada
 
 [float]
 === Código de Exemplo
-Esse exemplo inclui uma biblioteca que é usada para colocar dados no espaço de programa (memória _flash_) em vez da _ram_. Isso salva  espaço da ram para necessidades dinâmicas e faz tabelas de consulta (lookup tables) mais práticas.
+Esse exemplo inclui a bilbioteca Servo para que suas funções possam ser usadas para controlar um servomotor.
 
 
 [source,arduino]
 ----
-#include <avr/pgmspace.h>
+#include <Servo.h>
 
-prog_uint16_t myConstants[] PROGMEM = {0, 21140, 702  , 9128,  0, 25764, 8456,
-0,0,0,0,0,0,0,0,29810,8968,29762,29762,4500};
+Servo meuservo;  // cria um objeto do tipo Servo para controlar um servomotor
+
+void setup() {
+  meuservo.attach(9);  // associa o motor no pino 9 ao objeto meuservo
+}
+
+void loop() {
+  for (int pos = 0; pos <= 180; pos += 1) { // vai de 0 graus a 180 graus
+    // em passos de 1 grau
+    meuservo.write(pos);             // diz ao servo para ir para a posição na variável 'pos'
+    delay(15);                       // espera 15ms para que o servo chegue a posição
+  }
+  for (int pos = 180; pos >= 0; pos -= 1) { // // vai de 180 graus a 0 graus
+    meuservo.write(pos);             // diz ao servo para ir para a posição na variável 'pos'
+    delay(15);                       // espera 15ms para que o servo chegue a posição
+  }
+}
 ----
 
 

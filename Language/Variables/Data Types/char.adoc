@@ -12,11 +12,11 @@ subCategories: [ "Tipos de Dados" ]
 
 [float]
 === Descrição
-Um tipo de dado que ocupa 1 byte na memória que armazena um caractere. Caracteres literais são escritos em aspas simples, dessa forma: 'A' (para múltiplos caracteres - ou seja, strings - use aspas duplas: "ABC").
+Um tipo de dado usado para armazenar um caractere. Caracteres literais são escritos em aspas simples, dessa forma: 'A' (para múltiplos caracteres - ou seja, strings - use aspas duplas: "ABC").
 
 No entanto, caracteres são armazenados como números. Você pode ver a codificação na link:https://www.arduino.cc/en/Reference/ASCIIchart[tabela ASCII]. Isso significa que é possível fazer aritmética com caracteres, na  qual o valor ASCII para o caractere é usado (ex. 'A' + 1 tem valor 66, pois o valor ASCII da letra maiúscula A é 65). Veja a referência de link:../../../functions/communication/serial/println[`Serial.println`] para mais sobre como caracteres são traduzidos para números.
 
-O tipo de dado char é um tipo com sinal, armazenando números de -128 a 127. Para um tipo de dado sem sinal, de um byte (8 bits), use o tipo de dado _byte_.
+O tipo de dado `char` ocupa ao menos 8 bits. É recomendado que se utilize `char` apenas para armazenar caracteres. Para um tipo de dado sem sinal, de um byte (8 bits), use o tipo de dado link:../byte[byte].
 [%hardbreaks]
 
 

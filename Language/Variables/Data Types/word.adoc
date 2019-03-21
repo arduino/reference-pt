@@ -12,7 +12,7 @@ subCategories: [ "Tipos de Dados" ]
 
 [float]
 === Descrição
-Uma variável word armazena um número sem sinal de 16 bits, de 0 A 65535. O mesmo que uma variável unsigned int.
+Uma variável word armazena um número sem sinal de ao menos 16 bits, de 0 A 65535.
 [%hardbreaks]
 
 

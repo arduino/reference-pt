@@ -16,6 +16,17 @@ O tipo `bool` pode armazenar dois valores: `true` or `false`. (Cada variável `b
 
 [%hardbreaks]
 
+
+[float]
+=== Sintaxe
+`bool var = val;`
+
+
+[float]
+=== Parâmetros
+`var`: nome da variável +
+`val`: valor a ser atribuído à variável
+
 --
 // OVERVIEW SECTION ENDS
 

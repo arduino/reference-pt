@@ -20,11 +20,12 @@ Ao se fazer cálculos com inteiros, pelo menos um dos números deve ser seguido 
 
 [float]
 === Sintaxe
-
 `long var = val;`
 
-`var` - o nome da variável long
-`val` - o valor dado à variável
+
+=== Parâmetros
+`var`: nome da variável +
+`val`: valor a ser atribuído à variável
 [%hardbreaks]
 --
 // OVERVIEW SECTION ENDS

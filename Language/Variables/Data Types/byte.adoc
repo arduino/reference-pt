@@ -15,6 +15,17 @@ subCategories: [ "Tipos de Dados" ]
 Uma variável 'byte' armazena valores numéricos de 8-bit sem sinal, de 0 a 255.
 [%hardbreaks]
 
+
+[float]
+=== Sintaxe
+`byte var = val;`
+
+
+[float]
+=== Parâmetros
+`var`: nome da variável +
+`val`: valor a ser atribuído à variável 
+
 --
 // OVERVIEW SECTION ENDS
 

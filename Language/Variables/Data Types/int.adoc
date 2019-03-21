@@ -27,8 +27,10 @@ O Arduino cuida dos detalhes nas operações com números negativos por você, t
 === Sintaxe
 `int var = val;`
 
-`var` - o nome da sua variável int +
-`val` - o valor a ser dado a variável
+
+=== Parâmetros
+`var`: nome da variável +
+`val`: valor a ser atribuído à variável
 
 --
 // OVERVIEW SECTION ENDS

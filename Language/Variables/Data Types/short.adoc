@@ -21,8 +21,10 @@ Em todos os Arduinos (baseados no ATMega ou ARM) um short armazena um valor 16-b
 === Sintaxe
 `short var = val;`
 
-`var` - o nome da sua variável short
-`val` - o valor a ser dado a variável
+
+=== Parâmetros
+`var`: nome da variável +
+`val`: valor a ser atribuído à variável
 --
 // OVERVIEW SECTION ENDS
 

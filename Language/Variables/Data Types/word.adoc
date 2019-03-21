@@ -15,6 +15,17 @@ subCategories: [ "Tipos de Dados" ]
 Uma variável word armazena um número sem sinal de 16 bits, de 0 A 65535. O mesmo que uma variável unsigned int.
 [%hardbreaks]
 
+
+[float]
+=== Sintaxe
+`word var = val;`
+
+
+[float]
+=== Parâmetros
+`var`: nome da variável +
+`val`: valor a ser atribuído à variável
+
 --
 // OVERVIEW SECTION ENDS
 

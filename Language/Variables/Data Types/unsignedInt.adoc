@@ -25,8 +25,11 @@ A diferença entre unsigned ints e ints (com sinal), está na forma como o bit m
 [float]
 === Sintaxe
 `unsigned int var = val;`
-`var` - o nome da sua variável unsigned int
-`val` - o valor a ser dado a variável
+
+
+=== Parâmetros
+`var`: nome da variável +
+`val`: valor a ser atribuído à variável
 
 
 // HOW TO USE SECTION STARTS

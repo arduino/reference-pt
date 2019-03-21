@@ -25,10 +25,13 @@ Quando fizer cálculos com floats, você precisa adicionar um ponto decimal, do 
 
 [float]
 === Sintaxe
-`float var=val`
+`float var = val`
 
-`var` - o nome da sua variável float
-`val` - o valor a ser dado a variável
+
+=== Parâmetros
+`var`: nome da variável +
+`val`: valor a ser atribuído à variável
+
 [%hardbreaks]
 
 --

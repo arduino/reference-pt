@@ -13,7 +13,7 @@ subCategories: [ "StringObject Operator" ]
 
 [float]
 === Descrição
-Testa se a String à esquerda é menor que a String à direita. Esse operador avalia Strings em ordem alfabética, no primeiro caractere no qual as duas diferem.  Então, por exemplo "a" < "b" e "1" < "2", mas "999" > "1000" porque 9 vem depois de 1.
+Testa se a String à esquerda é menor que a String à direita. Esse operador avalia Strings em ordem alfabética, no primeiro caractere no qual as duas diferem. Então, por exemplo "a" < "b" e "1" < "2", mas "999" > "1000" porque 9 vem depois de 1.
 
 Cuidado: Operadores de comparação de Strings podem ser confusos quando você está comparando Strings numéricas, porque os numerais são tratados como strings e não números. Se você precisa comparar números numericamente, compare-os como ints, floats ou longs, e não como Strings.
 

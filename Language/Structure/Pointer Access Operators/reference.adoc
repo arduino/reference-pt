@@ -14,7 +14,7 @@ subCategories: [ "Operadores para Ponteiros" ]
 
 [float]
 === Descrição
-Referência é uma das características da linguagem C para uso especificamente com ponteiros.  O operador `&` ('e' comercial ou ampersand) é utilizado para esse propósito. Se `x` é uma variável, então `&x` representa o endereço da variável `x`.
+Referência é uma das características da linguagem C para uso especificamente com ponteiros. O operador `&` ('e' comercial ou ampersand) é utilizado para esse propósito. Se `x` é uma variável, então `&x` representa o endereço da variável `x`.
 [%hardbreaks]
 
 --

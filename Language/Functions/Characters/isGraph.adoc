@@ -17,7 +17,7 @@ subCategories: [ "Caracteres" ]
 
 [float]
 === Descrição
-Analisa se um caractere é imprimível com algum conteúdo (espaços são imprimíveis, mas não possuem conteúdo). Retorna true se thisChar é imprimível. 
+Analisa se um caractere é imprimível com algum conteúdo (espaços são imprimíveis, mas não possuem conteúdo). Retorna true se thisChar é imprimível.
 [%hardbreaks]
 
 

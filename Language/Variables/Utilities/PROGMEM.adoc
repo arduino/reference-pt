@@ -28,7 +28,7 @@ PROGMEM é parte da biblioteca http://www.nongnu.org/avr-libc/user-manual/group\
 
 Onde:
 
-`dataType` - qualquer tipo de dados 
+`dataType` - qualquer tipo de dados
 
 `variableName` - o nome do seu vetor de dados
 

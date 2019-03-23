@@ -15,7 +15,7 @@ subCategories: [ "Escopo de Variáveis e Qualificadores" ]
 === Descrição
 A palavra-chave `static` é usada para criar variáveis que são visíveis para apenas uma função. No entanto, diferentemente de variáveis locais, que são criadas e destruidas toda vez que uma função é chamada, variáveis `static` persistem entre chamadas da função, preservando seu valor.
 
-Variáveis declaradas como static são criadas e inicializadas apenas a primeria vez que uma função é chamada. 
+Variáveis declaradas como static são criadas e inicializadas apenas a primeria vez que uma função é chamada.
 [%hardbreaks]
 
 --

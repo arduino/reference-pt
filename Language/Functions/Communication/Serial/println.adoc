@@ -48,7 +48,7 @@ O código abaixo faz a leitura de um valor analógico a cada 10 ms e imprime ess
  Tradução em 29 de Novembro de 2017
  */
 
-int analogValue = 0;    // variável para guardar a leitura analógica 
+int analogValue = 0;    // variável para guardar a leitura analógica
 
 void setup() {
   // abre a porta serial a 9600 bps:

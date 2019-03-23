@@ -28,7 +28,7 @@ Escreve em um bit especificado de um valor numérico.
 
 [float]
 === Parâmetros
-`x`: a variável numérica cujo bit se deseja escrever 
+`x`: a variável numérica cujo bit se deseja escrever
 
 `n`: qual bit do número a ser escrito, começando em 0 para o bit menos significativo (mais à direita)
 

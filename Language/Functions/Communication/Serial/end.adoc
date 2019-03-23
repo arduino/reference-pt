@@ -22,7 +22,7 @@ Desativa a comunicação serial, permitindo os pinos RX e TX serem usados novame
 `_Serial_`: objeto porta serial. Veja a lista de portas seriais disponíveis em cada placa no link:../../serial[Serial - Página principal]
 
 [float]
-=== Retorna 
+=== Retorna
 Nada
 
 --

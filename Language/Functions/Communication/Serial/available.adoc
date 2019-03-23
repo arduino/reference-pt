@@ -11,7 +11,7 @@ title: Serial.available()
 
 [float]
 === Descrição
-Retorna o número de bytes (caracteres) disponíveis para leitura da porta serial. Esses são dados que já chegaram e foram guardados no buffer de recebimento (o qual armazena 64 bytes). 
+Retorna o número de bytes (caracteres) disponíveis para leitura da porta serial. Esses são dados que já chegaram e foram guardados no buffer de recebimento (o qual armazena 64 bytes).
 
 A função `Serial.available()` é herdada da classe link:../../stream[Stream].
 [%hardbreaks]

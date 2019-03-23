@@ -17,8 +17,8 @@ subCategories: [ "Caracteres" ]
 
 [float]
 === Descrição
-Analisa se um caractere é um espaço em branco, isto é o próprio caractere de espaço (' '), formfeed ('\f'), nova linha ('\n'), retorno ('\r'), tab horizontal tab ('\t') e tab vertical ('\v')). 
-Retorna true se thisChar contém um espaço em branco. 
+Analisa se um caractere é um espaço em branco, isto é o próprio caractere de espaço (' '), formfeed ('\f'), nova linha ('\n'), retorno ('\r'), tab horizontal tab ('\t') e tab vertical ('\v')).
+Retorna true se thisChar contém um espaço em branco.
 [%hardbreaks]
 
 

@@ -82,8 +82,8 @@ Similarmente, incluir sinal de igual após #define também resultará em erros
 === Ver Também
 
 [role="language"]
-#LINGUAGEM#	link:../../../variables/variable-scope\--qualifiers/const[palavra-chave const] +
-#LINGUAGEM#	link:../../../variables/constants/constants[Constantes]
+#LINGUAGEM# link:../../../variables/variable-scope\--qualifiers/const[palavra-chave const] +
+#LINGUAGEM# link:../../../variables/constants/constants[Constantes]
 
 --
 // SEE ALSO SECTION ENDS

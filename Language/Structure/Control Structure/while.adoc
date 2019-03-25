@@ -63,7 +63,7 @@ while (var < 200) {
 [role="language"]
 
 [role="example"]
-#EXEMPLO#	https://arduino.cc/en/Tutorial/WhileLoop[Tutorial Loop While (Em Inglês)^]
+#EXEMPLO# https://arduino.cc/en/Tutorial/WhileLoop[Tutorial Loop While (Em Inglês)^]
 
 --
 // SEE ALSO SECTION ENDS

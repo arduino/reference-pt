@@ -17,7 +17,7 @@ subCategories: [ "Caracteres" ]
 
 [float]
 === Descrição
-Analisa se uma caractere é pontuação (isto é, uma vírgula, um ponto-e-vírgula, um ponto de exlamação etc). Retorna true se thisChar é um caractere de pontuação. 
+Analisa se uma caractere é pontuação (isto é, uma vírgula, um ponto-e-vírgula, um ponto de exlamação etc). Retorna true se thisChar é um caractere de pontuação.
 [%hardbreaks]
 
 

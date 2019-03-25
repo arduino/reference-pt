@@ -20,7 +20,7 @@ A função `random()` gera números pseudoaleatórios.
 
 [float]
 === Sintaxe
-`random(max)` 
+`random(max)`
 `random(min, max)`
 
 

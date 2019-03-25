@@ -17,7 +17,7 @@ subCategories: [ "Caracteres" ]
 
 [float]
 === Descrição
-Analisa se uma caractere é o caractere de espaço. Retorna true se thisChar contém um espaço. 
+Analisa se uma caractere é o caractere de espaço. Retorna true se thisChar contém um espaço.
 [%hardbreaks]
 
 

@@ -89,10 +89,10 @@ void loop() {
   for (int j = 0; j < 256; j++) {
     //coloca e mantém o pino latch em low enquanto ocorre a transmissão
     digitalWrite(latchPin, LOW);
-    
+
     //transmite o valor de j, a começar pelo bit menos significativo
     shiftOut(dataPin, clockPin, LSBFIRST, j);
-    
+
     //retorna o pino latch para high para sinalizar ao chip
     //que esse não precisa mais esperar por informação
     digitalWrite(latchPin, HIGH);

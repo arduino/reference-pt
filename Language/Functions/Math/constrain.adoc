@@ -51,7 +51,7 @@ b: se x é maior que b
 [float]
 === Código de Exemplo
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-O código limita os valores de uma variável com a leitura de um sensor entre 10 e 150. 
+O código limita os valores de uma variável com a leitura de um sensor entre 10 e 150.
 
 [source,arduino]
 ----

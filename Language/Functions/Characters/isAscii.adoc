@@ -17,7 +17,7 @@ subCategories: [ "Caracteres" ]
 
 [float]
 === Descrição
-Analisa se um caractere é Ascii. Retorna true se a variável thisChar contém um caractere Ascii. 
+Analisa se um caractere é Ascii. Retorna true se a variável thisChar contém um caractere Ascii.
 [%hardbreaks]
 
 

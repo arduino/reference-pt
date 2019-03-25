@@ -35,7 +35,7 @@ O código abaixo mostra como usar o tipo de dado `boolean`.
 int LEDpin = 5;       // LED no pino digital 5
 int switchPin = 13;   // botão conectado ao pino 13 e o outro terminal ao ground
 
-boolean running = false; //variável do tipo boolean 
+boolean running = false; //variável do tipo boolean
 
 void setup()
 {

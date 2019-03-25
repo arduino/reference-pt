@@ -52,7 +52,7 @@ if (x < y) {  // testa se x é menor que y
 
 [float]
 === Notas e Advertências
-Números positivos são maiores que números negativos. 
+Números positivos são maiores que números negativos.
 [%hardbreaks]
 
 --

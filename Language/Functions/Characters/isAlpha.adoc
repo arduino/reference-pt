@@ -17,7 +17,7 @@ subCategories: [ "Caracteres" ]
 
 [float]
 === Descrição
-Analisa se um caractere é alfabético (isto é, se é uma letra). Retorna true (verdadeiro) se thisChar contém uma letra. 
+Analisa se um caractere é alfabético (isto é, se é uma letra). Retorna true (verdadeiro) se thisChar contém uma letra.
 [%hardbreaks]
 
 

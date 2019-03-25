@@ -78,7 +78,7 @@ Se você quiser tocar tons diferentes em múltiplos pinos, você precisa chamar 
 
 [role="example"]
 * #EXEMPLO# http://arduino.cc/en/Tutorial/Tone[Tone^]
-* #EXEMPLO# http://arduino.cc/en/Tutorial/Tone[Pitch follower^]
+* #EXEMPLO# http://arduino.cc/en/Tutorial/tonePitchFollower[Pitch follower^]
 * #EXEMPLO# http://arduino.cc/en/Tutorial/Tone3[Simple Keyboard^]
 * #EXEMPLO# http://arduino.cc/en/Tutorial/Tone4[multiple tones^]
 * #EXEMPLO# http://arduino.cc/en/Tutorial/PWM[PWM^]

@@ -31,7 +31,7 @@ Desde a versão 1.0.1, é possível ativar os resistores internos de pull-up com
 === Parâmetros
 `pino`: the número do pino o qual se quer escolher o modo
 
-`modo`: o modo do pino. Este pode ser `INPUT`, `OUTPUT` ou `INPUT_PULLUP`; que correspondem respectivamente a entrada, saída e entrada com pull-up ativado. 
+`modo`: o modo do pino. Este pode ser `INPUT`, `OUTPUT` ou `INPUT_PULLUP`; que correspondem respectivamente a entrada, saída e entrada com pull-up ativado.
 
 //Check how to add links
 

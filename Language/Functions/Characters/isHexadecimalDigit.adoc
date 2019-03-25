@@ -17,7 +17,7 @@ subCategories: [ "Caracteres" ]
 
 [float]
 === Descrição
-Analisa se uma caractere é um digito hexadecimal (A-F, 0-9). Retorna true se thisChar contém um digito hexadecimal. 
+Analisa se uma caractere é um digito hexadecimal (A-F, 0-9). Retorna true se thisChar contém um digito hexadecimal.
 [%hardbreaks]
 
 

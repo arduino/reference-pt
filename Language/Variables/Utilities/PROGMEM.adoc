@@ -28,7 +28,7 @@ PROGMEM é parte da biblioteca http://www.nongnu.org/avr-libc/user-manual/group\
 
 Onde:
 
-`dataType` - qualquer tipo de dados 
+`dataType` - qualquer tipo de dados
 
 `variableName` - o nome do seu vetor de dados
 
@@ -68,7 +68,6 @@ const PROGMEM uint16_t conjunto[] = {65000, 32796, 16843, 10, 11234};
 const char mensagem[] PROGMEM = {"Um pequeno jabuti xereta viu dez cegonhas felizes"};
 
 unsigned int displayInt;
-int k;  // vari[avel contadora
 char meuChar;
 
 
@@ -77,14 +76,14 @@ void setup() {
   while (!Serial);  // Espera a porta serial conectar. Necessário para placas com USB nativa
 
   // Lê da memória flash um int (2-bytes, ou word)
-  for (k = 0; k < 5; k++) {
+  for (byte k = 0; k < 5; k++) {
     displayInt = pgm_read_word_near(conjunto + k);
     Serial.println(displayInt);
   }
   Serial.println();
 
   // Lê um caractere da flash
-  for (k = 0; k < strlen_P(mensagem); k++) {
+  for (byte k = 0; k < strlen_P(mensagem); k++) {
     meuCHar = pgm_read_byte_near(mensagem + k);
     Serial.print(meuCHar);
   }

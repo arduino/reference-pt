@@ -19,7 +19,7 @@ Uma variável global é uma que pode ser vista por todas as funções de um prog
 
 Quando programas começam a ficar muito longos e complexos, variáveis locais são uma forma útil de garantir que apenas uma função tenha acesso as suas próprias variáveis. Isso previne erros de programação quando uma função inadvertidamente modifica variáveis usadas por outra função.
 
-Às vezes também é vantajoso declarar e inicializar uma variável dentro de um loop `for`. Isso cria uma variável que pode ser acessada apenas dentro do próprio bloco do loop `for`. 
+Às vezes também é vantajoso declarar e inicializar uma variável dentro de um loop `for`. Isso cria uma variável que pode ser acessada apenas dentro do próprio bloco do loop `for`.
 [%hardbreaks]
 
 --

@@ -26,7 +26,7 @@ As bibliotecas core permitem as placas baseadas nos micros 32u4 e SAMD (Leonardo
 [%hardbreaks]
 *Uma nota as bibliotecas Mouse e Keyboard*: se a biblioteca Mouse ou Keyboard estiver rodando constantemente, será difícil programar a sua placa. Funções como `Mouse.move()` e `Keyboard.print()` irão mover o cursor ou enviar teclas ao computador conectado e devem ser chamadas apenas quando você estiver pronto para usá-las. É recomendado se usar um sistema de controle para ativar a funcionalidade USB, como um botão físico ou apenas responder a entradas específicas que você pode controlar. Confira os exemplos sobre as bibliotecas Mouse e Keyboard para algumas formas de fazer isso.
 [%hardbreaks]
-Quando usar as bibliotecas Mouse ou Keyboard, pode ser melhor testar sua saída primeiro utilizando link:../../communication/serial/print[Serial.print()]. Dessa forma, você pode ter certeza de quais valores estão sendo relatados. 
+Quando usar as bibliotecas Mouse ou Keyboard, pode ser melhor testar sua saída primeiro utilizando link:../../communication/serial/print[Serial.print()]. Dessa forma, você pode ter certeza de quais valores estão sendo relatados.
 [%hardbreaks]
 // FUNCTIONS SECTION STARTS
 [#functions]

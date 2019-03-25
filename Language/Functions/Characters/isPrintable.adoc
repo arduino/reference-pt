@@ -17,7 +17,7 @@ subCategories: [ "Caracteres" ]
 
 [float]
 === Descrição
-Analisa se uma caractere é imprimível (isto é, qualquer caractere que produz uma saída, até mesmo um espaço). Retorna true se thisChar é imprimível. Por impimível diz-se os caracteres que pode ser impressos, como letras e números. Alguns caracteres são para controle e não podem ser impressos como o new line (`'\n'`) e o tab (`'\t'`). 
+Analisa se uma caractere é imprimível (isto é, qualquer caractere que produz uma saída, até mesmo um espaço). Retorna true se thisChar é imprimível. Por impimível diz-se os caracteres que pode ser impressos, como letras e números. Alguns caracteres são para controle e não podem ser impressos como o new line (`'\n'`) e o tab (`'\t'`).
 [%hardbreaks]
 
 

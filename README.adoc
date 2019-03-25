@@ -1,13 +1,13 @@
 = Reference-pt
 
-Reference-pt é o repositório da documentação de referência para a sintaxe da linguagem Arduino em *Português*.  
+Reference-pt é o repositório da documentação de referência para a sintaxe da linguagem Arduino em *Português*.
 Todos os arquivos da referência devem estar no formato AsciiDoc.
 Obrigado por se interessar em contribuir para a documentação de referência, isso ajuda bastante toda a comunidade Arduino.
 
 A documentação traduzida em Português pode ser encontrada nessa https://www.arduino.cc/reference/pt/[Página]
 
 == Criação e Edição de Conteúdo
-Se você quer contribuir com um novo conteúdo, crie um novo arquivo (com qualquer editor de texto ou código) e salve-o como um arquivo formato AsciiDoc (extensão ".adoc"). Não use parênteses ou qualquer outro caractere especial no nome do arquivo.  
+Se você quer contribuir com um novo conteúdo, crie um novo arquivo (com qualquer editor de texto ou código) e salve-o como um arquivo formato AsciiDoc (extensão ".adoc"). Não use parênteses ou qualquer outro caractere especial no nome do arquivo.
 No link https://raw.githubusercontent.com/arduino/reference-en/master/AsciiDoc_sample/AsciiDoc_Dictionary/AsciiDoc_Template-Dictionary.adoc[`reference-en/AsciiDoc_sample/AsciiDoc_Dictionary`] você vai encontrar uma visão geral da sintaxe AsciiDoc. Isso inclui títulos, texto, links, imagens, tabelas, código e vários _embeds_ (vídeo, slideshow, áudio e código). Você pode ver esse exemplo renderizado https://www.arduino.cc/reference/pt/asciidoc_sample/asciidoc_dictionary/asciidoc_template-dictionary/[aqui].
 
 Se você quer contribuir para a documentação de referência da linguagem ou editar um conteúdo existente, há dois templates disponíveis em reference-pt/AsciiDoc_sample/Reference_Terms:
@@ -15,21 +15,21 @@ Se você quer contribuir para a documentação de referência da linguagem ou ed
 * Use https://raw.githubusercontent.com/arduino/reference-en/master/AsciiDoc_sample/Reference_Terms/AsciiDoc_Template-Single_Entity.adoc[`AsciiDoc_Template-Single_Entity.adoc`] (renderizado https://www.arduino.cc/reference/pt/asciidoc_sample/reference_terms/asciidoc_template-single_entity/[aqui]) para termos como link:http://arduino.cc/en/Reference/AnalogWrite[analogWrite].
 * Use https://raw.githubusercontent.com/arduino/reference-en/master/AsciiDoc_sample/Reference_Terms/AsciiDoc_Template-Parent_Of_Entities.adoc[`AsciiDoc_Template-Parent_Of_Entities.adoc`] (renderizado https://www.arduino.cc/reference/pt/asciidoc_sample/reference_terms/asciidoc_template-parent_of_entities/[aqui]) para grupos de funções como link:http://arduino.cc/en/Reference/Serial[Serial].
 
-Por favor note que todo arquivo da referência deve incluir pelo menos uma descrição, algum código de exemplo, e links para outras informações relevantes (na seção Ver Também). 
+Por favor note que todo arquivo da referência deve incluir pelo menos uma descrição, algum código de exemplo, e links para outras informações relevantes (na seção Ver Também).
 
 Se você precisar adicionar imagens no arquivo Asciidoc, por favor crie uma pasta chamada "_attachments_" na mesma pasta em que se encontra o arquivo Asciidoc. Imagens podem ser salvas em formato SVG ou PNG, de tamanho máximo 200KB.
 
 == Contribuir com Conteúdo no Github
 Se ainda não é familiarizado com Git, você pode contribuir diretamente pelo Github pela sua interface online. Nós criamos um pequeno tutorial para explicar como, https://create.arduino.cc/projecthub/Arduino_Genuino/contribute-to-the-arduino-reference-af7c37[Confira!]
 
-link:https://help.github.com/articles/editing-files-in-another-user-s-repository/[Você pode também seguir esse tutorial] (escrito pela equipe do Github) para aprender a editar um arquivo .adoc e propor à equipe Arduino uma atualização do arquivo.  
+link:https://help.github.com/articles/editing-files-in-another-user-s-repository/[Você pode também seguir esse tutorial] (escrito pela equipe do Github) para aprender a editar um arquivo .adoc e propor à equipe Arduino uma atualização do arquivo.
 Quando sugerir uma atualização, por favor siga as recomendações descritas nos arquivos template da referência do Arduino.
 
 
 == Submeter um Pull request
 Ficamos felizes que você tenha interesse em contribuir para a documentação de referência, essa é a melhor forma de ajudar a comunidade Arduino!
 
-Se sua contribuição está adicionando ou modificando código existente ou descrições completas, por favor sempre consulte se há _issues_ abertos ou abra um novo _issue_ antes de contribuir. 
+Se sua contribuição está adicionando ou modificando código existente ou descrições completas, por favor sempre consulte se há _issues_ abertos ou abra um novo _issue_ antes de contribuir.
 
 === Estrutura de Diretórios
 [source]

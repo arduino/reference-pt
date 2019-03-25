@@ -64,7 +64,7 @@ void loop() {
 
 [float]
 === Notas e Advertências
-Quando variáveis com  sinal são forçadas a exceder sua capacidade máxima ou mínima, elas _estouram_; ou do Inglês, sofrem _overflow_.  O resultado de um overflow é imprevisível, então isso deve ser evitado.  Um sintoma típico de um overflow é a variável "rolar" de sua capacidade máxima para a mínima ou vice-versa, mas não é sempre o caso.  Se você deseja esse comportamento, use o tipo link:../unsignedint/[unsigned int].
+Quando variáveis com  sinal são forçadas a exceder sua capacidade máxima ou mínima, elas _estouram_; ou do Inglês, sofrem _overflow_. O resultado de um overflow é imprevisível, então isso deve ser evitado. Um sintoma típico de um overflow é a variável "rolar" de sua capacidade máxima para a mínima ou vice-versa, mas não é sempre o caso. Se você deseja esse comportamento, use o tipo link:../unsignedint/[unsigned int].
 
 --
 // HOW TO USE SECTION ENDS

@@ -77,10 +77,11 @@ Se você quiser tocar tons diferentes em múltiplos pinos, você precisa chamar 
 * #LINGUAGEM# link:../../analog-io/analogwrite[analogWrite()]
 
 [role="example"]
-* #EXEMPLO# https://www.arduino.cc/en/Tutorial/toneMelody[Tone^]
-* #EXEMPLO# http://arduino.cc/en/Tutorial/tonePitchFollower[Pitch follower^]
-* #EXEMPLO# https://www.arduino.cc/en/Tutorial/toneKeyboard[Simple Keyboard^]
-* #EXEMPLO# https://www.arduino.cc/en/Tutorial/toneMultiple[multiple tones^]
+
+* #EXEMPLO# http://arduino.cc/en/Tutorial/Tone[Tone Melody^]
+* #EXEMPLO# http://arduino.cc/en/Tutorial/tonePitchFollower[Pitch Follower^]
+* #EXEMPLO# http://arduino.cc/en/Tutorial/Tone3[Tone Keyboard^]
+* #EXEMPLO# http://arduino.cc/en/Tutorial/Tone4[Tone Multiple^]
 * #EXEMPLO# http://arduino.cc/en/Tutorial/PWM[PWM^]
 
 --

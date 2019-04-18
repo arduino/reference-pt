@@ -10,7 +10,7 @@ title: Stream.find()
 
 [float]
 === Descrição
-`find()` lê dados da stream até a string specificada ser encontrada. A função retorna `true` se a string especificada é encontrada, `false` se ocorre time-out (veja ../streamsettimeout[Stream.setTimeout()]).
+`find()` lê dados da stream até a string specificada ser encontrada. A função retorna `true` se a string especificada é encontrada, `false` se ocorre time-out (veja link:../streamsettimeout[Stream.setTimeout()]).
 
 Essa função é parte da classe Stream, e pode ser chamada por qualquer classe que herda da mesma (Wire, Serial, etc). Veja a página principal da  link:../../stream[classe Stream] para mais informações.
 [%hardbreaks]
@@ -26,9 +26,9 @@ Essa função é parte da classe Stream, e pode ser chamada por qualquer classe 
 === Parâmetros
 `stream` : uma instância de uma classe que herda da classe Stream.
 
-`target` : a string a ser procurada (char[])
+`target` : a string a ser procurada (`char[]`)
 
-`length` : comprimento da string procurada (size_t)
+`length` : comprimento da string procurada (`size_t`)
 
 [float]
 === Retorna

@@ -4,12 +4,7 @@ categories: [ "Functions" ]
 subCategories: [ "Funções Temporizadoras" ]
 ---
 
-
-
-
-
 = delay()
-
 
 // OVERVIEW SECTION STARTS
 [#overview]
@@ -68,7 +63,7 @@ void loop() {
 
 [float]
 === Notas e Advertências
-Mesmo que seja fácil fazer um LED piscar usando a função `delay()`, e muitos sketches usam delays pequenos para tarefas como debouncing de botões, o uso de `delay()` em um sketch possui desvantagens significantes. Nenhuma leitura de sensores, cálculos matemáticos, ou manipulação de pinos podem ocorrer durante a função `delay()`, para resumir, causa a pausa de qualquer atividade. Para métodos alternativos de controlar temporizações, veja a função link:../millis[millis()] e os sketches citados abaixo. Programadores mais habilidosos usualmente evitam o uso da função `delay()` para timing de eventos mais longos que dezenas de milissegundos, a menos que o sketch Arduino seja muito simples.
+Mesmo que seja fácil fazer um LED piscar usando a função `delay()`, e muitos sketches usam delays pequenos para tarefas como debouncing de botões, o uso de `delay()` em um sketch possui desvantagens significantes. Nenhuma leitura de sensores, cálculos matemáticos, ou manipulação de pinos podem ocorrer durante a função `delay()`, para resumir, causa a pausa de qualquer atividade. Para métodos alternativos de controlar temporizações, veja o sketch link:http://arduino.cc/en/Tutorial/BlinkWithoutDelay[Blink Sem Delay (Em Inglês)], que verifica a função link:../millis[millis()] até que o tempo suficiente tenha passado. Programadores mais habilidosos usualmente evitam o uso da função `delay()` para timing de eventos mais longos que dezenas de milissegundos, a menos que o sketch Arduino seja muito simples.
 
 No entanto, certas coisas continuam a acontecer enquanto a função delay() está controlando o microcontrolador, porque a função delay não desativa interrupções. Comunicação serial recebida no pino RX é armazenada, valores PWM de (link:../../analog-io/analogwrite[analogWrite]) e estados dos pinos são mantidos, e link:../../external-interrupts/attachinterrupt[interrupções externas] irão funcionar como devem.
 

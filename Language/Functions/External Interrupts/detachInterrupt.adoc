@@ -20,7 +20,7 @@ Desativa a interrupção especificada.
 === Sintaxe
 `detachInterrupt(digitalPinToInterrupt(pino))` (Recomendado) +
 `detachInterrupt(interrupt)` (Não recomendado) +
-`detachInterrupt(pino)` (Não recomendado. Apenas placas Arduino SAMD, Uno WiFi Rev2, Due, e 101)
+`detachInterrupt(pino)` (Não recomendado. Além disso, essa sintaxe só funciona em placas Arduino SAMD, Uno WiFi Rev2, Due, e 101)
 
 [float]
 === Parâmetros

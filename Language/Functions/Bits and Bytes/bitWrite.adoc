@@ -4,12 +4,7 @@ categories: [ "Functions" ]
 subCategories: [ "Bits e Bytes" ]
 ---
 
-
-
-
-
 = bitWrite()
-
 
 // OVERVIEW SECTION STARTS
 [#overview]
@@ -40,6 +35,31 @@ Nada
 
 --
 // OVERVIEW SECTION ENDS
+
+
+// HOW TO USE SECTION STARTS
+[#howtouse]
+--
+
+[float]
+=== Código de Exemplo 
+O código a seguir demonstra o use de bitWrite ao imprimir uma variável no Monitor Serial antes e depois do uso de `bitWrite()`.
+
+[source,arduino]
+void setup() {
+  Serial.begin(9600);
+  while (!Serial) {}  // espera a porta serial conectar. Necessário apenas em placas com USB nativa
+  byte x = 0b10000000;  // o prefixo 0b indica uma constante binária
+  Serial.println(x, BIN); // 10000000
+  bitWrite(x, 0, 1);  // Escreve 1 no biit menos significante de x
+  Serial.println(x, BIN); // 10000001
+}
+
+void loop() {}
+----
+[%hardbreaks]
+--
+// HOW TO USE SECTION ENDS
 
 
 // SEE ALSO SECTION

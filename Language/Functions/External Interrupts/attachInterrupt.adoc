@@ -59,7 +59,7 @@ Para mais informações sobre interrupções, veja as http://gammon.com.au/inter
 === Sintaxe
 `attachInterrupt(digitalPinToInterrupt(pino), ISR, modo);` (Recomendado) +
 `attachInterrupt(interrupção, ISR, modo);` (Não recomendado) +
-`attachInterrupt(pino, ISR, modo);` (Não recomendado. Apenas placas Arduino SAMD, Uno WiFi Rev2, Due, e 101)
+`attachInterrupt(pino, ISR, modo);` (Não recomendado. Além disso, essa sintaxe só funciona em placas Arduino SAMD, Uno WiFi Rev2, Due, e 101)
 
 [float]
 === Parâmetros

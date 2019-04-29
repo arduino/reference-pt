@@ -14,21 +14,28 @@ title: Stream.parseFloat()
 
 [float]
 === Descrição
-`parseFloat()` retorna o primeiro número de ponto flutuante da posição atual. Caracteres iniciais que não são digitos (ou o sinal de menos) são ignorados. `parseFloat()` é terminada pelo primeiro caractere que não é um digito encontrado após o número. A função retorna se acabar o tempo limite (veja link:../streamsettimeout[Stream.setTimeout()]).
+`parseFloat()` retorna o primeiro número de ponto flutuante da posição atual. `parseFloat()` é terminada pelo primeiro caractere que não é um digito encontrado após o número. A função retorna se acabar o tempo limite (veja link:../streamsettimeout[Stream.setTimeout()]).
 
 Essa função é parte da classe Stream, e pode ser chamada por qualquer classe que herda da mesma (Wire, Serial, etc). Veja a página principal da link:../../stream[classe Stream] para mais informações.
 [%hardbreaks]
 
 [float]
 === Sintaxe
-`stream.parseFloat(list)`
-
+`stream.parseFloat()`
+`stream.parseFloat(lookahead)` +
+`stream.parseFloat(lookahead, ignore)`
 
 [float]
 === Parâmetros
 `stream` : uma instância de uma classe que herda da classe Stream.
+`lookahead`: the modo usado ao se procurar um número de ponto flutuate na stream. Tipos de dados permitidos: `LookaheadMode`. + Valores de `lookahead` pemitidos:
 
-`list` : a stream a ser checada por floats (`char`)
+* `SKIP_ALL`: Todos os caracteres exceto o sinal de menos (-), ponto decimal, ou numerais são ignorados durante a busca na stream por um número de ponto flutuante. Esse é o modo padrão.
+* `SKIP_NONE`: Nada é ignorado, e a stream não é tocada a menos que o primeiro caractere a espera seja válido.
+* `SKIP_WHITESPACE`: Apenas tabulações, espaços, feeds de linha (`'\n'`), e retornos de linha (`'\r'`) são ignorados.
+
+`ignore`: usado para ignorar o caractere indicado durante a busca. Udado por exemplo para pular o separador de milhares. Tipos de dados permitidos: `char`
+
 
 [float]
 === Retorna

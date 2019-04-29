@@ -10,7 +10,7 @@ title: Serial.parseFloat()
 
 [float]
 === Descrição
-`Serial.parseFloat()` retorna o primeiro número válido de ponto flutuante do buffer serial. Caracteres que não são dígitos (ou o sinal de menos) são pulados. `parseFloat()` é terminada pelo primeiro caractere que não é um número de ponto flutuante. A função retorna se acabar o tempo limite (veja link:../settimeout[Serial.setTimeout()]).
+`Serial.parseFloat()` retorna o primeiro número válido de ponto flutuante do buffer serial. `parseFloat()` é terminada pelo primeiro caractere que não é um número de ponto flutuante. A função retorna se acabar o tempo limite (veja link:../settimeout[Serial.setTimeout()]).
 
 A função `Serial.parseFloat()` é herdada da classe link:../../stream[Stream].
 [%hardbreaks]
@@ -19,10 +19,19 @@ A função `Serial.parseFloat()` é herdada da classe link:../../stream[Stream].
 [float]
 === Sintaxe
 `_Serial_.parseFloat()`
+`_Serial_.parseFloat(lookahead)` +
+`_Serial_.parseFloat(lookahead, ignore)`
 
 [float]
 === Parâmetros
-`_Serial_`: objeto porta serial. Veja a lista de portas seriais disponíveis em cada placa no link:../../serial[Serial - Página principal]
+`_Serial_`: objeto porta serial. Veja a lista de portas seriais disponíveis em cada placa no link:../../serial[Serial - Página principal] +
+`lookahead`: the modo usado ao se procurar um número de ponto flutuate na stream. Tipos de dados permitidos: `LookaheadMode`. + Valores de `lookahead` pemitidos:
+
+* `SKIP_ALL`: Todos os caracteres exceto o sinal de menos (-), ponto decimal, ou numerais são ignorados durante a busca na stream por um número de ponto flutuante. Esse é o modo padrão.
+* `SKIP_NONE`: Nada é ignorado, e a stream não é tocada a menos que o primeiro caractere a espera seja válido.
+* `SKIP_WHITESPACE`: Apenas tabulações, espaços, feeds de linha ('\n'), e retornos de linha ('\r') são ignorados.
+
+`ignore`: usado para ignorar o caractere indicado durante a busca. Udado por exemplo para pular o separador de milhares. Tipos de dados permitidos: `char`
 
 [float]
 === Retorna

@@ -46,6 +46,7 @@ Nada
 O código a seguir demonstra o use de bitWrite ao imprimir uma variável no Monitor Serial antes e depois do uso de `bitWrite()`.
 
 [source,arduino]
+----
 void setup() {
   Serial.begin(9600);
   while (!Serial) {}  // espera a porta serial conectar. Necessário apenas em placas com USB nativa

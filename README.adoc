@@ -52,7 +52,7 @@ reference-pt
 
 ----
 
-Dentro da pasta Language, a arvore de arquivos segue a mesma estrutura que no link: https://www.arduino.cc/reference/pt[Página da Referência do Arduino (Em Inglês)]
+Dentro da pasta Language, a arvore de arquivos segue a mesma estrutura que no link: https://www.arduino.cc/reference/pt[Página da Referência do Arduino]
 
 
 === Licença

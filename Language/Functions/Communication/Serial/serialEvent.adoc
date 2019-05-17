@@ -77,7 +77,7 @@ Nada
 === Ver Também
 
 [role="example"]
-#EXEMPLO# http://arduino.cc/en/Tutorial/SerialEvent[Serial Event Tutorial (Em Inglês)^] +
+#EXEMPLO# http://arduino.cc/en/Tutorial/SerialEvent[Serial Event (Em Inglês)^] +
 
 [role="language"]
 #LINGUAGEM# link:../begin[begin()] +

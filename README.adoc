@@ -12,8 +12,8 @@ No link https://raw.githubusercontent.com/arduino/reference-en/master/AsciiDoc_s
 
 Se você quer contribuir para a documentação de referência da linguagem ou editar um conteúdo existente, há dois templates disponíveis em reference-pt/AsciiDoc_sample/Reference_Terms:
 
-* Use https://raw.githubusercontent.com/arduino/reference-en/master/AsciiDoc_sample/Reference_Terms/AsciiDoc_Template-Single_Entity.adoc[`AsciiDoc_Template-Single_Entity.adoc`] (renderizado https://www.arduino.cc/reference/pt/asciidoc_sample/reference_terms/asciidoc_template-single_entity/[aqui]) para termos como link:http://arduino.cc/en/Reference/AnalogWrite[analogWrite].
-* Use https://raw.githubusercontent.com/arduino/reference-en/master/AsciiDoc_sample/Reference_Terms/AsciiDoc_Template-Parent_Of_Entities.adoc[`AsciiDoc_Template-Parent_Of_Entities.adoc`] (renderizado https://www.arduino.cc/reference/pt/asciidoc_sample/reference_terms/asciidoc_template-parent_of_entities/[aqui]) para grupos de funções como link:http://arduino.cc/en/Reference/Serial[Serial].
+* Use https://raw.githubusercontent.com/arduino/reference-en/master/AsciiDoc_sample/Reference_Terms/AsciiDoc_Template-Single_Entity.adoc[`AsciiDoc_Template-Single_Entity.adoc`] (renderizado https://www.arduino.cc/reference/pt/asciidoc_sample/reference_terms/asciidoc_template-single_entity/[aqui]) para termos como link:https://www.arduino.cc/reference/pt/language/functions/analog-io/analogwrite[analogWrite].
+* Use https://raw.githubusercontent.com/arduino/reference-en/master/AsciiDoc_sample/Reference_Terms/AsciiDoc_Template-Parent_Of_Entities.adoc[`AsciiDoc_Template-Parent_Of_Entities.adoc`] (renderizado https://www.arduino.cc/reference/pt/asciidoc_sample/reference_terms/asciidoc_template-parent_of_entities/[aqui]) para grupos de funções como link:https://www.arduino.cc/reference/pt/language/functions/communication/serial[Serial].
 
 Por favor note que todo arquivo da referência deve incluir pelo menos uma descrição, algum código de exemplo, e links para outras informações relevantes (na seção Ver Também).
 
@@ -52,7 +52,7 @@ reference-pt
 
 ----
 
-Dentro da pasta Language, a arvore de arquivos segue a mesma estrutura que no link: https://www.arduino.cc/reference/en[Página da Referência do Arduino (Em Inglês)]
+Dentro da pasta Language, a arvore de arquivos segue a mesma estrutura que no link: https://www.arduino.cc/reference/pt[Página da Referência do Arduino]
 
 
 === Licença

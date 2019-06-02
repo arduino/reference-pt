@@ -1,4 +1,4 @@
-﻿---
+---
 title: ">="
 title_expanded: greater than or equal to
 categories: [ "Data Types" ]

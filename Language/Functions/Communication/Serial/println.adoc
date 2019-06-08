@@ -30,6 +30,8 @@ Imprime dados na porta serial como texto ASCII seguido pelo caratere de retorno 
 [float]
 === Retorna
 `size_t`: `println()` retorna o número de bytes escritos, porém a leitura desse número é opcional
+
+--
 // OVERVIEW SECTION ENDS
 
 // HOW TO USE SECTION STARTS

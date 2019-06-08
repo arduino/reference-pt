@@ -22,7 +22,7 @@ Retorna uma substring de uma String. O índice do início é inclusivo (o caract
 === Sintaxe
 `minhaString.substring(inicio)` +
 `minhaString.substring(inicio, fim)`
-----
+
 
 [float]
 === Parâmetros

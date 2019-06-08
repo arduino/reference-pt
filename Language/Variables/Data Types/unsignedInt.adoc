@@ -19,17 +19,19 @@ O Due e outras placas ARM armazenam um unsigned int em 4 bytes (32 bits), de 0 a
 A diferença entre unsigned ints e ints (com sinal), está na forma como o bit mais significativo, as vezes chamado de o bit "de sinal", é interpretado. No tipo int do Arduino (que possui sinal), se o bit mais significativo é "1", o número é interpretado como um número negativo, e os outros 15 bits são interpretados com (https://pt.wikipedia.org/wiki/Complemento_para_dois[complemento de 2]).
 [%hardbreaks]
 
---
-// OVERVIEW SECTION ENDS
 
 [float]
 === Sintaxe
 `unsigned int var = val;`
 
 
+[float]
 === Parâmetros
 `var`: nome da variável +
 `val`: valor a ser atribuído à variável
+
+--
+// OVERVIEW SECTION ENDS
 
 
 // HOW TO USE SECTION STARTS

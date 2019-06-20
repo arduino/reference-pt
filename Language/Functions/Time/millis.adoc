@@ -42,7 +42,7 @@ O número de milissegundos passados desde que o programa iniciou (unsigned long)
 [float]
 === Código de Exemplo
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-O código imprime na porta serial o tempo em milissegundos passado desde que a placa Arduino começo a executar o código em si.
+O código imprime na porta serial o tempo em milissegundos passado desde que a placa Arduino começou a executar o código em si.
 
 [source,arduino]
 ----

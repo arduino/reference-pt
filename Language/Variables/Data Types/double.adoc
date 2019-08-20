@@ -37,7 +37,7 @@ No Arduino Due e outras placas com SAMD, doubles usam 8 bytes, ou seja, precisã
 
 [float]
 === Notas e Advertências
-Usuários que pegam código de outras fontes que inclua variáveis double pidem desejar examinar o código para conferir se a precisão é diferente do que realmente é alcançado nas placas Arduino baseadas em microcontroladores ATMEGA.
+Usuários que pegam código de outras fontes que inclua variáveis double podem desejar examinar o código para conferir se a precisão é diferente do que realmente é alcançado nas placas Arduino baseadas em microcontroladores ATMEGA.
 [%hardbreaks]
 
 --

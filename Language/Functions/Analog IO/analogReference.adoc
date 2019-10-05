@@ -4,12 +4,9 @@ categories: [ "Functions" ]
 subCategories: [ "Entradas e Saídas Analógicas" ]
 ---
 
-
 //
 
-
 = analogReference()
-
 
 // OVERVIEW SECTION STARTS
 [#overview]
@@ -28,6 +25,17 @@ Placas Arduino AVR (Uno, Mega, etc.)
 * EXTERNAL: a tensão aplicada ao pino AREF (0 a 5V apenas) é usada como referência.
 [%hardbreaks]
 
+Placas Arduino megaAVR (Uno WiFi Rev2)
+
+* DEFAULT: uma referência interna de 0.55V
+* INTERNAL: uma referência interna de 0.55V
+* VDD: Vdd do ATmega4809. 5V no Uno WiFi Rev2
+* INTERNAL0V55: uma referência interna de 0.55V
+* INTERNAL1V1: uma referência interna de 1.1V
+* INTERNAL1V5: uma referência interna de 1.5V
+* INTERNAL2V5: uma referência interna de 2.5V
+* INTERNAL4V3: uma referência interna de 4.3V
+* EXTERNAL: a tensão aplicada ao pino AREF (0 a 5V apenas) é usada como referência.
 
 Placas Arduino SAMD (Zero, etc.)
 

@@ -18,7 +18,7 @@ Para mais informações sobre os valores ASCII e os caracteres ou funções que 
 [%hardbreaks]
 Para pressionar múltiplas teclas, use link:../keyboardpress[Keyboard.press]()
 [%hardbreaks]
-As difinições de teclas modificadoras para o Leonardo são listadas abaixo:
+As difinições das teclas modificadoras estão listadas abaixo:
 [%hardbreaks]
 
 

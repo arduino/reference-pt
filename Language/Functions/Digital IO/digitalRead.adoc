@@ -84,7 +84,7 @@ Os pinos de entrada analógica podem ser também usados como pinos digitais, ref
 === Ver Também
 
 [role="example"]
-* #EXEMPLO# Tutorial (Em Inglês): (http://arduino.cc/en/Tutorial/DigitalPins[Digital Pins])
+* #EXEMPLO# http://arduino.cc/en/Tutorial/DigitalPins[Descrição dos pinos digitais (em inglês)^]
 
 --
 // SEE ALSO SECTION ENDS

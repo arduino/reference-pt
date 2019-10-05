@@ -4,12 +4,7 @@ categories: [ "Functions" ]
 subCategories: [ "Entradas e Saídas Avançadas" ]
 ---
 
-
-
-
-
 = tone()
-
 
 // OVERVIEW SECTION STARTS
 [#overview]
@@ -36,7 +31,7 @@ Não é possível gerar tons de freqeuência mais baixa que 31Hz. Para detalhes 
 
 [float]
 === Parâmetros
-`pino`: o pin no qual gerar o tom
+`pino`: o pino do Arduino no qual gerar o tom
 
 `frequência`: a frequência do tom em Hertz - `unsigned int`
 

@@ -35,7 +35,7 @@ Se você não configurar o pino com `pinMode()` e `OUTPUT`, e conectar um LED ao
 
 [float]
 === Parâmetros
-`pino`: o número do pino
+`pino`: o número do pino do Arduino
 
 `valor`: `HIGH` ou `LOW`
 

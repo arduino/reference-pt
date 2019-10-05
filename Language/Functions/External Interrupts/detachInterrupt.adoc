@@ -26,7 +26,7 @@ Desativa a interrupção especificada.
 === Parâmetros
 `interrupt`: o número da interrupção a ser desativada (veja link:../attachinterrupt[attachInterrupt()] para mais detalhes).
 
-`pino`: o número do pino da interrupção a ser desativada
+`pino`: o número do pino do Arduino cuja interrupção deve ser desativada
 
 [float]
 === Retorna

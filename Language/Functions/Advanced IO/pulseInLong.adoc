@@ -29,7 +29,7 @@ A temporização dessa função foi determinada empiricamente e irá provavelmen
 
 [float]
 === Parâmetros
-`pino`: o número do pino no qual se quer capturar a duração de um pulso. (int)
+`pino`: o número do pino do Arduino no qual se quer capturar a duração de um pulso. (int)
 
 `valor`: tipo de pulso a ser lido: pode ser link:../../../variables/constants/constants/[HIGH] ou link:../../../variables/constants/constants/[LOW]. (int)
 

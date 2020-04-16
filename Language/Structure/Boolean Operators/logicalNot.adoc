@@ -2,7 +2,7 @@
 title: "!"
 title_expanded: NÃO lógico
 categories: [ "Structure" ]
-subCategories: [ "Operadores Boleanos" ]
+subCategories: [ "Boolean Operators" ]
 ---
 
 = ! NÃO Lógico

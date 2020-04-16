@@ -2,7 +2,7 @@
 title: "+"
 title_expanded: "adição"
 categories: [ "Structure" ]
-subCategories: [ "Operadores Aritméticos" ]
+subCategories: [ "Arithmetic Operators" ]
 ---
 
 = + Adição

@@ -2,7 +2,7 @@
 title: "&"
 title_expanded: referência
 categories: [ "Structure" ]
-subCategories: [ "Operadores para Ponteiros" ]
+subCategories: [ "Pointer Access Operators" ]
 ---
 
 = & Operador de referência

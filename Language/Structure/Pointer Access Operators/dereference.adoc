@@ -2,7 +2,7 @@
 title: "*"
 title_expanded: desreferência
 categories: [ "Structure" ]
-subCategories: [ "Operadores para Ponteiros" ]
+subCategories: [ "Pointer Access Operators" ]
 ---
 
 = * Operador de Desreferência

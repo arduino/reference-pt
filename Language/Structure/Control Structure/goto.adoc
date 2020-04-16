@@ -1,7 +1,7 @@
 ---
 title: goto
 categories: [ "Structure" ]
-subCategories: [ "Estruturas de Controle" ]
+subCategories: [ "Control Structure" ]
 ---
 
 = goto

@@ -2,7 +2,7 @@
 title: "/="
 title_expanded: atribuição por divisão
 categories: [ "Structure" ]
-subCategories: [ "Operadores de Atribuição Composta" ]
+subCategories: [ "Compound Operators" ]
 ---
 
 = /= atribuição por divisão

@@ -1,7 +1,7 @@
 ---
 title: escopo
 categories: [ "Variables" ]
-subCategories: [ "Escopo de Variáveis e Qualificadores" ]
+subCategories: [ "Variable Scope & Qualifiers" ]
 ---
 
 = Escopo de variáveis

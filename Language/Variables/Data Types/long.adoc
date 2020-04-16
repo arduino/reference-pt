@@ -1,7 +1,7 @@
 ---
 title: long
 categories: [ "Variables" ]
-subCategories: [ "Tipos de Dados" ]
+subCategories: [ "Data Types" ]
 ---
 
 = long

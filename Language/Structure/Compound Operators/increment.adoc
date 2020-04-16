@@ -2,7 +2,7 @@
 title: "++"
 title_expanded: incremento
 categories: [ "Structure" ]
-subCategories: [ "Operadores de Atribuição Composta" ]
+subCategories: [ "Compound Operators" ]
 ---
 
 = ++ Incremento

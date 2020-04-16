@@ -1,7 +1,7 @@
 ---
 title: float()
 categories: [ "Variables" ]
-subCategories: [ "Conversão" ]
+subCategories: [ "Conversion" ]
 ---
 
 = float()

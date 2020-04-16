@@ -2,7 +2,7 @@
 title: "&&"
 title_expanded: E lógico
 categories: [ "Structure" ]
-subCategories: [ "Operadores Boleanos" ]
+subCategories: [ "Boolean Operators" ]
 ---
 
 = && E lógico

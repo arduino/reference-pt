@@ -2,7 +2,7 @@
 title: "^="
 title_expanded: atribuição por ou exclusivo
 categories: [ "Structure" ]
-subCategories: [ "Operadores de Atribuição Composta" ]
+subCategories: [ "Compound Operators" ]
 ---
 
 = |= Atribuição por OU EXCLUSIVO

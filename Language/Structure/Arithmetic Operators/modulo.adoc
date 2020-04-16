@@ -2,7 +2,7 @@
 title: "%"
 title_expanded: "resto"
 categories: [ "Structure" ]
-subCategories: [ "Operadores Aritméticos" ]
+subCategories: [ "Arithmetic Operators" ]
 ---
 
 = % Módulo

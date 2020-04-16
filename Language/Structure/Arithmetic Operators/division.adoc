@@ -2,7 +2,7 @@
 title: "/"
 title_expanded: "divisão"
 categories: [ "Structure" ]
-subCategories: [ "Operadores Aritméticos" ]
+subCategories: [ "Arithmetic Operators" ]
 ---
 
 = / Divisão

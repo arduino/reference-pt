@@ -2,7 +2,7 @@
 title: ">="
 title_expanded: maior que ou igual a
 categories: [ "Structure" ]
-subCategories: [ "Operadores de Comparação" ]
+subCategories: [ "Comparison Operators" ]
 ---
 
 = >= Maior que ou igual a

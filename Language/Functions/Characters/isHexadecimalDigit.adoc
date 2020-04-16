@@ -1,7 +1,7 @@
 ---
 title: "isHexadecimalDigit()"
 categories: [ "Functions" ]
-subCategories: [ "Caracteres" ]
+subCategories: [ "Characters" ]
 ---
 
 

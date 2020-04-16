@@ -1,7 +1,7 @@
 ---
 title: continue
 categories: [ "Structure" ]
-subCategories: [ "Estruturas de Controle" ]
+subCategories: [ "Control Structure" ]
 ---
 = continue
 

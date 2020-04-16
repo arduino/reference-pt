@@ -2,7 +2,7 @@
 title: "+="
 title_expanded: atribuição por adição
 categories: [ "Structure" ]
-subCategories: [ "Operadores de Atribuição Composta" ]
+subCategories: [ "Compound Operators" ]
 ---
 
 = += Atribuição por adição

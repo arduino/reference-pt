@@ -1,7 +1,7 @@
 ---
 title: digitalRead()
 categories: [ "Functions" ]
-subCategories: [ "Entradas e Saídas Digitais" ]
+subCategories: [ "Digital I/O" ]
 ---
 
 

@@ -2,7 +2,7 @@
 title: "~"
 title_expanded: NÃO 
 categories: [ "Structure" ]
-subCategories: [ "Operadores Bitwise" ]
+subCategories: [ "Bitwise Operators" ]
 ---
 
 = ~ Bitwise NÃO

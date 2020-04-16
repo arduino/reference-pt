@@ -1,7 +1,7 @@
 ---
 title: delay()
 categories: [ "Functions" ]
-subCategories: [ "Funções Temporizadoras" ]
+subCategories: [ "Time" ]
 ---
 
 = delay()

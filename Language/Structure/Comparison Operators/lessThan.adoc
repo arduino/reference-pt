@@ -2,7 +2,7 @@
 title: "<"
 title_expanded: menor que
 categories: [ "Structure" ]
-subCategories: [ "Operadores de Comparação" ]
+subCategories: [ "Comparison Operators" ]
 ---
 
 = < Menor que

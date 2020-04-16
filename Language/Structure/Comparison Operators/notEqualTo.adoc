@@ -2,7 +2,7 @@
 title: "!="
 title_expanded: diferente de
 categories: [ "Structure" ]
-subCategories: [ "Operadores de Comparação" ]
+subCategories: [ "Comparison Operators" ]
 ---
 
 = != Diferente de

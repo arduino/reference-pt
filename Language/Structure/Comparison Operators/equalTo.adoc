@@ -2,7 +2,7 @@
 title: "=="
 title_expanded: igual a
 categories: [ "Structure" ]
-subCategories: [ "Operadores de Comparação" ]
+subCategories: [ "Comparison Operators" ]
 ---
 
 = == Igual a

@@ -2,7 +2,7 @@
 title: ">>"
 title_expanded: deslocamento à direita
 categories: [ "Structure" ]
-subCategories: [ "Operadores Bitwise" ]
+subCategories: [ "Bitwise Operators" ]
 ---
 
 = >> Bitshift Right

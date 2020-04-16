@@ -1,7 +1,7 @@
 ---
 title: analogReadResolution()
 categories: [ "Functions" ]
-subCategories: [ "Apenas Zero, Due e Família MKR" ]
+subCategories: [ "Zero, Due & MKR Family" ]
 ---
 
 = analogReadResolution()

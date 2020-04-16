@@ -2,7 +2,7 @@
 title: "="
 title_expanded: "operador de atribuição"
 categories: [ "Structure" ]
-subCategories: [ "Operadores Aritméticos" ]
+subCategories: [ "Arithmetic Operators" ]
 ---
 
 = = Atribuição (único sinal de igual)

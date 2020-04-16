@@ -1,7 +1,7 @@
 ---
 title: switch...case
 categories: [ "Structure" ]
-subCategories: [ "Estruturas de Controle" ]
+subCategories: [ "Control Structure" ]
 ---
 
 = comando switch...case

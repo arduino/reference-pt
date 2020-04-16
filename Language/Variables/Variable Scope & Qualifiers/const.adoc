@@ -1,7 +1,7 @@
 ---
 title: const
 categories: [ "Variables" ]
-subCategories: [ "Escopo de Variáveis e Qualificadores" ]
+subCategories: [ "Variable Scope & Qualifiers" ]
 ---
 
 = palavra-chave const

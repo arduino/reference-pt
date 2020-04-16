@@ -1,7 +1,7 @@
 ---
 title: map()
 categories: [ "Functions" ]
-subCategories: [ "Funções Matemáticas" ]
+subCategories: [ "Math" ]
 ---
 
 = map(valor, deMenor, deMaior, paraMenor, paraMaior)

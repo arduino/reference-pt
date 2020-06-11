@@ -67,7 +67,7 @@ switch (var) {
     // faz algo quando var é igual a 1
     break;
   case 2:
-    // faz algo quando var é igual a 1
+    // faz algo quando var é igual a 2
     break;
   default:
     // Se nenhum dos anteriores, faz o caso padrão default

@@ -10,7 +10,7 @@ title: Serial.println()
 
 [float]
 === Descrição
-Imprime dados na porta serial como texto ASCII seguido pelo caratere de retorno de carruagem (ASCII 13, ou '\r') e um cactere de nova linha (ASCII 10, ou '\n'). Essa função assume as mesmas formas que link:../print[Serial.print()].
+Imprime dados na porta serial como texto ASCII seguido pelo caractere de retorno de carruagem (ASCII 13, ou '\r') e um caractere de nova linha (ASCII 10, ou '\n'). Essa função assume as mesmas formas que link:../print[Serial.print()].
 [%hardbreaks]
 
 

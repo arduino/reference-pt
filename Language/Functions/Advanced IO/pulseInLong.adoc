@@ -15,7 +15,7 @@ subCategories: [ "Advanced I/O" ]
 === Descrição
 `pulseInLong()` é uma alternativa à função link:../pulsein[pulseIn()], sendo melhor para lidar com pulsos longos e situações afetadas por interrupções.
 
-Reads a pulse (either HIGH or LOW) on a pin. For example, if value is HIGH, `pulseInLong()` waits for the pin to go `HIGH`, starts timing, then waits for the pin to go `LOW` and stops timing. Returns the length of the pulse in microseconds or 0 if no complete pulse was received within the timeout.
+Lê um pulso (ALTO ou BAIXO) em um pino. Por exemplo, se o valor for HIGH, `pulseInLong ()` espera que o pino vá `HIGH`, começa a cronometrar e, em seguida, espera que o pino vá` LOW` e pára de cronometrar. Retorna a duração do pulso em microssegundos ou 0 se nenhum pulso completo foi recebido dentro do tempo limite.
 
 A temporização dessa função foi determinada empiricamente e irá provavelmente mostrar erros em pulsos mais curtos. Funciona em pulsos de 10 microssegundos a 3 minutos de duração. Por favor note que se a função for configurada para recebr um pulso `HIGH` e o pino já estiver no estado `HIGH` quando a função for chamada, essa irá primeiro esperar o pino ir para estado `LOW` e então `HIGH` antes de começar a contar. Essa função pode ser utilizada apenas quando interrupções estiverem ativadas. Além disso, resoluções maiores são alcançadas com intervalos maiores.
 [%hardbreaks]

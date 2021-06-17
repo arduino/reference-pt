@@ -14,7 +14,7 @@ subCategories: [ "Boolean Operators" ]
 
 [float]
 === Descrição
-*O OU lógico* resulta em verdadeiro se pelo menos um dos operandos é verdadeiro .Vale lembrar que condições verdadeiras e falsas na linguagem Arduino são representadas por `true` e `false` respectivamente.
+*O OU lógico* resulta em verdadeiro se pelo menos um dos operandos é verdadeiro. Vale lembrar que condições verdadeiras e falsas na linguagem Arduino são representadas por `true` e `false` respectivamente.
 [%hardbreaks]
 
 --

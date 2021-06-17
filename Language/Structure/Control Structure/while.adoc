@@ -14,7 +14,7 @@ subCategories: [ "Control Structure" ]
 [float]
 === Descrição
 [%hardbreaks]
-Um loop `while` irá se repetir continuamente, e infinitamente, até a expressão dentro dos parênteses (), se torne falsa. Algo deve mudar a variável testada, ou o loop while nunca irá encerrar. Isso pode ser no seu código, por exemplo, uma variável incrementada, ou uma condição externa, como a leitura de um sensor.
+Um loop `while` irá se repetir continuamente, e infinitamente, até que a expressão dentro dos parênteses (), se torne falsa. Algo deve mudar a variável testada, ou o loop while nunca irá encerrar. Isso pode ser no seu código, por exemplo, uma variável incrementada, ou uma condição externa, como a leitura de um sensor.
 
 [float]
 === Sintaxe

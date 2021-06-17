@@ -26,7 +26,7 @@ variável << numero_de_bits;
 
 [float]
 === Parâmetros
-variável`: *Tipos de dados permitidos:* byte, int, long +
+`variável`: *Tipos de dados permitidos:* byte, int, long +
 `numero_de_bits`: um número menor ou igual 32. *Tipos de dados permitidos:* int
 
 --
@@ -58,13 +58,13 @@ int x = -16;  // binário: 1111111111110000
 int y = 3;
 int resultado = x >> y;  // binário: 1111111111111110
 ----
-Esse comportamento, chamdo extensão do sinal, é frequentemente indesejável. Em vez disso, você pode quere que zeros sejam deslocados da esquerda. Acontece que as regras do deslocamento à direita são diferentes para expressões `unsigned int`, estão você pode usar casting para impedir que uns sejam copiados da esquerda:
+Esse comportamento, chamado extensão do sinal, é frequentemente indesejável. Em vez disso, você pode quere que zeros sejam deslocados da esquerda. Acontece que as regras do deslocamento à direita são diferentes para expressões `unsigned int`, estão você pode usar casting para impedir que uns sejam copiados da esquerda:
 
 [source,arduino]
 ----
 int x = -16;  // binário: 1111111111110000
 int y = 3;
-int resultado = (unsigned int)x >> y;  // binário: 0001111111111110
+int resultado = (unsigned int) x >> y;  // binário: 0001111111111110
 ----
 Se você for cuidadoso para evitar a extensão do sinal, você pode usar o operador de deslocamento à direita `>>` como uma forma de dividir por potências de 2. Por exemplo:
 

@@ -41,7 +41,7 @@ Dentro da função associada, `delay()` não funcionará e o valor retornado por
 
 [float]
 == Usando Interrupções
-Interrupções são úteis para fazer coisas automaticamente em programas de microcontroladores, e podem ajudar a resolver problemas de temporização. Boas tarefas para se udar uma interrupção podem icnluir a leitura de um codificador rotativo, ou monitorar entradas de dados pelo usuário.
+Interrupções são úteis para fazer coisas automaticamente em programas de microcontroladores, e podem ajudar a resolver problemas de temporização. Boas tarefas para se usar uma interrupção podem icluir a leitura de um codificador rotativo, ou monitorar entradas de dados pelo usuário.
 
 Supomos que você quisesse ter certeza que um programa sempre captura os pulsos de um codifcador rotativo, sem nunca perder um pulso, seria muito complicado criar um programa que pudesse fazer qualquer outra coisa além disso, porque o programa precisaria checar constantemente os pinos do codificador, para capturar os pulsos exatamente quando eles ocorreram. Outros sensores são similarmente dinâmicos também, como um sensor de som que pode ser usado para capturar um clique, ou um sensor infravermelho (foto-interruptor) para capturar a queda de uma moeda. Em todas essas situações, usar uma interrupção pode permitir o microcontrolador trabalhar em outras tarefas sem perder a interrupção.
 

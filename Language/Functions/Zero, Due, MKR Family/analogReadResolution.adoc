@@ -90,7 +90,7 @@ Por exemplo: usando-se o DUE com `analogReadResolution(16)` irá retornar um nú
 
 Se você configurar o valor de `analogReadResolution()`  para um valor menor que acapacidade de sua placa, os bits menos significantes extras lidos do ADC serão *descartados*.
 
-Usar uma resolução de 16 bits (ou qualquer resolução *mais alta* que as capacidades reais do hardware) permite esccrever sketches que automaticamente suportam dispositivos com uma resolução do ADC mais alta quando estes estiverem disponíveis em palcas futuras, sem a necessidade de se fazer mudanças no código.
+Usar uma resolução de 16 bits (ou qualquer resolução *mais alta* que as capacidades reais do hardware) permite escrever sketches que automaticamente suportam dispositivos com uma resolução do ADC mais alta quando estes estiverem disponíveis em placas futuras, sem a necessidade de se fazer mudanças no código.
 
 --
 // HOW TO USE SECTION ENDS

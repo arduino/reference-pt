@@ -57,14 +57,14 @@ int checaSensor() {
 }
 ----
 
-The return keyword is handy to test a section of code without having to "comment out" large sections of possibly buggy code.
+A palavra-chave return é útil para testar uma seção de código sem ter que "comentar" grandes seções de código possivelmente cheio de erros.
 [source,arduino]
 ----
 void loop() {
   return;
 
-  // the rest of a dysfunctional sketch here
-  // this code will never be executed
+  // o resto de um esboço disfuncional aqui
+  // este código nunca será executado
 }
 ----
 [%hardbreaks]

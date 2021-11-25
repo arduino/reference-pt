@@ -64,7 +64,7 @@ Esse comportamento, chamado extensão do sinal, é frequentemente indesejável. 
 ----
 int x = -16;  // binário: 1111111111110000
 int y = 3;
-int resultado = (unsigned int) x >> y;  // binário: 0001111111111110
+int resultado = (unsigned int)x >> y;  // binário: 0001111111111110
 ----
 Se você for cuidadoso para evitar a extensão do sinal, você pode usar o operador de deslocamento à direita `>>` como uma forma de dividir por potências de 2. Por exemplo:
 

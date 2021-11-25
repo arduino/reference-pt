@@ -72,7 +72,7 @@ Note que `sizeof` retorna o número total de bytes. Então, para vetores de tipo
 ----
 int meusValores[] = {123, 456, 789};
 
-// this for loop works correctly with an array of any type or size
+// este loop for funciona corretamente com um array de qualquer tipo ou tamanho
 for (byte i = 0; i < (sizeof(meusValores)/sizeof(meusValores[0])); i++) {
   // fazer algo com meusValores[i]
 }

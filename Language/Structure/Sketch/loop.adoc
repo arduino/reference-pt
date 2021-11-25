@@ -13,7 +13,7 @@ subCategories: [ "Sketch" ]
 
 [float]
 === Descrição
-Depois de criar uma função link:../setup[setup()], a qual inicializa e atribui os valores iniciais, a função `loop()` faz precisamente o que o seu nome sugere, e repete-se consecutivamente enaqunto a placa estiver ligada, permitindo o seu programa mudar e responder a essas mudanças. Use-a para controlar ativamente uma placa Arduino.
+Depois de criar uma função link:../setup[setup()], a qual inicializa e atribui os valores iniciais, a função `loop()` faz precisamente o que o seu nome sugere, e repete-se consecutivamente enquanto a placa estiver ligada, permitindo o seu programa mudar e responder a essas mudanças. Use-a para controlar ativamente uma placa Arduino.
 [%hardbreaks]
 
 --

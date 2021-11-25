@@ -14,7 +14,7 @@ subCategories: [ "Arithmetic Operators" ]
 
 [float]
 === Descrição
-*Subtração* é uma das quatro operações aritméticas fundamentais. O operador `-` (menos) opera em dois operanddos para produzir a diferença do segundo pelo primeiro.
+*Subtração* é uma das quatro operações aritméticas fundamentais. O operador `-` (menos) opera em dois operandos para produzir a diferença do segundo pelo primeiro.
 [%hardbreaks]
 
 

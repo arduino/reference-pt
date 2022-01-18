@@ -12,7 +12,7 @@ subCategories: [ "Control Structure" ]
 
 [float]
 === Descrição
-O comando `for` [e usado para repetir um bloco de código envolvido por chaves. Um contador de incremento é geralmente utilizado para terminar o loop. O comando `for` é útil para qualquer operação repetitiva, e é usado frequentemente com vetores para operar em coleções de dados ou pinos.
+O comando `for` é usado para repetir um bloco de código envolvido por chaves. Um contador de incremento é geralmente utilizado para terminar o loop. O comando `for` é útil para qualquer operação repetitiva, e é usado frequentemente com vetores para operar em coleções de dados ou pinos.
 [%hardbreaks]
 
 

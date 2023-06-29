@@ -12,7 +12,7 @@ subCategories: [ "Math" ]
 
 [float]
 === Descrição
-Remapeia um número *de* um intervalo *para* outro. Isto é, um valor de *deMenor* seria mapeado para *paraMenor*, um valor de *deMaior* para *paraMaior*, valores dentro de uma faixa para volores dentro da outra faixa, etc.
+Remapeia um número *de* um intervalo *para* outro. Isto é, um valor de *deMenor* seria mapeado para *paraMenor*, um valor de *deMaior* para *paraMaior*, valores dentro de uma faixa para valores dentro da outra faixa, etc.
 
 Não restringe valores a ficar dentro do intervalo, porque valores fora do intervalo são as vezes úteis e pretendidos. A função `constrain()` pode ser usada tanto antes como depois dessa função, se limites para os intervalos são desejados.
 

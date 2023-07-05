@@ -10,7 +10,7 @@ title: Serial.begin()
 
 [float]
 === Descrição
-Configura a taxa de transferência em bits por segundo (baud rate) para transmissão serial. Para comunicação com um computador, através do Monitor Serial da IDE, use uma das taxas listadas no canto inferior direito de sua janela. Você pode, no entanto, especificar outras taxas - por examplo, para comunicar nos pinos 0 e 1 com um componente que requer uma taxa de transferência peculiar.
+Configura a taxa de transferência em bits por segundo (baud rate) para transmissão serial. Para comunicação com um computador, através do Monitor Serial da IDE, use uma das taxas listadas no canto inferior direito de sua janela. Você pode, no entanto, especificar outras taxas - por exemplo, para comunicar nos pinos 0 e 1 com um componente que requer uma taxa de transferência diferente.
 
 Um segundo argumento opcional configura o número de bits no dado, paridade, e bits de parada (stop bits). Caso esse argumento não seja especificado, o padrão é 8 bits de dados, sem paridade e um stop bit.
 [%hardbreaks]
@@ -110,7 +110,7 @@ void loop() {
 
 [float]
 === Notas e Advertências
-Para portas seriais USB CDC (ex. `Serial` no Leonardo), `Serial.begin()` é irrelevante. Você pode usar qulquer taxa de transmissão e configuração para comunicação serial com essas portas específicas. Veja a lista de portas seriais disponíveis para cada plana na link:../../serial[página principal da classe Serial].
+Para portas seriais USB CDC (ex. `Serial` no Leonardo), `Serial.begin()` é irrelevante. Você pode usar qualquer taxa de transmissão e configuração para comunicação serial com essas portas específicas. Veja a lista de portas seriais disponíveis para cada placa no link:../../serial[página principal da classe Serial].
 [%hardbreaks]
 
 --

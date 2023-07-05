@@ -68,7 +68,7 @@ meuByte & B11111111 = meuByte;
 Porque estamos lidando com bits em um operador bitwise, é conveniente usar o modificador binário com constantes na representação. Os números ainda são os mesmos em outras representações, só não são tão fáceis de entender. Também, B00000000 é mostrado para claridade, mas zero em qualquer outro formato é zero.
 [%hardbreaks]
 
-Consequentemente - para limpar os bits 0 e 1 de um variável, ao mesmo tempo deixando o resto da variável intocado, useo o operador de atribuição por bitwise E  (&=) com a constante B11111100
+Consequentemente - para limpar os bits 0 e 1 de um variável, ao mesmo tempo deixando o resto da variável intocado, use o operador de atribuição por bitwise E  (&=) com a constante B11111100
 
    1  0  1  0  1  0  1  0    variável
    1  1  1  1  1  1  0  0    máscara

@@ -41,11 +41,14 @@ A `condição` é uma expressão booleana que é avaliada como verdadeiro ou fal
 
 [source,arduino]
 ----
+// Inicialize x e i com um valor de 0
 int x = 0;
+int i = 0;
 do {
   delay(50);          // espera os sensores estabilizarem
   x = readSensors();  // checa os sensores
-} while (x < 100);
+  i++;                // soma 1 a i
+} while (i < 100);    // repita 100 vezes
 ----
 
 

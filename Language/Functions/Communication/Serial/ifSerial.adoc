@@ -53,7 +53,7 @@ void setup() {
 }
 
 void loop() {
-  //porcede normalmente
+  //procede normalmente
 }
 ----
 

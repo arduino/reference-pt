@@ -37,7 +37,7 @@ Quando lendo-se ou escrevendo-se o estado de um pino digital há apenas dois val
 
 [float]
 === HIGH
-O significado de `HIGH` (em relação a um pino) depende se o pino está configurado como entrada ou saída (`INPUT` ou `OUTPUT`). Qaundo um pino é configurado como `INPUT` com link:../../../functions/digital-io/pinmode[pinMode()], e lido com link:../../../functions/digital-io/digitalread[digitalRead()], o Arduino (ATmega) irá retornar `HIGH` se:
+O significado de `HIGH` (em relação a um pino) depende se o pino está configurado como entrada ou saída (`INPUT` ou `OUTPUT`). Quando um pino é configurado como `INPUT` com link:../../../functions/digital-io/pinmode[pinMode()], e lido com link:../../../functions/digital-io/digitalread[digitalRead()], o Arduino (ATmega) irá retornar `HIGH` se:
 
   - uma tensão maior que 3.0V está presente no pino (em placas 5V)
   - uma tensão maior que 2.0V está presente no pino (em placas 3.3V)
@@ -51,12 +51,12 @@ Quando um pino é configurado como saída (OUTPUT) com `pinMode()`, e colocado e
   - 5 volts (em placas 5V)
   - 3.3 volts (em placas 3.3V)
 
-Nesse estado, o pino pode fornecer corrente (ver limites para sua placa, geralmente 40.0mA). Isso pode ser usado, por exemplo, para acender um LED que está conecatdo ao ground através de um resistor limitador de corrente.
+Nesse estado, o pino pode fornecer corrente (ver limites para sua placa, geralmente 40.0mA). Isso pode ser usado, por exemplo, para acender um LED que está conectado ao ground através de um resistor limitador de corrente.
 [%hardbreaks]
 
 [float]
 === LOW
-O significado de `LOW` depende também se o pino está configurado como entrada ou saída (`INPUT` ou `OUTPUT`). Qaundo um pino é configurado como `INPUT` com `pinMode()`, e lido com `digitalRead()`, o Arduino (ATmega) irá retornar `LOW` se:
+O significado de `LOW` depende também se o pino está configurado como entrada ou saída (`INPUT` ou `OUTPUT`). Quando um pino é configurado como `INPUT` com `pinMode()`, e lido com `digitalRead()`, o Arduino (ATmega) irá retornar `LOW` se:
 
   - uma tensão menor que 1.5V está presente no pino (em placas 5V)
   - uma tensão menor que 1.0V (aproxidamente) está presente no pino (em placas 3.3V)
